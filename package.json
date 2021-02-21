@@ -6,7 +6,7 @@
     "build": "snowpack build",
     "clean": "rm -rf dist",
     "format": "prettier --write \"src/**/*.{ts,tsx,css,scss}\"",
-    "images": "ts-node --project tsconfig.node.json \"scripts/favicon.ts\"",
+    "images": "ts-node --project tsconfig.node.json \"scripts/images.ts\"",
     "lint": "eslint --fix \"src/**/*.ts\"",
     "start": "snowpack dev",
     "type-check": "tsc"
