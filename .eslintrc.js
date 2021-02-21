@@ -8,21 +8,25 @@ module.exports = {
     node: true,
   },
   extends: [
+    'plugin:vue/base',
     'plugin:vue/essential',
+    'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
     '@vue/airbnb',
-    '@vue/typescript/recommended',
-
     '@vue/prettier',
     '@vue/prettier/@typescript-eslint',
+    '@vue/typescript/recommended',
   ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
     tw: true,
   },
-  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2020,
+    extraFileExtensions: [
+      ".vue"
+    ],
     project: 'tsconfig.json',
     sourceType: 'module',
   },
