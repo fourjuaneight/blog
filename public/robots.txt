@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /microblog/*
+Disallow: /microblog/
+Sitemap: https://juanvillela.dev/sitemap.xml
+Host: https://juanvillela.dev
