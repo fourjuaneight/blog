@@ -1,0 +1,10 @@
+.cache
+.netlify
+.eslintrc.js
+prettier.config.js
+snowpack.config.js
+build
+coverage
+dist
+node_modules
+public
