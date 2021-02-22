@@ -1,5 +1,7 @@
 import { resolve } from 'path';
+
 import sharp from 'sharp';
+import * as yargs from 'yargs';
 
 interface VOptions {
   name: string;
@@ -9,13 +11,17 @@ interface VOptions {
 
 interface Variants {
   favicon: VOptions[];
+  logo: VOptions[];
 }
 
-interface ResizeSizes {
-  height?: string;
-  width: string;
-}
+type Assets = 'favicon' | 'logo' | 'hero' | 'post';
 
+const asset: ReadonlyArray<Assets> = ['favicon', 'logo', 'hero', 'post'];
+const argv = yargs.option('asset', {
+  choices: asset,
+  demandOption: true,
+}).argv;
+const dir = resolve(__dirname, '..', 'public');
 const variants: Variants = {
   favicon: [
     { name: 'favicon', resize: [16, 16] },
@@ -28,7 +34,6 @@ const variants: Variants = {
     { name: 'icon', resize: [512, 512] },
   ],
 };
-const dir = resolve(__dirname, '..', 'public');
 
 /**
  * Create various size and format variants of an image.
@@ -51,7 +56,7 @@ const fmtImage = async (src: string, dest: string): Promise<void> => {
       ? `${img.name}-${img.resize[0]}x${img.resize[1]}.${type}`
       : `${img.name}.${type}`;
     const output = `${dir}/${dest}/${fileName}`;
-    const image = await sharp(input);
+    const image = sharp(input);
 
     // create variants
     await image
@@ -70,4 +75,11 @@ const fmtImage = async (src: string, dest: string): Promise<void> => {
   await Promise.all(promises);
 };
 
-fmtImage('favicon.png', 'icons');
+switch (argv.asset) {
+  case 'favicon':
+    fmtImage('favicon.png', 'icons');
+    break;
+  default:
+    console.info('No images converted.');
+    break;
+}
