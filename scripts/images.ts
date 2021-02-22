@@ -14,11 +14,18 @@ interface Variants {
   favicon: VOptions[];
   logo: VOptions[];
   hero: VOptions[];
+  about: VOptions[];
 }
 
-type Assets = 'favicon' | 'logo' | 'hero' | 'post';
+type Assets = 'favicon' | 'logo' | 'hero' | 'about' | 'post';
 
-const asset: ReadonlyArray<Assets> = ['favicon', 'logo', 'hero', 'post'];
+const asset: ReadonlyArray<Assets> = [
+  'favicon',
+  'logo',
+  'hero',
+  'about',
+  'post',
+];
 const argv = yargs.option('asset', {
   choices: asset,
   demandOption: true,
@@ -44,6 +51,11 @@ const variants: Variants = {
     { name: 'hero', resize: 500 },
     { name: 'hero', resize: 500, ext: 'webp' },
     { name: 'hero', resize: 500, ext: 'avif' },
+  ],
+  about: [
+    { name: 'about', resize: 350 },
+    { name: 'about', resize: 350, ext: 'webp' },
+    { name: 'about', resize: 350, ext: 'avif' },
   ],
 };
 
@@ -105,6 +117,9 @@ switch (argv.asset) {
     break;
   case 'hero':
     fmtImage(variants.hero, 'hero.png', 'img');
+    break;
+  case 'about':
+    fmtImage(variants.about, 'about.png', 'img');
     break;
   default:
     console.info(chalk.blue('[INFO]'), 'No images converted.');
