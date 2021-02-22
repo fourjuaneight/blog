@@ -34,9 +34,9 @@ const variants: Variants = {
     { name: 'icon', resize: [512, 512] },
   ],
   logo: [
-    { name: 'logo', resize: 300 },
-    { name: 'logo', resize: 300, ext: 'webp' },
-    { name: 'logo', resize: 300, ext: 'avif' },
+    { name: 'logo', resize: 250 },
+    { name: 'logo', resize: 250, ext: 'webp' },
+    { name: 'logo', resize: 250, ext: 'avif' },
   ],
 };
 
