@@ -13,6 +13,7 @@ interface VOptions {
 interface Variants {
   favicon: VOptions[];
   logo: VOptions[];
+  hero: VOptions[];
 }
 
 type Assets = 'favicon' | 'logo' | 'hero' | 'post';
@@ -38,6 +39,11 @@ const variants: Variants = {
     { name: 'logo', resize: 250 },
     { name: 'logo', resize: 250, ext: 'webp' },
     { name: 'logo', resize: 250, ext: 'avif' },
+  ],
+  hero: [
+    { name: 'hero', resize: 500 },
+    { name: 'hero', resize: 500, ext: 'webp' },
+    { name: 'hero', resize: 500, ext: 'avif' },
   ],
 };
 
@@ -96,6 +102,9 @@ switch (argv.asset) {
     break;
   case 'logo':
     fmtImage(variants.logo, 'logo.png', 'img');
+    break;
+  case 'hero':
+    fmtImage(variants.hero, 'hero.png', 'img');
     break;
   default:
     console.info(chalk.blue('[INFO]'), 'No images converted.');
