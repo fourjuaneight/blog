@@ -33,6 +33,11 @@ const variants: Variants = {
     { name: 'icon', resize: [256, 256] },
     { name: 'icon', resize: [512, 512] },
   ],
+  logo: [
+    { name: 'logo', resize: 300 },
+    { name: 'logo', resize: 300, ext: 'webp' },
+    { name: 'logo', resize: 300, ext: 'avif' },
+  ],
 };
 
 /**
@@ -78,6 +83,9 @@ const fmtImage = async (src: string, dest: string): Promise<void> => {
 switch (argv.asset) {
   case 'favicon':
     fmtImage('favicon.png', 'icons');
+    break;
+  case 'logo':
+    fmtImage('logo.png', 'img');
     break;
   default:
     console.info('No images converted.');
