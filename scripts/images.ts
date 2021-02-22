@@ -44,14 +44,19 @@ const variants: Variants = {
  * Create various size and format variants of an image.
  * @function
  *
- * @param {string} src  Image to format and convert
- * @param {string} dest Where to save image
+ * @param {VOptions[]} data Variants options
+ * @param {string}     src  Image to format and convert
+ * @param {string}     dest Where to save image
  */
-const fmtImage = async (src: string, dest: string): Promise<void> => {
+const fmtImage = async (
+  data: VOptions[],
+  src: string,
+  dest: string
+): Promise<void> => {
   const input = resolve(__dirname, src);
 
   // map array to promises
-  const promises = variants.favicon.map(async img => {
+  const promises = data.map(async img => {
     // image options
     const sizes = Array.isArray(img.resize)
       ? { height: img.resize[0], width: img.resize[1] }
@@ -82,10 +87,10 @@ const fmtImage = async (src: string, dest: string): Promise<void> => {
 
 switch (argv.asset) {
   case 'favicon':
-    fmtImage('favicon.png', 'icons');
+    fmtImage(variants.favicon, 'favicon.png', 'icons');
     break;
   case 'logo':
-    fmtImage('logo.png', 'img');
+    fmtImage(variants.logo, 'logo.png', 'img');
     break;
   default:
     console.info('No images converted.');
