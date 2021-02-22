@@ -1,7 +1,8 @@
 import { resolve } from 'path';
 
-import sharp from 'sharp';
 import * as yargs from 'yargs';
+import chalk from 'chalk';
+import sharp from 'sharp';
 
 interface VOptions {
   name: string;
@@ -74,10 +75,14 @@ const fmtImage = async (
       .toFormat(type)
       .toFile(output)
       .then(() => {
-        console.info(`${fileName} created.`);
+        console.info(chalk.green('[SUCCESS]'), `${fileName} created.`);
       })
       .catch(err => {
-        console.error(`Sharp Error:`, { input, output, err });
+        console.error(chalk.red('[ERROR]'), {
+          input,
+          output,
+          err,
+        });
       });
   });
 
@@ -93,6 +98,6 @@ switch (argv.asset) {
     fmtImage(variants.logo, 'logo.png', 'img');
     break;
   default:
-    console.info('No images converted.');
+    console.info(chalk.blue('[INFO]'), 'No images converted.');
     break;
 }
