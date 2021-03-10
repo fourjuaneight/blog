@@ -1,0 +1,11 @@
+:root {
+  --dark: #353927;
+  --light: #d3d7c5;
+  --meta: #3f4230;
+  --selection: #cdd1bc;
+  --primary: #e9c349;
+  --secondary: #e1c1ae;
+  --tertiary: #ecbcb8;
+  --duration: 208ms;
+  --transition: cubic-bezier(0.155, 0.64, 0.24, 1);
+}
