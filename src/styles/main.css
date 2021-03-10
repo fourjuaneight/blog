@@ -1,11 +1,17 @@
 :root {
-  --dark: #353927;
-  --light: #d3d7c5;
-  --meta: #3f4230;
-  --selection: #cdd1bc;
-  --primary: #e9c349;
-  --secondary: #e1c1ae;
-  --tertiary: #ecbcb8;
+  --dark: #333333;
+  --light: #f5f4f2;
+  --meta: #9b9b9b;
+  --selection: #999;
+  --secondary: #0a799d;
+  --tertiary: #597480;
   --duration: 208ms;
   --transition: cubic-bezier(0.155, 0.64, 0.24, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --secondary: #bdecfb;
+    --tertiary: #859faa;
+  }
 }
