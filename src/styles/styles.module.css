@@ -238,6 +238,18 @@
 }
 
 /* Font */
+.font-parkly {
+  font-family: Parkly, 'sans-serif';
+}
+
+.font-nunito {
+  font-family: Nunito, 'sans-serif';
+}
+
+.font-dank-mono {
+  font-family: Dank Mono, 'sans-serif';
+}
+
 .font-light {
   font-weight: 300;
 }
