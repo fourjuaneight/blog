@@ -1,10 +1,10 @@
 /* Colors */
-.text-light {
-  color: var(--light);
+.text-foreground {
+  color: var(--foreground);
 }
 
-.text-dark {
-  color: var(--dark);
+.text-background {
+  color: var(--background);
 }
 
 .text-meta {
@@ -23,12 +23,12 @@
   color: var(--tertiary);
 }
 
-.bg-light {
-  background-color: var(--light);
+.bg-foreground {
+  background-color: var(--foreground);
 }
 
-.bg-dark {
-  background-color: var(--dark);
+.bg-background {
+  background-color: var(--background);
 }
 
 .bg-meta {
@@ -47,12 +47,12 @@
   background-color: var(--tertiary);
 }
 
-.fill-light {
-  fill: var(--light);
+.fill-foreground {
+  fill: var(--foreground);
 }
 
-.fill-dark {
-  fill: var(--dark);
+.fill-background {
+  fill: var(--background);
 }
 
 .fill-meta {
@@ -71,12 +71,12 @@
   fill: var(--tertiary);
 }
 
-.border-light {
-  border-color: var(--light);
+.border-foreground {
+  border-color: var(--foreground);
 }
 
-.border-dark {
-  border-color: var(--dark);
+.border-background {
+  border-color: var(--background);
 }
 
 .border-meta {
