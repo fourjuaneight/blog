@@ -6,6 +6,9 @@
 }
 
 /* Remove default margin */
+*,
+*::before,
+*::after,
 body,
 h1,
 h2,
