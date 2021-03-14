@@ -2,9 +2,10 @@
 .netlify
 .eslintrc.js
 prettier.config.js
-snowpack.config.js
+vite.config.ts
 build
 coverage
 dist
+dist-ssr
 node_modules
 public

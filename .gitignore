@@ -54,6 +54,7 @@ typings/
 # production
 build
 dist
+dist-ssr
 .cache
 
 # Mac files
