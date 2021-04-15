@@ -11,19 +11,21 @@ interface VOptions {
 }
 
 interface Variants {
-  favicon: VOptions[];
-  logo: VOptions[];
-  hero: VOptions[];
   about: VOptions[];
+  avatar: VOptions[];
+  favicon: VOptions[];
+  hero: VOptions[];
+  logo: VOptions[];
 }
 
-type Assets = 'favicon' | 'logo' | 'hero' | 'about' | 'post';
+type Assets = 'about' | 'avatar' | 'favicon' | 'hero' | 'logo' | 'post';
 
 const asset: ReadonlyArray<Assets> = [
-  'favicon',
-  'logo',
-  'hero',
   'about',
+  'avatar',
+  'favicon',
+  'hero',
+  'logo',
   'post',
 ];
 const argv = yargs.option('asset', {
@@ -32,6 +34,16 @@ const argv = yargs.option('asset', {
 }).argv;
 const dir = resolve(__dirname, '..', 'public');
 const variants: Variants = {
+  about: [
+    { name: 'about', resize: 350 },
+    { name: 'about', resize: 350, ext: 'webp' },
+    { name: 'about', resize: 350, ext: 'avif' },
+  ],
+  avatar: [
+    { name: 'avatar', resize: 600 },
+    { name: 'avatar', resize: 600, ext: 'webp' },
+    { name: 'avatar', resize: 600, ext: 'avif' },
+  ],
   favicon: [
     { name: 'favicon', resize: [16, 16] },
     { name: 'favicon', resize: [32, 32] },
@@ -42,20 +54,15 @@ const variants: Variants = {
     { name: 'icon', resize: [256, 256] },
     { name: 'icon', resize: [512, 512] },
   ],
-  logo: [
-    { name: 'logo', resize: 250 },
-    { name: 'logo', resize: 250, ext: 'webp' },
-    { name: 'logo', resize: 250, ext: 'avif' },
-  ],
   hero: [
     { name: 'hero', resize: 500 },
     { name: 'hero', resize: 500, ext: 'webp' },
     { name: 'hero', resize: 500, ext: 'avif' },
   ],
-  about: [
-    { name: 'about', resize: 350 },
-    { name: 'about', resize: 350, ext: 'webp' },
-    { name: 'about', resize: 350, ext: 'avif' },
+  logo: [
+    { name: 'logo', resize: 250 },
+    { name: 'logo', resize: 250, ext: 'webp' },
+    { name: 'logo', resize: 250, ext: 'avif' },
   ],
 };
 
@@ -109,17 +116,20 @@ const fmtImage = async (
 };
 
 switch (argv.asset) {
+  case 'about':
+    fmtImage(variants.about, 'about.png', 'img');
+    break;
+  case 'avatar':
+    fmtImage(variants.avatar, 'avatar.png', 'img');
+    break;
   case 'favicon':
     fmtImage(variants.favicon, 'favicon.png', 'icons');
-    break;
-  case 'logo':
-    fmtImage(variants.logo, 'logo.png', 'img');
     break;
   case 'hero':
     fmtImage(variants.hero, 'hero.png', 'img');
     break;
-  case 'about':
-    fmtImage(variants.about, 'about.png', 'img');
+  case 'logo':
+    fmtImage(variants.logo, 'logo.png', 'img');
     break;
   default:
     console.info(chalk.blue('[INFO]'), 'No images converted.');
