@@ -40,9 +40,9 @@ const variants: Variants = {
     { name: 'about', resize: 350, ext: 'avif' },
   ],
   avatar: [
-    { name: 'avatar', resize: 600 },
-    { name: 'avatar', resize: 600, ext: 'webp' },
-    { name: 'avatar', resize: 600, ext: 'avif' },
+    { name: 'avatar', resize: 1080 },
+    { name: 'avatar', resize: 1080, ext: 'webp' },
+    { name: 'avatar', resize: 1080, ext: 'avif' },
   ],
   favicon: [
     { name: 'favicon', resize: [16, 16] },
@@ -55,9 +55,9 @@ const variants: Variants = {
     { name: 'icon', resize: [512, 512] },
   ],
   hero: [
-    { name: 'hero', resize: 500 },
-    { name: 'hero', resize: 500, ext: 'webp' },
-    { name: 'hero', resize: 500, ext: 'avif' },
+    { name: 'hero', resize: 600 },
+    { name: 'hero', resize: 600, ext: 'webp' },
+    { name: 'hero', resize: 600, ext: 'avif' },
   ],
   logo: [
     { name: 'logo', resize: 250 },
@@ -120,7 +120,7 @@ switch (argv.asset) {
     fmtImage(variants.about, 'about.png', 'img');
     break;
   case 'avatar':
-    fmtImage(variants.avatar, 'avatar.png', 'img');
+    fmtImage(variants.avatar, 'hero.png', 'img');
     break;
   case 'favicon':
     fmtImage(variants.favicon, 'favicon.png', 'icons');
