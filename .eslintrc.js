@@ -52,5 +52,6 @@ module.exports = {
     '@typescript-eslint/no-useless-constructor': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
+    'vue/no-multiple-template-root': 0
   },
 };
