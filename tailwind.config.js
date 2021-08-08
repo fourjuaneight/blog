@@ -8,7 +8,6 @@ const pallete = {
 };
 
 module.exports = {
-  mode: 'jit',
   purge: {
     enabled: true,
     content: ['./index.html', './src/**/*.vue'],
