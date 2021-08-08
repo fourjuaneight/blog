@@ -1,6 +1,7 @@
 .cache
 .netlify
 .eslintrc.js
+postcss.config.js
 prettier.config.js
 vite.config.ts
 build
