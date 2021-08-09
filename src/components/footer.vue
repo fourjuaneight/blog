@@ -4,14 +4,16 @@
       class="col-start-2 flex flex-col items-center justify-center row-start-2 w-full"
     >
       <Nav dividers :slim="false" />
-      <ul class="flex flex-wrap items-center justify-center list-none my-2">
-        <li class="m-0">
+      <ul
+        class="auto-cols-auto gap-x-3 grid grid-rows-1 items-center list-none my-2"
+      >
+        <li class="m-0 row-start-1">
           <p class="text-sm">&copy; 2017-{{ copyYear }} Juan Villela</p>
         </li>
-        <li class="mx-2 my-0">
+        <li class="m-0 row-start-1">
           <p class="text-meta text-sm" aria-hidden="true">~</p>
         </li>
-        <li class="m-0">
+        <li class="m-0 row-start-1">
           <a
             class="text-sm"
             href="https://github.com/fourjuaneight/blog"

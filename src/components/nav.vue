@@ -1,33 +1,33 @@
 <template>
   <ul
-    class="flex flex-wrap items-center justify-center list-none"
+    class="auto-cols-min gap-x-3 grid grid-rows-1 items-center list-none"
     :class="slim ? 'm-0' : 'my-2'"
   >
-    <li class="m-0">
+    <li class="m-0 row-start-1">
       <router-link to="/about">About</router-link>
     </li>
-    <li class="mx-2 my-0" v-if="dividers">
+    <li class="m-0 row-start-1" v-if="dividers">
       <p class="text-meta text-xs" aria-hidden="true">&#8226;</p>
     </li>
-    <li class="m-0" v-if="!slim">
+    <li class="m-0 row-start-1" v-if="!slim">
       <router-link to="/uses">Uses</router-link>
     </li>
-    <li class="mx-2 my-0" v-if="dividers">
+    <li class="m-0 row-start-1" v-if="dividers">
       <p class="text-meta text-xs" aria-hidden="true">&#8226;</p>
     </li>
-    <li class="m-0">
+    <li class="m-0 row-start-1">
       <router-link to="/archive">Archive</router-link>
     </li>
-    <li class="mx-2 my-0" v-if="dividers">
+    <li class="m-0 row-start-1" v-if="dividers">
       <p class="text-meta text-xs" aria-hidden="true">&#8226;</p>
     </li>
-    <li class="m-0">
+    <li class="m-0 row-start-1">
       <router-link to="/lists">Lists</router-link>
     </li>
-    <li class="mx-2 my-0" v-if="dividers">
+    <li class="m-0 row-start-1" v-if="dividers">
       <p class="text-meta text-xs" aria-hidden="true">&#8226;</p>
     </li>
-    <li class="m-0" v-if="!slim">
+    <li class="m-0 row-start-1" v-if="!slim">
       <a href="/rss">RSS</a>
     </li>
   </ul>
