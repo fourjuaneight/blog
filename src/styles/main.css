@@ -16,11 +16,6 @@ a[rel='noopener noreferrer']:hover {
   color: var(--secondary);
 }
 
-a[rel='noopener noreferrer']:focus,
-a[rel='noopener noreferrer']:hover {
-  color: var(--secondary);
-}
-
 blockquote,
 li,
 p {
