@@ -7,19 +7,19 @@
       <router-link to="/about">About</router-link>
     </li>
     <li class="m-0 row-start-1" v-if="dividers">
-      <p class="text-meta text-xs" aria-hidden="true">&#8226;</p>
+      <p class="text-meta text-base" aria-hidden="true">&#8226;</p>
     </li>
     <li class="m-0 row-start-1">
       <router-link to="/archive">Archive</router-link>
     </li>
     <li class="m-0 row-start-1" v-if="dividers">
-      <p class="text-meta text-xs" aria-hidden="true">&#8226;</p>
+      <p class="text-meta text-base" aria-hidden="true">&#8226;</p>
     </li>
     <li class="m-0 row-start-1">
       <router-link to="/lists">Lists</router-link>
     </li>
     <li class="m-0 row-start-1" v-if="dividers">
-      <p class="text-meta text-xs" aria-hidden="true">&#8226;</p>
+      <p class="text-meta text-base" aria-hidden="true">&#8226;</p>
     </li>
     <li class="m-0 row-start-1" v-if="!slim">
       <a href="/rss">RSS</a>
