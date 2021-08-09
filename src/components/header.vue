@@ -5,7 +5,7 @@
     >
       <router-link
         to="/"
-        class="focus:text-secondary font-bold font-parkly hover:no-underline hover:text-secondary text-lg text-primary"
+        class="focus:text-secondary font-bold font-captainEdward hover:no-underline hover:text-secondary text-lg text-primary"
       >
         Juan Villela
       </router-link>
