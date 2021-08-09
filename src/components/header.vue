@@ -1,11 +1,13 @@
 <template>
-  <header class="bg-background-dark grid w-full">
+  <header
+    class="bg-background-dark border-0 border-b border-solid border-tertiary grid w-full"
+  >
     <section
       class="col-start-2 flex items-center justify-between row-start-2 w-full"
     >
       <router-link
         to="/"
-        class="focus:text-secondary font-bold font-captainEdward hover:no-underline hover:text-secondary text-xl text-primary"
+        class="focus:no-underline focus:text-secondary font-bold font-captainEdward hover:no-underline hover:text-secondary text-xl text-primary"
       >
         Juan Villela
       </router-link>
