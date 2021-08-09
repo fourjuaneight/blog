@@ -1,4 +1,5 @@
 <template>
+  <Header />
   <main>
     <router-view />
   </main>
@@ -7,10 +8,11 @@
 
 <script lang="ts">
 import Footer from './components/footer.vue';
+import Header from './components/header.vue';
 
 export default {
   name: 'App',
-  components: { Footer },
+  components: { Footer, Header },
 };
 </script>
 
