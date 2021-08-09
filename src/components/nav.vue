@@ -1,5 +1,8 @@
 <template>
-  <ul class="flex flex-wrap items-center justify-center list-none my-2">
+  <ul
+    class="flex flex-wrap items-center justify-center list-none"
+    :class="slim ? 'm-0' : 'my-2'"
+  >
     <li class="m-0">
       <router-link to="/about">About</router-link>
     </li>
