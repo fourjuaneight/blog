@@ -119,28 +119,28 @@
     />
     <link
       rel="preload"
-      href="/fonts/Nunito-Regular-sub.woff2"
+      href="/fonts/ShipsWhistle-Regular-sub.woff2"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
     />
     <link
       rel="preload"
-      href="/fonts/Nunito-Regular-sub.woff"
+      href="/fonts/ShipsWhistle-Regular-sub.woff"
       as="font"
       type="font/woff"
       crossorigin="anonymous"
     />
     <link
       rel="preload"
-      href="/fonts/Nunito-Bold-sub.woff2"
+      href="/fonts/ShipsWhistle-Bold-sub.woff2"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
     />
     <link
       rel="preload"
-      href="/fonts/Nunito-Bold-sub.woff"
+      href="/fonts/ShipsWhistle-Bold-sub.woff"
       as="font"
       type="font/woff"
       crossorigin="anonymous"
@@ -161,20 +161,20 @@
           'Captain Edward',
           'url(/fonts/CaptainEdward-Regular.woff2) format("woff2"), url(/fonts/CaptainEdward-Regular.woff) format("woff")'
         );
-        const nunitoRegular = new FontFace(
-          'Nunito',
-          'url(/fonts/Nunito-Regular.woff2) format("woff2"), url(/fonts/Nunito-Regular.woff) format("woff")'
+        const shipsWhistleRegular = new FontFace(
+          'Ships Whistle',
+          'url(/fonts/ShipsWhistle-Regular.woff2) format("woff2"), url(/fonts/ShipsWhistle-Regular.woff) format("woff")'
         );
-        const nunitoBold = new FontFace(
-          'Nunito',
-          'url(/fonts/Nunito-Bold.woff2) format("woff2"), url(/fonts/Nunito-Bold.woff) format("woff")',
+        const shipsWhistleBold = new FontFace(
+          'Ships Whistle',
+          'url(/fonts/ShipsWhistle-Bold.woff2) format("woff2"), url(/fonts/ShipsWhistle-Bold.woff) format("woff")',
           { weight: '700' }
         );
 
         Promise.all([
           captainEdward.load(),
-          nunitoBold.load(),
-          nunitoRegular.load(),
+          shipsWhistleBold.load(),
+          shipsWhistleRegular.load(),
         ]).then(fonts => {
           fonts.forEach(font => {
             document.fonts.add(font);
@@ -184,7 +184,7 @@
     </script>
   </head>
 
-  <body class="font-nunito">
+  <body class="font-shipsWhistle">
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>

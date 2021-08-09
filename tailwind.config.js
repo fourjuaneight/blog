@@ -24,7 +24,7 @@ module.exports = {
     },
     fontFamily: {
       captainEdward: ['Captain Edward', 'serif'],
-      nunito: ['Nunito', 'sans-serif'],
+      shipsWhistle: ['Ships Whistle', 'sans-serif'],
       dankMono: ['Dank Mono', 'monospace'],
     },
     zIndex: {

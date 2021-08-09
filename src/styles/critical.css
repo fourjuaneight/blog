@@ -32,18 +32,18 @@
 }
 
 @font-face {
-  font-family: Nunito;
-  src: url(/fonts/Nunito-Regular-sub.woff2) format('woff2'),
-    url(/fonts/Nunito-Regular-sub.woff) format('woff');
+  font-family: Ships Whistle;
+  src: url(/fonts/ShipsWhistle-Regular-sub.woff2) format('woff2'),
+    url(/fonts/ShipsWhistle-Regular-sub.woff) format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: Nunito;
-  src: url(/fonts/Nunito-Bold-sub.woff2) format('woff2'),
-    url(/fonts/Nunito-Bold-sub.woff) format('woff');
+  font-family: Ships Whistle;
+  src: url(/fonts/ShipsWhistle-Bold-sub.woff2) format('woff2'),
+    url(/fonts/ShipsWhistle-Bold-sub.woff) format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -96,6 +96,6 @@ html {
 
 body {
   color: var(--foreground);
-  font-family: Nunito, sans-serif;
+  font-family: Ships Whistle, sans-serif;
   overflow-x: hidden;
 }
