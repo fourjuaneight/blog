@@ -1,5 +1,6 @@
 const pallete = {
   background: 'var(--background)',
+  'background-dark': 'var(--background-dark)',
   foreground: 'var(--foreground)',
   meta: 'var(--meta)',
   selection: 'var(--selection)',
