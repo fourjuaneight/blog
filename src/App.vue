@@ -26,6 +26,6 @@ footer {
 
 header,
 footer {
-  grid-template-rows: minmax(1rem, 1fr) min-content minmax(1rem, 1fr);
+  grid-template-rows: minmax(0.5rem, 1fr) min-content minmax(0.5rem, 1fr);
 }
 </style>
