@@ -3,6 +3,7 @@ const pallete = {
   'background-dark': 'var(--background-dark)',
   foreground: 'var(--foreground)',
   meta: 'var(--meta)',
+  primary: 'var(--primary)',
   selection: 'var(--selection)',
   secondary: 'var(--secondary)',
   tertiary: 'var(--tertiary)',

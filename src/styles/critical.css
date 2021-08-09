@@ -3,6 +3,7 @@
   --background-dark: #ffffff;
   --foreground: #333333;
   --meta: #9b9b9b;
+  --primary: #7816d4;
   --selection: #999;
   --secondary: #0a799d;
   --tertiary: #597480;
@@ -15,6 +16,7 @@
     --background: #333333;
     --background-dark: #1a1a1a;
     --foreground: #f5f4f2;
+    --primary: #9333ea;
     --secondary: #bdecfb;
     --tertiary: #859faa;
   }
