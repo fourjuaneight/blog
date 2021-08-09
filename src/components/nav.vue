@@ -9,12 +9,6 @@
     <li class="m-0 row-start-1" v-if="dividers">
       <p class="text-meta text-xs" aria-hidden="true">&#8226;</p>
     </li>
-    <li class="m-0 row-start-1" v-if="!slim">
-      <router-link to="/uses">Uses</router-link>
-    </li>
-    <li class="m-0 row-start-1" v-if="dividers">
-      <p class="text-meta text-xs" aria-hidden="true">&#8226;</p>
-    </li>
     <li class="m-0 row-start-1">
       <router-link to="/archive">Archive</router-link>
     </li>
