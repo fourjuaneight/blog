@@ -13,3 +13,19 @@ export default {
   components: { Footer },
 };
 </script>
+
+<style>
+header,
+main,
+footer {
+  grid-template-columns: minmax(1rem, 1fr) minmax(18rem, 100rem) minmax(
+      1rem,
+      1fr
+    );
+}
+
+header,
+footer {
+  grid-template-rows: minmax(1rem, 1fr) min-content minmax(1rem, 1fr);
+}
+</style>
