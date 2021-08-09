@@ -3,35 +3,7 @@
     <section
       class="col-start-2 flex flex-col items-center justify-center row-start-2 w-full"
     >
-      <ul class="flex flex-wrap items-center justify-center list-none my-2">
-        <li class="m-0">
-          <router-link to="/about">About</router-link>
-        </li>
-        <li class="mx-2 my-0">
-          <p class="text-meta text-xs" aria-hidden="true">&#8226;</p>
-        </li>
-        <li class="m-0">
-          <router-link to="/uses">Uses</router-link>
-        </li>
-        <li class="mx-2 my-0">
-          <p class="text-meta text-xs" aria-hidden="true">&#8226;</p>
-        </li>
-        <li class="m-0">
-          <router-link to="/archive">Archive</router-link>
-        </li>
-        <li class="mx-2 my-0">
-          <p class="text-meta text-xs" aria-hidden="true">&#8226;</p>
-        </li>
-        <li class="m-0">
-          <router-link to="/lists">Lists</router-link>
-        </li>
-        <li class="mx-2 my-0">
-          <p class="text-meta text-xs" aria-hidden="true">&#8226;</p>
-        </li>
-        <li class="m-0">
-          <a href="/rss">RSS</a>
-        </li>
-      </ul>
+      <Nav dividers :slim="false" />
       <ul class="flex flex-wrap items-center justify-center list-none my-2">
         <li class="m-0">
           <p class="text-sm">&copy; 2017-{{ copyYear }} Juan Villela</p>
@@ -57,10 +29,13 @@
 <script lang="ts">
 import { getYear } from 'date-fns';
 
+import Nav from './nav.vue';
+
 const date = new Date();
 
 export default {
   name: 'Footer',
+  components: { Nav },
   data: () => ({ copyYear: getYear(date) }),
 };
 </script>
