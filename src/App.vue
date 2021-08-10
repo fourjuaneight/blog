@@ -1,11 +1,3 @@
-<template>
-  <Header />
-  <main>
-    <router-view />
-  </main>
-  <Footer />
-</template>
-
 <script lang="ts">
 import Footer from './components/footer.vue';
 import Header from './components/header.vue';
@@ -15,6 +7,14 @@ export default {
   components: { Footer, Header },
 };
 </script>
+
+<template>
+  <Header />
+  <main>
+    <router-view />
+  </main>
+  <Footer />
+</template>
 
 <style>
 header,

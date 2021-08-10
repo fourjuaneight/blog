@@ -1,3 +1,12 @@
+<script lang="ts">
+import Nav from './nav.vue';
+
+export default {
+  name: 'Header',
+  components: { Nav },
+};
+</script>
+
 <template>
   <header
     class="bg-background-dark border-0 border-b border-solid border-tertiary grid w-full"
@@ -15,12 +24,3 @@
     </section>
   </header>
 </template>
-
-<script lang="ts">
-import Nav from './nav.vue';
-
-export default {
-  name: 'Header',
-  components: { Nav },
-};
-</script>

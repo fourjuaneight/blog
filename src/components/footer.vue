@@ -1,3 +1,17 @@
+<script lang="ts">
+import { getYear } from 'date-fns';
+
+import Nav from './nav.vue';
+
+const date = new Date();
+
+export default {
+  name: 'Footer',
+  components: { Nav },
+  data: () => ({ copyYear: getYear(date) }),
+};
+</script>
+
 <template>
   <footer class="grid w-full">
     <section
@@ -27,17 +41,3 @@
     </section>
   </footer>
 </template>
-
-<script lang="ts">
-import { getYear } from 'date-fns';
-
-import Nav from './nav.vue';
-
-const date = new Date();
-
-export default {
-  name: 'Footer',
-  components: { Nav },
-  data: () => ({ copyYear: getYear(date) }),
-};
-</script>

@@ -1,3 +1,19 @@
+<script lang="ts">
+export default {
+  name: 'Nav',
+  props: {
+    dividers: {
+      type: Boolean,
+      required: true,
+    },
+    slim: {
+      type: Boolean,
+      required: true,
+    },
+  },
+};
+</script>
+
 <template>
   <ul
     class="auto-cols-min gap-x-3 grid grid-rows-1 items-center list-none"
@@ -26,19 +42,3 @@
     </li>
   </ul>
 </template>
-
-<script lang="ts">
-export default {
-  name: 'Nav',
-  props: {
-    dividers: {
-      type: Boolean,
-      required: true,
-    },
-    slim: {
-      type: Boolean,
-      required: true,
-    },
-  },
-};
-</script>
