@@ -1,0 +1,114 @@
+:root {
+  --background: #f5f4f2;
+  --background-dark: #ffffff;
+  --foreground: #333333;
+  --meta: #9b9b9b;
+  --primary: #9333ea;
+  --selection: #999;
+  --secondary: #0a799d;
+  --tertiary: #597480;
+  --duration: 208ms;
+  --transition: cubic-bezier(0.155, 0.64, 0.24, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #333333;
+    --background-dark: #1a1a1a;
+    --foreground: #f5f4f2;
+    --primary: #c390f3;
+    --secondary: #bdecfb;
+    --tertiary: #859faa;
+  }
+}
+
+@font-face {
+  font-family: Captain Edward;
+  src: url(/fonts/CaptainEdward-Regular-sub.woff2) format('woff2'),
+    url(/fonts/CaptainEdward-Regular-sub.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ships Whistle;
+  src: url(/fonts/ShipsWhistle-Regular-sub.woff2) format('woff2'),
+    url(/fonts/ShipsWhistle-Regular-sub.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Ships Whistle;
+  src: url(/fonts/ShipsWhistle-Bold-sub.woff2) format('woff2'),
+    url(/fonts/ShipsWhistle-Bold-sub.woff) format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Dank Mono;
+  src: url(/fonts/DankMono-Regular.woff2) format('woff2'),
+    url(/fonts/DankMono-Regular.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Dank Mono;
+  src: url(/fonts/DankMono-Italic.woff2) format('woff2'),
+    url(/fonts/DankMono-Italic.woff) format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+::-moz-selection {
+  background-color: var(--selection);
+}
+
+::selection {
+  background-color: var(--selection);
+}
+
+*:focus {
+  outline-color: var(--primary);
+}
+
+html,
+body {
+  background-color: var(--background);
+}
+
+html {
+  box-sizing: border-box;
+  font-feature-settings: 'liga' 1;
+  font-size: 16px;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  color: var(--foreground);
+  font-family: Ships Whistle, sans-serif;
+  overflow-x: hidden;
+}
+
+header,
+main,
+footer {
+  grid-template-columns: minmax(1rem, 1fr) minmax(18rem, 100rem) minmax(
+      1rem,
+      1fr
+    );
+}
+header,
+footer {
+  grid-template-rows: minmax(0.5rem, 1fr) min-content minmax(0.5rem, 1fr);
+}
