@@ -1,0 +1,169 @@
+<head>
+  <base href="{{ .Site.BaseURL }}" />
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  {{ hugo.Generator }}
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta
+    name="viewport"
+    content="width=device-width,minimum-scale=1.0,initial-scale=1.0,maximum-scale=5.0,viewport-fit=cover"
+  />
+  <title>
+    {{ if .IsHome }} {{ .Site.Title }} {{ else }} {{ .Title }} | {{ .Site.Title
+    }} {{ end }}
+  </title>
+  <link rel="canonical" href="{{ .Permalink }}" />
+  {{ $about := resources.Get "img/about.png" }}
+  <meta name="description" content="{{ .Site.Params.meta.description }}" />
+  <meta property="author" content="{{ .Site.Params.meta.author }}" />
+  <meta
+    property="og:description"
+    content="{{ .Site.Params.meta.description }}"
+  />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:site_name" content="{{ .Site.Title }}" />
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="{{ $about }}" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="twitter:site" content="{{ .Site.Params.meta.social }}" />
+  <meta name="twitter:image" content="{{ $about }}" />
+  <meta name="twitter:card" content="summary" />
+  <meta
+    name="twitter:description"
+    content="{{ .Site.Params.meta.description }}"
+  />
+  <meta name="twitter:title" content="{{ .Title }}" />
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": "{{ .Title }}",
+      "url": "{{ .Permalink }}"
+    }
+  </script>
+  <meta name="image" content="{{ $about }}" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}" />
+  {{ $favicon16 := resources.Get "icons/favicon-16x16.png" }}
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ $favicon16 }}" />
+  {{ $favicon32 := resources.Get "icons/favicon-32x32.png" }}
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ $favicon32 }}" />
+  {{ $icon120 := resources.Get "icons/icon-120x120.png" }}
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ $icon120 }}" />
+  {{ $icon180 := resources.Get "icons/icon-180x180.png" }}
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ $icon180 }}" />
+  {{ $icon152 := resources.Get "icons/icon-152x152.png" }}
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ $icon152 }}" />
+  {{ $icon167 := resources.Get "icons/icon-167x167.png" }}
+  <link rel="apple-touch-icon" sizes="167x167" href="{{ $icon167 }}" />
+  {{ $icon256 := resources.Get "icons/icon-256x256.png" }}
+  <link rel="apple-touch-icon" sizes="256x256" href="{{ $icon256 }}" />
+  {{ $icon512 := resources.Get "icons/icon-512x512.png" }}
+  <link rel="apple-touch-icon" sizes="512x512" href="{{ $icon512 }}" />
+  {{ $spt := resources.Get "icons/safari-pinned-tab.svg" }}
+  <link rel="mask-icon" color="#22242f" href="{{ $spt }}" />
+  <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="{{ .Site.Title }}"
+    href="{{ .Site.BaseURL }}/feed.xml"
+  />
+  <link
+    rel="sitemap"
+    type="application/xml"
+    href="{{ .Site.BaseURL }}/sitemap.xml"
+  />
+  <link rel="manifest" href="{{ .Site.BaseURL }}/manifest.json" />
+  <meta name="theme-color" content="{{ .Site.Params.meta.theme }}" />
+  <link
+    rel="preload"
+    href="/fonts/CaptainEdward-Regular-sub.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    href="/fonts/CaptainEdward-Regular-sub.woff"
+    as="font"
+    type="font/woff"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    href="/fonts/ShipsWhistle-Regular-sub.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    href="/fonts/ShipsWhistle-Regular-sub.woff"
+    as="font"
+    type="font/woff"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    href="/fonts/ShipsWhistle-Bold-sub.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    href="/fonts/ShipsWhistle-Bold-sub.woff"
+    as="font"
+    type="font/woff"
+    crossorigin="anonymous"
+  />
+  {{ $reset := resources.Get "css/reset.css" }} {{ $critical := resources.Get
+  "css/critical.css" }} {{ $styles := slice $reset $critical | resources.Concat
+  "css/styles.css" | postCSS | minify }} {{ $rawCSS := $styles.Content | safeCSS
+  }}
+  <style>
+    {{ $rawCSS }}
+  </style>
+  <script>
+    /**
+     * Font loading via FontFace API to avoid FOUT.
+     * After US charset subset files load, load full Latin chartset files.
+     */
+    if ('fonts' in document) {
+      const captainEdward = new FontFace(
+        'Captain Edward',
+        'url(/fonts/CaptainEdward-Regular.woff2) format("woff2"), url(/fonts/CaptainEdward-Regular.woff) format("woff")'
+      );
+      const shipsWhistleRegular = new FontFace(
+        'Ships Whistle',
+        'url(/fonts/ShipsWhistle-Regular.woff2) format("woff2"), url(/fonts/ShipsWhistle-Regular.woff) format("woff")'
+      );
+      const shipsWhistleBold = new FontFace(
+        'Ships Whistle',
+        'url(/fonts/ShipsWhistle-Bold.woff2) format("woff2"), url(/fonts/ShipsWhistle-Bold.woff) format("woff")',
+        { weight: '700' }
+      );
+
+      Promise.all([
+        captainEdward.load(),
+        shipsWhistleBold.load(),
+        shipsWhistleRegular.load(),
+      ]).then(fonts => {
+        fonts.forEach(font => {
+          document.fonts.add(font);
+        });
+      });
+    }
+  </script>
+  {{ $tailwind := resources.Get "css/tw.css" }} {{ $main := resources.Get
+  "css/main.css" }} {{ $styles := slice $tailwind $main | resources.Concat
+  "css/main.css" | postCSS | minify }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" />
+</head>
