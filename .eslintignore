@@ -12,3 +12,4 @@ dist-ssr
 node_modules
 public
 scripts/images.ts
+*.ts

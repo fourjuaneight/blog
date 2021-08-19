@@ -76,3 +76,5 @@ test.js
 api/utils/template.html
 .stignore
 .nova
+assets/css/tw.css
+resources

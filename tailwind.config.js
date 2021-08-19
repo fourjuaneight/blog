@@ -12,7 +12,7 @@ const pallete = {
 module.exports = {
   purge: {
     enabled: true,
-    content: ['./index.html', './src/**/*.vue'],
+    content: ['./layouts/**/*.html'],
   },
   darkMode: 'media',
   theme: {

@@ -1,0 +1,20 @@
+---
+baseURL: /
+languageCode: en-us
+title: Juan Villela
+enableRobotsTXT: true
+publishdir: dist
+metaDataFormat: yaml
+disableKinds: ["taxonomy", "taxonomyTerm"]
+
+params:
+  meta:
+    description: I like websites. Occasionally, I make them.
+    author: Juan Villela
+    social: fourjuaneight
+    theme: '#9580ff'
+
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5

@@ -1,4 +1,4 @@
-const prettierConf = require('./prettier.config');
+const prettierConfig = require('./prettier.config');
 
 module.exports = {
   env: {
@@ -7,34 +7,28 @@ module.exports = {
     jest: true,
     node: true,
   },
-  extends: [
-    'plugin:vue/base',
-    'plugin:vue/essential',
-    'plugin:@typescript-eslint/recommended',
-    'prettier/@typescript-eslint',
-    '@vue/airbnb',
-    '@vue/prettier',
-    '@vue/prettier/@typescript-eslint',
-    '@vue/typescript/recommended',
-  ],
+  extends: ['eslint:recommended', 'prettier'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
     tw: true,
   },
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 2020,
-    extraFileExtensions: [
-      ".vue"
-    ],
-    project: 'tsconfig.json',
+    ecmaFeatures: {
+      classes: true,
+      impliedStrict: true,
+      jsx: true,
+    },
     sourceType: 'module',
   },
+  plugins: ['prettier'],
   rules: {
     'id-length': [
       2,
       {
-        exceptions: ['_', 'a', 'b', 'c', 'i', 'x', 'y', 'z'],
+        exceptions: ['_', 'a', 'b', 'i', 'x', 'y', 'z'],
       },
     ],
     'no-console': [
@@ -45,13 +39,7 @@ module.exports = {
     ],
     'no-case-declarations': 0,
     'no-nested-ternary': 0,
-    'prettier/prettier': ['error', prettierConf],
-    '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/interface-name-prefix': 'off',
-    '@typescript-eslint/no-useless-constructor': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/no-unused-vars': 'off',
-    'vue/no-multiple-template-root': 0
+    'no-useless-constructor': 0,
+    'prettier/prettier': ['error', prettierConfig],
   },
 };
