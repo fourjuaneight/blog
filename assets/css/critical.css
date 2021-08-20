@@ -23,11 +23,20 @@
 }
 
 @font-face {
-  font-family: Captain Edward;
-  src: url(/fonts/CaptainEdward-Regular-sub.woff2) format('woff2'),
-    url(/fonts/CaptainEdward-Regular-sub.woff) format('woff');
-  font-weight: 400;
+  font-family: MD Nichrome;
+  src: url(/fonts/MD-Nichrome-Black-sub.woff2) format('woff2'),
+    url(/fonts/MD-Nichrome-Black-sub.woff) format('woff');
+  font-weight: 900;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: MD Nichrome;
+  src: url(/fonts/MD-Nichrome-Black-Oblique-sub.woff2) format('woff2'),
+    url(/fonts/MD-Nichrome-Black-Oblique-sub.woff) format('woff');
+  font-weight: 900;
+  font-style: oblique;
   font-display: swap;
 }
 

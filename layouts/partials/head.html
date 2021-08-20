@@ -84,14 +84,28 @@
   <meta name="theme-color" content="{{ .Site.Params.meta.theme }}" />
   <link
     rel="preload"
-    href="/fonts/CaptainEdward-Regular-sub.woff2"
+    href="/fonts/MD-Nichrome-Black-sub.woff2"
     as="font"
     type="font/woff2"
     crossorigin="anonymous"
   />
   <link
     rel="preload"
-    href="/fonts/CaptainEdward-Regular-sub.woff"
+    href="/fonts/MD-Nichrome-Black-sub.woff"
+    as="font"
+    type="font/woff"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    href="/fonts/MD-Nichrome-Black-Oblique-sub.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    href="/fonts/MD-Nichrome-Black-Oblique-sub.woff"
     as="font"
     type="font/woff"
     crossorigin="anonymous"
@@ -137,9 +151,15 @@
      * After US charset subset files load, load full Latin chartset files.
      */
     if ('fonts' in document) {
-      const captainEdward = new FontFace(
-        'Captain Edward',
-        'url(/fonts/CaptainEdward-Regular.woff2) format("woff2"), url(/fonts/CaptainEdward-Regular.woff) format("woff")'
+      const mdNichromeBlack = new FontFace(
+        'MD Nichrome',
+        'url(/fonts/MD-Nichrome-Black.woff2) format("woff2"), url(/fonts/MD-Nichrome-Black.woff) format("woff")',
+        { weight: '900' }
+      );
+      const mdNichromeBlackOblique = new FontFace(
+        'MD Nichrome',
+        'url(/fonts/MD-Nichrome-Black-Oblique.woff2) format("woff2"), url(/fonts/MD-Nichrome-Black-Oblique.woff) format("woff")',
+        { style: 'oblique', weight: '900' }
       );
       const shipsWhistleRegular = new FontFace(
         'Ships Whistle',
@@ -152,7 +172,8 @@
       );
 
       Promise.all([
-        captainEdward.load(),
+        mdNichromeBlack.load(),
+        mdNichromeBlackOblique.load(),
         shipsWhistleBold.load(),
         shipsWhistleRegular.load(),
       ]).then(fonts => {

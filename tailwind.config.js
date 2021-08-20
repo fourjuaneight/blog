@@ -23,7 +23,7 @@ module.exports = {
       stroke: pallete,
     },
     fontFamily: {
-      captainEdward: ['Captain Edward', 'serif'],
+      mdNichrome: ['MD Nichrome', 'serif'],
       shipsWhistle: ['Ships Whistle', 'sans-serif'],
       dankMono: ['Dank Mono', 'monospace'],
     },
