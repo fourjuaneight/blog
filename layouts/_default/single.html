@@ -1,0 +1,7 @@
+{{ define "main" }}
+<article>
+  <h1>{{ .Title }}</h1>
+  {{ if eq .Type "posts" }} {{ partial "meta.html" . }} {{ end }}
+  <section>{{ .Content }}</section>
+</article>
+{{ end }}
