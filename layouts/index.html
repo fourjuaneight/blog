@@ -1,1 +1,4 @@
-{{ define "main" }} {{end}}
+{{ define "main" }}
+<h2>Recent posts</h2>
+{{ $blog := ($.Site.GetPage "section" "posts").Pages }} {{ range last 4 $blog }}
+{{ .Render "li" }} {{ end }} {{end}}
