@@ -1,7 +1,8 @@
 ---
 title: Focus
 date: 2020-01-01
-tag: yearly-theme
+tags:
+  - yearly-theme
 draft: false
 ---
 

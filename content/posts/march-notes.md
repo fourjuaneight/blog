@@ -1,7 +1,8 @@
 ---
 title: March Notes
 date: 2020-03-31
-tag: monthly-notes
+tags:
+  - monthly-notes
 draft: false
 ---
 

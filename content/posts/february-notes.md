@@ -1,7 +1,8 @@
 ---
 title: February Notes
 date: 2020-02-29
-tag: monthly-notes
+tags:
+  - monthly-notes
 draft: false
 ---
 

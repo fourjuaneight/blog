@@ -1,7 +1,8 @@
 ---
 title: On Abstracting Code
 date: '2021-05-31'
-tag: developement
+tags:
+  - developement
 draft: false
 ---
 

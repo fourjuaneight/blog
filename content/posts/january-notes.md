@@ -1,7 +1,8 @@
 ---
 title: January Notes
 date: 2020-01-31
-tag: monthly-notes
+tags:
+  - monthly-notes
 draft: false
 ---
 

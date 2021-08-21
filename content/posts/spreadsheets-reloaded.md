@@ -1,7 +1,8 @@
 ---
 title: Spreadsheets Reloaded
 date: 2019-11-20
-tag: productivity
+tags:
+  - productivity
 code: true
 draft: false
 ---

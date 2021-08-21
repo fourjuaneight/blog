@@ -1,7 +1,8 @@
 ---
 title: Procrastinating
 date: '2017-07-23'
-tag: procrastination
+tags:
+  - procrastination
 draft: false
 ---
 

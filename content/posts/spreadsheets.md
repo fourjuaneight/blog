@@ -1,7 +1,8 @@
 ---
 title: Spreadsheets
 date: '2019-09-08'
-tag: productivity
+tags:
+  - productivity
 draft: false
 ---
 
