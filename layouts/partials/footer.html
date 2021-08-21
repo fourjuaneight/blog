@@ -1,3 +1,4 @@
+{{ $navLinks := sub (len .Site.Data.nav.footer) 1 }}
 <footer class="grid w-full">
   <section
     class="col-start-2 flex flex-col items-center justify-center row-start-2 w-full"
@@ -5,34 +6,22 @@
     <ul
       class="auhref-cols-min gap-x-3 grid grid-rows-1 items-center list-none my-2"
     >
-      <li class="m-0 row-start-1">
-        <a href='{{ "about" | absURL }}'>About</a>
+      {{ range $i, $item := .Site.Data.nav.footer }}
+      <li class="m-0 row-start-1" data-item="{{ $i }}">
+        <a href="{{ $item.link | absURL }}">{{ $item.label }}</a>
       </li>
-      <li class="m-0 row-start-1">
-        <p class="m-0 text-meta text-base" aria-hidden="true">&#8226;</p>
-      </li>
-      <li class="m-0 row-start-1">
-        <a href='{{ "archive" | absURL }}'>Archive</a>
-      </li>
+      {{ if ne $i $navLinks }}
       <li class="m-0 row-start-1">
         <p class="m-0 text-meta text-base" aria-hidden="true">&#8226;</p>
       </li>
-      <li class="m-0 row-start-1">
-        <a href='{{ "lists" | absURL }}'>Lists</a>
-      </li>
-      <li class="m-0 row-start-1">
-        <p class="m-0 text-meta text-base" aria-hidden="true">&#8226;</p>
-      </li>
-      <li class="m-0 row-start-1">
-        <a href='{{ "rss" | absURL }}'>RSS</a>
-      </li>
+      {{ end }} {{ end }}
     </ul>
     <ul
       class="auto-cols-auto gap-x-3 grid grid-rows-1 items-center list-none my-2"
     >
       <li class="m-0 row-start-1">
         <p class="m-0 text-base">
-          &copy; 2017-{{ time.Now.Format "2006" }} Juan Villela
+          &copy; 2017-{{ time.Now.Format "2006" }} {{ .Site.Title }}
         </p>
       </li>
       <li class="m-0 row-start-1">
