@@ -4,11 +4,23 @@
     class="col-start-2 flex flex-col items-center justify-center row-start-2 w-full"
   >
     <ul
-      class="auhref-cols-min gap-x-3 grid grid-rows-1 items-center list-none my-2"
+      class="auto-cols-min gap-x-1 grid grid-rows-1 items-center list-none xxs:gap-x-3 my-2"
     >
       {{ range $i, $item := .Site.Data.nav.footer }}
       <li class="m-0 row-start-1" data-item="{{ $i }}">
-        <a href="{{ $item.link | absURL }}">{{ $item.label }}</a>
+        <a
+          href="{{ $item.link | absURL }}"
+          {{
+          if
+          .external
+          }}target="_blank"
+          rel="noopener noreferrer"
+          {{
+          end
+          }}
+        >
+          {{ $item.label }}
+        </a>
       </li>
       {{ if ne $i $navLinks }}
       <li class="m-0 row-start-1">
@@ -17,7 +29,7 @@
       {{ end }} {{ end }}
     </ul>
     <ul
-      class="auto-cols-auto gap-x-3 grid grid-rows-1 items-center list-none my-2"
+      class="auto-cols-auto gap-x-1 grid grid-rows-1 items-center list-none xxs:gap-x-3 my-2"
     >
       <li class="m-0 row-start-1">
         <p class="m-0 text-base">
