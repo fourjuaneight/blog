@@ -1,0 +1,4 @@
+{{ define "main" }}
+<h1>Recent blog posts</h1>
+{{ $blog := .Paginate (where .Data.Pages "Type" "blog") 10 }} {{ range
+$blog.Pages }} {{ .Render "li"}} {{ end }} {{ end }}
