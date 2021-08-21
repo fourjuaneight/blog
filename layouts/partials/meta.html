@@ -1,0 +1,12 @@
+<section>
+  <time datetime='{{ .Date.Format "2006-01-02" }}'>
+    <span aria-label="Posted on">&tau;</span>&nbsp;{{ .Date.Format "2006-01-02"
+    }}
+  </time>
+  <ul>
+    {{/* Loop over tags list in front-matter */}} {{ range $key, $tag :=
+    .Params.tags }}
+    <li>#<a href="/tags/{{ $tag }}" itemprop="about">{{ $tag }}</a></li>
+    {{ end }}
+  </ul>
+</section>
