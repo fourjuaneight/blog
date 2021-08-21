@@ -1,11 +1,44 @@
 ---
 baseURL: /
-languageCode: en-us
 title: Juan Villela
+# content
+languageCode: en-us
 enableRobotsTXT: true
 publishdir: dist
 metaDataFormat: yaml
-disableKinds: ["taxonomy", "taxonomyTerm"]
+disableKinds: ['taxonomyTerm']
+footnoteReturnLinkContents: ↩
+summarylength: 40
+enableEmoji: true
+# syntax highlighting
+pygmentsCodeFences: true
+pygmentsCodefencesGuessSyntax: true
+pygmentsOptions: 'lineseparator=<br>'
+pygmentsStyle: dracula
+pygmentsUseClasses: true
+pygmentsUseClassic: false
+
+blackfriday:
+  hrefTargetBlank: true
+  plainIDAnchors: true
+  OpenLinksInNewWindow: true
+
+taxonomies:
+  tags: 'tags'
+
+permalinks:
+  section: '/:filename/'
+  posts: '/posts/:filename/'
+  tags: '/tags/:slug/'
+
+outputs:
+  home: ['html']
+  section: ['html', 'rss']
+
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
 
 params:
   meta:
@@ -13,8 +46,3 @@ params:
     author: Juan Villela
     social: fourjuaneight
     theme: '#9580ff'
-
-sitemap:
-  changefreq: monthly
-  filename: sitemap.xml
-  priority: 0.5
