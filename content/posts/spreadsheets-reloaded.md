@@ -3,7 +3,6 @@ title: Spreadsheets Reloaded
 date: 2019-11-20
 tags:
   - productivity
-code: true
 draft: false
 ---
 
