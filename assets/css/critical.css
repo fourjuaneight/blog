@@ -112,12 +112,21 @@ body {
 header,
 main,
 footer {
-  grid-template-columns: minmax(1rem, 1fr) minmax(18rem, 100rem) minmax(
+  grid-template-columns: minmax(1rem, 1fr) minmax(18rem, 60rem) minmax(
       1rem,
       1fr
     );
 }
-header,
-footer {
+
+header {
   grid-template-rows: minmax(0.5rem, 1fr) min-content minmax(0.5rem, 1fr);
+}
+
+main {
+  grid-template-rows: minmax(0.5rem, 1fr) auto minmax(0.5rem, 1fr);
+  min-height: calc(100vh - 9rem);
+}
+
+footer {
+  grid-template-rows: minmax(1rem, 1fr) min-content minmax(1rem, 1fr);
 }
