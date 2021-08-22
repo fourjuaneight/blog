@@ -1,6 +1,5 @@
-<article>
-  <a href="{{ .Permalink }}"><h3>{{ .Title }}</h3></a>
+<article class="w-full">
+  <a href="{{ .Permalink }}"><h2>{{ .Title }}</h2></a>
   {{ partial "meta.html" . }}
   <p>{{ .Summary }}</p>
-  <a href="{{ .Permalink }}">Continue reading</a>
 </article>

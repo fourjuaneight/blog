@@ -1,7 +1,7 @@
 {{ define "main" }}
-<article>
-  <h1>{{ .Title }}</h1>
+<article class="w-full">
+  <h1 class="text-6xl">{{ .Title }}</h1>
   {{ if eq .Type "posts" }} {{ partial "meta.html" . }} {{ end }}
-  <section>{{ .Content }}</section>
+  <section class="content">{{ .Content }}</section>
 </article>
 {{ end }}

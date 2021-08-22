@@ -3,6 +3,8 @@ a:visited {
   color: var(--foreground);
 }
 
+section.content a:focus,
+section.content a:hover,
 a:focus,
 a:hover {
   color: var(--foreground);
@@ -11,6 +13,8 @@ a:hover {
   text-decoration-color: var(--secondary);
 }
 
+section.content a[rel='noopener noreferrer']:focus,
+section.content a[rel='noopener noreferrer']:hover,
 a[rel='noopener noreferrer']:focus,
 a[rel='noopener noreferrer']:hover {
   color: var(--secondary);
@@ -91,12 +95,6 @@ h3 {
   font-weight: 700;
 }
 
-h1 code,
-h2 code,
-h3 code {
-  margin-left: 0.5rem;
-}
-
 h1 {
   display: inline-block;
   font-size: 2.25rem;
@@ -158,4 +156,59 @@ label {
 textarea {
   height: 6.75rem;
   resize: none;
+}
+
+/* Custom */
+article ol,
+article ul {
+  list-style: auto;
+  padding-left: 1rem;
+}
+
+section.content a {
+  text-decoration: underline;
+  text-decoration-color: var(--meta);
+}
+
+a.footnote-ref {
+  color: var(--secondary);
+  padding: 0 0.15rem;
+  text-decoration: none;
+}
+
+a.footnote-ref::before {
+  content: '[';
+}
+
+a.footnote-ref::after {
+  content: ']';
+}
+
+a.footnote-ref:focus,
+a.footnote-ref:hover {
+  color: var(--primary);
+}
+
+div.highlight {
+  margin: 0 0 0.75rem;
+}
+
+div.highlight pre {
+  overflow-x: auto;
+  padding: 0.75rem;
+}
+
+div.highlight pre,
+p code {
+  background-color: #1a1a1a !important;
+}
+
+p code {
+  color: var(--secondary);
+  font-size: 0.95rem;
+  padding: 0.25rem;
+}
+
+section.footnotes hr {
+  margin: 2rem 0;
 }

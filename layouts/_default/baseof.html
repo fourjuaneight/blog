@@ -4,11 +4,11 @@
   <body>
     {{ partial "header.html" . }}
     <main class="grid w-full">
-      <section
+      <div
         class="col-start-2 flex flex-col items-start justify-start row-start-2 w-full"
       >
         {{ block "main" . }}{{ end }}
-      </section>
+      </div>
     </main>
     {{ partial "footer.html" . }}
   </body>
