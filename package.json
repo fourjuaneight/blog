@@ -4,7 +4,8 @@
   "description": "👨🏽‍💻Personal blog.",
   "scripts": {
     "build": "hugo --minify",
-    "build:prod": "run-p ts tw img && hugo --minify",
+    "build:chrome": "hugo gen chromastyles > assets/css/syntax.css",
+    "build:prod": "run-p ts tw img build:chrome && hugo --minify",
     "clean": "rm -rf dist",
     "clean:node": "rm -rf node_modules",
     "tw": "tailwindcss --no-autoprefixer -i ./assets/css/tailwind.css -o ./assets/css/tw.css",

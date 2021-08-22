@@ -10,13 +10,13 @@ disableKinds: ['taxonomyTerm']
 footnoteReturnLinkContents: ↩
 summarylength: 40
 enableEmoji: true
-# syntax highlighting
-pygmentsCodeFences: true
-pygmentsCodefencesGuessSyntax: true
-pygmentsOptions: 'lineseparator=<br>'
-pygmentsStyle: dracula
-pygmentsUseClasses: true
-pygmentsUseClassic: false
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    style: dracula
+    tabWidth: 2
 
 blackfriday:
   hrefTargetBlank: true
