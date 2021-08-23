@@ -5,7 +5,7 @@
   "scripts": {
     "build": "hugo --minify",
     "build:chrome": "hugo gen chromastyles > assets/css/syntax.css",
-    "build:prod": "run-p tw img build:chrome && hugo --minify",
+    "build:prod": "run-p tw img && hugo --minify && npm run sw",
     "clean": "rm -rf dist",
     "clean:node": "rm -rf node_modules",
     "tw": "tailwindcss --no-autoprefixer -i ./assets/css/tailwind.css -o ./assets/css/tw.css",
@@ -13,6 +13,7 @@
     "format": "prettier --write \"assets/**/*.{ts,js,css,scss}\"",
     "img": "ts-node --project tsconfig.node.json \"scripts/images.ts\"",
     "lint": "eslint --fix --no-error-on-unmatched-pattern \"assets/**/*.{ts,js}\"",
+    "sw": "ts-node --project tsconfig.node.json \"scripts/cache-assets.ts\"",
     "ts": "tsup src/assets/scripts/*.ts --env.NODE_ENV production --out-dir src/js",
     "ts:watch": "tsup src/assets/scripts/*.ts --out-dir assets/js --watch src/js",
     "serve": "serve dist",
