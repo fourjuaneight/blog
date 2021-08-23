@@ -65,6 +65,7 @@ button:hover {
 
 hr {
   border: 0.0156rem dashed var(--primary);
+  margin: 2rem 0;
 }
 
 img {
@@ -212,10 +213,6 @@ p code {
   color: var(--secondary);
   font-size: 0.95rem;
   padding: 0.25rem;
-}
-
-section.footnotes hr {
-  margin: 2rem 0;
 }
 
 section.footnotes a,
