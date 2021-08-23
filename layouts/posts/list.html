@@ -1,4 +1,9 @@
-{{ define "main" }} {{ range .Data.Pages.GroupByDate "2006" }}
-<h1 class="mb-3 mr-auto">{{ .Key }}</h1>
-{{ range .Pages }} {{ .Render "li"}} {{ end }} {{ end }} {{ partial "intro.html"
-. }} {{ end }}
+{{ define "main" }}
+  {{ range .Data.Pages.GroupByDate "2006" }}
+    <h1 class="mb-3 mr-auto">{{ .Key }}</h1>
+    {{ range .Pages }}
+      {{ .Render "li"}}
+    {{ end }}
+  {{ end }}
+  {{ partial "intro.html" . }}
+{{ end }}

@@ -1,7 +1,10 @@
 {{ define "main" }}
-<h1 class="capitalize mb-3 mr-auto">
-  <span class="mr-1" aria-hidden="true">#</span>
-  {{ .Name }}
-</h1>
-{{ range .Pages }} {{ .Render "li" }} {{ end }} {{ partial "intro.html" . }} {{
-end }}
+  <h1 class="capitalize mb-3 mr-auto">
+    <span class="mr-1" aria-hidden="true">#</span>
+    {{ .Name }}
+  </h1>
+  {{ range .Pages }}
+    {{ .Render "li" }}
+  {{ end }}
+  {{ partial "intro.html" . }}
+{{ end }}

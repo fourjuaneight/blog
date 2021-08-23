@@ -12,8 +12,11 @@
     content="width=device-width,minimum-scale=1.0,initial-scale=1.0,maximum-scale=5.0,viewport-fit=cover"
   />
   <title>
-    {{ if .IsHome }} {{ .Site.Title }} {{ else }} {{ .Title }} | {{ .Site.Title
-    }} {{ end }}
+    {{ if .IsHome }}
+      {{ .Site.Title }}
+    {{ else }}
+      {{ .Title }} | {{ .Site.Title }}
+    {{ end }}
   </title>
   <link rel="canonical" href="{{ .Permalink }}" />
   {{ $about := resources.Get "img/about.png" }}
@@ -152,13 +155,11 @@
     type="font/woff"
     crossorigin="anonymous"
   />
-  {{ $reset := resources.Get "css/reset.css" }} {{ $critical := resources.Get
-  "css/critical.css" }} {{ $styles := slice $reset $critical | resources.Concat
-  "css/styles.css" | postCSS | minify }} {{ $rawCSS := $styles.Content | safeCSS
-  }}
-  <style>
-    {{ $rawCSS }}
-  </style>
+  {{ $reset := resources.Get "css/reset.css" }}
+  {{ $critical := resources.Get "css/critical.css" }}
+  {{ $styles := slice $reset $critical | resources.Concat "css/styles.css" | postCSS | minify }}
+  {{ $rawCSS := $styles.Content | safeCSS }}
+  <style>{{ $rawCSS }}</style>
   <script>
     /**
      * Font loading via FontFace API to avoid FOUT.
@@ -203,8 +204,8 @@
       });
     }
   </script>
-  {{ $tailwind := resources.Get "css/tw.css" }} {{ $main := resources.Get
-  "css/main.css" }} {{ $styles := slice $tailwind $main | resources.Concat
-  "css/main.css" | postCSS | minify }}
+  {{ $tailwind := resources.Get "css/tw.css" }}
+  {{ $main := resources.Get "css/main.css" }}
+  {{ $styles := slice $tailwind $main | resources.Concat "css/main.css" | postCSS | minify }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" />
 </head>

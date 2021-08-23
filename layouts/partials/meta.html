@@ -4,18 +4,18 @@
     {{ .Date.Format "2006-01-02" }}
   </time>
   <ul class="list-none">
-    {{/* Loop over tags list in front-matter */}} {{ range $key, $tag :=
-    .Params.tags }}
-    <li>
-      <a
-        class="tags hover:no-underline no-underline text-meta"
-        href="/tags/{{ $tag }}"
-        itemprop="about"
-      >
-        <span class="mr-1 text-tertiary" aria-hidden="true">#</span>
-        {{ $tag }}
-      </a>
-    </li>
+    {{/* Loop over tags list in front-matter */}}
+    {{ range $key, $tag := .Params.tags }}
+      <li>
+        <a
+          class="tags hover:no-underline no-underline text-meta"
+          href="/tags/{{ $tag }}"
+          itemprop="about"
+        >
+          <span class="mr-1 text-tertiary" aria-hidden="true">#</span>
+          {{ $tag }}
+        </a>
+      </li>
     {{ end }}
   </ul>
 </section>
