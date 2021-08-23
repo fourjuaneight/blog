@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "👨🏽‍💻Personal blog.",
   "scripts": {
-    "build": "hugo --minify",
+    "build": "hugo -e production --minify",
     "build:chrome": "hugo gen chromastyles > assets/css/syntax.css",
     "build:prod": "run-p tw img && hugo --minify && npm run sw",
     "clean": "rm -rf dist",

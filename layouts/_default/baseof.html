@@ -11,6 +11,8 @@
       </div>
     </main>
     {{ partial "footer.html" . }}
-    {{ partial "sw.html" . }}
+    {{ if hugo.Environment | eq "production" }}
+      {{ partial "sw.html" . }}
+    {{ end }}
   </body>
 </html>
