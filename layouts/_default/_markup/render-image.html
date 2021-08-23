@@ -13,6 +13,7 @@
     .Destination="{{ $simple.Permalink }}"
     alt="{{ .PlainText }}"
     class="mb-2 w-full"
+    loading="lazy"
   />
 {{ else }}
   <picture class="flex items-center justify-center mb-4 w-full">
@@ -25,6 +26,7 @@
       .Destination="{{ $imgPrimary.Permalink }}"
       alt="{{ .PlainText }}"
       class="max-w-sm w-full"
+      loading="lazy"
     />
   </picture>
 {{ end }}

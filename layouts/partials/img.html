@@ -9,7 +9,12 @@
 
 {{ if or (eq (index $svg 0) "svg") (eq (index $gif 0) "gif") }}
   {{ $simple := resources.Get (print "/img/" $img) }}
-  <img src="{{ $simple.Permalink }}" alt="{{ .alt }}" class="mb-2 w-full" />
+  <img
+    src="{{ $simple.Permalink }}"
+    alt="{{ .alt }}"
+    class="mb-2 w-full"
+    loading="lazy"
+  />
 {{ else }}
   <picture class="flex items-center justify-center my-4 w-full">
     {{ $avifPrimary := resources.Get (print "/img/" $avif) }}
@@ -21,6 +26,7 @@
       src="{{ $imgPrimary.Permalink }}"
       alt="{{ .alt }}"
       class="max-w-xs w-full"
+      loading="lazy"
     />
   </picture>
 {{ end }}
