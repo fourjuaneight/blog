@@ -93,7 +93,6 @@ h1,
 h2,
 h3 {
   font-family: MD Nichrome, sans-serif;
-  font-weight: 700;
 }
 
 h1 {
@@ -169,6 +168,12 @@ article ul {
 section.content a {
   text-decoration: underline;
   text-decoration-color: var(--meta);
+}
+
+section.content h2,
+section.content h3,
+section.content h4 {
+  font-weight: 700;
 }
 
 a.footnote-ref {

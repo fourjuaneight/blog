@@ -41,6 +41,15 @@
 }
 
 @font-face {
+  font-family: MD Nichrome;
+  src: url(/fonts/MD-Nichrome-Dark-sub.woff2) format('woff2'),
+    url(/fonts/MD-Nichrome-Dark-sub.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: Ships Whistle;
   src: url(/fonts/ShipsWhistle-Regular-sub.woff2) format('woff2'),
     url(/fonts/ShipsWhistle-Regular-sub.woff) format('woff');
