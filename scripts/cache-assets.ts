@@ -39,7 +39,7 @@ const makeId = (length: number): string => {
 
   // find and replace options; add hash ID, files to cache array, and site base URL
   const replaceOptions: ReplaceInFileConfig = {
-    files: resolve(cwd, 'sw.js'),
+    files: resolve(cwd, 'sw.min.js'),
     from: [
       /(const)\s(staticAssets)\s=\s?\[\];/g,
       /const\sversion\s=\s'';/g,
