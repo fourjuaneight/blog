@@ -1,5 +1,7 @@
 <article class="w-full">
-  <a href="{{ .Permalink }}"><h2>{{ .Title }}</h2></a>
+  <h2 class="mr-auto">
+    <a href="{{ .Permalink }}"> {{ .Title }} </a>
+  </h2>
   {{ partial "meta.html" . }}
   <p>{{ .Summary }}</p>
 </article>
