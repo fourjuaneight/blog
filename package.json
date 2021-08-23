@@ -83,7 +83,7 @@
     ]
   },
   "lint-staged": {
-    "*.+(ts|css|scss|html)": [
+    "*.+(ts|css|scss)": [
       "npm run format"
     ],
     "*.ts": [
