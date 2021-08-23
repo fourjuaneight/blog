@@ -140,7 +140,7 @@ header {
 
 main {
   grid-template-rows: 0.5rem auto 0.5rem;
-  min-height: calc(100vh - 9rem);
+  min-height: calc(100vh - 10rem);
 }
 
 footer {
