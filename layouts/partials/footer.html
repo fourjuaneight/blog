@@ -3,29 +3,31 @@
   <section
     class="col-start-2 flex flex-col items-center justify-center row-start-2 w-full"
   >
-    <ul
-      class="auto-cols-min gap-x-1 grid grid-rows-1 items-center list-none xxs:gap-x-3 my-2"
-    >
-      {{ range $i, $item := .Site.Data.nav.footer }}
-        <li class="m-0 row-start-1" data-item="{{ $i }}">
-          <a
-            class="hover:underline no-underline"
-            href="{{ $item.link | absURL }}"
-            {{ if .external }}
-              target="_blank"
-              rel="noopener noreferrer"
-            {{ end }}
-          >
-            {{ $item.label }}
-          </a>
-        </li>
-        {{ if ne $i $navLinks }}
-          <li class="m-0 row-start-1">
-            <p class="m-0 text-meta text-base" aria-hidden="true">&#8226;</p>
+    <nav>
+      <ul
+        class="auto-cols-min gap-x-1 grid grid-rows-1 items-center list-none xxs:gap-x-3 my-2"
+      >
+        {{ range $i, $item := .Site.Data.nav.footer }}
+          <li class="m-0 row-start-1" data-item="{{ $i }}">
+            <a
+              class="hover:underline no-underline"
+              href="{{ $item.link | absURL }}"
+              {{ if .external }}
+                target="_blank"
+                rel="noopener noreferrer"
+              {{ end }}
+            >
+              {{ $item.label }}
+            </a>
           </li>
+          {{ if ne $i $navLinks }}
+            <li class="m-0 row-start-1">
+              <p class="m-0 text-meta text-base" aria-hidden="true">&#8226;</p>
+            </li>
+          {{ end }}
         {{ end }}
-      {{ end }}
-    </ul>
+      </ul>
+    </nav>
     <ul
       class="auto-cols-auto gap-x-1 grid grid-rows-1 items-center list-none xxs:gap-x-3 my-2"
     >

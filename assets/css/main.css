@@ -1,13 +1,18 @@
 a,
-a:visited {
+a:visited,
+a:focus,
+a:hover {
   color: var(--foreground);
+}
+
+a,
+a:visited {
   text-decoration: underline;
   text-decoration-color: var(--secondary);
 }
 
 a:focus,
 a:hover {
-  color: var(--foreground);
   outline: none;
   text-decoration-color: var(--primary) !important;
 }
@@ -157,6 +162,10 @@ textarea {
 }
 
 /* Custom */
+a.site-name {
+  color: var(--primary);
+}
+
 section.intro picture {
   justify-content: flex-start;
   width: auto;

@@ -6,20 +6,22 @@
   >
     <a
       href="{{ .Site.BaseURL }}"
-      class="focus:no-underline focus:text-secondary font-mdNichrome hover:no-underline hover:text-secondary leading-none no-underline text-primary text-2xl"
+      class="site-name focus:no-underline focus:text-secondary font-mdNichrome hover:no-underline hover:text-secondary leading-none no-underline text-primary text-2xl"
     >
       {{ .Site.Title }}
     </a>
-    <ul
-      class="auhref-cols-min gap-x-2 grid grid-rows-1 items-center list-none m-0 xxs:gap-x-3"
-    >
-      {{ range .Site.Data.nav.header }}
-        <li class="m-0 row-start-1">
-          <a class="hover:underline no-underline" href="{{ .link | absURL }}">
-            {{ .label }}
-          </a>
-        </li>
-      {{ end }}
-    </ul>
+    <nav>
+      <ul
+        class="auto-cols-min gap-x-2 grid grid-rows-1 items-center list-none m-0 xxs:gap-x-3"
+      >
+        {{ range .Site.Data.nav.header }}
+          <li class="m-0 row-start-1">
+            <a class="hover:underline no-underline" href="{{ .link | absURL }}">
+              {{ .label }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
   </section>
 </header>
