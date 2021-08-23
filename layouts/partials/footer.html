@@ -9,6 +9,7 @@
       {{ range $i, $item := .Site.Data.nav.footer }}
       <li class="m-0 row-start-1" data-item="{{ $i }}">
         <a
+          class="hover:underline no-underline"
           href="{{ $item.link | absURL }}"
           {{
           if
@@ -41,7 +42,7 @@
       </li>
       <li class="m-0 row-start-1">
         <a
-          class="text-sm"
+          class="no-underline text-sm"
           href="https://github.com/fourjuaneight/blog"
           target="_blank"
           rel="noopener noreferrer"

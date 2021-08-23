@@ -6,7 +6,7 @@
   >
     <a
       href="{{ .Site.BaseURL }}"
-      class="focus:no-underline focus:text-secondary font-mdNichrome hover:no-underline hover:text-secondary text-primary text-2xl"
+      class="focus:no-underline focus:text-secondary font-mdNichrome hover:no-underline hover:text-secondary no-underline text-primary text-2xl"
     >
       {{ .Site.Title }}
     </a>
@@ -15,7 +15,9 @@
     >
       {{ range .Site.Data.nav.header }}
       <li class="m-0 row-start-1">
-        <a href="{{ .link | absURL }}">{{ .label }}</a>
+        <a class="hover:underline no-underline" href="{{ .link | absURL }}">
+          {{ .label }}
+        </a>
       </li>
       {{ end }}
     </ul>

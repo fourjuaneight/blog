@@ -1,24 +1,21 @@
 a,
 a:visited {
   color: var(--foreground);
+  text-decoration: underline;
+  text-decoration-color: var(--secondary);
 }
 
-section.content a:focus,
-section.content a:hover,
 a:focus,
 a:hover {
   color: var(--foreground);
   outline: none;
-  text-decoration: underline;
-  text-decoration-color: var(--primary);
+  text-decoration-color: var(--primary) !important;
 }
 
-section.content a[rel='noopener noreferrer']:focus,
-section.content a[rel='noopener noreferrer']:hover,
 a[rel='noopener noreferrer']:focus,
 a[rel='noopener noreferrer']:hover {
-  color: var(--secondary);
-  text-decoration-color: var(--secondary);
+  color: var(--primary);
+  text-decoration-color: var(--primary);
 }
 
 blockquote,
@@ -165,11 +162,6 @@ article ul {
   padding-left: 1rem;
 }
 
-section.content a {
-  text-decoration: underline;
-  text-decoration-color: var(--meta);
-}
-
 section.content h2,
 section.content h3,
 section.content h4 {
@@ -177,21 +169,28 @@ section.content h4 {
 }
 
 a.footnote-ref {
-  color: var(--secondary);
   padding: 0 0.15rem;
   text-decoration: none;
 }
 
 a.footnote-ref::before {
+  color: var(--secondary);
   content: '[';
 }
 
 a.footnote-ref::after {
+  color: var(--secondary);
   content: ']';
 }
 
-a.footnote-ref:focus,
-a.footnote-ref:hover {
+a.footnote-ref:focus::before,
+a.footnote-ref:focus::after,
+a.footnote-ref:hover::before,
+a.footnote-ref:hover::after {
+  color: var(--primary);
+}
+
+a.tags:hover span {
   color: var(--primary);
 }
 
@@ -222,4 +221,8 @@ section.footnotes hr {
 section.footnotes a,
 sup a {
   text-decoration: none !important;
+}
+
+footer p {
+  line-height: 1.25 !important;
 }
