@@ -31,7 +31,10 @@ const fmtImage = async (src: string): Promise<void> => {
 
     // create variants
     await image
-      .resize(1024, 1024)
+      .resize(1024, 1024, {
+        background: { r: 255, g: 255, b: 255, alpha: 0.0 },
+        fit: 'contain',
+      })
       .toFormat(ext as any)
       .toFile(output)
       .then(() => {
