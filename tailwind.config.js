@@ -16,15 +16,15 @@ module.exports = {
   },
   darkMode: 'media',
   theme: {
-    screens: {
-      'xxxs': '320px',
-      'xxs': '375px',
-      'xs': '420px',
-    },
     extend: {
       borderColor: pallete,
       colors: pallete,
       fill: pallete,
+      screens: {
+        xxxs: '320px',
+        xxs: '375px',
+        xs: '420px',
+      },
       stroke: pallete,
     },
     fontFamily: {
