@@ -10,6 +10,7 @@ disableKinds: ['taxonomyTerm']
 footnoteReturnLinkContents: ↩
 summarylength: 40
 enableEmoji: true
+canonifyURLs: true
 
 markup:
   highlight:
