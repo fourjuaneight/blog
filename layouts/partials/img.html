@@ -6,7 +6,7 @@ print $imgMain ".webp" }} {{ $img := print $imgMain "." $type }} {{ if or (eq
 (print "/img/" $img) }}
 <img src="{{ $simple.Permalink }}" alt="{{ .alt }}" class="mb-2 w-full" />
 {{ else }}
-<picture class="flex items-center justify-center mb-4 w-full">
+<picture class="flex items-center justify-center my-4 w-full">
   {{ $avifPrimary := resources.Get (print "/img/" $avif) }}
   <source srcset="{{ $avifPrimary.Permalink }}" type="image/avif" />
   {{ $webpPrimary := resources.Get (print "/img/" $webp) }}
