@@ -6,7 +6,7 @@ footer:
 draft: false
 ---
 
-Hi, I'm Juan and I like websites. Most of my time is spent making them for strangers online. When I'm not working, I'm probably still coding.
+Hi, I'm [Juan Villela](https://www.juanvillela.dev/) and I like websites. Most of my time is spent making them for strangers online. When I'm not working, I'm probably still coding.
 
 ## Work
 I currently work as a "Full-Stack" Web Developer over at [Big Pixel](https://thebigpixel.net/). These days I mostly work with Angular and React. And some REST and GraphQL APIs. Here's a cool list of skills:
