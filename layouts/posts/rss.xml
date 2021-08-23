@@ -2,11 +2,11 @@
   <channel>
     <title>{{ .Site.Title }}</title>
     <link>{{ .Permalink }}</link>
-    <description>{{ .Site.Params.description }}</description>
+    <description>{{ .Site.Params.meta.description }}</description>
     {{ with site.LanguageCode }}<language>{{ . }}</language>{{ end }}
     {{ with site.Copyright }}<copyright>{{ . }}</copyright>{{end}}
-    <managingEditor>{{ .Site.Author.name }}</managingEditor>
-    <webMaster>{{ .Site.Author.name }}</webMaster>
+    <managingEditor>{{ .Site.Params.meta.author }}</managingEditor>
+    <webMaster>{{ .Site.Params.meta.author }}</webMaster>
     <lastBuildDate>{{ now.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
     <generator>Hugo -- gohugo.io</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -19,7 +19,7 @@
         <title>{{ .Title }}</title>
         <link>{{ .Permalink }}</link>
         <description>{{ .Content | html }}</description>
-        <author>{{ .Site.Author.name }}</author>
+        <author>{{ .Site.Params.meta.author }}</author>
         <guid>{{ .Permalink }}</guid>
         <pubDate>{{ .Date.Format "2006-01-02" }}</pubDate>
       </item>
