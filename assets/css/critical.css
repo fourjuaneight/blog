@@ -118,6 +118,13 @@ body {
   overflow-x: hidden;
 }
 
+code,
+kbd,
+pre,
+samp {
+  font-family: Dank Mono, monospace !important;
+}
+
 header,
 main,
 footer {
