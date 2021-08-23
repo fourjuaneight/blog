@@ -29,7 +29,7 @@ module.exports = {
     },
     fontFamily: {
       mdNichrome: ['MD Nichrome', 'serif'],
-      shipsWhistle: ['Ships Whistle', 'sans-serif'],
+      nunito: ['Nunito', 'sans-serif'],
       dankMono: ['Dank Mono', 'monospace'],
     },
     zIndex: {
