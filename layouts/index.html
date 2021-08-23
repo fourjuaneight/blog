@@ -1,4 +1,4 @@
 {{ define "main" }}
 <h1 class="mb-3 mr-auto">Recent posts</h1>
 {{ $blog := ($.Site.GetPage "section" "posts").Pages }} {{ range last 4 $blog }}
-{{ .Render "li" }} {{ end }} {{end}}
+{{ .Render "li" }} {{ end }} {{ partial "intro.html" . }} {{end}}
