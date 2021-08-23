@@ -8,7 +8,7 @@ draft: false
 
 My love for lists has taken me to new extremes I never thought of before. And I love it. In this second installment of "Spreadsheets," I want to detail my attempt at making a database for all my lists. I don't recommend this approach; there are plenty of more user-friendly solutions to this "problem". But that's no fun. So let's over-engineer the hell out of this.
 
-To get a little more context on what's going on, go read [Part 1](/spreadsheets/).
+To get a little more context on what's going on, go read [Part 1](/posts/spreadsheets/).
 
 ## Tech
 - [Postgres](https://www.postgresql.org)

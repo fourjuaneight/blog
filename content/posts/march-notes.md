@@ -13,7 +13,7 @@ Either way, we've been looking for new ways to keep ourselves occupied to preven
 ## Coding
 Although my wife isn't working, I still am. My work has always been remote, so things haven't changed all that much. There's a cool project I've been working on with the folks over at Stackbit which I hope to be able to share soon. Stay tuned.
 
-I've also been working on getting some of my [Spreadsheets](/posts/spreadsheets/) out in public. An early version of my [Bookmarks](/lists/bookmarks/) is already up and there's more to come. Thanks to [Hasura's webhooks](https://hasura.io/event-triggers/), I can automate the deployment of this site with every new bookmark saved to the database. Good stuff.
+I've also been working on getting some of my [Spreadsheets](/posts/spreadsheets/) out in public. An early version of my bookmarks is already up and there's more to come. Thanks to [Hasura's webhooks](https://hasura.io/event-triggers/), I can automate the deployment of this site with every new bookmark saved to the database. Good stuff.
 
 ## Digest
 But although I'm working as much as ever, there are still plenty of hours during the day that I have to fill with something.

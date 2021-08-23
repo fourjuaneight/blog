@@ -17,7 +17,6 @@ And I guess that's the whole reason for making these. If for whatever reason I r
 Like [Merlon Mann](http://www.merlinmann.com) said in the last [Reconcilable Differences](https://www.relay.fm/rd) episode ([112](https://www.relay.fm/rd/112)), "it doesn't cost me very much at all to write these things down; it could cost me later in the future not to remember something".
 
 ## Upgrades
-
 As I said, these are now mostly Airtables. And that's worked very nicely. They have a great API and I've made a couple of Shortcuts on my iPhone (where I do almost all my capture) that require little interaction to save something. I'm also in the process of making a chrome extension for capture on my desktop. And this is all very convenient and unnecessary and cool. But I'm also about to hit my free limit on Airtable.
 
 And while I'm happy to pay for something as vital as my spreadsheets, Airtables pricing is a bit too high for my needs. So I thought of using Google Sheets since I already pay for a G Suite account and they have a decent API as well. But then I wouldn't have a nice UI to look at my spreadsheets.
