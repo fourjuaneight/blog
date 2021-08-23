@@ -1,5 +1,8 @@
 ---
 title: About Me
+footer:
+  img: about.png
+  alt: Illustration of Juan laying on a sofa, coding on a laptop.
 draft: false
 ---
 
