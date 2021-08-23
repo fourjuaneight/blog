@@ -3,5 +3,5 @@
   <span class="mr-1" aria-hidden="true">#</span>
   {{ .Name }}
 </h1>
-<section>{{ range .Pages }} {{ .Render "li" }} {{ end }}</section>
-{{ end }}
+{{ range .Pages }} {{ .Render "li" }} {{ end }} {{ partial "intro.html" . }} {{
+end }}
