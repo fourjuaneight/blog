@@ -1,6 +1,8 @@
 <article class="w-full">
   <h2 class="font-bold mr-auto">
-    <a href="{{ .Permalink }}"> {{ .Title }} </a>
+    <a class="hover:underline no-underline" href="{{ .Permalink }}">
+      {{ .Title }}
+    </a>
   </h2>
   {{ partial "meta.html" . }}
   <p>{{ .Summary }}</p>
