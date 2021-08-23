@@ -1,0 +1,21 @@
+{{ $svg := .src | findRE "svg" }} {{ $gif := .src | findRE "gif" }} {{ $type :=
+.src | replaceRE "(.*).(png|jpg|jpeg)" "$2" }} {{ $imgMain := .src | replaceRE
+"(.*).(png|jpg|jpeg)" "$1" }} {{ $avif := print $imgMain ".avif" }} {{ $webp :=
+print $imgMain ".webp" }} {{ $img := print $imgMain "." $type }} {{ if or (eq
+(index $svg 0) "svg") (eq (index $gif 0) "gif") }} {{ $simple := resources.Get
+(print "/img/" $img) }}
+<img src="{{ $simple.Permalink }}" alt="{{ .alt }}" class="mb-2 w-full" />
+{{ else }}
+<picture class="flex items-center justify-center mb-4 w-full">
+  {{ $avifPrimary := resources.Get (print "/img/" $avif) }}
+  <source srcset="{{ $avifPrimary.Permalink }}" type="image/avif" />
+  {{ $webpPrimary := resources.Get (print "/img/" $webp) }}
+  <source srcset="{{ $webpPrimary.Permalink }}" type="image/webp" />
+  {{ $imgPrimary := resources.Get (print "/img/" $img) }}
+  <img
+    src="{{ $imgPrimary.Permalink }}"
+    alt="{{ .alt }}"
+    class="max-w-sm w-full"
+  />
+</picture>
+{{ end }}
