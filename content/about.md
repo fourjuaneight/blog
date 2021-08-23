@@ -29,7 +29,7 @@ I don't know, here's another list:
 - I like stickers.
 - From time to time I build mechanical keyboards.
 - I'm a cheap audiophile. Meaning, I refuse to pay more than a grand for a single piece of gear.
-- In a never ending attempt to keep a decent archive of bookmarks that's independent of service and resistant to link rot, I maintain a small army of scripts to archive every thing I find interesting on the web. Take a look [here](https://github.com/fourjuaneight/archiver) for more on the archiving part and [here](https://github.com/fourjuaneight/scriptable) for the scripts that help me accomplish this on my phone.
+- In a never-ending attempt to keep a decent archive of bookmarks that are independent of service and resistant to link rot, I maintain a small army of scripts to archive everything I find interesting on the web. Take a look [here](https://github.com/fourjuaneight/archiver) for more on the archiving part and [here](https://github.com/fourjuaneight/scriptable) for the scripts that help me accomplish this on my phone.
 - I really like cooking.
 - RSS over Twitter. Podcasts over anything.
-- I still haven't decided if I want to pay for stream all media or store everything on a home server and stream my own media. So I have both.
+- I still haven't decided if I want to pay to stream all media or store everything on a home server and stream my media. So I have both.

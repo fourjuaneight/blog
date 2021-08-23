@@ -34,5 +34,5 @@ I watched an entire show in a single month and I'm not ashamed of it. All 700 ep
 - [Making Gatsby Easy to Understand with Laurie Barth](https://www.software-engineering-unlocked.com/episode-11-staff-engineer-gatsby/): A wonderful discussion about the inner workings of Gatsby as a company and Laurie's journey.
 
 ### Read
-- [Legion: Son of X](https://www.marvel.com/comics/collection/66037/legion_son_of_x_vol_1_-_prodigal_trade_paperback): I finally finished watching the show and wanted to brush up on my Legion lore. This a great series and has one of the best representations of how Legion's mind works, IMHO.
+- [Legion: Son of X](https://www.marvel.com/comics/collection/66037/legion_son_of_x_vol_1_-_prodigal_trade_paperback): I finally finished watching the show and wanted to brush up on my Legion lore. This is a great series and has one of the best representations of how Legion's mind works, IMHO.
 - [A Spreadsheet Way of Knowledge](https://www.wired.com/2014/10/a-spreadsheet-way-of-knowledge/): This is an older article —reposting an '84 article— I came across about the rise of the spreadsheet and the impact it had on almost every industry. It's a great read for any nerd.

@@ -31,14 +31,14 @@ As for the site, I wanted to work on backend optimizations and fixes before star
 - [Uses](/uses/) page.
 - Contact page.
 
-These changes mean a leaner codebase and faster site. And the few additions are to improve the UX as well.
+These changes mean a leaner codebase and a faster site. And the few additions are to improve the UX as well.
 
 ## Digest
 I'm trying to watch some older movies that have high praise but came out way before my time. I'm keeping track of my ratings over at [Letterboxd](https://letterboxd.com/fourjuaneight/films/). With podcasts, I'm enjoying some of these newer one-off series that cover a specific topic. And I'm also looking to wrap up the [Remembrance of Earth's Past](https://www.goodreads.com/book/show/34569357) book series I left hanging last year.
 
 ### Watched
 - [Vertigo](https://letterboxd.com/film/vertigo/): I wasn't a fan of the ending. But most of all, I really dislike the overall sexist vibe from back in the day. 
-- [Doctor Sleep](https://letterboxd.com/film/doctor-sleep/): Not the best horror film I've seen --hard horror at all-- but I was still entertained throughout the 3 hours. Which is more than I can say of most of the trash that comes out in the genre.
+- [Doctor Sleep](https://letterboxd.com/film/doctor-sleep/): Not the best horror film I've seen --hard horror at all-- but I was still entertained throughout the 3 hours. This is more than I can say of most of the trash that comes out in the genre.
 - [Foreign Correspondent](https://letterboxd.com/film/foreign-correspondent/): I liked this one far more than Vertigo, but had the same vibe which killed it for me. Also, I thought The Star-Spangled Banner in the end credits was a bit too on the nose.
 
 ### Listened
