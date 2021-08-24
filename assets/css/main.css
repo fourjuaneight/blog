@@ -162,6 +162,11 @@ textarea {
 }
 
 /* Custom */
+header ul,
+footer ul {
+  padding: 0;
+}
+
 a.site-name {
   color: var(--primary);
 }
