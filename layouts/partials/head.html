@@ -42,14 +42,43 @@
     content="{{ .Site.Params.meta.description }}"
   />
   <meta name="twitter:title" content="{{ .Title }}" />
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": "{{ .Title }}",
-      "url": "{{ .Permalink }}"
-    }
-  </script>
+  {{- if and (eq .Section "posts") (eq .Kind "page") -}}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "{{ .Permalink }}",
+        },
+        "headline": "{{ .Title }}",
+        "image": "{{ $about.Permalink }}",
+        "author": {
+          "@type": "Person",
+          "name": "{{ .Site.Params.meta.author }}",
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "{{ .Site.Params.meta.author }}",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{ $about.Permalink }}",
+          },
+        },
+        "datePublished": "{{ .Date.Format "2006-01-02" }}",
+        "dateModified": "{{ .Date.Format "2006-01-02" }}",
+      }
+    </script>
+  {{ else }}
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "{{ .Title }}",
+        "url": "{{ .Permalink }}"
+      }
+    </script>
+  {{ end }}
   <meta name="image" content="{{ $about.Permalink }}" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
