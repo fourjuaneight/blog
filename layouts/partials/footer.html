@@ -3,9 +3,9 @@
   <section
     class="col-start-2 flex flex-col items-center justify-center row-start-2 w-full"
   >
-    <nav>
+    <nav class="w-auto">
       <ul
-        class="auto-cols-min gap-x-1 grid grid-rows-1 items-center list-none xxs:gap-x-3 my-2"
+        class="auto-cols-min gap-x-1 grid grid-rows-1 items-center list-none my-2 p-0 xxs:gap-x-3"
       >
         {{ range $i, $item := .Site.Data.nav.footer }}
           <li class="m-0 row-start-1" data-item="{{ $i }}">
@@ -29,7 +29,7 @@
       </ul>
     </nav>
     <ul
-      class="auto-cols-auto gap-x-1 grid grid-rows-1 items-center list-none xxs:gap-x-3 my-2"
+      class="auto-cols-auto gap-x-1 grid grid-rows-1 items-center list-none my-2 p-0 xxs:gap-x-3"
     >
       <li class="m-0 row-start-1">
         <p class="m-0 text-sm">
