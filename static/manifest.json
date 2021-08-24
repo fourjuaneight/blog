@@ -1,10 +1,10 @@
 {
-  "background_color": "#22242f",
+  "background_color": "#333333",
   "display": "standalone",
-  "name": "Juan C Villela",
-  "short_name": "JCV",
+  "name": "Clever Laziness",
+  "short_name": "CL",
   "start_url": "/",
-  "theme_color": "#9580ff",
+  "theme_color": "#c390f3",
   "icons": [
     {
       "src": "icon-48x48.png",
