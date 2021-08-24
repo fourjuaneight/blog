@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <h1 class="font-medium mb-3 mr-auto">Recent posts</h1>
+  <h1 class="mb-3 mr-auto">Recent posts</h1>
   {{ $blog := ($.Site.GetPage "section" "posts").Pages }}
   {{ range first 5 $blog }}
     {{ .Render "li" }}
