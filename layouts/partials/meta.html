@@ -3,10 +3,10 @@
     <span class="mr-1 text-tertiary" aria-label="Posted on">&tau;</span>
     {{ .Date.Format "2006-01-02" }}
   </time>
-  <ul class="list-none">
+  <ul class="list-none p-0">
     {{/* Loop over tags list in front-matter */}}
     {{ range $key, $tag := .Params.tags }}
-      <li>
+      <li class="m-0">
         <a
           class="tags hover:no-underline no-underline text-meta"
           href="/tags/{{ $tag }}"
