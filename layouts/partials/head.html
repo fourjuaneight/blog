@@ -50,7 +50,7 @@
       "url": "{{ .Permalink }}"
     }
   </script>
-  <meta name="image" content="{{ $about }}" />
+  <meta name="image" content="{{ $about.Permalink }}" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}" />
@@ -76,7 +76,7 @@
     rel="alternate"
     type="application/rss+xml"
     title="{{ .Site.Title }}"
-    href="{{ .Site.BaseURL }}/feed.xml"
+    href="{{ .Site.BaseURL }}/posts/index.xml"
   />
   <link
     rel="sitemap"

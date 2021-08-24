@@ -18,4 +18,4 @@ footer:
     link: https://github.com/fourjuaneight
     external: true
   - label: RSS
-    link: sitemap.xml
+    link: posts/index.xml
