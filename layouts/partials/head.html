@@ -54,10 +54,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}" />
-  {{ $favicon16 := resources.Get "icons/favicon-16x16.png" }}
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ $favicon16.Permalink }}" />
-  {{ $favicon32 := resources.Get "icons/favicon-32x32.png" }}
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ $favicon32.Permalink }}" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>" />
   {{ $icon120 := resources.Get "icons/icon-120x120.png" }}
   <link rel="apple-touch-icon" sizes="120x120" href="{{ $icon120.Permalink }}" />
   {{ $icon180 := resources.Get "icons/icon-180x180.png" }}
