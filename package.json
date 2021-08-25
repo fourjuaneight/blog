@@ -24,7 +24,7 @@
     "type": "git",
     "url": "git+https://github.com/fourjuaneight/blog.git"
   },
-  "author": "Juan Villela",
+  "author": "Juan Villela <juan@villela.co>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fourjuaneight/blog/issues"
