@@ -4,13 +4,13 @@ header:
     link: 'about'
   - label: Archive
     link: 'posts'
-  - label: Lists
-    link: 'lists'
+  - label: Uses
+    link: uses
+  - label: Tools
+    link: 'tools'
 footer:
   - label: About
     link: about
-  - label: Uses
-    link: uses
   - label: Twitter
     link: https://twitter.com/fourjuaneight
     external: true
