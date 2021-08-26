@@ -196,7 +196,6 @@ section.intro picture img {
 
 article ol,
 article ul {
-  list-style: auto;
   padding-left: 1rem;
 }
 
