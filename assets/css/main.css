@@ -235,11 +235,13 @@ div.highlight pre {
 }
 
 div.highlight pre,
-p code {
+p code,
+li code {
   background-color: #1a1a1a !important;
 }
 
-p code {
+p code,
+li code {
   color: var(--secondary);
   font-size: 0.95rem;
   padding: 0.25rem;
