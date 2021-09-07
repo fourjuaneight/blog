@@ -6,4 +6,4 @@
   {{ if and (strings.HasPrefix .Destination "http") (not (strings.HasPrefix $desturl.Host $baseurl.Host)) }}
     target="_blank" rel="noopener noreferrer"
   {{ end }}
->{{ .Text }}</a>
+>{{ .Text | markdownify }}</a>
