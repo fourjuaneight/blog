@@ -1,5 +1,8 @@
 ---
 title: Tools
+footer:
+  img: keyboard.png
+  alt: Illustration of a purple mechanical keyboard with white keycaps.
 draft: false
 ---
 
