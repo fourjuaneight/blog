@@ -10,18 +10,19 @@ Although there's a plethora of tools and apps available for development work, I 
 
 ## Custom
 - **[tenjin](https://github.com/fourjuaneight/tenjin)** - Early on in my development career, I realize a lot of time was spent copying and pasting previously use code. So I started to keep a repo full of commonly used scripts, stylings, configs, templates, and snippets. That eventually morphed into a JS CLI utility. This later iteration is written in Go —for no reason other than fun— and has a slimmed-down collection with just the stuff I need for work and personal projects. I quite like this little tool.
+- **[showrunner](https://github.com/fourjuaneight/showrunner "")** - I run a Plex server at home for all my media. Oftentimes I need to rename entire tv shows to the correct formatting. I've tried using a couple of shell scripts before, but this tool does it in a single command. But better yet, it also pulls the metadata from TMDB API.
 - **[scriptable](https://github.com/fourjuaneight/scriptable)** - There is so much automation that happens on my phone. Most of it is through [Shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios). But there's only so much it can do before it becomes unmanageable. Unless you [Federico](https://www.macstories.net/shortcuts/). These are the various JS scripts, running on [Scriptable](https://scriptable.app), that make iOS automation so much easier.
-- **[dotfiles](https://github.com/fourjuaneight/dotfiles)** - I think most devs have a dotfiles repo somewhere. I took what I liked the most from others and made something easy to maintain and expand.
+- **[dotfiles](https://github.com/fourjuaneight/dotfiles)** - I think most devs have dotfiles repo somewhere. I took what I liked the most from others and made something easy to maintain and expand.
 
 ## CLI
-I started finding Rust alternatives to some of the default CLI tooling for greater security (debatable) and an overall nicer UX. So mostly aesthetics. Also, the [cargo](https://doc.rust-lang.org/cargo/guide/) experience is superior to any other package manager.
+I started finding Rust alternatives to some of the default CLI tooling for greater security (debatable) and an overall nicer UX. So mostly aesthetics. But also, the [cargo](https://doc.rust-lang.org/cargo/guide/) experience is superior to any other package manager.
 
 - **[cargo-update](https://github.com/nabijaczleweli/cargo-update)** - This little utility brings the cargo experience up to 11. A simple package updater.
 - **[sheldon](https://github.com/rossmacarthur/sheldon)** - There are so many zsh plugin managers. This one is lightweight and easily managed via a TOML file.
-- **[starship](https://github.com/starship/starship)** - I love a cool prompts. This one is robust and highly customizable. Again, via a single TOML file.
+- **[starship](https://github.com/starship/starship)** - I love cool prompts. This one is robust and highly customizable. Again, via a single TOML file.
 - **[zellij](https://github.com/zellij-org/zellij)** - Tmux is great and all. But I can across this on Twitter and found it faster. You can write your plugins, define them via a YAML config file, and what got me is the ability to define layout configurations via various YAML files, which are then called via flags.
-- **[zoxide](https://github.com/ajeetdsouza/zoxide)** - Ths is really just `cd` on steroids.
-- **[exa](https://github.com/ogham/exa)** - A prettier and feature rich `ls`.
+- **[zoxide](https://github.com/ajeetdsouza/zoxide)** - Ths is just `cd` on steroids.
+- **[exa](https://github.com/ogham/exa)** - A prettier and feature-rich `ls`.
 - **[fd](https://github.com/sharkdp/fd)** - A prettier and superior `find`.
 - **[bat](https://github.com/sharkdp/bat)** - A prettier and more useful `cat`.
 - **[delta](https://github.com/dandavison/delta)** - If you're a CLI Git user, you'll love this thing. It makes diff output far more readable and thus more useful. You can also use a custom theme and who doesn't love that.

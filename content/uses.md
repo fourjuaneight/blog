@@ -2,24 +2,20 @@
 title: Uses
 footer:
   img: favicon.png
-  alt: Illustration of a bookbag, laying on the floor half open.
+  alt: Illustration of a bookbag, laying on the floor half-open.
 draft: false
 ---
 
 Here's some of the stuff I use for work and procrastination.
 
-## Dev and Networking Hardware
-- **MacBook Air (M1)** - A big Mac for making shiny squares look extra crispy.
+## Hardware
+I used to be a Mac guy. Maybe I still am. But after having to part ways with my M1 Air, I started using an old gaming PC I built a while back. I'm not a lunatic, so I replaced Windows with Linux —Pop OS specifically. Now, I don't think I'd go back to Mac.
+
 - **[HHKB Pro 2](https://www.amazon.com/dp/B07K9QHF4P)** - I got the all-black keys and it took me a while to get used to the new layout without being able to tell which key is which. Worth every penny, though.
 - **[Logitech MX Ergo](https://www.logitech.com/en-us/products/mice/mx-ergo-wireless-trackball-mouse.html)** - So nice and comfortable.
-- **[beyerdynamic DT 990 Pro](https://north-america.beyerdynamic.com/dt-990-pro.html)** - These are overkill for essentially Zoom and podcasts. But TOOL does sound lovely in lossless.
-- **[Schiit Modi](https://www.schiit.com/products/modi-1)** - Solid DAC for my listening needs.
-- **[Schiit Magni](https://www.schiit.com/products/magni-1)** - Solid Amp to power the DT 990 Pros.
-- **[UpDesk Standing Desk](https://updesk.com/products/updesk-electric-lift-standing-desk-upwrite-midnight-black-top-on-black-frame-closeout)** - The table is pretty good, but the customer service is literally nonexistent.
+- **[UpDesk Standing Desk](https://updesk.com/products/updesk-electric-lift-standing-desk-upwrite-midnight-black-top-on-black-frame-closeout)** - The table is pretty good, but the customer service is nonexistent.
 - **[Secretlab Omega Chair](https://secretlab.co/collections/omega-series)** - Great chair.
 - **[Tripp Lite 1500VA 900W UPS](https://www.amazon.com/dp/B009TZTGWK/)** - I believe I heard about the brand from Marco Arment. Solid UPS.
-- **iPhone 12 Mini** - This is a perfect size. Fight me.
-- **AirPods Pro** - Got the [Ticci mod](https://www.macstories.net/stories/how-i-modded-the-silicone-tips-of-airpods-pro-with-a-memory-foam-layer/).
 - **[Ubiquiti Dream Machine Pro](https://store.ui.com/collections/unifi-network-unifi-os-consoles/products/udm-pro)** - The only reason I got the Pro was to mount it on a rack.
 - **[Ubiquiti Switch 8 (PoE)](https://store.ui.com/collections/unifi-network-switching/products/unifi-switch-8-60w)** - I have a couple of these around the house to extend the ports coming out the wall.
 - **[Ubiquiti UniFi AC Pro](https://store.ui.com/collections/wireless/products/unifi-ac-pro)** - Solid access point.
@@ -31,10 +27,14 @@ Here's some of the stuff I use for work and procrastination.
 - **[Schiit Modius](https://www.schiit.com/products/modius)** - This takes the SPDIF digital signal from the NODE.
 - **[Schiit Aegir](https://www.schiit.com/products/aegir)** - Then two of these (monoblock) take the balanced signal from the Modius.
 - **[Klipsch RP-600M](https://www.klipsch.com/products/rp-600m-bookshelf-speakers)** - These sounds great and sweet for my messed up hearing.
+- **[beyerdynamic DT 990 Pro](https://north-america.beyerdynamic.com/dt-990-pro.html)** - These are overkill for essentially Zoom and podcasts. But TOOL does sound lovely in lossless.
+- **[Schiit Modi](https://www.schiit.com/products/modi-1)** - Solid DAC for my listening needs.
+- **[Schiit Magni](https://www.schiit.com/products/magni-1)** - Solid Amp to power the DT 990 Pros.
 
-## Mac Software
-[Dracula Theme](https://draculatheme.com) all the things.
+## Software
+Because of the aforementioned jump to Linux, all of these Mac apps are no longer part of my daily usage. But more so, my job was switched over to [GitHub Codespaces](https://github.com/features/codespaces). And I've done the same for my projects.
 
+* [Dracula Theme](https://draculatheme.com) all the things.
 - **[VS Code](https://code.visualstudio.com)** - Honestly, I've tried all the editors at this point. This is by far the most decent one. It is solid enough, way too customizable, and integrates perfectly with all my tooling.
 - **[iTerm](https://iterm2.com)** - Best macOS terminal.
 - **[Blink](https://www.blink.sh)** - Best iOS terminal.
@@ -45,7 +45,7 @@ Here's some of the stuff I use for work and procrastination.
 - **[Things](https://culturedcode.com/things/)** - I've tried them all and this UI is simply the best for me.
 - **[Drafts](https://getdrafts.com)** - All text starts here.
 - **[Jayson](https://jayson.app)** - Nice UI for JSON on iOS.
-- **[Scriptable](https://scriptable.app)** - Some times you _just_ need a little JavaScript.
+- **[Scriptable](https://scriptable.app)** - Sometimes you _just_ need a little JavaScript.
 - **[Alfred](https://www.alfredapp.com/)** - Spotlight is great and Launchbar looks nicer, but you just can't compare to the power of Alfred.
 - **[Hazel](https://www.noodlesoft.com/)** - A computer should run itself. This does the trick.
 - **[Moom](https://manytricks.com/moom/)** - Nifty little window manager.
@@ -58,7 +58,7 @@ Here's some of the stuff I use for work and procrastination.
 - **[Apollo](https://apolloapp.io)** -  The _only_ Reddit app.
 - **[Tweetbot](https://tapbots.com/tweetbot/)** - You're an animal if you use the official Twitter app.
 
-There are obviously several more hardware and software I use. But these are the main things I cannot live without daily.
+There are several more hardware and software I use. But these are the main things I cannot live without daily.
 
 ---
 
