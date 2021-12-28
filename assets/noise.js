@@ -1,8 +1,7 @@
 const worker = new Worker('ww.js');
 
 const fragment = document.createDocumentFragment();
-const bodyStyle = getComputedStyle(document.body);
-const size = bodyStyle.getPropertyValue('--base');
+const size = 64;
 
 const makeNoise = async data => {
   const canvas = document.createElement('canvas');
@@ -11,7 +10,9 @@ const makeNoise = async data => {
   const ctx = canvas.getContext('2d');
   ctx.putImageData(new ImageData(data, size, size), 0, 0);
 
-  const png = await new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+  const png = await new Promise(resolve =>
+    canvas.toBlob(resolve, 'image/png', 0.8)
+  );
   const url = URL.createObjectURL(png);
   const div = document.createElement('div');
 
