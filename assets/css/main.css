@@ -1,3 +1,9 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+}
+
 a,
 a:visited,
 a:focus,
@@ -254,4 +260,18 @@ sup a {
 
 footer p {
   line-height: 1.25 !important;
+}
+
+div.noise {
+  animation: fadeIn calc(256ms * 4);
+  background-size: calc(0.125em * 64);
+  bottom: 0;
+  left: 0;
+  opacity: 0.012;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 20;
 }
