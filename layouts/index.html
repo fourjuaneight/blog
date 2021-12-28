@@ -5,4 +5,7 @@
     {{ .Render "li" }}
   {{ end }}
   {{ partial "intro.html" . }}
+  {{/*  Web Worker  */}}
+  {{ $noise := resources.Get "noise.js" | minify }}
+  <script defer src="{{ $noise.Permalink }}"></script>
 {{ end }}
