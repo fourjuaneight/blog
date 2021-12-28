@@ -14,5 +14,8 @@
     {{ if hugo.Environment | eq "production" }}
       {{ partial "sw.html" . }}
     {{ end }}
+    {{/*  Web Worker  */}}
+    {{ $noise := resources.Get "noise.js" | minify }}
+    <script defer src="{{ $noise.Permalink }}"></script>
   </body>
 </html>
