@@ -17,7 +17,7 @@
     "ts": "tsup src/assets/scripts/*.ts --env.NODE_ENV production --out-dir src/js",
     "ts:watch": "tsup src/assets/scripts/*.ts --out-dir assets/js --watch src/js",
     "serve": "serve dist",
-    "start": "concurrently -n \"TW,IMG,DEV\" \"npm run tw -- --watch\" \"npm run img\" \"npm run dev\"",
+    "start": "npm run img && concurrently -n \"TW,DEV\" -c \"#38bdf8,#ff4088\" \"npm run tw -- --watch\" \"npm run dev\"",
     "tsc": "tsc"
   },
   "repository": {
