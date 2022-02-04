@@ -191,7 +191,7 @@ section.intro picture {
 }
 
 section.intro picture img {
-  max-width: 36rem;
+  max-width: 32rem;
 }
 
 @media screen and (min-width: 640px) {
