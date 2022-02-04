@@ -236,4 +236,5 @@
   </script>
   {{ $tailwind := resources.Get "css/tw.css" | postCSS | minify }}
   <link rel="stylesheet" href="{{ $tailwind.Permalink }}" />
+  <script defer data-domain="cleverlaziness.com" src="https://plausible.io/js/plausible.js"></script>
 </head>
