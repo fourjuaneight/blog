@@ -1,6 +1,6 @@
 {{ define "main" }}
   <article class="w-full">
-    <h1 class="md:text-6xl mr-auto text-4xl">{{ .Title }}</h1>
+    <h1 class="post-title md:text-6xl mr-auto text-4xl">{{ .Title }}</h1>
     {{ if eq .Type "posts" }}
       {{ partial "meta.html" . }}
     {{ end }}

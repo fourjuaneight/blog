@@ -180,6 +180,10 @@ footer ul {
   padding: 0;
 }
 
+h1.post-title {
+  text-shadow: 0.15rem 0.15rem var(--tertiary);
+}
+
 a.site-name {
   color: var(--primary);
   font-weight: bold;
