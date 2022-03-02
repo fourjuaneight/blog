@@ -46,7 +46,7 @@ p {
 }
 
 blockquote {
-  border-left: 0.1875rem dashed var(--primary);
+  border-left: 0.1875rem solid var(--primary);
   padding-left: 1.3125rem;
 }
 
