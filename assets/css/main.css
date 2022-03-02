@@ -231,6 +231,10 @@ a.footnote-ref:hover::after {
   color: var(--primary);
 }
 
+a.tags {
+  margin: 0 0 0 0.5rem;
+}
+
 a.tags:hover span {
   color: var(--primary);
 }

@@ -6,7 +6,7 @@
   <ul class="flex items-center justify-end list-none p-0">
     {{/* Loop over tags list in front-matter */}}
     {{ range $key, $tag := .Params.tags }}
-      <li class="ml-2 mr-0 my-0">
+      <li class="m-0">
         <a
           class="tags hover:no-underline no-underline text-meta visited:text-meta"
           href="/tags/{{ $tag }}"
