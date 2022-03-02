@@ -27,6 +27,7 @@ I started finding Rust alternatives to some of the default CLI tooling for great
 - **[bat](https://github.com/sharkdp/bat)** - A prettier and more useful `cat`.
 - **[delta](https://github.com/dandavison/delta)** - If you're a CLI Git user, you'll love this thing. It makes diff output far more readable and thus more useful. You can also use a custom theme and who doesn't love that.
 - **[fzf](https://github.com/junegunn/fzf)** - This thing is one of the most crucial binaries on my computer. It powers the majority of my [CLI utilities](https://github.com/fourjuaneight/dotfiles/blob/master/homedir/.zsh/func.zsh).
+- **[atuin](https://github.com/ellie/atuin)** - Amazing quality of lifr improvement utility. It creates a simple but powerful searchable shell history UI.
 
 ## Plugins
 These are entirely for [VSCode](https://code.visualstudio.com), my text editor of choice. I've tried them all and this is what I like the best. And so do many many other developers. I try to keep my plugin use to a minimum to prevent the app from running slow. Most of them are for syntax highlighting. But the ones listed here are what enhance my everyday experience.
