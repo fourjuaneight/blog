@@ -28,3 +28,8 @@ jobs:
           AIRTABLE_MEDIA_ID: ${{secrets.AIRTABLE_MEDIA_ID}}
           AIRTABLE_SHELF_ID: ${{secrets.AIRTABLE_SHELF_ID}}
           AIRTABLE_TOKEN: ${{secrets.AIRTABLE_TOKEN}}
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "chore: Update Shelf data file."
