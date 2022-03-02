@@ -121,8 +121,25 @@ const saveData = async (): Promise<void> => {
         ...item.fields,
         Cover: item.fields.Cover[0].url,
       }));
+      const groupedData: { [key: string]: Item[] } = cleanData.reduce(
+        (acc: { [key: string]: Item[] }, item: Item) => {
+          const key = item.Category;
 
-      await writeFile(`${dist}/shelf.json`, JSON.stringify(cleanData, null, 2));
+          if (!acc[key]) {
+            acc[key] = [];
+          }
+
+          acc[key].push(item);
+
+          return acc;
+        },
+        {}
+      );
+
+      await writeFile(
+        `${dist}/shelf.json`,
+        JSON.stringify(groupedData, null, 2)
+      );
 
       console.info(chalk.green('[SUCCESS]'), 'Data saved to shelf.json');
     } else {
