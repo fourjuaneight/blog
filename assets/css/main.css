@@ -239,7 +239,7 @@ a.tags:hover span {
   color: var(--primary);
 }
 
-a[data-dark="true"] {
+a[data-dark='true'] {
   color: var(--background);
 }
 
