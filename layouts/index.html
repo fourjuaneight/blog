@@ -4,5 +4,24 @@
   {{ range first 5 $blog }}
     {{ .Render "li" }}
   {{ end }}
+  <a
+    href='{{ "posts" | absURL }}'
+    class="
+      bg-primary
+      focus:bg-secondary
+      focus:text-background
+      hover:bg-secondary
+      hover:text-background
+      ml-auto
+      mr-0
+      my-6
+      no-underline
+      px-2
+      py-1
+      text-background
+    "
+  >
+    View Archive
+  </a>
   {{ partial "intro.html" . }}
 {{ end }}
