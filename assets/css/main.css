@@ -239,6 +239,10 @@ a.tags:hover span {
   color: var(--primary);
 }
 
+a[data-dark="true"] {
+  color: var(--background);
+}
+
 ul.shelf-list {
   align-items: start;
   grid-template-columns: repeat(auto-fit, minmax(165px, 165px));
