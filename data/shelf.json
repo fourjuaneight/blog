@@ -862,11 +862,11 @@
       "Name": "Silicon Valley",
       "Creator": "Mike Judge, John Altschuler, Dave Krinsky",
       "Rating": 4,
+      "Cover": "https://dl.airtable.com/.attachments/fe5bc96e1b1349c8a095da2c794d76c9/7b991ae5/Silicon_Valley.png",
       "Category": "Shows",
       "Genre": "Comedy",
       "Completed": true,
-      "Comments": "This show is a documentary involving 80% of the people I've worked with.\n",
-      "Cover": "https://dl.airtable.com/.attachments/fe5bc96e1b1349c8a095da2c794d76c9/7b991ae5/Silicon_Valley.png"
+      "Comments": "This show is a documentary involving 80% of the people I've worked with.\n"
     },
     {
       "Name": "The Expanse",
@@ -882,11 +882,11 @@
       "Name": "The Office",
       "Creator": "Greg Daniels",
       "Rating": 4,
+      "Cover": "https://dl.airtable.com/.attachments/8a9d280d18c4027417a3c9addb733013/d3f569b1/The_Office.png",
       "Category": "Shows",
       "Genre": "Comedy",
       "Completed": true,
-      "Comments": "I too worked an office job once. Everyone was Angela.\n",
-      "Cover": "https://dl.airtable.com/.attachments/8a9d280d18c4027417a3c9addb733013/d3f569b1/The_Office.png"
+      "Comments": "I too worked an office job once. Everyone was Angela.\n"
     }
   ],
   "Games": [
