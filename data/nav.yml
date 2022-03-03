@@ -1,13 +1,15 @@
 ---
 header:
-  - label: About
-    link: 'about'
   - label: Archive
     link: 'posts'
+  - label: Shelf
+    link: 'shelf'
   - label: Uses
     link: uses
   - label: Tools
     link: 'tools'
+  - label: About
+    link: 'about'
 footer:
   - label: About
     link: about
