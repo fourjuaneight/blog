@@ -44,7 +44,7 @@ interface Fields {
   }[];
   Category: string;
   Genre: string;
-  Completed: boolean;
+  Completed?: boolean;
   Comments: string;
 }
 
@@ -117,10 +117,13 @@ const saveData = async (): Promise<void> => {
     await getBookmarksWithOffset();
 
     if (data.length) {
-      const cleanData: Item[] = data.map((item: Record) => ({
-        ...item.fields,
-        Cover: item.fields.Cover[0].url,
-      }));
+      const cleanData: Item[] = data
+        .map((item: Record) => ({
+          ...item.fields,
+          Cover: item.fields.Cover[0].url,
+          Completed: item.fields.Completed || false,
+        }))
+        .sort((a: Item, b: Item) => a.Name.localeCompare(b.Name));
       const groupedData: { [key: string]: Item[] } = cleanData.reduce(
         (acc: { [key: string]: Item[] }, item: Item) => {
           const key = item.Category;
