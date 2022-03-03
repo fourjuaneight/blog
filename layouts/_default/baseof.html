@@ -15,7 +15,11 @@
       {{ partial "sw.html" . }}
     {{ end }}
     {{/*  Web Worker  */}}
-    {{ $noise := resources.Get "noise.js" | minify }}
-    <script defer src="{{ $noise.Permalink }}"></script>
+    {{ $noise := resources.Get "noise.js" | minify | resources.Fingerprint "md5" }}
+    <script
+      defer
+      src="{{ $noise.Permalink }}"
+      integrity="{{ $noise.Data.Integrity }}"
+    ></script>
   </body>
 </html>

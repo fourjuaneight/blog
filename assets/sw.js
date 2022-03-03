@@ -1,10 +1,10 @@
 (() => {
-  const version = '';
+  const version = 'version';
   const cacheName = 'cleverlaziness:';
   const staticCacheName = `${version}:${cacheName}static`;
   const pagesCacheName = `${cacheName}pages`;
   const imagesCacheName = `${cacheName}images`;
-  const staticAssets = [];
+  const staticAssets = 'staticAssets';
 
   const updateStaticCache = () =>
     // These items must be cached for the Service Worker to complete installation

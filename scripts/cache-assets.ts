@@ -6,25 +6,12 @@ import { replaceInFile, ReplaceInFileConfig } from 'replace-in-file';
 
 const globSync = glob.sync;
 
-const SITE_URL: string = 'https://www.cleverlaziness.com';
+const SITE_URL: string = 'https://cleverlaziness.com';
+const timestamp: number = Math.floor(new Date().getTime() / 1000);
 
 // Glob options. Pass directory to search and files to ignore
 const cwd = resolve(__dirname, '..', 'dist');
 const ignore = ['sw.js'];
-
-// Generate alphanumeric hash
-const makeId = (length: number): string => {
-  let result = '';
-  const characters: string =
-    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-  const charactersLength = characters.length;
-
-  for (let i = 0; i < length; i += 1) {
-    result += characters.charAt(Math.floor(Math.random() * charactersLength));
-  }
-
-  return result;
-};
 
 // Find all JS, CSS, and font files in rendered output
 (async () => {
@@ -35,21 +22,14 @@ const makeId = (length: number): string => {
 
   // create matched files array
   const files = globSync('**/*.{js,css,woff,woff2}', { cwd, ignore });
+  const sw = globSync('sw.min.*.js', { cwd });
   const newFiles = files.map(toCache => `'/${toCache}'`).toString();
 
   // find and replace options; add hash ID, files to cache array, and site base URL
   const replaceOptions: ReplaceInFileConfig = {
-    files: resolve(cwd, 'sw.min.js'),
-    from: [
-      /(const)\s(staticAssets)\s=\s?\[\];/g,
-      /const\sversion\s=\s'';/g,
-      /baseURL/g,
-    ],
-    to: [
-      `const staticAssets = [${newFiles}];`,
-      `const version = '${makeId(6)}';`,
-      `${SITE_URL}`,
-    ],
+    files: `${cwd}/${sw[0]}`,
+    from: [/'staticAssets'/g, /'version'/g, /baseURL/g],
+    to: [`[${newFiles}]`, `'${timestamp}'`, `${SITE_URL}`],
   };
 
   try {
