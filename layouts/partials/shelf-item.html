@@ -1,0 +1,30 @@
+<li
+  class="flex flex-col h-auto items-start justify-start m-0 p-0 relative"
+  data-genre="{{ .genre }}"
+  data-completed="{{ .completed }}"
+>
+  <picture
+    class="shelf-img flex items-start justify-start mb-2 object-cover object-left-top"
+  >
+    <img
+      src="{{ .cover }}"
+      loading="lazy"
+      class="w-auto"
+      alt="{{ .name }}"
+      height="270"
+      aria-hidden="true"
+    />
+  </picture>
+  <p class="font-bold leading-none mb-1 mt-0 mx-0">{{ .name }}</p>
+  <p class="leading-none mb-1 mt-0 mx-0">{{ .creator }}</p>
+  <details class="m-0">
+    <summary>
+      {{ range seq .rating }}
+        <span class="leading-none text-sm" role="img" aria-label="star">&#x2B50;</span>
+      {{ end }}
+    </summary>
+    <div>
+      <p class="leading-tight m-0">{{ .comments | markdownify }}</p>
+    </div>
+  </details>
+</li>

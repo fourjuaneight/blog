@@ -239,6 +239,34 @@ a.tags:hover span {
   color: var(--primary);
 }
 
+ul.shelf-list {
+  align-items: start;
+  grid-template-columns: repeat(auto-fit, minmax(165px, 165px));
+  justify-content: start;
+}
+
+ul.shelf-list li {
+  min-height: 15.625rem;
+  width: 10.3125rem;
+}
+
+ul.shelf-list li[data-completed='false']::before {
+  border-top: 1.25rem solid var(--primary);
+  border-left: 1.25rem solid transparent;
+  content: '';
+  display: block;
+  height: 0;
+  right: 0;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+
+picture.shelf-img,
+picture.shelf-img img {
+  max-height: 15.625rem;
+}
+
 div.highlight {
   margin: 0 0 0.75rem;
 }

@@ -1,0 +1,7 @@
+{{ define "main" }}
+  <h1 class="post-title md:text-6xl mr-auto text-4xl">{{ .Title }}</h1>
+  <p>{{ .Content }}</p>
+  {{ range $i, $data := .Site.Data.shelf }}
+    {{ partial "shelf-list" (dict "section" $i "data" $data) }}
+  {{ end}}
+{{ end }}
