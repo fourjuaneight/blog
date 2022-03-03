@@ -5,7 +5,7 @@
   "scripts": {
     "build": "hugo -e production --minify",
     "build:chrome": "hugo gen chromastyles > assets/css/syntax.css",
-    "build:prod": "run-p tw img && hugo --minify && npm run sw",
+    "build:prod": "run-p img shelf tw && hugo --minify && npm run sw",
     "clean": "rm -rf dist",
     "clean:node": "rm -rf node_modules",
     "tw": "tailwindcss --no-autoprefixer -i ./assets/css/tailwind.css -o ./assets/css/tw.css",
@@ -18,7 +18,7 @@
     "ts:watch": "tsup src/assets/scripts/*.ts --out-dir assets/js --watch src/js",
     "serve": "serve dist",
     "shelf": "ts-node --project tsconfig.node.json \"scripts/shelf-data.ts\"",
-    "start": "npm run img && concurrently -n \"TW,DEV\" -c \"#38bdf8,#ff4088\" \"npm run tw -- --watch\" \"npm run dev\"",
+    "start": "run-p img shelf && concurrently -n \"TW,DEV\" -c \"#38bdf8,#ff4088\" \"npm run tw -- --watch\" \"npm run dev\"",
     "tsc": "tsc"
   },
   "repository": {
