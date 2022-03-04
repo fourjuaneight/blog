@@ -1,7 +1,9 @@
 ---
 title: Spreadsheets
+seo_title: 'Building a Custom Bookmarking Solution - Part 1'
 date: 2019-09-08
 tags:
+  - bookmarking
   - productivity
 draft: false
 ---

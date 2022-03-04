@@ -1,7 +1,9 @@
 ---
 title: Spreadsheets Reloaded
+seo_title: 'Building a Custom Bookmarking Solution - Part 2'
 date: 2019-11-20
 tags:
+  - bookmarking
   - productivity
 draft: false
 ---
