@@ -1,12 +1,12 @@
 <section class="mb-4 w-full" data-section="{{ .section }}">
   <h2
-    class="border-0 border-b border-secondary border-solid md:text-4xl pb-1 text-3xl"
+    class="border-0 border-b border-secondary border-solid capitalize md:text-4xl pb-1 text-3xl"
   >
     {{ .section }}
   </h2>
   <ul class="shelf-list gap-5 grid list-none mt-6 p-0 w-full" data-category="{{ .section }}">
     {{ range .data }}
-      {{ partial "shelf-item" (dict "completed" .Completed "cover" .Cover "name" .Name "creator" .Creator "rating" .Rating "comments" .Comments "genre" .Genre) }}
+      {{ partial "shelf-item" (dict "completed" .completed "cover" .cover "name" .name "creator" .creator "rating" .rating "comments" .comments "genre" .genre) }}
     {{ end }}
   </ul>
 </section>

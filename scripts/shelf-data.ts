@@ -13,10 +13,10 @@ const { AIRTABLE_MEDIA_ID, AIRTABLE_TOKEN } = process.env;
 let data: Record[] = [];
 
 interface Fields {
-  Name: string;
-  Creator: string;
-  Rating: number;
-  Cover: {
+  name: string;
+  creator: string;
+  rating: number;
+  cover: {
     id: string;
     width: number;
     height: number;
@@ -42,10 +42,10 @@ interface Fields {
       };
     };
   }[];
-  Category: string;
-  Genre: string;
-  Completed?: boolean;
-  Comments: string;
+  category: string;
+  genre: string;
+  completed?: boolean;
+  comments: string;
 }
 
 interface Record {
@@ -60,14 +60,14 @@ interface AirtableResp {
 }
 
 interface Item {
-  Name: string;
-  Creator: string;
-  Rating: number;
-  Cover: string;
-  Category: string;
-  Genre: string;
-  Completed: boolean;
-  Comments: string;
+  name: string;
+  creator: string;
+  rating: number;
+  cover: string;
+  category: string;
+  genre: string;
+  completed: boolean;
+  comments: string;
 }
 
 /**
@@ -120,13 +120,13 @@ const saveData = async (): Promise<void> => {
       const cleanData: Item[] = data
         .map((item: Record) => ({
           ...item.fields,
-          Cover: item.fields.Cover[0].url,
-          Completed: item.fields.Completed || false,
+          cover: item.fields.cover[0].url,
+          completed: item.fields.completed || false,
         }))
-        .sort((a: Item, b: Item) => a.Name.localeCompare(b.Name));
+        .sort((a: Item, b: Item) => a.name.localeCompare(b.name));
       const groupedData: { [key: string]: Item[] } = cleanData.reduce(
         (acc: { [key: string]: Item[] }, item: Item) => {
-          const key = item.Category;
+          const key = item.category;
 
           if (!acc[key]) {
             acc[key] = [];
