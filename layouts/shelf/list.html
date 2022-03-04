@@ -5,3 +5,8 @@
     {{ partial "shelf-list" (dict "section" $i "data" $data) }}
   {{ end}}
 {{ end }}
+{{ define "scripts" }}
+  {{/*  Image Lazy Loading  */}}
+  {{ $lazyLoad := resources.Get "js/lazyload.js" | minify | resources.Fingerprint "sha256" }}
+  <script defer src="{{ $lazyLoad.Permalink }}"></script>
+{{ end }}

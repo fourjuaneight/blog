@@ -6,13 +6,15 @@
   <picture
     class="shelf-img flex items-start justify-start mb-2 object-cover object-left-top"
   >
+    {{ $placeholder := resources.Get "/img/coming-soon.svg" }}
     <img
-      src="{{ .cover }}"
-      loading="lazy"
+      data-src="{{ .cover }}"
+      src="{{ $placeholder.Permalink }}"
       class="w-auto"
       alt="{{ .name }}"
       height="270"
       aria-hidden="true"
+      data-lazy="true"
     />
   </picture>
   <p class="font-bold leading-none mb-1 mt-0 mx-0">{{ .name }}</p>
@@ -20,7 +22,9 @@
   <details class="m-0">
     <summary>
       {{ range seq .rating }}
-        <span class="leading-none text-sm" role="img" aria-label="star">&#x2B50;</span>
+        <span class="leading-none text-sm" role="img" aria-label="star">
+          &#x2B50;
+        </span>
       {{ end }}
     </summary>
     <div>

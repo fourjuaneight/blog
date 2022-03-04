@@ -3,6 +3,7 @@
   {{ partial "head.html" . }}
   <body>
     {{ partial "header.html" . }}
+
     <main class="grid w-full">
       <div
         class="col-start-2 flex flex-col items-start justify-start row-start-2 w-full"
@@ -10,10 +11,15 @@
         {{ block "main" . }}{{ end }}
       </div>
     </main>
+
     {{ partial "footer.html" . }}
+
     {{ if hugo.Environment | eq "production" }}
       {{ partial "sw.html" . }}
     {{ end }}
+
+    {{ block "scripts" . }}{{ end }}
+
     {{/*  Web Worker  */}}
     {{ $noise := resources.Get "noise.js" | minify | resources.Fingerprint "sha256" }}
     {{ $ww := resources.Get "ww.js" | minify | resources.Fingerprint "sha256" }}
