@@ -269,7 +269,6 @@ ul.shelf-list li[data-completed='false']::before {
 picture.shelf-img,
 picture.shelf-img img {
   max-height: 15.625rem;
-  min-height: 15rem;
 }
 
 div.highlight {
