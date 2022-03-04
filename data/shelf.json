@@ -685,6 +685,16 @@
       "Comments": "Naruto ends here and nothing else happens afterward. You will never change my mind. This is the only ending I needed. My boy grew up to be happy.\n"
     },
     {
+      "Name": "Tokyo Ghoul",
+      "Creator": "Sui Ishida",
+      "Rating": 4,
+      "Cover": "https://dl.airtable.com/.attachments/17898124a907a6bcd888a1fda2366bd7/9ccb5115/tokyo_ghoul.jpg",
+      "Category": "Anime",
+      "Genre": "Horror",
+      "Comments": "A young man with long term COVID symptoms has resorted to eating people because food tastes that awful.\n",
+      "Completed": false
+    },
+    {
       "Name": "Tokyo Revengers",
       "Creator": "Koichi Hatsumi",
       "Rating": 4,
