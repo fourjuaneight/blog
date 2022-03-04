@@ -1,6 +1,6 @@
 ---
 title: Quality
-date: '2019-01-01'
+date: 2019-01-01
 tags:
   - yearly-theme
 draft: false

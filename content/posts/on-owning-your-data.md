@@ -1,5 +1,5 @@
 ---
-title: "On Owning Your Data"
+title: On Owning Your Data
 date: 2022-03-02
 tags:
   - indieweb

@@ -1,5 +1,5 @@
 ---
-title: "2021: The Void Year"
+title: '2021: The Void Year'
 date: 2021-12-29
 tags:
   - monthly-notes

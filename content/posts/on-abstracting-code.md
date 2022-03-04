@@ -1,6 +1,6 @@
 ---
 title: On Abstracting Code
-date: '2021-05-31'
+date: 2021-05-31
 tags:
   - developement
 draft: false

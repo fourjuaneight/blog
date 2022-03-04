@@ -1,6 +1,6 @@
 ---
-title: Procrastinating
-date: '2017-07-23'
+title: On Procrastinating
+date: 2017-07-23
 tags:
   - procrastination
 draft: false
