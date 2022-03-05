@@ -256,11 +256,11 @@ ul.shelf-list li {
 
 ul.shelf-list li[data-completed='false']::before {
   border-top: 1.25rem solid var(--primary);
-  border-left: 1.25rem solid transparent;
+  border-right: 1.25rem solid transparent;
   content: '';
   display: block;
   height: 0;
-  right: 0;
+  left: 0;
   position: absolute;
   top: 0;
   width: 0;
