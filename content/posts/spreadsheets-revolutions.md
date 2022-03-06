@@ -1,5 +1,6 @@
 ---
 title: 'Spreadsheets Revolutions'
+seo_title: 'Building a Custom Bookmarking Solution - Part 3'
 date: 2022-03-06
 tags:
   - bookmarking
