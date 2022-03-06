@@ -131,6 +131,16 @@
       "completed": false
     },
     {
+      "name": "Tokyo Ghoul",
+      "creator": "Sui Ishida",
+      "rating": 4,
+      "cover": "https://dl.airtable.com/.attachments/17898124a907a6bcd888a1fda2366bd7/9ccb5115/tokyo_ghoul.jpg",
+      "category": "Manga",
+      "genre": "Horror",
+      "comments": "A young man with long term COVID symptoms has resorted to eating people because food tastes that awful.\n",
+      "completed": false
+    },
+    {
       "name": "Tokyo Revengers",
       "creator": "Ken Wakui",
       "rating": 5,
@@ -260,7 +270,7 @@
       "category": "Movies",
       "genre": "Thriller",
       "completed": true,
-      "comments": "Yeah man, I've been there. Those caucasian house-in-the-woods families are always a hit or miss. You'll see some weird dancing or get killed.\n"
+      "comments": "A house-in-the-woods in the mountains of Caucasus are always a hit or miss. You'll either see some lame dancing or get killed.\n"
     },
     {
       "name": "Harry Potter and The Chamber of Secrets",
@@ -683,16 +693,6 @@
       "genre": "Romance",
       "completed": true,
       "comments": "Naruto ends here and nothing else happens afterward. You will never change my mind. This is the only ending I needed. My boy grew up to be happy.\n"
-    },
-    {
-      "name": "Tokyo Ghoul",
-      "creator": "Sui Ishida",
-      "rating": 4,
-      "cover": "https://dl.airtable.com/.attachments/17898124a907a6bcd888a1fda2366bd7/9ccb5115/tokyo_ghoul.jpg",
-      "category": "Anime",
-      "genre": "Horror",
-      "comments": "A young man with long term COVID symptoms has resorted to eating people because food tastes that awful.\n",
-      "completed": false
     },
     {
       "name": "Tokyo Revengers",
