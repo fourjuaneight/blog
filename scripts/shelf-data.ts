@@ -5,7 +5,12 @@ import chalk from 'chalk';
 import dotenv from 'dotenv';
 import fetch from 'isomorphic-fetch';
 
-import { AirtableShelfResp, ShelfFields, ShelfItem, ShelfRecord } from '.types';
+import {
+  AirtableShelfResp,
+  ShelfFields,
+  ShelfItem,
+  ShelfRecord,
+} from './types';
 
 dotenv.config();
 
