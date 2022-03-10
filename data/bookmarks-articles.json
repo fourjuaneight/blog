@@ -1,0 +1,885 @@
+[
+  {
+    "title": "The Ivy Lee Method: The Daily Routine for Peak Productivity",
+    "creator": "James Clear",
+    "url": "https://jamesclear.com/ivy-lee",
+    "tags": [
+      "productivity"
+    ]
+  },
+  {
+    "title": "Normalizing Struggle",
+    "creator": "Ash Furrow",
+    "url": "https://ashfurrow.com/blog/normalizing-struggle/",
+    "tags": [
+      "psychology"
+    ]
+  },
+  {
+    "title": "The Confessions of the Hacker Who Saved the Internet",
+    "creator": "Andy Greenberg",
+    "url": "https://www.wired.com/story/confessions-marcus-hutchins-hacker-who-saved-the-internet/",
+    "tags": [
+      "hacking",
+      "crime"
+    ]
+  },
+  {
+    "title": "Chapter 2: Browsers",
+    "creator": "Jay Hoffmann",
+    "url": "https://css-tricks.com/chapter-2-browsers/",
+    "tags": [
+      "development",
+      "history"
+    ]
+  },
+  {
+    "title": "New Programming Jargon",
+    "creator": "Jeff Atwood",
+    "url": "https://blog.codinghorror.com/new-programming-jargon/",
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "title": "Internet 3.0 and the Beginning of (Tech) History",
+    "creator": "Ben Thompson",
+    "url": "https://stratechery.com/2021/internet-3-0-and-the-beginning-of-tech-history/",
+    "tags": [
+      "history",
+      "technology"
+    ]
+  },
+  {
+    "title": "The Devastating Decline of a Brilliant Young Coder",
+    "creator": "Sandra Upson",
+    "url": "https://www.wired.com/story/lee-holloway-devastating-decline-brilliant-young-coder/",
+    "tags": [
+      "development",
+      "technology",
+      "health"
+    ]
+  },
+  {
+    "title": "Into the Personal-Website-Verse",
+    "creator": "Matthias Ott",
+    "url": "https://matthiasott.com/articles/into-the-personal-website-verse",
+    "tags": [
+      "technology",
+      "privacy"
+    ]
+  },
+  {
+    "title": "The Perils of Rehydration",
+    "creator": "Josh Comeau",
+    "url": "https://joshwcomeau.com/react/the-perils-of-rehydration",
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "title": "A Brief History & Ethos of the Digital Garden",
+    "creator": "Maggie Appleton",
+    "url": "https://maggieappleton.com/garden-history",
+    "tags": [
+      "development",
+      "social",
+      "writing"
+    ]
+  },
+  {
+    "title": "A Nameless Hiker and the Case the Internet Can't Crack",
+    "creator": "Nicholas Thompson",
+    "url": "https://www.wired.com/story/nameless-hiker-mostly-harmless-internet-mystery/",
+    "tags": [
+      "mystery"
+    ]
+  },
+  {
+    "title": "The Wet Codebase",
+    "creator": "Dan Abramov",
+    "url": "https://www.deconstructconf.com/2019/dan-abramov-the-wet-codebase",
+    "tags": [
+      "development",
+      "productivity"
+    ]
+  },
+  {
+    "title": "My Hardest Bug Ever",
+    "creator": "Dave Baggett",
+    "url": "https://www.gamedeveloper.com/programming/my-hardest-bug-ever",
+    "tags": [
+      "development",
+      "gaming"
+    ]
+  },
+  {
+    "title": "The Nerd Handbook",
+    "creator": "Rands",
+    "url": "http://randsinrepose.com/archives/the-nerd-handbook/",
+    "tags": [
+      "technology",
+      "tv",
+      "film",
+      "gaming"
+    ]
+  },
+  {
+    "title": "Amazon's Dark Secret: It Has Failed to Protect Your Data",
+    "creator": "Will Evans",
+    "url": "https://www.wired.com/story/amazon-failed-to-protect-your-data-investigation/",
+    "tags": [
+      "crime",
+      "privacy",
+      "technology"
+    ]
+  },
+  {
+    "title": "The Massacre of Black Wall Street",
+    "creator": "Natalie Chang",
+    "url": "https://www.theatlantic.com/sponsored/hbo-2019/the-massacre-of-black-wall-street/3217/",
+    "tags": [
+      "crime",
+      "history",
+      "race"
+    ]
+  },
+  {
+    "title": "A Brief History of Porn on the Internet",
+    "creator": "David Kushner",
+    "url": "https://www.wired.com/story/brief-history-porn-internet/",
+    "tags": [
+      "technology",
+      "culture",
+      "sex"
+    ]
+  },
+  {
+    "title": "Interview with the Luddite",
+    "creator": "Kevin Kelly",
+    "url": "https://www.wired.com/1995/06/saleskelly/",
+    "tags": [
+      "life",
+      "technology"
+    ]
+  },
+  {
+    "title": "The AI Revolution: Our Immortality or Extinction",
+    "creator": "Tim Urban",
+    "url": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-2.html",
+    "tags": [
+      "engineering",
+      "technology"
+    ]
+  },
+  {
+    "title": "CS Visualized: CORS",
+    "creator": "Lydia Hallie",
+    "url": "https://dev.to/lydiahallie/cs-visualized-cors-5b8h",
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "title": "The invisible addiction\\: is it time to give up caffeine?",
+    "creator": "Michael Pollan",
+    "url": "https://www.theguardian.com/food/2021/jul/06/caffeine-coffee-tea-invisible-addiction-is-it-time-to-give-up",
+    "tags": [
+      "food",
+      "health"
+    ]
+  },
+  {
+    "title": "July 6, 2021",
+    "creator": "Heather Cox Richardson",
+    "url": "https://heathercoxrichardson.substack.com/p/july-6-2021",
+    "tags": [
+      "politics"
+    ]
+  },
+  {
+    "title": "Programming Sucks",
+    "creator": "Peter Welch",
+    "url": "https://www.stilldrinking.org/programming-sucks",
+    "tags": [
+      "development",
+      "comedy"
+    ]
+  },
+  {
+    "title": "Human-Readable JavaScript: A Tale of Two Experts",
+    "creator": "by Laurie BarthMarch 25, 2021nPublished in Code, JavaScript",
+    "url": "https://alistapart.com/article/human-readable-javascript/",
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "title": "Defining Productivity",
+    "creator": "Jeremy Wegner",
+    "url": "https://jeremy.codes/blog/defining-productivity/",
+    "tags": [
+      "development",
+      "productivity"
+    ]
+  },
+  {
+    "title": "A Spreadsheet Way of Knowledge",
+    "creator": "Steven Levy",
+    "url": "https://www.wired.com/2014/10/a-spreadsheet-way-of-knowledge/",
+    "tags": [
+      "technology",
+      "history",
+      "work",
+      "productivity"
+    ]
+  },
+  {
+    "title": "The CSS Mindset",
+    "creator": "Max Böck",
+    "url": "https://mxb.dev/blog/the-css-mindset/",
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "title": "Cranking",
+    "creator": "Merlin Mann",
+    "url": "https://www.43folders.com/2011/04/22/cranking",
+    "tags": [
+      "family",
+      "life",
+      "productivity"
+    ]
+  },
+  {
+    "title": "Promises & Async/Await",
+    "creator": "Lydia Hallie",
+    "url": "https://dev.to/lydiahallie/javascript-visualized-promises-async-await-5gke",
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "title": "What Happened to the Webmaster",
+    "creator": "Jay Hoffmann",
+    "url": "https://thehistoryoftheweb.com/postscript/what-happened-to-the-webmaster/",
+    "tags": [
+      "development",
+      "history"
+    ]
+  },
+  {
+    "title": "Chapter 6: Web Design",
+    "creator": "Jay Hoffmann",
+    "url": "https://css-tricks.com/chapter-6-web-design/",
+    "tags": [
+      "development",
+      "history"
+    ]
+  },
+  {
+    "title": "A speech by the late David Foster Wallace",
+    "creator": "David Foster Wallace",
+    "url": "https://www.theguardian.com/books/2008/sep/20/fiction",
+    "tags": [
+      "life"
+    ]
+  },
+  {
+    "title": "The AI Revolution: The Road to Superintelligence",
+    "creator": "Tim Urban",
+    "url": "https://waitbutwhy.com/2015/01/artificial-intelligence-revolution-1.html",
+    "tags": [
+      "engineering",
+      "technology"
+    ]
+  },
+  {
+    "title": "The Spine Collector",
+    "creator": "Reeves Wiedeman",
+    "url": "https://www.vulture.com/2021/08/stealing-books-before-release-mystery.html",
+    "tags": [
+      "crime"
+    ]
+  },
+  {
+    "title": "Inside Mark Zuckerberg's Lost Notebook",
+    "creator": "Steven Levy",
+    "url": "https://www.wired.com/story/facebook-mark-zuckerberg-lost-notebook/",
+    "tags": [
+      "social",
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "title": "React's useCallback and useMemo Hooks By Example",
+    "creator": "Nikolay Grozev",
+    "url": "https://nikgrozev.com/2019/04/07/reacts-usecallback-and-usememo-hooks-by-example/",
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "title": "How to Pick a Career (That Actually Fits You)",
+    "creator": "Tim Urban",
+    "url": "https://waitbutwhy.com/2018/04/picking-career.html",
+    "tags": [
+      "life",
+      "work"
+    ]
+  },
+  {
+    "title": "Second-guessing the modern web",
+    "creator": "Tom MacWright",
+    "url": "https://macwright.org/2020/05/10/spa-fatigue.html",
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "title": "Working in One Bit",
+    "creator": "Lucas Pope",
+    "url": "https://dukope.itch.io/mars-after-midnight/devlog/285964/working-in-one-bit",
+    "tags": [
+      "development",
+      "gaming"
+    ]
+  },
+  {
+    "title": "Just",
+    "creator": "Brad Frost",
+    "url": "https://bradfrost.com/blog/post/just/",
+    "tags": [
+      "health",
+      "productivity"
+    ]
+  },
+  {
+    "title": "Fertility Doctor Donald Cline's Secret Children",
+    "creator": "Sarah Zhang",
+    "url": "https://www.theatlantic.com/magazine/archive/2019/04/fertility-doctor-donald-cline-secret-children/583249/",
+    "tags": [
+      "health",
+      "life",
+      "privacy",
+      "family"
+    ]
+  },
+  {
+    "title": "Inside the Clubhouse",
+    "creator": "Nathan Baschez",
+    "url": "https://every.to/divinations/inside-the-clubhouse-403643",
+    "tags": [
+      "social"
+    ]
+  },
+  {
+    "title": "The Big, Stuck Boat Is Glorious",
+    "creator": "Amanda Mull",
+    "url": "https://www.theatlantic.com/technology/archive/2021/03/were-going-to-need-a-smaller-boat/618414/?utm_source",
+    "tags": [
+      "business",
+      "transportation"
+    ]
+  },
+  {
+    "title": "On Building A Fluid User Interface",
+    "creator": "Rishi Mody",
+    "url": "https://about.instagram.com/blog/engineering/on-building-a-fluid-user-interface",
+    "tags": [
+      "design",
+      "development"
+    ]
+  },
+  {
+    "title": "The Ethics of Web Performance",
+    "creator": "Tim Kadlec",
+    "url": "https://timkadlec.com/remembers/2019-01-09-the-ethics-of-performance/",
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "title": "On Digital Gardening\\, Blogs\\, and Knowledge",
+    "creator": "Gabe",
+    "url": "http://www.macdrifter.com/2021/06/on-digital-gardening-blogs-and-knowledge.html",
+    "tags": [
+      "writing"
+    ]
+  },
+  {
+    "title": "Sea of Crises",
+    "creator": "Brian Phillips",
+    "url": "https://grantland.com/features/sumo-wrestling-tokyo-japan-hakuho-yukio-mishima-novelist-seppuku/",
+    "tags": [
+      "history",
+      "sports"
+    ]
+  },
+  {
+    "title": "My approach to coding interviews: Optimize for iteration",
+    "creator": "Surma",
+    "url": "https://surma.dev/things/spreadsheet/",
+    "tags": [
+      "business",
+      "development"
+    ]
+  },
+  {
+    "title": "Chapter 1: Birth",
+    "creator": "Jay Hoffmann",
+    "url": "https://css-tricks.com/chapter-1-birth/",
+    "tags": [
+      "development",
+      "history"
+    ]
+  },
+  {
+    "title": "Making Peace With The Feast Or Famine Of Freelancing",
+    "creator": "Liz Elcoate",
+    "url": "https://www.smashingmagazine.com/2019/08/feast-famine-freelancing/",
+    "tags": [
+      "development",
+      "work"
+    ]
+  },
+  {
+    "title": "Raiders of the Lost Web",
+    "creator": "Adrienne LaFrance",
+    "url": "https://www.theatlantic.com/technology/archive/2015/10/raiders-of-the-lost-web/409210/",
+    "tags": [
+      "history",
+      "technology"
+    ]
+  },
+  {
+    "title": "January 6, 2021",
+    "creator": "Heather Cox Richardson",
+    "url": "https://heathercoxrichardson.substack.com/p/january-6-2021",
+    "tags": [
+      "politics"
+    ]
+  },
+  {
+    "title": "Using the iPad Pro as my development machine",
+    "creator": "Fatih Arslan",
+    "url": "https://arslan.io/2019/01/07/using-the-ipad-pro-as-my-development-machine/",
+    "tags": [
+      "development",
+      "productivity"
+    ]
+  },
+  {
+    "title": "The Browser Engine That Could",
+    "creator": "Jay Hoffmann",
+    "url": "https://thehistoryoftheweb.com/how-a-browser-engine-dominates-the-market/",
+    "tags": [
+      "development",
+      "history"
+    ]
+  },
+  {
+    "title": "You Won't Believe My Morning",
+    "creator": "Tim Urban",
+    "url": "https://waitbutwhy.com/2020/03/my-morning.html",
+    "tags": [
+      "sci-fi"
+    ]
+  },
+  {
+    "title": "Moore's Law for Everything",
+    "creator": "by Sam Altman",
+    "url": "https://moores.samaltman.com/",
+    "tags": [
+      "ai",
+      "finance"
+    ]
+  },
+  {
+    "title": "Huawei, 5G, and the Man Who Conquered Noise",
+    "creator": "Steven Levy",
+    "url": "https://www.wired.com/story/huawei-5g-polar-codes-data-breakthrough/",
+    "tags": [
+      "science",
+      "technology"
+    ]
+  },
+  {
+    "title": "Writer Evan Ratliff Tried to Vanish: Here's What Happened",
+    "creator": "Evan Ratliff",
+    "url": "https://www.wired.com/2009/11/ff-vanish2/",
+    "tags": [
+      "mystery",
+      "technology"
+    ]
+  },
+  {
+    "title": "The Secretive Company That Might End Privacy as We Know It",
+    "creator": "Kashmir Hill",
+    "url": "https://www.nytimes.com/2020/01/18/technology/clearview-privacy-facial-recognition.html",
+    "tags": [
+      "ai",
+      "privacy"
+    ]
+  },
+  {
+    "title": "Remote is a New Medium | Variance",
+    "creator": "Noah Brier",
+    "url": "https://www.variance.com/posts/remote-is-a-new-medium",
+    "tags": [
+      "business"
+    ]
+  },
+  {
+    "title": "Chapter 10: Browser Wars",
+    "creator": "Jay Hoffmann",
+    "url": "https://css-tricks.com/chapter-10-browser-wars/",
+    "tags": [
+      "development",
+      "history"
+    ]
+  },
+  {
+    "title": "What I've learned from nearly three years of enterprise Wi-Fi at home",
+    "creator": "Lee Hutchinson",
+    "url": "https://arstechnica.com/information-technology/2018/07/enterprise-wi-fi-at-home-part-two-reflecting-on-almost-three-years-with-pro-gear/",
+    "tags": [
+      "technology"
+    ]
+  },
+  {
+    "title": "Loneliness Is Other People",
+    "creator": "Katharine Smyth",
+    "url": "https://www.theparisreview.org/blog/2020/04/20/loneliness-is-other-people/",
+    "tags": [
+      "life"
+    ]
+  },
+  {
+    "title": "Fandom, Folksonomies, and Tagging Things Right",
+    "creator": "Jay Hoffmann",
+    "url": "https://thehistoryoftheweb.com/postscript/fandom-folksonomies-and-tagging-things-right/",
+    "tags": [
+      "development",
+      "history"
+    ]
+  },
+  {
+    "title": "The Web began dying in 2014, here's how",
+    "creator": "André Staltz",
+    "url": "https://staltz.com/the-web-began-dying-in-2014-heres-how.html",
+    "tags": [
+      "technology",
+      "privacy"
+    ]
+  },
+  {
+    "title": "Bookmarking",
+    "creator": "Robin Rendle",
+    "url": "https://www.robinrendle.com/essays/bookmarking/",
+    "tags": [
+      "productivity"
+    ]
+  },
+  {
+    "title": "Going Indie. Reclaiming Content",
+    "creator": "Matthias Ott",
+    "url": "https://matthiasott.com/articles/going-indie-reclaiming-content",
+    "tags": [
+      "development",
+      "privacy",
+      "writing"
+    ]
+  },
+  {
+    "title": "Survival of the Richest",
+    "creator": "Douglas Rushkoff",
+    "url": "https://medium.com/s/futurehuman/survival-of-the-richest-9ef6cddd0cc1",
+    "tags": [
+      "conspiracies",
+      "community"
+    ]
+  },
+  {
+    "title": "The Terrifying Warning Lurking in the Earth's Ancient Rock Record",
+    "creator": "Peter Brannen",
+    "url": "https://www.theatlantic.com/magazine/archive/2021/03/extreme-climate-change-history/617793/",
+    "tags": [
+      "climate",
+      "history"
+    ]
+  },
+  {
+    "title": "Japan's Rent-a-Family Industry",
+    "creator": "Elif Batuman",
+    "url": "https://www.newyorker.com/magazine/2018/04/30/japans-rent-a-family-industry",
+    "tags": [
+      "relationships",
+      "technology"
+    ]
+  },
+  {
+    "title": "Exit Planet Dust",
+    "creator": "Drew Austin",
+    "url": "https://kneelingbus.substack.com/p/158-exit-planet-dust",
+    "tags": [
+      "social",
+      "technology"
+    ]
+  },
+  {
+    "title": "Chapter 4: Search",
+    "creator": "Jay Hoffmann",
+    "url": "https://css-tricks.com/chapter-4-search/",
+    "tags": [
+      "development",
+      "history"
+    ]
+  },
+  {
+    "title": "Chapter 7: Standards",
+    "creator": "Jay Hoffmann",
+    "url": "https://css-tricks.com/chapter-7-standards/",
+    "tags": [
+      "development",
+      "history"
+    ]
+  },
+  {
+    "title": "Chapter 8: CSS",
+    "creator": "Jay Hoffmann",
+    "url": "https://css-tricks.com/chapter-8-css/",
+    "tags": [
+      "development",
+      "history"
+    ]
+  },
+  {
+    "title": "Things nobody ever taught me about CSS",
+    "creator": "Charlie Gerard",
+    "url": "https://medium.com/@devdevcharlie/things-nobody-ever-taught-me-about-css-5d16be8d5d0e",
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "title": "Is Google Making Us Stupid?",
+    "creator": "Nicholas Carr",
+    "url": "https://www.theatlantic.com/magazine/archive/2008/07/is-google-making-us-stupid/306868/",
+    "tags": [
+      "psychology",
+      "technology"
+    ]
+  },
+  {
+    "title": "Tales of an IT professional sailing around the Antarctic loop",
+    "creator": "Alice Bonasio",
+    "url": "https://arstechnica.com/information-technology/2017/08/tales-of-an-it-professional-sailing-around-the-antarctic-loop/",
+    "tags": [
+      "technology",
+      "travel"
+    ]
+  },
+  {
+    "title": "It takes a PhD to develop that",
+    "creator": "RoyalSloth",
+    "url": "https://blog.royalsloth.eu/posts/it-takes-a-phd-to-develop-that/",
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "title": "How to Write a Blog Post",
+    "creator": "Rands",
+    "url": "http://randsinrepose.com/archives/how-to-write-a-blog-post/",
+    "tags": [
+      "writing"
+    ]
+  },
+  {
+    "title": "The Rise and Demise of RSS",
+    "creator": "Sinclair Target",
+    "url": "https://motherboard.vice.com/en_us/article/a3mm4z/the-rise-and-demise-of-rss",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "title": "Map Shows How Climate Change Will Affect Health Across US ",
+    "creator": "Sara G. Miller",
+    "url": "https://www.livescience.com/58270-climate-change-health-effects-united-states.html",
+    "tags": [
+      "climate",
+      "health",
+      "life"
+    ]
+  },
+  {
+    "title": "A plan to rescue the Web from the Internet",
+    "creator": "André Staltz",
+    "url": "https://staltz.com/a-plan-to-rescue-the-web-from-the-internet.html",
+    "tags": [
+      "technology",
+      "privacy"
+    ]
+  },
+  {
+    "title": "15 Months of Fresh Hell Inside Facebook",
+    "creator": "Nicholas Thompson",
+    "url": "https://www.wired.com/story/facebook-mark-zuckerberg-15-months-of-fresh-hell/",
+    "tags": [
+      "politics",
+      "social",
+      "technology"
+    ]
+  },
+  {
+    "title": "The Importance of Being on Usenet",
+    "creator": "Jay Hoffmann",
+    "url": "http://thehistoryoftheweb.com/the-importance-of-being-on-usenet/",
+    "tags": [
+      "development",
+      "history"
+    ]
+  },
+  {
+    "title": "A 25-Year-Old Bet Comes Due: Has Tech Destroyed Society?",
+    "creator": "Steven Levy",
+    "url": "https://www.wired.com/story/a-25-year-old-bet-comes-due-has-tech-destroyed-society/",
+    "tags": [
+      "life",
+      "technology"
+    ]
+  },
+  {
+    "title": "The Sad, Beautiful Fact That We're All Going To Miss Almost Everything",
+    "creator": "Linda Holmes",
+    "url": "https://www.npr.org/2011/04/18/135508305/the-sad-beautiful-fact-that-were-all-going-to-miss-almost-everything",
+    "tags": [
+      "life"
+    ]
+  },
+  {
+    "title": "Coding Career Advice: Using Git for Version Control Effectively",
+    "creator": "Mark Erikson",
+    "url": "https://blog.isquaredsoftware.com/2021/01/coding-career-git-usage/",
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "title": "The Buzzy, Chatty, Out-of-Control Rise of Clubhouse",
+    "creator": "Steven Levy",
+    "url": "https://www.wired.com/story/inside-clubhouse-audio-app-paul-davison-rohan-seth/",
+    "tags": [
+      "social",
+      "technology"
+    ]
+  },
+  {
+    "title": "The Making of QAnon: A Crowdsourced Conspiracy",
+    "creator": "The Q Origins Project",
+    "url": "https://www.bellingcat.com/news/americas/2021/01/07/the-making-of-qanon-a-crowdsourced-conspiracy/",
+    "tags": [
+      "conspiracies"
+    ]
+  },
+  {
+    "title": "RSS: A Well Formed Log Entry",
+    "creator": "Jay Hoffmann",
+    "url": "http://thehistoryoftheweb.com/rss-well-formed-log-entry/",
+    "tags": [
+      "development",
+      "history"
+    ]
+  },
+  {
+    "title": "Chinese AI Is Creating an Axis of Autocracy",
+    "creator": "Ross Andersen",
+    "url": "https://www.theatlantic.com/magazine/archive/2020/09/china-ai-surveillance/614197/",
+    "tags": [
+      "privacy",
+      "politics",
+      "security",
+      "technology"
+    ]
+  },
+  {
+    "title": "Now THAT'S What I Call Service Worker!",
+    "creator": "Jeremy Wagner",
+    "url": "https://alistapart.com/article/now-thats-what-i-call-service-worker/",
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "title": "The Unsettling Truth About the 'Mostly Harmless' Hiker",
+    "creator": "Nicholas Thompson",
+    "url": "https://www.wired.com/story/unsettling-truth-mostly-harmless-hiker/",
+    "tags": [
+      "mystery"
+    ]
+  },
+  {
+    "title": "How Telegram Became the Anti-Facebook",
+    "creator": "Darren Loucaides",
+    "url": "https://www.wired.com/story/how-telegram-became-anti-facebook/",
+    "tags": [
+      "social",
+      "technology"
+    ]
+  },
+  {
+    "title": "My Secret Sauce of Blogging",
+    "creator": "Gabe",
+    "url": "http://www.macdrifter.com/2021/04/my-secret-sauce-of-blogging.html",
+    "tags": [
+      "writing"
+    ]
+  },
+  {
+    "title": "The rise and fall of Adobe Flash",
+    "creator": "Richard Moss",
+    "url": "https://arstechnica.com/information-technology/2020/07/the-rise-and-fall-of-adobe-flash/",
+    "tags": [
+      "technology",
+      "history"
+    ]
+  },
+  {
+    "title": "Internet Archive Infrastructure",
+    "creator": "Jonah Edwards",
+    "url": "https://archive.org/details/jonah-edwards-presentation",
+    "tags": [
+      "technology"
+    ]
+  },
+  {
+    "title": "Brilliant Hardware in the Valley of the Software Slump",
+    "creator": "Craig Mod",
+    "url": "https://craigmod.com/essays/software_slump/",
+    "tags": [
+      "technology",
+      "design"
+    ]
+  },
+  {
+    "title": "React + Redux + Comlink = Off-main-thread",
+    "creator": "Surma",
+    "url": "https://dassur.ma/things/react-redux-comlink/",
+    "tags": [
+      "development"
+    ]
+  },
+  {
+    "title": "Deep Dive into Worker Threads in Node.js",
+    "creator": "Deepal Jayasekara",
+    "url": "https://blog.insiderattack.net/deep-dive-into-worker-threads-in-node-js-e75e10546b11",
+    "tags": [
+      "development"
+    ]
+  }
+]
