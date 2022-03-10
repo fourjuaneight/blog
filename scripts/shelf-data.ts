@@ -52,7 +52,7 @@ const getShelfWithOffset = (offset?: string): Promise<AirtableShelfResp> => {
   } catch (error) {
     throw `${chalk.red('[ERROR]')} ${chalk.blue(
       '(getShelfWithOffset)'
-    )} (${table.toLowerCase()}) - ${error}`;
+    )} - ${error}`;
   }
 };
 
