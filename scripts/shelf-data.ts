@@ -101,9 +101,17 @@ const saveData = async (): Promise<void> => {
       console.info(chalk.yellow('[INFO]'), '(shelf-data) - No data to save');
     }
   } catch (error) {
-    console.error(chalk.red('[ERROR]'), '(shelf-data) - ', error);
-    process.exit(1);
+    throw `${chalk.red('[ERROR]')} (shelf-data) - ${error}`;
   }
 };
 
-saveData();
+(async () => {
+  try {
+    await saveData();
+
+    process.exit(0);
+  } catch (error) {
+    console.error(error);
+    process.exit(1);
+  }
+})();
