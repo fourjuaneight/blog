@@ -50,7 +50,9 @@ const getShelfWithOffset = (offset?: string): Promise<AirtableShelfResp> => {
         return airtableRes;
       });
   } catch (error) {
-    throw new Error(`(getShelfWithOffset): \n ${error}`);
+    throw `${chalk.red('[ERROR]')} ${chalk.blue(
+      '(getShelfWithOffset)'
+    )} (${table.toLowerCase()}) - ${error}`;
   }
 };
 
@@ -95,13 +97,16 @@ const saveData = async (): Promise<void> => {
 
       console.info(
         chalk.green('[SUCCESS]'),
-        '(shelf-data) - Data saved to shelf.json'
+        `${chalk.blue('(saveData)')} - Data saved to shelf.json`
       );
     } else {
-      console.info(chalk.yellow('[INFO]'), '(shelf-data) - No data to save');
+      console.info(
+        chalk.yellow('[INFO]'),
+        `${chalk.blue('(saveData)')} - No data to save`
+      );
     }
   } catch (error) {
-    throw `${chalk.red('[ERROR]')} (shelf-data) - ${error}`;
+    throw `${chalk.red('[ERROR]')} ${chalk.blue('(saveData)')} ${error}`;
   }
 };
 
