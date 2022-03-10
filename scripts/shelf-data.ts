@@ -5,7 +5,7 @@ import chalk from 'chalk';
 import dotenv from 'dotenv';
 import fetch from 'isomorphic-fetch';
 
-import { AirtableResp, ShelfFields, ShelfItem, ShelfRecord } from '.types';
+import { AirtableShelfResp, ShelfFields, ShelfItem, ShelfRecord } from '.types';
 
 dotenv.config();
 
@@ -21,9 +21,9 @@ let data: ShelfRecord[] = [];
  * @async
  *
  * @param  {[string]} offset param to request remainding records
- * @return {AirtableResp}
+ * @return {AirtableShelfResp}
  */
-const getShelfWithOffset = (offset?: string): Promise<AirtableResp> => {
+const getShelfWithOffset = (offset?: string): Promise<AirtableShelfResp> => {
   const options: RequestInit = {
     headers: {
       Authorization: `Bearer ${AIRTABLE_TOKEN}`,
@@ -36,7 +36,7 @@ const getShelfWithOffset = (offset?: string): Promise<AirtableResp> => {
   try {
     return fetch(url, options)
       .then((response: Response) => response.json())
-      .then((airtableRes: AirtableResp) => {
+      .then((airtableRes: AirtableShelfResp) => {
         data = [...data, ...airtableRes.records];
 
         if (airtableRes.offset) {
