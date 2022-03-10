@@ -75,7 +75,7 @@ const getBookmarksWithOffset = (
   } catch (error) {
     throw `${chalk.red('[ERROR]')} ${chalk.blue(
       '(getBookmarksWithOffset)'
-    )} (${table.toLowerCase()}) - ${error}`;
+    )} (${table.toLowerCase()}) ${error}`;
   }
 };
 
@@ -101,22 +101,18 @@ const saveData = async (table: string): Promise<void> => {
 
       console.info(
         chalk.green('[SUCCESS]'),
-        `${chalk.blue(
-          '(saveData)'
-        )} - Data saved to bookmarks-${tableName}.json`
+        `Data saved to bookmarks-${tableName}.json`
       );
     } else {
       console.info(
         chalk.yellow('[INFO]'),
-        `${chalk.blue(
-          '(saveData)'
-        )} - No data to save to bookmarks-${tableName}.json`
+        `No data saved to bookmarks-${tableName}.json`
       );
     }
   } catch (error) {
     throw `${chalk.red('[ERROR]')} ${chalk.blue(
       '(saveData)'
-    )} (${tableName}) - ${error}`;
+    )} (${tableName}) ${error}`;
   }
 };
 
