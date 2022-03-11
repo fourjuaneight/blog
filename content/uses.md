@@ -1,7 +1,7 @@
 ---
 title: Uses
 footer:
-  img: favicon.png
+  img: bookbag.png
   alt: Illustration of a bookbag, laying on the floor half-open.
 draft: false
 ---
