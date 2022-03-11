@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <h1 class="post-title md:text-6xl mr-auto text-4xl">{{ .Title }}</h1>
+  <p>{{ .Content }}</p>
+  {{ if ne .Params.footer nil }}
+    <section class="footer w-full">
+      {{ partial "img.html" (dict "src" .Params.footer.img "alt" .Params.footer.alt) }}
+    </section>
+  {{ end }}
+{{ end }}
