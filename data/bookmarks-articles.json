@@ -61,6 +61,14 @@
     ]
   },
   {
+    "title": "How Learning Works: Components, Systems, and Loops",
+    "creator": "Roman Kudryashov",
+    "url": "https://romandesign.co/how-learning-works-components-systems-and-loops/?ref=stumbled.to",
+    "tags": [
+      "knowledge"
+    ]
+  },
+  {
     "title": "Into the Personal-Website-Verse",
     "creator": "Matthias Ott",
     "url": "https://matthiasott.com/articles/into-the-personal-website-verse",
@@ -870,14 +878,6 @@
     "title": "React + Redux + Comlink = Off-main-thread",
     "creator": "Surma",
     "url": "https://dassur.ma/things/react-redux-comlink/",
-    "tags": [
-      "development"
-    ]
-  },
-  {
-    "title": "Deep Dive into Worker Threads in Node.js",
-    "creator": "Deepal Jayasekara",
-    "url": "https://blog.insiderattack.net/deep-dive-into-worker-threads-in-node-js-e75e10546b11",
     "tags": [
       "development"
     ]
