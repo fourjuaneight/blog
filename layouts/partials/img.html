@@ -7,6 +7,10 @@
 {{ $webp := print $imgMain ".webp" }}
 {{ $img := print $imgMain "." $type }}
 
+{{ $isSmall := cond (ne .small nil) "true" "false" }}
+{{ $maxWidth := cond (ne .small nil) "max-w-xxxxs" "max-w-xs" }}
+{{ $sizing := cond (ne .small nil) "160" "576" }}
+
 {{ if or (eq (index $svg 0) "svg") (eq (index $gif 0) "gif") }}
   {{ $simple := resources.Get (print "/img/" $img) }}
   <img
@@ -27,10 +31,11 @@
     <img
       src="{{ $imgPrimary.Permalink }}"
       alt="{{ .alt }}"
-      class="max-w-xs w-full"
-      width="576"
-      height="576"
+      class="{{ $maxWidth }} w-full"
+      width="{{ $sizing }}"
+      height="{{ $sizing }}"
       loading="lazy"
+      data-small="{{ $isSmall }}"
     />
   </picture>
 {{ end }}
