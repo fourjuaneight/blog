@@ -6,8 +6,6 @@ header:
     link: 'shelf'
   - label: Uses
     link: uses
-  - label: Tools
-    link: 'tools'
   - label: About
     link: 'about'
 footer:
