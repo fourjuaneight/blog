@@ -17,7 +17,7 @@ const { readFile, rm, writeFile } = promises;
 // glob options
 const src = resolve(__dirname, 'img');
 const posts = resolve(__dirname, '..', 'content/posts');
-const dist = resolve(__dirname, '..', 'assets/share-cards');
+const dist = resolve(__dirname, '..', 'assets/social-img');
 const ignore = ['_index.md'];
 // posts
 const files = globSync('*.md', { cwd: posts, ignore });
@@ -31,14 +31,14 @@ const titlePositions: TitlePosition[] = [
 const textElements = ['first', 'second', 'third', 'fourth'];
 
 /**
- * Create share card and update with post title
+ * Create social image and update with post title
  * @function
  * @async
  *
  * @param file name of post file
  * @returns {Promise<void>}
  */
-const createShareCard = async (file: string): Promise<void> => {
+const createSocialImage = async (file: string): Promise<void> => {
   try {
     // post title
     const post = await readFile(`${posts}/${file}`, 'utf8');
@@ -52,15 +52,15 @@ const createShareCard = async (file: string): Promise<void> => {
         .replace(/\s$/g, '') ?? '';
     const titleList = title.split(' ');
     // share card image
-    const shareCard = `${src}/share_card.svg`;
+    const socialImage = `${src}/social-img.svg`;
     const fileName = file.replace('.md', '');
-    const svg = await readFile(shareCard, 'utf8');
+    const svg = await readFile(socialImage, 'utf8');
     const positions = titlePositions.find(
       ({ count }) => count === titleList?.length
     );
-    const shareCardPath = `${dist}/${fileName}.svg`;
+    const socialImagePath = `${dist}/${fileName}.svg`;
     // create share card file
-    await writeFile(shareCardPath, svg);
+    await writeFile(socialImagePath, svg);
     // replace title positions
     const replacePositions = textElements.filter(element =>
       positions?.position.includes(element)
@@ -83,32 +83,34 @@ const createShareCard = async (file: string): Promise<void> => {
     );
     // replace in file
     const replaceOptions: ReplaceInFileConfig = {
-      files: shareCardPath,
+      files: socialImagePath,
       from: [...mainPats, ...shadowPats],
       to: [...mainTitles, ...shadowTitles],
     };
 
     await replaceInFile(replaceOptions);
     // create img and remove svg
-    const image = sharp(shareCardPath);
+    const image = sharp(socialImagePath);
 
     await image
       .toFormat('jpeg', { progressive: true, quality: 90 })
       .toFile(`${dist}/${fileName}.jpeg`);
-    await rm(shareCardPath);
+    await rm(socialImagePath);
 
     console.info(
       chalk.green('[SUCCESS]'),
       `${fileName}.jpeg share-card created`
     );
   } catch (error) {
-    throw `${chalk.red('[ERROR]')} ${chalk.blue('(createShareCard)')} ${error}`;
+    throw `${chalk.red('[ERROR]')} ${chalk.blue(
+      '(createSocialImage)'
+    )} ${error}`;
   }
 };
 
 (async () => {
   try {
-    const ops = files.map(file => createShareCard(file));
+    const ops = files.map(file => createSocialImage(file));
 
     await Promise.all(ops);
 
