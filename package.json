@@ -6,7 +6,7 @@
     "bookmarks": "ts-node --project tsconfig.node.json \"scripts/bookmarks-data.ts\"",
     "build": "hugo -e production --minify",
     "build:chrome": "hugo gen chromastyles > assets/css/syntax.css",
-    "build:prod": "run-p bookmarks img shelf ts tw && hugo --minify && npm run sw",
+    "build:prod": "run-p bookmarks img share-card shelf ts tw && hugo --minify && npm run sw",
     "clean": "rm -rf dist",
     "clean:node": "rm -rf node_modules",
     "tw": "tailwindcss --no-autoprefixer -i ./assets/css/tailwind.css -o ./assets/css/tw.css",
@@ -18,8 +18,9 @@
     "ts": "tsup assets/scripts/*.ts --env.NODE_ENV production --out-dir assets/js",
     "ts:watch": "tsup assets/scripts/*.ts --out-dir assets/js --watch assets/scripts",
     "serve": "serve dist",
+    "share-card": "ts-node --project tsconfig.node.json \"scripts/share-card.ts\"",
     "shelf": "ts-node --project tsconfig.node.json \"scripts/shelf-data.ts\"",
-    "start": "run-p bookmarks img shelf ts && concurrently -n \"TS,TW,DEV\" -c \"#3178c6,#38bdf8,#ff4088\" \"npm run ts:watch\" \"npm run tw -- --watch\" \"npm run dev\"",
+    "start": "run-p bookmarks img share-card shelf ts && concurrently -n \"TS,TW,DEV\" -c \"#3178c6,#38bdf8,#ff4088\" \"npm run ts:watch\" \"npm run tw -- --watch\" \"npm run dev\"",
     "tsc": "tsc"
   },
   "repository": {
