@@ -5,7 +5,7 @@
 {{ $socialPage := print "social-img/" $imgFilePath ".jpeg" }}
 {{ $socialImg := cond (eq .IsHome true) $socialMain $socialPage }}
 {{ $imgPipe := cond (eq .Kind "term") $socialMain $socialImg }}
-{{ $socialImgPath := print .Site.BaseURL $imgPipe }}
+{{ $socialImgPath := print .Site.BaseURL "/" $imgPipe }}
 
 <head>
   <base href="{{ .Permalink }}" />
