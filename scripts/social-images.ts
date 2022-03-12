@@ -17,7 +17,7 @@ const { readFile, rm, writeFile } = promises;
 // glob options
 const src = resolve(__dirname, 'img');
 const posts = resolve(__dirname, '..', 'content/posts');
-const dist = resolve(__dirname, '..', 'assets/social-img');
+const dist = resolve(__dirname, '..', 'static/social-img');
 const ignore = ['_index.md'];
 // posts
 const files = globSync('*.md', { cwd: posts, ignore });

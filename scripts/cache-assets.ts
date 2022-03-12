@@ -21,7 +21,10 @@ const ignore = ['sw.js'];
   );
 
   // create matched files array
-  const files = globSync('**/*.{js,css,woff,woff2}', { cwd, ignore });
+  const files = globSync('**/*.{js,css,woff,woff2,png,webp,avif}', {
+    cwd,
+    ignore,
+  });
   const sw = globSync('sw.min.*.js', { cwd });
   const ww = globSync('ww.min.*.js', { cwd });
   const noise = globSync('noise.min.*.js', { cwd });
