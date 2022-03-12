@@ -11,7 +11,7 @@ const timestamp: number = Math.floor(new Date().getTime() / 1000);
 
 // Glob options. Pass directory to search and files to ignore
 const cwd = resolve(__dirname, '..', 'dist');
-const ignore = ['sw.js'];
+const ignore = ['sw*.js'];
 
 // Find all JS, CSS, and font files in rendered output
 (async () => {
@@ -21,7 +21,7 @@ const ignore = ['sw.js'];
   );
 
   // create matched files array
-  const files = globSync('**/*.{js,css,woff,woff2,png,webp,avif}', {
+  const files = globSync('**/*.{js,css,woff,woff2}', {
     cwd,
     ignore,
   });
@@ -33,7 +33,7 @@ const ignore = ['sw.js'];
   // find and replace options; add hash ID, files to cache array, and site base URL
   const replaceOptions: ReplaceInFileConfig = {
     files: [`${cwd}/${sw[0]}`, `${cwd}/${noise[0]}`],
-    from: [/'staticAssets'/g, /'version'/g, /baseURL/g, '/ww.js'],
+    from: [/"staticAssets"/g, /"version"/g, /baseURL/g, '/ww.js'],
     to: [`[${newFiles}]`, `'${timestamp}'`, `${SITE_URL}`, `/${ww}`],
   };
 
