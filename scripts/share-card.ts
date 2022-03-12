@@ -92,12 +92,14 @@ const createShareCard = async (file: string): Promise<void> => {
     // create img and remove svg
     const image = sharp(shareCardPath);
 
-    await image.toFormat('png').toFile(`${dist}/${fileName}.png`);
+    await image
+      .toFormat('jpeg', { progressive: true, quality: 90 })
+      .toFile(`${dist}/${fileName}.jpeg`);
     await rm(shareCardPath);
 
     console.info(
       chalk.green('[SUCCESS]'),
-      `${fileName}.png share-card created`
+      `${fileName}.jpeg share-card created`
     );
   } catch (error) {
     throw `${chalk.red('[ERROR]')} ${chalk.blue('(createShareCard)')} ${error}`;
