@@ -1,4 +1,12 @@
 {{ $title := cond (ne .Params.seo_title nil) .Params.seo_title .Title }}
+{{ $pageFile := .RelPermalink | replaceRE "/posts" "" | replaceRE "/" "" }}
+{{ $imgFilePath := cond (eq .Title "Archive") "archive" $pageFile }}
+{{ $socialMain := "social-img/main.jpeg" }}
+{{ $socialPage := print "social-img/" $imgFilePath ".jpeg" }}
+{{ $socialImg := cond (eq .IsHome true) $socialMain $socialPage }}
+{{ $imgPipe := cond (eq .Kind "term") $socialMain $socialImg }}
+{{ $socialImgPath := print .Site.BaseURL $imgPipe }}
+
 <head>
   <base href="{{ .Permalink }}" />
   <meta charset="utf-8" />
@@ -27,16 +35,17 @@
     property="og:description"
     content="{{ .Site.Params.meta.description }}"
   />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="512" />
-  <meta property="og:image:height" content="512" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:site_name" content="{{ .Site.Title }}" />
   <meta property="og:title" content="{{ $title }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="{{ $about.Permalink }}" />
+  <meta property="og:image" content="{{ $socialImgPath }}" />
+  <meta property="og:image:secure_url" content="{{ $socialImgPath }}" />
   <meta property="og:url" content="{{ .Permalink }}" />
   <meta property="twitter:site" content="{{ .Site.Params.meta.social }}" />
-  <meta name="twitter:image" content="{{ $about.Permalink }}" />
+  <meta name="twitter:image" content="{{ $socialImgPath }}" />
   <meta name="twitter:card" content="summary" />
   <meta
     name="twitter:description"
@@ -53,7 +62,7 @@
           "@id": "{{ .Permalink }}",
         },
         "headline": "{{ $title }}",
-        "image": "{{ $about.Permalink }}",
+        "image": "{{ $socialImgPath }}",
         "author": {
           "@type": "Person",
           "name": "{{ .Site.Params.meta.author }}",
