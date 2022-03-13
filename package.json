@@ -14,6 +14,7 @@
     "format": "prettier --write \"assets/**/*.{ts,js,css,scss}\"",
     "img": "ts-node --project tsconfig.node.json \"scripts/images.ts\"",
     "lint": "eslint --fix --no-error-on-unmatched-pattern \"assets/**/*.{ts,js}\"",
+    "og-images": "ts-node --project tsconfig.node.json \"scripts/og-images.ts\"",
     "sw": "ts-node --project tsconfig.node.json \"scripts/cache-assets.ts\"",
     "ts": "tsup assets/scripts/*.ts --env.NODE_ENV production --out-dir assets/js",
     "ts:watch": "tsup assets/scripts/*.ts --out-dir assets/js --watch assets/scripts",
@@ -38,8 +39,10 @@
     "dotenv": "^16.0.0",
     "glob": "^7.1.7",
     "isomorphic-fetch": "^3.0.0",
+    "puppeteer": "^13.5.1",
     "replace-in-file": "^6.2.0",
-    "sharp": "^0.27.1"
+    "sharp": "^0.27.1",
+    "waait": "^1.0.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",

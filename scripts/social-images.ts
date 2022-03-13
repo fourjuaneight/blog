@@ -3,6 +3,9 @@ import { resolve } from 'path';
 
 import chalk from 'chalk';
 import glob from 'glob';
+import puppeteer from 'puppeteer';
+import sharp from 'sharp';
+import wait from 'waait';
 import { replaceInFile, ReplaceInFileConfig } from 'replace-in-file';
 
 interface TitlePosition {
@@ -88,6 +91,12 @@ const createSocialImage = async (file: string): Promise<void> => {
     };
 
     await replaceInFile(replaceOptions);
+    // create img and remove svg
+    const image = sharp(socialImagePath);
+
+    await image
+      .toFormat('jpeg', { progressive: true, quality: 90 })
+      .toFile(`${dist}/${fileName}.jpeg`);
 
     console.info(
       chalk.green('[SUCCESS]'),
@@ -97,6 +106,37 @@ const createSocialImage = async (file: string): Promise<void> => {
     throw `${chalk.red('[ERROR]')} ${chalk.blue(
       '(createSocialImage)'
     )} ${error}`;
+  }
+};
+
+const saveSocialImages = async (file: string): Promise<void> => {
+  const browser = await puppeteer.launch({
+    product: 'chrome',
+    headless: true,
+  });
+
+  try {
+    const page = await browser.newPage();
+    const fileName = file.replace('md', 'svg');
+
+    await page.setViewport({
+      width: 1200,
+      height: 630,
+      deviceScaleFactor: 1.5,
+    });
+    await page.goto(`http://localhost:1313/social-img/${fileName}`);
+    await wait(1000);
+
+    const buffer = await page.screenshot({ type: 'png' });
+    const base64Image = buffer.toString('base64');
+
+    console.info(base64Image);
+  } catch (error) {
+    throw `${chalk.red('[ERROR]')} ${chalk.blue(
+      '(saveSocialImages)'
+    )} ${error}`;
+  } finally {
+    await browser.close();
   }
 };
 
