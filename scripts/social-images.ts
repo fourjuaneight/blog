@@ -3,7 +3,6 @@ import { resolve } from 'path';
 
 import chalk from 'chalk';
 import glob from 'glob';
-import sharp from 'sharp';
 import { replaceInFile, ReplaceInFileConfig } from 'replace-in-file';
 
 interface TitlePosition {
@@ -89,17 +88,10 @@ const createSocialImage = async (file: string): Promise<void> => {
     };
 
     await replaceInFile(replaceOptions);
-    // create img and remove svg
-    const image = sharp(socialImagePath);
-
-    await image
-      .toFormat('jpeg', { progressive: true, quality: 90 })
-      .toFile(`${dist}/${fileName}.jpeg`);
-    await rm(socialImagePath);
 
     console.info(
       chalk.green('[SUCCESS]'),
-      `${fileName}.jpeg share-card created`
+      `${fileName}.svg share-card created`
     );
   } catch (error) {
     throw `${chalk.red('[ERROR]')} ${chalk.blue(
