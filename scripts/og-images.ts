@@ -53,7 +53,7 @@ const saveSocialImages = async (file: string): Promise<void> => {
 (async () => {
   try {
     // wait for Cloudflare to finish building the site.
-    await wait(300000);
+    await wait(180000);
 
     const ops = files.map(file => saveSocialImages(file));
 
