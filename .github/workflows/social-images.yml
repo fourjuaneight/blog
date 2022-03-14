@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Save Bookmarks data
+      - name: Create Images
         run: npm run og-images
 
       - name: Commit changes
