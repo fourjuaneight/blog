@@ -28,7 +28,7 @@
     {{ end }}
   </title>
   <link rel="canonical" href="{{ .Permalink }}" />
-  {{ $about := resources.Get "img/about.png" | resources.Fingerprint "md5" }}
+  {{ $about := resources.Get "img/about.png" }}
   <meta name="description" content="{{ .Site.Params.meta.description }}" />
   <meta property="author" content="{{ .Site.Params.meta.author }}" />
   <meta
@@ -93,23 +93,23 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}" />
-  {{ $favicon16 := resources.Get "icons/favicon-16x16.png" | resources.Fingerprint "md5" }}
+  {{ $favicon16 := resources.Get "icons/favicon-16x16.png" }}
   <link rel="icon" type="image/png" sizes="16x16" href="{{ $favicon16.Permalink }}" />
-  {{ $favicon32 := resources.Get "icons/favicon-32x32.png" | resources.Fingerprint "md5" }}
+  {{ $favicon32 := resources.Get "icons/favicon-32x32.png" }}
   <link rel="icon" type="image/png" sizes="32x32" href="{{ $favicon32.Permalink }}" />
-  {{ $icon120 := resources.Get "icons/icon-120x120.png" | resources.Fingerprint "md5" }}
+  {{ $icon120 := resources.Get "icons/icon-120x120.png" }}
   <link rel="apple-touch-icon" sizes="120x120" href="{{ $icon120.Permalink }}" />
-  {{ $icon152 := resources.Get "icons/icon-152x152.png" | resources.Fingerprint "md5" }}
+  {{ $icon152 := resources.Get "icons/icon-152x152.png" }}
   <link rel="apple-touch-icon" sizes="152x152" href="{{ $icon152.Permalink }}" />
-  {{ $icon167 := resources.Get "icons/icon-167x167.png" | resources.Fingerprint "md5" }}
+  {{ $icon167 := resources.Get "icons/icon-167x167.png" }}
   <link rel="apple-touch-icon" sizes="167x167" href="{{ $icon167.Permalink }}" />
-  {{ $icon180 := resources.Get "icons/icon-180x180.png" | resources.Fingerprint "md5" }}
+  {{ $icon180 := resources.Get "icons/icon-180x180.png" }}
   <link rel="apple-touch-icon" sizes="180x180" href="{{ $icon180.Permalink }}" />
-  {{ $icon256 := resources.Get "icons/icon-256x256.png" | resources.Fingerprint "md5" }}
+  {{ $icon256 := resources.Get "icons/icon-256x256.png" }}
   <link rel="apple-touch-icon" sizes="256x256" href="{{ $icon256.Permalink }}" />
-  {{ $icon512 := resources.Get "icons/icon-512x512.png" | resources.Fingerprint "md5" }}
+  {{ $icon512 := resources.Get "icons/icon-512x512.png" }}
   <link rel="apple-touch-icon" sizes="512x512" href="{{ $icon512.Permalink }}" />
-  {{ $spt := resources.Get "icons/safari-pinned-tab.svg" | resources.Fingerprint "md5" }}
+  {{ $spt := resources.Get "icons/safari-pinned-tab.svg" }}
   <link rel="mask-icon" color="#c390f3" href="{{ $spt.Permalink }}" />
   <link
     rel="alternate"
