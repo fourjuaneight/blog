@@ -1,4 +1,5 @@
 {{ $title := cond (ne .Params.seo_title nil) .Params.seo_title .Title }}
+{{ $description := cond (eq .IsHome true) .Site.Params.meta.description .Summary }}
 {{ $pageFile := .RelPermalink | replaceRE "/posts" "" | replaceRE "/" "" }}
 {{ $imgFilePath := cond (eq .Title "Archive") "archive" $pageFile }}
 {{ $socialMain := "og/main.jpeg" }}
@@ -29,27 +30,27 @@
   </title>
   <link rel="canonical" href="{{ .Permalink }}" />
   {{ $about := resources.Get "img/about.png" }}
-  <meta name="description" content="{{ .Site.Params.meta.description }}" />
+  <meta name="description" content="{{ $description }}" />
   <meta property="author" content="{{ .Site.Params.meta.author }}" />
   <meta
     property="og:description"
-    content="{{ .Site.Params.meta.description }}"
+    content="{{ $description }}"
   />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
   <meta property="og:site_name" content="{{ .Site.Title }}" />
   <meta property="og:title" content="{{ $title }}" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="{{ $socialImgPath }}" />
   <meta property="og:image:secure_url" content="{{ $socialImgPath }}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:url" content="{{ .Permalink }}" />
   <meta property="twitter:site" content="{{ .Site.Params.meta.social }}" />
   <meta name="twitter:image" content="{{ $socialImgPath }}" />
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta
     name="twitter:description"
-    content="{{ .Site.Params.meta.description }}"
+    content="{{ $description }}"
   />
   <meta name="twitter:title" content="{{ $title }}" />
   {{- if and (eq .Section "posts") (eq .Kind "page") -}}
