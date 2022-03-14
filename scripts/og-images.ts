@@ -10,7 +10,7 @@ const globSync = glob.sync;
 
 // glob options
 const posts = resolve(__dirname, '..', 'content/posts');
-const dist = resolve(__dirname, '..', 'static/social-img');
+const dist = resolve(__dirname, '..', 'static/og');
 const ignore = ['_index.md'];
 // posts
 const files = globSync('*.md', { cwd: posts, ignore });
