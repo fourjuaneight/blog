@@ -23,14 +23,14 @@ const saveSocialImages = async (file: string): Promise<void> => {
 
   try {
     const page = await browser.newPage();
-    const fileName = file.replace('md', 'svg');
+    const fileName = file.replace('.md', '');
 
     await page.setViewport({
       width: 1200,
       height: 630,
       deviceScaleFactor: 1.5,
     });
-    await page.goto(`https://cleverlaziness.com/social-img/${fileName}`);
+    await page.goto(`https://cleverlaziness.com/social-img/${fileName}.svg`);
     await wait(1000);
 
     const buffer = await page.screenshot({ type: 'png' });
