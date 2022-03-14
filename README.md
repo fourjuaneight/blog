@@ -1,6 +1,7 @@
 # Personal Blog
 
 ![airtable](https://github.com/fourjuaneight/blog/actions/workflows/airtable.yml/badge.svg)
+![airtable](https://github.com/fourjuaneight/blog/actions/workflows/social-images.yml/badge.svg)
 
 Powered by:
 
