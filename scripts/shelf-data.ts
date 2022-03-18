@@ -95,9 +95,9 @@ const saveData = async (): Promise<void> => {
         JSON.stringify(groupedData, null, 2)
       );
 
-      console.info(chalk.green('[SUCCESS]'), 'Data saved to shelf.json');
+      console.info(chalk.green('[SUCCESS]'), 'data saved to shelf.json');
     } else {
-      console.info(chalk.yellow('[INFO]'), 'No data saved to shelf.json');
+      console.info(chalk.yellow('[INFO]'), 'no data saved to shelf.json');
     }
   } catch (error) {
     throw `${chalk.red('[ERROR]')} ${chalk.blue('(saveData)')} ${error}`;
