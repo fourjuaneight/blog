@@ -1,3 +1,4 @@
+import { promises } from 'fs';
 import { resolve } from 'path';
 
 import chalk from 'chalk';
@@ -7,9 +8,11 @@ import sharp from 'sharp';
 import wait from 'waait';
 
 const globSync = glob.sync;
+const { rm } = promises;
 
 // glob options
 const posts = resolve(__dirname, '..', 'content/posts');
+const src = resolve(__dirname, '..', 'static/social-img');
 const dist = resolve(__dirname, '..', 'static/og');
 const ignore = ['_index.md'];
 // posts
@@ -41,6 +44,13 @@ const saveSocialImages = async (file: string): Promise<void> => {
     await image
       .toFormat('jpeg', { progressive: true, quality: 90 })
       .toFile(`${dist}/${fileName}.jpeg`);
+
+    await rm(`${src}/${fileName}.svg`);
+
+    console.info(
+      chalk.green('[SUCCESS]'),
+      `${fileName}.jpeg social image created`
+    );
   } catch (error) {
     throw `${chalk.red('[ERROR]')} ${chalk.blue(
       '(saveSocialImages)'

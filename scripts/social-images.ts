@@ -1,10 +1,9 @@
-import { promises } from 'fs';
+import { existsSync, promises } from 'fs';
 import { resolve } from 'path';
 
 import chalk from 'chalk';
 import glob from 'glob';
 import puppeteer from 'puppeteer';
-import sharp from 'sharp';
 import wait from 'waait';
 import { replaceInFile, ReplaceInFileConfig } from 'replace-in-file';
 
@@ -14,7 +13,7 @@ interface TitlePosition {
 }
 
 const globSync = glob.sync;
-const { readFile, rm, writeFile } = promises;
+const { mkdir, readFile, writeFile } = promises;
 
 // glob options
 const src = resolve(__dirname, 'img');
@@ -62,6 +61,8 @@ const createSocialImage = async (file: string): Promise<void> => {
     );
     const socialImagePath = `${dist}/${fileName}.svg`;
     // create share card file
+    if (!existsSync(dist)) await mkdir(dist);
+
     await writeFile(socialImagePath, svg);
     // replace title positions
     const replacePositions = textElements.filter(element =>
@@ -91,17 +92,6 @@ const createSocialImage = async (file: string): Promise<void> => {
     };
 
     await replaceInFile(replaceOptions);
-    // create img and remove svg
-    const image = sharp(socialImagePath);
-
-    await image
-      .toFormat('jpeg', { progressive: true, quality: 90 })
-      .toFile(`${dist}/${fileName}.jpeg`);
-
-    console.info(
-      chalk.green('[SUCCESS]'),
-      `${fileName}.svg share-card created`
-    );
   } catch (error) {
     throw `${chalk.red('[ERROR]')} ${chalk.blue(
       '(createSocialImage)'

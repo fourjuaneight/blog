@@ -6,7 +6,7 @@
     "bookmarks": "ts-node --project tsconfig.node.json \"scripts/bookmarks-data.ts\"",
     "build": "hugo -e production --minify",
     "build:chrome": "hugo gen chromastyles > assets/css/syntax.css",
-    "build:prod": "run-p bookmarks img shelf social-images ts tw && hugo --minify && npm run sw",
+    "build:prod": "run-p bookmarks img shelf ts tw && hugo --minify && npm run sw",
     "clean": "rm -rf dist",
     "clean:node": "rm -rf node_modules",
     "tw": "tailwindcss --no-autoprefixer -i ./assets/css/tailwind.css -o ./assets/css/tw.css",
