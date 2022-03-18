@@ -85,7 +85,7 @@ const fmtImage = async (src: string): Promise<void> => {
  * @returns {Promise}
  */
 const fmtIcon = async (name: string, size: number): Promise<void> => {
-  const input = resolve(dir, 'icon.png');
+  const input = resolve(dir, 'favicon.png');
 
   // image options
   const fileName: string = `${name}-${size}x${size}.png`;
@@ -118,7 +118,7 @@ const fmtIcon = async (name: string, size: number): Promise<void> => {
 };
 
 (async () => {
-  const imgFiles = globSync('*.png', { cwd: dir, ignore: ['icon.png'] });
+  const imgFiles = globSync('*.png', { cwd: dir });
   const iconOps = icons.map(icon => fmtIcon(icon.name, icon.size));
   const imgOps = imgFiles.map(file => fmtImage(file));
   const ops = [...iconOps, ...imgOps];
