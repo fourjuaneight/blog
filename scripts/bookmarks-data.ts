@@ -101,12 +101,12 @@ const saveData = async (table: string): Promise<void> => {
 
       console.info(
         chalk.green('[SUCCESS]'),
-        `Data saved to bookmarks-${tableName}.json`
+        `data saved to bookmarks-${tableName}.json`
       );
     } else {
       console.info(
         chalk.yellow('[INFO]'),
-        `No data saved to bookmarks-${tableName}.json`
+        `no data saved to bookmarks-${tableName}.json`
       );
     }
   } catch (error) {
