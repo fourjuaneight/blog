@@ -180,8 +180,19 @@ footer ul {
   padding: 0;
 }
 
-h1.post-title {
+h1.post-title,
+li.bk-title a {
   text-shadow: 0.15rem 0.15rem var(--tertiary);
+}
+
+li.bk-title a,
+li.bk-title a:hover,
+li.bk-title a:visited {
+  text-decoration: none;
+}
+
+li.bk-title a:hover {
+  text-shadow: 0.1rem 0.1rem var(--tertiary);
 }
 
 a.site-name {
