@@ -3,7 +3,7 @@ const worker = new Worker('/js/noise.ww.js');
 const fragment = document.createDocumentFragment();
 const size: number = 64;
 
-const makeNoise = async data => {
+const makeNoise = async (data: Uint8ClampedArray) => {
   const canvas = document.createElement('canvas');
   canvas.width = size;
   canvas.height = size;
@@ -25,7 +25,7 @@ const makeNoise = async data => {
 if (window.Worker) {
   worker.postMessage(size);
 
-  worker.onmessage = evt => {
+  worker.onmessage = (evt: MessageEvent<Uint8ClampedArray>) => {
     makeNoise(evt.data);
   };
 }
