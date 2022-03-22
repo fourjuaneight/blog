@@ -1,7 +1,9 @@
+{{ $bkTag := cond (eq .Section "bookmarks") .Title "none" }}
+
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
   {{ partial "head.html" . }}
-  <body>
+  <body data-table="{{ $bkTag }}">
     {{ partial "header.html" . }}
 
     <main class="grid w-full">
