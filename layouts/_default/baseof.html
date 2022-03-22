@@ -20,13 +20,13 @@
 
     {{ block "scripts" . }}{{ end }}
 
-    {{/*  Web Worker  */}}
+    {{/*  Noise Web Worker  */}}
     {{ $noise := resources.Get "noise.js" | minify | resources.Fingerprint "md5" }}
-    {{ $ww := resources.Get "ww.js" | minify | resources.Fingerprint "md5" }}
+    {{ $noiseWW := resources.Get "noise.ww.js" | minify | resources.Fingerprint "md5" }}
     <script
       defer
       src="{{ $noise.Permalink }}"
-      data-worker="{{ $ww.Permalink }}"
+      data-worker="{{ $noiseWW.Permalink }}"
     ></script>
   </body>
 </html>

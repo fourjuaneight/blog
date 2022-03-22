@@ -26,15 +26,15 @@ const ignore = ['sw*.js'];
     ignore,
   });
   const sw = globSync('sw.min.*.js', { cwd });
-  const ww = globSync('ww.min.*.js', { cwd });
+  const noiseWW = globSync('noise.ww.min.*.js', { cwd });
   const noise = globSync('noise.min.*.js', { cwd });
   const newFiles = files.map(toCache => `'/${toCache}'`).toString();
 
   // find and replace options; add hash ID, files to cache array, and site base URL
   const replaceOptions: ReplaceInFileConfig = {
     files: [`${cwd}/${sw[0]}`, `${cwd}/${noise[0]}`],
-    from: [/"staticAssets"/g, /"version"/g, /baseURL/g, '/ww.js'],
-    to: [`[${newFiles}]`, `'${timestamp}'`, `${SITE_URL}`, `/${ww}`],
+    from: [/"staticAssets"/g, /"version"/g, /baseURL/g, '/noise.ww.js'],
+    to: [`[${newFiles}]`, `'${timestamp}'`, `${SITE_URL}`, `/${noiseWW}`],
   };
 
   try {
