@@ -62,7 +62,6 @@ const ignore = ['js/sw*.js', 'js/noise*.js', 'js/bookmarks*.js'];
       `${AIRTABLE_BOOKMARKS_ID}`,
     ],
   };
-  console.info(replaceOptions);
 
   try {
     await replaceInFile(replaceOptions);
