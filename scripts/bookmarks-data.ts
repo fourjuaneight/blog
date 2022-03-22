@@ -40,7 +40,7 @@ const data: BookmarksData = {
  * @param  {[string]} offset param to request remainding records
  * @return {AirtableBKResp}
  */
-const getBookmarksWithOffset = (
+const getBookmarksWithOffset = async (
   table: string,
   offset?: string
 ): Promise<AirtableBKResp> => {
