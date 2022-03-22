@@ -33,7 +33,7 @@ const ignore = ['sw*.js'];
   // find and replace options; add hash ID, files to cache array, and site base URL
   const replaceOptions: ReplaceInFileConfig = {
     files: [`${cwd}/${sw[0]}`, `${cwd}/${noise[0]}`],
-    from: [/"staticAssets"/g, /"version"/g, /baseURL/g, '/noise.ww.js'],
+    from: [/\["staticAssets"\]/g, /"version"/g, /baseURL/g, '/noise.ww.js'],
     to: [`[${newFiles}]`, `'${timestamp}'`, `${SITE_URL}`, `/${noiseWW}`],
   };
 
