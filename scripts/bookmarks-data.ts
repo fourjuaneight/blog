@@ -61,7 +61,7 @@ const getBookmarksWithOffset = (
         const newData =
           airtableRes.records?.map(record => {
             delete record.fields.archive;
-            return record.fields;
+            return { id: record.id, ...record.fields };
           }) || [];
 
         data[table] = [...existingData, ...newData];

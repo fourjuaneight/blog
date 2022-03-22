@@ -70,6 +70,7 @@ const saveData = async (): Promise<void> => {
     if (data.length) {
       const cleanData: ShelfItem[] = data
         .map((item: ShelfRecord) => ({
+          id: item.id,
           ...item.fields,
           cover: item.fields.cover[0].url,
           completed: item.fields.completed || false,

@@ -1,6 +1,7 @@
 {
   "Manga": [
     {
+      "id": "recc4PovNda3X20R0",
       "name": "19 Days",
       "creator": "Old Xian",
       "rating": 4,
@@ -11,6 +12,7 @@
       "completed": false
     },
     {
+      "id": "recgR15EiQUfeYE4B",
       "name": "All You Need Is Kill",
       "creator": "Hiroshi Sakurazaka",
       "rating": 4,
@@ -21,6 +23,7 @@
       "comments": "Sometimes killing is the answer.\n"
     },
     {
+      "id": "recPqx0eCBp5Fhwbf",
       "name": "Dandadan",
       "creator": "Yukinobu Tatsu",
       "rating": 5,
@@ -31,6 +34,7 @@
       "completed": false
     },
     {
+      "id": "recT1MTtbJMUl2d8x",
       "name": "Demon Slayer",
       "creator": "Koyoharu Gotouge",
       "rating": 4,
@@ -41,6 +45,7 @@
       "comments": "Once you get past the goofy art, you can start to appreciate the rich story of an asthmatic kid trying to save his sister. I too have a sister so I can relate.\n"
     },
     {
+      "id": "recwuWkPvFa5hvLx5",
       "name": "Frieren: Beyond Journey's End",
       "creator": "Tsukasa Abe, Kanehito Yamada",
       "rating": 5,
@@ -51,6 +56,7 @@
       "completed": false
     },
     {
+      "id": "recXAqDVXD8g9MPnP",
       "name": "Gyo",
       "creator": "Junji Ito",
       "rating": 3,
@@ -61,6 +67,7 @@
       "comments": "This would be the worst-case apocalyptic scenario for my wife. She has a profound hatred towards seafood.\n"
     },
     {
+      "id": "recrMqgTL7manuvjh",
       "name": "Jujutsu Kaisen",
       "creator": "Gege Akutami",
       "rating": 4,
@@ -71,6 +78,7 @@
       "completed": false
     },
     {
+      "id": "rec8humQMsblJxDm6",
       "name": "Kaiju No. 8",
       "creator": "Matsumoto Naoya",
       "rating": 3,
@@ -81,6 +89,7 @@
       "completed": false
     },
     {
+      "id": "recm3BDI384SOCiee",
       "name": "Nan Hao and Shang Feng",
       "creator": "Brownie",
       "rating": 3,
@@ -91,6 +100,7 @@
       "completed": false
     },
     {
+      "id": "recVRElHgDEudnEdE",
       "name": "Rascal Does Not Dream of Bunny Girl Senpai",
       "creator": "Hajime Kamoshida",
       "rating": 5,
@@ -101,6 +111,7 @@
       "comments": "This hits on so many of the genres I enjoy and there's like two panels with a bunny girl on the entire series.\n"
     },
     {
+      "id": "recVvPtWT96VwrfCN",
       "name": "Rascal Does Not Dream of Petite Devil Kohai",
       "creator": "Hajime Kamoshida",
       "rating": 5,
@@ -111,6 +122,7 @@
       "comments": "These titles are so misleading. There's no small satan's child, but there is a lot of physics.\n"
     },
     {
+      "id": "recg24VXJ4NAyUCnJ",
       "name": "Re Cervin",
       "creator": "Hamada Kosuke",
       "rating": 4,
@@ -121,6 +133,7 @@
       "completed": false
     },
     {
+      "id": "rec0YYcUqbFv5K3WK",
       "name": "SQ: Begin W/Your Name!",
       "creator": "Tan Jiu",
       "rating": 4,
@@ -131,6 +144,7 @@
       "completed": false
     },
     {
+      "id": "rec47ymHOxEhPhgbl",
       "name": "Tokyo Ghoul",
       "creator": "Sui Ishida",
       "rating": 4,
@@ -141,6 +155,7 @@
       "completed": false
     },
     {
+      "id": "recaX0PbhkwsNiqQx",
       "name": "Tokyo Revengers",
       "creator": "Ken Wakui",
       "rating": 5,
@@ -151,6 +166,7 @@
       "completed": false
     },
     {
+      "id": "rec1zR3els8A8jy9q",
       "name": "Tomie",
       "creator": "Junji Ito",
       "rating": 4,
@@ -161,6 +177,7 @@
       "completed": false
     },
     {
+      "id": "recz4lMZqUlj4z6U8",
       "name": "Uzumaki",
       "creator": "Junji Ito",
       "rating": 5,
@@ -173,6 +190,7 @@
   ],
   "Movies": [
     {
+      "id": "rec32RE4KChYjT8st",
       "name": "2001 A Space Odyssey",
       "creator": "Stanley Kubrick",
       "rating": 5,
@@ -183,6 +201,7 @@
       "comments": "What more can I say that hasn't already been said. This shit is a masterpiece.\n"
     },
     {
+      "id": "recNhbLQo09qY9wRG",
       "name": "Annihilation",
       "creator": "Alex Garland",
       "rating": 4,
@@ -193,6 +212,7 @@
       "comments": "The real horror here is what too much distance does to a relationship.\n"
     },
     {
+      "id": "rechXtpyjTOYHL4FF",
       "name": "Arrival",
       "creator": "Denis Villeneuve",
       "rating": 5,
@@ -203,6 +223,7 @@
       "comments": "What a beautifully told story. The aliens were pretty cool too.\n"
     },
     {
+      "id": "recKMxFIHsTfEKjV5",
       "name": "Blade Runner",
       "creator": "Ridley Scott",
       "rating": 4,
@@ -213,6 +234,7 @@
       "comments": "I still don't know what the loud \"huuuuaaaaaannnnnnnnnnggg\" background sound is. Spaceship taking off?\n"
     },
     {
+      "id": "recF18lKIoPyT03jA",
       "name": "Blade Runner 2049",
       "creator": "Denis Villeneuve",
       "rating": 5,
@@ -223,6 +245,7 @@
       "comments": "This dude is no longer The Notebook Guy. What an amazing performance. As always, Denis builds an amazing world and takes you deep into it.\n"
     },
     {
+      "id": "recCmJBs5bfasS6zr",
       "name": "Color out of Space",
       "creator": "Richard Stanley",
       "rating": 4,
@@ -233,6 +256,7 @@
       "comments": "I'll Nick Cage screaming \"COCK SUCKER\" alone in the car any day.\n"
     },
     {
+      "id": "recBseLpp9dsJXthm",
       "name": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
       "creator": "Stanley Kubrick",
       "rating": 4,
@@ -243,6 +267,7 @@
       "comments": "This movie was hilarious until it became too real.\n"
     },
     {
+      "id": "recrkW9f1hcCKLeXV",
       "name": "Dune",
       "creator": "Denis Villeneuve",
       "rating": 5,
@@ -253,6 +278,7 @@
       "comments": "This was a masterpiece. I really don't know what else to say.\n"
     },
     {
+      "id": "recCcC52HmCzH3RLd",
       "name": "Ex Machina",
       "creator": "Alex Garland",
       "rating": 5,
@@ -263,6 +289,7 @@
       "comments": "The parallels between our current reality and what's to come are unsettling.\n"
     },
     {
+      "id": "recstT0l2dy99Qhyw",
       "name": "Get Out",
       "creator": "Jordan Peele",
       "rating": 5,
@@ -273,6 +300,7 @@
       "comments": "A house-in-the-woods in the mountains of Caucasus are always a hit or miss. You'll either see some lame dancing or get killed.\n"
     },
     {
+      "id": "rec18Fa8RCqNIR5gN",
       "name": "Harry Potter and The Chamber of Secrets",
       "creator": "Chris Columbus",
       "rating": 4,
@@ -283,6 +311,7 @@
       "comments": "I'm not sure how Dumbledore didn't see that little shit was crazy.\n"
     },
     {
+      "id": "recoFho2ec0ZrIqKM",
       "name": "Harry Potter and The Deathly Hallows - Part 1",
       "creator": "David Yates",
       "rating": 5,
@@ -293,6 +322,7 @@
       "comments": "There's a moment when the team is all alone. The music stops. You hear the wind. And you see their faces and the look of abandonment. They were all alone now. And afraid.\n"
     },
     {
+      "id": "reciUQ27HaeosUa3h",
       "name": "Harry Potter and The Deathly Hallows - Part 2",
       "creator": "David Yates",
       "rating": 5,
@@ -303,6 +333,7 @@
       "comments": "If there's even been a time for you to slow clap, it was here. My boy Ron did it.\n"
     },
     {
+      "id": "rec2FEPqeS6PGlFPd",
       "name": "Harry Potter and The Goblet of Fire",
       "creator": "Mike Newell",
       "rating": 4,
@@ -313,6 +344,7 @@
       "comments": "Harry, isn't of being a little shit to Neville, how about you show some appreciation for his intellect? It's because of people like him that the dragon didn't roast your ass. \n"
     },
     {
+      "id": "recQdYbp3u6GmKz1j",
       "name": "Harry Potter and The Half-Blood Prince",
       "creator": "David Yates",
       "rating": 5,
@@ -323,6 +355,7 @@
       "comments": "Snape really was like \"it's my spell you little shit, sit back down\".\n"
     },
     {
+      "id": "recYOC589cXt03gAB",
       "name": "Harry Potter and The Order of the Phoenix",
       "creator": "David Yates",
       "rating": 4,
@@ -333,6 +366,7 @@
       "comments": "It's your fault Sirius died, Harry.\n"
     },
     {
+      "id": "recVdBNNWIqOQV6pL",
       "name": "Harry Potter and The Prisoner of Azkaban",
       "creator": "Alfonso Cuarón",
       "rating": 5,
@@ -343,6 +377,7 @@
       "comments": "I was too young to appreciate the work of art Alfonso made for us.\n"
     },
     {
+      "id": "recHEyGMLDvYF2D7T",
       "name": "Harry Potter and The Sorcorer's Stone",
       "creator": "Chris Columbus",
       "rating": 4,
@@ -353,6 +388,7 @@
       "comments": "When I saw this movie in the theater, I knew I wanted to leave the cult.\n"
     },
     {
+      "id": "recEbuRm8wVpfHLp5",
       "name": "Hereditary",
       "creator": "Ari Aster",
       "rating": 5,
@@ -363,6 +399,7 @@
       "comments": "Picture this. You're sitting in a packed theater in the dead center because they are the best seats in the house. You just had a nice sushi dinner with your partner and are enjoying a crazy horror flick. So some cuddling is involved. Then, you see heads flying and shit. Your stomach begins to turn. The movie just keeps getting more intense. You've never felt this anxious and uncomfortable before. This is 4D cinema. You can feel what the characters are feeling. Then, the movie ends and you realize you have to take a massive shit. Sushi messed you up.\n"
     },
     {
+      "id": "recjfHiNxMmi3OaTM",
       "name": "Interstellar",
       "creator": "Christopher Nolan",
       "rating": 5,
@@ -373,6 +410,7 @@
       "comments": "My biggest fear in life is forgetting. I never want to forget the precious moments of my life and the experiences I've had. But there's always the possibility I'll get old and start to forget from time to time. When Cooper comes back from the Gargantua planet and sees what he's missed from his kid's life, I always cry. Because that is how I imagine life with Alzheimer's would be like.\n"
     },
     {
+      "id": "recDOwGXUYz0xZ20p",
       "name": "Knives Out",
       "creator": "Rian Johnson",
       "rating": 5,
@@ -383,6 +421,7 @@
       "comments": "Twists done right.\n"
     },
     {
+      "id": "recsII1Py6rqWtvWo",
       "name": "Midsommar",
       "creator": "Ari Aster",
       "rating": 5,
@@ -393,6 +432,7 @@
       "comments": "Once again, I find myself watching an Ari movie while having digestive problems. At this point, I'm just going to start doing it with all of his movies. It gives them an extra layer of unsettlingness.\n"
     },
     {
+      "id": "rechumvon689BwX24",
       "name": "Napoleon Dynamite",
       "creator": "Jared Hess",
       "rating": 4,
@@ -403,6 +443,7 @@
       "comments": "Your mom goes to college!\n"
     },
     {
+      "id": "recqxemfppR9yE2aw",
       "name": "Once Upon a Time... In Hollywood",
       "creator": "Quentin Tarantino",
       "rating": 4,
@@ -413,6 +454,7 @@
       "comments": "I don't know what exactly I love about this movie. It's a great film. But for me, I think it's the feeling of just enjoying the characters' everyday life.\n"
     },
     {
+      "id": "rech1oQYiUSR3TeVB",
       "name": "Prometheus",
       "creator": "Ridley Scott",
       "rating": 4,
@@ -423,6 +465,7 @@
       "comments": "I saw this movie on the first date I had with my wife. I don't know if it's good or bad. I just have a great memory attached to it.\n"
     },
     {
+      "id": "recPZtY0FWvqPNBqd",
       "name": "Sinister",
       "creator": "Scott Derrickson",
       "rating": 2,
@@ -433,6 +476,7 @@
       "comments": "I thought working from home would be this exciting. Instead, I just got fatter.\n"
     },
     {
+      "id": "recPocVXDbrmKZYZl",
       "name": "Spider-Man: Far from Home",
       "creator": "Jon Watts",
       "rating": 5,
@@ -443,6 +487,7 @@
       "comments": "Best Spider-Man. Fight me.\n"
     },
     {
+      "id": "recrZhN9rlxSyLnSV",
       "name": "Spider-Man: Homecoming",
       "creator": "Jon Watts",
       "rating": 5,
@@ -453,6 +498,7 @@
       "comments": "Best Spider-Man. Fight me.\n"
     },
     {
+      "id": "recKgx4qDMhVJ3mI6",
       "name": "Spider-Man: Into the Spider-Verse",
       "creator": "Rodney",
       "rating": 5,
@@ -463,6 +509,7 @@
       "comments": "Best Spider-Man. You're wrong.\n"
     },
     {
+      "id": "recUEv0vfA4WOwNax",
       "name": "The Hateful Eight",
       "creator": "Quentin Tarantino",
       "rating": 5,
@@ -473,6 +520,7 @@
       "comments": "This film is wonderfully long. The scenery alone is great reason to watch this.\n"
     },
     {
+      "id": "recjUP4kYWtSgc1J6",
       "name": "The Lord of the Rings: The Fellowship of the Ring",
       "creator": "Peter Jackson",
       "rating": 5,
@@ -483,6 +531,7 @@
       "comments": "Frodo grabs the One Ring and reads the inside: \"Live, Love, Laugh\"\n"
     },
     {
+      "id": "rec1CfyfVZy0uKSZa",
       "name": "The Lord of the Rings: The Return of the King",
       "creator": "Peter Jackson",
       "rating": 5,
@@ -493,6 +542,7 @@
       "comments": "I've cut out family because they've touched my food. I feel for Frodo.\n"
     },
     {
+      "id": "recR4b6ekf9QWnZVM",
       "name": "The Lord of the Rings: The Two Towers",
       "creator": "Peter Jackson",
       "rating": 5,
@@ -503,6 +553,7 @@
       "comments": "When Eowyn offers her disgusting stew to Aragorn in The Two Towers, there's a strand of hair in it.\n"
     },
     {
+      "id": "rec0flEgDzkkTB7Tf",
       "name": "The Shining",
       "creator": "Stanley Kubrick",
       "rating": 4,
@@ -513,6 +564,7 @@
       "comments": "Jack is your everyday asshat. How nobody saw it from the beginning is beyond me.\n"
     },
     {
+      "id": "recNJHkpstHbWGkb7",
       "name": "The Silence of the Lamb",
       "creator": "Jonathan Demme",
       "rating": 5,
@@ -523,6 +575,7 @@
       "comments": "I first saw this film when I was a sweet summer child. Why my parents allowed it is beyond me. I became a man that day.\n"
     },
     {
+      "id": "recvOivLYq1GpHngS",
       "name": "The Witch",
       "creator": "Robert Eggers",
       "rating": 4,
@@ -535,6 +588,7 @@
   ],
   "Anime": [
     {
+      "id": "recvD387tdf2tNKO5",
       "name": "5 Centimeters per Second",
       "creator": "Makoto Shinkai",
       "rating": 4,
@@ -545,6 +599,7 @@
       "comments": "As much as it pains me to see these two kids **not** end up together, I appreciate the more realistic take on young love. This is usually how things end up.\n"
     },
     {
+      "id": "recDTygdncxsanKP9",
       "name": "86: Eighty-Six",
       "creator": "Toshimasa Ishii",
       "rating": 5,
@@ -555,6 +610,7 @@
       "completed": false
     },
     {
+      "id": "recV1lEJiN8jYtIC3",
       "name": "A Silent Voice",
       "creator": "Naoko Yamada",
       "rating": 4,
@@ -565,6 +621,7 @@
       "comments": "I often find it hard to relate to these sorts of characters. I'm more of a \"kick 'em in the knees until they stop bullying you\" type of person. But watching the asshole grow and do his best to correct his mistakes was nice.\n"
     },
     {
+      "id": "recUnfhBvRrfy0plu",
       "name": "Attack on Titan",
       "creator": "Hajime Isayama",
       "rating": 5,
@@ -575,6 +632,7 @@
       "completed": false
     },
     {
+      "id": "recCnBbW66ucBDb8r",
       "name": "Demon Slayer",
       "creator": "Koyoharu Gotouge",
       "rating": 4,
@@ -585,6 +643,7 @@
       "completed": false
     },
     {
+      "id": "recxAeYl8DjLx475C",
       "name": "Erased",
       "creator": "Taku Kishimoto",
       "rating": 4,
@@ -595,6 +654,7 @@
       "comments": "I often find myself daydreaming about what I would do if I traveled back in time to when I was a kid, but with my memories intact. I too would kick some people's asses and help out my loved ones.\n"
     },
     {
+      "id": "recbkuJe5tlplCbLQ",
       "name": "Fullmetal Alchemist: Brotherhood",
       "creator": "Yasuhiro Irie",
       "rating": 5,
@@ -605,6 +665,7 @@
       "completed": false
     },
     {
+      "id": "reclVmpJ9v3zf67pW",
       "name": "Ghost in the Shell",
       "creator": "Mamoru Oshii",
       "rating": 4,
@@ -615,6 +676,7 @@
       "comments": "Damn, they really don't make 'em like they used to. There's just so much texture and feel to the animation of this time. Cyberpunk like this wouldn't work any other way.\n"
     },
     {
+      "id": "recKIztn9B6kWU5gT",
       "name": "Jujutsu Kaisen",
       "creator": "Gege Akutami",
       "rating": 4,
@@ -625,6 +687,7 @@
       "completed": false
     },
     {
+      "id": "recMBNIqyXAg7LhTD",
       "name": "KonoSuba",
       "creator": "Takaomi Kanasaki",
       "rating": 4,
@@ -635,6 +698,7 @@
       "completed": false
     },
     {
+      "id": "rec8gILj2eZNo8iCp",
       "name": "Naruto",
       "creator": "Masashi Kishimoto",
       "rating": 4,
@@ -645,6 +709,7 @@
       "comments": "I grew up with Naruto. Watched it from day one. So regardless of the quality of the story —which I believe to be great—, I will always love this show. Because I can pinpoint important moments of my childhood to Naruto episodes.\n"
     },
     {
+      "id": "recpw73DxQVsh3NwH",
       "name": "Naruto Shippudden",
       "creator": "Masashi Kishimoto",
       "rating": 4,
@@ -655,6 +720,7 @@
       "comments": "Just like Naruto, Shippudden was there with me throughout my teenage angst and right into adulthood. I can listen to these intros and immediately recall important moments of my life.\n"
     },
     {
+      "id": "recxefXJIHkWQa8dR",
       "name": "Neon Genesis Evangelion",
       "creator": "Hideaki Anno",
       "rating": 5,
@@ -665,6 +731,7 @@
       "comments": "This falls under the \"saw it as a kid and clearly didn't get it\" category. Saw it as an adult and damn does it hit differently. Loneliness is a motherfucker.\n"
     },
     {
+      "id": "recW4O2wPAxMvHwYX",
       "name": "One-Punch Man",
       "creator": "ONE",
       "rating": 4,
@@ -675,6 +742,7 @@
       "completed": false
     },
     {
+      "id": "recLbmUYkI6WUYLdh",
       "name": "Princess Mononoke",
       "creator": "Hayao Miyazaki",
       "rating": 5,
@@ -685,6 +753,7 @@
       "comments": "If Lord of the Rings was a kids anime. My favorite of the Ghiblets.\n"
     },
     {
+      "id": "recxFbWpDGfRTxHQN",
       "name": "The Last: Naruto the Movie",
       "creator": "Tsuneo Kobayashi",
       "rating": 4,
@@ -695,6 +764,7 @@
       "comments": "Naruto ends here and nothing else happens afterward. You will never change my mind. This is the only ending I needed. My boy grew up to be happy.\n"
     },
     {
+      "id": "recDHl7MykRFQQN5B",
       "name": "Tokyo Revengers",
       "creator": "Koichi Hatsumi",
       "rating": 4,
@@ -705,6 +775,7 @@
       "completed": false
     },
     {
+      "id": "recycxxte36Fv77qH",
       "name": "Violete Evergarden",
       "creator": "Taichi Ishidate, Haruka Fujita",
       "rating": 4,
@@ -715,6 +786,7 @@
       "comments": "I've always had a hard time getting my feelings across. But my mother thought me early on how to express them via letters when the words just couldn't come out. This story touches on a very emotional part of my life.\n"
     },
     {
+      "id": "reczVSITASrWZR5lv",
       "name": "Weathering With You",
       "creator": "Makoto Shinkai",
       "rating": 5,
@@ -725,6 +797,7 @@
       "comments": "I really hope my marriage is this adventurous when society crumbles due to climate change.\n"
     },
     {
+      "id": "recFzVwSaI3MFjvA8",
       "name": "Your Name.",
       "creator": "Makoto Shinkai",
       "rating": 5,
@@ -737,6 +810,7 @@
   ],
   "Books": [
     {
+      "id": "recYGBsCueS92ervw",
       "name": "A Beautifully Foolish Endeavor",
       "creator": "Hank Green",
       "rating": 4,
@@ -747,6 +821,7 @@
       "comments": "If life in the 2020s has thought me anything, is that people are this gullible and toxic.\n"
     },
     {
+      "id": "recGMzmUKEnS5360e",
       "name": "American Gods",
       "creator": "Neil Gaiman",
       "rating": 5,
@@ -757,6 +832,7 @@
       "comments": "I grew up in a cult (sorta). Today, I don't believe in anything but the inevitable end of the universe. Reading about deities as fictional characters felt more aligned with how I view religion in general.\n"
     },
     {
+      "id": "receiDHlvcKZ9Ju3K",
       "name": "An Absolutely Remarkable Thing",
       "creator": "Hank Green",
       "rating": 5,
@@ -767,6 +843,7 @@
       "comments": "If life in the 2000s has thought me anything, it's that social media is not the problem. People are.\n"
     },
     {
+      "id": "rec3AJGJ32oUdTtPe",
       "name": "Death's End",
       "creator": "Cixin Liu",
       "rating": 5,
@@ -777,6 +854,7 @@
       "comments": "If I could leap through time and watch the end of it all, I would.\n"
     },
     {
+      "id": "recXiR89fQtkBot1h",
       "name": "Dune",
       "creator": "Frank Herbert",
       "rating": 5,
@@ -787,6 +865,7 @@
       "comments": "This was a masterpiece. I really don't know what else to say.\n"
     },
     {
+      "id": "recHrUA1RivrEvigD",
       "name": "The Dark Forest",
       "creator": "Cixin Liu",
       "rating": 5,
@@ -797,6 +876,7 @@
       "comments": "Knowing it'll end, that it's coming, but you just don't know when. The anxiety eats away at you until you destroy yourself.\n"
     },
     {
+      "id": "recr558qi8Z73jAiY",
       "name": "The Three-Body Problem",
       "creator": "Cixin Liu",
       "rating": 5,
@@ -807,6 +887,7 @@
       "comments": "If aliens came to visit us, we'd be immediately annihilated. No species sufficiently advanced to travel the stars would come just to say hi. They'd come for something they need.\n"
     },
     {
+      "id": "recTYtZhBcJsBzrD4",
       "name": "Turtles All The Way Down",
       "creator": "John Green",
       "rating": 5,
@@ -819,6 +900,7 @@
   ],
   "Shows": [
     {
+      "id": "recn3xe3NEszDBp18",
       "name": "Adventure Time",
       "creator": "Larry Leichliter",
       "rating": 5,
@@ -829,6 +911,7 @@
       "completed": false
     },
     {
+      "id": "rec3Ap6te6nSNl3Ap",
       "name": "Bob's Burgers",
       "creator": "Loren Bouchard",
       "rating": 4,
@@ -839,6 +922,7 @@
       "completed": false
     },
     {
+      "id": "rec5rbRcmOf8vMX9V",
       "name": "Halt and Catch Fire",
       "creator": "Christopher Cantwell, Christopher C. Rogers",
       "rating": 5,
@@ -849,6 +933,7 @@
       "comments": "God, I wish my life in tech was this exhilarating. So fucking cool.\n"
     },
     {
+      "id": "rec5ZXrbzl1TToEhz",
       "name": "Legion",
       "creator": "Noah Hawley",
       "rating": 4,
@@ -859,6 +944,7 @@
       "comments": "When WW3 comes and I end up this messed up in the head, I too want to bend reality to my will.\n"
     },
     {
+      "id": "rec9IjaEYWJgyHbTY",
       "name": "Mr Robot",
       "creator": "Sam Esmail",
       "rating": 5,
@@ -869,6 +955,7 @@
       "comments": "What I love about this show is how they romanticize being that big of a nerd.\n"
     },
     {
+      "id": "recRhMAD1qNgSo3q6",
       "name": "Silicon Valley",
       "creator": "Mike Judge, John Altschuler, Dave Krinsky",
       "rating": 4,
@@ -879,6 +966,7 @@
       "comments": "This show is a documentary involving 80% of the people I've worked with.\n"
     },
     {
+      "id": "recegcUy69QEuubaI",
       "name": "The Expanse",
       "creator": "Mark Fergus, Hawk Ostby",
       "rating": 5,
@@ -889,6 +977,7 @@
       "completed": false
     },
     {
+      "id": "recxJUSVNnrZSG3N8",
       "name": "The Office",
       "creator": "Greg Daniels",
       "rating": 4,
@@ -901,6 +990,7 @@
   ],
   "Games": [
     {
+      "id": "recUgrGvMaCi8dmf5",
       "name": "Celeste",
       "creator": "Matt Makes Games",
       "rating": 5,
@@ -911,6 +1001,7 @@
       "comments": "I failed and died more times than I could count. But it was ok. The game made me feel like it was ok to get back up and try again. That was nice.\n"
     },
     {
+      "id": "reck05kTFZA2ezEKX",
       "name": "INSIDE",
       "creator": "Playdead",
       "rating": 5,
@@ -921,6 +1012,7 @@
       "comments": "I want more of this. Nothing flashy or fancy. Just a simple story with a bit of mystery.\n"
     },
     {
+      "id": "recykEfnBDOkLuAx1",
       "name": "Limbo",
       "creator": "Playdead",
       "rating": 4,
@@ -931,6 +1023,7 @@
       "comments": "This was breathtakingly beautiful to play on an OLED display.\n"
     },
     {
+      "id": "recsufyvJ11lsQ2Ut",
       "name": "Pokémon Legends: Arceus",
       "creator": "Game Freak",
       "rating": 3,
@@ -941,6 +1034,7 @@
       "comments": "Damn, they really tried. I think the concept is great and I would love to explore more of the pokemon world like this. But they really didn't even try with the graphics.\n"
     },
     {
+      "id": "recnYU6jPDmf9YxgO",
       "name": "The Last of Us",
       "creator": "Naughty Dog",
       "rating": 5,
@@ -951,6 +1045,7 @@
       "comments": "This should be the future of storytelling. I lived this story. And it was amazing.\n"
     },
     {
+      "id": "recXYgMF4MDqZVW1x",
       "name": "The Legend of Zelda: A Link Between Worlds",
       "creator": "Nintendo",
       "rating": 5,
@@ -961,6 +1056,7 @@
       "comments": "It was a bit different than previous Zelda games. But it was unique and familiar. I felt nostalgic, but not too much. And I played this through a couple of significant life events. So it always brings back those memories and holds a special in my life.\n"
     },
     {
+      "id": "recmYjmKx4cvvNtTK",
       "name": "The Legend of Zelda: Breath of the Wild",
       "creator": "Nintendo",
       "rating": 5,
@@ -971,6 +1067,7 @@
       "comments": "When I was a young boy, my father took me into the city, while I played Zelda the whole time. If I had any sort of dreams about what the franchise would be when I grew up, this far exceeded those expectations.\n"
     },
     {
+      "id": "recGNMyHFfgKdZurr",
       "name": "The Legend of Zelda: Majora's Mask",
       "creator": "Nintendo",
       "rating": 5,
@@ -983,6 +1080,7 @@
   ],
   "Comics": [
     {
+      "id": "recBOMKCWYJVzyBWQ",
       "name": "House of M",
       "creator": "Brian Michael Bendis",
       "rating": 3,

@@ -38,14 +38,16 @@ export interface AirtableBKResp {
   offset: string;
 }
 
+export type BKValues = BKFields & { id: string };
+
 export interface BookmarksData {
-  Articles: BKFields[];
-  Comics: BKFields[];
-  Podcasts: BKFields[];
-  Reddits: BKFields[];
-  Tweets: BKFields[];
-  Videos: BKFields[];
-  [key: string]: BKFields[];
+  Articles: BKValues[];
+  Comics: BKValues[];
+  Podcasts: BKValues[];
+  Reddits: BKValues[];
+  Tweets: BKValues[];
+  Videos: BKValues[];
+  [key: string]: BKValues[];
 }
 
 // Shelf
@@ -97,6 +99,7 @@ export interface AirtableShelfResp {
 }
 
 export interface ShelfItem {
+  id: string;
   name: string;
   creator: string;
   rating: number;
