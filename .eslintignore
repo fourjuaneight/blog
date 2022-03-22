@@ -13,3 +13,4 @@ node_modules
 public
 scripts/images.ts
 *.ts
+assets/*.js
