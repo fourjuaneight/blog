@@ -953,7 +953,7 @@
     {
       "name": "The Legend of Zelda: A Link Between Worlds",
       "creator": "Nintendo",
-      "rating": 4,
+      "rating": 5,
       "cover": "https://dl.airtable.com/.attachments/d418086a8715cc118f6c70a915139074/a676e458/The_Legend_of_Zelda-A_Link_Between_Worlds.png",
       "category": "Games",
       "genre": "Adventure",
@@ -971,14 +971,14 @@
       "comments": "When I was a young boy, my father took me into the city, while I played Zelda the whole time. If I had any sort of dreams about what the franchise would be when I grew up, this far exceeded those expectations.\n"
     },
     {
-      "name": "The Legend of Zelda: Link's Awekening",
+      "name": "The Legend of Zelda: Majora's Mask",
       "creator": "Nintendo",
-      "rating": 4,
-      "cover": "https://dl.airtable.com/.attachments/32c78e9649e016a0d9136218520d1c2e/eb11bc09/The_Legend_of_Zelda-Links_Awekening.png",
+      "rating": 5,
+      "cover": "https://dl.airtable.com/.attachments/0228da345c1ba8bfcf81ab9b00ed04ab/c4dab4bd/2022-03-2212.24.04.png",
       "category": "Games",
       "genre": "Adventure",
-      "comments": "When I think back to my GameBoy days with Zelda, I'm pretty sure this is what I thought it looked like.\n",
-      "completed": false
+      "completed": true,
+      "comments": "I'll take existential dread Zelda any day. Death looms at every corner of this game. Love it.\n"
     }
   ],
   "Comics": [
