@@ -40,6 +40,7 @@ const ignore = ['js/sw*.js', 'js/noise*.js', 'js/bookmarks*.js'];
   const replaceOptions: ReplaceInFileConfig = {
     files: [
       `${jsDir}/${sw[0]}`,
+      `${jsDir}/${bookmarks[0]}`,
       `${jsDir}/${bookmarksWW[0]}`,
       `${jsDir}/${noise[0]}`,
     ],
@@ -66,7 +67,7 @@ const ignore = ['js/sw*.js', 'js/noise*.js', 'js/bookmarks*.js'];
   try {
     await replaceInFile(replaceOptions);
 
-    console.info(chalk.green('[SUCCESS]'), 'Service Worker updated.');
+    console.info(chalk.green('[SUCCESS]'), 'Worker scripts updated.');
   } catch (error) {
     throw new Error(`${chalk.red('[ERROR]')} ${error}`);
   }
