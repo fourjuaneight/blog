@@ -22,5 +22,6 @@ logs
 node_modules
 pids
 public
-assets/css/*.css
-assets/*.js
+assets/css/tailwind.css
+assets/css/tw.css
+assets/js

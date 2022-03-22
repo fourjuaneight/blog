@@ -1,4 +1,4 @@
-const worker = new Worker('/noise.ww.js');
+const worker = new Worker('/js/noise.ww.js');
 
 const fragment = document.createDocumentFragment();
 const size: number = 64;

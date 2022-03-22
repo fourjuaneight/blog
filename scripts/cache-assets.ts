@@ -11,7 +11,8 @@ const timestamp: number = Math.floor(new Date().getTime() / 1000);
 
 // Glob options. Pass directory to search and files to ignore
 const cwd = resolve(__dirname, '..', 'dist');
-const ignore = ['sw*.js'];
+const jsDir = resolve(cwd, 'js');
+const ignore = ['js/sw*.js', 'js/noise*.js'];
 
 // Find all JS, CSS, and font files in rendered output
 (async () => {
@@ -25,14 +26,14 @@ const ignore = ['sw*.js'];
     cwd,
     ignore,
   });
-  const sw = globSync('sw.min.*.js', { cwd });
-  const noiseWW = globSync('noise.ww.min.*.js', { cwd });
-  const noise = globSync('noise.min.*.js', { cwd });
+  const sw = globSync('sw.min.*.js', { cwd: jsDir });
+  const noiseWW = globSync('noise.ww.min.*.js', { cwd: jsDir });
+  const noise = globSync('noise.min.*.js', { cwd: jsDir });
   const newFiles = files.map(toCache => `'/${toCache}'`).toString();
 
   // find and replace options; add hash ID, files to cache array, and site base URL
   const replaceOptions: ReplaceInFileConfig = {
-    files: [`${cwd}/${sw[0]}`, `${cwd}/${noise[0]}`],
+    files: [`${jsDir}/${sw[0]}`, `${jsDir}/${noise[0]}`],
     from: [/\["staticAssets"\]/g, /"version"/g, /baseURL/g, '/noise.ww.js'],
     to: [`[${newFiles}]`, `'${timestamp}'`, `${SITE_URL}`, `/${noiseWW}`],
   };
