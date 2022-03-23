@@ -9,11 +9,12 @@ interface BookmarksDB extends DBSchema {
   };
 }
 
-const saveBookmarksToStore = async (tableName: string) => {
+const saveBookmarksToStore = async (table: string) => {
   postMessage('loading');
 
   // create store
-  const db = await openDB<BookmarksDB>(`bk-${tableName}`, 1, {
+  const tableName = table.toLowerCase();
+  const store = await openDB<BookmarksDB>(`bookmarks`, 1, {
     upgrade(db) {
       db.createObjectStore(tableName, {
         keyPath: 'id',
@@ -22,14 +23,12 @@ const saveBookmarksToStore = async (tableName: string) => {
   });
   // get bookmarks
   const response = await fetch(
-    `https://cleverlaziness.com/api/bookmarks/${tableName}`
+    `https://cleverlaziness.com/api/bookmarks/${table}`
   );
   const data: BKValues[] = await response.json();
 
   // add bookmarks to store
-  const storeUpdate = data.map(bookmark =>
-    db.put(tableName, bookmark, bookmark.id)
-  );
+  const storeUpdate = data.map(bookmark => store.put(tableName, bookmark));
   await Promise.all(storeUpdate);
 
   postMessage('loaded');
