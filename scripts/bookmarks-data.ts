@@ -10,6 +10,7 @@ import {
   BookmarksData,
   BKFields,
   BKRecord,
+  BKValues,
   RedditFields,
   TweetFields,
   WebFields,
@@ -79,48 +80,28 @@ const getBookmarksWithOffset = async (
   }
 };
 
-/**
- * Save Airtable data to local JSON data file.
- * @function
- * @async
- *
- * @param  {string} table table name
- * @return {void}
- */
-const saveData = async (table: string): Promise<void> => {
-  const tableName = table.toLowerCase();
-
-  try {
-    await getBookmarksWithOffset(table);
-
-    if (data[table]?.length) {
-      await writeFile(
-        `${dist}/bookmarks-${tableName}.json`,
-        JSON.stringify(data[table], null, 2)
-      );
-
-      console.info(
-        chalk.green('[SUCCESS]'),
-        `data saved to bookmarks-${tableName}.json`
-      );
-    } else {
-      console.info(
-        chalk.yellow('[INFO]'),
-        `no data saved to bookmarks-${tableName}.json`
-      );
-    }
-  } catch (error) {
-    throw `${chalk.red('[ERROR]')} ${chalk.blue(
-      '(saveData)'
-    )} (${tableName}) ${error}`;
-  }
-};
-
 (async () => {
   try {
-    const dataList = Object.keys(data).map(table => saveData(table));
+    const dataList = Object.keys(data).map(table =>
+      getBookmarksWithOffset(table)
+    );
 
     await Promise.all(dataList);
+
+    const cleanData = Object.keys(data)
+      .filter(key => data[key].length > 0)
+      .reduce(
+        (acc: { [key: string]: BKValues[] }, key) => ({
+          ...acc,
+          [key]: data[key],
+        }),
+        {}
+      );
+
+    await writeFile(
+      `${dist}/bookmarks.json`,
+      JSON.stringify(cleanData, null, 2)
+    );
 
     process.exit(0);
   } catch (error) {
