@@ -103,6 +103,8 @@ const getBookmarksWithOffset = async (
       JSON.stringify(cleanData, null, 2)
     );
 
+    console.info(chalk.green('[SUCCESS]'), 'data saved to bookmarks.json');
+
     process.exit(0);
   } catch (error) {
     console.error(error);
