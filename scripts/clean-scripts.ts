@@ -41,7 +41,6 @@ const ignore = ['js/sw*.js', 'js/noise*.js', 'js/bookmarks*.js'];
     files: [
       `${jsDir}/${sw[0]}`,
       `${jsDir}/${bookmarks[0]}`,
-      `${jsDir}/${bookmarksWW[0]}`,
       `${jsDir}/${noise[0]}`,
     ],
     from: [
@@ -50,8 +49,6 @@ const ignore = ['js/sw*.js', 'js/noise*.js', 'js/bookmarks*.js'];
       /baseURL/g,
       '/bookmarks.ww.min.js',
       '/noise.ww.min.js',
-      '<AIRTABLE_TOKEN>',
-      '<AIRTABLE_BOOKMARKS_ID>',
     ],
     to: [
       `[${newFiles}]`,
@@ -59,8 +56,6 @@ const ignore = ['js/sw*.js', 'js/noise*.js', 'js/bookmarks*.js'];
       `${SITE_URL}`,
       `/${bookmarksWW}`,
       `/${noiseWW}`,
-      `${AIRTABLE_TOKEN}`,
-      `${AIRTABLE_BOOKMARKS_ID}`,
     ],
   };
 

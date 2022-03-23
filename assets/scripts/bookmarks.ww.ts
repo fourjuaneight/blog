@@ -1,6 +1,6 @@
 import { openDB, DBSchema } from 'idb';
 
-import { AirtableBKResp, BKValues } from '../../scripts/types';
+import { BKValues } from '../../scripts/types';
 
 interface BookmarksDB extends DBSchema {
   [key: string]: {
@@ -8,45 +8,6 @@ interface BookmarksDB extends DBSchema {
     value: BKValues;
   };
 }
-
-let data: BKValues[] = [];
-
-const getBookmarksWithOffset = async (
-  table: string,
-  offset?: string
-): Promise<AirtableBKResp> => {
-  const options: RequestInit = {
-    headers: {
-      Authorization: 'Bearer <AIRTABLE_TOKEN>',
-      'Content-Type': 'application/json',
-    },
-  };
-  const endpoint = `https://api.airtable.com/v0/<AIRTABLE_BOOKMARKS_ID>/${table}`;
-  const url = offset ? `${endpoint}?offset=${offset}` : endpoint;
-
-  try {
-    return fetch(url, options)
-      .then((response: Response) => response.json())
-      .then((airtableRes: AirtableBKResp) => {
-        const existingData = data || [];
-        const newData =
-          airtableRes.records?.map(record => {
-            delete record.fields.archive;
-            return { id: record.id, ...record.fields };
-          }) || [];
-
-        data = [...existingData, ...newData];
-
-        if (airtableRes.offset) {
-          return getBookmarksWithOffset(airtableRes.offset);
-        }
-
-        return airtableRes;
-      });
-  } catch (error) {
-    throw error;
-  }
-};
 
 const saveBookmarksToStore = async (tableName: string) => {
   postMessage('loading');
@@ -60,7 +21,10 @@ const saveBookmarksToStore = async (tableName: string) => {
     },
   });
   // get bookmarks
-  await getBookmarksWithOffset(tableName);
+  const response = await fetch(
+    `https://cleverlaziness.com/api/bookmarks/${tableName}`
+  );
+  const data: BKValues[] = await response.json();
 
   // add bookmarks to store
   const storeUpdate = data.map(bookmark =>
