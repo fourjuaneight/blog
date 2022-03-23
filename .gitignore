@@ -79,6 +79,4 @@ api/utils/template.html
 assets/css/tw.css
 resources
 assets/js
-assets/noise.js
-assets/noise.ww.js
-assets/sw.js
+assets/*.js
