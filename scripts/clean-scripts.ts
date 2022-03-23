@@ -14,8 +14,7 @@ const timestamp: number = Math.floor(new Date().getTime() / 1000);
 
 // Glob options. Pass directory to search and files to ignore
 const cwd = resolve(__dirname, '..', 'dist');
-const jsDir = resolve(cwd, 'js');
-const ignore = ['js/sw*.js', 'js/noise*.js', 'js/bookmarks*.js'];
+const ignore = ['sw*.js', 'noise*.js', 'bookmarks*.js'];
 
 // Find all JS, CSS, and font files in rendered output
 (async () => {
@@ -29,20 +28,16 @@ const ignore = ['js/sw*.js', 'js/noise*.js', 'js/bookmarks*.js'];
     cwd,
     ignore,
   });
-  const sw = globSync('sw.min.*.js', { cwd: jsDir });
-  const bookmarks = globSync('bookmarks.min.*.js', { cwd: jsDir });
-  const bookmarksWW = globSync('bookmarks.ww.min.*.js', { cwd: jsDir });
-  const noise = globSync('noise.min.*.js', { cwd: jsDir });
-  const noiseWW = globSync('noise.ww.min.*.js', { cwd: jsDir });
+  const sw = globSync('sw.min.*.js', { cwd });
+  const bookmarks = globSync('bookmarks.min.*.js', { cwd });
+  const bookmarksWW = globSync('bookmarks.ww.min.*.js', { cwd });
+  const noise = globSync('noise.min.*.js', { cwd });
+  const noiseWW = globSync('noise.ww.min.*.js', { cwd });
   const newFiles = files.map(toCache => `'/${toCache}'`).toString();
 
   // find and replace options; add hash ID, files to cache array, and site base URL
   const replaceOptions: ReplaceInFileConfig = {
-    files: [
-      `${jsDir}/${sw[0]}`,
-      `${jsDir}/${bookmarks[0]}`,
-      `${jsDir}/${noise[0]}`,
-    ],
+    files: [`${cwd}/${sw[0]}`, `${cwd}/${bookmarks[0]}`, `${cwd}/${noise[0]}`],
     from: [
       /\["staticAssets"\]/g,
       /"version"/g,

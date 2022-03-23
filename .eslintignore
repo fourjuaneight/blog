@@ -14,3 +14,4 @@ public
 scripts/images.ts
 *.ts
 assets/js
+assets/*.js

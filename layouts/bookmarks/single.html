@@ -11,8 +11,8 @@
 {{ end }}
 {{ define "scripts" }}
   {{/*  Bookmarks Web Worker  */}}
-  {{ $bookmarks := resources.Get "js/bookmarks.js" | minify | resources.Fingerprint "md5" }}
-  {{ $bookmarksWW := resources.Get "js/bookmarks.ww.js" | minify | resources.Fingerprint "md5" }}
+  {{ $bookmarks := resources.Get "bookmarks.js" | minify | resources.Fingerprint "md5" }}
+  {{ $bookmarksWW := resources.Get "bookmarks.ww.js" | minify | resources.Fingerprint "md5" }}
   <script
     defer
     src="{{ $bookmarks.Permalink }}"

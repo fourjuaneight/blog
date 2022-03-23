@@ -23,8 +23,8 @@
     {{ block "scripts" . }}{{ end }}
 
     {{/*  Noise Web Worker  */}}
-    {{ $noise := resources.Get "js/noise.js" | minify | resources.Fingerprint "md5" }}
-    {{ $noiseWW := resources.Get "js/noise.ww.js" | minify | resources.Fingerprint "md5" }}
+    {{ $noise := resources.Get "noise.js" | minify | resources.Fingerprint "md5" }}
+    {{ $noiseWW := resources.Get "noise.ww.js" | minify | resources.Fingerprint "md5" }}
     <script
       defer
       src="{{ $noise.Permalink }}"
