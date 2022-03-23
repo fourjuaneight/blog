@@ -1,14 +1,18 @@
 import { AirtableBKResp, BKValues } from '../../../scripts/types';
 
+interface ContextValue {
+  [key: string]: string;
+}
+
 interface RequestParams {
-  params: {
-    table: string;
-  };
+  env: ContextValue;
+  params: ContextValue;
 }
 
 let data: BKValues[] = [];
 
 const getBookmarksWithOffset = async (
+  env: ContextValue,
   table: string,
   offset?: string
 ): Promise<AirtableBKResp> => {
@@ -45,9 +49,9 @@ const getBookmarksWithOffset = async (
   }
 };
 
-export const onRequestGet = async ({ params }: RequestParams) => {
+export const onRequestGet = async ({ env, params }: RequestParams) => {
   try {
-    await getBookmarksWithOffset(params.table);
+    await getBookmarksWithOffset(env, params.table);
 
     if (data.length) {
       return new Response(JSON.stringify(data), {
