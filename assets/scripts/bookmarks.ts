@@ -1,4 +1,4 @@
-const worker = new Worker('/js/bookmarks.ww.js');
+const worker = new Worker('/js/bookmarks.ww.min.js');
 const body = document.querySelector('body');
 const tableName = body.getAttribute('data-table');
 
