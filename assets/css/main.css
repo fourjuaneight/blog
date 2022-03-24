@@ -327,12 +327,15 @@ li.bk-column-header {
 }
 
 li.bk-cell {
+  animation: grow 0.5s ease-in-out forwards;
+  border-color: var(--tertiary-transparent);
   border-width: 0.03125rem 0;
+  height: 0;
   max-height: 1.5625rem;
 }
 
-li.bk-cell[data-loaded='true'] {
-  animation: grow 0.5s ease-in-out forwards;
+li.bk-cell:hover {
+  border-color: var(--secondary);
 }
 
 li.bk-cell > a,
