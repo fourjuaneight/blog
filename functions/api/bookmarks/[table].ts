@@ -22,8 +22,10 @@ const getBookmarksWithOffset = async (
       'Content-Type': 'application/json',
     },
   };
-  const endpoint = `https://api.airtable.com/v0/${env.AIRTABLE_BOOKMARKS_ID}/${table}`;
-  const url = offset ? `${endpoint}?offset=${offset}` : endpoint;
+  const sortTitle = table === 'Tweets' ? 'tweets' : 'title';
+  const sortCreator = table === 'Reddits' ? 'subreddit' : 'creator';
+  const endpoint = `https://api.airtable.com/v0/${env.AIRTABLE_BOOKMARKS_ID}/${table}?sort%5B0%5D%5Bfield%5D=${sortTitle}&sort%5B0%5D%5Bdirection%5D=asc&sort%5B1%5D%5Bfield%5D=${sortCreator}&sort%5B1%5D%5Bdirection%5D=asc`;
+  const url = offset ? `${endpoint}&offset=${offset}` : endpoint;
 
   try {
     return fetch(url, options)
