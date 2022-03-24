@@ -84,37 +84,7 @@
           p-0
           w-full"
         data-category="{{ lower .Title }}"
-      >
-        {{ range $i, $data := .Site.Data.bookmarks }}
-          {{ if eq $i $.Title }}
-            {{ range $data }}
-              <li
-                class="
-                  bk-cell
-                  border-solid
-                  border-tertiary-transparent
-                  cursor-pointe
-                  duration-150
-                  ease-in-out
-                  focus:border-secondary
-                  grid
-                  grid-rows-1
-                  h-0
-                  hover:border-secondary
-                  m-0
-                  overflow-hidden
-                  p-0
-                  transition-all
-                  w-full
-                "
-                data-id="{{ .id }}"
-                data-loaded="false"
-              >
-              </li>
-            {{ end }}
-          {{ end }}
-        {{ end }}
-      </ul>
+      ></ul>
     </div>
   </section>
   {{ if ne .Params.footer nil }}
