@@ -54,7 +54,23 @@ export const onRequestGet = async ({ env, params }: RequestParams) => {
     await getBookmarksWithOffset(env, params.table);
 
     if (data.length) {
-      return new Response(JSON.stringify(data), {
+      const sortedData = data
+        .sort((a, b) => {
+          if (a.subreddit) {
+            return a.subreddit > b.subreddit ? 1 : -1;
+          } else {
+            return a.creator > b.creator ? 1 : -1;
+          }
+        })
+        .sort((a, b) => {
+          if (a.tweet) {
+            return a.tweet > b.tweet ? 1 : -1;
+          } else {
+            return a.title > b.title ? 1 : -1;
+          }
+        });
+
+      return new Response(JSON.stringify(sortedData), {
         headers: {
           'Content-Type': 'application/json',
         },
