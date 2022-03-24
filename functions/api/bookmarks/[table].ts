@@ -52,6 +52,8 @@ const getBookmarksWithOffset = async (
 };
 
 export const onRequestGet = async ({ env, params }: RequestParams) => {
+  data = [];
+ 
   try {
     await getBookmarksWithOffset(env, params.table);
 
