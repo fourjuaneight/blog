@@ -39,7 +39,7 @@ const getBookmarksWithOffset = async (
         data = [...existingData, ...newData];
 
         if (airtableRes.offset) {
-          return getBookmarksWithOffset(airtableRes.offset);
+          return getBookmarksWithOffset(env, table, airtableRes.offset);
         }
 
         return airtableRes;

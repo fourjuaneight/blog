@@ -30,7 +30,7 @@ const getShelfWithOffset = (
         data = [...data, ...airtableRes.records];
 
         if (airtableRes.offset) {
-          return getShelfWithOffset(airtableRes.offset);
+          return getShelfWithOffset(env, airtableRes.offset);
         }
 
         return airtableRes;
