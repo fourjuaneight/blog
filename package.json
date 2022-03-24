@@ -22,7 +22,7 @@
     "serve": "serve dist",
     "shelf": "ts-node --project tsconfig.node.json \"scripts/shelf-data.ts\"",
     "social-images": "ts-node --project tsconfig.node.json \"scripts/social-images.ts\"",
-    "start": "run-p bookmarks img shelf social-images ts && concurrently -n \"TS,DEV\" -c \"#3178c6,#ff4088\" \"npm run ts -- --watch\" \"npm run dev\"",
+    "start": "run-p bookmarks img shelf social-images ts && concurrently -n \"TS,TW,DEV\" -c \"#3178c6,#38bdf8,#ff4088\" \"npm run ts:workers -- --watch\" \"npm run tw -- --watch\" \"npm run dev\"",
     "tsc": "tsc"
   },
   "repository": {

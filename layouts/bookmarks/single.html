@@ -1,6 +1,5 @@
 {{ define "main" }}
-  {{ $rTitle := cond (eq .Title "Reddits") "Post" "Title" }}
-  {{ $dTitle := cond (eq .Title "Tweets") "Tweet" $rTitle }}
+  {{ $dTitle := cond (eq .Title "Tweets") "Tweet" "Title" }}
   {{ $dCreator := cond (eq .Title "Reddits") "Subreddit" "Creator" }}
 
   <section class="w-full">
