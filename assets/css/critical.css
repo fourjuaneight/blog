@@ -7,6 +7,7 @@
   --selection: #999;
   --secondary: #0a799d;
   --tertiary: #597480;
+  --tertiary-transparent: rgba(89, 116, 128, 0.5);
   --duration: 208ms;
   --transition: cubic-bezier(0.155, 0.64, 0.24, 1);
 }
@@ -20,6 +21,7 @@
     --primary: #c390f3;
     --secondary: #bdecfb;
     --tertiary: #859faa;
+    --tertiary-transparent: rgba(133, 159, 170, 0.5);
   }
 }
 

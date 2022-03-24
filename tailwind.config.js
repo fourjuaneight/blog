@@ -7,6 +7,7 @@ const pallete = {
   selection: 'var(--selection)',
   secondary: 'var(--secondary)',
   tertiary: 'var(--tertiary)',
+  'tertiary-transparent': 'var(--tertiary-transparent)',
 };
 
 module.exports = {
