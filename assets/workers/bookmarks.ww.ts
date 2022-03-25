@@ -43,7 +43,6 @@ const saveBookmarksToStore = async (dbVersion: number, table: TableValues) => {
   const newDBVersion = isExpired ? dbVersion + 1 : dbVersion;
 
   // create new store
-  console.info({ dbVersion, table, isExpired, newDBVersion });
   const store = await openDB<BookmarksDB>(`Bookmarks`, newDBVersion, {
     upgrade(db, dbVersion, newVersion) {
       db.createObjectStore(table.name, {
