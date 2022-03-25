@@ -1,16 +1,18 @@
 ---
 header:
-  - label: Archive
+  - label: Posts
     link: 'posts'
+  - label: Bookmarks
+    link: 'bookmarks'
   - label: Shelf
     link: 'shelf'
-  - label: Uses
-    link: uses
   - label: About
     link: 'about'
 footer:
   - label: About
     link: about
+  - label: Uses
+    link: uses
   - label: Twitter
     link: https://twitter.com/fourjuaneight
     external: true

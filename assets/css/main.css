@@ -191,6 +191,18 @@ footer ul {
   padding: 0;
 }
 
+header {
+  --nav-width: 14.75625rem;
+}
+
+header nav {
+  max-width: var(--nav-width);
+}
+
+header nav > ul {
+  min-width: var(--nav-width);
+}
+
 h1.post-title,
 li.bk-title a {
   text-shadow: 0.15rem 0.15rem var(--tertiary);
