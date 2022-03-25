@@ -265,6 +265,15 @@ a[data-dark='true'] {
   color: var(--background);
 }
 
+svg#loader {
+  height: 6.25rem;
+  width: 6.25rem;
+}
+
+svg#loader circle {
+  fill: var(--secondary);
+}
+
 ul.shelf-list {
   align-items: start;
   grid-template-columns: repeat(auto-fit, minmax(165px, 165px));
@@ -315,9 +324,21 @@ li code {
   padding: 0.25rem;
 }
 
-section.bk-table > div {
+section.bk-table[data-loaded='false'] > div {
+  overflow: hidden;
+}
+section.bk-table[data-loaded='false'] ul.bk-header li {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+section.bk-table[data-loaded='true'] > div {
   max-width: 60rem;
   min-width: 46rem;
+}
+
+section.bk-table[data-loaded='true'] ul.bk-header li {
+  opacity: 1;
 }
 
 ul.bk-header,

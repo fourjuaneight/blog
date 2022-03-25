@@ -6,11 +6,15 @@
     <h1 class="post-title md:text-6xl mr-auto text-4xl">{{ .Title }}</h1>
     <p>{{ .Content }}</p>
   </section>
-  <section class="bk-table h-full overflow-x-auto overflow-y-hidden w-full">
+  <section
+    class="bk-table h-full overflow-x-auto overflow-y-hidden w-full"
+    data-loaded="false"
+  >
     <div class="w-full">
       <ul
         class="
           bk-header
+          bg-background-dark
           border
           border-secondary
           border-solid
@@ -30,6 +34,8 @@
             border-secondary
             border-solid
             col-start-1
+            duration-200
+            ease-in-out
             font-semibold
             m-0
             p-2
@@ -45,6 +51,8 @@
             border-secondary
             border-solid
             col-start-2
+            duration-200
+            ease-in-out
             font-semibold
             m-0
             p-2
@@ -59,6 +67,8 @@
             bk-column-header
             border-none
             col-start-3
+            duration-200
+            ease-in-out
             font-semibold
             m-0
             p-2
@@ -71,6 +81,7 @@
       </ul>
       <ul
         class="
+          bg-background-dark
           border
           border-secondary
           border-solid
@@ -82,9 +93,12 @@
           list-none
           m-0
           p-0
+          relative
           w-full"
         data-category="{{ lower .Title }}"
-      ></ul>
+      >
+        {{ partial "loader.html" . }}
+      </ul>
     </div>
   </section>
   {{ if ne .Params.footer nil }}
@@ -96,7 +110,7 @@
 {{ define "scripts" }}
   {{/*  Bookmarks Web Worker  */}}
   {{ $bookmarks := resources.Get "bookmarks.js" | minify | resources.Fingerprint "md5" }}
-  {{ $bookmarksWW := resources.Get "bookmarks.ww.js" | minify | resources.Fingerprint "md5" }}
+  {{ $bookmarksWW := resources.Get "bookmarks.ww.js" | minify }}
   <script
     defer
     src="{{ $bookmarks.Permalink }}"

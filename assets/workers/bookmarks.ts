@@ -7,10 +7,12 @@ interface MessageValues {
 
 const worker = new Worker('/bookmarks.ww.min.js');
 const body = document.querySelector('body');
+const table = document.querySelector('section.bk-table');
 const tableName = body.getAttribute('data-table');
 const tableList = document.querySelector(
   `ul[data-category="${tableName?.toLowerCase()}"]`
 );
+const loader = document.querySelector('svg#loader');
 const fragment = document.createDocumentFragment();
 
 const loadBookmarkToDOM = bookmark => {
@@ -84,6 +86,12 @@ if (window.Worker) {
   });
 
   worker.onmessage = (evt: MessageEvent<MessageValues>) => {
+    // remove loader
+    loader.remove();
+
+    // show ui
+    table.setAttribute('data-loaded', 'true');
+
     // generate bookmark elements
     for (const item of evt.data.bookmarks) {
       loadBookmarkToDOM(item);
