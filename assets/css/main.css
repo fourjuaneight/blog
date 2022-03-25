@@ -98,7 +98,9 @@ input {
   height: 2.25rem;
 }
 
-picture {
+picture,
+li.bk-cell,
+li.bk-cell > * {
   overflow: hidden;
 }
 
@@ -314,12 +316,16 @@ li code {
 }
 
 section.bk-table > div {
-  min-width: 45.9375rem;
+  max-width: 60rem;
+  min-width: 46rem;
 }
 
 ul.bk-header,
 li.bk-cell {
-  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-columns:
+    minmax(26rem, 32rem)
+    minmax(8rem, 12rem)
+    minmax(12rem, 16rem);
 }
 
 li.bk-column-header {
@@ -338,19 +344,23 @@ li.bk-cell:hover {
   border-color: var(--secondary);
 }
 
+li.bk-cell > * {
+  grid-row-start: 1;
+}
+
 li.bk-cell > a,
 li.bk-column-header:nth-of-type(1) {
-  min-width: 22.9375rem;
+  min-width: 26rem;
 }
 
 li.bk-cell > p,
 li.bk-column-header:nth-of-type(2) {
-  min-width: 15.25rem;
+  min-width: 8rem;
 }
 
 li.bk-cell > ul,
 li.bk-column-header:nth-of-type(3) {
-  min-width: 7.625rem;
+  min-width: 12rem;
 }
 
 section.footnotes a,
