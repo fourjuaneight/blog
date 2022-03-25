@@ -9,7 +9,13 @@ interface RequestParams {
   params: ContextValue;
 }
 
-let data: BKValues[] = [];
+let data: { [key: string]: BKValues[] } = {
+  Articles: [],
+  Comics: [],
+  Podcasts: [],
+  Tweets: [],
+  Videos: [],
+};
 
 const getBookmarksWithOffset = async (
   env: ContextValue,
@@ -22,23 +28,21 @@ const getBookmarksWithOffset = async (
       'Content-Type': 'application/json',
     },
   };
-  const sortTitle = table === 'Tweets' ? 'tweets' : 'title';
-  const sortCreator = table === 'Reddits' ? 'subreddit' : 'creator';
-  const endpoint = `https://api.airtable.com/v0/${env.AIRTABLE_BOOKMARKS_ID}/${table}?sort%5B1%5D%5Bfield%5D=${sortCreator}&sort%5B1%5D%5Bdirection%5D=asc`;
-  const url = offset ? `${endpoint}&offset=${offset}` : endpoint;
+  const endpoint = `https://api.airtable.com/v0/${env.AIRTABLE_BOOKMARKS_ID}/${table}`;
+  const url = offset ? `${endpoint}?offset=${offset}` : endpoint;
 
   try {
     return fetch(url, options)
       .then((response: Response) => response.json())
       .then((airtableRes: AirtableBKResp) => {
-        const existingData = data || [];
+        const existingData = data[table] || [];
         const newData =
           airtableRes.records?.map(record => {
             delete record.fields.archive;
             return { id: record.id, ...record.fields };
           }) || [];
 
-        data = [...existingData, ...newData];
+        data[table] = [...existingData, ...newData];
 
         if (airtableRes.offset) {
           return getBookmarksWithOffset(env, table, airtableRes.offset);
@@ -51,12 +55,36 @@ const getBookmarksWithOffset = async (
   }
 };
 
-export const onRequestGet = async ({ env, params }: RequestParams) => {
-  try {
-    await getBookmarksWithOffset(env, params.table);
+export const onRequestGet = async ({
+  env,
+  params: { table },
+}: RequestParams) => {
+  // clean up data
+  data[table] = [];
 
-    if (data.length) {
-      return new Response(JSON.stringify(data), {
+  try {
+    await getBookmarksWithOffset(env, table);
+
+    if (data[table].length) {
+      const sortedData = data[table]
+        .sort((a, b) => {
+          if (table === 'Tweets') {
+            return a.tweet.toLowerCase() > b.tweet.toLowerCase() ? 1 : -1;
+          } else {
+            return a.title.toLowerCase() > b.title.toLowerCase() ? 1 : -1;
+          }
+        })
+        .sort((a, b) => {
+          if (table === 'Reddits') {
+            return a.subreddit.toLowerCase() > b.subreddit.toLowerCase()
+              ? 1
+              : -1;
+          } else {
+            return a.creator.toLowerCase() > b.creator.toLowerCase() ? 1 : -1;
+          }
+        });
+
+      return new Response(JSON.stringify(sortedData), {
         headers: {
           'Content-Type': 'application/json',
         },
