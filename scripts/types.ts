@@ -111,7 +111,8 @@ export interface ShelfItem {
 }
 
 // Tweets
-export interface TweetFields {
+export interface TweetValues {
+  id?: string;
   tweet: string;
   date: string;
   url: string;
@@ -119,7 +120,7 @@ export interface TweetFields {
 
 export interface TweetRecord {
   id: string;
-  fields: TweetFields;
+  fields: TweetValues;
   createdTime: string;
 }
 

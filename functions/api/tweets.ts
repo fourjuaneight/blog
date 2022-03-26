@@ -1,4 +1,4 @@
-import { AirtableTweetsResp, TweetFields } from '../../scripts/types';
+import { AirtableTweetsResp, TweetValues } from '../../scripts/types';
 
 interface ContextValue {
   [key: string]: string;
@@ -8,7 +8,7 @@ interface RequestParams {
   env: ContextValue;
 }
 
-let data: TweetFields[] = [];
+let data: TweetValues[] = [];
 
 const getTweetsWithOffset = (
   env: ContextValue,
@@ -27,7 +27,20 @@ const getTweetsWithOffset = (
     return fetch(url, options)
       .then((response: Response) => response.json())
       .then((airtableRes: AirtableTweetsResp) => {
-        data = [...data, ...airtableRes.records.map(({ fields }) => fields)];
+        data = [
+          ...data,
+          ...airtableRes.records.map(({ fields }) => {
+            const id = fields.url.replace(
+              /(https\:\/\/twitter\.com\/fourjuaneight\/status\/)(.*)/g,
+              '$2'
+            );
+
+            return {
+              id,
+              ...fields,
+            };
+          }),
+        ];
 
         if (airtableRes.offset) {
           return getTweetsWithOffset(env, airtableRes.offset);
