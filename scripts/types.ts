@@ -109,3 +109,21 @@ export interface ShelfItem {
   completed: boolean;
   comments: string;
 }
+
+// Tweets
+export interface TweetFields {
+  tweet: string;
+  date: string;
+  url: string;
+}
+
+export interface TweetRecord {
+  id: string;
+  fields: TweetFields;
+  createdTime: string;
+}
+
+export interface AirtableTweetsResp {
+  records: TweetRecord[];
+  offset: string;
+}
