@@ -32,8 +32,42 @@ const getBookmarks = async (table: string): Promise<void> => {
       `https://cleverlaziness.com/api/bookmarks/${table}`
     );
     const bookmarks: BKValues[] = await response.json();
+    const sortedBookmarks = bookmarks
+      .sort((a, b) => {
+        if (table === 'Tweets') {
+          const aTweet = a as TweetFields;
+          const bTweet = b as TweetFields;
 
-    data[table] = bookmarks;
+          return aTweet.tweet.toLowerCase() > bTweet.tweet.toLowerCase()
+            ? 1
+            : -1;
+        } else {
+          const aWeb = a as WebFields;
+          const bWeb = b as WebFields;
+
+          return aWeb.title.toLowerCase() > bWeb.title.toLowerCase() ? 1 : -1;
+        }
+      })
+      .sort((a, b) => {
+        if (table === 'Reddits') {
+          const aReddit = a as RedditFields;
+          const bReddit = b as RedditFields;
+
+          return aReddit.subreddit.toLowerCase() >
+            bReddit.subreddit.toLowerCase()
+            ? 1
+            : -1;
+        } else {
+          const aWeb = a as WebFields;
+          const bWeb = b as WebFields;
+
+          return aWeb.creator.toLowerCase() > bWeb.creator.toLowerCase()
+            ? 1
+            : -1;
+        }
+      });
+
+    data[table] = sortedBookmarks;
   } catch (error) {
     throw `${chalk.red('[ERROR]')} ${chalk.blue(
       '(getBookmarks)'
