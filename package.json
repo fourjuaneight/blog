@@ -6,7 +6,7 @@
     "bookmarks": "ts-node --project tsconfig.node.json \"scripts/bookmarks-data.ts\"",
     "build": "hugo -e production --minify",
     "build:chrome": "hugo gen chromastyles > assets/css/syntax.css",
-    "build:prod": "run-p img shelf ts tw && hugo --minify && npm run clean-scripts",
+    "build:prod": "run-p bookmarks img shelf ts tw && hugo --minify && npm run clean-scripts",
     "clean": "rm -rf dist",
     "clean:node": "rm -rf node_modules",
     "clean-scripts": "ts-node --project tsconfig.node.json \"scripts/clean-scripts.ts\"",
@@ -22,7 +22,7 @@
     "serve": "serve dist",
     "shelf": "ts-node --project tsconfig.node.json \"scripts/shelf-data.ts\"",
     "social-images": "ts-node --project tsconfig.node.json \"scripts/social-images.ts\"",
-    "start": "run-p img shelf social-images ts && concurrently -n \"TS,TW,DEV\" -c \"#3178c6,#38bdf8,#ff4088\" \"npm run ts:workers -- --watch\" \"npm run tw -- --watch\" \"npm run dev\"",
+    "start": "run-p bookmarks img shelf social-images ts && concurrently -n \"TS,TW,DEV\" -c \"#3178c6,#38bdf8,#ff4088\" \"npm run ts:workers -- --watch\" \"npm run tw -- --watch\" \"npm run dev\"",
     "tsc": "tsc"
   },
   "repository": {

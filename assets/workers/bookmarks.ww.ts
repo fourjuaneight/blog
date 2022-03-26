@@ -39,9 +39,7 @@ const getBookmarksFromStore = async (
     })
     .sort((a, b) => {
       if (tableName === 'Reddits') {
-        return a.subreddit.toLowerCase() > b.subreddit.toLowerCase()
-          ? 1
-          : -1;
+        return a.subreddit.toLowerCase() > b.subreddit.toLowerCase() ? 1 : -1;
       } else {
         return a.creator.toLowerCase() > b.creator.toLowerCase() ? 1 : -1;
       }

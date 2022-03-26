@@ -22,6 +22,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Save Bookmarks data
+        run: npm run bookmarks
+        env:
+          AIRTABLE_BOOKMARKS_ID: ${{secrets.AIRTABLE_BOOKMARKS_ID}}
+          AIRTABLE_TOKEN: ${{secrets.AIRTABLE_TOKEN}}
+
       - name: Save Shelf data
         run: npm run shelf
         env:
