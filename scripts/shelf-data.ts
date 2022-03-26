@@ -36,7 +36,7 @@ const saveData = async (): Promise<void> => {
 
       console.info(chalk.green('[SUCCESS]'), 'data saved to shelf.json');
     } else {
-      console.info(chalk.yellow('[SUCCESS]'), 'no data saved to shelf.json');
+      console.info(chalk.yellow('[INFO]'), 'no data saved to shelf.json');
     }
   } catch (error) {
     throw `${chalk.red('[ERROR]')} ${chalk.blue('(saveData)')} ${error}`;
