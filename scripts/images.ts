@@ -54,7 +54,7 @@ const fmtImage = async (src: string): Promise<void> => {
       .toFormat(ext as any)
       .toFile(output)
       .then(() => {
-        console.info(chalk.green('[SUCCESS]'), `${fileName} created`);
+        console.info(chalk.green('[IMG]'), `${fileName} created`);
       })
       .catch(err => {
         throw new Error(
@@ -100,7 +100,7 @@ const fmtIcon = async (name: string, size: number): Promise<void> => {
     })
     .toFile(output)
     .then(() => {
-      console.info(chalk.green('[SUCCESS]'), `${fileName} created`);
+      console.info(chalk.green('[IMG]'), `${fileName} created`);
     })
     .catch(err => {
       throw new Error(

@@ -18,11 +18,6 @@ const ignore = ['sw*.js', 'noise*.js', 'bookmarks*.js'];
 
 // Find all JS, CSS, and font files in rendered output
 (async () => {
-  console.info(
-    chalk.cyan('[INFO]'),
-    'Generating cache list for Service Worker.'
-  );
-
   // create matched files array
   const files = globSync('**/*.{js,css,woff,woff2}', {
     cwd,
@@ -57,7 +52,7 @@ const ignore = ['sw*.js', 'noise*.js', 'bookmarks*.js'];
   try {
     await replaceInFile(replaceOptions);
 
-    console.info(chalk.green('[SUCCESS]'), 'Worker scripts updated.');
+    console.info(chalk.cyan('[SCRIPTS]'), 'Worker scripts updated.');
   } catch (error) {
     throw new Error(`${chalk.red('[ERROR]')} ${error}`);
   }

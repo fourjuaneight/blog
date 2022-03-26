@@ -94,7 +94,7 @@ const createSocialImage = async (file: string): Promise<void> => {
     await replaceInFile(replaceOptions);
 
     console.info(
-      chalk.green('[SUCCESS]'),
+      chalk.green('[SOCIAL-IMG]'),
       `${fileName}.svg base social image created`
     );
   } catch (error) {

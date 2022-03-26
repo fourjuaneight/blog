@@ -43,7 +43,7 @@ const saveSocialImages = async (file: string): Promise<void> => {
       .toFile(`${dist}/${fileName}.jpeg`);
 
     console.info(
-      chalk.green('[SUCCESS]'),
+      chalk.green('[OG-IMG]'),
       `${fileName}.jpeg social image created`
     );
   } catch (error) {
