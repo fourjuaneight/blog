@@ -29,9 +29,26 @@ const getBookmarksFromStore = async (
   // open store and get bookmakrs
   const store = await openDB<BookmarksDB>('Bookmarks');
   const bookmarks = await store.getAll(tableName);
+  const sortedBookmarks = bookmarks
+    .sort((a, b) => {
+      if (tableName === 'Tweets') {
+        return a.tweet.toLowerCase() > b.tweet.toLowerCase() ? 1 : -1;
+      } else {
+        return a.title.toLowerCase() > b.title.toLowerCase() ? 1 : -1;
+      }
+    })
+    .sort((a, b) => {
+      if (tableName === 'Reddits') {
+        return a.subreddit.toLowerCase() > b.subreddit.toLowerCase()
+          ? 1
+          : -1;
+      } else {
+        return a.creator.toLowerCase() > b.creator.toLowerCase() ? 1 : -1;
+      }
+    });
 
   // send bookmarks to main thread
-  postMessage({ bookmarks, isExpired, dbVersion });
+  postMessage({ bookmarks: sortedBookmarks, isExpired, dbVersion });
 };
 
 const saveBookmarksToStore = async (dbVersion: number, table: TableValues) => {

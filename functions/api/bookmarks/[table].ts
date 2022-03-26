@@ -66,25 +66,7 @@ export const onRequestGet = async ({
     await getBookmarksWithOffset(env, table);
 
     if (data[table].length) {
-      const sortedData = data[table]
-        .sort((a, b) => {
-          if (table === 'Tweets') {
-            return a.tweet.toLowerCase() > b.tweet.toLowerCase() ? 1 : -1;
-          } else {
-            return a.title.toLowerCase() > b.title.toLowerCase() ? 1 : -1;
-          }
-        })
-        .sort((a, b) => {
-          if (table === 'Reddits') {
-            return a.subreddit.toLowerCase() > b.subreddit.toLowerCase()
-              ? 1
-              : -1;
-          } else {
-            return a.creator.toLowerCase() > b.creator.toLowerCase() ? 1 : -1;
-          }
-        });
-
-      return new Response(JSON.stringify(sortedData), {
+      return new Response(JSON.stringify(data[table]), {
         headers: {
           'Content-Type': 'application/json',
         },
