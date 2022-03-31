@@ -1,5 +1,6 @@
 ---
-title: 'Rediscovering A Love for Gaming'
+title: 'On Gaming'
+seo_title: 'Rediscovering A Love for Gaming'
 date: 2022-03-31
 tags:
   - gaming
