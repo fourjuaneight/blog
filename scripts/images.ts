@@ -9,6 +9,13 @@ interface Icons {
   size: number;
 }
 
+interface FormatOptions {
+  png: sharp.PngOptions;
+  web: sharp.WebpOptions;
+  avif: sharp.AvifOptions;
+  [key: string]: sharp.PngOptions | sharp.WebpOptions | sharp.AvifOptions;
+}
+
 const globSync = glob.sync;
 const dir = resolve(__dirname, 'img');
 const iconDist = resolve(__dirname, '..', 'assets/icons');
@@ -37,10 +44,23 @@ const icons: Icons[] = [
 const fmtPlaceholder = async (src: string): Promise<void> => {
   const input = resolve(dir, src);
   const name = src.replace(/([a-zA-Z_]+).png/g, '$1');
-
+  // format options
+  const fmtOps: FormatOptions = {
+    png: {
+      progressive: true,
+      quality: 20,
+      compressionLevel: 9,
+    },
+    web: {
+      effort: 6,
+      quality: 20,
+    },
+    avif: {
+      effort: 6,
+      quality: 20,
+    },
+  };
   // image options
-  const fileName: string = `${name}-placeholder.png`;
-  const output = `${imgDist}/${fileName}`;
   const image = sharp(input);
   const resizeOps: sharp.ResizeOptions = {
     background: { r: 255, g: 255, b: 255, alpha: 0.0 },
@@ -49,22 +69,22 @@ const fmtPlaceholder = async (src: string): Promise<void> => {
 
   try {
     // create variants
-    const buff = await image
-      .resize(64, undefined, { ...resizeOps, withoutEnlargement: true })
-      .blur()
-      .toBuffer();
+    const buff = await image.resize(64, undefined, resizeOps).blur().toBuffer();
+    const promises = variants.map(async ext => {
+      await sharp(buff)
+        .resize(1024, undefined, resizeOps)
 
-    await sharp(buff)
-      .resize(1024, undefined, resizeOps)
-      .toFormat('png' as any)
-      .toFile(output);
+        .toFormat(ext as any, fmtOps[ext])
+        .toFile(`${imgDist}/${name}-placeholder.${ext}`);
+    });
 
-    console.info(chalk.green('[IMG]'), `${fileName} created`);
+    await Promise.all(promises);
+
+    console.info(chalk.green('[IMG]'), `${name} placeholder created`);
   } catch (err) {
     throw `${chalk.red('[ERROR]')} ${JSON.stringify(
       {
-        input,
-        output,
+        name,
         err,
       },
       undefined,
@@ -93,31 +113,30 @@ const fmtImage = async (src: string): Promise<void> => {
     const output = `${imgDist}/${fileName}`;
     const image = sharp(input);
 
-    try {
-      // create variants
-      await image
-        .resize(1024, undefined, {
-          background: { r: 255, g: 255, b: 255, alpha: 0.0 },
-          fit: 'contain',
-        })
-        .toFormat(ext as any)
-        .toFile(output);
-
-      console.info(chalk.green('[IMG]'), `${fileName} created`);
-    } catch (err) {
-      throw `${chalk.red('[ERROR]')} ${JSON.stringify(
-        {
-          input,
-          output,
-          err,
-        },
-        undefined,
-        2
-      )}`;
-    }
+    // create variants
+    await image
+      .resize(1024, undefined, {
+        background: { r: 255, g: 255, b: 255, alpha: 0.0 },
+        fit: 'contain',
+      })
+      .toFormat(ext as any)
+      .toFile(output);
   });
 
-  await Promise.all(promises);
+  try {
+    await Promise.all(promises);
+
+    console.info(chalk.green('[IMG]'), `${name} asset created`);
+  } catch (err) {
+    throw `${chalk.red('[ERROR]')} ${JSON.stringify(
+      {
+        name,
+        err,
+      },
+      undefined,
+      2
+    )}`;
+  }
 };
 
 /**
@@ -147,12 +166,11 @@ const fmtIcon = async (name: string, size: number): Promise<void> => {
       })
       .toFile(output);
 
-    console.info(chalk.green('[IMG]'), `${fileName} created`);
+    console.info(chalk.green('[IMG]'), `${name}-${size}x${size} created`);
   } catch (err) {
     throw `${chalk.red('[ERROR]')} ${JSON.stringify(
       {
-        input,
-        output,
+        name,
         err,
       },
       undefined,
