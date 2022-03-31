@@ -6,11 +6,15 @@
 {{ $avif := print $imgMain ".avif" }}
 {{ $webp := print $imgMain ".webp" }}
 {{ $img := print $imgMain "." $type }}
+{{ $placeholder := print $imgMain "-placeholder." $type }}
+
+{{ $imgPlaceholder := resources.Get (print "/img/" $placeholder) }}
 
 {{ if or (eq (index $svg 0) "svg") (eq (index $gif 0) "gif") }}
   {{ $simple := resources.Get (print "/img/" $img) }}
   <img
     data-src="{{ $simple.Permalink }}"
+    src="{{ $imgPlaceholder.Permalink }}"
     alt="{{ .PlainText }}"
     class="mb-2 w-full"
     data-lazy="true"
@@ -23,6 +27,7 @@
     <img
       data-srcset="{{ $avifPrimary.Permalink }}, {{ $webpPrimary.Permalink }}"
       data-src="{{ $imgPrimary.Permalink }}"
+      src="{{ $imgPlaceholder.Permalink }}"
       alt="{{ .PlainText }}"
       class="max-w-sm w-full"
       data-lazy="true"

@@ -6,15 +6,19 @@
 {{ $avif := print $imgMain ".avif" }}
 {{ $webp := print $imgMain ".webp" }}
 {{ $img := print $imgMain "." $type }}
+{{ $placeholder := print $imgMain "-placeholder." $type }}
 
 {{ $isSmall := cond (ne .small nil) "true" "false" }}
 {{ $maxWidth := cond (ne .small nil) "max-w-xxxxs" "max-w-xs" }}
 {{ $sizing := cond (ne .small nil) "160" "576" }}
 
+{{ $imgPlaceholder := resources.Get (print "/img/" $placeholder) }}
+
 {{ if or (eq (index $svg 0) "svg") (eq (index $gif 0) "gif") }}
   {{ $simple := resources.Get (print "/img/" $img) }}
   <img
     data-src="{{ $simple.Permalink }}"
+    src="{{ $imgPlaceholder.Permalink }}"
     alt="{{ .alt }}"
     class="mb-2 w-full"
     width="{{ $sizing }}"
@@ -29,6 +33,7 @@
   <img
     data-srcset="{{ $avifPrimary.Permalink }}, {{ $webpPrimary.Permalink }}"
     data-src="{{ $imgPrimary.Permalink }}"
+    src="{{ $imgPlaceholder.Permalink }}"
     alt="{{ .alt }}"
     class="{{ $maxWidth }} w-full"
     width="{{ $sizing }}"
