@@ -14,28 +14,27 @@
 {{ if or (eq (index $svg 0) "svg") (eq (index $gif 0) "gif") }}
   {{ $simple := resources.Get (print "/img/" $img) }}
   <img
-    src="{{ $simple.Permalink }}"
+    data-src="{{ $simple.Permalink }}"
     alt="{{ .alt }}"
     class="mb-2 w-full"
     width="{{ $sizing }}"
     height="{{ $sizing }}"
-    loading="lazy"
+    data-lazy="true"
   />
 {{ else }}
-  <picture class="flex items-center justify-center my-4 w-full">
-    {{ $avifPrimary := resources.Get (print "/img/" $avif) }}
-    <source srcset="{{ $avifPrimary.Permalink }}" type="image/avif" />
-    {{ $webpPrimary := resources.Get (print "/img/" $webp) }}
-    <source srcset="{{ $webpPrimary.Permalink }}" type="image/webp" />
-    {{ $imgPrimary := resources.Get (print "/img/" $img) }}
-    <img
-      src="{{ $imgPrimary.Permalink }}"
-      alt="{{ .alt }}"
-      class="{{ $maxWidth }} w-full"
-      width="{{ $sizing }}"
-      height="{{ $sizing }}"
-      loading="lazy"
-      data-small="{{ $isSmall }}"
-    />
-  </picture>
+<div class="img-wrap flex items-center justify-center my-4 w-full">
+  {{ $avifPrimary := resources.Get (print "/img/" $avif) }}
+  {{ $webpPrimary := resources.Get (print "/img/" $webp) }}
+  {{ $imgPrimary := resources.Get (print "/img/" $img) }}
+  <img
+    data-srcset="{{ $avifPrimary.Permalink }}, {{ $webpPrimary.Permalink }}"
+    data-src="{{ $imgPrimary.Permalink }}"
+    alt="{{ .alt }}"
+    class="{{ $maxWidth }} w-full"
+    width="{{ $sizing }}"
+    height="{{ $sizing }}"
+    data-small="{{ $isSmall }}"
+    data-lazy="true"
+  />
+</div>
 {{ end }}

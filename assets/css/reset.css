@@ -47,7 +47,8 @@ a:not([class]) {
 
 /* Make images easier to work with */
 img,
-picture {
+picture,
+div.img-wrap {
   max-width: 100%;
   display: block;
 }

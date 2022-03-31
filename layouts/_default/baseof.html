@@ -22,6 +22,10 @@
 
     {{ block "scripts" . }}{{ end }}
 
+    {{/*  Image Lazy Loading  */}}
+    {{ $lazyLoad := resources.Get "js/lazyload.js" | minify | resources.Fingerprint "md5" }}
+    <script defer src="{{ $lazyLoad.Permalink }}"></script>
+
     {{/*  Noise Web Worker  */}}
     {{ $noise := resources.Get "noise.js" | minify | resources.Fingerprint "md5" }}
     {{ $noiseWW := resources.Get "noise.ww.js" | minify | resources.Fingerprint "md5" }}

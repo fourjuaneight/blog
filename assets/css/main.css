@@ -99,6 +99,7 @@ input {
 }
 
 picture,
+div.img-wrap,
 li.bk-cell,
 li.bk-cell > * {
   overflow: hidden;
@@ -144,7 +145,8 @@ h3 {
 }
 
 hr,
-picture {
+picture,
+div.img-wrap {
   width: 100%;
 }
 
@@ -223,17 +225,20 @@ a.site-name {
   font-weight: bold;
 }
 
-section.intro picture {
+section.intro picture,
+section.intro div.img-wrap {
   justify-content: flex-start;
   width: auto;
 }
 
-section.intro picture img {
+section.intro picture img,
+section.intro div.img-wrap img {
   max-width: 32rem;
 }
 
 @media screen and (min-width: 640px) {
-  section.intro picture {
+  section.intro picture,
+  section.intro div.img-wrap {
     margin-right: auto;
   }
 }
@@ -310,7 +315,9 @@ ul.shelf-list li[data-completed='false']::before {
 }
 
 picture.shelf-img,
-picture.shelf-img img {
+picture.shelf-img img,
+div.img-wrap.shelf-img,
+div.img-wrap.shelf-img img {
   max-height: 15.625rem;
 }
 
