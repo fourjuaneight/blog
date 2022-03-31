@@ -379,6 +379,7 @@ li.bk-cell:hover {
 
 li.bk-cell > * {
   grid-row-start: 1;
+  text-overflow: ellipsis;
 }
 
 li.bk-cell > a,

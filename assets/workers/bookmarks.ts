@@ -57,8 +57,10 @@ const loadBookmarkToDOM = bookmark => {
     'overflow-hidden',
     'p-0',
     'px-2',
-    'w-full'
+    'w-full',
+    'whitespace-nowrap'
   );
+  tags.setAttribute('title', bookmark.tags);
 
   // add content
   title.textContent = bookmark.title || bookmark.tweet;
