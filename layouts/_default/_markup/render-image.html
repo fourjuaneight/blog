@@ -6,9 +6,12 @@
 {{ $avif := print $imgMain ".avif" }}
 {{ $webp := print $imgMain ".webp" }}
 {{ $img := print $imgMain "." $type }}
-{{ $placeholder := print $imgMain "-placeholder." $type }}
+{{ $avifP := print $imgMain "-placeholder." "avif" }}
+{{ $webpP := print $imgMain "-placeholder." "webp" }}
+{{ $imgP := print $imgMain "-placeholder." $type }}
 
-{{ $imgPlaceholder := resources.Get (print "/img/" $placeholder) }}
+
+{{ $imgPlaceholder := resources.Get (print "/img/" $imgP) }}
 
 {{ if or (eq (index $svg 0) "svg") (eq (index $gif 0) "gif") }}
   {{ $simple := resources.Get (print "/img/" $img) }}
@@ -21,12 +24,16 @@
   />
 {{ else }}
   <div class="img-wrap flex items-center justify-center my-4 w-full">
+    {{ $avifPlaceholder := resources.Get (print "/img/" $avifP) }}
+    {{ $webpPlaceholder := resources.Get (print "/img/" $webpP) }}
+
     {{ $avifPrimary := resources.Get (print "/img/" $avif) }}
     {{ $webpPrimary := resources.Get (print "/img/" $webp) }}
     {{ $imgPrimary := resources.Get (print "/img/" $img) }}
     <img
       data-srcset="{{ $avifPrimary.Permalink }}, {{ $webpPrimary.Permalink }}"
       data-src="{{ $imgPrimary.Permalink }}"
+      srcset="{{ $avifPlaceholder.Permalink }}, {{ $webpPlaceholder.Permalink }}"
       src="{{ $imgPlaceholder.Permalink }}"
       alt="{{ .PlainText }}"
       class="max-w-sm w-full"
