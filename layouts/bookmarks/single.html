@@ -3,8 +3,22 @@
   {{ $dCreator := cond (eq .Title "Reddits") "Subreddit" "Creator" }}
 
   <section class="w-full">
-    <h1 class="post-title md:text-6xl mr-auto text-4xl">{{ .Title }}</h1>
+    <h1 class="post-title md:text-6xl mb-1 mr-auto text-4xl">{{ .Title }}</h1>
     <p>{{ .Content }}</p>
+    <ul class="flex flex-wrap items-center justify-start list-none mb-2 mx-0 mt-0 p-0 w-full">
+      {{ range .Site.Data.nav.bookmarks }}
+        {{ if ne .label $.Title }}
+          <li class="mr-4 my-4">
+            <a
+              href='{{ .link | absURL }}'
+              class="duration-200 ease-in-out font-mdNichrome no-underline text-3xl transition-color focus:text-secondary hover:text-secondary"
+            >
+              {{ .label }}
+            </a>
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
   </section>
   <section
     class="bk-table h-full overflow-x-auto overflow-y-hidden w-full"
