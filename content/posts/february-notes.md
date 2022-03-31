@@ -24,7 +24,7 @@ I revived these old templates for the client's project and it worked like a char
 I watched an entire show in a single month and I'm not ashamed of it. All 700 episodes and 3 movies were worth it.
 
 ### Watched
-- [Naruto](https://www.crunchyroll.com/naruto): I watched this show during its original run and covered a long period of my life. I experienced loss, pain, and marriage while watching it. And so much more in between. Watching it a second time with my wife brought back many memories and feelings. And now it holds a precious spot in my life.
+- [Naruto](https://www.crunchyroll.com/naruto): I watched this show during its original run and covered a long period of my life. I experienced loss, pain, and marriage while watching it. And so much more in between. Watching it a second time with my partner brought back many memories and feelings. And now it holds a precious spot in my life.
 - [Little Women](https://letterboxd.com/film/little-women-2019/): Life is often shit and sometimes the best you can do is make the most of it and move on. I think this movie did a lovely job of showing that and I enjoyed it.
 - [How Rockets Are Made](https://youtu.be/o0fG_lnVhHw): It's a video about how rockets are made. Filmed by an engineer; [Destin Sandlin](https://www.youtube.com/user/destinws2). It's just 30 minutes of awesomeness.
 
