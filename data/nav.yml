@@ -21,3 +21,16 @@ footer:
     external: true
   - label: RSS
     link: posts/index.xml
+bookmarks:
+  - label: Articles
+    link: bookmarks/articles
+  - label: Comics
+    link: bookmarks/comics
+  - label: Podcasts
+    link: bookmarks/podcasts
+  - label: Reddits
+    link: bookmarks/reddits
+  - label: Tweets
+    link: bookmarks/tweets
+  - label: Videos
+    link: bookmarks/videos

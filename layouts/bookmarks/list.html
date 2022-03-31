@@ -3,54 +3,16 @@
   <p>{{ .Content }}</p>
   <section class="w-full">
     <ul class="flex flex-wrap items-center justify-center list-none m-0 p-0 w-full">
-      <li class="bk-title m-4">
-        <a
-          href='{{ "bookmarks/articles" | absURL }}'
-          class="duration-200 ease-in-out font-mdNichrome text-3xl transition-all"
-        >
-          Articles
-        </a>
-      </li>
-      <li class="bk-title m-4">
-        <a
-          href='{{ "bookmarks/comics" | absURL }}'
-          class="duration-200 ease-in-out font-mdNichrome text-3xl transition-all"
-        >
-          Comics
-        </a>
-      </li>
-      <li class="bk-title m-4">
-        <a
-          href='{{ "bookmarks/podcasts" | absURL }}'
-          class="duration-200 ease-in-out font-mdNichrome text-3xl transition-all"
-        >
-          Podcasts
-        </a>
-      </li>
-      <li class="bk-title m-4">
-        <a
-          href='{{ "bookmarks/reddits" | absURL }}'
-          class="duration-200 ease-in-out font-mdNichrome text-3xl transition-all"
-        >
-          Reddits
-        </a>
-      </li>
-      <li class="bk-title m-4">
-        <a
-          href='{{ "bookmarks/tweets" | absURL }}'
-          class="duration-200 ease-in-out font-mdNichrome text-3xl transition-all"
-        >
-          Tweets
-        </a>
-      </li>
-      <li class="bk-title m-4">
-        <a
-          href='{{ "bookmarks/videos" | absURL }}'
-          class="duration-200 ease-in-out font-mdNichrome text-3xl transition-all"
-        >
-          Videos
-        </a>
-      </li>
+      {{ range .Site.Data.nav.bookmarks }}
+        <li class="bk-title m-4">
+          <a
+            href='{{ .link | absURL }}'
+            class="duration-200 ease-in-out font-mdNichrome text-3xl transition-all"
+          >
+            {{ .label }}
+          </a>
+        </li>
+      {{ end }}
     </ul>
   </section>
   {{ if ne .Params.footer nil }}
