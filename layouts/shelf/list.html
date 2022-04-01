@@ -11,3 +11,8 @@
     </section>
   {{ end }}
 {{ end }}
+{{ define "scripts" }}
+  {{/*  Image Lazy Loading  */}}
+  {{ $lazyLoad := resources.Get "js/lazyload.js" | minify | resources.Fingerprint "md5" }}
+  <script defer src="{{ $lazyLoad.Permalink }}"></script>
+{{ end }}
