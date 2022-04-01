@@ -119,7 +119,7 @@ const fmtImage = async (src: string): Promise<void> => {
         background: { r: 255, g: 255, b: 255, alpha: 0.0 },
         fit: 'contain',
       })
-      .toFormat(ext as any)
+      .toFormat(ext as any, { progressive: true })
       .toFile(output);
   });
 
