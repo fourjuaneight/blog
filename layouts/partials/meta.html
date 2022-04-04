@@ -1,6 +1,8 @@
 <section class="flex items-center justify-between mb-3 w-full">
-  <time class="text-meta whitespace-nowrap" datetime='{{ .Date.Format "2006-01-02" }}'>
-    <span class="mr-1 text-tertiary" aria-label="Posted on">&tau;</span>
+  <time
+    class="text-meta whitespace-nowrap"
+    datetime='{{ .Date.Format "2006-01-02" }}'
+  >
     {{ .Date.Format "2006-01-02" }}
   </time>
   <ul class="flex flex-wrap items-center justify-end list-none p-0">
