@@ -1,22 +1,11 @@
+{{ $imgSrc := print "shelf/" .id ".png" }}
+
 <li
   class="flex flex-col h-auto items-start justify-start m-0 p-0 relative"
   data-genre="{{ .genre }}"
   data-completed="{{ .completed }}"
 >
-  <picture
-    class="shelf-img flex items-start justify-start mb-2 object-cover object-left-top"
-  >
-    {{ $placeholder := resources.Get "/img/coming-soon.svg" }}
-    <img
-      data-src="{{ .cover }}"
-      src="{{ $placeholder.Permalink }}"
-      class="w-auto"
-      alt="{{ .name }}"
-      height="270"
-      aria-hidden="true"
-      data-lazy="true"
-    />
-  </picture>
+  {{ partial "img.html" (dict "src" $imgSrc "alt" .name "pClasses" "shelf-img flex items-start justify-start mb-2 object-cover object-left-top" "iClasses" "w-auto" "hidden" true "post" 270) }}
   <p class="font-bold leading-none mb-1 mt-0 mx-0">{{ .name }}</p>
   <p class="leading-none mb-1 mt-0 mx-0">{{ .creator }}</p>
   <details class="m-0">

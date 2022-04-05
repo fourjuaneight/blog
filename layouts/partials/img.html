@@ -7,6 +7,7 @@
 {{ $webp := print $imgMain ".webp" }}
 {{ $img := print $imgMain "." $type }}
 
+{{ $isHidden := cond (ne .hidden nil) "true" "false" }}
 {{ $isSmall := cond (ne .small nil) "true" "false" }}
 {{ $maxWidth := cond (ne .small nil) "max-w-xxxxs" "max-w-xs" }}
 {{ $sizing := cond (ne .small nil) "160" "576" }}
@@ -16,13 +17,14 @@
   <img
     src="{{ $simple.Permalink }}"
     alt="{{ .alt }}"
-    class="mb-2 w-full"
-    width="{{ $sizing }}"
-    height="{{ $sizing }}"
+    class="{{ with .iClasses }}{{ . }}{{ else }}mb-2 w-full{{ end }}"
+    {{ if eq .poster nil }}width="{{ $sizing }}"{{ end }}
+    height="{{ with .poster }}{{ . }}{{ else }}{{ $sizing }}{{ end }}"
+    aria-hidden="{{ $isHidden }}"
     loading="lazy"
   />
 {{ else }}
-<picture class="img-wrap flex items-center justify-center my-4 w-full">
+<picture class="{{ with .pClasses }}{{ . }}{{ else }}img-wrap flex items-center justify-center my-4 w-full{{ end }}">
   {{ $avifPrimary := resources.Get (print "/img/" $avif) }}
   <source srcset="{{ $avifPrimary.Permalink }}" type="image/avif" />
   {{ $webpPrimary := resources.Get (print "/img/" $webp) }}
@@ -31,10 +33,11 @@
   <img
     src="{{ $imgPrimary.Permalink }}"
     alt="{{ .alt }}"
-    class="{{ $maxWidth }} w-full"
-    width="{{ $sizing }}"
-    height="{{ $sizing }}"
+    class="{{ with .iClasses }}{{ . }}{{ else }}{{ $maxWidth }} w-full{{ end }}"
+    {{ if eq .poster nil }}width="{{ $sizing }}"{{ end }}
+    height="{{ with .poster }}{{ . }}{{ else }}{{ $sizing }}{{ end }}"
     data-small="{{ $isSmall }}"
+    aria-hidden="{{ $isHidden }}"
     loading="lazy"
   />
 </picture>

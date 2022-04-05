@@ -6,7 +6,7 @@
   </h2>
   <ul class="shelf-list gap-5 grid list-none mt-6 p-0 w-full" data-category="{{ .section }}">
     {{ range .data }}
-      {{ partial "shelf-item" (dict "completed" .completed "cover" .cover "name" .name "creator" .creator "rating" .rating "comments" .comments "genre" .genre) }}
+      {{ partial "shelf-item" (dict "id" .id "completed" .completed "cover" .cover "name" .name "creator" .creator "rating" .rating "comments" .comments "genre" .genre) }}
     {{ end }}
   </ul>
 </section>
