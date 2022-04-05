@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
     "esModuleInterop": true,
+    "lib": [
+      "esnext"
+    ],
     "module": "commonjs",
     "rootDir": "./",
     "strict": true,
