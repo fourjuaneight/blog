@@ -1,4 +1,4 @@
-import { AirtableShelfResp, ShelfRecord } from '../../scripts/types';
+import { AirtableShelfResp, ShelfItem, ShelfRecord } from '../../scripts/types';
 
 interface ContextValue {
   [key: string]: string;
