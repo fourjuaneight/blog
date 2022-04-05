@@ -15,6 +15,7 @@
     "img": "ts-node --project tsconfig.node.json \"scripts/images.ts\"",
     "lint": "eslint --fix --no-error-on-unmatched-pattern \"assets/**/*.{ts,js}\"",
     "og-images": "ts-node --project tsconfig.node.json \"scripts/og-images.ts\"",
+    "shelf-images": "ts-node --project tsconfig.node.json \"scripts/shelf-images.ts\"",
     "ts": "run-p ts:scripts ts:workers",
     "ts:scripts": "esbuild assets/scripts/* --bundle --splitting --format=esm --outdir=assets/js",
     "ts:workers": "esbuild assets/workers/* --bundle --splitting --format=esm --outdir=assets",
