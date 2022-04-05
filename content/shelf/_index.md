@@ -1,8 +1,8 @@
 ---
 title: Shelf
 footer:
-  img: shaman.png
-  alt: Illustration of Juan wearing a dad hat, some wizard attire, while running with scrolls on his hands.
+  img: beltalowda.png
+  alt: Illustration of Juan wearing a belter space suite from the show The Expanse.
 draft: false
 ---
 
