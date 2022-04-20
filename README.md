@@ -1,5 +1,6 @@
 # Personal Blog
 
+![Shelf-Images](https://github.com/fourjuaneight/blog/actions/workflows/shelf-images.yml/badge.svg)
 ![Social-Images](https://github.com/fourjuaneight/blog/actions/workflows/social-images.yml/badge.svg)
 
 Powered by:

@@ -1,5 +1,5 @@
 https://:project.pages.dev/*
   X-Robots-Tag: noindex
-  
+
 https://cleverlaziness.com/*
   Access-Control-Allow-Origin: https://www.cleverlaziness.com/*
