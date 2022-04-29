@@ -11,11 +11,7 @@ const pallete = {
 };
 
 module.exports = {
-  purge: {
-    enabled: true,
-    content: ['./layouts/**/*.html'],
-  },
-  darkMode: 'media',
+  content: ['./layouts/**/*.html'],
   theme: {
     extend: {
       borderColor: pallete,
@@ -26,9 +22,9 @@ module.exports = {
         'auto-fill': 'repeat(auto-fill, minmax(0, 1fr))',
       },
       maxWidth: {
-        'xxs': '18rem',
-        'xxxs': '14rem',
-        'xxxxs': '10rem',
+        xxs: '18rem',
+        xxxs: '14rem',
+        xxxxs: '10rem',
       },
       screens: {
         xxxs: '320px',
