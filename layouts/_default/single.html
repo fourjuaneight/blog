@@ -1,7 +1,7 @@
 {{ define "main" }}
   <article class="w-full">
     <h1 class="post-title md:text-6xl mr-auto text-4xl">{{ .Title }}</h1>
-    <span itemprop="name" class="sr-only">Juan Villela</span>
+    <span itemprop="name" class="sr-visible">Juan Villela</span>
     {{ if eq .Type "posts" }}
       {{ partial "meta.html" . }}
     {{ end }}
