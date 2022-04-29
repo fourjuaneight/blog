@@ -42,7 +42,7 @@
     "isomorphic-fetch": "^3.0.0",
     "puppeteer": "^13.5.1",
     "replace-in-file": "^6.2.0",
-    "sharp": "^0.30.3",
+    "sharp": "^0.30.4",
     "waait": "^1.0.5"
   },
   "devDependencies": {
@@ -56,7 +56,7 @@
     "@types/glob": "^7.1.4",
     "@types/isomorphic-fetch": "^0.0.35",
     "@types/node": "^14.14.31",
-    "@types/sharp": "^0.30.0",
+    "@types/sharp": "^0.30.2",
     "babel-loader": "^8.2.2",
     "browserslist": "^4.16.7",
     "concurrently": "^6.2.1",
