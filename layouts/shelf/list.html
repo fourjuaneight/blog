@@ -13,6 +13,6 @@
 {{ end }}
 {{ define "scripts" }}
   {{/*  Image Lazy Loading  */}}
-  {{ $lazyLoad := resources.Get "js/lazyload.js" | minify | resources.Fingerprint "md5" }}
+  {{ $lazyLoad := resources.Get "js/lazyload.js" | resources.Minify | resources.Fingerprint "md5" }}
   <script defer src="{{ $lazyLoad.Permalink }}"></script>
 {{ end }}

@@ -198,7 +198,7 @@
   {{ $reset := resources.Get "css/reset.css" }}
   {{ $critical := resources.Get "css/critical.css" }}
   {{ $main := resources.Get "css/main.css" }}
-  {{ $styles := slice $reset $critical $main | resources.Concat "css/styles.css" | postCSS | minify }}
+  {{ $styles := slice $reset $critical $main | resources.Concat "css/styles.css" | postCSS | resources.Minify }}
   {{ $rawCSS := $styles.Content | safeCSS }}
   <style>{{ $rawCSS }}</style>
   <script>
@@ -245,7 +245,7 @@
       });
     }
   </script>
-  {{ $tailwind := resources.Get "css/tw.css" | postCSS | minify | resources.Fingerprint "md5" }}
+  {{ $tailwind := resources.Get "css/tw.css" | postCSS | resources.Minify | resources.Fingerprint "md5" }}
   <link rel="stylesheet" href="{{ $tailwind.Permalink }}" />
   {{ if hugo.Environment | eq "production" }}
     <script defer data-domain="cleverlaziness.com" src="https://plausible.io/js/plausible.js"></script>
