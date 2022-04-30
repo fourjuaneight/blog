@@ -17,6 +17,23 @@ let data: { [key: string]: BKValues[] } = {
   Videos: [],
 };
 
+// check for dead links
+const testLinks = async (url: string): Promise<boolean> => {
+  try {
+    const response: Response = await fetch(url);
+
+    if (response.status === 404) {
+      return false;
+    }
+
+    return true;
+  } catch (error) {
+    console.error('[ERROR]', `Testiing '${url}': \n ${error}`);
+
+    return false;
+  }
+};
+
 const getBookmarksWithOffset = async (
   env: ContextValue,
   table: string,
@@ -39,7 +56,7 @@ const getBookmarksWithOffset = async (
         const newData =
           airtableRes.records?.map(record => {
             delete record.fields.archive;
-            return { id: record.id, ...record.fields };
+            return { id: record.id, ...record.fields, dead: false };
           }) || [];
 
         data[table] = [...existingData, ...newData];
@@ -66,7 +83,14 @@ export const onRequestGet = async ({
     await getBookmarksWithOffset(env, table);
 
     if (data[table].length) {
-      return new Response(JSON.stringify(data[table]), {
+      const checkData = data[table].map(async item => {
+        const dead = await testLinks(item.url);
+
+        return { ...item, dead };
+      });
+      const checkedData = await Promise.all(checkData);
+
+      return new Response(JSON.stringify(checkedData), {
         headers: {
           'Content-Type': 'application/json',
         },

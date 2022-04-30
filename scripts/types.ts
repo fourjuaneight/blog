@@ -38,7 +38,7 @@ export interface AirtableBKResp {
   offset: string;
 }
 
-export type BKValues = BKFields & { id: string };
+export type BKValues = BKFields & { id: string; dead: boolean };
 
 export interface BookmarksData {
   Articles: BKValues[];
