@@ -1,6 +1,8 @@
 {{ define "main" }}
   {{ $dTitle := cond (eq .Title "Tweets") "Tweet" "Title" }}
   {{ $dCreator := cond (eq .Title "Reddits") "Subreddit" "Creator" }}
+  {{ $tableUrl := print "https://cleverlaziness.com/api/bookmarks/" (lower .Title) }}
+  {{ $bookmarks := getJSON $tableUrl }}
 
   <section class="w-full">
     <h1 class="post-title md:text-6xl mb-1 mr-auto text-4xl">{{ .Title }}</h1>
@@ -22,7 +24,7 @@
   </section>
   <section
     class="bk-table h-full overflow-x-auto overflow-y-hidden w-full"
-    data-loaded="false"
+    data-loaded="true"
   >
     <div class="w-full">
       <ul
@@ -45,8 +47,6 @@
         <li
           class="
             bk-column-header
-            border-secondary
-            border-solid
             col-start-1
             duration-200
             ease-in-out
@@ -62,8 +62,6 @@
         <li
           class="
             bk-column-header
-            border-secondary
-            border-solid
             col-start-2
             duration-200
             ease-in-out
@@ -79,7 +77,6 @@
         <li
           class="
             bk-column-header
-            border-none
             col-start-3
             duration-200
             ease-in-out
@@ -111,7 +108,27 @@
           w-full"
         data-category="{{ lower .Title }}"
       >
-        {{ partial "loader.html" . }}
+        {{ range $bookmarks }}
+          {{ $bkTitle := cond (eq $.Title "Tweets") .tweet .title }}
+          {{ $bkCreator := cond (eq $.Title "Reddits") .subreddit .creator }}
+          <li
+            class="bk-cell border-solid duration-200 ease-in-out grid grid-rows-1 m-0 p-0 transition-all w-full"
+          >
+            <a
+              class="col-start-1 focus:no-underline hove:no-underline m-0 no-underline p-0 px-2 w-full whitespace-nowrap"
+              href="{{ .url }}"
+              target="_blank"
+              rel="noopener noreferrer"
+            >{{ $bkTitle }}</a>
+            <p class="col-start-2 m-0 p-0 px-2 w-full">{{ $bkCreator }}</p>
+            <p
+              class="col-start-3 m-0 overflow-hidden p-0 px-2 w-full whitespace-nowrap"
+              title='{{ delimit .tags ", " }}'
+            >
+              {{ delimit .tags ", " }}
+            </p>
+          </li>
+        {{ end}}
       </ul>
     </div>
   </section>
@@ -120,14 +137,4 @@
       {{ partial "img.html" (dict "src" .Params.footer.img "alt" .Params.footer.alt) }}
     </section>
   {{ end }}
-{{ end }}
-{{ define "scripts" }}
-  {{/*  Bookmarks Web Worker  */}}
-  {{ $bookmarks := resources.Get "bookmarks.js" | minify | resources.Fingerprint "md5" }}
-  {{ $bookmarksWW := resources.Get "bookmarks.ww.js" | minify | resources.Fingerprint "md5" }}
-  <script
-    defer
-    src="{{ $bookmarks.Permalink }}"
-    data-worker="{{ $bookmarksWW.Permalink }}"
-  ></script>
 {{ end }}

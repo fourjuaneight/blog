@@ -374,15 +374,10 @@ li.bk-cell {
     minmax(12rem, 16rem);
 }
 
-li.bk-column-header {
-  border-width: 0 0.0625rem 0 0;
-}
-
 li.bk-cell {
-  animation: grow 0.5s ease-in-out forwards;
   border-color: var(--tertiary-transparent);
   border-width: 0.03125rem 0;
-  height: 0;
+  height: 1.5625rem;
   max-height: 1.5625rem;
 }
 
