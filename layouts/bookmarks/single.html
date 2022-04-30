@@ -113,6 +113,7 @@
           {{ $bkCreator := cond (eq $.Title "Reddits") .subreddit .creator }}
           <li
             class="bk-cell border-solid duration-200 ease-in-out grid grid-rows-1 m-0 p-0 transition-all w-full"
+            data-dead="{{ .dead }}"
           >
             <a
               class="col-start-1 focus:no-underline hove:no-underline m-0 no-underline p-0 px-2 w-full whitespace-nowrap"

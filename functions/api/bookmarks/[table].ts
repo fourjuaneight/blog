@@ -18,19 +18,19 @@ let data: { [key: string]: BKValues[] } = {
 };
 
 // check for dead links
-const testLinks = async (url: string): Promise<boolean> => {
+const deadLinks = async (url: string): Promise<boolean> => {
   try {
     const response: Response = await fetch(url);
 
     if (response.status === 404) {
-      return false;
+      return true;
     }
 
-    return true;
+    return false;
   } catch (error) {
     console.error('[ERROR]', `Testiing '${url}': \n ${error}`);
 
-    return false;
+    return true;
   }
 };
 
@@ -84,7 +84,7 @@ export const onRequestGet = async ({
 
     if (data[table].length) {
       const checkData = data[table].map(async item => {
-        const dead = await testLinks(item.url);
+        const dead = await deadLinks(item.url);
 
         return { ...item, dead };
       });
