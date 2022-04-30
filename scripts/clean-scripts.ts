@@ -24,29 +24,15 @@ const ignore = ['sw*.js', 'noise*.js', 'bookmarks*.js'];
     ignore,
   });
   const sw = globSync('sw.min.*.js', { cwd });
-  const bookmarks = globSync('bookmarks.min.*.js', { cwd });
-  const bookmarksWW = globSync('bookmarks.ww.min.*.js', { cwd });
   const noise = globSync('noise.min.*.js', { cwd });
   const noiseWW = globSync('noise.ww.min.*.js', { cwd });
   const newFiles = files.map(toCache => `'/${toCache}'`).toString();
 
   // find and replace options; add hash ID, files to cache array, and site base URL
   const replaceOptions: ReplaceInFileConfig = {
-    files: [`${cwd}/${sw[0]}`, `${cwd}/${bookmarks[0]}`, `${cwd}/${noise[0]}`],
-    from: [
-      /\["staticAssets"\]/g,
-      /"version"/g,
-      /baseURL/g,
-      '/bookmarks.ww.min.js',
-      '/noise.ww.min.js',
-    ],
-    to: [
-      `[${newFiles}]`,
-      `'${timestamp}'`,
-      `${SITE_URL}`,
-      `/${bookmarksWW}`,
-      `/${noiseWW}`,
-    ],
+    files: [`${cwd}/${sw[0]}`, `${cwd}/${noise[0]}`],
+    from: [/\["staticAssets"\]/g, /"version"/g, /baseURL/g, '/noise.ww.min.js'],
+    to: [`[${newFiles}]`, `'${timestamp}'`, `${SITE_URL}`, `/${noiseWW}`],
   };
 
   try {
