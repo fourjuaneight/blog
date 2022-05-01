@@ -12,26 +12,31 @@ Writing isn't my strong suit. But I do it quite often. It's therapeutic and help
 
 - I like stickers.
 - From time to time I build mechanical keyboards.
-- I'm a cheap audiophile.
+- I'm somewhat into audio gear.
 - I really like cooking.
-- I enjoy collecting media far more than I do consume it.
+- I'm big into JRPGs.
+- I collect Magic The Gathering cards. I've never played a single game, though.
 - I really like making lists.
 - I delivered a baby once. It wasn't magical.
 
 ## Work
-I currently work as a Senior "Full-Stack" Web Developer over at [Big Pixel](https://thebigpixel.net/). These days I mostly work with Angular and React. And some REST and GraphQL APIs. Here's a cool list of skills:
+I currently work as a Senior "Full-Stack" Web Developer over at [Big Pixel](https://thebigpixel.net/). These days I mostly make Angular and React enterprise apps. And some REST and GraphQL APIs. But here's a cool list of skills:
 
-### Stack:
+### Languages:
 JavaScript, TypeScript, CSS, SCSS, HTML
 
 ### Frameworks:
 Angular, React, Gatsby, Next, Hugo, Eleventy, Jekyll, NestJS, Express, GraphQL
 
 ### Tooling:
-Node, Redux (Redux Toolkit), Webpack, Gulp, Jest, Cypress, aXe, TravisCI, CircleCI, GitHub Actions, Gitlab/Bitbucket Pipeline
+Node, Redux (Redux Toolkit), Webpack, Jest, Cypress, aXe, TravisCI, CircleCI, GitHub Actions, Gitlab/Bitbucket Pipeline
 
 ### Design Tools:
 Figma, Sketch, InVision, Photoshop, Affinity Designer
 
 ### Other Skills:
 Nunchuck, Bo Hunting, Computer Hacking
+
+---
+
+If you're interested in a more comprehensive look at my experience, you can checkout my [online resume](https://resume.juanvillela.dev).

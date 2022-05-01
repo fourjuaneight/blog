@@ -11,10 +11,13 @@ Here's some of the stuff I use for work and procrastination.
 ## Hardware
 I used to be a Mac guy. Maybe I still am. But after having to part ways with my M1 Air, I started using an old gaming PC I built a while back. I'm not a lunatic, so I replaced Windows with Linux —Pop OS specifically. Now, I don't think I'd go back to Mac.
 
+Update (2022): I was provided a new (as of this update) M1 Max MacBook Pro by my employer. Which is overkill for my work, but it's a fantastic laptop. The Linux PC is currently serving as a Plex server in my closet.
+
+- **[LG 27UK650-W](https://www.lg.com/us/monitors/lg-27UK650-W-4k-uhd-led-monitor)** - It takes some calibration to make it look just right. But once it does, it's a solid workhorse of a display.
 - **[HHKB Pro 2](https://www.amazon.com/dp/B07K9QHF4P)** - I got the all-black keys and it took me a while to get used to the new layout without being able to tell which key is which. Worth every penny, though.
 - **[Logitech MX Ergo](https://www.logitech.com/en-us/products/mice/mx-ergo-wireless-trackball-mouse.html)** - So nice and comfortable.
 - **[UpDesk Standing Desk](https://updesk.com/products/updesk-electric-lift-standing-desk-upwrite-midnight-black-top-on-black-frame-closeout)** - The table is pretty good, but the customer service is nonexistent.
-- **[Secretlab Omega Chair](https://secretlab.co/collections/omega-series)** - Great chair.
+- **[Secretlab Omega Chair](https://secretlab.co/collections/omega-series)** - ~~Great~~ Ok chair.
 - **[Tripp Lite 1500VA 900W UPS](https://www.amazon.com/dp/B009TZTGWK/)** - I believe I heard about the brand from Marco Arment. Solid UPS.
 - **[Ubiquiti Dream Machine Pro](https://store.ui.com/collections/unifi-network-unifi-os-consoles/products/udm-pro)** - The only reason I got the Pro was to mount it on a rack.
 - **[Ubiquiti Switch 8 (PoE)](https://store.ui.com/collections/unifi-network-switching/products/unifi-switch-8-60w)** - I have a couple of these around the house to extend the ports coming out the wall.
@@ -23,20 +26,23 @@ I used to be a Mac guy. Maybe I still am. But after having to part ways with my 
 - **Raspberry Pi ([PiHole](https://pi-hole.net))** - This is the best decision I've made for my home network.
 
 ### Audio Gear
+- **[Electro-Voice RE320](https://products.electrovoice.com/ap/en/re320/)** - Fantastic mic for Zoom calls and DnD virtual sessions. It's overkill for what I use it but my voice sounds sexy now.
+- **[dbx 286s](https://dbxpro.com/en/products/286s)** - Brings the volume up on the mic and adds some hardware tweaks to make the sounds smoother.
+- **[Tascam US-2x2HR](https://tascam.com/us/product/us-2x2hr/top)** - Best bang for your buck, IMHO. It's just plug-n-play.
+- **[beyerdynamic DT 990 Pro](https://north-america.beyerdynamic.com/dt-990-pro.html)** - These are overkill for essentially Zoom and podcasts. But TOOL does sound lovely in lossless.
+- **[Schiit Modi](https://www.schiit.com/products/modi-1)** - Solid DAC for my listening needs.
+- **[Schiit Magni](https://www.schiit.com/products/magni-1)** - Solid Amp to power the DT 990 Pros.
 - **[Bluesound NODE](https://www.bluesound.com/products/node/)** - This serves as audio input for the TV as well as an AirPlay and Roon endpoint. Pretty sweet.
 - **[Schiit Modius](https://www.schiit.com/products/modius)** - This takes the SPDIF digital signal from the NODE.
 - **[Schiit Aegir](https://www.schiit.com/products/aegir)** - Then two of these (monoblock) take the balanced signal from the Modius.
 - **[Klipsch RP-600M](https://www.klipsch.com/products/rp-600m-bookshelf-speakers)** - These sounds great and sweet for my messed up hearing.
-- **[beyerdynamic DT 990 Pro](https://north-america.beyerdynamic.com/dt-990-pro.html)** - These are overkill for essentially Zoom and podcasts. But TOOL does sound lovely in lossless.
-- **[Schiit Modi](https://www.schiit.com/products/modi-1)** - Solid DAC for my listening needs.
-- **[Schiit Magni](https://www.schiit.com/products/magni-1)** - Solid Amp to power the DT 990 Pros.
-
+ 
 ## Software
 Because of the aforementioned jump to Linux, all of these Mac apps are no longer part of my daily usage. But more so, my job was switched over to [GitHub Codespaces](https://github.com/features/codespaces). And I've done the same for my projects.
 
 * [Dracula Theme](https://draculatheme.com) all the things.
 - **[VS Code](https://code.visualstudio.com)** - Honestly, I've tried all the editors at this point. This is by far the most decent one. It is solid enough, way too customizable, and integrates perfectly with all my tooling.
-- **[iTerm](https://iterm2.com)** - Best macOS terminal.
+- **[Alacritty](https://alacritty.org)** - Best cross-platform terminal. Solid and performant.
 - **[Blink](https://www.blink.sh)** - Best iOS terminal.
 - **[Working Copy](https://workingcopyapp.com)** - I can't believe this is an iOS app; paramount for mobile Git-ing.
 - **[Transmit](https://panic.com/transmit/)** - Rarely use it, but it's nice to look at.
@@ -46,9 +52,9 @@ Because of the aforementioned jump to Linux, all of these Mac apps are no longer
 - **[Drafts](https://getdrafts.com)** - All text starts here.
 - **[Jayson](https://jayson.app)** - Nice UI for JSON on iOS.
 - **[Scriptable](https://scriptable.app)** - Sometimes you _just_ need a little JavaScript.
-- **[Alfred](https://www.alfredapp.com/)** - Spotlight is great and Launchbar looks nicer, but you just can't compare to the power of Alfred.
+- **[SoundSource](https://rogueamoeba.com/soundsource/)** - It's a simple app that makes life so much nicer.
 - **[Hazel](https://www.noodlesoft.com/)** - A computer should run itself. This does the trick.
-- **[Moom](https://manytricks.com/moom/)** - Nifty little window manager.
+- **[Rectangle](https://rectangleapp.com)** - Nifty little window manager.
 - **[Bartender](https://www.macbartender.com/)** - Too much crap on the menu bar.
 
 ### Daily Apps
@@ -61,7 +67,6 @@ Because of the aforementioned jump to Linux, all of these Mac apps are no longer
 There are several more hardware and software I use. But these are the main things I cannot live without daily.
 
 ## Tools
-
 Although there's a plethora of tools and apps available for development work, I often find some of them lacking. So this is a combination of handmade tools and some great open source options. These lists are the amalgamation of years of trial and error to find just the right combinations. I've also included some stuff I'm testing out.
 
 ### Custom
@@ -83,7 +88,7 @@ I started finding Rust alternatives to some of the default CLI tooling for great
 - **[bat](https://github.com/sharkdp/bat)** - A prettier and more useful `cat`.
 - **[delta](https://github.com/dandavison/delta)** - If you're a CLI Git user, you'll love this thing. It makes diff output far more readable and thus more useful. You can also use a custom theme and who doesn't love that.
 - **[fzf](https://github.com/junegunn/fzf)** - This thing is one of the most crucial binaries on my computer. It powers the majority of my [CLI utilities](https://github.com/fourjuaneight/dotfiles/blob/master/homedir/.zsh/func.zsh).
-- **[atuin](https://github.com/ellie/atuin)** - Amazing quality of lifr improvement utility. It creates a simple but powerful searchable shell history UI.
+- **[atuin](https://github.com/ellie/atuin)** - Amazing quality of life improvement utility. It creates a simple but powerful searchable shell history UI.
 
 ### Plugins
 These are entirely for [VSCode](https://code.visualstudio.com), my text editor of choice. I've tried them all and this is what I like the best. And so do many many other developers. I try to keep my plugin use to a minimum to prevent the app from running slow. Most of them are for syntax highlighting. But the ones listed here are what enhance my everyday experience.
@@ -91,7 +96,7 @@ These are entirely for [VSCode](https://code.visualstudio.com), my text editor o
 - **[GitHub Copilot](https://copilot.github.com)** - A lot has been said about Copilot. I think it's a great idea in the early stages. [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) was already a bit obtrusive —in my opinion— and this can often make it worse. But your mileage may vary.
 - **[GitLense](https://github.com/eamodio/vscode-gitlens)** - If you use the built-in Git functionality, this thing will add a lot of the features you might be missing.
 - **[Git History](https://github.com/pomber/git-history)** - I'll go as far as to say you need this plugin. Grab a file, run this plugin, and easily scroll through the version history. Such a life improvement.
-- **[GitHub Pull Request](https://github.com/Microsoft/vscode-pull-request-github)** - Instead of my usual [fzf + Git + gh utility](https://github.com/fourjuaneight/dotfiles/blob/master/homedir/.zsh/func.zsh#L458-L468) for CLI PR creation, I've been trying out this plugin. There were some early bugs, but they've since been ironed out. Overall, it's great. If you're already using the built-in Git functionality of VSCode as I do now, this will integrate nicely into your existing workflow make it feature complete.
+- **[GitHub Pull Request](https://github.com/Microsoft/vscode-pull-request-github)** - Instead of my usual [fzf + Git + gh utility](https://github.com/fourjuaneight/dotfiles/blob/master/homedir/.zsh/func.zsh#L458-L468) for CLI PR creation, I've been trying out this plugin. There were some early bugs, but they've since been ironed out. Overall, it's great. If you're already using the built-in Git functionality of VSCode as I do now, this will integrate nicely into your existing workflow and make it feature complete.
 - **[TODO Tree](https://github.com/Gruntfuggly/todo-tree)** - If you're a TODO person, this will make finding them far easier.
 - **[Better Comments](https://github.com/aaron-bond/better-comments)** - This makes code comments easier to parse.
 
