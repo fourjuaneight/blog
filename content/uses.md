@@ -11,7 +11,7 @@ Here's some of the stuff I use for work and procrastination.
 ## Hardware
 I used to be a Mac guy. Maybe I still am. But after having to part ways with my M1 Air, I started using an old gaming PC I built a while back. I'm not a lunatic, so I replaced Windows with Linux —Pop OS specifically. Now, I don't think I'd go back to Mac.
 
-Update (2022): I was provided a new (as of this update) M1 Max MacBook Pro by my employer. Which is overkill for my work, but it's a fantastic laptop. The Linux PC is currently serving as a Plex server in my closet.
+**Update (2022-02)**: I was provided a new (as of this update) M1 Max MacBook Pro by my employer. Which is overkill for my work, but it's a fantastic laptop. The Linux PC is currently serving as a Plex server in my closet.
 
 - **[LG 27UK650-W](https://www.lg.com/us/monitors/lg-27UK650-W-4k-uhd-led-monitor)** - It takes some calibration to make it look just right. But once it does, it's a solid workhorse of a display.
 - **[HHKB Pro 2](https://www.amazon.com/dp/B07K9QHF4P)** - I got the all-black keys and it took me a while to get used to the new layout without being able to tell which key is which. Worth every penny, though.
@@ -23,7 +23,7 @@ Update (2022): I was provided a new (as of this update) M1 Max MacBook Pro by my
 - **[Ubiquiti Switch 8 (PoE)](https://store.ui.com/collections/unifi-network-switching/products/unifi-switch-8-60w)** - I have a couple of these around the house to extend the ports coming out the wall.
 - **[Ubiquiti UniFi AC Pro](https://store.ui.com/collections/wireless/products/unifi-ac-pro)** - Solid access point.
 - **[Ubiquiti Access Point In-Wall HD](https://store.ui.com/products/unifi-in-wall-hd)** - Another solid access point. Running in mesh with the other AP.
-- **Raspberry Pi ([PiHole](https://pi-hole.net))** - This is the best decision I've made for my home network.
+- **[PiHole](https://pi-hole.net)** - This is the best decision I've made for my home network.
 
 ### Audio Gear
 - **[Electro-Voice RE320](https://products.electrovoice.com/ap/en/re320/)** - Fantastic mic for Zoom calls and DnD virtual sessions. It's overkill for what I use it but my voice sounds sexy now.
