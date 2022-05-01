@@ -17,23 +17,6 @@ let data: { [key: string]: BKValues[] } = {
   Videos: [],
 };
 
-// check for dead links
-const deadLinks = async (url: string): Promise<boolean> => {
-  try {
-    const response: Response = await fetch(url);
-
-    if (response.status === 404) {
-      return true;
-    }
-
-    return false;
-  } catch (error) {
-    console.error('[ERROR]', `Testiing '${url}': \n ${error}`);
-
-    return true;
-  }
-};
-
 const getBookmarksWithOffset = async (
   env: ContextValue,
   table: string,
@@ -83,14 +66,7 @@ export const onRequestGet = async ({
     await getBookmarksWithOffset(env, table);
 
     if (data[table].length) {
-      const checkData = data[table].map(async item => {
-        const dead = await deadLinks(item.url);
-
-        return { ...item, dead };
-      });
-      const checkedData = await Promise.all(checkData);
-
-      return new Response(JSON.stringify(checkedData), {
+      return new Response(JSON.stringify(data[table]), {
         headers: {
           'Content-Type': 'application/json',
         },
