@@ -4,8 +4,10 @@
   --foreground: #333333;
   --meta: #595959;
   --primary: #9333ea;
+  --primary-transparent: rgba(146, 51, 234, 0.5);
   --selection: #999;
   --secondary: #0a799d;
+  --secondary-transparent: rgba(10, 120, 157, 0.5);
   --tertiary: #597480;
   --tertiary-transparent: rgba(89, 116, 128, 0.5);
   --duration: 208ms;
@@ -19,7 +21,9 @@
     --foreground: #f5f4f2;
     --meta: #c2c2c2;
     --primary: #c390f3;
+    --primary-transparent: rgba(195, 144, 243, 0.5);
     --secondary: #bdecfb;
+    --secondary-transparent: rgba(189, 235, 251, 0.5);
     --tertiary: #859faa;
     --tertiary-transparent: rgba(133, 159, 170, 0.5);
   }

@@ -4,8 +4,10 @@ const pallete = {
   foreground: 'var(--foreground)',
   meta: 'var(--meta)',
   primary: 'var(--primary)',
+  'primary-transparent': 'var(--primary-transparent)',
   selection: 'var(--selection)',
   secondary: 'var(--secondary)',
+  'secondary-transparent': 'var(--secondary-transparent)',
   tertiary: 'var(--tertiary)',
   'tertiary-transparent': 'var(--tertiary-transparent)',
 };
