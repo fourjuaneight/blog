@@ -1,8 +1,11 @@
 // Bookmarks
+export type FieldStatus = 'alive' | 'dead';
+
 export interface RedditFields {
   archive?: string;
   content: string;
   date: string;
+  status: FieldStatus;
   subreddit: string;
   tags: string[];
   title: string;
@@ -12,17 +15,19 @@ export interface RedditFields {
 export interface TweetFields {
   archive?: string;
   creator: string;
+  status: FieldStatus;
+  tags: string[];
   tweet: string;
   url: string;
-  tags: string[];
 }
 
 export interface WebFields {
   archive?: string;
   creator: string;
+  status: FieldStatus;
+  tags: string[];
   title: string;
   url: string;
-  tags: string[];
 }
 
 export type BKFields = RedditFields | TweetFields | WebFields;
@@ -38,7 +43,7 @@ export interface AirtableBKResp {
   offset: string;
 }
 
-export type BKValues = BKFields & { id: string; dead: boolean };
+export type BKValues = BKFields & { id: string };
 
 export interface BookmarksData {
   Articles: BKValues[];

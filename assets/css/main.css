@@ -309,7 +309,7 @@ ul.shelf-list li {
 }
 
 ul.shelf-list li[data-completed='false']::before,
-li.bk-cell[data-dead='true'] > a::before {
+li.bk-cell[data-status='dead'] > a::before {
   content: '';
   display: block;
   height: 0;
@@ -409,7 +409,7 @@ li.bk-column-header:nth-of-type(3) {
   min-width: 12rem;
 }
 
-li.bk-cell[data-dead='true'] > a::before {
+li.bk-cell[data-status='dead'] > a::before {
   border-top: 0.75rem solid var(--secondary-transparent);
   border-right: 0.75rem solid transparent;
 }
