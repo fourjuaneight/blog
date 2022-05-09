@@ -21,7 +21,7 @@
         <description>{{ .Content | html }}</description>
         <author>{{ .Site.Params.meta.author }}</author>
         <guid>{{ .Permalink }}</guid>
-        <pubDate>{{ .Date.Format "2006-01-02" }}</pubDate>
+        <pubDate>{{ .Date.Format "02 Jan 06 15:04 MST" }}</pubDate>
       </item>
     {{ end }}
   </channel>
