@@ -378,6 +378,15 @@ li.bk-cell {
     minmax(12rem, 16rem);
 }
 
+ul.bk-header[data-article='true'],
+ul.bk-body[data-article='true'] li.bk-cell {
+  grid-template-columns:
+    minmax(20rem, 22rem)
+    minmax(6rem, 10rem)
+    minmax(8rem, 12rem)
+    minmax(12rem, 16rem);
+}
+
 li.bk-cell {
   border-color: var(--tertiary-transparent);
   border-width: 0.03125rem 0;
@@ -397,6 +406,11 @@ li.bk-cell > * {
 li.bk-cell > a,
 li.bk-column-header:nth-of-type(1) {
   min-width: 26rem;
+}
+
+ul.bk-header[data-article='true'] li.bk-column-header:nth-of-type(1),
+ul.bk-body[data-article='true'] li.bk-cell > a {
+  min-width: 20rem;
 }
 
 li.bk-cell > p,
