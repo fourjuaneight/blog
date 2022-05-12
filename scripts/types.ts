@@ -1,6 +1,17 @@
 // Bookmarks
 export type FieldStatus = 'alive' | 'dead';
 
+export interface ArticleFields {
+  archive?: string;
+  author: string;
+  creator: string;
+  site: string;
+  status: FieldStatus;
+  tags: string[];
+  title: string;
+  url: string;
+}
+
 export interface RedditFields {
   archive?: string;
   content: string;
@@ -30,7 +41,7 @@ export interface WebFields {
   url: string;
 }
 
-export type BKFields = RedditFields | TweetFields | WebFields;
+export type BKFields = ArticleFields | RedditFields | TweetFields | WebFields;
 
 export interface BKRecord {
   id: string;
