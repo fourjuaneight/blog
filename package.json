@@ -4,7 +4,7 @@
   "description": "👨🏽‍💻Personal blog.",
   "scripts": {
     "build": "hugo -e production --minify",
-    "build:chrome": "hugo gen chromastyles > assets/css/syntax.css",
+    "build:chroma": "hugo gen chromastyles > assets/css/syntax.css",
     "build:prod": "run-p img ts tw && hugo -e production --minify && npm run clean-scripts",
     "clean": "rm -rf dist",
     "clean:node": "rm -rf node_modules",
