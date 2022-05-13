@@ -4,7 +4,7 @@ import chalk from 'chalk';
 import fetch from 'isomorphic-fetch';
 import sharp from 'sharp';
 
-import { ShelfItem } from './types';
+import { ShelfItem } from '../functions/utils/types';
 
 const dist = resolve(__dirname, '..', 'assets/img/shelf/');
 const variants = ['png', 'webp', 'avif'];

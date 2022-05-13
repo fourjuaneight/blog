@@ -1,6 +1,6 @@
 import { queryHasuraBookmarks } from '../../utils/query-hasura';
 
-import { AirtableBKResp, BKValues, ContextValue } from '../../../scripts/types';
+import { ContextValue } from '../../utils/types';
 
 interface RequestParams {
   env: ContextValue;

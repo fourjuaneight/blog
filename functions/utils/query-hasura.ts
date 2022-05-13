@@ -5,7 +5,7 @@ import {
   HasuraShelfQueryResp,
   HasuraTWQueryResp,
   TweetValues,
-} from '../../scripts/types';
+} from './types';
 
 export const queryHasuraBookmarks = async (env: ContextValue) => {
   const query = `

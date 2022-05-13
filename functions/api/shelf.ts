@@ -1,11 +1,6 @@
 import { queryHasuraShelf } from '../utils/query-hasura';
 
-import {
-  AirtableShelfResp,
-  ContextValue,
-  ShelfItem,
-  ShelfRecord,
-} from '../../scripts/types';
+import { ContextValue } from '../utils/types';
 
 interface RequestParams {
   env: ContextValue;

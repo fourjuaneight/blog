@@ -1,10 +1,6 @@
 import { queryHasuraTweets } from '../utils/query-hasura';
 
-import {
-  AirtableTweetsResp,
-  ContextValue,
-  TweetValues,
-} from '../../scripts/types';
+import { ContextValue } from '../utils/types';
 
 interface RequestParams {
   env: ContextValue;
