@@ -208,7 +208,7 @@ export const queryHasuraShelf = async (env: ContextValue) => {
 export const queryHasuraTweets = async (env: ContextValue) => {
   const query = `
     {
-      media_tweets(order_by: {date: asc}) {
+      media_tweets(order_by: {date: desc}) {
         date
         tweet
         url
@@ -231,7 +231,7 @@ export const queryHasuraTweets = async (env: ContextValue) => {
       const { errors } = response as HasuraErrors;
 
       throw new Error(
-        `(queryHasura) ${list}: \n ${errors
+        `(queryHasuraTweets) ${list}: \n ${errors
           .map(err => `${err.extensions.path}: ${err.message}`)
           .join('\n')} \n ${query}`
       );
@@ -245,6 +245,6 @@ export const queryHasuraTweets = async (env: ContextValue) => {
 
     return tweetsWithId;
   } catch (error) {
-    throw new Error(`(queryHasura) - ${list}: \n ${error}`);
+    throw new Error(`(queryHasuraTweets) - ${list}: \n ${error}`);
   }
 };

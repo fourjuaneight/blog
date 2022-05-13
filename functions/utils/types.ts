@@ -87,6 +87,11 @@ export interface HasuraBKQueryResp {
     reddits: RedditFields[];
     tweets: TweetFields[];
     videos: WebFields[];
+    [key: string]:
+      | ArticleFields[]
+      | WebFields[]
+      | RedditFields[]
+      | TweetFields[];
   };
 }
 

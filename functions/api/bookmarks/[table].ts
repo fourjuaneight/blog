@@ -14,7 +14,7 @@ export const onRequestGet = async ({
   try {
     const bkData = await queryHasuraBookmarks(env);
 
-    if (bkData[table].length) {
+    if (bkData[table]?.length) {
       return new Response(JSON.stringify(bkData[table]), {
         headers: {
           'Content-Type': 'application/json',
