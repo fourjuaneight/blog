@@ -129,38 +129,40 @@
         data-category="{{ lower .Title }}"
         data-article="{{ $isArticle }}"
       >
-        {{ range sort $bookmarks (lower $dTitle) "asc" }}
-          {{ $bkTitle := cond (eq $.Title "Tweets") .tweet .title }}
-          {{ $bkCreator := cond (eq $.Title "Reddits") .subreddit (cond (eq $.Title "Articles") .author .creator) }}
-          <li
-            class="bk-cell border-solid duration-200 ease-in-out grid grid-rows-1 m-0 p-0 transition-all w-full"
-            data-status="{{ .status }}"
-          >
-            <a
-              class="col-start-1 focus:no-underline hove:no-underline m-0 no-underline p-0 px-2 relative w-full whitespace-nowrap"
-              href="{{ .url }}"
-              target="_blank"
-              rel="noopener noreferrer"
-            >{{ $bkTitle }}</a>
-            <p class="col-start-2 m-0 p-0 px-2 w-full" title="{{ $bkCreator }}">{{ $bkCreator }}</p>
-            {{ if $isArticle }}
-              <p class="col-start-3 m-0 p-0 px-2 w-full" title="{{ .site }}">{{ .site }}</p>
-            {{ end }}
-            <p
-              class="
-                {{ if $isArticle }}col-start-4{{ else }}col-start-3{{ end }}
-                m-0
-                overflow-hidden
-                px-2
-                py-0
-                w-full
-                whitespace-nowrap
-              "
-              title='{{ delimit .tags ", " }}'
+        {{ if ne $bookmarks nil }}
+          {{ range sort $bookmarks (lower $dTitle) "asc" }}
+            {{ $bkTitle := cond (eq $.Title "Tweets") .tweet .title }}
+            {{ $bkCreator := cond (eq $.Title "Reddits") .subreddit (cond (eq $.Title "Articles") .author .creator) }}
+            <li
+              class="bk-cell border-solid duration-200 ease-in-out grid grid-rows-1 m-0 p-0 transition-all w-full"
+              data-status="{{ .status }}"
             >
-              {{ delimit .tags ", " }}
-            </p>
-          </li>
+              <a
+                class="col-start-1 focus:no-underline hove:no-underline m-0 no-underline p-0 px-2 relative w-full whitespace-nowrap"
+                href="{{ .url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+              >{{ $bkTitle }}</a>
+              <p class="col-start-2 m-0 p-0 px-2 w-full" title="{{ $bkCreator }}">{{ $bkCreator }}</p>
+              {{ if $isArticle }}
+                <p class="col-start-3 m-0 p-0 px-2 w-full" title="{{ .site }}">{{ .site }}</p>
+              {{ end }}
+              <p
+                class="
+                  {{ if $isArticle }}col-start-4{{ else }}col-start-3{{ end }}
+                  m-0
+                  overflow-hidden
+                  px-2
+                  py-0
+                  w-full
+                  whitespace-nowrap
+                "
+                title='{{ delimit .tags ", " }}'
+              >
+                {{ delimit .tags ", " }}
+              </p>
+            </li>
+          {{ end}}
         {{ end}}
       </ul>
     </div>
