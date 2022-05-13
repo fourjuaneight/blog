@@ -23,7 +23,11 @@ export const onRequestGet = async ({
         status: 200,
       });
     } else {
-      return new Response('No data found', {
+      return new Response(JSON.stringify({
+        message: 'No data found',
+        params,
+        data: bkData
+      }), {
         ok: false,
         status: 404,
       });
