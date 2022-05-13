@@ -7,10 +7,8 @@ interface RequestParams {
   params: ContextValue;
 }
 
-export const onRequestGet = async ({
-  env,
-  params: { table },
-}: RequestParams) => {
+export const onRequestGet = async ({ env params }: RequestParams) => {
+  const { table } = params;
   try {
     const bkData = await queryHasuraBookmarks(env);
 
