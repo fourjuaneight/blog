@@ -78,7 +78,7 @@ export const queryHasuraBookmarks = async (env: ContextValue) => {
       body: JSON.stringify({ query }),
     });
     const response: HasuraBKQueryResp | HasuraErrors = await request.json();
-
+    console.info({ response });
     if (response.errors) {
       const { errors } = response as HasuraErrors;
 
