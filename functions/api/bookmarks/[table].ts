@@ -1,72 +1,21 @@
-import { AirtableBKResp, BKValues } from '../../../scripts/types';
+import { queryHasuraBookmarks } from '../../utils/query-hasura';
 
-interface ContextValue {
-  [key: string]: string;
-}
+import { AirtableBKResp, BKValues, ContextValue } from '../../../scripts/types';
 
 interface RequestParams {
   env: ContextValue;
   params: ContextValue;
 }
 
-let data: { [key: string]: BKValues[] } = {
-  Articles: [],
-  Comics: [],
-  Podcasts: [],
-  Tweets: [],
-  Videos: [],
-};
-
-const getBookmarksWithOffset = async (
-  env: ContextValue,
-  table: string,
-  offset?: string
-): Promise<AirtableBKResp> => {
-  const options: RequestInit = {
-    headers: {
-      Authorization: `Bearer ${env.AIRTABLE_TOKEN}`,
-      'Content-Type': 'application/json',
-    },
-  };
-  const endpoint = `https://api.airtable.com/v0/${env.AIRTABLE_BOOKMARKS_ID}/${table}`;
-  const url = offset ? `${endpoint}?offset=${offset}` : endpoint;
-
-  try {
-    return fetch(url, options)
-      .then((response: Response) => response.json())
-      .then((airtableRes: AirtableBKResp) => {
-        const existingData = data[table] || [];
-        const newData =
-          airtableRes.records?.map(record => {
-            delete record.fields.archive;
-            return { id: record.id, ...record.fields, dead: false };
-          }) || [];
-
-        data[table] = [...existingData, ...newData];
-
-        if (airtableRes.offset) {
-          return getBookmarksWithOffset(env, table, airtableRes.offset);
-        }
-
-        return airtableRes;
-      });
-  } catch (error) {
-    throw `(getBookmarksWithOffset) - ${error}`;
-  }
-};
-
 export const onRequestGet = async ({
   env,
   params: { table },
 }: RequestParams) => {
-  // clean up data
-  data[table] = [];
-
   try {
-    await getBookmarksWithOffset(env, table);
+    const bkData = await queryHasuraBookmarks(env);
 
-    if (data[table].length) {
-      return new Response(JSON.stringify(data[table]), {
+    if (bkData[table].length) {
+      return new Response(JSON.stringify(bkData[table]), {
         headers: {
           'Content-Type': 'application/json',
         },
@@ -74,9 +23,9 @@ export const onRequestGet = async ({
         status: 200,
       });
     } else {
-      return new Response('Missing data', {
+      return new Response('No data found', {
         ok: false,
-        status: 500,
+        status: 404,
       });
     }
   } catch (error) {

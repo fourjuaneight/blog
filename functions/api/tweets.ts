@@ -1,64 +1,21 @@
-import { AirtableTweetsResp, TweetValues } from '../../scripts/types';
+import { queryHasuraTweets } from '../utils/query-hasura';
 
-interface ContextValue {
-  [key: string]: string;
-}
+import {
+  AirtableTweetsResp,
+  ContextValue,
+  TweetValues,
+} from '../../scripts/types';
 
 interface RequestParams {
   env: ContextValue;
 }
 
-let data: TweetValues[] = [];
-
-const getTweetsWithOffset = (
-  env: ContextValue,
-  offset?: string
-): Promise<AirtableTweetsResp> => {
-  const options: RequestInit = {
-    headers: {
-      Authorization: `Bearer ${env.AIRTABLE_TOKEN}`,
-      'Content-Type': 'application/json',
-    },
-  };
-  const endpoint = `https://api.airtable.com/v0/${env.AIRTABLE_MEDIA_ID}/Tweets`;
-  const url = offset ? `${endpoint}?offset=${offset}` : endpoint;
-
-  try {
-    return fetch(url, options)
-      .then((response: Response) => response.json())
-      .then((airtableRes: AirtableTweetsResp) => {
-        data = [
-          ...data,
-          ...airtableRes.records.map(({ fields }) => {
-            const id = fields.url.replace(
-              /(https\:\/\/twitter\.com\/fourjuaneight\/status\/)(.*)/g,
-              '$2'
-            );
-
-            return {
-              id,
-              ...fields,
-            };
-          }),
-        ];
-
-        if (airtableRes.offset) {
-          return getTweetsWithOffset(env, airtableRes.offset);
-        }
-
-        return airtableRes;
-      });
-  } catch (error) {
-    throw `(getTweetsWithOffset) - ${error}`;
-  }
-};
-
 export const onRequestGet = async ({ env }: RequestParams) => {
   try {
-    await getTweetsWithOffset(env);
+    const tweets = await queryHasuraTweets(env);
 
-    if (data.length) {
-      return new Response(JSON.stringify(data), {
+    if (tweets.length) {
+      return new Response(JSON.stringify(tweets), {
         headers: {
           'Content-Type': 'application/json',
         },
@@ -66,9 +23,9 @@ export const onRequestGet = async ({ env }: RequestParams) => {
         status: 200,
       });
     } else {
-      return new Response('Missing data', {
+      return new Response('No data found', {
         ok: false,
-        status: 500,
+        status: 404,
       });
     }
   } catch (error) {
