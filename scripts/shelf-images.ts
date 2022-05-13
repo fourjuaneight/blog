@@ -32,14 +32,16 @@ const fmtImage = async (name: string, url: string): Promise<void> => {
 
     console.info(chalk.green('[SHELF-IMG]'), `${name} asset created`);
   } catch (err) {
-    throw `${chalk.red('[ERROR]')} ${JSON.stringify(
-      {
-        name,
-        err,
-      },
-      undefined,
-      2
-    )}`;
+    throw new Error(
+      `${chalk.blue('(fmtImage)')} ${JSON.stringify(
+        {
+          name,
+          err,
+        },
+        undefined,
+        2
+      )}`
+    );
   }
 };
 
@@ -59,7 +61,7 @@ const fmtImage = async (name: string, url: string): Promise<void> => {
     await Promise.all(ops);
     process.exit(0);
   } catch (error) {
-    console.error(error);
+    console.error(chalk.red('[ERROR]'), error);
     process.exit(1);
   }
 })();

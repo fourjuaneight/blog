@@ -98,9 +98,7 @@ const createSocialImage = async (file: string): Promise<void> => {
       `${fileName}.svg base social image created`
     );
   } catch (error) {
-    throw `${chalk.red('[ERROR]')} ${chalk.blue(
-      '(createSocialImage)'
-    )} ${error}`;
+    throw new Error(`${chalk.blue('(createSocialImage)')} ${error}`);
   }
 };
 
@@ -112,7 +110,7 @@ const createSocialImage = async (file: string): Promise<void> => {
 
     process.exit(0);
   } catch (error) {
-    console.error(error);
+    console.error(chalk.red('[ERROR]'), error);
     process.exit(1);
   }
 })();

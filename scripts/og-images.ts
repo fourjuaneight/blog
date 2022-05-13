@@ -47,9 +47,7 @@ const saveSocialImages = async (file: string): Promise<void> => {
       `${fileName}.jpeg social image created`
     );
   } catch (error) {
-    throw `${chalk.red('[ERROR]')} ${chalk.blue(
-      '(saveSocialImages)'
-    )} ${error}`;
+    throw new Error(`${chalk.blue('(saveSocialImages)')} ${error}`);
   } finally {
     await browser.close();
   }
@@ -66,7 +64,7 @@ const saveSocialImages = async (file: string): Promise<void> => {
 
     process.exit(0);
   } catch (error) {
-    console.error(error);
+    console.error(chalk.red('[ERROR]'), error);
     process.exit(1);
   }
 })();

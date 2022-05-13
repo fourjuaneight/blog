@@ -39,7 +39,9 @@ const ignore = ['sw*.js', 'noise*.js', 'bookmarks*.js'];
     await replaceInFile(replaceOptions);
 
     console.info(chalk.cyan('[SCRIPTS]'), 'Worker scripts updated.');
+    process.exit(0);
   } catch (error) {
-    throw new Error(`${chalk.red('[ERROR]')} ${error}`);
+    console.error(chalk.red('[ERROR]'), error);
+    process.exit(1);
   }
 })();

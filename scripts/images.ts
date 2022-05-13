@@ -82,14 +82,16 @@ const fmtPlaceholder = async (src: string): Promise<void> => {
 
     console.info(chalk.green('[IMG]'), `${name} placeholder created`);
   } catch (err) {
-    throw `${chalk.red('[ERROR]')} ${JSON.stringify(
-      {
-        name,
-        err,
-      },
-      undefined,
-      2
-    )}`;
+    throw new Error(
+      `${chalk.blue('(fmtPlaceholder)')} ${JSON.stringify(
+        {
+          name,
+          err,
+        },
+        undefined,
+        2
+      )}`
+    );
   }
 };
 
@@ -128,7 +130,7 @@ const fmtImage = async (src: string): Promise<void> => {
 
     console.info(chalk.green('[IMG]'), `${name} asset created`);
   } catch (err) {
-    throw `${chalk.red('[ERROR]')} ${JSON.stringify(
+    throw `${JSON.stringify(
       {
         name,
         err,
@@ -168,7 +170,7 @@ const fmtIcon = async (name: string, size: number): Promise<void> => {
 
     console.info(chalk.green('[IMG]'), `${name}-${size}x${size} created`);
   } catch (err) {
-    throw `${chalk.red('[ERROR]')} ${JSON.stringify(
+    throw `${JSON.stringify(
       {
         name,
         err,
@@ -180,11 +182,18 @@ const fmtIcon = async (name: string, size: number): Promise<void> => {
 };
 
 (async () => {
-  const imgFiles = globSync('*.png', { cwd: dir });
-  const iconOps = icons.map(icon => fmtIcon(icon.name, icon.size));
-  const imgPHOps = imgFiles.map(file => fmtPlaceholder(file));
-  const imgOps = imgFiles.map(file => fmtImage(file));
-  const ops = [...iconOps, ...imgOps];
+  try {
+    const imgFiles = globSync('*.png', { cwd: dir });
+    const iconOps = icons.map(icon => fmtIcon(icon.name, icon.size));
+    const imgPHOps = imgFiles.map(file => fmtPlaceholder(file));
+    const imgOps = imgFiles.map(file => fmtImage(file));
+    const ops = [...iconOps, ...imgOps];
 
-  await Promise.all(ops);
+    await Promise.all(ops);
+
+    process.exit(0);
+  } catch (error) {
+    console.error(chalk.red('[ERROR]'), error);
+    process.exit(1);
+  }
 })();
