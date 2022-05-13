@@ -7,7 +7,7 @@ import sharp from 'sharp';
 import { ShelfItem } from '../functions/utils/types';
 
 const dist = resolve(__dirname, '..', 'assets/img/shelf/');
-const variants = ['png', 'webp', 'avif'];
+const variants = ['jpeg', 'webp', 'avif'];
 
 const fmtImage = async (name: string, url: string): Promise<void> => {
   const response = await fetch(url);
@@ -23,7 +23,7 @@ const fmtImage = async (name: string, url: string): Promise<void> => {
 
     // create variants
     await image
-      .toFormat(ext as any, ext === 'png' ? { progressive: true } : undefined)
+      .toFormat(ext as any, ext === 'jpeg' ? { progressive: true } : undefined)
       .toFile(output);
   });
 
