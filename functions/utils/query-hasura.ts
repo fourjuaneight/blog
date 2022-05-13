@@ -83,7 +83,7 @@ export const queryHasuraBookmarks = async (env: ContextValue) => {
       const { errors } = response as HasuraErrors;
 
       throw new Error(
-        `(queryHasuraBookmarks) ${list}: \n ${errors
+        `(queryHasuraBookmarks): \n ${errors
           .map(err => `${err.extensions.path}: ${err.message}`)
           .join('\n')} \n ${query}`
       );
@@ -91,7 +91,7 @@ export const queryHasuraBookmarks = async (env: ContextValue) => {
 
     return (response as HasuraBKQueryResp).data;
   } catch (error) {
-    throw new Error(`(queryHasuraBookmarks) - ${list}: \n ${error}`);
+    throw new Error(`(queryHasuraBookmarks): \n ${error}`);
   }
 };
 
@@ -193,7 +193,7 @@ export const queryHasuraShelf = async (env: ContextValue) => {
       const { errors } = response as HasuraErrors;
 
       throw new Error(
-        `(queryHasuraShelf) ${list}: \n ${errors
+        `(queryHasuraShelf): \n ${errors
           .map(err => `${err.extensions.path}: ${err.message}`)
           .join('\n')} \n ${query}`
       );
@@ -201,7 +201,7 @@ export const queryHasuraShelf = async (env: ContextValue) => {
 
     return (response as HasuraShelfQueryResp).data;
   } catch (error) {
-    throw new Error(`(queryHasuraShelf) - ${list}: \n ${error}`);
+    throw new Error(`(queryHasuraShelf): \n ${error}`);
   }
 };
 
@@ -231,7 +231,7 @@ export const queryHasuraTweets = async (env: ContextValue) => {
       const { errors } = response as HasuraErrors;
 
       throw new Error(
-        `(queryHasuraTweets) ${list}: \n ${errors
+        `(queryHasuraTweets): \n ${errors
           .map(err => `${err.extensions.path}: ${err.message}`)
           .join('\n')} \n ${query}`
       );
@@ -245,6 +245,6 @@ export const queryHasuraTweets = async (env: ContextValue) => {
 
     return tweetsWithId;
   } catch (error) {
-    throw new Error(`(queryHasuraTweets) - ${list}: \n ${error}`);
+    throw new Error(`(queryHasuraTweets): \n ${error}`);
   }
 };
