@@ -10,7 +10,7 @@ import {
 export const queryHasuraBookmarks = async (env: ContextValue) => {
   const query = `
     {
-      Articles: bookmarks_articles(order_by: {title: asc}) {
+      articles: bookmarks_articles(order_by: {title: asc}) {
         archive
         author
         dead
@@ -20,7 +20,7 @@ export const queryHasuraBookmarks = async (env: ContextValue) => {
         title
         url
       }
-      Comics: bookmarks_comics(order_by: {title: asc}) {
+      comics: bookmarks_comics(order_by: {title: asc}) {
         archive
         creator
         dead
@@ -29,7 +29,7 @@ export const queryHasuraBookmarks = async (env: ContextValue) => {
         title
         url
       }
-      Podcasts: bookmarks_podcasts(order_by: {title: asc}) {
+      podcasts: bookmarks_podcasts(order_by: {title: asc}) {
         archive
         creator
         dead
@@ -38,7 +38,7 @@ export const queryHasuraBookmarks = async (env: ContextValue) => {
         title
         url
       }
-      Reddits: bookmarks_reddits(order_by: {title: asc}) {
+      reddits: bookmarks_reddits(order_by: {title: asc}) {
         archive
         content
         dead
@@ -48,7 +48,7 @@ export const queryHasuraBookmarks = async (env: ContextValue) => {
         title
         url
       }
-      Tweets: bookmarks_tweets(order_by: {tweet: asc}) {
+      tweets: bookmarks_tweets(order_by: {tweet: asc}) {
         dead
         id
         tags
@@ -56,7 +56,7 @@ export const queryHasuraBookmarks = async (env: ContextValue) => {
         url
         user
       }
-      Videos: bookmarks_videos(order_by: {title: asc}) {
+      videos: bookmarks_videos(order_by: {title: asc}) {
         archive
         creator
         dead

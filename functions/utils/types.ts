@@ -48,12 +48,12 @@ export interface WebFields {
 export type BKFields = ArticleFields | RedditFields | TweetFields | WebFields;
 
 export interface BookmarksData {
-  Articles: BKFields[];
-  Comics: BKFields[];
-  Podcasts: BKFields[];
-  Reddits: BKFields[];
-  Tweets: BKFields[];
-  Videos: BKFields[];
+  articles: BKFields[];
+  comics: BKFields[];
+  podcasts: BKFields[];
+  reddits: BKFields[];
+  tweets: BKFields[];
+  videos: BKFields[];
   [key: string]: BKFields[];
 }
 
@@ -81,12 +81,12 @@ export interface TweetValues {
 // Hasura
 export interface HasuraBKQueryResp {
   data: {
-    Articles: ArticleFields[];
-    Comics: WebFields[];
-    Podcasts: WebFields[];
-    Reddits: RedditFields[];
-    Tweets: TweetFields[];
-    Videos: WebFields[];
+    articles: ArticleFields[];
+    comics: WebFields[];
+    podcasts: WebFields[];
+    reddits: RedditFields[];
+    tweets: TweetFields[];
+    videos: WebFields[];
   };
 }
 
