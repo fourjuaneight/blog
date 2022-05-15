@@ -1,5 +1,6 @@
 ---
 title: On Abstracting Code
+description: "Early in a developer's career, we are exposed to several principles which are thought of as hard rules one must abide by. But unlike programming, where things are fluid and ever-changing, hard rules confine us to a limited set of stuff we can do and a lot of what we can't. And while constraints can be a great tool for producing great work, they shouldn't be at the cost of having a maintainable codebase."
 date: 2021-05-31
 tags:
   - developement

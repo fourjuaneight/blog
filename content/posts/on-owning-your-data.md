@@ -1,5 +1,6 @@
 ---
 title: On Owning Your Data
+description: "Most companies won't lose your data this recklessly. That data is often their source of revenue and they'll do anything to protect it and reassure you that it is best placed in their hands. And therein lies the other problem; if your data isn't at risk of being lost, it's being utilized to violate your privacy. And while going off-the-grid might not be an option, there are other ways to safeguard the content you put out online."
 date: 2022-03-02
 tags:
   - indieweb
@@ -11,12 +12,11 @@ This statement from [Nelson's recent post on Goodreads losing all his data](http
 
 > Don't trust any cloud service with the only copy of your data. Most companies are not quite so reckless but consider what you'd miss if an uncaring company lost your data.
 
-And it's true, most companies won't lose your data this recklessly. That data is often their source of revenue and they'll do anything to protect it and reassure you that it is best placed in their hands. And therein lies the other problem; if your data isn't at risk of being lost, it's being utilized to violate your privacy.
+And it's true; most companies won't lose your data this recklessly. That data is often their source of revenue and they'll do anything to protect it and reassure you that it is best placed in their hands. And therein lies the other problem; if your data isn't at risk of being lost, it's being utilized to violate your privacy.
 
 There are many angles to come at this issue. And it's something that's been exhaustively talked about everywhere. So instead, let me show you what I've been doing.
 
 ## Roll Your Own
-
 The solution to this isn't hard to find. You simply need to host your data and publish it in the manner that best suits your needs. But like anything on the web, there are a plethora of ways to go about this. So let's take at one that should be approachable people that have published their blog at some point.
 
 This site is built using Hugo. It's one of the relatively newer static site generators. And like most of them, it can read data from common file types like JSON. That means I can maintain a data file that looks like this and use it to create my digital bookshelf of sorts:
@@ -59,7 +59,6 @@ So it's that flexibility of making your data portable that we're looking for. Wh
 Once your data is stored on one of these services, you can write a small script in the language of your choice to pull the bookshelf data and store it locally as a JSON file that your website can read.
 
 ## Why This Matters
-
 I think [Brad said it best](https://bradfrost.com/blog/post/write-on-your-own-website/):
 
 > Writing on your own website associates your thoughts and ideas with you as a person. Having a distinct website design helps strengthen that association.

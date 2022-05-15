@@ -1,6 +1,7 @@
 ---
 title: 'On Internet Access'
 seo_title: 'How Some Communities Are Building Their Own Internet'
+description: "A utility we take for granted every day —on which we depend so much— is hardly accessible to a large portion of the country. So many of these underserved communities are taking matters into their own hands. But to better understand why this happens, it's important to know how we get our internet and what makes high-speed broadband innaccessible to so many."
 date: 2022-03-16
 tags:
   - community

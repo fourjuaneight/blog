@@ -1,5 +1,6 @@
 ---
 title: January Notes
+description: "This was a solid start to the Year of Focus. I've been working hard on two things this month: optimizations to the site and cleaning up my feeds (podcast and RSS)."
 date: 2020-01-31
 tags:
   - monthly-notes

@@ -1,12 +1,13 @@
 ---
 title: March Notes
+description: "Fuck, what a month. I hope everyone is staying safe out there. Most of us are spending a lot more time at home than usual. I'm used to spending weeks indoors without seeing the light of day. Although being told I can't go out makes things far more stressful for some reason."
 date: 2020-03-31
 tags:
   - monthly-notes
 draft: false
 ---
 
-Fuck, what a month. I hope everyone is staying safe out there. Most are spending a lot more time at home than usual. My partner has been at home with me for about 3 weeks now. And I believe she's starting to crack. I've seen her reorganize the house about 4 times and I'm positive it looks the same as it did originally. I, on the other hand, am used to spending weeks indoors without seeing the light of day. Although being told I can't go out makes things far more stressful for some reason.
+Fuck, what a month. I hope everyone is staying safe out there. Most of us are spending a lot more time at home than usual. My partner has been at home with me for about 3 weeks now. And I believe she's starting to crack. I've seen her reorganize the house about 4 times and I'm positive it looks the same as it did originally. I, on the other hand, am used to spending weeks indoors without seeing the light of day. Although being told I can't go out makes things far more stressful for some reason.
 
 Either way, we've been looking for new ways to keep ourselves occupied to prevent anxiety from eating us alive. So here are some of the stuff we've gone through this month.
 

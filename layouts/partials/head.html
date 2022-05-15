@@ -1,5 +1,5 @@
 {{ $title := cond (ne .Params.seo_title nil) .Params.seo_title .Title }}
-{{ $description := cond (eq .IsHome true) .Site.Params.meta.description .Summary }}
+{{ $description := cond (eq .IsHome true) .Site.Params.meta.description .Params.description }}
 {{ $pageFile := .RelPermalink | replaceRE "/posts" "" | replaceRE "/" "" }}
 {{ $imgFilePath := cond (eq .Title "Archive") "archive" $pageFile }}
 {{ $socialMain := "og/main.jpeg" }}

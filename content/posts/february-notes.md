@@ -1,5 +1,6 @@
 ---
 title: February Notes
+description: "It's been quite the month. So much craziness happened in such a short amount of time. My family and I have luckily been safe from most of it. And I've occupied myself with my work to the point that I hardly did anything else but code this month. But, I still managed to squeeze in some interesting stuff during what little spare time I had that I wanted to share with y'all."
 date: 2020-02-29
 tags:
   - monthly-notes
