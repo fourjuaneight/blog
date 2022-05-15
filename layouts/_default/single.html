@@ -18,3 +18,9 @@
     {{ end }}
   </article>
 {{ end }}
+{{ define "scripts" }}
+  {{ if .Page.Store.Get "hasMermaid" }}
+    {{ $diagrams := resources.Get "diagrams.js" | resources.Minify | resources.Fingerprint "md5" }}
+    <script defer src="{{ $diagrams.Permalink }}"></script>
+  {{ end }}
+{{ end }}
