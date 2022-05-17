@@ -1,7 +1,7 @@
 ---
 title: 'On Gaming'
 seo_title: 'Rediscovering A Love for Gaming'
-description: 'My fondest childhood memories are of me going on exciting family trips while I spent them glued to my GameBoy. I can recall the triumphant feeling of finishing A Link to the Past DX while visiting the Grand Canyon. And the only reason I remember going there is that my batteries ran out. However, life came at me hard and I sort of lost interest in gaming. But I recently resurfaced a nostalgia for my childhood gaming days. And thought maybe I should do something about it and hunt down the stuff I used to play with when I was a kid.'
+description: 'I recently resurfaced a nostalgia for my childhood gaming days. And thought maybe I should do something about it and hunt down the stuff I used to play with when I was a kid.'
 date: 2022-03-31
 tags:
   - gaming

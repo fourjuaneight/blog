@@ -1,6 +1,6 @@
 ---
 title: On Procrastinating
-description: "Have you ever gone down one of those online rabbit holes and end up on r/disneyvacation for some odd reason? Yeah, me neither. For a lot of us, procrastinating is the norm and getting some work done is the accomplishment of the day. I have no idea how to solve that problem. And that's not what this post is about. But let's talk about it anyways."
+description: "For a lot of us, procrastinating is the norm and getting some work done is the accomplishment of the day. I have no idea how to solve that problem. And that's not what this post is about. But let's talk about it anyways."
 date: 2017-07-23
 tags:
   - productivity

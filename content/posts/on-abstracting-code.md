@@ -1,13 +1,13 @@
 ---
 title: On Abstracting Code
-description: "Early in a developer's career, we are exposed to several principles which are thought of as hard rules one must abide by. But unlike programming, where things are fluid and ever-changing, hard rules confine us to a limited set of stuff we can do and a lot of what we can't. And while constraints can be a great tool for producing great work, they shouldn't be at the cost of having a maintainable codebase."
+description: "Early in our careers, we're exposed to several principles which are thought of as hard rules one must abide by. And while constraints can yield innovation, they shouldn't be at the cost of having a maintainable codebase."
 date: 2021-05-31
 tags:
   - developement
 draft: false
 ---
 
-Early in a developer's career, we are exposed to several principles which are thought of as hard rules one must abide by. But unlike programming, where things are fluid and ever-changing, hard rules confine us to a limited set of stuff we can do and a lot of what we can't. And while constraints can be a great tool for producing great work, they shouldn't be at the cost of having a maintainable codebase. That's the basis of one of my favorite talks by [Dan Abramov](https://overreacted.io), a core maintainer for [React](https://reactjs.org), called [The WET Codebase](https://www.deconstructconf.com/2019/dan-abramov-the-wet-codebase).
+Early in our careers, we're exposed to several principles which are thought of as hard rules one must abide by. And while constraints can yield innovation, they shouldn't be at the cost of having a maintainable codebase. That's the basis of one of my favorite talks by [Dan Abramov](https://overreacted.io), a core maintainer for [React](https://reactjs.org), called [The WET Codebase](https://www.deconstructconf.com/2019/dan-abramov-the-wet-codebase).
 
 We start with a common practice called DRY (Don't Repeat Yourself), which is prevalent in all languages and paradigms. It's almost drilled into every developer's head early on that duplicate code is bad code. As Dan puts it, we're told "you're not supposed to copy and paste code because it creates a maintenance burden". And to a certain extent that is true; you'll quickly find that maintaining 30 instances of the same functionality across any modestly sized project can lead to bugs, as you can only keep track of so many things in your head. So instead, what we do is create abstractions. By doing so, we move those repeating pieces into a module —small reusable chucks— that can be applied anywhere it's needed. Which is great! Now you don't have to keep track of 30 instances of the same code; if the project manager realizes a feature needs some extra juice, we simply need to update our module and it affects any associated component instantly. Development time goes down, the lead engineer doesn't have to spend hours reviewing new changes, and the client sees a faster turnaround time. It's a win-win-win for everyone.
 

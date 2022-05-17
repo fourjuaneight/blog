@@ -1,6 +1,6 @@
 ---
 title: Year of Focus
-description: "Last year's theme was a success. Having the mindset of prioritizing quality over quantity allowed me to prioritize the things that mattered most. For this year, I want to take advantage of the extra time I carved for myself and focus on the things that matter."
+description: "Last year's theme was a success. This year, I want to take advantage of the extra time I carved for myself and focus on the things that matter."
 date: 2020-01-01
 tags:
   - yearly-theme

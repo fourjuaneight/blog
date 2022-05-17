@@ -1,6 +1,6 @@
 ---
 title: '2021: The Void Year'
-description: 'After a rough year, 2021 was shaping up to be a rough one as well. And, for all intents and purposes, it was. But somehow I cannot recall much about it. It feels like a void in my memory. And I think I know why.'
+description: 'After a rough year, 2021 was shaping up to be a rough one as well. And, for all intents and purposes, it was. But somehow I cannot recall much about it. Every day was more or less the same.'
 date: 2021-12-29
 tags:
   - monthly-notes

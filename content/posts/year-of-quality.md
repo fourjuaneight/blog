@@ -1,6 +1,6 @@
 ---
 title: Year of Quality
-description: "Every year, the guys over at the Cortex podcast come up with a theme that sets an overarching idea guiding their decisions. That got me thinking of some recent media consumption changes I've made recently. And so I landed on my first yearly theme; the Year of Quality."
+description: "Every year, the guys over at the Cortex podcast come up with a theme that sets an overarching idea guiding their decisions. That got me thinking of some recent media consumption changes I've made recently."
 date: 2019-01-01
 tags:
   - yearly-theme

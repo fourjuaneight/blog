@@ -1,7 +1,7 @@
 ---
 title: 'Spreadsheets Revolutions'
 seo_title: 'Building a Custom Bookmarking Solution - Part 3'
-description: "I was dissatisfied with the current bookmarking solutions out there, so I decided to make a custom one instead. This started with a myriad of Airtable bases and then —for some stupid reason— I decided to roll my own hosted database. And not we're back to Airtable."
+description: "I was dissatisfied with the current bookmarking solutions out there, so I decided to make a custom one instead. This started with a myriad of Airtable bases and then —for some stupid reason— I decided to roll my own hosted database."
 date: 2022-03-06
 tags:
   - bookmarking

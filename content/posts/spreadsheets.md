@@ -1,7 +1,7 @@
 ---
 title: Spreadsheets
 seo_title: 'Building a Custom Bookmarking Solution - Part 1'
-description: "I like lists. I make them all the time to help me keep track of just about anything I need to know. There's only so much I can hold in my head at a given time. So offloading certain information for later use frees up my head to focus on executing tasks relating to the listed information. After some time, these became spreadsheets. And now, it's a sizable amount of Airtables."
+description: "I like lists. I make them all the time to help me keep track of just about anything I need to know. After some time, these became spreadsheets. And now, it's a sizable amount of Airtables."
 date: 2019-09-08
 tags:
   - bookmarking

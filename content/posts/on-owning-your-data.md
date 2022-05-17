@@ -1,6 +1,6 @@
 ---
 title: On Owning Your Data
-description: "Most companies won't lose your data this recklessly. That data is often their source of revenue and they'll do anything to protect it and reassure you that it is best placed in their hands. And therein lies the other problem; if your data isn't at risk of being lost, it's being utilized to violate your privacy. And while going off-the-grid might not be an option, there are other ways to safeguard the content you put out online."
+description: "When your data is the source of revenue, whoever has it will do anything to protect it and reassure you that it is best placed in their hands. But when it isn't at risk of being lost, it's being utilized to violate your privacy."
 date: 2022-03-02
 tags:
   - indieweb

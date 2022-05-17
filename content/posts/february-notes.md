@@ -1,13 +1,13 @@
 ---
 title: February Notes
-description: "It's been quite the month. So much craziness happened in such a short amount of time. My family and I have luckily been safe from most of it. And I've occupied myself with my work to the point that I hardly did anything else but code this month. But, I still managed to squeeze in some interesting stuff during what little spare time I had that I wanted to share with y'all."
+description: "So much happened in such a short amount of time. I've occupied myself with work to the point that I hardly did anything else but code this month. But, I still managed to squeeze in some interesting stuff."
 date: 2020-02-29
 tags:
   - monthly-notes
 draft: false
 ---
 
-It's been quite the month. So much craziness happened in such a short amount of time. My family and I have luckily been safe from most of it. And I've occupied myself with my work to the point that I hardly did anything else but code this month. But, I still managed to squeeze in some interesting stuff during what little spare time I had that I wanted to share with y'all.
+It's been quite a month. So much craziness happened in such a short amount of time. My family and I have luckily been safe from most of it. And I've occupied myself with work to the point that I hardly did anything else but code this month. But, I still managed to squeeze in some interesting stuff during what little spare time I had that I wanted to share with y'all.
 
 ## Coding
 I've been working on this new project for a client. Unfortunately, I can't share what it is just yet. But I can, however, talk a bit about the stack we're using. For the majority of my work, I develop in React/Gatsby. It's not so much a personal choice, but rather where the industry is at this moment. So whenever I get the chance to work with something different, I try to make the most of it and learn everything I can.

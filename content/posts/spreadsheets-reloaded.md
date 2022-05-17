@@ -1,7 +1,7 @@
 ---
 title: Spreadsheets Reloaded
 seo_title: 'Building a Custom Bookmarking Solution - Part 2'
-description: "My love for lists has taken me to new extremes I never thought of before. And I love it. In this second installment of Spreadsheets, I want to detail my attempt at making a database for all my lists. I don't recommend this approach; there are plenty of more user-friendly solutions to this problem. But that's no fun. So let's over-engineer the hell out of this."
+description: "In this second installment of Spreadsheets, I want to detail my attempt at making a database for all my lists. I don't recommend this approach; there are plenty of more user-friendly solutions to this problem. But that's no fun."
 date: 2019-11-20
 tags:
   - bookmarking
