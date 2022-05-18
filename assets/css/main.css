@@ -331,11 +331,13 @@ div.img-wrap.shelf-img img {
   max-height: 15.625rem;
 }
 
-div.highlight {
+div.highlight,
+div.mermaid {
   margin: 0 0 0.75rem;
 }
 
-div.highlight pre {
+div.highlight pre,
+div.mermaid {
   overflow-x: auto;
   padding: 0.75rem;
 }
