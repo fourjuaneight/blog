@@ -22,9 +22,9 @@ Now, don't get me wrong; I loved having a custom database + API that I could tai
 That said, I think my mistake was focusing on the wrong area. Rather than rolling a custom database, I should've made an API for data entry, instead of relying on a small army of Shortcuts. So that's what I did.
 
 ## The Bookmarker
-The primary (if not only) purpose of this whole thing is to save data. This comes from multiple sources, which means we have to pull and parse data from different websites. Some of these have public APIs I can leverage to extra the metadata I need. But for things like articles, I essentially read the HTML and pull what I need via a handful of regular expressions. It sounds a little daunting, but if you squint enough, you'll see that the web is made up of standards. So pulling a title and author from an article should be the same across the board. Right?
+The primary (if not only) purpose of this whole thing is to save data. This comes from multiple sources, which means we have to pull and parse data from different websites. Some of these have public APIs I can leverage to extract the metadata I need. But for things like articles, I essentially read the HTML and pull what I need via a handful of regular expressions. It sounds a little daunting, but really it's just a matter of knowing what you're looking for. If you squint enough, you'll see that the web is made up of standards. So pulling a title and author from an article should be the same across the board. Right?
 
-Like I mentioned before, this was originally all done via Shortcuts. But that quickly because cumbersome. So the next best thing was to grab the url for the bookmark and send it to an API where the relevant data could be extracted. For reference, these are the columns on these tables:
+Like I mentioned before, this was originally all done via Shortcuts. But that quickly became cumbersome. So the next best thing was to grab the url for the bookmark and send it to an API where the relevant data could be extracted. For reference, these are the columns on these tables:
 
 ```ts
 interface BookmarkData {
@@ -35,16 +35,66 @@ interface BookmarkData {
 }
 ```
 
-Some of these changes are based on the category, like tweets and Reddit posts. But for the majority, that's the data model. Aside from the `url`, `tags` is the other column that remains constant throughout them all. And it's the only one I choose the value for before sending it over. 
+Some of these column names change are based on the category, like tweets and Reddit posts. But for the majority, that's the data model. `url` and `tags` remain constant throughout them all. These two are the only thing I send to the API. Everything else is automatically extracted in the server for me.
 
-Once the data arrives, the API figures out what the type of data is and if it needs to hit anything external APIs. It then gives the payload the shape according to the Airtable base and sends it over for saving. All of this takes place on a Cloudflare Worker. It's available on-demand and is compiled to plain JavaScript from Typescript. You can take a look at the code over at my [bookmarker repo](https://github.com/fourjuaneight/bookmarker).
+Once the data arrives, the API figures out what the category is and if it needs to hit anything external APIs. It then gives the payload the shape according to the Airtable base and sends it over for saving. All of this takes place on a Cloudflare Worker. It's available on-demand and is compiled to plain JavaScript from Typescript. You can take a look at the code over at my [bookmarker repo](https://github.com/fourjuaneight/bookmarker).
+
+But to get a better idea, this is what the setup looks like:
+
+```mermaid
+stateDiagram-v2
+    state "Media" as s0
+    state "Add Bookmarks Shortcut" as s1
+    state "Select a Tag" as s2
+    state "Grab URL and Remove Any Trackers" as s3
+    state "Determine Category" as s4
+    state "Bookmarker API" as s5
+    state "Hit External APIs" as s6
+    state "Format Data" as s7
+    state "Save to Airtable" as s8
+
+    s0 --> s1
+    state s1 {
+        [*] --> s2
+        s2 --> s3
+        s3 --> s4
+    }
+    s1 --> s5
+    state s5 {
+        [*] --> s6
+        s6 --> s7
+    }
+    s5 --> s8
+```
+
+All this is pretty standard stuff. I essentially just shifted the load from my phone to a server. The biggest feature here is archiving.
 
 ## The Archiver
-All this is pretty standard stuff. I shifted the formatting load from my phone to a server. The biggest feature here is archiving. I have a _not so irrational_ fear of losing my data. Not only that but saving a piece of content as a bookmark just to discover that the creator has taken it down or worse, that the platform where it was hosted removed it themselves, is always awful.
+I have a _not so irrational_ fear of losing my data. Not only that, but bookmarking a piece of content just to discover that the creator has taken it down, or worse, that the platform where it was hosted removed it themselves, is just awful.
 
-This is commonly known as [link rot](https://en.m.wikipedia.org/wiki/Link_rot) or platforms being assholes. So I've invested a lot of time and effort to ensure all my data is backed up in several different places. In the case of my bookmarks, I keep a copy of the media type on a B2 bucket. That is a download copy of the article, podcast, video, etc. I wrote an archiving script that runs on a scheduled CI called [archiver](https://github.com/fourjuaneight/archiver). Aside from bookmarks, it also keeps a versioned JSON file for every Airtable base.
+This is commonly known as [link rot](https://en.m.wikipedia.org/wiki/Link_rot) or platforms being assholes. So circumvent that, I've invested a lot of time and effort to ensure all my data is backed up in several different places. In the case of my bookmarks, I keep a copy of the media type on a B2 bucket. That is a downloaded copy of the article, podcast, video, etc. I wrote an archiving script that runs on a scheduled CI called [archiver](https://github.com/fourjuaneight/archiver). Aside from archiving bookmarks, it also keeps a JSON file copy of every Airtable base. Here's a cool diagram for this setup:
 
-And although it might seem overkill, testing this script I found over a dozen bookmarks were dead links already. And new ones have popped up since.
+```mermaid
+stateDiagram-v2
+    state "Archiving Script" as s0
+    state "Get Airtable Data" as s1
+    state "Filter Bookmarks with Existing Archives" as s2
+    state "Determine Media Type" as s3
+    state "Download Content as Buffer" as s4
+    state "Upload to B2 and Get File Link" as s5
+    state "Update Airtable with Archive Link" as s6
+
+    state s0 {
+      [*] --> s1
+      s1 --> s2
+      s2 --> s3
+      s3 --> s4
+      s4 --> s5
+      s5 --> s6
+    }
+```
+
+And although it might seem overkill, while testing this script I found over a dozen bookmarks were dead links already. And new ones have popped up since. So it's alrady paying off.
 
 ## Is It Worth The Trouble?
 Yes. I'd like to re-quote [Reconcilable Differences 112](https://www.relay.fm/rd/112):
