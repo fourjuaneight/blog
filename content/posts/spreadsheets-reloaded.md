@@ -9,7 +9,7 @@ tags:
 draft: false
 ---
 
-My love for lists has taken me to new extremes I never thought of before. And I love it. In this second installment of "Spreadsheets," I want to detail my attempt at making a database for all my lists. I don't recommend this approach; there are plenty of more user-friendly solutions to this "problem". But that's no fun. So let's over-engineer the hell out of this.
+My love for lists has taken me to new extremes I never thought of before. And I love it. In this second installment of "Spreadsheets", I want to detail my attempt at making a database for all my lists. I don't recommend this approach; there are plenty of more user-friendly solutions to this "problem". But that's no fun. So let's over-engineer the hell out of this.
 
 To get a little more context on what's going on, go read [Part 1](/posts/spreadsheets/).
 
@@ -40,7 +40,7 @@ GraphQL APIs will work like any other XHR request. We POST our query or mutation
 ## Adding New Data
 With everything in Hasura, I could start adding new data. Most of my media consumption is via my iPhone. I also always have my phone at hand, so this is my main source of data input. That can easily be done via Shortcuts.
 
-Data is coming from apps and websites. But all of the apps I use have their website counterparts. This means the parameters for new data entry can be extracted from the source code. Assuming most websites are consistent in their HTML, I can simply maintain various regex corresponding to each parameter. And that's exactly what I did. You can find my code in [the public repo I keep for this whole ordeal](https://github.com/fourjuaneight/data/blob/master/params/parsing.json).
+Data is coming from apps and websites. But all of the apps I use have their website counterparts. This means the parameters for new data entry can be extracted from the source code. Assuming most websites are consistent in their HTML, I can simply maintain various regex corresponding to each parameter. And that's exactly what I did.
 
 ```json
 {
@@ -105,6 +105,23 @@ And correctly formatted for Shortcuts it would look like this:
 So far, the source code for every site has been consistent enough for me to correctly parse with my regex. I've saved several items with no issues. And because I'm using an appearance: file for the parsing code, I can easily add another source and the shortcut would just read the latest version. Having it on GitHub also means I can use it anywhere else I might want to create similar apps for saving bookmarks.
 
 I try to keep my Shortcuts modular; everything is a component. The shortcut for adding Bookmarks, for example, is 4 different smaller ones assembled. So sharing them would be a nightmare. Also, this setup is very specific to my use case. However, if anyone is adamant about getting your hands on any of this, hit me up on Twitter and I'll see what I can do.
+
+After everything is put together, this what we're looking at:
+```mermaid
+stateDiagram-v2
+    state "Media" as s0
+    state "Add Bookmarks Shortcut" as s1
+    state "Match Category" as s2
+    state "Get Page Data via Regex" as s3
+    state "Save to Hasura" as s4
+
+    s0 --> s1
+    state s1 {
+        [*] --> s2
+        s2 --> s3
+    }
+    s1 --> s4
+```
 
 ## Going Further
 I'm quite happy with the API setup. And the shortcuts will get some optimizations here and there, just to reduce the amount of input needed from me; ideally, I'd like to hit the shortcut from the share sheet and hate it do everything with my intervention.
