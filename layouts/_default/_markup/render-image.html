@@ -1,20 +1,28 @@
 {{ $svg := .Destination | findRE "svg" }}
 {{ $gif := .Destination | findRE "gif" }}
-{{ $type := .Destination | replaceRE "(.*).(png|jpg|jpeg)" "$2" }}
-{{ $imgMain := .Destination | replaceRE "(.*).(png|jpg|jpeg)" "$1" }}
+{{ $type := .Destination | replaceRE "(.*).(png|jpg|jpeg|svg|gif)" "$2" }}
+{{ $imgMain := .Destination | replaceRE "(.*).(png|jpg|jpeg|svg|gif)" "$1" }}
 
 {{ $avif := print $imgMain ".avif" }}
 {{ $webp := print $imgMain ".webp" }}
 {{ $img := print $imgMain "." $type }}
 
+{{ $isDiagram := cond (ne (.PlainText | findRE "diagram") nil) true false }}
+
 {{ if or (eq (index $svg 0) "svg") (eq (index $gif 0) "gif") }}
   {{ $simple := resources.Get (print "/img/" $img) }}
-  <img
-    src="{{ $simple.Permalink }}"
-    alt="{{ .PlainText }}"
-    class="mb-2 w-full"
-    loading="lazy"
-  />
+  <div
+    class="img-wrap flex items-center justify-center my-4 w-full"
+    data-diagram="{{ $isDiagram }}"
+  >
+    <img
+      src="{{ $simple.Permalink }}"
+      alt="{{ .PlainText }}"
+      class="mb-2 w-full"
+      aria-hidden="true"
+      loading="lazy"
+    />
+  </div>
 {{ else }}
   <picture class="img-wrap flex items-center justify-center my-4 w-full">
     {{ $avifPrimary := resources.Get (print "/img/" $avif) }}

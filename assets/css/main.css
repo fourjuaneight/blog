@@ -331,6 +331,11 @@ div.img-wrap.shelf-img img {
   max-height: 15.625rem;
 }
 
+div.img-wrap[data-diagram='true'] img {
+  max-width: 25rem;
+  margin: auto;
+}
+
 div.highlight,
 div.mermaid {
   margin: 0 0 0.75rem;
