@@ -98,7 +98,7 @@ export const queryHasuraBookmarks = async (env: ContextValue) => {
 export const queryHasuraShelf = async (env: ContextValue) => {
   const query = `
     {
-      Anime: media_shelf(order_by: {name: asc}, where: {category: {_eq: "Anime"}}) {
+      anime: media_shelf(order_by: {name: asc}, where: {category: {_eq: "anime"}}) {
         category
         comments
         completed
@@ -109,7 +109,7 @@ export const queryHasuraShelf = async (env: ContextValue) => {
         name
         rating
       }
-      Books: media_shelf(order_by: {name: asc}, where: {category: {_eq: "Books"}}) {
+      books: media_shelf(order_by: {name: asc}, where: {category: {_eq: "books"}}) {
         category
         comments
         completed
@@ -120,7 +120,7 @@ export const queryHasuraShelf = async (env: ContextValue) => {
         name
         rating
       }
-      Comics: media_shelf(order_by: {name: asc}, where: {category: {_eq: "Comics"}}) {
+      comics: media_shelf(order_by: {name: asc}, where: {category: {_eq: "comics"}}) {
         category
         comments
         completed
@@ -131,7 +131,7 @@ export const queryHasuraShelf = async (env: ContextValue) => {
         name
         rating
       }
-      Games: media_shelf(order_by: {name: asc}, where: {category: {_eq: "Games"}}) {
+      games: media_shelf(order_by: {name: asc}, where: {category: {_eq: "games"}}) {
         category
         comments
         completed
@@ -142,7 +142,7 @@ export const queryHasuraShelf = async (env: ContextValue) => {
         name
         rating
       }
-      Manga: media_shelf(order_by: {name: asc}, where: {category: {_eq: "Manga"}}) {
+      manga: media_shelf(order_by: {name: asc}, where: {category: {_eq: "manga"}}) {
         category
         comments
         completed
@@ -153,7 +153,7 @@ export const queryHasuraShelf = async (env: ContextValue) => {
         name
         rating
       }
-      Movies: media_shelf(order_by: {name: asc}, where: {category: {_eq: "Movies"}}) {
+      movies: media_shelf(order_by: {name: asc}, where: {category: {_eq: "movies"}}) {
         category
         comments
         completed
@@ -164,7 +164,7 @@ export const queryHasuraShelf = async (env: ContextValue) => {
         name
         rating
       }
-      Shows: media_shelf(order_by: {name: asc}, where: {category: {_eq: "Shows"}}) {
+      shows: media_shelf(order_by: {name: asc}, where: {category: {_eq: "shows"}}) {
         category
         comments
         completed

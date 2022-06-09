@@ -97,13 +97,13 @@ export interface HasuraBKQueryResp {
 
 export interface HasuraShelfQueryResp {
   data: {
-    Anime: ShelfItem[];
-    Books: ShelfItem[];
-    Comics: ShelfItem[];
-    Games: ShelfItem[];
-    Manga: ShelfItem[];
-    Movies: ShelfItem[];
-    Shows: ShelfItem[];
+    anime: ShelfItem[];
+    books: ShelfItem[];
+    comics: ShelfItem[];
+    games: ShelfItem[];
+    manga: ShelfItem[];
+    movies: ShelfItem[];
+    shows: ShelfItem[];
     [key: string]: ShelfItem[];
   };
 }
