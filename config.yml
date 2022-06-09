@@ -6,11 +6,12 @@ languageCode: en-us
 enableRobotsTXT: true
 publishdir: dist
 metaDataFormat: yaml
-disableKinds: ['taxonomyTerm']
+disableKinds: ["taxonomyTerm"]
 footnoteReturnLinkContents: ↩
 summarylength: 40
 enableEmoji: true
 canonifyURLs: true
+ignoreErrors: ["error-remote-getjson"]
 
 markup:
   highlight:
@@ -20,16 +21,16 @@ markup:
     tabWidth: 2
 
 taxonomies:
-  tags: 'tags'
+  tags: "tags"
 
 permalinks:
-  section: '/:filename/'
-  posts: '/posts/:filename/'
-  tags: '/tags/:slug/'
+  section: "/:filename/"
+  posts: "/posts/:filename/"
+  tags: "/tags/:slug/"
 
 outputs:
-  home: ['html']
-  section: ['html', 'rss']
+  home: ["html"]
+  section: ["html", "rss"]
 
 sitemap:
   changefreq: monthly
@@ -41,4 +42,4 @@ params:
     description: I like websites. Occasionally, I make them.
     author: Juan Villela
     social: fourjuaneight
-    theme: '#9580ff'
+    theme: "#9580ff"
