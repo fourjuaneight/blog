@@ -32,16 +32,15 @@ const fmtImage = async (name: string, url: string): Promise<void> => {
 
     console.info(chalk.green('[SHELF-IMG]'), `${name} asset created`);
   } catch (err) {
-    throw new Error(
-      `${chalk.blue('(fmtImage)')} ${JSON.stringify(
-        {
-          name,
-          err,
-        },
-        undefined,
-        2
-      )}`
-    );
+    throw `${JSON.stringify(
+      {
+        method: 'fmtImage',
+        name,
+        err,
+      },
+      undefined,
+      2
+    )}`;
   }
 };
 

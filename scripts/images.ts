@@ -82,16 +82,15 @@ const fmtPlaceholder = async (src: string): Promise<void> => {
 
     console.info(chalk.green('[IMG]'), `${name} placeholder created`);
   } catch (err) {
-    throw new Error(
-      `${chalk.blue('(fmtPlaceholder)')} ${JSON.stringify(
-        {
-          name,
-          err,
-        },
-        undefined,
-        2
-      )}`
-    );
+    throw `${JSON.stringify(
+      {
+        method: 'fmtPlaceholder',
+        name,
+        err,
+      },
+      undefined,
+      2
+    )}`;
   }
 };
 
@@ -132,6 +131,7 @@ const fmtImage = async (src: string): Promise<void> => {
   } catch (err) {
     throw `${JSON.stringify(
       {
+        method: 'fmtImage',
         name,
         err,
       },
@@ -172,6 +172,7 @@ const fmtIcon = async (name: string, size: number): Promise<void> => {
   } catch (err) {
     throw `${JSON.stringify(
       {
+        method: 'fmtIcon',
         name,
         err,
       },

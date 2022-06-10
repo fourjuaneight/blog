@@ -98,7 +98,7 @@ const createSocialImage = async (file: string): Promise<void> => {
       `${fileName}.svg base social image created`
     );
   } catch (error) {
-    throw new Error(`${chalk.blue('(createSocialImage)')} ${error}`);
+    throw `(createSocialImage):\n${error}`;
   }
 };
 

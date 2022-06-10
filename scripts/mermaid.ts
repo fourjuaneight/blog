@@ -21,14 +21,14 @@ export const mmdc = async (input: string, output: string): Promise<void> => {
     );
 
     if (stderr) {
-      throw new Error(`Saving buffer as file: \n ${stderr}`);
+      throw `(mmdc):\n${stderr}`;
     }
 
     if (stdout) {
       console.info(stdout);
     }
   } catch (error) {
-    throw new Error(`Saving buffer as file: \n ${error}`);
+    throw `(mmdc):\n${error}`;
   }
 };
 
