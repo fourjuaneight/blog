@@ -82,16 +82,14 @@ export const queryHasuraBookmarks = async (env: ContextValue) => {
     if (response.errors) {
       const { errors } = response as HasuraErrors;
 
-      throw new Error(
-        `(queryHasuraBookmarks): \n ${errors
-          .map(err => `${err.extensions.path}: ${err.message}`)
-          .join('\n')} \n ${query}`
-      );
+      throw `(queryHasuraBookmarks):\n${errors
+        .map(err => `${err.extensions.path}: ${err.message}`)
+        .join('\n')} \n ${query}`;
     }
 
     return (response as HasuraBKQueryResp).data;
   } catch (error) {
-    throw new Error(`(queryHasuraBookmarks): \n ${error}`);
+    throw `(queryHasuraBookmarks):\n${error}`;
   }
 };
 
@@ -192,16 +190,14 @@ export const queryHasuraShelf = async (env: ContextValue) => {
     if (response.errors) {
       const { errors } = response as HasuraErrors;
 
-      throw new Error(
-        `(queryHasuraShelf): \n ${errors
-          .map(err => `${err.extensions.path}: ${err.message}`)
-          .join('\n')} \n ${query}`
-      );
+      throw `(queryHasuraShelf):\n${errors
+        .map(err => `${err.extensions.path}: ${err.message}`)
+        .join('\n')} \n ${query}`;
     }
 
     return (response as HasuraShelfQueryResp).data;
   } catch (error) {
-    throw new Error(`(queryHasuraShelf): \n ${error}`);
+    throw `(queryHasuraShelf):\n${error}`;
   }
 };
 
@@ -230,11 +226,9 @@ export const queryHasuraTweets = async (env: ContextValue) => {
     if (response.errors) {
       const { errors } = response as HasuraErrors;
 
-      throw new Error(
-        `(queryHasuraTweets): \n ${errors
-          .map(err => `${err.extensions.path}: ${err.message}`)
-          .join('\n')} \n ${query}`
-      );
+      throw `(queryHasuraTweets):\n${errors
+        .map(err => `${err.extensions.path}: ${err.message}`)
+        .join('\n')}\n${query}`;
     }
 
     const tweets = (response as HasuraTWQueryResp).data.media_tweets;
@@ -245,6 +239,6 @@ export const queryHasuraTweets = async (env: ContextValue) => {
 
     return tweetsWithId;
   } catch (error) {
-    throw new Error(`(queryHasuraTweets): \n ${error}`);
+    throw `(queryHasuraTweets):\n${error}`;
   }
 };
