@@ -80,7 +80,7 @@ const fmtPlaceholder = async (src: string): Promise<void> => {
 
     await Promise.all(promises);
 
-    console.info(chalk.green('[IMG]'), `${name} placeholder created`);
+    console.info(chalk.green('[IMAGES]'), `${name} placeholder created`);
   } catch (err) {
     throw `${JSON.stringify(
       {
@@ -127,7 +127,7 @@ const fmtImage = async (src: string): Promise<void> => {
   try {
     await Promise.all(promises);
 
-    console.info(chalk.green('[IMG]'), `${name} asset created`);
+    console.info(chalk.green('[IMAGES]'), `${name} asset created`);
   } catch (err) {
     throw `${JSON.stringify(
       {
@@ -168,7 +168,7 @@ const fmtIcon = async (name: string, size: number): Promise<void> => {
       })
       .toFile(output);
 
-    console.info(chalk.green('[IMG]'), `${name}-${size}x${size} created`);
+    console.info(chalk.green('[IMAGES]'), `${name}-${size}x${size} created`);
   } catch (err) {
     throw `${JSON.stringify(
       {

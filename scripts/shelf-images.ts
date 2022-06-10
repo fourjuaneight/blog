@@ -58,6 +58,7 @@ const fmtImage = async (name: string, url: string): Promise<void> => {
     const ops = flatData.map(asset => fmtImage(asset.id, asset.cover));
 
     await Promise.all(ops);
+
     process.exit(0);
   } catch (error) {
     console.error(chalk.red('[ERROR]'), error);

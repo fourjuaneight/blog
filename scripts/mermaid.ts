@@ -25,7 +25,7 @@ export const mmdc = async (input: string, output: string): Promise<void> => {
     }
 
     if (stdout) {
-      console.info(stdout);
+      console.info(chalk.green('[MERMAID]'), stdout);
     }
   } catch (error) {
     throw `(mmdc):\n${error}`;
