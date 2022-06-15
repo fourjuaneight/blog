@@ -1,0 +1,520 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [1.0.1] - 2022-06-15
+
+### Bug Fixes
+
+- Add specific branch to commit step.
+
+## [1.0.0] - 2022-06-15
+
+### Bug Fixes
+
+- Set correct Safari pin tab icon color.
+- Update ESLint to parse Vue and TS files.
+- Add data source arg to image pipeline.
+- Minor Tailwind config updates.
+- Remove redundant nested sections from footer.
+- Increase font sizing for better legibility.
+- Increase footer nav dividers sizing.
+- Better footnotes link styling.
+- Update link hover state to be more lebible.
+- Better article title sizing.
+- Syntax and spelling.
+- Extend additional breakpoints instead of overriding existing ones.
+- Align main content to the top on pages with less content.
+- Update all headings to consistent tags and sizing.
+- Improve link highligting consistency.
+- Minor heading link highlight optmizations.
+- General layout optimizations.
+- Apply margin around all hr tags.
+- Contain images when resizing on pipeline.
+- Remove html formatting on commit.
+- Update html formatting to prevent syntax errors.
+- Update base url to prevent footnotes linking to homepage.
+- Sort homepage feed from newest to oldest.
+- General styling fixes and optimizations.
+- Remove space around external links.
+- Update SW output filename.
+- Remove padding from footer lists.
+- Remove header nav list padding to prevent layout breaking.
+- Further nav layout fixes.
+- Add missing permalink to all site icons.
+- Add correct RSS link.
+- Add correct header link weight.
+- Apply correct header title font weight.
+- Apply global heading font sizing.
+- Correct mismatch font weight on loading script.
+- Remove default list sizing from meta section.
+- Update tag links to maintain color after visited.
+- Revert to custom favicon.
+- Add bottom spacing on meta section.
+- Remove auto list type from ul and ol.
+- Minor syntax corrections and optimizations.
+- Run link markup transform as markdown.
+- Add missing base size to background noise.
+- Update hero image with smoother blur.
+- Update hero image (correctly) with improved blur.
+- Update manifest with correct icon filenames.
+- Update worker filepath to absolute uri.
+- Add intro image aspect ratio attributes.
+- Minor styling and layout optimizations.
+- Update site url.
+- Multi tag layout.
+- Commit changes on Shelf data file creation.
+- Change fingerprinting to sha256 for better compatibility.
+- Remove overkill integrity attribute.
+- Remove min height on shelf images.
+- Minor spelling corrections.
+- Update image to prevent overflow.
+- Move unfinished Shelf media indicator to the left.
+- Rename Airtable type.
+- Add missing slash on import path.
+- Center shelf page footer image.
+- Minor SW formatting adjustments.
+- Add missing slash on social image url.
+- Embed data uri font to social image.
+- Move social image background avatar forward.
+- Further social images optimizations.
+- Reduce CF wait to 3mins.
+- Add data uri font to social img svg.
+- Remove duplicate markdown render.
+- Render social images because that's how this whole thing works...
+- Add img sizing to svgs.
+- Remove base social image deletion.
+- Add missing base social images.
+- Render MD link text correctly.
+- Add missing syntax key.
+- Add missing script to workers cleanup.
+- Add missing env context and improve typings.
+- Update bookmarks worker to use page function to request data.
+- Move worker scripts to the base of the site.
+- Remove explicit key when saving data to store.
+- Sort bookmarks data by title first, then creator.
+- Sort Airtable data on request.
+- Update constant name.
+- Remove max data returned param.
+- Remove sorting on request.
+- Passing params when looping with offset.
+- Minor layout and styling fixes.
+- Sort bookmarks on response.
+- Add fingerprint to bookmarks worker.
+- Add missing worker fingerprint.
+- Move bookmarks sorting to worker on retrieval.
+- Revert to native lazy loading for better coverage.
+- Add esnext to node lib.
+- Add missing type.
+- Add screen reader only style.
+- Change bookmarks to ssr for better performance.
+- Remove deprecate script from cleanup.
+- Use RFC-822 date format on RSS.
+- Change bookmarks category case to lower.
+- Minor syntax corrections.
+- Add conditional block in case data is missing.
+- [**breaking**] Omit api data query to allow for worker builds.
+- [**breaking**] Restore api data rendered ui.
+- Remove deprecated variables.
+- [**breaking**] Attempting to figure out what is wrong with this ting.
+- Add missing data.
+- Add missing comma.
+- Load tweets bookmarks user data.
+- Load bookmarks tags without delimiting.
+- Add missing letter on template name.
+- Optimize post descriptions.
+- Add missing subdirectory to diagrams script ref.
+- Ignore remote data errors to allow building.
+
+### Features
+
+- Add main module with HMR.
+- Add index.html.
+- Add favicon pipeline.
+- Add favicons and safari-pinned-tab icon.
+- Add image pipeline expanded options
+- Add image pipeline for logo.
+- Add logo image variants.
+- Add color to image pipeline script.
+- Add hero images to image pipeline.
+- Add about images to image pipelines.
+- Add hero image variants.
+- Add about image variants.
+- Add color scheme.
+- Add reset stylesheet.
+- Add font files and related EULAs.
+- Add optimized font loading.
+- Add main styling.
+- Remove Snowpack and add Vite config.
+- Add main App component.
+- Add avatar asset image.
+- Add new image to sript and do minor syntax cleanup.
+- Add optimized avatar files.
+- Update hero image with avatar file and increase both their output resolutions.
+- Add routing.
+- Add footer template.
+- Add PostCSS config.
+- Add Tailwind config.
+- Add site footer and update layout.
+- Add main site areas responsive grid layout.
+- Componentize footer navigation for re-useability.
+- Add dark variant of background.
+- Reduce vertical spacing on responsive grid layout.
+- Add primary color to pallete.
+- Add header.
+- Replace Parkly font with Captain Edward.
+- Replace Nunito font with Ships Whistle.
+- Add homepage template.
+- Add header bottom border.
+- Import blog posts.
+- Add template files.
+- Add Docker config.
+- Replace Capitan Edward font with MD Nichrome.
+- Move nav links to data file.
+- Move content to /posts/ directory.
+- Add posts RSS template.
+- Add metadata partial.
+- Add feed default templates.
+- Add default single page template.
+- Add default tags taxonomy template.
+- Add 404 page.
+- Add posts feed to homepage.
+- Add About page.
+- Add Uses page.
+- Add social links to footer nav.
+- Add main content grid layout.
+- Add syntax highlighting.
+- Add article layout and styling.
+- Add audio gear to Uses page and fix minor syntax errors.
+- Add posts archive list template.
+- Add ligther (dark) heading font.
+- Add support for external links.
+- Add custom code font.
+- 404 page styling and layout.
+- Add responsive image partial and render hook.
+- Add hero and footer images to single template.
+- Add about me page footer image.
+- Add uses page footer image.
+- Add footer intro and image to homepage.
+- Add longer footer intro.
+- Add full name and main site link to About page.
+- Add intro footer to all list pages.
+- Add SW for offline support.
+- Add Nunito font as primary body type.
+- Add native image lazy loading.
+- Update footer intro.
+- Add emoji favicon.
+- Add Schema.org support for articles.
+- Add Tools page.
+- Add syntax highlight to list inlined code.
+- Add keyboard image to Tools page.
+- Add custom Codespace config.
+- Add web worker with background noise.
+- Add background noise layout.
+- Add new post.
+- Update Codespace image.
+- Update start script with color coding.
+- Add text shadow to post title.
+- New post.
+- Add Airtable Shelf data retrieval.
+- Add GH action to update shelf data daily.
+- Add shelf data file.
+- Add new cli Tools entry.
+- Group Shelf data by category.
+- Sort shelf data alphabetically.
+- Add Shelf page.
+- Add Shelf page content and UI.
+- Add archive link on homepage.
+- Add fignerprinting to assets.
+- Fingerprint web worker script.
+- Add custom image lazy loading and placeholder image.
+- New hero image.
+- Add hero image to Shelf page.
+- Add footer hero image content to Shelf page.
+- Add new Spreadsheets post.
+- Add optional SEO friendly post titles.
+- Add bookmarks data saving script.
+- Update action and add bookmarks script.
+- Add cat illustration.
+- Add custom illustration to posts archive page.
+- Add bookmarks list template.
+- Add smaller image sizing option to partial.
+- Update hero images.
+- Update favicons and incorporate to image pipeline.
+- Add post social share image generator script.
+- Add posts socila share cards.
+- Save share card images as progressive jpegs.
+- Add regular pages social images.
+- Add main social image.
+- Add social image to SEO tags.
+- Add base social img html page.
+- Add headless chrome based og image generation.
+- Add og image creation script to GH Action on push.
+- Improve OG tags.
+- New post.
+- Create and delete social images on Action, not build.
+- Update favicon and logo images.
+- Update icons pipeline to use favicon image.
+- Add site logo to README.
+- Update shelf page placeholder image.
+- Add bookmark pages links to parent page.
+- Add initial bookmark pages.
+- Add IDs to bookmarks and shelf data files scripts.
+- Update all workers to TS.
+- Use esbuild for browser scripts.
+- Add bookmarks fetching and storing web worker.
+- Add bookmarks function for Airtable data fetching.
+- Update data fetch method to use page function.
+- Add new color variant.
+- Add bookmarks template layout and styling.
+- Add data sorting to bookmarks function.
+- Add shelf data function.
+- Use page function to request shelf data.
+- Retry sorting on request.
+- Add bookmarks dom generation and db upgrades to worker.
+- Add bookmarks loader.
+- Add bookmarks nav linka and reorganize.
+- Add sorting on response.
+- Add bookmarks data file creation on build and CI.
+- Add tweets fetching function.
+- Add tweet id to response.
+- Remove shelf script in favor of Hugo remote data templating.
+- Update about page.
+- Add new post.
+- Move bookmark links to data file.
+- Add bookmark page links above tables.
+- Add ellipsis overflow to bookmark cells.
+- Add img lazy loading site wide.
+- Generate and add placeholder images when lazy loading.
+- Placeholder image pipeline optimizations.
+- Add srcset placeholders.
+- Add progressive encoding to pngs.
+- Minor reader mode optimizations.
+- Add new betlawoda image to shelf page.
+- Add shelf images local generation script.
+- Update shelf page with local images.
+- Add dead link check for bookmarks.
+- Meta content updates.
+- Add transparent color variants.
+- Add dead link indicators on bookmarks.
+- Sort bookmarks by title at compile time.
+- Add Hasura query methods.
+- [**breaking**] Update worker endpoints with Hasura queries.
+- Save primary shelf images as jpeg for better compatibility.
+- Add post specific meta descriptions.
+- Add mermaid diagrams support.
+- Add responsive layout and styling to diagrams.
+- Add diagram to Spreadsheets Reloaded post.
+- Add diagram to Spreadsheets Revolutions post.
+- Add SSR Mermaid diagrams.
+- Add auth0 icon.
+
+### Miscellaneous Tasks
+
+- Setup configs.
+- Add TS typinigs.
+- Add meta files.
+- Rename favicon script to images.
+- Update image script main function for reusability.
+- Change logo size on image pipeline to 250w.
+- Add reusable stylings.
+- Move stylesheets to src/styles directory.
+- Minor color scheme updates.
+- Color scheme optimizations.
+- Minor reset updates.
+- Rename primary stylesheet to critical.
+- Load reset stylesheet.
+- Add headings font-family.
+- Remove Snowpack and add Vite dependencies.
+- Update ignore files with new Vite config.
+- Move typing files to src and update tsconfig.
+- Move index to root and update main to TS.
+- Remove image script from linter.
+- Optimize ts-node config.
+- Add updated hero and avatar images.
+- Minor linting updates.
+- Remove margin from Nav when slim.
+- Update footer and nav layout to use responsive grid.
+- Make primary color more accessible.
+- Remove duplicate code.
+- Remove Uses link from nav.
+- Remove deprecated font files.
+- Minor syntax optimizations.
+- Rename posts directory.
+- Update assets directory.
+- Update content directory.
+- Remove deprecated configs.
+- Update dependencies..
+- Update configs.
+- Minor syntax cleanup.
+- Update Node to v16.6.2.
+- Remove deprecated index.
+- Add content and formatting config options.
+- Remove redundant frontmatter.
+- Update site name.
+- Reduce footer copyright font sizing.
+- Remove redundant translation code.
+- Minor links adjustments.
+- Minor color pallete optimizations.
+- Remove inactive build steps.
+- Add production URL.
+- Minor stylesheets optimizations.
+- Load SW only on production.
+- Update manifest with new color scheme and site name.
+- Add email to author on package.json.
+- Move Uses page link to Header and replace Lists with Tools.
+- Update hero image.
+- Add Hugo build lockfile.
+- Optimize images.
+- Move web worker to body.
+- Optimize images.
+- Update meta pages.
+- Update Hugo version.
+- Add Plausible analytics script.
+- Remove subdomain from baseURL.
+- Update meta color to a more accessible variant.
+- Add CORS header.
+- Update dependencies.
+- Update images.
+- Minor content syntax fixes and updates.
+- Add colophon and update license date range.
+- Update Shelf data.
+- Add shelf script to build and start scripts.
+- Add responsive grid columns.
+- Add Shelf to navigation.
+- Update Shelf data file.
+- Minor styling fixes.
+- Minor syntax updates.
+- Update shelf data.
+- Change assets fingerprinting to md5.
+- Remove outline from summary tag.
+- Change shelf data keys to lowercase.
+- Optimize images images.
+- Update Shelf data file.
+- Minor syntax updates.
+- Add SEO friendly title to latest post.
+- Add Bookmarks page initial content.
+- Update Shelf data file.
+- Move scripts types to separate file.
+- Better scripts error handling.
+- Further improved error handling.
+- Add bookmarks data files.
+- Minor syntax fixes.
+- Optimize images.
+- Logging optimizations.
+- Update Airtable data files.
+- Move tools page data to uses page.
+- Update page image.
+- Update Safari icon.
+- Minor post title optimizations.
+- Change share card images to jpegs.
+- Rename share-card pipeline to social-images.
+- Move social images to static folder.
+- Remove gradient overlay from page social images.
+- Remove base social img font-face.
+- Remove post social imgs and replace with svgs.
+- Optimize social image backgrounds.
+- Social images optimizations.
+- Move og social imgs to /og/ directory.
+- Add new og social image.
+- Remove favicon imgs fingerprinting.
+- Minor syntax corrections.
+- Disallow social-img folder from robots.
+- Add new og social image.
+- Add new og social image.
+- Update Airtable data files.
+- Ignore svg social images.
+- Remove unnecessary social images.
+- Add new og social image.
+- Add new og social image.
+- Update Airtable data files.
+- Update social images.
+- Update favicon.
+- Add new og social image.
+- Add new og social image.
+- Minor syntax optimizations.
+- Add new og social image.
+- Minor syntax updates.
+- Update Airtable data files.
+- Update Airtable data files.
+- Update Airtable data files.
+- Update web worker name to job specific.
+- Ignore generated worker scripts.
+- Ignore formatting on generated worker script files.
+- Move worker scripts to scripts/js folders.
+- Rename script to more job appropiate name.
+- Minor typing updates.
+- Minor syntax cleanup.
+- Minor syntax cleanup.
+- Minor syntax updates.
+- Update ignore file.
+- Move all bookmarks to a single data file.
+- Minor syntax updates.
+- Image optimizations.
+- Update Airtable data files.
+- Update Airtable data files.
+- Minor syntax optimizations.
+- Update Airtable data files.
+- Update Airtable data files.
+- Minor styling updates.
+- Remove template code.
+- Minor styling optimizations.
+- Remove local bookmarks generation.
+- Minor data caching optimizations.
+- Sort by creator only.
+- Remove console log.
+- Minor syntax fixes.
+- Remove deprecated script.
+- Minor logging optimizations.
+- Add new og social image.
+- Update content to be more gender neutral.
+- Add new og social image.
+- Rename for to something simpler.
+- Add new og social image.
+- Remove deprecated assets.
+- Add new og social image.
+- Optimizatione images.
+- Image optimizations.
+- Add new shelf images.
+- Add new shelf images.
+- Add missing CI badge.
+- Update Node to latest LTS v16.
+- Update dependencies.
+- Update dependency.
+- Update Tailwind.
+- Image optimizations.
+- Minor build updates.
+- Update asset minification method.
+- Minor syntax updates.
+- Minor syntax adjustments.
+- Add brief description on each bookmarks category page.
+- Remove dead link check from bookmarks function.
+- Update bookmarks typing.
+- Shelf image optimizations.
+- Add new shelf images.
+- Add git cliff config for auto-generating changelogs.
+- Update Airtable scheme.
+- Update bookmarks data keys to match Airtable scheme update.
+- Optimize util scripts error handling and logging.
+- Remove deprecated web workers.
+- Minor organizational optimizations.
+- Update shelf images with new file names.
+- Minor syntax fixes.
+- [**breaking**] Remove data to allow worker build.
+- Restore api data.
+- Further worker debugging.
+- Restore bookmarks table to final load it properly?
+- Add new shelf images.
+- Remove border from favicons.
+- Update workflows to latest Ubuntu LTS version.
+- Minor diagram stylling adjustments.
+- Add new shelf images.
+- Update dependency lock file.
+- Update shelf query with new category/genre case change.
+- Minor syntax updates.
+- Logging optimizations.
+- Further logging optimizations.
+- Minor functions logging optimizations.
+- Add changelog generation action.
+
+<!-- generated by git-cliff -->
