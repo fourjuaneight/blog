@@ -2,519 +2,525 @@
 
 All notable changes to this project will be documented in this file.
 
+## [unreleased]
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/dc7ade5b32430ad81285cf6d8eae4b66c67e5165)
+
 ## [1.0.1] - 2022-06-15
 
 ### Bug Fixes
 
-- Add specific branch to commit step.
+- [Add specific branch to commit step.](https://github.com/fourjuaneight/blog/commit/874407d8cfceb640cfc655550f5a416f7d08611c)
 
 ## [1.0.0] - 2022-06-15
 
 ### Bug Fixes
 
-- Set correct Safari pin tab icon color.
-- Update ESLint to parse Vue and TS files.
-- Add data source arg to image pipeline.
-- Minor Tailwind config updates.
-- Remove redundant nested sections from footer.
-- Increase font sizing for better legibility.
-- Increase footer nav dividers sizing.
-- Better footnotes link styling.
-- Update link hover state to be more lebible.
-- Better article title sizing.
-- Syntax and spelling.
-- Extend additional breakpoints instead of overriding existing ones.
-- Align main content to the top on pages with less content.
-- Update all headings to consistent tags and sizing.
-- Improve link highligting consistency.
-- Minor heading link highlight optmizations.
-- General layout optimizations.
-- Apply margin around all hr tags.
-- Contain images when resizing on pipeline.
-- Remove html formatting on commit.
-- Update html formatting to prevent syntax errors.
-- Update base url to prevent footnotes linking to homepage.
-- Sort homepage feed from newest to oldest.
-- General styling fixes and optimizations.
-- Remove space around external links.
-- Update SW output filename.
-- Remove padding from footer lists.
-- Remove header nav list padding to prevent layout breaking.
-- Further nav layout fixes.
-- Add missing permalink to all site icons.
-- Add correct RSS link.
-- Add correct header link weight.
-- Apply correct header title font weight.
-- Apply global heading font sizing.
-- Correct mismatch font weight on loading script.
-- Remove default list sizing from meta section.
-- Update tag links to maintain color after visited.
-- Revert to custom favicon.
-- Add bottom spacing on meta section.
-- Remove auto list type from ul and ol.
-- Minor syntax corrections and optimizations.
-- Run link markup transform as markdown.
-- Add missing base size to background noise.
-- Update hero image with smoother blur.
-- Update hero image (correctly) with improved blur.
-- Update manifest with correct icon filenames.
-- Update worker filepath to absolute uri.
-- Add intro image aspect ratio attributes.
-- Minor styling and layout optimizations.
-- Update site url.
-- Multi tag layout.
-- Commit changes on Shelf data file creation.
-- Change fingerprinting to sha256 for better compatibility.
-- Remove overkill integrity attribute.
-- Remove min height on shelf images.
-- Minor spelling corrections.
-- Update image to prevent overflow.
-- Move unfinished Shelf media indicator to the left.
-- Rename Airtable type.
-- Add missing slash on import path.
-- Center shelf page footer image.
-- Minor SW formatting adjustments.
-- Add missing slash on social image url.
-- Embed data uri font to social image.
-- Move social image background avatar forward.
-- Further social images optimizations.
-- Reduce CF wait to 3mins.
-- Add data uri font to social img svg.
-- Remove duplicate markdown render.
-- Render social images because that's how this whole thing works...
-- Add img sizing to svgs.
-- Remove base social image deletion.
-- Add missing base social images.
-- Render MD link text correctly.
-- Add missing syntax key.
-- Add missing script to workers cleanup.
-- Add missing env context and improve typings.
-- Update bookmarks worker to use page function to request data.
-- Move worker scripts to the base of the site.
-- Remove explicit key when saving data to store.
-- Sort bookmarks data by title first, then creator.
-- Sort Airtable data on request.
-- Update constant name.
-- Remove max data returned param.
-- Remove sorting on request.
-- Passing params when looping with offset.
-- Minor layout and styling fixes.
-- Sort bookmarks on response.
-- Add fingerprint to bookmarks worker.
-- Add missing worker fingerprint.
-- Move bookmarks sorting to worker on retrieval.
-- Revert to native lazy loading for better coverage.
-- Add esnext to node lib.
-- Add missing type.
-- Add screen reader only style.
-- Change bookmarks to ssr for better performance.
-- Remove deprecate script from cleanup.
-- Use RFC-822 date format on RSS.
-- Change bookmarks category case to lower.
-- Minor syntax corrections.
-- Add conditional block in case data is missing.
-- [**breaking**] Omit api data query to allow for worker builds.
-- [**breaking**] Restore api data rendered ui.
-- Remove deprecated variables.
-- [**breaking**] Attempting to figure out what is wrong with this ting.
-- Add missing data.
-- Add missing comma.
-- Load tweets bookmarks user data.
-- Load bookmarks tags without delimiting.
-- Add missing letter on template name.
-- Optimize post descriptions.
-- Add missing subdirectory to diagrams script ref.
-- Ignore remote data errors to allow building.
+- [Set correct Safari pin tab icon color.](https://github.com/fourjuaneight/blog/commit/c86289dc9eadbd6d694eea5d3efa7b41552fee6c)
+- [Update ESLint to parse Vue and TS files.](https://github.com/fourjuaneight/blog/commit/95f254af94d5ad209a9da7893004f13933e20768)
+- [Add data source arg to image pipeline.](https://github.com/fourjuaneight/blog/commit/4dfcd1481f7621951299f4c64ba01c4ac36c0a83)
+- [Minor Tailwind config updates.](https://github.com/fourjuaneight/blog/commit/ec313edf7917b9ed1cb25dd058873f276917520c)
+- [Remove redundant nested sections from footer.](https://github.com/fourjuaneight/blog/commit/b1d8d5d06f3724bf80041799f35b3260a85bbe9a)
+- [Increase font sizing for better legibility.](https://github.com/fourjuaneight/blog/commit/e5283b4928fba6cc305f049afadef98b59a9c26c)
+- [Increase footer nav dividers sizing.](https://github.com/fourjuaneight/blog/commit/a10b8f713d3febee89bb9a6ba8250d456b15f538)
+- [Better footnotes link styling.](https://github.com/fourjuaneight/blog/commit/219219a867b7f7f41a3e9743424a6dd80ca579ae)
+- [Update link hover state to be more lebible.](https://github.com/fourjuaneight/blog/commit/79f5f07abde2bf540af04ac34add959c7390df4a)
+- [Better article title sizing.](https://github.com/fourjuaneight/blog/commit/751e9be016bcfd06523e393168f59b60266b1463)
+- [Syntax and spelling.](https://github.com/fourjuaneight/blog/commit/b9a445325ac1c5a60ba21f6ed116de3075f3aa4f)
+- [Extend additional breakpoints instead of overriding existing ones.](https://github.com/fourjuaneight/blog/commit/154194d0761fc91ef8e846d19b5379952f70db7a)
+- [Align main content to the top on pages with less content.](https://github.com/fourjuaneight/blog/commit/430fc7e5c8ef933c8ebe0ea481e46bdd9b971ac2)
+- [Update all headings to consistent tags and sizing.](https://github.com/fourjuaneight/blog/commit/2a939a9b9c1b194f7721bca3c6d295e359fd53b1)
+- [Improve link highligting consistency.](https://github.com/fourjuaneight/blog/commit/c13a6a8c2ec3f3fba76d48df6a02585333a135e9)
+- [Minor heading link highlight optmizations.](https://github.com/fourjuaneight/blog/commit/5c6177e5fbe675e1cb3f5e21438a67c8edbeb36d)
+- [General layout optimizations.](https://github.com/fourjuaneight/blog/commit/c8cb2ffdaab8da62c8a411b6029532f335a704fc)
+- [Apply margin around all hr tags.](https://github.com/fourjuaneight/blog/commit/1cd549ef3d7e24e7d98d87b69f59c4768c342a96)
+- [Contain images when resizing on pipeline.](https://github.com/fourjuaneight/blog/commit/bd5f7dfa6d2e5ebddfab68367d25976732f8f221)
+- [Remove html formatting on commit.](https://github.com/fourjuaneight/blog/commit/693a36be9857fd6ed75d180478ac1b73f2f75d5e)
+- [Update html formatting to prevent syntax errors.](https://github.com/fourjuaneight/blog/commit/ad2beae754c774b809a00b992c9ad0d14af7530c)
+- [Update base url to prevent footnotes linking to homepage.](https://github.com/fourjuaneight/blog/commit/06245e4568342a77d8cd94599f43d00530b928d2)
+- [Sort homepage feed from newest to oldest.](https://github.com/fourjuaneight/blog/commit/02cadc39e6a921d95c26d0af873dc6c3a2780ff2)
+- [General styling fixes and optimizations.](https://github.com/fourjuaneight/blog/commit/838ae4f6294e7a417e0b5fea9afda32754597d19)
+- [Remove space around external links.](https://github.com/fourjuaneight/blog/commit/349ef58abc02e6a05ec37956a866824d5c6ae9a6)
+- [Update SW output filename.](https://github.com/fourjuaneight/blog/commit/ee0b1569951d49b4a6e98d6f1fb73ae773d45925)
+- [Remove padding from footer lists.](https://github.com/fourjuaneight/blog/commit/a6997a877e6d723a3a2f9949a773167aedce1325)
+- [Remove header nav list padding to prevent layout breaking.](https://github.com/fourjuaneight/blog/commit/26d565a67cbaa1915e9fb603a9099fa9a4705c1b)
+- [Further nav layout fixes.](https://github.com/fourjuaneight/blog/commit/b00585c5ef3d1df2a5b2b43110db20c7b0b36ed9)
+- [Add missing permalink to all site icons.](https://github.com/fourjuaneight/blog/commit/e626a013fad36bbf7141e56c1f2389cf9a54567e)
+- [Add correct RSS link.](https://github.com/fourjuaneight/blog/commit/b0bc507d9000a409bd616739a97da9c06988328e)
+- [Add correct header link weight.](https://github.com/fourjuaneight/blog/commit/2f84a1ae37f95d0b088c736012b6d28aac0f7080)
+- [Apply correct header title font weight.](https://github.com/fourjuaneight/blog/commit/f57188c844d80d44af3dfe2700ec22c2f2a8b985)
+- [Apply global heading font sizing.](https://github.com/fourjuaneight/blog/commit/494121c143dff123fe21f342951f578e933c840b)
+- [Correct mismatch font weight on loading script.](https://github.com/fourjuaneight/blog/commit/01ef0713e5e478ef6fecf25c7e7388d6bb9e633c)
+- [Remove default list sizing from meta section.](https://github.com/fourjuaneight/blog/commit/b9d78f7c012625b2b3cae43206cc21d67b08078a)
+- [Update tag links to maintain color after visited.](https://github.com/fourjuaneight/blog/commit/e1b93caf33e9ebeec0a19e051dab934fe2af8ed5)
+- [Revert to custom favicon.](https://github.com/fourjuaneight/blog/commit/39bff7311ab750ded73159780cdd9f165dc81427)
+- [Add bottom spacing on meta section.](https://github.com/fourjuaneight/blog/commit/9b34d7ba54d8af805addd7f2a14882bf6b10cf1f)
+- [Remove auto list type from ul and ol.](https://github.com/fourjuaneight/blog/commit/8e44f797abf61ba59447c532243732699397de96)
+- [Minor syntax corrections and optimizations.](https://github.com/fourjuaneight/blog/commit/6479a35ef49d1a9e760bca6782b417b086db1da8)
+- [Run link markup transform as markdown.](https://github.com/fourjuaneight/blog/commit/9a01ceb3ef2d2a8d0db30a2c4ca9334922d956bc)
+- [Add missing base size to background noise.](https://github.com/fourjuaneight/blog/commit/9394f7689cfc1b7bdda4a0c7151f8bd01efefc81)
+- [Update hero image with smoother blur.](https://github.com/fourjuaneight/blog/commit/3e0eb33c63e49fa8f4843f3446dd6fd22f430adb)
+- [Update hero image (correctly) with improved blur.](https://github.com/fourjuaneight/blog/commit/2d372f21b588d2fcffdf638b570324cc24da688c)
+- [Update manifest with correct icon filenames.](https://github.com/fourjuaneight/blog/commit/ca3999f9c05716b86ca96453eccf621f8cb874c6)
+- [Update worker filepath to absolute uri.](https://github.com/fourjuaneight/blog/commit/beeb2475655612c2d8081421d2ea2c59835aff8a)
+- [Add intro image aspect ratio attributes.](https://github.com/fourjuaneight/blog/commit/7ca7fad05f9fdf5bd28d057faf617010eb85fef5)
+- [Minor styling and layout optimizations.](https://github.com/fourjuaneight/blog/commit/9cd77feea5bdeadcb2fae4d81240ff32ab1bd5e7)
+- [Update site url.](https://github.com/fourjuaneight/blog/commit/33d5d6bc1ca7bcaf4ff54835f647f77bd0fb289e)
+- [Multi tag layout.](https://github.com/fourjuaneight/blog/commit/e03bb78961712f6bc65016669d6b77d76b2a62b7)
+- [Commit changes on Shelf data file creation.](https://github.com/fourjuaneight/blog/commit/9de2d4708a56255c67050fd5216b92f365bdd233)
+- [Change fingerprinting to sha256 for better compatibility.](https://github.com/fourjuaneight/blog/commit/ad6275a92a7ad230c4a21578c2358822d089f6fe)
+- [Remove overkill integrity attribute.](https://github.com/fourjuaneight/blog/commit/dc79d74133528c59c73da42c58091614c7772f3b)
+- [Remove min height on shelf images.](https://github.com/fourjuaneight/blog/commit/d0b49bf4b913e24ebd0e2fb78c748a9674443964)
+- [Minor spelling corrections.](https://github.com/fourjuaneight/blog/commit/b7aaec5d0ca509163ab6ad3cc5b170f6d2323db7)
+- [Update image to prevent overflow.](https://github.com/fourjuaneight/blog/commit/2fd68929eb7d6da3e6075caae564daa53bbc1f6a)
+- [Move unfinished Shelf media indicator to the left.](https://github.com/fourjuaneight/blog/commit/78f8cc7cc1c681b9e7d1570c46453a6b5f4dd4a7)
+- [Rename Airtable type.](https://github.com/fourjuaneight/blog/commit/8f1a8d918a760cad03d1b5a3570e3da847689c02)
+- [Add missing slash on import path.](https://github.com/fourjuaneight/blog/commit/72b7800920810576f886cbb877d5778f4f124171)
+- [Center shelf page footer image.](https://github.com/fourjuaneight/blog/commit/c647847c020bb0b4f8b8e2088115e46ab402b449)
+- [Minor SW formatting adjustments.](https://github.com/fourjuaneight/blog/commit/3b74ec6f91deb238168bfd5da7372a8ebe60a8fb)
+- [Add missing slash on social image url.](https://github.com/fourjuaneight/blog/commit/3de4ca148b3f7d91fafb56a084306852cbd9f039)
+- [Embed data uri font to social image.](https://github.com/fourjuaneight/blog/commit/5f9509626b167ff6d06fddecb95d1c449b21a972)
+- [Move social image background avatar forward.](https://github.com/fourjuaneight/blog/commit/4901dd4ab9aeaaad1deca3c820b023f98aae4790)
+- [Further social images optimizations.](https://github.com/fourjuaneight/blog/commit/289b7d07df0e1c9824e2bb9dabdf267de1500853)
+- [Reduce CF wait to 3mins.](https://github.com/fourjuaneight/blog/commit/b2e6f8e547c415ea352434ebaeec8ca95b440d1d)
+- [Add data uri font to social img svg.](https://github.com/fourjuaneight/blog/commit/a33797f23a6081bbd28d95b84746fa1c72908bc7)
+- [Remove duplicate markdown render.](https://github.com/fourjuaneight/blog/commit/254a23f56e83eeac8da7c9ce43926ea8dbe7acb4)
+- [Render social images because that's how this whole thing works...](https://github.com/fourjuaneight/blog/commit/a8cf73859342e60135751b34c854984bc8842d90)
+- [Add img sizing to svgs.](https://github.com/fourjuaneight/blog/commit/2307035930f93ff22095a2e371d9742b29c21552)
+- [Remove base social image deletion.](https://github.com/fourjuaneight/blog/commit/cb3077b8291f0d5a77d4b25cdc06733287086f20)
+- [Add missing base social images.](https://github.com/fourjuaneight/blog/commit/4a2f3c67237b6fbdcacf3b06a07ecddb63d44977)
+- [Render MD link text correctly.](https://github.com/fourjuaneight/blog/commit/de6b20e714e1504ca1eed54376434fcd5cc25ecb)
+- [Add missing syntax key.](https://github.com/fourjuaneight/blog/commit/091601128ab361b53a495d21a03375c86b94dd95)
+- [Add missing script to workers cleanup.](https://github.com/fourjuaneight/blog/commit/013f4ae52efb3e237b899394a153c8fbbd7ff52d)
+- [Add missing env context and improve typings.](https://github.com/fourjuaneight/blog/commit/2b05aa7de1b2e810373ac96f8d4e2edf67f4b301)
+- [Update bookmarks worker to use page function to request data.](https://github.com/fourjuaneight/blog/commit/0505b3f11757b3f387a1c4b79aa2f359aa859963)
+- [Move worker scripts to the base of the site.](https://github.com/fourjuaneight/blog/commit/b2543c884fe93ad9345c109e65e268d9c5f03a0f)
+- [Remove explicit key when saving data to store.](https://github.com/fourjuaneight/blog/commit/d3c23590a7e476f47eb1a839c602ff48c8ecb2a7)
+- [Sort bookmarks data by title first, then creator.](https://github.com/fourjuaneight/blog/commit/4fb09936f6eeb90ee3c106a1d0d71d273b64ad61)
+- [Sort Airtable data on request.](https://github.com/fourjuaneight/blog/commit/0cb564ed6d082943c0ecaa43047f3395169d99e3)
+- [Update constant name.](https://github.com/fourjuaneight/blog/commit/5b081a9196ceabf06c8487468a6d900dbb3bb8b9)
+- [Remove max data returned param.](https://github.com/fourjuaneight/blog/commit/eee51f6f2210ec891c7521171540c76cd526f0c5)
+- [Remove sorting on request.](https://github.com/fourjuaneight/blog/commit/05fe492fea1ffb4fa815a141896e8c36d04ed5dd)
+- [Passing params when looping with offset.](https://github.com/fourjuaneight/blog/commit/8044f3c4081c7f91ddd353a17cae7fad948e4a16)
+- [Minor layout and styling fixes.](https://github.com/fourjuaneight/blog/commit/05cb5b973db25279c232f2b7c4419b28f192d171)
+- [Sort bookmarks on response.](https://github.com/fourjuaneight/blog/commit/81a1336e0abdf6c37d1ca814e5834654fd07be0b)
+- [Add fingerprint to bookmarks worker.](https://github.com/fourjuaneight/blog/commit/d47ae2054e2aeac0e8c445dd34020c6f8a204823)
+- [Add missing worker fingerprint.](https://github.com/fourjuaneight/blog/commit/5e7f9fa5c28bc4b90464735aaf16805494da4869)
+- [Move bookmarks sorting to worker on retrieval.](https://github.com/fourjuaneight/blog/commit/55fb35d38058019e4dae2805cb28f9ad9d041708)
+- [Revert to native lazy loading for better coverage.](https://github.com/fourjuaneight/blog/commit/5239b747d33fba98906593fb789666ff8d7bc372)
+- [Add esnext to node lib.](https://github.com/fourjuaneight/blog/commit/581ed9d8deffa8f79025f4dbb5b1169d74523e56)
+- [Add missing type.](https://github.com/fourjuaneight/blog/commit/d9b1131eb6f5d77d8bd5fc31816d7391b047af14)
+- [Add screen reader only style.](https://github.com/fourjuaneight/blog/commit/8e48817e670169257b60cf37c58483f58077ee90)
+- [Change bookmarks to ssr for better performance.](https://github.com/fourjuaneight/blog/commit/93b8afb8ba5df130d4c16c09f532efed0c3cbd58)
+- [Remove deprecate script from cleanup.](https://github.com/fourjuaneight/blog/commit/a0d8eb7e0e720f2937a6906d5cfdf2fb76e84233)
+- [Use RFC-822 date format on RSS.](https://github.com/fourjuaneight/blog/commit/344ea90f252e0fcd49c83be7a72f59737190998c)
+- [Change bookmarks category case to lower.](https://github.com/fourjuaneight/blog/commit/6609a7507160854ea318a8abd24e22838033e516)
+- [Minor syntax corrections.](https://github.com/fourjuaneight/blog/commit/1a895473ab3053f71dd469966e9533523ac1487d)
+- [Add conditional block in case data is missing.](https://github.com/fourjuaneight/blog/commit/caf60b36f5f9d059f53f7e16d614d0e16b674002)
+- [**breaking**] [Omit api data query to allow for worker builds.](https://github.com/fourjuaneight/blog/commit/5f2030426325f442da6b7d6bf842a227e1af6c1d)
+- [**breaking**] [Restore api data rendered ui.](https://github.com/fourjuaneight/blog/commit/b219193316b9b70897bb9a181ad5e911c682e4ea)
+- [Remove deprecated variables.](https://github.com/fourjuaneight/blog/commit/405245beddcf73bf366448e55516f4a34f326ab8)
+- [**breaking**] [Attempting to figure out what is wrong with this ting.](https://github.com/fourjuaneight/blog/commit/a026cab2def0b3b6545322d8583337adc3170c46)
+- [Add missing data.](https://github.com/fourjuaneight/blog/commit/8c32bb0ca8a1a92cb30682b6736bd467cc060506)
+- [Add missing comma.](https://github.com/fourjuaneight/blog/commit/fde6454a9c174673e66fef9462df93b49affe5f1)
+- [Load tweets bookmarks user data.](https://github.com/fourjuaneight/blog/commit/57969007158cb66fc666bff75c5ea6e717fe3903)
+- [Load bookmarks tags without delimiting.](https://github.com/fourjuaneight/blog/commit/a1da057df734bd98036172f5f5686f1acf331627)
+- [Add missing letter on template name.](https://github.com/fourjuaneight/blog/commit/edb6cdec869a4af06a0f1acbf907daa7c24e432c)
+- [Optimize post descriptions.](https://github.com/fourjuaneight/blog/commit/56261b053b7dd226651c1896e94661188caba6e7)
+- [Add missing subdirectory to diagrams script ref.](https://github.com/fourjuaneight/blog/commit/08dff0010cfc53c5197961b0c63eee3b372f4485)
+- [Ignore remote data errors to allow building.](https://github.com/fourjuaneight/blog/commit/1170d26eae7bd5967a113b1e1bf3a452e4218134)
 
 ### Features
 
-- Add main module with HMR.
-- Add index.html.
-- Add favicon pipeline.
-- Add favicons and safari-pinned-tab icon.
-- Add image pipeline expanded options
-- Add image pipeline for logo.
-- Add logo image variants.
-- Add color to image pipeline script.
-- Add hero images to image pipeline.
-- Add about images to image pipelines.
-- Add hero image variants.
-- Add about image variants.
-- Add color scheme.
-- Add reset stylesheet.
-- Add font files and related EULAs.
-- Add optimized font loading.
-- Add main styling.
-- Remove Snowpack and add Vite config.
-- Add main App component.
-- Add avatar asset image.
-- Add new image to sript and do minor syntax cleanup.
-- Add optimized avatar files.
-- Update hero image with avatar file and increase both their output resolutions.
-- Add routing.
-- Add footer template.
-- Add PostCSS config.
-- Add Tailwind config.
-- Add site footer and update layout.
-- Add main site areas responsive grid layout.
-- Componentize footer navigation for re-useability.
-- Add dark variant of background.
-- Reduce vertical spacing on responsive grid layout.
-- Add primary color to pallete.
-- Add header.
-- Replace Parkly font with Captain Edward.
-- Replace Nunito font with Ships Whistle.
-- Add homepage template.
-- Add header bottom border.
-- Import blog posts.
-- Add template files.
-- Add Docker config.
-- Replace Capitan Edward font with MD Nichrome.
-- Move nav links to data file.
-- Move content to /posts/ directory.
-- Add posts RSS template.
-- Add metadata partial.
-- Add feed default templates.
-- Add default single page template.
-- Add default tags taxonomy template.
-- Add 404 page.
-- Add posts feed to homepage.
-- Add About page.
-- Add Uses page.
-- Add social links to footer nav.
-- Add main content grid layout.
-- Add syntax highlighting.
-- Add article layout and styling.
-- Add audio gear to Uses page and fix minor syntax errors.
-- Add posts archive list template.
-- Add ligther (dark) heading font.
-- Add support for external links.
-- Add custom code font.
-- 404 page styling and layout.
-- Add responsive image partial and render hook.
-- Add hero and footer images to single template.
-- Add about me page footer image.
-- Add uses page footer image.
-- Add footer intro and image to homepage.
-- Add longer footer intro.
-- Add full name and main site link to About page.
-- Add intro footer to all list pages.
-- Add SW for offline support.
-- Add Nunito font as primary body type.
-- Add native image lazy loading.
-- Update footer intro.
-- Add emoji favicon.
-- Add Schema.org support for articles.
-- Add Tools page.
-- Add syntax highlight to list inlined code.
-- Add keyboard image to Tools page.
-- Add custom Codespace config.
-- Add web worker with background noise.
-- Add background noise layout.
-- Add new post.
-- Update Codespace image.
-- Update start script with color coding.
-- Add text shadow to post title.
-- New post.
-- Add Airtable Shelf data retrieval.
-- Add GH action to update shelf data daily.
-- Add shelf data file.
-- Add new cli Tools entry.
-- Group Shelf data by category.
-- Sort shelf data alphabetically.
-- Add Shelf page.
-- Add Shelf page content and UI.
-- Add archive link on homepage.
-- Add fignerprinting to assets.
-- Fingerprint web worker script.
-- Add custom image lazy loading and placeholder image.
-- New hero image.
-- Add hero image to Shelf page.
-- Add footer hero image content to Shelf page.
-- Add new Spreadsheets post.
-- Add optional SEO friendly post titles.
-- Add bookmarks data saving script.
-- Update action and add bookmarks script.
-- Add cat illustration.
-- Add custom illustration to posts archive page.
-- Add bookmarks list template.
-- Add smaller image sizing option to partial.
-- Update hero images.
-- Update favicons and incorporate to image pipeline.
-- Add post social share image generator script.
-- Add posts socila share cards.
-- Save share card images as progressive jpegs.
-- Add regular pages social images.
-- Add main social image.
-- Add social image to SEO tags.
-- Add base social img html page.
-- Add headless chrome based og image generation.
-- Add og image creation script to GH Action on push.
-- Improve OG tags.
-- New post.
-- Create and delete social images on Action, not build.
-- Update favicon and logo images.
-- Update icons pipeline to use favicon image.
-- Add site logo to README.
-- Update shelf page placeholder image.
-- Add bookmark pages links to parent page.
-- Add initial bookmark pages.
-- Add IDs to bookmarks and shelf data files scripts.
-- Update all workers to TS.
-- Use esbuild for browser scripts.
-- Add bookmarks fetching and storing web worker.
-- Add bookmarks function for Airtable data fetching.
-- Update data fetch method to use page function.
-- Add new color variant.
-- Add bookmarks template layout and styling.
-- Add data sorting to bookmarks function.
-- Add shelf data function.
-- Use page function to request shelf data.
-- Retry sorting on request.
-- Add bookmarks dom generation and db upgrades to worker.
-- Add bookmarks loader.
-- Add bookmarks nav linka and reorganize.
-- Add sorting on response.
-- Add bookmarks data file creation on build and CI.
-- Add tweets fetching function.
-- Add tweet id to response.
-- Remove shelf script in favor of Hugo remote data templating.
-- Update about page.
-- Add new post.
-- Move bookmark links to data file.
-- Add bookmark page links above tables.
-- Add ellipsis overflow to bookmark cells.
-- Add img lazy loading site wide.
-- Generate and add placeholder images when lazy loading.
-- Placeholder image pipeline optimizations.
-- Add srcset placeholders.
-- Add progressive encoding to pngs.
-- Minor reader mode optimizations.
-- Add new betlawoda image to shelf page.
-- Add shelf images local generation script.
-- Update shelf page with local images.
-- Add dead link check for bookmarks.
-- Meta content updates.
-- Add transparent color variants.
-- Add dead link indicators on bookmarks.
-- Sort bookmarks by title at compile time.
-- Add Hasura query methods.
-- [**breaking**] Update worker endpoints with Hasura queries.
-- Save primary shelf images as jpeg for better compatibility.
-- Add post specific meta descriptions.
-- Add mermaid diagrams support.
-- Add responsive layout and styling to diagrams.
-- Add diagram to Spreadsheets Reloaded post.
-- Add diagram to Spreadsheets Revolutions post.
-- Add SSR Mermaid diagrams.
-- Add auth0 icon.
+- [Add main module with HMR.](https://github.com/fourjuaneight/blog/commit/f03daaa5b5960cc52bdad6a150eabc2dc26c5f02)
+- [Add index.html.](https://github.com/fourjuaneight/blog/commit/eeb08b7487b9cb736cc6fa19cd4cd3770ff65e00)
+- [Add favicon pipeline.](https://github.com/fourjuaneight/blog/commit/90cfc168721632408883a6d7a3f51456c45be078)
+- [Add favicons and safari-pinned-tab icon.](https://github.com/fourjuaneight/blog/commit/d0586056c98de6303cd51094f0596935341a2500)
+- [Add image pipeline expanded options](https://github.com/fourjuaneight/blog/commit/b910a00bd228584a3e05745895dca7b03a8ce1ad)
+- [Add image pipeline for logo.](https://github.com/fourjuaneight/blog/commit/bcdaefbfdd3e52f6e543c25400da3d5fb0b29c37)
+- [Add logo image variants.](https://github.com/fourjuaneight/blog/commit/59ef57514fc1fd5625daec89c28fac5bc83a35aa)
+- [Add color to image pipeline script.](https://github.com/fourjuaneight/blog/commit/9820fa81042e61747236ecc1808a7f87d5a17c7c)
+- [Add hero images to image pipeline.](https://github.com/fourjuaneight/blog/commit/d998505680c5e34d563bcf6473c87bc6ffad5135)
+- [Add about images to image pipelines.](https://github.com/fourjuaneight/blog/commit/65ea2e32bb12fc35e1f72cbbe4fcda0b52239b7d)
+- [Add hero image variants.](https://github.com/fourjuaneight/blog/commit/7e622a5a00e19babd74c1166a2893996a417b087)
+- [Add about image variants.](https://github.com/fourjuaneight/blog/commit/318b1888d1aa3e80e91836cf2bad4696d8677f19)
+- [Add color scheme.](https://github.com/fourjuaneight/blog/commit/a410792e34b9cb37cbd65042367fa5fef0dabf6c)
+- [Add reset stylesheet.](https://github.com/fourjuaneight/blog/commit/d1bb4c3ce9c42f6bcdb584f1a618ec8d5101f05e)
+- [Add font files and related EULAs.](https://github.com/fourjuaneight/blog/commit/5d0ff2779e2648a59c50c7cfc401e0fc7404c003)
+- [Add optimized font loading.](https://github.com/fourjuaneight/blog/commit/869162fd159cee51fedc0cb40042b2fcc023d947)
+- [Add main styling.](https://github.com/fourjuaneight/blog/commit/dd7f7dcabfe5105268a75bf383eb44b858dbdfd1)
+- [Remove Snowpack and add Vite config.](https://github.com/fourjuaneight/blog/commit/f3f44c55e1c87e89a7f34e1a495d15d63d1a8166)
+- [Add main App component.](https://github.com/fourjuaneight/blog/commit/53457342de3d6a7f6d3cec24fa321d0d2852f953)
+- [Add avatar asset image.](https://github.com/fourjuaneight/blog/commit/6317fe7d0ef4c719789bc6b9da6f8eae510e5b13)
+- [Add new image to sript and do minor syntax cleanup.](https://github.com/fourjuaneight/blog/commit/f47024e1c22535d297d2cd70db0d04093f8dfa3e)
+- [Add optimized avatar files.](https://github.com/fourjuaneight/blog/commit/7d0166516a74755586c6b1d883b4ad3024a23117)
+- [Update hero image with avatar file and increase both their output resolutions.](https://github.com/fourjuaneight/blog/commit/1728ecf39da40fb9d3dc8a1e572b8938ee241102)
+- [Add routing.](https://github.com/fourjuaneight/blog/commit/e0255ed4b4ef9ca1db08c4a0248403a64aa6ef5c)
+- [Add footer template.](https://github.com/fourjuaneight/blog/commit/369f6079ced23b8710e3dfd654a674ef5606c9aa)
+- [Add PostCSS config.](https://github.com/fourjuaneight/blog/commit/f588ea472e8ef07e95adc65eb5b95a6d2d10cce2)
+- [Add Tailwind config.](https://github.com/fourjuaneight/blog/commit/30bbaa24bf262fe5c722d8dd7280f076a47b5c38)
+- [Add site footer and update layout.](https://github.com/fourjuaneight/blog/commit/c2c52bff4c0134027672f686e92350f635a77be0)
+- [Add main site areas responsive grid layout.](https://github.com/fourjuaneight/blog/commit/c577fc67a82dff6d472fa95467bd3e5c84407847)
+- [Componentize footer navigation for re-useability.](https://github.com/fourjuaneight/blog/commit/e43bc9deba795d63a2efa867beae894d79571690)
+- [Add dark variant of background.](https://github.com/fourjuaneight/blog/commit/9b6af5fc8ec6c05d9a2fbd0d64c75469be6f29ca)
+- [Reduce vertical spacing on responsive grid layout.](https://github.com/fourjuaneight/blog/commit/500a42bb2dd26445233a3bde99884b004cc2299f)
+- [Add primary color to pallete.](https://github.com/fourjuaneight/blog/commit/e65f81d6190699fe9242dbf19b0b3b834d48711d)
+- [Add header.](https://github.com/fourjuaneight/blog/commit/ab5ed6dfd30280ab2b26021792bede3582c42ce6)
+- [Replace Parkly font with Captain Edward.](https://github.com/fourjuaneight/blog/commit/93f81d46e3928d362d8adbb450d31262ee8f144e)
+- [Replace Nunito font with Ships Whistle.](https://github.com/fourjuaneight/blog/commit/b7c7b1fdc559fa2d9be8f448e675ba934a3e9dc3)
+- [Add homepage template.](https://github.com/fourjuaneight/blog/commit/8bccd5dd05dc15d306a1f912dfd8d38a0038dd66)
+- [Add header bottom border.](https://github.com/fourjuaneight/blog/commit/ee46a60f9313ea99b98922beb699af5d28d57153)
+- [Import blog posts.](https://github.com/fourjuaneight/blog/commit/a81df17da694c94d70620db6199e30d525f0742b)
+- [Add template files.](https://github.com/fourjuaneight/blog/commit/0da809020b2aad3956ce808de927f9b3525ee73d)
+- [Add Docker config.](https://github.com/fourjuaneight/blog/commit/3806ecc69959ffe6d6d621a4b3867f9c9fdf2c84)
+- [Replace Capitan Edward font with MD Nichrome.](https://github.com/fourjuaneight/blog/commit/289eba5d8ab1ce5fa4a2614799ff431e0106cdef)
+- [Move nav links to data file.](https://github.com/fourjuaneight/blog/commit/bee87f7cb2bffb60423a497299ddc6e1460f7d22)
+- [Move content to /posts/ directory.](https://github.com/fourjuaneight/blog/commit/2105f8e995b91bec94789cbc5501eb0456941298)
+- [Add posts RSS template.](https://github.com/fourjuaneight/blog/commit/76e1e6175b413a8590d980752c021bda6ad1237a)
+- [Add metadata partial.](https://github.com/fourjuaneight/blog/commit/50b810a3172ad104baa4dc40ab7179a9f717131e)
+- [Add feed default templates.](https://github.com/fourjuaneight/blog/commit/a094a16e4511a2e05f37a93b44b25d627402f8ea)
+- [Add default single page template.](https://github.com/fourjuaneight/blog/commit/422889df8a461a3787a16b89d2b416216222410b)
+- [Add default tags taxonomy template.](https://github.com/fourjuaneight/blog/commit/6cfb806c20e14c727110f65c3882ca4a2462a58a)
+- [Add 404 page.](https://github.com/fourjuaneight/blog/commit/ec98899d207271f80b3e5519681149a896445630)
+- [Add posts feed to homepage.](https://github.com/fourjuaneight/blog/commit/b02e3666956251fc5e80b94d9cc1eb6d17b353b3)
+- [Add About page.](https://github.com/fourjuaneight/blog/commit/b3d319e65a23042b086917980214a0049d27d8e8)
+- [Add Uses page.](https://github.com/fourjuaneight/blog/commit/94eb6786de85b7b264ce5436664bf63b2b782aa0)
+- [Add social links to footer nav.](https://github.com/fourjuaneight/blog/commit/bee5f84561839ac2af51b70a23d8eb1c18e49d8f)
+- [Add main content grid layout.](https://github.com/fourjuaneight/blog/commit/9081e69c6f807490b5367b2b52fcff27546a1223)
+- [Add syntax highlighting.](https://github.com/fourjuaneight/blog/commit/657882c545e7ec6b3af784cde0b1e836a2dbad35)
+- [Add article layout and styling.](https://github.com/fourjuaneight/blog/commit/34703776ab81e8a919985e35071f269ce0f4d630)
+- [Add audio gear to Uses page and fix minor syntax errors.](https://github.com/fourjuaneight/blog/commit/70ca559fa01364500030af13d67695ae2eefc69e)
+- [Add posts archive list template.](https://github.com/fourjuaneight/blog/commit/fd06dd73c55841267238af154c8a49abc7bf4399)
+- [Add ligther (dark) heading font.](https://github.com/fourjuaneight/blog/commit/a6e4f50a88f607f872824f4962abbd93ac900fd5)
+- [Add support for external links.](https://github.com/fourjuaneight/blog/commit/c24ea32ab6d2d0211786b541da8e7f3277e837e7)
+- [Add custom code font.](https://github.com/fourjuaneight/blog/commit/8b9ea9600250f80276827ba4ae3fc7612c69c6b0)
+- [404 page styling and layout.](https://github.com/fourjuaneight/blog/commit/fa273463b48f2c2d2e792dfa76d3334f302e9173)
+- [Add responsive image partial and render hook.](https://github.com/fourjuaneight/blog/commit/28f0cc40c88823354d6b113b1ad0fba8c66c1ebf)
+- [Add hero and footer images to single template.](https://github.com/fourjuaneight/blog/commit/22451745ab96d359aab359cb48eaf56d061a9fac)
+- [Add about me page footer image.](https://github.com/fourjuaneight/blog/commit/aa66655a626dfcc353fa0c41e1ac9ec84084a92d)
+- [Add uses page footer image.](https://github.com/fourjuaneight/blog/commit/989129f4d4b314304431f2465e12a3fdb37ca2aa)
+- [Add footer intro and image to homepage.](https://github.com/fourjuaneight/blog/commit/a4e8086ece40c1245bc41f167e1ec09abbca63dd)
+- [Add longer footer intro.](https://github.com/fourjuaneight/blog/commit/e5aec230209dd2c103a382273a62035f9770b816)
+- [Add full name and main site link to About page.](https://github.com/fourjuaneight/blog/commit/98ddf2e4395692530361c1524135884fa6e91255)
+- [Add intro footer to all list pages.](https://github.com/fourjuaneight/blog/commit/1373fcac62c28d4fd99571e1c1a8efb515d324c3)
+- [Add SW for offline support.](https://github.com/fourjuaneight/blog/commit/11659349b3d68e71b0c846a9337ae5421dd3be50)
+- [Add Nunito font as primary body type.](https://github.com/fourjuaneight/blog/commit/6adf822c99cb7d31c7f97322a067b608107b9c37)
+- [Add native image lazy loading.](https://github.com/fourjuaneight/blog/commit/fc77e3b5f8c11c826939ae72c405099943a6273e)
+- [Update footer intro.](https://github.com/fourjuaneight/blog/commit/01c20ca3550cc2adf80f59f09739c1024f54293b)
+- [Add emoji favicon.](https://github.com/fourjuaneight/blog/commit/5a5cd06e15240feb23627d8daf8d57362a4f4d98)
+- [Add Schema.org support for articles.](https://github.com/fourjuaneight/blog/commit/542cd7715bec09420f1ab17bad825401e49a75f7)
+- [Add Tools page.](https://github.com/fourjuaneight/blog/commit/4d2aed54d92678f9a91ac2aa0b69e3ff9d7d9e52)
+- [Add syntax highlight to list inlined code.](https://github.com/fourjuaneight/blog/commit/e43d46cc0c4eb6ae7bd8c7bf326a12a3c087c2da)
+- [Add keyboard image to Tools page.](https://github.com/fourjuaneight/blog/commit/31afe1a82869524903665dfe96e028f7a1e9811c)
+- [Add custom Codespace config.](https://github.com/fourjuaneight/blog/commit/f71ffdc46a55a5ce19912ccfc829ba62d15fcc16)
+- [Add web worker with background noise.](https://github.com/fourjuaneight/blog/commit/bcadcf6e6f3e6e3c2da3c4dd07d383a3752ac617)
+- [Add background noise layout.](https://github.com/fourjuaneight/blog/commit/5c67aed01a4cebf75bea16cc73d815705083cd50)
+- [Add new post.](https://github.com/fourjuaneight/blog/commit/acf98daaa490db65d6bd95a819d1dffe267b219d)
+- [Update Codespace image.](https://github.com/fourjuaneight/blog/commit/50730a9c81efa3bc07e330ca1a4ef492ab72428d)
+- [Update start script with color coding.](https://github.com/fourjuaneight/blog/commit/577955805917c0f55ef67498a195ec0ae70cad4e)
+- [Add text shadow to post title.](https://github.com/fourjuaneight/blog/commit/ae699f506c3643838e0f59977a42da738af34030)
+- [New post.](https://github.com/fourjuaneight/blog/commit/a5ab84919b1c3743467aee6b1a3704949a69e3f9)
+- [Add Airtable Shelf data retrieval.](https://github.com/fourjuaneight/blog/commit/0430e4d3e5dadc54adbbc6bf38cb63dffa4a7a8d)
+- [Add GH action to update shelf data daily.](https://github.com/fourjuaneight/blog/commit/1401f3846bac0feee391756cbc9888204ad122eb)
+- [Add shelf data file.](https://github.com/fourjuaneight/blog/commit/9d62c6c4df8d2668d5bddea493981a563b52aa73)
+- [Add new cli Tools entry.](https://github.com/fourjuaneight/blog/commit/684258c95ad76fc01255764a3dd922725e7fe7e9)
+- [Group Shelf data by category.](https://github.com/fourjuaneight/blog/commit/423553b0c872f0b4b6e7bb65b3cc66525b5eba12)
+- [Sort shelf data alphabetically.](https://github.com/fourjuaneight/blog/commit/8a0dffece34eb84a9543b9c0ee61f3d52ecddfa5)
+- [Add Shelf page.](https://github.com/fourjuaneight/blog/commit/dccb0bd1cfb4015eda87f145b8239ee3cc4d8f37)
+- [Add Shelf page content and UI.](https://github.com/fourjuaneight/blog/commit/9760f01b61dfc66a34443c6ea61c0db524f5667a)
+- [Add archive link on homepage.](https://github.com/fourjuaneight/blog/commit/c0d52e29c12fb8252d71d9c4c6f3a380a556a5cb)
+- [Add fignerprinting to assets.](https://github.com/fourjuaneight/blog/commit/fb9fb229c8026ccab2a25c5c669122e13dbfa642)
+- [Fingerprint web worker script.](https://github.com/fourjuaneight/blog/commit/0ce82c90c66e87640aea6a69da99081b3f86d265)
+- [Add custom image lazy loading and placeholder image.](https://github.com/fourjuaneight/blog/commit/0e89bcfa50b0025d4973d897497f3ebffc9e9fa0)
+- [New hero image.](https://github.com/fourjuaneight/blog/commit/8f30468a7543a7ed36bcb3417035a585c9be59f7)
+- [Add hero image to Shelf page.](https://github.com/fourjuaneight/blog/commit/9af690f880666c56e41c4c34a2c30f3831c52fbe)
+- [Add footer hero image content to Shelf page.](https://github.com/fourjuaneight/blog/commit/b2204274512cb01438873ceaa6b77ca12e286ca8)
+- [Add new Spreadsheets post.](https://github.com/fourjuaneight/blog/commit/7fa3109c826bcbafb6dbb87b38aea70c8311e100)
+- [Add optional SEO friendly post titles.](https://github.com/fourjuaneight/blog/commit/f2c974eb95f34f20fcf5e36c34001054879b5e74)
+- [Add bookmarks data saving script.](https://github.com/fourjuaneight/blog/commit/fac1bd7ba38b172dbaffc1db92c78d8cf48318b6)
+- [Update action and add bookmarks script.](https://github.com/fourjuaneight/blog/commit/5f09b21a8b9679ee10f03dfed2d3a432c22e165d)
+- [Add cat illustration.](https://github.com/fourjuaneight/blog/commit/30842891951649f5d55eaf6d43b7b973ec6352dd)
+- [Add custom illustration to posts archive page.](https://github.com/fourjuaneight/blog/commit/14f3211c19f872910470cd15ae2c11d4dc01f5e6)
+- [Add bookmarks list template.](https://github.com/fourjuaneight/blog/commit/86185d4cc3c8834467e577dd1c40536e78daecf5)
+- [Add smaller image sizing option to partial.](https://github.com/fourjuaneight/blog/commit/da7609c81b6bc609ec04afa6123ba3f4b0bfb2b0)
+- [Update hero images.](https://github.com/fourjuaneight/blog/commit/db38a353ecb1f6c643c79ed67404b7e82e87c659)
+- [Update favicons and incorporate to image pipeline.](https://github.com/fourjuaneight/blog/commit/db4386be0ef2a0963703fd344dd0cd842b2df925)
+- [Add post social share image generator script.](https://github.com/fourjuaneight/blog/commit/37d3aa78bb5742728eb4997ada9db7b595127ee1)
+- [Add posts socila share cards.](https://github.com/fourjuaneight/blog/commit/a39536eef5823604ef93b4fb7a6da9dcd3d04aa3)
+- [Save share card images as progressive jpegs.](https://github.com/fourjuaneight/blog/commit/166940e5a9d3a10a1fe38e46ac7fb1d6ac742d24)
+- [Add regular pages social images.](https://github.com/fourjuaneight/blog/commit/7a77019a907fe6a322510189f2a959a23753c6fb)
+- [Add main social image.](https://github.com/fourjuaneight/blog/commit/fe0b529ac9b0e27692521acccca8b9f8b11abbf8)
+- [Add social image to SEO tags.](https://github.com/fourjuaneight/blog/commit/896ca3904f15fc5fef10d8ab0bfadbaed90bcfd4)
+- [Add base social img html page.](https://github.com/fourjuaneight/blog/commit/3c9933e5e0124241048fbdbb32924f41c57567c9)
+- [Add headless chrome based og image generation.](https://github.com/fourjuaneight/blog/commit/f9c2abfd0f95a2508eb33bb9bf44f69c9685e496)
+- [Add og image creation script to GH Action on push.](https://github.com/fourjuaneight/blog/commit/a62a73c303eaf48cf53b3bf7855b60d124661e9c)
+- [Improve OG tags.](https://github.com/fourjuaneight/blog/commit/4f2355fb49fab76bd3c5b917a756197c75087afe)
+- [New post.](https://github.com/fourjuaneight/blog/commit/a09d8001284cc5c173205749993d0823fa7033a1)
+- [Create and delete social images on Action, not build.](https://github.com/fourjuaneight/blog/commit/7c735b7fc98f8c388d87a6ab1bdc141a3a3913e7)
+- [Update favicon and logo images.](https://github.com/fourjuaneight/blog/commit/bbf81007c20f34c70990fadb729e5cc91e305e07)
+- [Update icons pipeline to use favicon image.](https://github.com/fourjuaneight/blog/commit/2a8727ac2f221178dd1887d51ef4f856b34742a4)
+- [Add site logo to README.](https://github.com/fourjuaneight/blog/commit/92050f7527d80f112df294b1de25a230df91885b)
+- [Update shelf page placeholder image.](https://github.com/fourjuaneight/blog/commit/3de84f755f71d05315fc3d80322df42b3fd5b71f)
+- [Add bookmark pages links to parent page.](https://github.com/fourjuaneight/blog/commit/414e9e1aa27c2fbc779f5b67247f93638356e00e)
+- [Add initial bookmark pages.](https://github.com/fourjuaneight/blog/commit/84df5cf2293633e03853c81be5ae617380ca3a56)
+- [Add IDs to bookmarks and shelf data files scripts.](https://github.com/fourjuaneight/blog/commit/b690ee6a154c29ca70abb4261129558a7572a886)
+- [Update all workers to TS.](https://github.com/fourjuaneight/blog/commit/6e77571ed315acb5e984ff167ae9b7e8d74ea4c9)
+- [Use esbuild for browser scripts.](https://github.com/fourjuaneight/blog/commit/9a0e495db28e65f604ceb88e5a33147a9c6b075b)
+- [Add bookmarks fetching and storing web worker.](https://github.com/fourjuaneight/blog/commit/ea8bd49a580f1b45628701342ce667d7006575e3)
+- [Add bookmarks function for Airtable data fetching.](https://github.com/fourjuaneight/blog/commit/1b5e4b4103f0d97fd26f6a9fc5508076ac7a79cc)
+- [Update data fetch method to use page function.](https://github.com/fourjuaneight/blog/commit/a47b2eccff0d6bfd58a53a88d266a8333dd35fe5)
+- [Add new color variant.](https://github.com/fourjuaneight/blog/commit/896339692c84e0963ac0d7ab7cc4b27a9b37523c)
+- [Add bookmarks template layout and styling.](https://github.com/fourjuaneight/blog/commit/e86cc799f8692653e4cbb52f65f8a91d7b13a6ac)
+- [Add data sorting to bookmarks function.](https://github.com/fourjuaneight/blog/commit/16061e8132dbc283fe29c0ce643878267d804db7)
+- [Add shelf data function.](https://github.com/fourjuaneight/blog/commit/1716a524609000c1039a4bc5915124a4cc339555)
+- [Use page function to request shelf data.](https://github.com/fourjuaneight/blog/commit/aa44727d3d3ffa8692ecefdc8fa769300b5a5676)
+- [Retry sorting on request.](https://github.com/fourjuaneight/blog/commit/378d12009305668df57382ba0b188f21d0e73bed)
+- [Add bookmarks dom generation and db upgrades to worker.](https://github.com/fourjuaneight/blog/commit/b3be05ef010c4af783f86cb7c914a0dc23ec3165)
+- [Add bookmarks loader.](https://github.com/fourjuaneight/blog/commit/f98a0967616c45645307767d550e121f74e3e2a7)
+- [Add bookmarks nav linka and reorganize.](https://github.com/fourjuaneight/blog/commit/2d3cf7d188db2919848536eb5ef0e2027b7ce053)
+- [Add sorting on response.](https://github.com/fourjuaneight/blog/commit/e200aca3005d91a4fd33a1201dfeec01a1a54f8f)
+- [Add bookmarks data file creation on build and CI.](https://github.com/fourjuaneight/blog/commit/d5d3f3ea8631c207d6269c60451f2cf8b7dce1a7)
+- [Add tweets fetching function.](https://github.com/fourjuaneight/blog/commit/788f52f48541407cdc8ce3fb5b3d5ff822b49051)
+- [Add tweet id to response.](https://github.com/fourjuaneight/blog/commit/3530f2d1fd3a011a8669d5a5c8baaeda4e98b14f)
+- [Remove shelf script in favor of Hugo remote data templating.](https://github.com/fourjuaneight/blog/commit/1ef043d4ae4edf65411227e7e3e1ed0e2125f7e0)
+- [Update about page.](https://github.com/fourjuaneight/blog/commit/8f2201c340b458be9f689ae45f32741f6a2f4925)
+- [Add new post.](https://github.com/fourjuaneight/blog/commit/9d9305c3f9b313814e8aa9e8f2ccd3d27537ebe3)
+- [Move bookmark links to data file.](https://github.com/fourjuaneight/blog/commit/d9844125fbf1e4b59812a64c972adaad63dc0487)
+- [Add bookmark page links above tables.](https://github.com/fourjuaneight/blog/commit/971c4cde2f4cc12641efe0ed355e9088c48d97e5)
+- [Add ellipsis overflow to bookmark cells.](https://github.com/fourjuaneight/blog/commit/04a227f267acb063e605734e81bfd1fb40105e70)
+- [Add img lazy loading site wide.](https://github.com/fourjuaneight/blog/commit/78bed108b55265a1bc5368f67be39873a4a5546d)
+- [Generate and add placeholder images when lazy loading.](https://github.com/fourjuaneight/blog/commit/695dfcae158495805520adfc64ad8ade424953fe)
+- [Placeholder image pipeline optimizations.](https://github.com/fourjuaneight/blog/commit/63eaac49acdf2910c5fc57c3f4a928193101b201)
+- [Add srcset placeholders.](https://github.com/fourjuaneight/blog/commit/3c9792fba111dcd588b7966183e08f487fee3c92)
+- [Add progressive encoding to pngs.](https://github.com/fourjuaneight/blog/commit/4018a975779594213f80b68f7238f35490b5f28f)
+- [Minor reader mode optimizations.](https://github.com/fourjuaneight/blog/commit/ff9819a8a6c06012cec34fa1b382581387d5faca)
+- [Add new betlawoda image to shelf page.](https://github.com/fourjuaneight/blog/commit/eb61a7d6190f3ded70128ba62fdb4054c79c1e97)
+- [Add shelf images local generation script.](https://github.com/fourjuaneight/blog/commit/212f17fd2cd5615c2d6a419fdc1288e819856e9a)
+- [Update shelf page with local images.](https://github.com/fourjuaneight/blog/commit/cc4c6c95aa3e610d45edc443dcd19736de9ed511)
+- [Add dead link check for bookmarks.](https://github.com/fourjuaneight/blog/commit/f83460cc95056b8fdad38b85b4c55928576bd485)
+- [Meta content updates.](https://github.com/fourjuaneight/blog/commit/4f201b1514faebec9635afd8b43d90bd71dbf56a)
+- [Add transparent color variants.](https://github.com/fourjuaneight/blog/commit/3aaf43b31834b568061d8e297aaff4e58803e71f)
+- [Add dead link indicators on bookmarks.](https://github.com/fourjuaneight/blog/commit/c78b3b5017719b691b538d1e54612403fc879a04)
+- [Sort bookmarks by title at compile time.](https://github.com/fourjuaneight/blog/commit/079d55ce454dfb339e73639db5ca2bc367ae8d94)
+- [Add Hasura query methods.](https://github.com/fourjuaneight/blog/commit/348f8d7dd72e32b248f8191fce5e5e88ca8664df)
+- [**breaking**] [Update worker endpoints with Hasura queries.](https://github.com/fourjuaneight/blog/commit/77eea93144b17eb626cae84503b8a4c4c0c05411)
+- [Save primary shelf images as jpeg for better compatibility.](https://github.com/fourjuaneight/blog/commit/a884641d86d0111e87bea7c7c0cc5d75d24f8fd2)
+- [Add post specific meta descriptions.](https://github.com/fourjuaneight/blog/commit/8772332359e86f51d7264004ea11bebb92fd8e87)
+- [Add mermaid diagrams support.](https://github.com/fourjuaneight/blog/commit/f9b029391f5a904c4082ed5da18dbb115587da7f)
+- [Add responsive layout and styling to diagrams.](https://github.com/fourjuaneight/blog/commit/b873895c9961722f759d831da98e91690d1f6592)
+- [Add diagram to Spreadsheets Reloaded post.](https://github.com/fourjuaneight/blog/commit/2a7b0fca3a926d4152a0826394c3b9324cfb53f3)
+- [Add diagram to Spreadsheets Revolutions post.](https://github.com/fourjuaneight/blog/commit/67a29e7d9b50b509c0a01ae668fcf21b31d7265e)
+- [Add SSR Mermaid diagrams.](https://github.com/fourjuaneight/blog/commit/adaa0b13b41b7d4d2e9c96fc1b3b11ded44e00d8)
+- [Add auth0 icon.](https://github.com/fourjuaneight/blog/commit/207bbd5b67437d50fab0a8d5b1c363c570302c55)
 
 ### Miscellaneous Tasks
 
-- Setup configs.
-- Add TS typinigs.
-- Add meta files.
-- Rename favicon script to images.
-- Update image script main function for reusability.
-- Change logo size on image pipeline to 250w.
-- Add reusable stylings.
-- Move stylesheets to src/styles directory.
-- Minor color scheme updates.
-- Color scheme optimizations.
-- Minor reset updates.
-- Rename primary stylesheet to critical.
-- Load reset stylesheet.
-- Add headings font-family.
-- Remove Snowpack and add Vite dependencies.
-- Update ignore files with new Vite config.
-- Move typing files to src and update tsconfig.
-- Move index to root and update main to TS.
-- Remove image script from linter.
-- Optimize ts-node config.
-- Add updated hero and avatar images.
-- Minor linting updates.
-- Remove margin from Nav when slim.
-- Update footer and nav layout to use responsive grid.
-- Make primary color more accessible.
-- Remove duplicate code.
-- Remove Uses link from nav.
-- Remove deprecated font files.
-- Minor syntax optimizations.
-- Rename posts directory.
-- Update assets directory.
-- Update content directory.
-- Remove deprecated configs.
-- Update dependencies..
-- Update configs.
-- Minor syntax cleanup.
-- Update Node to v16.6.2.
-- Remove deprecated index.
-- Add content and formatting config options.
-- Remove redundant frontmatter.
-- Update site name.
-- Reduce footer copyright font sizing.
-- Remove redundant translation code.
-- Minor links adjustments.
-- Minor color pallete optimizations.
-- Remove inactive build steps.
-- Add production URL.
-- Minor stylesheets optimizations.
-- Load SW only on production.
-- Update manifest with new color scheme and site name.
-- Add email to author on package.json.
-- Move Uses page link to Header and replace Lists with Tools.
-- Update hero image.
-- Add Hugo build lockfile.
-- Optimize images.
-- Move web worker to body.
-- Optimize images.
-- Update meta pages.
-- Update Hugo version.
-- Add Plausible analytics script.
-- Remove subdomain from baseURL.
-- Update meta color to a more accessible variant.
-- Add CORS header.
-- Update dependencies.
-- Update images.
-- Minor content syntax fixes and updates.
-- Add colophon and update license date range.
-- Update Shelf data.
-- Add shelf script to build and start scripts.
-- Add responsive grid columns.
-- Add Shelf to navigation.
-- Update Shelf data file.
-- Minor styling fixes.
-- Minor syntax updates.
-- Update shelf data.
-- Change assets fingerprinting to md5.
-- Remove outline from summary tag.
-- Change shelf data keys to lowercase.
-- Optimize images images.
-- Update Shelf data file.
-- Minor syntax updates.
-- Add SEO friendly title to latest post.
-- Add Bookmarks page initial content.
-- Update Shelf data file.
-- Move scripts types to separate file.
-- Better scripts error handling.
-- Further improved error handling.
-- Add bookmarks data files.
-- Minor syntax fixes.
-- Optimize images.
-- Logging optimizations.
-- Update Airtable data files.
-- Move tools page data to uses page.
-- Update page image.
-- Update Safari icon.
-- Minor post title optimizations.
-- Change share card images to jpegs.
-- Rename share-card pipeline to social-images.
-- Move social images to static folder.
-- Remove gradient overlay from page social images.
-- Remove base social img font-face.
-- Remove post social imgs and replace with svgs.
-- Optimize social image backgrounds.
-- Social images optimizations.
-- Move og social imgs to /og/ directory.
-- Add new og social image.
-- Remove favicon imgs fingerprinting.
-- Minor syntax corrections.
-- Disallow social-img folder from robots.
-- Add new og social image.
-- Add new og social image.
-- Update Airtable data files.
-- Ignore svg social images.
-- Remove unnecessary social images.
-- Add new og social image.
-- Add new og social image.
-- Update Airtable data files.
-- Update social images.
-- Update favicon.
-- Add new og social image.
-- Add new og social image.
-- Minor syntax optimizations.
-- Add new og social image.
-- Minor syntax updates.
-- Update Airtable data files.
-- Update Airtable data files.
-- Update Airtable data files.
-- Update web worker name to job specific.
-- Ignore generated worker scripts.
-- Ignore formatting on generated worker script files.
-- Move worker scripts to scripts/js folders.
-- Rename script to more job appropiate name.
-- Minor typing updates.
-- Minor syntax cleanup.
-- Minor syntax cleanup.
-- Minor syntax updates.
-- Update ignore file.
-- Move all bookmarks to a single data file.
-- Minor syntax updates.
-- Image optimizations.
-- Update Airtable data files.
-- Update Airtable data files.
-- Minor syntax optimizations.
-- Update Airtable data files.
-- Update Airtable data files.
-- Minor styling updates.
-- Remove template code.
-- Minor styling optimizations.
-- Remove local bookmarks generation.
-- Minor data caching optimizations.
-- Sort by creator only.
-- Remove console log.
-- Minor syntax fixes.
-- Remove deprecated script.
-- Minor logging optimizations.
-- Add new og social image.
-- Update content to be more gender neutral.
-- Add new og social image.
-- Rename for to something simpler.
-- Add new og social image.
-- Remove deprecated assets.
-- Add new og social image.
-- Optimizatione images.
-- Image optimizations.
-- Add new shelf images.
-- Add new shelf images.
-- Add missing CI badge.
-- Update Node to latest LTS v16.
-- Update dependencies.
-- Update dependency.
-- Update Tailwind.
-- Image optimizations.
-- Minor build updates.
-- Update asset minification method.
-- Minor syntax updates.
-- Minor syntax adjustments.
-- Add brief description on each bookmarks category page.
-- Remove dead link check from bookmarks function.
-- Update bookmarks typing.
-- Shelf image optimizations.
-- Add new shelf images.
-- Add git cliff config for auto-generating changelogs.
-- Update Airtable scheme.
-- Update bookmarks data keys to match Airtable scheme update.
-- Optimize util scripts error handling and logging.
-- Remove deprecated web workers.
-- Minor organizational optimizations.
-- Update shelf images with new file names.
-- Minor syntax fixes.
-- [**breaking**] Remove data to allow worker build.
-- Restore api data.
-- Further worker debugging.
-- Restore bookmarks table to final load it properly?
-- Add new shelf images.
-- Remove border from favicons.
-- Update workflows to latest Ubuntu LTS version.
-- Minor diagram stylling adjustments.
-- Add new shelf images.
-- Update dependency lock file.
-- Update shelf query with new category/genre case change.
-- Minor syntax updates.
-- Logging optimizations.
-- Further logging optimizations.
-- Minor functions logging optimizations.
-- Add changelog generation action.
+- [Setup configs.](https://github.com/fourjuaneight/blog/commit/1a842c92c98adf91643f266358db83addc4bcd5b)
+- [Add TS typinigs.](https://github.com/fourjuaneight/blog/commit/e0bfb984358f9a9a87f61aad0d57c3b9cbc029e4)
+- [Add meta files.](https://github.com/fourjuaneight/blog/commit/251e5c24e7cfb39944cb67b42b4aad0da55c3a5c)
+- [Rename favicon script to images.](https://github.com/fourjuaneight/blog/commit/9932acf9c8afaf74d2328cd489f160f2f30b1de7)
+- [Update image script main function for reusability.](https://github.com/fourjuaneight/blog/commit/3f56db5d46bf6254c9763c3c512bf0d4ab19003f)
+- [Change logo size on image pipeline to 250w.](https://github.com/fourjuaneight/blog/commit/169c8b3adc587aa73f9412c2c6dd5e4c79e32621)
+- [Add reusable stylings.](https://github.com/fourjuaneight/blog/commit/e4653a253622f7a9c7a14a7d2bce616e4cda5018)
+- [Move stylesheets to src/styles directory.](https://github.com/fourjuaneight/blog/commit/1205bb6caf0856715ed2e5ea8d54cf91c6e413ee)
+- [Minor color scheme updates.](https://github.com/fourjuaneight/blog/commit/9191fa7db22b41591646970afd7e8e70ee6f9a9f)
+- [Color scheme optimizations.](https://github.com/fourjuaneight/blog/commit/9666df525089d7dab29c7f62a6d177fd1457ba5c)
+- [Minor reset updates.](https://github.com/fourjuaneight/blog/commit/e7d2182c9c6c4087de5c390107ff5c8d128b2d5d)
+- [Rename primary stylesheet to critical.](https://github.com/fourjuaneight/blog/commit/d61728bfd8f8946aaf9830382eefd7c411a6d3ba)
+- [Load reset stylesheet.](https://github.com/fourjuaneight/blog/commit/01ea4258541d476cd5ebe725292bddba8956ad3e)
+- [Add headings font-family.](https://github.com/fourjuaneight/blog/commit/f0899f0685bf85762406a2d189e997fead574fd5)
+- [Remove Snowpack and add Vite dependencies.](https://github.com/fourjuaneight/blog/commit/80e353f3a42ae4d5866ad83bd44af09091b152d3)
+- [Update ignore files with new Vite config.](https://github.com/fourjuaneight/blog/commit/619de4508f4e9125350e03228618040e8798fe7d)
+- [Move typing files to src and update tsconfig.](https://github.com/fourjuaneight/blog/commit/dec3b9718cc7bbf05a363a7e1fb2b4edcb34b0c1)
+- [Move index to root and update main to TS.](https://github.com/fourjuaneight/blog/commit/3f32e7196d574998631bce75b8760b01a26a9129)
+- [Remove image script from linter.](https://github.com/fourjuaneight/blog/commit/4013e3d5c96d42b56df0334b3f10bdefc703d868)
+- [Optimize ts-node config.](https://github.com/fourjuaneight/blog/commit/2388cf60afd0fe383794f6f35b39ad85173dbe4b)
+- [Add updated hero and avatar images.](https://github.com/fourjuaneight/blog/commit/996265117b41cab8fbba3eb7d142ead3c5ad0b32)
+- [Minor linting updates.](https://github.com/fourjuaneight/blog/commit/853bc23e50460cd1941bd5ca9d1cd07657ad62cc)
+- [Remove margin from Nav when slim.](https://github.com/fourjuaneight/blog/commit/4406f131e8ae357d4d494f9fdacd376b4671ad0c)
+- [Update footer and nav layout to use responsive grid.](https://github.com/fourjuaneight/blog/commit/44cab91362bb2776fa263173522ce79d95c3912f)
+- [Make primary color more accessible.](https://github.com/fourjuaneight/blog/commit/31649e150aa5b0b0556eb14afcd95348e8005e61)
+- [Remove duplicate code.](https://github.com/fourjuaneight/blog/commit/cdf7a63c3cf0c9fc4ec20b335c50006bbd1d8ca2)
+- [Remove Uses link from nav.](https://github.com/fourjuaneight/blog/commit/3c64a8375ede05ad01ba426188017a3cd4978f9e)
+- [Remove deprecated font files.](https://github.com/fourjuaneight/blog/commit/8f531059fca0853358d31ae3858f53ddedc1d625)
+- [Minor syntax optimizations.](https://github.com/fourjuaneight/blog/commit/8cbfc1eed07e55aeb26eff41f0ea1a6851cee176)
+- [Rename posts directory.](https://github.com/fourjuaneight/blog/commit/1f29a6d163a6957c1d68a5c30b1361930163d8ee)
+- [Update assets directory.](https://github.com/fourjuaneight/blog/commit/c9d8ebed69eb71f2bf04bee815d59543be5d35f1)
+- [Update content directory.](https://github.com/fourjuaneight/blog/commit/7a137f2415dcdc541f9bfb67bc5dec098e656f2e)
+- [Remove deprecated configs.](https://github.com/fourjuaneight/blog/commit/c412c6684b0ee29f81b15e00e1d8a662e59fe190)
+- [Update dependencies..](https://github.com/fourjuaneight/blog/commit/424d4f51d146ea8457260b51b1e7a1ccde532fb0)
+- [Update configs.](https://github.com/fourjuaneight/blog/commit/e2c207aa1ebd2daa8372a912f1aff9e6269c9422)
+- [Minor syntax cleanup.](https://github.com/fourjuaneight/blog/commit/4eb73ca6bf503d035a08664250d520704156e452)
+- [Update Node to v16.6.2.](https://github.com/fourjuaneight/blog/commit/95be1aba697c74b36288e51605bd7ee3eee3b160)
+- [Remove deprecated index.](https://github.com/fourjuaneight/blog/commit/2a96f874f0b3d23fb8fdca8cb90db6a1ab0086ea)
+- [Add content and formatting config options.](https://github.com/fourjuaneight/blog/commit/44b5d4c9b16b1565638e5b104d6cf13492e98136)
+- [Remove redundant frontmatter.](https://github.com/fourjuaneight/blog/commit/07d82847d0ff2a342fd3cf828a8f0791780634d4)
+- [Update site name.](https://github.com/fourjuaneight/blog/commit/d48d61fdeaa14230f80b34ab2a7c8983013ba48f)
+- [Reduce footer copyright font sizing.](https://github.com/fourjuaneight/blog/commit/91691fe6b673a436c2caa516154aff8ac7adf5e6)
+- [Remove redundant translation code.](https://github.com/fourjuaneight/blog/commit/23e01dd16e48315c40b6e6619999eadcbf4f5ce5)
+- [Minor links adjustments.](https://github.com/fourjuaneight/blog/commit/939f5edbdf652f066f6c113af55c632b94b6984d)
+- [Minor color pallete optimizations.](https://github.com/fourjuaneight/blog/commit/022c4f733880b93076d5f8e068e67e187a02c273)
+- [Remove inactive build steps.](https://github.com/fourjuaneight/blog/commit/f8ac5433609396d2dc49a2e2163d88b7ddfdebb6)
+- [Add production URL.](https://github.com/fourjuaneight/blog/commit/a96b808f63a5961dcdcc9139bbfd96b96a25e2df)
+- [Minor stylesheets optimizations.](https://github.com/fourjuaneight/blog/commit/c613ae337993087cef6029330897a4c96ebfc92b)
+- [Load SW only on production.](https://github.com/fourjuaneight/blog/commit/af107c4b388891b57050d0cb6fdefde1602d42fb)
+- [Update manifest with new color scheme and site name.](https://github.com/fourjuaneight/blog/commit/27bfd736a00ff49680cb8bc65a20da2279e7b067)
+- [Add email to author on package.json.](https://github.com/fourjuaneight/blog/commit/bc63c05b8ed70cc0d510357fcf9b9d8ca4945c7c)
+- [Move Uses page link to Header and replace Lists with Tools.](https://github.com/fourjuaneight/blog/commit/045320a509262c5752a30ec6937b890cbafced92)
+- [Update hero image.](https://github.com/fourjuaneight/blog/commit/d9926583ce42ae6905b33dfa54b29685888a9d19)
+- [Add Hugo build lockfile.](https://github.com/fourjuaneight/blog/commit/81a4034d93dc067dd24777bb92feddeb0e6b7a60)
+- [Optimize images.](https://github.com/fourjuaneight/blog/commit/ce36cb6afb962408892af4a663784a972fa44a3e)
+- [Move web worker to body.](https://github.com/fourjuaneight/blog/commit/1059999f55e10e421a90552dfc46733a8e7659fb)
+- [Optimize images.](https://github.com/fourjuaneight/blog/commit/0f95ca67f8b9467e815ded5575b9643ee19ceed4)
+- [Update meta pages.](https://github.com/fourjuaneight/blog/commit/d00f685a56049e9c750887bbb08dc73993a3adca)
+- [Update Hugo version.](https://github.com/fourjuaneight/blog/commit/24bdaef36aacec2b4f5c9277171602d36616d099)
+- [Add Plausible analytics script.](https://github.com/fourjuaneight/blog/commit/20697178758d80b330b3306003c19cca9ec73162)
+- [Remove subdomain from baseURL.](https://github.com/fourjuaneight/blog/commit/137a102956fb943dcf5c6f8f6fa2abec07e90e6a)
+- [Update meta color to a more accessible variant.](https://github.com/fourjuaneight/blog/commit/d8975f46ca72d1721c166f43aade154a4b8c9d0f)
+- [Add CORS header.](https://github.com/fourjuaneight/blog/commit/5842c331a3c02f7b626e34ff5c6bc38edb9e5685)
+- [Update dependencies.](https://github.com/fourjuaneight/blog/commit/3a3354be030353f01e23d6ec4adf8a30c99a3f7c)
+- [Update images.](https://github.com/fourjuaneight/blog/commit/c72180a9969c3704aa60c86f7bcf3c02bc849ffb)
+- [Minor content syntax fixes and updates.](https://github.com/fourjuaneight/blog/commit/d49e650047ce6dd2ee9eb4b93a46dfd21baf5d22)
+- [Add colophon and update license date range.](https://github.com/fourjuaneight/blog/commit/010c93128c7b81cfc2ae0377b8496485f117dfa9)
+- [Update Shelf data.](https://github.com/fourjuaneight/blog/commit/9288e5dca706c324bd3be4752f8fc8169b4fe1f2)
+- [Add shelf script to build and start scripts.](https://github.com/fourjuaneight/blog/commit/ebd40caf3565d763b134ef4ec1c5c347a4b239d1)
+- [Add responsive grid columns.](https://github.com/fourjuaneight/blog/commit/b0821e95f01c3bd489fe432bc7ad1ca35e712a96)
+- [Add Shelf to navigation.](https://github.com/fourjuaneight/blog/commit/dbd182d9da3355068e7b77348528494ceb89e85f)
+- [Update Shelf data file.](https://github.com/fourjuaneight/blog/commit/918696ab78e4ddfdae21f632805ecf2f13232937)
+- [Minor styling fixes.](https://github.com/fourjuaneight/blog/commit/a30652452092e304ceb5dc656dac549ea934b2a3)
+- [Minor syntax updates.](https://github.com/fourjuaneight/blog/commit/d4ed1f8ec03fcaa851d47af6821cd9d71ad05479)
+- [Update shelf data.](https://github.com/fourjuaneight/blog/commit/af62af0e3f11c2e8c59d9e0524cd21be7c9b9238)
+- [Change assets fingerprinting to md5.](https://github.com/fourjuaneight/blog/commit/57bb3a907c5ca567a90dc4cba9a3397221364ad4)
+- [Remove outline from summary tag.](https://github.com/fourjuaneight/blog/commit/ffb46184a653d324ba818de3dde26fe2d47a2d24)
+- [Change shelf data keys to lowercase.](https://github.com/fourjuaneight/blog/commit/5b66000c44ba559fe7aac1a83070451e099b91b9)
+- [Optimize images images.](https://github.com/fourjuaneight/blog/commit/b7a23da32406f5120a4ff1941084a52c98533b53)
+- [Update Shelf data file.](https://github.com/fourjuaneight/blog/commit/ef56fa30c34f41fe407a1fe09bd562227c857476)
+- [Minor syntax updates.](https://github.com/fourjuaneight/blog/commit/98982fbe0f90aeb1e7ebd5fe738064bba55608a1)
+- [Add SEO friendly title to latest post.](https://github.com/fourjuaneight/blog/commit/f1c360f78768c04f0e0797ba7565e275563cf585)
+- [Add Bookmarks page initial content.](https://github.com/fourjuaneight/blog/commit/75ca0456f72d92558596e3c98e982a354dbc0bff)
+- [Update Shelf data file.](https://github.com/fourjuaneight/blog/commit/1d720f03a255038fa030fc306269e2a736c3ffc7)
+- [Move scripts types to separate file.](https://github.com/fourjuaneight/blog/commit/446a5c209c385dd1b7da4894381e9ec9943f8b91)
+- [Better scripts error handling.](https://github.com/fourjuaneight/blog/commit/61973b5f3ae3b5eb6ac47322a3a1cda9f28d297b)
+- [Further improved error handling.](https://github.com/fourjuaneight/blog/commit/6b8a75281c80672aa9a6a91bc4ae1f67298ad3ed)
+- [Add bookmarks data files.](https://github.com/fourjuaneight/blog/commit/ca8d8c6a0df9ee7797de24a53494a0e0b61ecd7d)
+- [Minor syntax fixes.](https://github.com/fourjuaneight/blog/commit/f61ba0f6db0370e4a02da35bc4863e2dd5f38c31)
+- [Optimize images.](https://github.com/fourjuaneight/blog/commit/b158d41d6b902376d5a50b1a5a353e7c66c0530c)
+- [Logging optimizations.](https://github.com/fourjuaneight/blog/commit/7cad810bca1b0daf13faecbe9088312aadee07e8)
+- [Update Airtable data files.](https://github.com/fourjuaneight/blog/commit/13d5c8b43a70870789927ce0b2aa2208449bab82)
+- [Move tools page data to uses page.](https://github.com/fourjuaneight/blog/commit/73f69e4634ae48e09b36987b4e406450ac1bae21)
+- [Update page image.](https://github.com/fourjuaneight/blog/commit/f7cb798a04569f17c715255a73effb20118b11bf)
+- [Update Safari icon.](https://github.com/fourjuaneight/blog/commit/052b7146e6c5ea9c33fc9acd498abd2a2e3cd154)
+- [Minor post title optimizations.](https://github.com/fourjuaneight/blog/commit/6877d04cc1dd9bcb8a861071b8379ae251c291b0)
+- [Change share card images to jpegs.](https://github.com/fourjuaneight/blog/commit/4117eda3f789a4ae7f5bf214ec957daeb939b64c)
+- [Rename share-card pipeline to social-images.](https://github.com/fourjuaneight/blog/commit/e71d1d5fcc39efc3f903e9708ba375fdffb1ccd0)
+- [Move social images to static folder.](https://github.com/fourjuaneight/blog/commit/869568f51069faeeb8be11aa477a5610650e620d)
+- [Remove gradient overlay from page social images.](https://github.com/fourjuaneight/blog/commit/034af3fd4f55da95f6bb9e2c28ac5dcabb5b5062)
+- [Remove base social img font-face.](https://github.com/fourjuaneight/blog/commit/874c25c431827941495a58f04eb1e6ba63c2198f)
+- [Remove post social imgs and replace with svgs.](https://github.com/fourjuaneight/blog/commit/933324aa090eb0f4e667a668313b3e596930b8ff)
+- [Optimize social image backgrounds.](https://github.com/fourjuaneight/blog/commit/c9c36014084fc747cc8ddf862518d27f322d920d)
+- [Social images optimizations.](https://github.com/fourjuaneight/blog/commit/82f71a0792f283343a6580c46aea2ba34682e9a2)
+- [Move og social imgs to /og/ directory.](https://github.com/fourjuaneight/blog/commit/dc9fec2af7f77eff16a7e1614e120044447ad9a4)
+- [Add new og social image.](https://github.com/fourjuaneight/blog/commit/01486c6b3d9e045521b39019f39f2ed3df6ca17d)
+- [Remove favicon imgs fingerprinting.](https://github.com/fourjuaneight/blog/commit/9e49f95e60b599ea13bce8a40c2e5d61bc1c771f)
+- [Minor syntax corrections.](https://github.com/fourjuaneight/blog/commit/3fbd2cd4dd912681191f6bb16877360396a27339)
+- [Disallow social-img folder from robots.](https://github.com/fourjuaneight/blog/commit/e0e38c59fae84a22c6db142a80004c3da99d1763)
+- [Add new og social image.](https://github.com/fourjuaneight/blog/commit/fe4b09df819ac5fe6d7d89d169e68cd5b436c311)
+- [Add new og social image.](https://github.com/fourjuaneight/blog/commit/64cb205de323af276aa9dbaf4d9970982cd65a83)
+- [Update Airtable data files.](https://github.com/fourjuaneight/blog/commit/e02a28a62093f90776a4b5cd8352349492ccbcb5)
+- [Ignore svg social images.](https://github.com/fourjuaneight/blog/commit/78dc2bc0f4fce547ac604ddbd72c2da845057490)
+- [Remove unnecessary social images.](https://github.com/fourjuaneight/blog/commit/b0cb2a2ba0917fafba17a2c95bcc63267cd70259)
+- [Add new og social image.](https://github.com/fourjuaneight/blog/commit/788b57ac2e5c3e73db161eb5f91d68337331051f)
+- [Add new og social image.](https://github.com/fourjuaneight/blog/commit/9bab653513bcbc68de4a44a9ff415cd88478096f)
+- [Update Airtable data files.](https://github.com/fourjuaneight/blog/commit/f6f781e35acec17f9154e4695807d5496e136a8d)
+- [Update social images.](https://github.com/fourjuaneight/blog/commit/7f73d325c8e8ca7fe11be3b0ed89c5b1cdb8d189)
+- [Update favicon.](https://github.com/fourjuaneight/blog/commit/4413fc096bf0b714b5b80bc54e3030150af14843)
+- [Add new og social image.](https://github.com/fourjuaneight/blog/commit/5cb82b0e17d1c788ea91de3fc35e8f56777fe1a0)
+- [Add new og social image.](https://github.com/fourjuaneight/blog/commit/0c13be5a2a24e67994fcc357e7414b72557f7a1d)
+- [Minor syntax optimizations.](https://github.com/fourjuaneight/blog/commit/f68b67d4ece6a17fd979f25853b236a3aea8e360)
+- [Add new og social image.](https://github.com/fourjuaneight/blog/commit/2ff3f245754b81910145b258bbeca186008ee953)
+- [Minor syntax updates.](https://github.com/fourjuaneight/blog/commit/ee17d842d1befdded6b5dd99c95161741b41de2f)
+- [Update Airtable data files.](https://github.com/fourjuaneight/blog/commit/8beb16dce03657e2ebfcdbdc6df2755f1ede26a6)
+- [Update Airtable data files.](https://github.com/fourjuaneight/blog/commit/37c4be6d9838a03cb13e0dfcef1fe5f03232add8)
+- [Update Airtable data files.](https://github.com/fourjuaneight/blog/commit/296c0b1754152febb9c0a9a68ed3732464f69631)
+- [Update web worker name to job specific.](https://github.com/fourjuaneight/blog/commit/be8881003174972750ce7a94d940d816d72ee29f)
+- [Ignore generated worker scripts.](https://github.com/fourjuaneight/blog/commit/28694703677c9687783a9d886b1e3396d31300ab)
+- [Ignore formatting on generated worker script files.](https://github.com/fourjuaneight/blog/commit/25d42f99073b9a4ff5dc658eed296b1a2f633238)
+- [Move worker scripts to scripts/js folders.](https://github.com/fourjuaneight/blog/commit/494adb59f16fd4aa8ba20dda5740a97139ad4afe)
+- [Rename script to more job appropiate name.](https://github.com/fourjuaneight/blog/commit/c158dd442e5c8acb58f369c63f49198d09c6feeb)
+- [Minor typing updates.](https://github.com/fourjuaneight/blog/commit/2fc6c10072a730cef491dba71e5679a33de3d450)
+- [Minor syntax cleanup.](https://github.com/fourjuaneight/blog/commit/8940f52275bf37594d8a3bc13995a2c235cd90d6)
+- [Minor syntax cleanup.](https://github.com/fourjuaneight/blog/commit/0efcaff25bc5074387185572832605794dafef6a)
+- [Minor syntax updates.](https://github.com/fourjuaneight/blog/commit/586552e3aa75f7d16732bf950c89f39331a80da7)
+- [Update ignore file.](https://github.com/fourjuaneight/blog/commit/07073f0a9749a8c5b1f1bfee007eaedd9575629f)
+- [Move all bookmarks to a single data file.](https://github.com/fourjuaneight/blog/commit/095013198a458e8664a190f7fc22ed702225d265)
+- [Minor syntax updates.](https://github.com/fourjuaneight/blog/commit/522194407edeb55d47496dab5c4613e52ddca684)
+- [Image optimizations.](https://github.com/fourjuaneight/blog/commit/14e1813efdab7f1438950180626d3a3a635853cf)
+- [Update Airtable data files.](https://github.com/fourjuaneight/blog/commit/470858f7b734052f05c98ca0b11472203c3af83f)
+- [Update Airtable data files.](https://github.com/fourjuaneight/blog/commit/221a60afed4871e0ac7e6e2008fcab69cc91b087)
+- [Minor syntax optimizations.](https://github.com/fourjuaneight/blog/commit/b70c790eed768bb0342de57946e6ebca05ed41e6)
+- [Update Airtable data files.](https://github.com/fourjuaneight/blog/commit/6607bad2452d8625442bf397ed77b1af63a72ec5)
+- [Update Airtable data files.](https://github.com/fourjuaneight/blog/commit/8bebe37a58e396b151f1bc2a293c745cf0625a89)
+- [Minor styling updates.](https://github.com/fourjuaneight/blog/commit/baca5a498442d17b0dde6b714283f3f33645ec42)
+- [Remove template code.](https://github.com/fourjuaneight/blog/commit/4b3c74bb38c9e13e5d3220f15b7f76e571ede4fe)
+- [Minor styling optimizations.](https://github.com/fourjuaneight/blog/commit/652cb215d06fcec84d84019f6eb8af58d4eaaafa)
+- [Remove local bookmarks generation.](https://github.com/fourjuaneight/blog/commit/0e1acdafcd1d8d8504c47e13ec700ae298f50469)
+- [Minor data caching optimizations.](https://github.com/fourjuaneight/blog/commit/b6cef3c1a31b07c94d84e831632fc4488a61a544)
+- [Sort by creator only.](https://github.com/fourjuaneight/blog/commit/9e989e789821fd9eba1ff65aae651a6b38584c7c)
+- [Remove console log.](https://github.com/fourjuaneight/blog/commit/368a68287613c948e3568c58a59922720de6e77d)
+- [Minor syntax fixes.](https://github.com/fourjuaneight/blog/commit/e97b724af2dccbea3564295b8ec5770d898d7540)
+- [Remove deprecated script.](https://github.com/fourjuaneight/blog/commit/63618bc408c0495b37e3516ba0ceb24b1b4fc4f3)
+- [Minor logging optimizations.](https://github.com/fourjuaneight/blog/commit/38a9144e818de5d5c84351ca5ba176c5bf4abd78)
+- [Add new og social image.](https://github.com/fourjuaneight/blog/commit/e8952fa21ce5ac4d909dd526ae1ca74e046ad424)
+- [Update content to be more gender neutral.](https://github.com/fourjuaneight/blog/commit/7d68fc6f0d4ed1d7625c1465cbb7c29e2d69b224)
+- [Add new og social image.](https://github.com/fourjuaneight/blog/commit/238a1c73c9c2527d85d21718c0c632659dbffbcf)
+- [Rename for to something simpler.](https://github.com/fourjuaneight/blog/commit/89f8aeaa9efac2ee100827ea4e39ca3fc4deac15)
+- [Add new og social image.](https://github.com/fourjuaneight/blog/commit/da9a45cc41052a621d659239c690946c44944fea)
+- [Remove deprecated assets.](https://github.com/fourjuaneight/blog/commit/97db850f93c5f3dbb94f7a119a71afaae7ef1b57)
+- [Add new og social image.](https://github.com/fourjuaneight/blog/commit/5df6d1e927abe116b69d8db0649c2523b27c09ac)
+- [Optimizatione images.](https://github.com/fourjuaneight/blog/commit/3013d7f7d6846be861528f4c2df38fe887422cd2)
+- [Image optimizations.](https://github.com/fourjuaneight/blog/commit/1069720fc9cf5e6b51a2f29f2f71562b77c2b876)
+- [Add new shelf images.](https://github.com/fourjuaneight/blog/commit/ab1effb16cac7946be7cea6b796576c2517b2d83)
+- [Add new shelf images.](https://github.com/fourjuaneight/blog/commit/b6d4ee78a9bf13eee72812a0720321f1722cae53)
+- [Add missing CI badge.](https://github.com/fourjuaneight/blog/commit/191f298c4aeb4e42ede8bc3d4e8d183f654a6386)
+- [Update Node to latest LTS v16.](https://github.com/fourjuaneight/blog/commit/e84858a1e2c5630fa373c8fd6f385a67ff10e8b4)
+- [Update dependencies.](https://github.com/fourjuaneight/blog/commit/661a0dff04006100b6362959512aa0bb17de6167)
+- [Update dependency.](https://github.com/fourjuaneight/blog/commit/4acac683f5675eb4bb08ff3ca4fb10c212eb5417)
+- [Update Tailwind.](https://github.com/fourjuaneight/blog/commit/52430a47e86ecb2459324ce8e86805e84f601ea3)
+- [Image optimizations.](https://github.com/fourjuaneight/blog/commit/e9087947c92b0b4f4cf6a5245fc55b2b06415597)
+- [Minor build updates.](https://github.com/fourjuaneight/blog/commit/af48cd732fed24b471d4aa49a3be991a9c63384c)
+- [Update asset minification method.](https://github.com/fourjuaneight/blog/commit/67259b27d827c5272fedf5bf1be4c1e1184bd051)
+- [Minor syntax updates.](https://github.com/fourjuaneight/blog/commit/5ffcc5eb2f0b506f5fc4bdf3f9d96272b7b47aaf)
+- [Minor syntax adjustments.](https://github.com/fourjuaneight/blog/commit/bc4d81e2b4b8860970dafd11cd3bdadfcf7c2336)
+- [Add brief description on each bookmarks category page.](https://github.com/fourjuaneight/blog/commit/34f20a32f70c100490f1c1cce9b621b300262a0b)
+- [Remove dead link check from bookmarks function.](https://github.com/fourjuaneight/blog/commit/a21f6e5522e2f8e388f98c260f8bc36c6ffa549e)
+- [Update bookmarks typing.](https://github.com/fourjuaneight/blog/commit/47d9b3c201350a0d045f42581536cbbeabc97d42)
+- [Shelf image optimizations.](https://github.com/fourjuaneight/blog/commit/fa1ea9f248060216a238a725fa6c2dd7dd726694)
+- [Add new shelf images.](https://github.com/fourjuaneight/blog/commit/9ed060e4a70fb639f801b40e43676607ba69a73a)
+- [Add git cliff config for auto-generating changelogs.](https://github.com/fourjuaneight/blog/commit/b98512142930f1f6c90bed53b6fa9c482f211037)
+- [Update Airtable scheme.](https://github.com/fourjuaneight/blog/commit/73ddb8bf28c6b4753a435d9ead5ab7440c345761)
+- [Update bookmarks data keys to match Airtable scheme update.](https://github.com/fourjuaneight/blog/commit/4990d609a2ef515e814e8c5784dc793aa6c5b7d0)
+- [Optimize util scripts error handling and logging.](https://github.com/fourjuaneight/blog/commit/46562cb963c49d977c0584c765e3f2b8f43678d7)
+- [Remove deprecated web workers.](https://github.com/fourjuaneight/blog/commit/93a2083551e3918f3626d2573e908092e342c64c)
+- [Minor organizational optimizations.](https://github.com/fourjuaneight/blog/commit/627e97c5ee3f563df2c886fd50f132a2d28f37a5)
+- [Update shelf images with new file names.](https://github.com/fourjuaneight/blog/commit/d84b1e76c4dbda6a57d94a2fb13dce399f0d1ed1)
+- [Minor syntax fixes.](https://github.com/fourjuaneight/blog/commit/878a6f6a6c9d23941d11cead703fac3a1124908f)
+- [**breaking**] [Remove data to allow worker build.](https://github.com/fourjuaneight/blog/commit/d71b70ae94ccd4eaf8712ab5a76a0fad4981d8ec)
+- [Restore api data.](https://github.com/fourjuaneight/blog/commit/8dddeef56fadff1166f655ff96ec8b6048e006d3)
+- [Further worker debugging.](https://github.com/fourjuaneight/blog/commit/f74b1482f7c6a9a1bc2ee2e2e6d55ca3361259ae)
+- [Restore bookmarks table to final load it properly?](https://github.com/fourjuaneight/blog/commit/79018a79282eaf9594755eaa967db74de1448155)
+- [Add new shelf images.](https://github.com/fourjuaneight/blog/commit/09724d837679b34438f625ff6dc19b28aa76da1f)
+- [Remove border from favicons.](https://github.com/fourjuaneight/blog/commit/c0baf499eaebbf2735cd7364bb6466114fff2f13)
+- [Update workflows to latest Ubuntu LTS version.](https://github.com/fourjuaneight/blog/commit/25fab56925fb97e9365d355b82fa63e1e9c1834b)
+- [Minor diagram stylling adjustments.](https://github.com/fourjuaneight/blog/commit/06fb2461a1401529e168dcfc25cd1bb322efc416)
+- [Add new shelf images.](https://github.com/fourjuaneight/blog/commit/157c6847b59139bb71a5fbdeed0f1effb1daae74)
+- [Update dependency lock file.](https://github.com/fourjuaneight/blog/commit/4767a80e8a78c32829e0192bcb8cd04ca4698689)
+- [Update shelf query with new category/genre case change.](https://github.com/fourjuaneight/blog/commit/2367bfedaf227322619aad14653027d705472a7d)
+- [Minor syntax updates.](https://github.com/fourjuaneight/blog/commit/b8ba622674d9af59383bc3d66332b20d4a134ff7)
+- [Logging optimizations.](https://github.com/fourjuaneight/blog/commit/a770ef11419f804e550faa5d38992d3bba8b4f34)
+- [Further logging optimizations.](https://github.com/fourjuaneight/blog/commit/5e46c0dc449bf4c9ef70a3cb1cdbd550c0458365)
+- [Minor functions logging optimizations.](https://github.com/fourjuaneight/blog/commit/f9f02c5004cc6a3c85e4a2ce4a84cce297bda6cf)
+- [Add changelog generation action.](https://github.com/fourjuaneight/blog/commit/0e5a89c919a3df926a0660eaacba879e00335f04)
 
 <!-- generated by git-cliff -->
