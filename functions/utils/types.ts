@@ -55,6 +55,10 @@ export interface BookmarksData {
   [key: string]: BKFields[];
 }
 
+export interface RecordColumnAggregateCount {
+  [key: string]: number;
+}
+
 // Shelf
 export interface ShelfItem {
   id: string;
@@ -109,6 +113,12 @@ export interface HasuraShelfQueryResp {
 export interface HasuraTWQueryResp {
   data: {
     media_tweets: TweetValues[];
+  };
+}
+
+export interface HasuraQueryAggregateResp {
+  data: {
+    [key: string]: string | string[];
   };
 }
 
