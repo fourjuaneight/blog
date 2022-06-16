@@ -1,6 +1,4 @@
 // Bookmarks
-export type FieldStatus = 'alive' | 'dead';
-
 export interface ArticleFields {
   archive?: string;
   author: string;
@@ -8,7 +6,7 @@ export interface ArticleFields {
   dead: boolean;
   id: string;
   site: string;
-  tags: string;
+  tags: string[];
   title: string;
   url: string;
 }
@@ -20,7 +18,7 @@ export interface RedditFields {
   dead: boolean;
   id: string;
   subreddit: string;
-  tags: string;
+  tags: string[];
   title: string;
   url: string;
 }
@@ -30,7 +28,7 @@ export interface TweetFields {
   creator: string;
   dead: boolean;
   id: string;
-  tags: string;
+  tags: string[];
   tweet: string;
   url: string;
 }
@@ -40,7 +38,7 @@ export interface WebFields {
   creator: string;
   dead: boolean;
   id: string;
-  tags: string;
+  tags: string[];
   title: string;
   url: string;
 }
