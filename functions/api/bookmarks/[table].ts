@@ -12,6 +12,8 @@ export const onRequestGet = async ({ env, params }: RequestParams) => {
   try {
     const bkData = await queryHasuraBookmarks(env);
 
+    console.log('bookmarks/[table]', { table, bkData });
+
     if (bkData[table]?.length) {
       return new Response(JSON.stringify(bkData[table]), {
         headers: {
@@ -34,6 +36,8 @@ export const onRequestGet = async ({ env, params }: RequestParams) => {
       );
     }
   } catch (error) {
+    console.log('bookmarks/[table]', { error });
+
     return new Response(error, {
       headers: {
         'Content-Type': 'application/json',

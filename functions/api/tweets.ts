@@ -10,6 +10,8 @@ export const onRequestGet = async ({ env }: RequestParams) => {
   try {
     const tweets = await queryHasuraTweets(env);
 
+    console.log('tweets', { shelfData });
+
     if (tweets.length) {
       return new Response(JSON.stringify(tweets), {
         headers: {
@@ -25,6 +27,8 @@ export const onRequestGet = async ({ env }: RequestParams) => {
       });
     }
   } catch (error) {
+    console.log('tweets', { error });
+
     return new Response(error, {
       headers: {
         'Content-Type': 'application/json',

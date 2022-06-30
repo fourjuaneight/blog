@@ -13,6 +13,8 @@ export const onRequestGet = async ({ env }: RequestParams) => {
       table => shelfData[table].length === 0
     );
 
+    console.log('shelf', { shelfData });
+
     if (!noData) {
       return new Response(JSON.stringify(shelfData), {
         headers: {
@@ -28,6 +30,8 @@ export const onRequestGet = async ({ env }: RequestParams) => {
       });
     }
   } catch (error) {
+    console.log('shelf', { error });
+
     return new Response(error, {
       headers: {
         'Content-Type': 'application/json',
