@@ -2,11 +2,24 @@
 
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+## [1.0.2] - 2022-06-30
+
+### Bug Fixes
+
+- [Add conditional bookmarks data loading.](https://github.com/fourjuaneight/blog/commit/37345e57536a416caa2558261fcbe870206d6943)
+- [Revert deprecated bookmarks request funciton.](https://github.com/fourjuaneight/blog/commit/44ccd5c3848b18de15ede4c118c694f2b901cc9b)
+
+### Features
+
+- [Add links to every commit message in changelog.](https://github.com/fourjuaneight/blog/commit/f651db40a3366fc199a77f5de0f42be9286449f0)
+- [Update bookmarks tags from string to array.](https://github.com/fourjuaneight/blog/commit/230479ac02005dcb6cee9d010b639aadd31a4da2)
+- [Add table column aggregate count to bookmarks query function.](https://github.com/fourjuaneight/blog/commit/b0079f00562fd0a06a5b40a14d365929abb2e6f9)
 
 ### Miscellaneous Tasks
 
 - [Update Changelog.](https://github.com/fourjuaneight/blog/commit/dc7ade5b32430ad81285cf6d8eae4b66c67e5165)
+- [Image optimizations.](https://github.com/fourjuaneight/blog/commit/eec7b0adae760c44b173011b2284c2f89b78bebf)
+- [Add function logging.](https://github.com/fourjuaneight/blog/commit/917c79fcf77a0e96a8b83abbbdff8c071fc17a57)
 
 ## [1.0.1] - 2022-06-15
 
