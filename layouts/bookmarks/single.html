@@ -129,40 +129,42 @@
         data-category="{{ lower .Title }}"
         data-article="{{ $isArticle }}"
       >
-        {{ range sort $bookmarks (lower $dTitle) "asc" }}
-          {{ $bkTitle := cond (eq $.Title "Tweets") .tweet .title }}
-          {{ $bkCreator := cond (eq $.Title "Reddits") .subreddit (cond (eq $.Title "Articles") .author (cond (eq $.Title "Tweets") .user .creator)) }}
-          {{ $tagsLength := sub (len .tags) 1 }}
+        {{ if ne $bookmarks nil }}
+          {{ range sort $bookmarks (lower $dTitle) "asc" }}
+            {{ $bkTitle := cond (eq $.Title "Tweets") .tweet .title }}
+            {{ $bkCreator := cond (eq $.Title "Reddits") .subreddit (cond (eq $.Title "Articles") .author (cond (eq $.Title "Tweets") .user .creator)) }}
+            {{ $tagsLength := sub (len .tags) 1 }}
 
-          <li
-            class="bk-cell border-solid duration-200 ease-in-out grid grid-rows-1 m-0 p-0 transition-all w-full"
-            data-status="{{ .status }}"
-          >
-            <a
-              class="col-start-1 focus:no-underline hove:no-underline m-0 no-underline p-0 px-2 relative w-full whitespace-nowrap"
-              href="{{ .url }}"
-              target="_blank"
-              rel="noopener noreferrer"
-            >{{ $bkTitle }}</a>
-            <p class="col-start-2 m-0 p-0 px-2 w-full" title="{{ $bkCreator }}">{{ $bkCreator }}</p>
-            {{ if $isArticle }}
-              <p class="col-start-3 m-0 p-0 px-2 w-full" title="{{ .site }}">{{ .site }}</p>
-            {{ end }}
-            <ul
-              class="{{ if $isArticle }}col-start-4{{ else }}col-start-3{{ end }} flex items-center justify-start list-none px-2 py-0 w-full"
+            <li
+              class="bk-cell border-solid duration-200 ease-in-out grid grid-rows-1 m-0 p-0 transition-all w-full"
+              data-status="{{ .status }}"
             >
-              {{ range $i, $tag := .tags }}
-                <li
-                 class="flex items-center justify-start m-0 overflow-hidden p-0 whitespace-nowrap"
-                >
-                  <p class="leading-none m-0 p-0">{{ $tag }}</p>
-                  {{ if ne $i $tagsLength }}
-                    <span class="mr-1 text-secondary" aria-hidden="true">,</span>
-                  {{ end }}
-                </li>
+              <a
+                class="col-start-1 focus:no-underline hove:no-underline m-0 no-underline p-0 px-2 relative w-full whitespace-nowrap"
+                href="{{ .url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+              >{{ $bkTitle }}</a>
+              <p class="col-start-2 m-0 p-0 px-2 w-full" title="{{ $bkCreator }}">{{ $bkCreator }}</p>
+              {{ if $isArticle }}
+                <p class="col-start-3 m-0 p-0 px-2 w-full" title="{{ .site }}">{{ .site }}</p>
               {{ end }}
-            </ul>
-          </li>
+              <ul
+                class="{{ if $isArticle }}col-start-4{{ else }}col-start-3{{ end }} flex items-center justify-start list-none px-2 py-0 w-full"
+              >
+                {{ range $i, $tag := .tags }}
+                  <li
+                  class="flex items-center justify-start m-0 overflow-hidden p-0 whitespace-nowrap"
+                  >
+                    <p class="leading-none m-0 p-0">{{ $tag }}</p>
+                    {{ if ne $i $tagsLength }}
+                      <span class="mr-1 text-secondary" aria-hidden="true">,</span>
+                    {{ end }}
+                  </li>
+                {{ end }}
+              </ul>
+            </li>
+          {{ end}}
         {{ end}}
       </ul>
     </div>
