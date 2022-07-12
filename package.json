@@ -4,7 +4,7 @@
   "description": "Personal blog.",
   "scripts": {
     "build:chroma": "hugo gen chromastyles > assets/css/syntax.css",
-    "build:prod": "run-p mermaid img ts tw && hugo -e production --minify && npm run clean-scripts",
+    "build:prod": "run-p mermaid img shelf-images ts tw && hugo -e production --minify && npm run clean-scripts",
     "build": "hugo -e production --ignoreCache --minify",
     "clean-scripts": "ts-node --project tsconfig.node.json \"scripts/clean-scripts.ts\"",
     "clean:node": "rm -rf node_modules",

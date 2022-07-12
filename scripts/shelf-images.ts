@@ -1,3 +1,4 @@
+import { existsSync, promises } from 'fs';
 import { resolve } from 'path';
 
 import chalk from 'chalk';
@@ -6,6 +7,7 @@ import sharp from 'sharp';
 
 import { ShelfItem } from '../functions/utils/types';
 
+const { mkdir } = promises;
 const dist = resolve(__dirname, '..', 'assets/img/shelf/');
 const variants = ['jpeg', 'webp', 'avif'];
 
@@ -55,6 +57,9 @@ const fmtImage = async (name: string, url: string): Promise<void> => {
     const flatData = Object.keys(data)
       .map(key => data[key].map(item => ({ id: item.id, cover: item.cover })))
       .flat();
+
+    if (!existsSync(dist)) await mkdir(dist);
+
     const ops = flatData.map(asset => fmtImage(asset.id, asset.cover));
 
     await Promise.all(ops);
