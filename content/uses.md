@@ -30,20 +30,19 @@ I used to be a Mac guy. Maybe I still am. But after having to part ways with my 
 - **[dbx 286s](https://dbxpro.com/en/products/286s)** - Brings the volume up on the mic and adds some hardware tweaks to make the sounds smoother.
 - **[Tascam US-2x2HR](https://tascam.com/us/product/us-2x2hr/top)** - Best bang for your buck, IMHO. It's just plug-n-play.
 - **[beyerdynamic DT 990 Pro](https://north-america.beyerdynamic.com/dt-990-pro.html)** - These are overkill for essentially Zoom and podcasts. But TOOL does sound lovely in lossless.
-- **[Schiit Modi](https://www.schiit.com/products/modi-1)** - Solid DAC for my listening needs.
+- **[Schiit Modi](https://www.schiit.com/products/modi-1)** - Solid DAC that feeds into the Magni.
 - **[Schiit Magni](https://www.schiit.com/products/magni-1)** - Solid Amp to power the DT 990 Pros.
 - **[Bluesound NODE](https://www.bluesound.com/products/node/)** - This serves as audio input for the TV as well as an AirPlay and Roon endpoint. Pretty sweet.
 - **[Schiit Modius](https://www.schiit.com/products/modius)** - This takes the SPDIF digital signal from the NODE.
-- **[Schiit Aegir](https://www.schiit.com/products/aegir)** - Then two of these (monoblock) take the balanced signal from the Modius.
+- **[Schiit Aegir](https://www.schiit.com/products/aegir)** - Then two of these (monoblock) take the balanced signal from the Modius. These will likely be replaced by something cooler, smaller, and more powerfull.
 - **[Klipsch RP-600M](https://www.klipsch.com/products/rp-600m-bookshelf-speakers)** - These sounds great and sweet for my messed up hearing.
- 
+
 ## Software
 Because of the aforementioned jump to Linux, all of these Mac apps are no longer part of my daily usage. But more so, my job was switched over to [GitHub Codespaces](https://github.com/features/codespaces). And I've done the same for my projects.
 
-* [Dracula Theme](https://draculatheme.com) all the things.
+- [Dracula Theme](https://draculatheme.com) all the things.
 - **[VS Code](https://code.visualstudio.com)** - Honestly, I've tried all the editors at this point. This is by far the most decent one. It is solid enough, way too customizable, and integrates perfectly with all my tooling.
 - **[Alacritty](https://alacritty.org)** - Best cross-platform terminal. Solid and performant.
-- **[Blink](https://www.blink.sh)** - Best iOS terminal.
 - **[Working Copy](https://workingcopyapp.com)** - I can't believe this is an iOS app; paramount for mobile Git-ing.
 - **[Transmit](https://panic.com/transmit/)** - Rarely use it, but it's nice to look at.
 - **[ShellFish](https://secureshellfish.app)** - _The_ iOS FTP app.
@@ -51,18 +50,23 @@ Because of the aforementioned jump to Linux, all of these Mac apps are no longer
 - **[Things](https://culturedcode.com/things/)** - I've tried them all and this UI is simply the best for me.
 - **[Drafts](https://getdrafts.com)** - All text starts here.
 - **[Jayson](https://jayson.app)** - Nice UI for JSON on iOS.
-- **[Scriptable](https://scriptable.app)** - Sometimes you _just_ need a little JavaScript.
 - **[SoundSource](https://rogueamoeba.com/soundsource/)** - It's a simple app that makes life so much nicer.
 - **[Hazel](https://www.noodlesoft.com/)** - A computer should run itself. This does the trick.
 - **[Rectangle](https://rectangleapp.com)** - Nifty little window manager.
 - **[Bartender](https://www.macbartender.com/)** - Too much crap on the menu bar.
 
 ### Daily Apps
+- **[Blink](https://www.blink.sh)** - Best iOS terminal.
+- **[Scriptable](https://scriptable.app)** - Sometimes you _just_ need a little JavaScript in your automation.
 - **[Castro](https://castro.fm)** - I always go back and forth between this and [Overcast](https://overcast.fm). I love Overcast for its quality build, but Castro has a fantastic UI.
 - **[Reeder](https://reederapp.com)** - I've been using the iOS sync feature and works perfectly.
 - **[GoodLinks](https://goodlinks.app)** - This is honestly the best read-it-later app you can find. It's pretty much perfect.
-- **[Apollo](https://apolloapp.io)** -  The _only_ Reddit app.
+- **[Apollo](https://apolloapp.io)** - The _only_ Reddit app.
 - **[Tweetbot](https://tapbots.com/tweetbot/)** - You're an animal if you use the official Twitter app.
+- **[Panels](https://panels.app)** - I read a ton of manga and the occasional comic. I buy most of my stuff digitally and prefer this to any native reader. It's an amazing app with iCloud sync and even [OPDS](https://en.wikipedia.org/wiki/Open_Publication_Distribution_System) server streaming stupport.
+- **[Prism](https://prism-music.app)** - Plex Amp is great, but if you want a no-nonsense audio player for your Plex music library, this is the app.
+- **[Prologue](https://prologue.audio)** - I usually read my books with a companion audiobook. I found this app (made by the same dev as Prism) which utilizes a Plex "music" library as an audiobook. It's wonderful.
+- **[Infuse](https://firecore.com/infuse)** - Keeping with the Plex, theme this is an amazing Plex video player. While I like the Plex apps, these tend to give you more controls, with a better UI, and far less clutter.
 
 There are several more hardware and software I use. But these are the main things I cannot live without daily.
 
@@ -71,8 +75,8 @@ Although there's a plethora of tools and apps available for development work, I 
 
 ### Custom
 - **[tenjin](https://github.com/fourjuaneight/tenjin)** - Early on in my development career, I realize a lot of time was spent copying and pasting previously use code. So I started to keep a repo full of commonly used scripts, stylings, configs, templates, and snippets. That eventually morphed into a JS CLI utility. This later iteration is written in Go —for no reason other than fun— and has a slimmed-down collection with just the stuff I need for work and personal projects. I quite like this little tool.
-- **[showrunner](https://github.com/fourjuaneight/showrunner)** - I run a Plex server at home for all my media. Oftentimes I need to rename entire tv shows to the correct formatting. I've tried using a couple of shell scripts before, but this tool does it in a single command. But better yet, it also pulls the metadata from TMDB API.
-- **[scriptable](https://github.com/fourjuaneight/scriptable)** - There is so much automation that happens on my phone. Most of it is through [Shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios). But there's only so much it can do before it becomes unmanageable. Unless you [Federico](https://www.macstories.net/shortcuts/). These are the various JS scripts, running on [Scriptable](https://scriptable.app), that make iOS automation so much easier.
+- **[showrunner](https://github.com/fourjuaneight/showrunner)** - I run a Plex server at home for all my media. More often than not, I need to rename entire TV Shows to the correct formatting. I've tried using a couple of shell scripts before, but this tool does it in a single command. Plus, it pulls the metadata from TMDB API.
+- **[scriptable](https://github.com/fourjuaneight/scriptable)** - There is so much automation that happens on my phone. Most of it is through [Shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios). But there's only so much it can do before it becomes unmanageable. Unless you're [Federico](https://www.macstories.net/shortcuts/). These are the various JS scripts, running on [Scriptable](https://scriptable.app), that make iOS automation so much easier.
 - **[dotfiles](https://github.com/fourjuaneight/dotfiles)** - I think most devs have dotfiles repo somewhere. I took what I liked the most from others and made something easy to maintain and expand.
 
 ### CLI
@@ -81,17 +85,18 @@ I started finding Rust alternatives to some of the default CLI tooling for great
 - **[cargo-update](https://github.com/nabijaczleweli/cargo-update)** - This little utility brings the cargo experience up to 11. A simple package updater.
 - **[sheldon](https://github.com/rossmacarthur/sheldon)** - There are so many zsh plugin managers. This one is lightweight and easily managed via a TOML file.
 - **[starship](https://github.com/starship/starship)** - I love cool prompts. This one is robust and highly customizable. Again, via a single TOML file.
-- **[zellij](https://github.com/zellij-org/zellij)** - Tmux is great and all. But I can across this on Twitter and found it faster. You can write your plugins, define them via a YAML config file, and what got me is the ability to define layout configurations via various YAML files, which are then called via flags.
-- **[zoxide](https://github.com/ajeetdsouza/zoxide)** - Ths is just `cd` on steroids.
+- **[zellij](https://github.com/zellij-org/zellij)** - Tmux is great and all. But I came across this on Twitter and found it faster. You can write your plugins, define them via a YAML config file, and what got me is the ability to define layout configurations via various YAML files, which are then called via flags.
+- **[zoxide](https://github.com/ajeetdsouza/zoxide)** - This is just `cd` on steroids.
 - **[exa](https://github.com/ogham/exa)** - A prettier and feature-rich `ls`.
 - **[fd](https://github.com/sharkdp/fd)** - A prettier and superior `find`.
 - **[bat](https://github.com/sharkdp/bat)** - A prettier and more useful `cat`.
+- **[rip](https://github.com/nivekuil/rip)** - A better `rm`.
 - **[delta](https://github.com/dandavison/delta)** - If you're a CLI Git user, you'll love this thing. It makes diff output far more readable and thus more useful. You can also use a custom theme and who doesn't love that.
 - **[fzf](https://github.com/junegunn/fzf)** - This thing is one of the most crucial binaries on my computer. It powers the majority of my [CLI utilities](https://github.com/fourjuaneight/dotfiles/blob/master/homedir/.zsh/func.zsh).
 - **[atuin](https://github.com/ellie/atuin)** - Amazing quality of life improvement utility. It creates a simple but powerful searchable shell history UI.
 
 ### Plugins
-These are entirely for [VSCode](https://code.visualstudio.com), my text editor of choice. I've tried them all and this is what I like the best. And so do many many other developers. I try to keep my plugin use to a minimum to prevent the app from running slow. Most of them are for syntax highlighting. But the ones listed here are what enhance my everyday experience.
+These are entirely for [VSCode](https://code.visualstudio.com), my text editor of choice. I've tried them all and this is what I like the best. And so do many many other developers. I try to keep my plugin use to a minimum to prevent the app from running slow. Most of them are for some sort of syntax optimization. But the ones listed here are what enhance my everyday experience.
 
 - **[GitHub Copilot](https://copilot.github.com)** - A lot has been said about Copilot. I think it's a great idea in the early stages. [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) was already a bit obtrusive —in my opinion— and this can often make it worse. But your mileage may vary.
 - **[GitLense](https://github.com/eamodio/vscode-gitlens)** - If you use the built-in Git functionality, this thing will add a lot of the features you might be missing.
