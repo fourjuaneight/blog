@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2022-07-25
+
+### Bug Fixes
+
+- [Add shelf img generation to local server script.](https://github.com/fourjuaneight/blog/commit/9cbcc51b4299944530346dcef2b9b981ddadc26f)
+
+### Features
+
+- [Create shelf images directory if missing.](https://github.com/fourjuaneight/blog/commit/56caf964482075c011141fc2a6630b40e2981cc9)
+- [Update node version and migrate to pnpm for dependency management.](https://github.com/fourjuaneight/blog/commit/7c4af1d873632864e18adc728bf8ef10ab160519)
+- [Replace ts-node with esno for script running.](https://github.com/fourjuaneight/blog/commit/afdfd6af9b58ef5ce167891d067d63a955a2c46d)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/255c8185806d97c043cb266a07b20f8320b4df17)
+- [Add new shelf images.](https://github.com/fourjuaneight/blog/commit/2699f432cf2430f286930f1e9f56e3ec71417385)
+- [Add new shelf images.](https://github.com/fourjuaneight/blog/commit/79300d9a6148d5208689d20c90605d04ae758f9e)
+- [Update uses page and do a little grammar cleanup.](https://github.com/fourjuaneight/blog/commit/d1f8bdc0c0c26b45c6924013452057210f87f910)
+- [Ignore shelf images folder.](https://github.com/fourjuaneight/blog/commit/48b759dc5031ca0c9a96df5b7166f11e36d69062)
+- [Image optimizations.](https://github.com/fourjuaneight/blog/commit/c36f1caf160da19c2a5703ea8a9dbd08a85ea132)
+
 ## [1.0.2] - 2022-06-30
 
 ### Bug Fixes
