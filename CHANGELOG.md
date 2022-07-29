@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.1] - 2022-07-29
+
+### Bug Fixes
+
+- [Sign version tag commits.](https://github.com/fourjuaneight/blog/commit/654af512d6b6b4e60dd4a438f2fd1abd8ab010cd)
+
+### Miscellaneous Tasks
+
+- [Update to v1.2.1.](https://github.com/fourjuaneight/blog/commit/9c7a4e7e9bc928ffac4aed1566617ca9134bf6cc)
+
+## [1.2.0] - 2022-07-29
+
+### Features
+
+- [Add default commit message when version bumping.](https://github.com/fourjuaneight/blog/commit/8a969866b39f8bd0cb55beb0948b4036f0cb2fde)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/8349524eef81ae90e2e2b089e568cdd8c2f8e42a)
+- [Update to v1.2.0.](https://github.com/fourjuaneight/blog/commit/bcd1614dddc5cd894a2bfa1ce627dce7f029c2de)
+
 ## [1.1.0] - 2022-07-25
 
 ### Bug Fixes
