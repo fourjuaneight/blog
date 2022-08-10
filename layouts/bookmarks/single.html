@@ -147,17 +147,17 @@
                 title="{{ $bkTitle }}"
               >{{ $bkTitle }}</a>
               <p class="col-start-2 m-0 p-0 px-2 w-full" title="{{ $bkCreator }}">
-                <span class="hidden">By: </span>
+                <span class="sr-only">By: </span>
                 {{ $bkCreator }}
               </p>
               {{ if $isArticle }}
                 <p class="col-start-3 m-0 p-0 px-2 w-full" title="{{ .site }}">
-                  <span class="hidden">From: </span>
+                  <span class="sr-only">From: </span>
                   {{ .site }}
                 </p>
               {{ end }}
               <div class="{{ if $isArticle }}col-start-4{{ else }}col-start-3{{ end }} overflow-x-hidden px-2 w-full" title='{{ delimit .tags ", " }}'>
-                <span class="hidden">Relevant tags: </span>
+                <span class="sr-only">Relevant tags: </span>
                 <ul
                   class="flex items-center justify-start list-none p-0 w-full"
                 >
