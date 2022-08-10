@@ -59,6 +59,22 @@ export interface RecordColumnAggregateCount {
   [key: string]: number;
 }
 
+// MTG
+export interface MediaMTG {
+  name: string;
+  colors: string[] | null;
+  type: string | null;
+  set: string;
+  set_name: string;
+  oracle_string: string | null;
+  flavor_string: string | null;
+  rarity: string;
+  collector_number: number;
+  artist: string;
+  image: string;
+  back: string | null;
+}
+
 // Shelf
 export interface ShelfItem {
   id: string;
@@ -94,6 +110,12 @@ export interface HasuraBKQueryResp {
       | WebFields[]
       | RedditFields[]
       | TweetFields[];
+  };
+}
+
+export interface HasuraMTGQueryResp {
+  data: {
+    media_mtg: MediaMTG[];
   };
 }
 

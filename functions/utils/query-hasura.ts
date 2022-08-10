@@ -2,6 +2,7 @@ import {
   ContextValue,
   HasuraBKQueryResp,
   HasuraErrors,
+  HasuraMTGQueryResp,
   HasuraQueryAggregateResp,
   HasuraShelfQueryResp,
   HasuraTWQueryResp,
@@ -159,6 +160,51 @@ export const queryHasuraBookmarkAggregateCount = async (
   } catch (error) {
     console.log(error);
     throw error;
+  }
+};
+
+export const queryHasuraMTG = async (env: ContextValue) => {
+  const query = `
+    {
+      media_mtg {
+        name
+        colors
+        type
+        oracle_text
+        flavor_text
+        set
+        set_name
+        rarity
+        collector_number
+        artist
+        image
+        back
+      }
+    }
+  `;
+
+  try {
+    const request = await fetch(`${env.HASURA_ENDPOINT}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Hasura-Admin-Secret': `${env.HASURA_ADMIN_SECRET}`,
+      },
+      body: JSON.stringify({ query }),
+    });
+    const response: HasuraMTGQueryResp | HasuraErrors = await request.json();
+
+    if (response.errors) {
+      const { errors } = response as HasuraErrors;
+
+      throw `(queryHasuraMTG):\n${errors
+        .map(err => `${err.extensions.path}: ${err.message}`)
+        .join('\n')} \n ${query}`;
+    }
+
+    return (response as HasuraMTGQueryResp).data.media_mtg;
+  } catch (error) {
+    throw `(queryHasuraMTG):\n${error}`;
   }
 };
 
