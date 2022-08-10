@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.2] - 2022-08-10
+
+### Bug Fixes
+
+- [Improved accessibility and fixed tags layout break.](https://github.com/fourjuaneight/blog/commit/76682330c67a19147b13d83964e777950cb0d60e)
+- [Remove deprecated lazy loading script form shelf.](https://github.com/fourjuaneight/blog/commit/45af28ce2dc9d823aa55c1e83521b51008dd074e)
+
+### Features
+
+- [Add MTG Hasura data function.](https://github.com/fourjuaneight/blog/commit/5253dbc257cb1e6a09b91ab5ede76855c63b0bf4)
+- [Add script to save mtg images.](https://github.com/fourjuaneight/blog/commit/e90cdbff810e118b48565166073afed605fe7f3d)
+- [Update bookmarks footer image.](https://github.com/fourjuaneight/blog/commit/0698d2ee7a37213cae2adc2dd45af2faddc5a753)
+- [Add mtg page with card collection.](https://github.com/fourjuaneight/blog/commit/b6ce4dd8d90f62f3eda5b2b079ffc6c97e747970)
+- [Add sorting to mtg function.](https://github.com/fourjuaneight/blog/commit/86c7b54ab563dcd398db5a576035aed671ae3f90)
+- [Add keyboard navigation to mtg page.](https://github.com/fourjuaneight/blog/commit/4c3db01202907c8000f5f80e3e24b755d7b3d579)
+- [Add accessible keyboard navigation to image list pages.](https://github.com/fourjuaneight/blog/commit/202197d56a84027da79d1f7053574c435166c6d6)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/45098688d40ed5d4b40912fcb134156e6a0544e8)
+- [Update uses page.](https://github.com/fourjuaneight/blog/commit/69c96140f3b136ca5b766904f90f102d6534b5a2)
+- [Minor updates to about page.](https://github.com/fourjuaneight/blog/commit/5781e43b4b2d938c1b9d7824a507de95029aa6a5)
+- [Add id value to mtg query.](https://github.com/fourjuaneight/blog/commit/dc500fc708742e81af40ed442f7855a58e1cf61f)
+- [Minor accessibility optimizations.](https://github.com/fourjuaneight/blog/commit/a20508ef6787a1cb1c6a3efb06338f99d98e52be)
+- [Add option tabindex attribute to images.](https://github.com/fourjuaneight/blog/commit/ff89a91af0147cabdea5f5ebeb63db59a4f3f55a)
+- [Minor image accessibility optimzations.](https://github.com/fourjuaneight/blog/commit/ae3b2411a01b013eacdec9adeb8ec28398df7df5)
+- [Further keyboard navigation optimizations.](https://github.com/fourjuaneight/blog/commit/75184264e8010e6583bd186a1b8b9b351c977d76)
+- [Update to v1.2.2.](https://github.com/fourjuaneight/blog/commit/05c56793aa831f9fcb9a8eb332550d551a4868d1)
+
 ## [1.2.1] - 2022-07-29
 
 ### Bug Fixes
