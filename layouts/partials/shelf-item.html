@@ -5,11 +5,30 @@
   data-genre="{{ .genre }}"
   data-completed="{{ .completed }}"
 >
-  {{ partial "img.html" (dict "src" $imgSrc "alt" .name "pClasses" "shelf-img flex items-start justify-start mb-2 object-cover object-left-top" "iClasses" "w-auto" "hidden" true "post" 270) }}
+  <button
+    type="button"
+    title="{{ .name }} by {{ .creator }}"
+    class="
+      img-btn
+      cursor-default
+      duration-200
+      ease-in-out
+      focus-visible:border-1
+      focus-visible:border-primary
+      focus-visible:border-solid
+      h-auto
+      m-0
+      p-0
+      transition-colors
+      w-auto
+    "
+  >
+    {{ partial "img.html" (dict "src" $imgSrc "alt" .name "pClasses" "shelf-img flex items-start justify-start mb-2 object-cover object-left-top" "iClasses" "w-auto" "hidden" true "post" 270) }}
+  </button>
   <p class="font-bold leading-none mb-1 mt-0 mx-0">{{ .name }}</p>
   <p class="leading-none mb-1 mt-0 mx-0">{{ .creator }}</p>
   <details class="m-0">
-    <summary>
+    <summary class="duration-200 ease-in-out focus-visible:bg-transparent focus-visible:border-1 focus-visible:border-primary focus-visible:border-solid outline-none transition-colors">
       {{ range seq .rating }}
         <span class="leading-none text-sm" role="img" aria-label="star">
           &#x2B50;

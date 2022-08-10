@@ -83,6 +83,16 @@ button:hover {
   background-color: var(--secondary);
 }
 
+button.img-btn,
+button.img-btn:active,
+button.img-btn:focus,
+button.img-btn:focus-visible,
+button.img-btn:focus-within,
+button.img-btn:hover,
+button.img-btn:visited {
+  background-color: transparent;
+}
+
 hr {
   border: 0.0156rem dashed var(--primary);
   margin: 2rem 0;
