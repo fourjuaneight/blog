@@ -226,6 +226,11 @@ li.bk-title a:hover {
   text-shadow: 0.1rem 0.1rem var(--tertiary);
 }
 
+span.tag-comma {
+  min-width: 0.23rem;
+  width: 0.23rem;
+}
+
 a.site-name {
   color: var(--primary);
   font-weight: bold;

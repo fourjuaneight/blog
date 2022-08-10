@@ -144,25 +144,35 @@
                 href="{{ .url }}"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="{{ $bkTitle }}"
               >{{ $bkTitle }}</a>
-              <p class="col-start-2 m-0 p-0 px-2 w-full" title="{{ $bkCreator }}">{{ $bkCreator }}</p>
+              <p class="col-start-2 m-0 p-0 px-2 w-full" title="{{ $bkCreator }}">
+                <span class="hidden">By: </span>
+                {{ $bkCreator }}
+              </p>
               {{ if $isArticle }}
-                <p class="col-start-3 m-0 p-0 px-2 w-full" title="{{ .site }}">{{ .site }}</p>
+                <p class="col-start-3 m-0 p-0 px-2 w-full" title="{{ .site }}">
+                  <span class="hidden">From: </span>
+                  {{ .site }}
+                </p>
               {{ end }}
-              <ul
-                class="{{ if $isArticle }}col-start-4{{ else }}col-start-3{{ end }} flex items-center justify-start list-none px-2 py-0 w-full"
-              >
-                {{ range $i, $tag := .tags }}
-                  <li
-                  class="flex items-center justify-start m-0 overflow-hidden p-0 whitespace-nowrap"
-                  >
-                    <p class="leading-none m-0 p-0">{{ $tag }}</p>
-                    {{ if ne $i $tagsLength }}
-                      <span class="mr-1 text-secondary" aria-hidden="true">,</span>
-                    {{ end }}
-                  </li>
-                {{ end }}
-              </ul>
+              <div class="{{ if $isArticle }}col-start-4{{ else }}col-start-3{{ end }} overflow-x-hidden px-2 w-full" title='{{ delimit .tags ", " }}'>
+                <span class="hidden">Relevant tags: </span>
+                <ul
+                  class="flex items-center justify-start list-none p-0 w-full"
+                >
+                  {{ range $i, $tag := .tags }}
+                    <li
+                    class="flex items-center justify-start m-0 p-0 whitespace-nowrap"
+                    >
+                      <p class="leading-none m-0 p-0">{{ $tag }}</p>
+                      {{ if ne $i $tagsLength }}
+                        <span class="tag-comma mr-1 text-secondary" aria-hidden="true">,</span>
+                      {{ end }}
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
             </li>
           {{ end}}
         {{ end}}
