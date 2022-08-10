@@ -166,7 +166,7 @@ export const queryHasuraBookmarkAggregateCount = async (
 export const queryHasuraMTG = async (env: ContextValue) => {
   const query = `
     {
-      media_mtg {
+      media_mtg(order_by: {released_at: asc, set: asc, collector_number: asc}) {
         id
         name
         colors
@@ -177,6 +177,7 @@ export const queryHasuraMTG = async (env: ContextValue) => {
         set_name
         rarity
         collector_number
+        released_at
         artist
         image
         back

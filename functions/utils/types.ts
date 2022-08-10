@@ -71,6 +71,7 @@ export interface MediaMTG {
   flavor_string: string | null;
   rarity: string;
   collector_number: number;
+  released_at: string;
   artist: string;
   image: string;
   back: string | null;
