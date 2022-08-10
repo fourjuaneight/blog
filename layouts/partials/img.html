@@ -25,7 +25,10 @@
     {{ if ne .tabindex nil }}tabindex="{{ .tabindex }}"{{ end }}
   />
 {{ else }}
-<picture class="{{ with .pClasses }}{{ . }}{{ else }}img-wrap flex items-center justify-center my-4 w-full{{ end }}">
+<picture
+  class="{{ with .pClasses }}{{ . }}{{ else }}img-wrap flex items-center justify-center my-4 w-full{{ end }}"
+  {{ if ne .tabindex nil }}tabindex="{{ .tabindex }}"{{ end }}
+>
   {{ $avifPrimary := resources.Get (print "/img/" $avif) }}
   <source srcset="{{ $avifPrimary.Permalink }}" type="image/avif" />
   {{ $webpPrimary := resources.Get (print "/img/" $webp) }}
@@ -40,7 +43,6 @@
     data-small="{{ $isSmall }}"
     aria-hidden="{{ $isHidden }}"
     loading="lazy"
-    {{ if ne .tabindex nil }}tabindex="{{ .tabindex }}"{{ end }}
   />
 </picture>
 {{ end }}

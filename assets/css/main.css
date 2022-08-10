@@ -105,6 +105,11 @@ li.bk-cell > * {
   overflow: hidden;
 }
 
+picture.mtg-img:focus {
+  outline: none;
+  border: 0.0156rem solid var(--primary);
+}
+
 sup {
   margin-left: 0.1875rem;
   vertical-align: 0.1875rem;
