@@ -14,27 +14,33 @@ Writing isn't my strong suit. But I do it quite often. It's therapeutic and help
 - From time to time I build mechanical keyboards.
 - I'm somewhat into audio gear.
 - I really like cooking.
-- I'm big into JRPGs.
-- I collect Magic The Gathering cards. I've never played a single game, though.
+- I'm big into JRPGs, but mostly the older stuff.
+- I ~~collect~~ hoard Magic The Gathering cards.
 - I really like making lists.
-- I delivered a baby once. It wasn't magical.
+- I delivered a baby once.
 
 ## Work
-I currently work as a Senior "Full-Stack" Web Developer over at [Big Pixel](https://thebigpixel.net/). These days I mostly make Angular and React enterprise apps. And some REST and GraphQL APIs. But here's a cool list of skills:
+
+I currently work as a Senior Full-Stack Web Developer over at [Big Pixel](https://thebigpixel.net/). These days I mostly make Angular and React enterprise apps. And some REST and GraphQL APIs. But here's a cool list of skills:
 
 ### Languages:
-JavaScript, TypeScript, CSS, SCSS, HTML
+
+TypeScript, JavaScript, SCSS, CSS, HTML, SQL, Shell, Go
 
 ### Frameworks:
-Angular, React, Gatsby, Next, Hugo, Eleventy, Jekyll, NestJS, Express, GraphQL
+
+Angular, React, Next, Gatsby, Hugo, Eleventy, Jekyll, NestJS, Express, GraphQL
 
 ### Tooling:
-Node, Redux (Redux Toolkit), Webpack, Jest, Cypress, aXe, TravisCI, CircleCI, GitHub Actions, Gitlab/Bitbucket Pipeline
+
+Redux (sagas, thunks, and RTK), Webpack, Jest, Cypress, aXe, TravisCI, CircleCI, GitHub Actions, Gitlab/Bitbucket Pipeline
 
 ### Design Tools:
+
 Figma, Sketch, InVision, Photoshop, Affinity Designer
 
 ### Other Skills:
+
 Nunchuck, Bo Hunting, Computer Hacking
 
 ---
