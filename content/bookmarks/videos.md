@@ -1,7 +1,7 @@
 ---
 title: Videos
 footer:
-  img: shaman.png
-  alt: Illustration of Juan wearing a dad hat, some wizard attire, while running with scrolls on his hands.
+  img: logo.png
+  alt: Snorlax laying on his back, typing on a laptop on his belly.
 draft: false
 ---
