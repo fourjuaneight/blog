@@ -38,25 +38,22 @@ I used to be a Mac guy. Maybe I still am. But after having to part ways with my 
 - **[Klipsch RP-600M](https://www.klipsch.com/products/rp-600m-bookshelf-speakers)** - These sounds great and sweet for my messed up hearing.
 
 ## Software
-Because of the aforementioned jump to Linux, all of these Mac apps are no longer part of my daily usage. But more so, my job was switched over to [GitHub Codespaces](https://github.com/features/codespaces). And I've done the same for my projects.
-
 - [Dracula Theme](https://draculatheme.com) all the things.
 - **[VS Code](https://code.visualstudio.com)** - Honestly, I've tried all the editors at this point. This is by far the most decent one. It is solid enough, way too customizable, and integrates perfectly with all my tooling.
 - **[Alacritty](https://alacritty.org)** - Best cross-platform terminal. Solid and performant.
-- **[Working Copy](https://workingcopyapp.com)** - I can't believe this is an iOS app; paramount for mobile Git-ing.
 - **[Transmit](https://panic.com/transmit/)** - Rarely use it, but it's nice to look at.
-- **[ShellFish](https://secureshellfish.app)** - _The_ iOS FTP app.
 - **[Affinity Designer](https://affinity.serif.com/en-us/)** - Who needs Photoshop.
 - **[Things](https://culturedcode.com/things/)** - I've tried them all and this UI is simply the best for me.
 - **[Drafts](https://getdrafts.com)** - All text starts here.
-- **[Jayson](https://jayson.app)** - Nice UI for JSON on iOS.
+- **[Jayson](https://jayson.app)** - Nice UI for JSON.
 - **[SoundSource](https://rogueamoeba.com/soundsource/)** - It's a simple app that makes life so much nicer.
 - **[Hazel](https://www.noodlesoft.com/)** - A computer should run itself. This does the trick.
 - **[Rectangle](https://rectangleapp.com)** - Nifty little window manager.
 - **[Bartender](https://www.macbartender.com/)** - Too much crap on the menu bar.
 
 ### Daily Apps
-- **[Blink](https://www.blink.sh)** - Best iOS terminal.
+- **[ShellFish](https://secureshellfish.app)** - _The_ iOS FTP app.
+- **[Working Copy](https://workingcopyapp.com)** - I can't believe this is an iOS app; paramount for mobile Git-ing.
 - **[Scriptable](https://scriptable.app)** - Sometimes you _just_ need a little JavaScript in your automation.
 - **[Castro](https://castro.fm)** - I always go back and forth between this and [Overcast](https://overcast.fm). I love Overcast for its quality build, but Castro has a fantastic UI.
 - **[Reeder](https://reederapp.com)** - I've been using the iOS sync feature and works perfectly.
@@ -92,7 +89,8 @@ I started finding Rust alternatives to some of the default CLI tooling for great
 - **[bat](https://github.com/sharkdp/bat)** - A prettier and more useful `cat`.
 - **[rip](https://github.com/nivekuil/rip)** - A better `rm`.
 - **[delta](https://github.com/dandavison/delta)** - If you're a CLI Git user, you'll love this thing. It makes diff output far more readable and thus more useful. You can also use a custom theme and who doesn't love that.
-- **[fzf](https://github.com/junegunn/fzf)** - This thing is one of the most crucial binaries on my computer. It powers the majority of my [CLI utilities](https://github.com/fourjuaneight/dotfiles/blob/master/homedir/.zsh/func.zsh).
+- **[sd](https://github.com/chmln/sd)** - This thing is one of the most crucial binaries on my computer. It powers the majority of my [CLI utilities](https://github.com/fourjuaneight/dotfiles/blob/master/homedir/.zsh/func.zsh).
+- **[gum](https://github.com/charmbracelet/gum)** - For smaller and simpler jobs where I just need to choose from a list.
 - **[atuin](https://github.com/ellie/atuin)** - Amazing quality of life improvement utility. It creates a simple but powerful searchable shell history UI.
 
 ### Plugins
@@ -101,7 +99,7 @@ These are entirely for [VSCode](https://code.visualstudio.com), my text editor o
 - **[GitHub Copilot](https://copilot.github.com)** - A lot has been said about Copilot. I think it's a great idea in the early stages. [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) was already a bit obtrusive —in my opinion— and this can often make it worse. But your mileage may vary.
 - **[GitLense](https://github.com/eamodio/vscode-gitlens)** - If you use the built-in Git functionality, this thing will add a lot of the features you might be missing.
 - **[Git History](https://github.com/pomber/git-history)** - I'll go as far as to say you need this plugin. Grab a file, run this plugin, and easily scroll through the version history. Such a life improvement.
-- **[GitHub Pull Request](https://github.com/Microsoft/vscode-pull-request-github)** - Instead of my usual [fzf + Git + gh utility](https://github.com/fourjuaneight/dotfiles/blob/master/homedir/.zsh/func.zsh#L458-L468) for CLI PR creation, I've been trying out this plugin. There were some early bugs, but they've since been ironed out. Overall, it's great. If you're already using the built-in Git functionality of VSCode as I do now, this will integrate nicely into your existing workflow and make it feature complete.
+- **[GitHub Pull Request](https://github.com/Microsoft/vscode-pull-request-github)** - Instead of my usual [gum + Git + gh utility](https://github.com/fourjuaneight/dotfiles/blob/master/homedir/.zsh/func.zsh#L696-L728) for CLI PR creation, I've been trying out this plugin. There were some early bugs, but they've since been ironed out. Overall, it's great. If you're already using the built-in Git functionality of VSCode as I do now, this will integrate nicely into your existing workflow and make it feature complete.
 - **[TODO Tree](https://github.com/Gruntfuggly/todo-tree)** - If you're a TODO person, this will make finding them far easier.
 - **[Better Comments](https://github.com/aaron-bond/better-comments)** - This makes code comments easier to parse.
 
