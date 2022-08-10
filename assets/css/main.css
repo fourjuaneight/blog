@@ -302,10 +302,23 @@ svg#loader circle {
   fill: var(--secondary);
 }
 
+ul.mtg-list,
 ul.shelf-list {
   align-items: start;
-  grid-template-columns: repeat(auto-fit, minmax(165px, 165px));
   justify-content: start;
+}
+
+ul.mtg-list {
+  grid-template-columns: repeat(auto-fit, minmax(208px, 208px));
+}
+
+ul.shelf-list {
+  grid-template-columns: repeat(auto-fit, minmax(165px, 165px));
+}
+
+ul.mtg-list li {
+  min-height: 18.65rem;
+  width: 13rem;
 }
 
 ul.shelf-list li {

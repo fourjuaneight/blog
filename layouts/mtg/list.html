@@ -1,0 +1,21 @@
+{{ define "main" }}
+  <h1 class="post-title md:text-6xl mr-auto text-4xl">{{ .Title }}</h1>
+  <p>{{ .Content }}</p>
+  {{ $cards := getJSON "https://cleverlaziness.com/api/mtg/" }}
+
+  <section class="mb-4 w-full">
+    <ul class="mtg-list gap-5 grid list-none mt-6 p-0 w-full">
+      {{ range $i, $card := $cards }}
+        {{ $imgSrc := print "mtg/" $card.id ".jpeg" }}
+        <li class="flex flex-col h-auto items-start justify-start m-0 p-0 relative">
+          {{ partial "img.html" (dict "src" $imgSrc "alt" $card.name "pClasses" "mtg-img flex items-start justify-start mb-2 object-cover object-left-top" "iClasses" "w-auto" "hidden" true "post" 400) }}
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ if ne .Params.footer nil }}
+    <section class="footer w-full">
+      {{ partial "img.html" (dict "src" .Params.footer.img "alt" .Params.footer.alt) }}
+    </section>
+  {{ end }}
+{{ end }}
