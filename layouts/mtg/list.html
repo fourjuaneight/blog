@@ -8,7 +8,29 @@
       {{ range $i, $card := $cards }}
         {{ $imgSrc := print "mtg/" $card.id ".jpeg" }}
         <li class="flex flex-col h-auto items-start justify-start m-0 p-0 relative">
-          {{ partial "img.html" (dict "src" $imgSrc "alt" $card.name "pClasses" "mtg-img flex items-start justify-start mb-2 object-cover object-left-top" "iClasses" "w-auto" "hidden" true "post" 400) }}
+          <button
+            type="button"
+            title="{{ $card.name }}"
+            class="
+              mtg-btn
+              bg-transparent
+              cursor-default
+              duration-200
+              ease-in-out
+              focus:bg-transparent
+              focus:border-1
+              focus:border-primary
+              focus:border-solid
+              h-auto
+              hover:bg-transparent
+              m-0
+              p-0
+              transition-colors
+              w-auto
+            "
+          >
+            {{ partial "img.html" (dict "src" $imgSrc "alt" $card.name "pClasses" "mtg-img flex items-start justify-start mb-2 object-cover object-left-top" "iClasses" "w-auto" "hidden" true "post" 400) }}
+          </button>
         </li>
       {{ end }}
     </ul>
