@@ -22,6 +22,7 @@
     height="{{ with .poster }}{{ . }}{{ else }}{{ $sizing }}{{ end }}"
     aria-hidden="{{ $isHidden }}"
     loading="lazy"
+    {{ if ne .tabindex nil }}tabindex="{{ .tabindex }}"{{ end }}
   />
 {{ else }}
 <picture class="{{ with .pClasses }}{{ . }}{{ else }}img-wrap flex items-center justify-center my-4 w-full{{ end }}">
@@ -39,6 +40,7 @@
     data-small="{{ $isSmall }}"
     aria-hidden="{{ $isHidden }}"
     loading="lazy"
+    {{ if ne .tabindex nil }}tabindex="{{ .tabindex }}"{{ end }}
   />
 </picture>
 {{ end }}
