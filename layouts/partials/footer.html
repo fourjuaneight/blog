@@ -10,7 +10,7 @@
         {{ range $i, $item := .Site.Data.nav.footer }}
           <li class="m-0 row-start-1" data-item="{{ $i }}">
             <a
-              class="hover:underline no-underline"
+              class="focus:underline hover:underline no-underline"
               href="{{ $item.link | absURL }}"
               {{ if .external }}
                 target="_blank"

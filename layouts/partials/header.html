@@ -16,7 +16,7 @@
       >
         {{ range .Site.Data.nav.header }}
           <li class="m-0 row-start-1">
-            <a class="hover:underline no-underline" href="{{ .link | absURL }}">
+            <a class="focus:underline hover:underline no-underline" href="{{ .link | absURL }}">
               {{ .label }}
             </a>
           </li>
