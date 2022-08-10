@@ -167,6 +167,7 @@ export const queryHasuraMTG = async (env: ContextValue) => {
   const query = `
     {
       media_mtg {
+        id
         name
         colors
         type

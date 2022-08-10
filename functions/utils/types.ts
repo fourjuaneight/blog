@@ -61,6 +61,7 @@ export interface RecordColumnAggregateCount {
 
 // MTG
 export interface MediaMTG {
+  id: string;
   name: string;
   colors: string[] | null;
   type: string | null;
