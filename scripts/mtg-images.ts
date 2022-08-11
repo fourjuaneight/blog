@@ -1,10 +1,10 @@
 import { existsSync, promises } from 'fs';
 import { resolve } from 'path';
 
-import chalk from 'chalk';
 import fetch from 'isomorphic-fetch';
 import sharp from 'sharp';
 
+import logger from './logger';
 import { MediaMTG } from '../functions/utils/types';
 
 const { mkdir } = promises;
@@ -32,7 +32,7 @@ const fmtImage = async (name: string, url: string): Promise<void> => {
   try {
     await Promise.all(promises);
 
-    console.info(chalk.green('[MTG-IMG]'), `${name} asset created`);
+    logger.info(`[mtg-images][fmtImage]: ${name} asset created`);
   } catch (err) {
     throw `${JSON.stringify(
       {
@@ -76,7 +76,7 @@ const fmtImage = async (name: string, url: string): Promise<void> => {
 
     process.exit(0);
   } catch (error) {
-    console.error(chalk.red('[ERROR]'), error);
+    logger.error(`[mtg-images]${error}`);
     process.exit(1);
   }
 })();

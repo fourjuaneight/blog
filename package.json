@@ -45,6 +45,8 @@
     "idb": "^7.0.1",
     "isomorphic-fetch": "^3.0.0",
     "mermaid": "^9.1.1",
+    "pino": "^8.4.0",
+    "pino-pretty": "^9.0.0",
     "puppeteer": "^13.5.1",
     "replace-in-file": "^6.2.0",
     "sharp": "^0.30.4",

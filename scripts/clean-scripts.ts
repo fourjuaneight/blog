@@ -1,9 +1,10 @@
 import { resolve } from 'path';
 
-import chalk from 'chalk';
 import dotenv from 'dotenv';
 import glob from 'glob';
 import { replaceInFile, ReplaceInFileConfig } from 'replace-in-file';
+
+import logger from './logger';
 
 dotenv.config();
 
@@ -38,10 +39,10 @@ const ignore = ['sw*.js', 'noise*.js', 'bookmarks*.js'];
   try {
     await replaceInFile(replaceOptions);
 
-    console.info(chalk.cyan('[CLEAN-SCRIPTS]'), 'Workers updated.');
+    logger.info('[clean-scripts]: Workers updated.');
     process.exit(0);
   } catch (error) {
-    console.error(chalk.red('[ERROR]'), error);
+    logger.error(`[clean-scripts]: ${error}`);
     process.exit(1);
   }
 })();

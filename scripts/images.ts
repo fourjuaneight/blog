@@ -1,8 +1,9 @@
 import { resolve } from 'path';
 
-import chalk from 'chalk';
 import glob from 'glob';
 import sharp from 'sharp';
+
+import logger from './logger';
 
 interface Icons {
   name: string;
@@ -80,7 +81,7 @@ const fmtPlaceholder = async (src: string): Promise<void> => {
 
     await Promise.all(promises);
 
-    console.info(chalk.green('[IMAGES]'), `${name} placeholder created`);
+    logger.info(`[images][fmtPlaceholder]: ${name} placeholder created`);
   } catch (err) {
     throw `${JSON.stringify(
       {
@@ -127,7 +128,7 @@ const fmtImage = async (src: string): Promise<void> => {
   try {
     await Promise.all(promises);
 
-    console.info(chalk.green('[IMAGES]'), `${name} asset created`);
+    logger.info(`[images][fmtImage]: ${name} asset created`);
   } catch (err) {
     throw `${JSON.stringify(
       {
@@ -168,7 +169,7 @@ const fmtIcon = async (name: string, size: number): Promise<void> => {
       })
       .toFile(output);
 
-    console.info(chalk.green('[IMAGES]'), `${name}-${size}x${size} created`);
+    logger.info(`[images][fmtIcon]: ${name}-${size}x${size} created`);
   } catch (err) {
     throw `${JSON.stringify(
       {
@@ -194,7 +195,7 @@ const fmtIcon = async (name: string, size: number): Promise<void> => {
 
     process.exit(0);
   } catch (error) {
-    console.error(chalk.red('[ERROR]'), error);
+    logger.error(`[images]${error}`);
     process.exit(1);
   }
 })();

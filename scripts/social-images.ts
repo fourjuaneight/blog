@@ -1,11 +1,12 @@
 import { existsSync, promises } from 'fs';
 import { resolve } from 'path';
 
-import chalk from 'chalk';
 import glob from 'glob';
 import puppeteer from 'puppeteer';
 import wait from 'waait';
 import { replaceInFile, ReplaceInFileConfig } from 'replace-in-file';
+
+import logger from './logger';
 
 interface TitlePosition {
   count: number;
@@ -93,12 +94,11 @@ const createSocialImage = async (file: string): Promise<void> => {
 
     await replaceInFile(replaceOptions);
 
-    console.info(
-      chalk.green('[SOCIAL-IMG]'),
-      `${fileName}.svg base social image created`
+    logger.info(
+      `[social-images][createSocialImage]: ${fileName}.svg base social image created`
     );
   } catch (error) {
-    throw `(createSocialImage):\n${error}`;
+    throw `[createSocialImage]:\n${error}`;
   }
 };
 
@@ -110,7 +110,7 @@ const createSocialImage = async (file: string): Promise<void> => {
 
     process.exit(0);
   } catch (error) {
-    console.error(chalk.red('[ERROR]'), error);
+    logger.error(`[social-images]${error}`);
     process.exit(1);
   }
 })();

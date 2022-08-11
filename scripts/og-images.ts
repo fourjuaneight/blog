@@ -1,10 +1,11 @@
 import { resolve } from 'path';
 
-import chalk from 'chalk';
 import glob from 'glob';
 import puppeteer from 'puppeteer';
 import sharp from 'sharp';
 import wait from 'waait';
+
+import logger from './logger';
 
 const globSync = glob.sync;
 
@@ -42,12 +43,9 @@ const saveSocialImages = async (file: string): Promise<void> => {
       .toFormat('jpeg', { progressive: true, quality: 90 })
       .toFile(`${dist}/${fileName}.jpeg`);
 
-    console.info(
-      chalk.green('[OG-IMG]'),
-      `${fileName}.jpeg social image created`
-    );
+    logger.info(`[og-images][saveSocialImages]: ${fileName}.jpeg social image created`);
   } catch (error) {
-    throw `(saveSocialImages):\n${error}`;
+    throw `[saveSocialImages]: ${error}`;
   } finally {
     await browser.close();
   }
@@ -64,7 +62,7 @@ const saveSocialImages = async (file: string): Promise<void> => {
 
     process.exit(0);
   } catch (error) {
-    console.error(chalk.red('[ERROR]'), error);
+    logger.error(`[og-images]${error}`);
     process.exit(1);
   }
 })();

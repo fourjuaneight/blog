@@ -3,9 +3,10 @@ import { existsSync, promises } from 'fs';
 import { promisify } from 'util';
 import { resolve } from 'path';
 
-import chalk from 'chalk';
 import glob from 'glob';
 import { replaceInFile } from 'replace-in-file';
+
+import logger from './logger';
 
 const cwd = resolve(__dirname, '..', 'content/posts');
 const dist = resolve(__dirname, '..', 'assets/img/diagrams');
@@ -21,14 +22,14 @@ export const mmdc = async (input: string, output: string): Promise<void> => {
     );
 
     if (stderr) {
-      throw `(mmdc):\n${stderr}`;
+      throw `[stderr]: ${stderr}`;
     }
 
     if (stdout) {
-      console.info(chalk.green('[MERMAID]'), stdout);
+      logger.info(`[mermaid][mmdc]:\n${stdout}`);
     }
   } catch (error) {
-    throw `(mmdc):\n${error}`;
+    throw `[mmdc]: ${error}`;
   }
 };
 
@@ -55,7 +56,7 @@ export const mmdc = async (input: string, output: string): Promise<void> => {
       to: '\n![diagram](diagrams/$1.svg)',
     });
   } catch (error) {
-    console.error(chalk.red('[ERROR]'), error);
+    logger.error(`[mermaid]${error}`);
     process.exit(1);
   }
 })();
