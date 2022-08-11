@@ -13,6 +13,8 @@ footer:
     link: about
   - label: Uses
     link: uses
+  - label: MTG
+    link: mtg
   - label: Twitter
     link: https://twitter.com/fourjuaneight
     external: true

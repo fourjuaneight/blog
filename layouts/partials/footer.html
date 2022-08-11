@@ -5,12 +5,12 @@
   >
     <nav class="w-auto">
       <ul
-        class="auto-cols-min gap-x-1 grid grid-rows-1 items-center list-none my-2 p-0 xxs:gap-x-3"
+        class="auto-cols-min gap-x-1 grid grid-rows-1 items-center list-none my-2 p-0 xs:gap-x-3 xxs:gap-x-2"
       >
         {{ range $i, $item := .Site.Data.nav.footer }}
           <li class="m-0 row-start-1" data-item="{{ $i }}">
             <a
-              class="focus:underline hover:underline no-underline"
+              class="focus:underline hover:underline no-underline text-sm xs:text-base"
               href="{{ $item.link | absURL }}"
               {{ if .external }}
                 target="_blank"
@@ -22,7 +22,7 @@
           </li>
           {{ if ne $i $navLinks }}
             <li class="m-0 row-start-1">
-              <p class="m-0 text-meta text-base" aria-hidden="true">&#8226;</p>
+              <p class="m-0 text-meta text-xs" aria-hidden="true">&#8226;</p>
             </li>
           {{ end }}
         {{ end }}
