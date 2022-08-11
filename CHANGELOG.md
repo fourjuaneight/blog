@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] - 2022-08-11
+
+### Features
+
+- [Add card data for better accessibility on mtg page.](https://github.com/fourjuaneight/blog/commit/781798b1ed8a22125871e3276492c074d2bea827)
+
+### Miscellaneous Tasks
+
+- [Minor layout optimizations.](https://github.com/fourjuaneight/blog/commit/46c9884fdbdfbf08da3be50dd457ff4434a1dcd2)
+- [Update to v1.3.0.](https://github.com/fourjuaneight/blog/commit/b6352ed3cb06d78b3495c858691cd883c23b3318)
+
+## [1.2.3] - 2022-08-10
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/7bb4715ccec11267cd5a1c088af09b8bb1e2d3c2)
+- [Add mtg page og image.](https://github.com/fourjuaneight/blog/commit/b2844a05afaf88cbef4bb43bd26192678422a4de)
+- [Update to v1.2.3.](https://github.com/fourjuaneight/blog/commit/c2ece4cee3feb96bffc98d6c10cb74fde801cb1c)
+
 ## [1.2.2] - 2022-08-10
 
 ### Bug Fixes
