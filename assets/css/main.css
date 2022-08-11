@@ -325,7 +325,10 @@ ul.shelf-list {
 
 ul.mtg-list {
   --card-width: 20rem;
-  grid-template-columns: repeat(auto-fit, minmax(var(--card-width), var(--card-width)));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--card-width), var(--card-width))
+  );
 }
 
 ul.shelf-list {
