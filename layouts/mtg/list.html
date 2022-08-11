@@ -28,6 +28,9 @@
           >
             {{ partial "img.html" (dict "src" $imgSrc "alt" $card.name "pClasses" "mtg-img flex items-start justify-start mb-2 object-cover object-left-top" "iClasses" "w-auto" "hidden" true "post" 400) }}
           </button>
+          <p class="leading-none mb-1 mt-0">{{ $card.name }}</p>
+          <p class="leading-none mb-1 mt-0 text-meta">{{ $card.type }}</p>
+          <p class="leading-none mb-1 mt-0 text-tertiary">{{ $card.set }} - {{ $card.collector_number }}</p>
         </li>
       {{ end }}
     </ul>
