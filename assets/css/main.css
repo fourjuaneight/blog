@@ -320,7 +320,7 @@ svg#loader circle {
 ul.mtg-list,
 ul.shelf-list {
   align-items: start;
-  justify-content: start;
+  justify-content: center;
 }
 
 ul.mtg-list {
