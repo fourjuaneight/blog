@@ -61,8 +61,11 @@ const fmtImage = async (name: string, url: string): Promise<void> => {
       },
     });
 
+    // likely due to build failing; done to prevent build failure loop
     if (response.status !== 200) {
-      throw `[worker]: ${response.status} - ${response.statusText}`;
+      logger.error(`[worker]: ${response.status} - ${response.statusText}`);
+      // exit without throwing
+      process.exit(0);
     }
 
     const data: MediaMTG[] = await response.json();
