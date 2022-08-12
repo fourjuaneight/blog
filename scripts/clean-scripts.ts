@@ -42,7 +42,7 @@ const ignore = ['sw*.js', 'noise*.js', 'bookmarks*.js'];
     logger.info('[clean-scripts]: Workers updated.');
     process.exit(0);
   } catch (error) {
-    logger.error(`[clean-scripts]: ${error}`);
+    logger.error(`[clean-scripts] ${error}`);
     process.exit(1);
   }
 })();

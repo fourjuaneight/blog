@@ -50,7 +50,7 @@ const saveSocialImages = async (file: string): Promise<void> => {
         });
     }
   } catch (error) {
-    throw `[saveSocialImages]: ${error}`;
+    throw `[saveSocialImages] ${error}`;
   } finally {
     if (!existsSync(output)) {
       await browser.close();

@@ -103,7 +103,7 @@ const createSocialImage = async (file: string): Promise<void> => {
       );
     }
   } catch (error) {
-    throw `[createSocialImage]: ${error}`;
+    throw `[createSocialImage] ${error}`;
   }
 };
 

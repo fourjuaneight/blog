@@ -29,7 +29,7 @@ export const mmdc = async (input: string, output: string): Promise<void> => {
       logger.info(`[mermaid] [mmdc]:\n${stdout}`);
     }
   } catch (error) {
-    throw `[mmdc]: ${error}`;
+    throw `[mmdc] ${error}`;
   }
 };
 
