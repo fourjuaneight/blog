@@ -1,3 +1,4 @@
+import { existsSync } from 'fs';
 import { resolve } from 'path';
 
 import glob from 'glob';
@@ -51,22 +52,26 @@ const fmtImage = async (src: string): Promise<void> => {
     // image options
     const fileName: string = `${name}.${ext}`;
     const output = `${imgDist}/${fileName}`;
-    const image = sharp(input);
 
     // create variants
-    await image
-      .resize(1024, undefined, {
-        background: { r: 255, g: 255, b: 255, alpha: 0.0 },
-        fit: 'contain',
-      })
-      .toFormat(ext as any, { progressive: true })
-      .toFile(output);
+    if (!existsSync(output)) {
+      const image = sharp(input);
+
+      await image
+        .resize(1024, undefined, {
+          background: { r: 255, g: 255, b: 255, alpha: 0.0 },
+          fit: 'contain',
+        })
+        .toFormat(ext as any, { progressive: true })
+        .toFile(output)
+        .then(() => {
+          logger.info(`[images] [fmtImage]: ${output} created`);
+        });
+    }
   });
 
   try {
     await Promise.all(promises);
-
-    logger.info(`[images][fmtImage]: ${name} asset created`);
   } catch (err) {
     throw `${JSON.stringify(
       {
@@ -96,18 +101,22 @@ const fmtIcon = async (name: string, size: number): Promise<void> => {
   // image options
   const fileName: string = `${name}-${size}x${size}.png`;
   const output = `${iconDist}/${fileName}`;
-  const image = sharp(input);
 
   try {
     // create variants
-    await image
-      .resize(size, size, {
-        background: { r: 255, g: 255, b: 255, alpha: 0.0 },
-        fit: 'contain',
-      })
-      .toFile(output);
+    if (!existsSync(output)) {
+      const image = sharp(input);
 
-    logger.info(`[images][fmtIcon]: ${name}-${size}x${size} created`);
+      await image
+        .resize(size, size, {
+          background: { r: 255, g: 255, b: 255, alpha: 0.0 },
+          fit: 'contain',
+        })
+        .toFile(output)
+        .then(() => {
+          logger.info(`[images] [fmtIcon]: ${name}-${size}x${size} created`);
+        });
+    }
   } catch (err) {
     throw `${JSON.stringify(
       {
@@ -132,7 +141,7 @@ const fmtIcon = async (name: string, size: number): Promise<void> => {
 
     process.exit(0);
   } catch (error) {
-    logger.error(`[images]${error}`);
+    logger.error(`[images] ${error}`);
     process.exit(1);
   }
 })();

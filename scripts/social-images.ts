@@ -41,64 +41,69 @@ const textElements = ['first', 'second', 'third', 'fourth'];
  * @returns {Promise<void>}
  */
 const createSocialImage = async (file: string): Promise<void> => {
+  const fileName = file.replace('.md', '');
+  const socialImagePath = `${dist}/${fileName}.svg`;
+
   try {
-    // post title
-    const post = await readFile(`${posts}/${file}`, 'utf8');
-    const pattern = new RegExp(/\ntitle:\s'?(.*)'?/g);
-    const title =
-      post
-        .match(pattern)
-        ?.toString()
-        .replace(pattern, '$1')
-        .replace(/'/g, '')
-        .replace(/\s$/g, '') ?? '';
-    const titleList = title.split(' ');
-    // share card image
-    const socialImage = `${src}/social-img.svg`;
-    const fileName = file.replace('.md', '');
-    const svg = await readFile(socialImage, 'utf8');
-    const positions = titlePositions.find(
-      ({ count }) => count === titleList?.length
-    );
-    const socialImagePath = `${dist}/${fileName}.svg`;
-    // create share card file
-    if (!existsSync(dist)) await mkdir(dist);
+    if (!existsSync(socialImagePath)) {
+      // post title
+      const post = await readFile(`${posts}/${file}`, 'utf8');
+      const pattern = new RegExp(/\ntitle:\s'?(.*)'?/g);
+      const title =
+        post
+          .match(pattern)
+          ?.toString()
+          .replace(pattern, '$1')
+          .replace(/'/g, '')
+          .replace(/\s$/g, '') ?? '';
+      const titleList = title.split(' ');
+      // share card image
+      const socialImage = `${src}/social-img.svg`;
+      const svg = await readFile(socialImage, 'utf8');
+      const positions = titlePositions.find(
+        ({ count }) => count === titleList?.length
+      );
+      // create share card file
+      if (!existsSync(dist)) await mkdir(dist);
 
-    await writeFile(socialImagePath, svg);
-    // replace title positions
-    const replacePositions = textElements.filter(element =>
-      positions?.position.includes(element)
-    );
-    const mainPats = replacePositions.map(
-      element =>
-        new RegExp(`<text id="main-${element}"(.*)display:none;">(.*)</text>`)
-    );
-    const mainTitles = replacePositions.map(
-      (element, index) =>
-        `<text id="main-${element}"$1">${titleList[index]}</text>`
-    );
-    const shadowPats = replacePositions.map(
-      element =>
-        new RegExp(`<text id="shadow-${element}"(.*)display:none;">(.*)</text>`)
-    );
-    const shadowTitles = replacePositions.map(
-      (element, index) =>
-        `<text id="shadow-${element}"$1">${titleList[index]}</text>`
-    );
-    // replace in file
-    const replaceOptions: ReplaceInFileConfig = {
-      files: socialImagePath,
-      from: [...mainPats, ...shadowPats],
-      to: [...mainTitles, ...shadowTitles],
-    };
+      await writeFile(socialImagePath, svg);
+      // replace title positions
+      const replacePositions = textElements.filter(element =>
+        positions?.position.includes(element)
+      );
+      const mainPats = replacePositions.map(
+        element =>
+          new RegExp(`<text id="main-${element}"(.*)display:none;">(.*)</text>`)
+      );
+      const mainTitles = replacePositions.map(
+        (element, index) =>
+          `<text id="main-${element}"$1">${titleList[index]}</text>`
+      );
+      const shadowPats = replacePositions.map(
+        element =>
+          new RegExp(
+            `<text id="shadow-${element}"(.*)display:none;">(.*)</text>`
+          )
+      );
+      const shadowTitles = replacePositions.map(
+        (element, index) =>
+          `<text id="shadow-${element}"$1">${titleList[index]}</text>`
+      );
+      // replace in file
+      const replaceOptions: ReplaceInFileConfig = {
+        files: socialImagePath,
+        from: [...mainPats, ...shadowPats],
+        to: [...mainTitles, ...shadowTitles],
+      };
 
-    await replaceInFile(replaceOptions);
+      await replaceInFile(replaceOptions);
 
-    logger.info(
-      `[social-images][createSocialImage]: ${fileName}.svg base social image created`
-    );
+      logger.info(
+        `[social-images] [createSocialImage]: ${fileName}.svg base social image created`
+      );
+    }
   } catch (error) {
-    throw `[createSocialImage]:\n${error}`;
+    throw `[createSocialImage]: ${error}`;
   }
 };
 
@@ -110,7 +115,7 @@ const createSocialImage = async (file: string): Promise<void> => {
 
     process.exit(0);
   } catch (error) {
-    logger.error(`[social-images]${error}`);
+    logger.error(`[social-images] ${error}`);
     process.exit(1);
   }
 })();

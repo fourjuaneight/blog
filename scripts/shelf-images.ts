@@ -21,18 +21,25 @@ const fmtImage = async (name: string, url: string): Promise<void> => {
     // image options
     const fileName: string = `${name}.${ext}`;
     const output = `${dist}/${fileName}`;
-    const image = sharp(buffer);
 
     // create variants
-    await image
-      .toFormat(ext as any, ext === 'jpeg' ? { progressive: true } : undefined)
-      .toFile(output);
+    if (!existsSync(output)) {
+      const image = sharp(buffer);
+
+      await image
+        .toFormat(
+          ext as any,
+          ext === 'jpeg' ? { progressive: true } : undefined
+        )
+        .toFile(output)
+        .then(() => {
+          logger.info(`[shelf-images] [fmtImage]: ${output} created`);
+        });
+    }
   });
 
   try {
     await Promise.all(promises);
-
-    logger.info(`[shelf-images][fmtImage]: ${name} asset created`);
   } catch (err) {
     throw `${JSON.stringify(
       {
@@ -53,6 +60,11 @@ const fmtImage = async (name: string, url: string): Promise<void> => {
         'Content-Type': 'application/json',
       },
     });
+
+    if (response.status !== 200) {
+      throw `[worker]: ${response.status} - ${response.statusText}`;
+    }
+
     const data: { [key: string]: ShelfItem[] } = await response.json();
     const flatData = Object.keys(data)
       .map(key => data[key].map(item => ({ id: item.id, cover: item.cover })))
@@ -66,7 +78,7 @@ const fmtImage = async (name: string, url: string): Promise<void> => {
 
     process.exit(0);
   } catch (error) {
-    logger.error(`[shelf-images]${error}`);
+    logger.error(`[shelf-images] ${error}`);
     process.exit(1);
   }
 })();

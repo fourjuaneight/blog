@@ -1,3 +1,4 @@
+import { existsSync } from 'fs';
 import { resolve } from 'path';
 
 import glob from 'glob';
@@ -17,37 +18,43 @@ const ignore = ['_index.md'];
 const files = globSync('*.md', { cwd: posts, ignore });
 
 const saveSocialImages = async (file: string): Promise<void> => {
-  const browser = await puppeteer.launch({
-    product: 'chrome',
-    headless: true,
-  });
+  const fileName = file.replace('.md', '');
+  const output = `${dist}/${fileName}.jpeg`;
 
   try {
-    const page = await browser.newPage();
-    const fileName = file.replace('.md', '');
+    if (!existsSync(output)) {
+      const browser = await puppeteer.launch({
+        product: 'chrome',
+        headless: true,
+      });
+      const page = await browser.newPage();
 
-    await page.setViewport({
-      width: 1200,
-      height: 630,
-      deviceScaleFactor: 1.5,
-    });
-    await page.goto(`https://cleverlaziness.com/social-img/${fileName}.svg`);
-    await wait(1000);
+      await page.setViewport({
+        width: 1200,
+        height: 630,
+        deviceScaleFactor: 1.5,
+      });
+      await page.goto(`https://cleverlaziness.com/social-img/${fileName}.svg`);
+      await wait(1000);
 
-    const buffer = await page.screenshot({ type: 'png' });
+      const buffer = await page.screenshot({ type: 'png' });
 
-    // create img and remove svg
-    const image = sharp(buffer);
+      // create img and remove svg
+      const image = sharp(buffer);
 
-    await image
-      .toFormat('jpeg', { progressive: true, quality: 90 })
-      .toFile(`${dist}/${fileName}.jpeg`);
-
-    logger.info(`[og-images][saveSocialImages]: ${fileName}.jpeg social image created`);
+      await image
+        .toFormat('jpeg', { progressive: true, quality: 90 })
+        .toFile(output)
+        .then(() => {
+          logger.info(`[og-images] [saveSocialImages]: ${output} created`);
+        });
+    }
   } catch (error) {
     throw `[saveSocialImages]: ${error}`;
   } finally {
-    await browser.close();
+    if (!existsSync(output)) {
+      await browser.close();
+    }
   }
 };
 
@@ -62,7 +69,7 @@ const saveSocialImages = async (file: string): Promise<void> => {
 
     process.exit(0);
   } catch (error) {
-    logger.error(`[og-images]${error}`);
+    logger.error(`[og-images] ${error}`);
     process.exit(1);
   }
 })();

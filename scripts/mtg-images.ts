@@ -21,18 +21,25 @@ const fmtImage = async (name: string, url: string): Promise<void> => {
     // image options
     const fileName: string = `${name}.${ext}`;
     const output = `${dist}/${fileName}`;
-    const image = sharp(buffer);
 
     // create variants
-    await image
-      .toFormat(ext as any, ext === 'jpeg' ? { progressive: true } : undefined)
-      .toFile(output);
+    if (!existsSync(output)) {
+      const image = sharp(buffer);
+
+      await image
+        .toFormat(
+          ext as any,
+          ext === 'jpeg' ? { progressive: true } : undefined
+        )
+        .toFile(output)
+        .then(() => {
+          logger.info(`[mtg-images] [fmtImage]: ${output} created`);
+        });
+    }
   });
 
   try {
     await Promise.all(promises);
-
-    logger.info(`[mtg-images][fmtImage]: ${name} asset created`);
   } catch (err) {
     throw `${JSON.stringify(
       {
@@ -53,6 +60,11 @@ const fmtImage = async (name: string, url: string): Promise<void> => {
         'Content-Type': 'application/json',
       },
     });
+
+    if (response.status !== 200) {
+      throw `[worker]: ${response.status} - ${response.statusText}`;
+    }
+
     const data: MediaMTG[] = await response.json();
     const imgData = data.map(card => ({
       id: card.id,
@@ -76,7 +88,7 @@ const fmtImage = async (name: string, url: string): Promise<void> => {
 
     process.exit(0);
   } catch (error) {
-    logger.error(`[mtg-images]${error}`);
+    logger.error(`[mtg-images] ${error}`);
     process.exit(1);
   }
 })();

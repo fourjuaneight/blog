@@ -26,7 +26,7 @@ export const mmdc = async (input: string, output: string): Promise<void> => {
     }
 
     if (stdout) {
-      logger.info(`[mermaid][mmdc]:\n${stdout}`);
+      logger.info(`[mermaid] [mmdc]:\n${stdout}`);
     }
   } catch (error) {
     throw `[mmdc]: ${error}`;
@@ -56,7 +56,7 @@ export const mmdc = async (input: string, output: string): Promise<void> => {
       to: '\n![diagram](diagrams/$1.svg)',
     });
   } catch (error) {
-    logger.error(`[mermaid]${error}`);
+    logger.error(`[mermaid] ${error}`);
     process.exit(1);
   }
 })();
