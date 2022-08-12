@@ -96,19 +96,24 @@ export const queryHasuraBookmarks = async (env: ContextValue) => {
       },
       body: JSON.stringify({ query }),
     });
+
+    if (request.status !== 200) {
+      throw `[fetch]: ${request.status} - ${request.statusText}`;
+    }
+
     const response: HasuraBKQueryResp | HasuraErrors = await request.json();
 
     if (response.errors) {
       const { errors } = response as HasuraErrors;
 
-      throw `(queryHasuraBookmarks):\n${errors
+      throw `[query]: ${errors
         .map(err => `${err.extensions.path}: ${err.message}`)
         .join('\n')} \n ${query}`;
     }
 
     return (response as HasuraBKQueryResp).data;
   } catch (error) {
-    throw `(queryHasuraBookmarks):\n${error}`;
+    throw `[queryHasuraBookmarks] ${error}`;
   }
 };
 
@@ -135,12 +140,17 @@ export const queryHasuraBookmarkAggregateCount = async (
       },
       body: JSON.stringify({ query }),
     });
+
+    if (request.status !== 200) {
+      throw `[fetch]: ${request.status} - ${request.statusText}`;
+    }
+
     const response: any = await request.json();
 
     if (response.errors) {
       const { errors } = response as HasuraErrors;
 
-      throw `(queryBookmarkAggregateCount) - ${table}: \n ${errors
+      throw `[query] [${table}]: ${errors
         .map(err => `${err.extensions.path}: ${err.message}`)
         .join('\n')} \n ${query}`;
     }
@@ -194,19 +204,24 @@ export const queryHasuraMTG = async (env: ContextValue) => {
       },
       body: JSON.stringify({ query }),
     });
+
+    if (request.status !== 200) {
+      throw `[fetch]: ${request.status} - ${request.statusText}`;
+    }
+
     const response: HasuraMTGQueryResp | HasuraErrors = await request.json();
 
     if (response.errors) {
       const { errors } = response as HasuraErrors;
 
-      throw `(queryHasuraMTG):\n${errors
+      throw `[query]: ${errors
         .map(err => `${err.extensions.path}: ${err.message}`)
         .join('\n')} \n ${query}`;
     }
 
     return (response as HasuraMTGQueryResp).data.media_mtg;
   } catch (error) {
-    throw `(queryHasuraMTG):\n${error}`;
+    throw `[queryHasuraMTG] ${error}`;
   }
 };
 
@@ -302,19 +317,24 @@ export const queryHasuraShelf = async (env: ContextValue) => {
       },
       body: JSON.stringify({ query }),
     });
+
+    if (request.status !== 200) {
+      throw `[fetch]: ${request.status} - ${request.statusText}`;
+    }
+
     const response: HasuraShelfQueryResp | HasuraErrors = await request.json();
 
     if (response.errors) {
       const { errors } = response as HasuraErrors;
 
-      throw `(queryHasuraShelf):\n${errors
+      throw `[query]: ${errors
         .map(err => `${err.extensions.path}: ${err.message}`)
         .join('\n')} \n ${query}`;
     }
 
     return (response as HasuraShelfQueryResp).data;
   } catch (error) {
-    throw `(queryHasuraShelf):\n${error}`;
+    throw `[queryHasuraShelf] ${error}`;
   }
 };
 
@@ -338,12 +358,17 @@ export const queryHasuraTweets = async (env: ContextValue) => {
       },
       body: JSON.stringify({ query }),
     });
+
+    if (request.status !== 200) {
+      throw `[fetch]: ${request.status} - ${request.statusText}`;
+    }
+
     const response: HasuraTWQueryResp | HasuraErrors = await request.json();
 
     if (response.errors) {
       const { errors } = response as HasuraErrors;
 
-      throw `(queryHasuraTweets):\n${errors
+      throw `[query]: ${errors
         .map(err => `${err.extensions.path}: ${err.message}`)
         .join('\n')}\n${query}`;
     }
@@ -356,6 +381,6 @@ export const queryHasuraTweets = async (env: ContextValue) => {
 
     return tweetsWithId;
   } catch (error) {
-    throw `(queryHasuraTweets):\n${error}`;
+    throw `[queryHasuraTweets] ${error}`;
   }
 };
