@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.0] - 2022-08-17
+
+### Bug Fixes
+
+- [Exit script that utilize worker functions, gracefully.](https://github.com/fourjuaneight/blog/commit/46acc8bc8a47aa7d8107370b32f104fb72633db0)
+
+### Features
+
+- [Add improved logs.](https://github.com/fourjuaneight/blog/commit/86020f22a74fca77a3e766c8cdfdc9848c566ae2)
+- [Add mtg link to footer nav.](https://github.com/fourjuaneight/blog/commit/2764d46c625906b090b25d44f645aad66245b499)
+- [Only create new images if they do not exist.](https://github.com/fourjuaneight/blog/commit/4f61a39e6395a0cbca182613cd4cff3823ad076a)
+- [Improved hasura queries error handling.](https://github.com/fourjuaneight/blog/commit/cce0228975cfa8bf5ad03045214d41f8d387572e)
+- [Add release creating on new tag via changelog action.](https://github.com/fourjuaneight/blog/commit/2737e5cb25382e2219406385008c2f2cb16e5ef1)
+- [Enable babel transpiling.](https://github.com/fourjuaneight/blog/commit/bf8af2cac85b83e2d0bcacfc66f9200d3cd54cb1)
+- [Add party gandalf button.](https://github.com/fourjuaneight/blog/commit/9af42faa6c63c84eb2f91cf1fe4338f9ce927a64)
+- [Add party mode color effect animations.](https://github.com/fourjuaneight/blog/commit/3f64bcafd12903efadb7bdb726919fc3244d7a8c)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/1331176f69a84eafe6249e24a591cf966948830b)
+- [Minor npm scripts optimizations.](https://github.com/fourjuaneight/blog/commit/2566b666ac30955caf6dd6e6950cea939cbe04cd)
+- [MTG page mobile layout optimizations.](https://github.com/fourjuaneight/blog/commit/e7c4447110088e345180bd633e236bf451e2448f)
+- [Add new og social image.](https://github.com/fourjuaneight/blog/commit/14d1e1c2459c803273bead76b8e4908c8d731272)
+- [Remove deprecated method.](https://github.com/fourjuaneight/blog/commit/cbed797b70b20be6656fb55b1017bd96d3e993c2)
+- [Minor logging optimizations.](https://github.com/fourjuaneight/blog/commit/a2968c55ee38ec0beec8d58cc50e912e37efa56b)
+- [Update to v1.4.0.](https://github.com/fourjuaneight/blog/commit/33b09661698aafabff7807667b5185b34f88926b)
+
 ## [1.3.0] - 2022-08-11
 
 ### Features
