@@ -13,6 +13,11 @@ enableEmoji: true
 canonifyURLs: true
 ignoreErrors: ["error-remote-getjson"]
 
+security:
+  enableInlineShortcodes: false
+  exec:
+    allow: ["^dart-sass-embedded$", "^go$", "^npx$", "^postcss$", "^babel$"]
+
 markup:
   highlight:
     codeFences: true
