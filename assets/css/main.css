@@ -13,6 +13,66 @@
   }
 }
 
+@keyframes backgroundColorParty {
+  0% {
+    background-color: var(--primary);
+  }
+  50% {
+    background-color: var(--secondary);
+  }
+  100% {
+    background-color: var(--tertiary);
+  }
+}
+
+@keyframes borderColorParty {
+  0% {
+    border-color: var(--primary);
+  }
+  50% {
+    border-color: var(--secondary);
+  }
+  100% {
+    border-color: var(--tertiary);
+  }
+}
+
+@keyframes colorParty {
+  0% {
+    color: var(--primary);
+  }
+  50% {
+    color: var(--secondary);
+  }
+  100% {
+    color: var(--tertiary);
+  }
+}
+
+@keyframes textDecorationColorParty {
+  0% {
+    text-decoration-color: var(--primary);
+  }
+  50% {
+    text-decoration-color: var(--secondary);
+  }
+  100% {
+    text-decoration-color: var(--tertiary);
+  }
+}
+
+@keyframes textShadowParty {
+  0% {
+    text-shadow: 0.1rem 0.1rem var(--primary);
+  }
+  50% {
+    text-shadow: 0.1rem 0.1rem var(--secondary);
+  }
+  100% {
+    text-shadow: 0.1rem 0.1rem var(--tertiary);
+  }
+}
+
 a,
 a:visited,
 a:focus,
@@ -29,13 +89,6 @@ a:visited {
 a:focus,
 a:hover {
   outline: none;
-  text-decoration-color: var(--primary) !important;
-}
-
-a[rel='noopener noreferrer']:focus,
-a[rel='noopener noreferrer']:hover {
-  color: var(--primary);
-  text-decoration-color: var(--primary);
 }
 
 blockquote,
@@ -75,12 +128,6 @@ button {
 
 button:disabled {
   cursor: not-allowed;
-}
-
-button:disabled,
-button:focus,
-button:hover {
-  background-color: var(--secondary);
 }
 
 button.img-btn,
@@ -175,13 +222,6 @@ textarea {
   transition: border-color var(--duration) ease;
 }
 
-input:active,
-input:focus,
-textarea:active,
-textarea:focus {
-  border-color: var(--secondary);
-}
-
 input:required:invalid,
 textarea:required:invalid {
   border-color: var(--meta);
@@ -235,10 +275,6 @@ li.bk-title a,
 li.bk-title a:hover,
 li.bk-title a:visited {
   text-decoration: none;
-}
-
-li.bk-title a:hover {
-  text-shadow: 0.1rem 0.1rem var(--tertiary);
 }
 
 span.tag-comma {
@@ -443,10 +479,6 @@ li.bk-cell {
   max-height: 1.5625rem;
 }
 
-li.bk-cell:hover {
-  border-color: var(--secondary);
-}
-
 li.bk-cell > * {
   grid-row-start: 1;
   text-overflow: ellipsis;
@@ -491,6 +523,84 @@ img.party-mode:hover {
   opacity: 1;
 }
 
+/* Link Interactivity */
+body[data-party='false'] a[rel='noopener noreferrer']:focus,
+body[data-party='false'] a[rel='noopener noreferrer']:hover,
+body[data-party='false'] a.footnote-ref:focus::before,
+body[data-party='false'] a.footnote-ref:focus::after,
+body[data-party='false'] a.footnote-ref:hover::before,
+body[data-party='false'] a.footnote-ref:hover::after,
+body[data-party='false'] a.tags:hover span {
+  color: var(--primary);
+}
+
+body[data-party='false'] button:disabled,
+body[data-party='false'] button:focus,
+body[data-party='false'] button:hover {
+  background-color: var(--secondary);
+}
+
+body[data-party='false'] input:active,
+body[data-party='false'] input:focus,
+body[data-party='false'] textarea:active,
+body[data-party='false'] textarea:focus,
+body[data-party='false'] li.bk-cell:hover {
+  border-color: var(--secondary);
+}
+
+body[data-party='false'] a:focus,
+body[data-party='false'] a:hover,
+body[data-party='false'] a[rel='noopener noreferrer']:focus,
+body[data-party='false'] a[rel='noopener noreferrer']:hover {
+  text-decoration-color: var(--primary);
+}
+
+body[data-party='false'] li.bk-title a:hover {
+  text-shadow: 0.1rem 0.1rem var(--tertiary);
+}
+
+/* Party Mode */
+body[data-party='true'] a:focus,
+body[data-party='true'] a:hover,
+body[data-party='true'] a[rel='noopener noreferrer']:focus,
+body[data-party='true'] a[rel='noopener noreferrer']:hover {
+  animation: textDecorationColorParty 200ms cubic-bezier(0.4, 0, 0.2, 1)
+    infinite;
+}
+
+body[data-party='true'] a.site-name:focus,
+body[data-party='true'] a.site-name:hover,
+body[data-party='true'] a[rel='noopener noreferrer']:focus,
+body[data-party='true'] a[rel='noopener noreferrer']:hover,
+body[data-party='true'] a.footnote-ref:focus::before,
+body[data-party='true'] a.footnote-ref:focus::after,
+body[data-party='true'] a.footnote-ref:hover::before,
+body[data-party='true'] a.footnote-ref:hover::after,
+body[data-party='true'] a.tags:hover span {
+  animation: colorParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+body[data-party='true'] a.archive-link:focus,
+body[data-party='true'] a.archive-link:hover,
+body[data-party='true'] button:disabled,
+body[data-party='true'] button:focus,
+body[data-party='true'] button:hover {
+  animation: backgroundColorParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+body[data-party='true'] input:active,
+body[data-party='true'] input:focus,
+body[data-party='true'] textarea:active,
+body[data-party='true'] textarea:focus,
+body[data-party='true'] li.bk-cell:hover {
+  animation: borderColorParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+body[data-party='true'] li.bk-title a:hover {
+  animation: textShadowParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Background Texture */
 div.noise {
   animation: fadeIn calc(256ms * 4);
   background-size: calc(0.125em * 64);
