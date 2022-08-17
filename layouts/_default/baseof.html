@@ -3,10 +3,11 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
   {{ partial "head.html" . }}
-  <body data-table="{{ $bkTag }}">
+  <body data-table="{{ $bkTag }}" data-party="false">
     {{ partial "header.html" . }}
 
-    <main class="grid w-full">
+    <main class="grid relative w-full">
+      {{ partial "img.html" (dict "src" "party-gandalf.gif" "alt" "Party Gandalf dancing." "hidden" true "active" "false" "poster" "24" "iClasses" "party-mode absolute cursor-pointer duration-200 ease-in-out h-6 m-0 opacity-0 p-0 right-0 top-0 transition-opacity w-6 z-20") }}
       <div
         class="col-start-2 flex flex-col items-start justify-start row-start-2 w-full"
       >
@@ -23,11 +24,14 @@
     {{ block "scripts" . }}{{ end }}
 
     {{/*  Noise Web Worker  */}}
-    {{ $noise := resources.Get "noise.js" | resources.Minify | resources.Fingerprint "md5" }}
+    {{ $opts := dict "noComments" true "minified" true }}
+    {{ $partyMode := resources.Get "js/party-mode.js" }}
+    {{ $noiseGen := resources.Get "noise.js" }}
     {{ $noiseWW := resources.Get "noise.ww.js" | resources.Minify | resources.Fingerprint "md5" }}
+    {{- $scripts := slice $partyMode $noiseGen | resources.Concat "js/noise.js" | babel $opts | resources.Fingerprint "md5" -}}
     <script
       defer
-      src="{{ $noise.Permalink }}"
+      src="{{ $scripts.Permalink }}"
       data-worker="{{ $noiseWW.Permalink }}"
     ></script>
   </body>

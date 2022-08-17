@@ -486,6 +486,11 @@ footer p {
   line-height: 1.25 !important;
 }
 
+img.party-mode[data-active='true'],
+img.party-mode:hover {
+  opacity: 1;
+}
+
 div.noise {
   animation: fadeIn calc(256ms * 4);
   background-size: calc(0.125em * 64);

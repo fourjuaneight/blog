@@ -1,7 +1,7 @@
 {{ $svg := .src | findRE "svg" }}
 {{ $gif := .src | findRE "gif" }}
-{{ $type := .src | replaceRE "(.*).(png|jpg|jpeg)" "$2" }}
-{{ $imgMain := .src | replaceRE "(.*).(png|jpg|jpeg)" "$1" }}
+{{ $type := .src | replaceRE "(.*).(png|jpg|jpeg|svg|gif)" "$2" }}
+{{ $imgMain := .src | replaceRE "(.*).(png|jpg|jpeg|svg|gif)" "$1" }}
 
 {{ $avif := print $imgMain ".avif" }}
 {{ $webp := print $imgMain ".webp" }}
@@ -23,6 +23,7 @@
     aria-hidden="{{ $isHidden }}"
     loading="lazy"
     {{ if ne .tabindex nil }}tabindex="{{ .tabindex }}"{{ end }}
+    {{ with .active }}data-active="{{ . }}"{{ end }}
   />
 {{ else }}
 <picture
@@ -43,6 +44,7 @@
     data-small="{{ $isSmall }}"
     aria-hidden="{{ $isHidden }}"
     loading="lazy"
+    {{ with .active }}data-active="{{ . }}"{{ end }}
   />
 </picture>
 {{ end }}
