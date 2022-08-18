@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.1] - 2022-08-18
+
+### Bug Fixes
+
+- [Reorder start npm script to match labels.](https://github.com/fourjuaneight/blog/commit/23a6c9725a2f54fb15aea3c6117f68bb399873c0)
+- [Add minify options to noise/party script bundle.](https://github.com/fourjuaneight/blog/commit/8cd0d45cd8b4f0bec9bfe175fcbe34a41d0f2a18)
+- [Save bundled noise/party script to base directory.](https://github.com/fourjuaneight/blog/commit/2d65f37f80e644ac02e930de059734f08876598d)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/b8eef8a18405b461221567cbbb11b9dcb1d40a4b)
+- [Update to v1.4.1.](https://github.com/fourjuaneight/blog/commit/3dd542367fe6943c793118d06682cfe6801fba16)
+
 ## [1.4.0] - 2022-08-17
 
 ### Bug Fixes
