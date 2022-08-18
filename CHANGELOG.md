@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.5.0] - 2022-08-18
+
+### Bug Fixes
+
+- [Change party mode element to button for better accessibility.](https://github.com/fourjuaneight/blog/commit/54ab595b3047cb091a558fb5a0b25098314a6582)
+- [Watch for scripts on dev npm script.](https://github.com/fourjuaneight/blog/commit/c19d5f0e65df8f62f5c3c99215195b5705e0b52c)
+- [Add bookmark list links to party mode.](https://github.com/fourjuaneight/blog/commit/2876237c2aaa1547db10d03cbe723d98c2a5d85c)
+
+### Features
+
+- [Save party mode in session storage.](https://github.com/fourjuaneight/blog/commit/3040a7a0ea6dde6e54744982eb7ab37b26473207)
+- [Add title shadow animation.](https://github.com/fourjuaneight/blog/commit/7dc6366e03585ebcf648565ee7b74e9ad5c45868)
+- [Add post about coffee.](https://github.com/fourjuaneight/blog/commit/8cde661ad418d33b86cc0b70c0c182632c1e34aa)
+- [Improve some post titles for better discoverability.](https://github.com/fourjuaneight/blog/commit/074258ec9794193fb9892bcfb73f9bcf502ea132)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/dd2f23ae10c374e0ecb6c83347cc89069ceaa84b)
+- [Increase og image script wait time.](https://github.com/fourjuaneight/blog/commit/2943f8708896d45a2980ddb4b1898e9c3bde20e7)
+- [Update to v1.5.0.](https://github.com/fourjuaneight/blog/commit/52a603894e5f010b883e7b5654cf1db6dfb2f05a)
+
 ## [1.4.1] - 2022-08-18
 
 ### Bug Fixes
