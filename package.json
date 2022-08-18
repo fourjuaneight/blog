@@ -9,7 +9,7 @@
     "clean-scripts": "esno --no-cache --tsconfig tsconfig.node.json \"scripts/clean-scripts.ts\"",
     "clean:node": "rm -rf node_modules",
     "clean": "rm -rf dist",
-    "dev": "concurrently -n \"DEV,TW,TS\" -c \"#ff4088,#38bdf8,#3178c6\" \"hugo --disableFastRender --minify --ignoreCache serve\" \"npm run tw -- --watch\" \"npm run ts:workers -- --watch\"",
+    "dev": "concurrently -n \"DEV,TW,TS\" -c \"#ff4088,#38bdf8,#3178c6\" \"hugo --disableFastRender --minify --ignoreCache serve\" \"npm run tw -- --watch\" \"npm run ts:scripts -- --watch\"",
     "format": "prettier --write \"assets/**/*.{ts,js,css,scss}\"",
     "img": "esno --no-cache --tsconfig tsconfig.node.json \"scripts/images.ts\"",
     "lint": "eslint --fix --no-error-on-unmatched-pattern \"assets/**/*.{ts,js}\"",
