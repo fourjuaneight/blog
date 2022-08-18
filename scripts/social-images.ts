@@ -3,7 +3,6 @@ import { resolve } from 'path';
 
 import glob from 'glob';
 import puppeteer from 'puppeteer';
-import wait from 'waait';
 import { replaceInFile, ReplaceInFileConfig } from 'replace-in-file';
 
 import logger from './logger';
