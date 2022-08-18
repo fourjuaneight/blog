@@ -1,7 +1,6 @@
 ---
-title: 'On Gaming'
-seo_title: 'Rediscovering A Love for Gaming'
-description: 'I recently resurfaced a nostalgia for my childhood gaming days. And thought maybe I should do something about it and hunt down the stuff I used to play with when I was a kid.'
+title: Rediscovering A Love for Gaming
+description: "I recently resurfaced a nostalgia for my childhood gaming days. And thought maybe I should do something about it and hunt down the stuff I used to play with when I was a kid."
 date: 2022-03-31
 tags:
   - gaming

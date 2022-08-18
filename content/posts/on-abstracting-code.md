@@ -1,5 +1,5 @@
 ---
-title: On Abstracting Code
+title: The WET Codebase
 description: "Early in our careers, we're exposed to several principles which are thought of as hard rules one must abide by. And while constraints can yield innovation, they shouldn't be at the cost of having a maintainable codebase."
 date: 2021-05-31
 tags:

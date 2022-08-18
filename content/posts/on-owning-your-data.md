@@ -1,5 +1,5 @@
 ---
-title: On Owning Your Data
+title: Owning Your Data
 description: "When your data is the source of revenue, whoever has it will do anything to protect it and reassure you that it is best placed in their hands. But when it isn't at risk of being lost, it's being utilized to violate your privacy."
 date: 2022-03-02
 tags:

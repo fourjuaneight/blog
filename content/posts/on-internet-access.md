@@ -1,6 +1,6 @@
 ---
-title: 'On Internet Access'
-seo_title: 'How Some Communities Are Building Their Own Internet'
+title: Internet Access For All
+seo_title: How Some Communities Are Building Their Own Internet
 description: "A utility we take for granted every day is hardly accessible to a large portion of the country. So many of these underserved communities are taking matters into their own hands."
 date: 2022-03-16
 tags:
