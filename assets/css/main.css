@@ -518,8 +518,14 @@ footer p {
   line-height: 1.25 !important;
 }
 
-img.party-mode[data-active='true'],
-img.party-mode:hover {
+button.party-mode,
+button.party-mode:hover {
+  background-color: transparent !important;
+}
+
+button.party-mode[data-active='true'] img,
+button.party-mode:focus img,
+button.party-mode:hover img {
   opacity: 1;
 }
 
