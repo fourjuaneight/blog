@@ -583,6 +583,8 @@ body[data-party='true'] a[rel='noopener noreferrer']:hover {
     infinite;
 }
 
+body[data-party='true'] a.bk-list:focus,
+body[data-party='true'] a.bk-list:hover,
 body[data-party='true'] a.site-name:focus,
 body[data-party='true'] a.site-name:hover,
 body[data-party='true'] a[rel='noopener noreferrer']:focus,
