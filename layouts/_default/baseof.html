@@ -28,7 +28,7 @@
     {{ $partyMode := resources.Get "js/party-mode.js" }}
     {{ $noiseGen := resources.Get "noise.js" }}
     {{ $noiseWW := resources.Get "noise.ww.js" | resources.Minify | resources.Fingerprint "md5" }}
-    {{- $scripts := slice $partyMode $noiseGen | resources.Concat "js/noise.js" | babel $opts | resources.Fingerprint "md5" -}}
+    {{- $scripts := slice $partyMode $noiseGen | resources.Concat "js/noise.js" | babel $opts | resources.Minify | resources.Fingerprint "md5" -}}
     <script
       defer
       src="{{ $scripts.Permalink }}"
