@@ -1,12 +1,16 @@
+const storageLabel: string = 'partyTime';
 const body: HTMLBodyElement | null = document.querySelector('body');
 const partyMode: HTMLButtonElement | null =
   document.querySelector('button.party-mode');
-let isPartyTime: boolean = false;
+const currentParty: string | null = sessionStorage.getItem(storageLabel);
+let isPartyTime: boolean = Boolean(currentParty);
 
-if (partyMode) {
-  partyMode.addEventListener('click', () => {
-    body?.setAttribute('data-party', !isPartyTime);
-    partyMode.setAttribute('data-active', !isPartyTime);
-    isPartyTime = !isPartyTime;
-  });
-}
+body?.setAttribute('data-party', isPartyTime);
+partyMode?.setAttribute('data-active', isPartyTime);
+
+partyMode?.addEventListener('click', () => {
+  body?.setAttribute('data-party', !isPartyTime);
+  partyMode?.setAttribute('data-active', !isPartyTime);
+  sessionStorage.setItem(storageLabel, !isPartyTime);
+  isPartyTime = !isPartyTime;
+});

@@ -524,7 +524,7 @@ button.party-mode:hover {
 }
 
 button.party-mode[data-active='true'] img,
-button.party-mode:focus img,
+button.party-mode:focus-visible img,
 button.party-mode:hover img {
   opacity: 1;
 }
