@@ -13,6 +13,15 @@
   }
 }
 
+@keyframes titlaShadow {
+  from {
+    text-shadow: 0rem 0 var(--tertiary);
+  }
+  to {
+    text-shadow: 0.15rem 0.15rem var(--tertiary);
+  }
+}
+
 @keyframes backgroundColorParty {
   0% {
     background-color: var(--primary);
@@ -268,7 +277,7 @@ time::before {
 
 h1.post-title,
 li.bk-title a {
-  text-shadow: 0.15rem 0.15rem var(--tertiary);
+  animation: titlaShadow 400ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
 
 li.bk-title a,
