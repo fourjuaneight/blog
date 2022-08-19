@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.6.0] - 2022-08-19
+
+### Bug Fixes
+
+- [Check party mode session storage value and without coercing value.](https://github.com/fourjuaneight/blog/commit/9425cb06a9965d2645f9e0efe6f5e32a8783d38d)
+
+### Features
+
+- [Add SPA routing.](https://github.com/fourjuaneight/blog/commit/829f561cca5648c1644757ba673454b6c2f42e6d)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/e143d6bbde7a80846ad0b906bd5cad26748f391d)
+- [Minor syntax corrections.](https://github.com/fourjuaneight/blog/commit/f539351d8a61458cc7e6a4cb72b1462c16b2f29a)
+- [Update to v1.6.0.](https://github.com/fourjuaneight/blog/commit/b5171f24630366f444cbc178a1fbf80c94172c7a)
+
 ## [1.5.0] - 2022-08-18
 
 ### Bug Fixes
