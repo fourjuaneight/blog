@@ -1,6 +1,6 @@
 ---
 title: Better Coffee, Better Life. Papa Juan.
-description: "come from a long line of coffee lovers. My ancestral land in Central America has been growing delicious coffee for centuries. I, on the other hand, am stuck looking for sub-par coffee from some overpriced online vendor that claims to have _the best coffee known to mankind_ for the low price of $39.99/bag."
+description: "I come from a long line of coffee lovers. My ancestral land in Central America has been growing delicious coffee for centuries. I, on the other hand, am stuck looking for sub-par coffee from some overpriced online vendor that claims to have _the best coffee known to mankind_ for the low price of $39.99/bag."
 date: 2022-08-18
 tags:
   - coffee
