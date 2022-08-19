@@ -9,7 +9,7 @@ draft: false
 
 I come from a long line of coffee lovers. My ancestral land in Central America has been growing delicious coffee for centuries. And it's enjoyed practically at any time, if not with every meal. I, on the other hand, am stuck looking for sub-par coffee from some overpriced online vendor that claims to have _the best coffee known to mankind_ for the low price of $39.99/bag. That is absurd. "But Juan," I hear you say, "why not just buy a cup at your local coffee shop?" And to that I say, "Why don't you drink piss instead?" I rather die. I've invested too much time, effort, and money into my coffee gear and learning how to make it perfectly to my liking to let some punk make my delicious liquid energy. So here's the crap the gear I have at home, the coffee brands I've tried, and what I'm currently drinking.
 
-## TL; DR
+## TL;DR
 
 - [Breville Barista Express](https://www.amazon.com/dp/B00CH9QWOU)
   - Grind Size: 4
@@ -22,7 +22,7 @@ I come from a long line of coffee lovers. My ancestral land in Central America h
 - [Awesome Coffee Club](https://awesomecoffeeclub.com)
   - Double Shot Americano
   - 15 ml of agave
-  - 135 ml of water
+  - 85 ml of water
 
 ## The Gear
 
