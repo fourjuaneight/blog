@@ -46,6 +46,7 @@ I used to be a Mac guy. Maybe I still am. But after having to part ways with my 
 - **[Things](https://culturedcode.com/things/)** - I've tried them all and this UI is simply the best for me.
 - **[Drafts](https://getdrafts.com)** - All text starts here.
 - **[Jayson](https://jayson.app)** - Nice UI for JSON.
+- **[Raycast](https://www.raycast.com)** - There are so many macOS launchers. I've tried them all. This one is by far my favorite. It almost as customizable as [Alfred](https://www.alfredapp.com), but feels more solidly built.
 - **[SoundSource](https://rogueamoeba.com/soundsource/)** - It's a simple app that makes life so much nicer.
 - **[Hazel](https://www.noodlesoft.com/)** - A computer should run itself. This does the trick.
 - **[Rectangle](https://rectangleapp.com)** - Nifty little window manager.
@@ -65,7 +66,17 @@ I used to be a Mac guy. Maybe I still am. But after having to part ways with my 
 - **[Prologue](https://prologue.audio)** - I usually read my books with a companion audiobook. I found this app (made by the same dev as Prism) which utilizes a Plex "music" library as an audiobook. It's wonderful.
 - **[Infuse](https://firecore.com/infuse)** - Keeping with the Plex, theme this is an amazing Plex video player. While I like the Plex apps, these tend to give you more controls, with a better UI, and far less clutter.
 
-There are several more hardware and software I use. But these are the main things I cannot live without daily.
+There is several more hardware and software I use. But these are the main things I cannot live without daily.
+
+### Plugins
+These are entirely for [VSCode](https://code.visualstudio.com), my text editor of choice. I've tried them all and this is what I like the best. And so do many many other developers. I try to keep my plugin use to a minimum to prevent the app from running slow. Most of them are for some sort of syntax optimization. But the ones listed here are what enhance my everyday experience.
+
+- **[GitHub Copilot](https://copilot.github.com)** - A lot has been said about Copilot. I think it's a great idea in the early stages. [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) was already a bit obtrusive —in my opinion— and this can often make it worse. But your mileage may vary.
+- **[GitLense](https://github.com/eamodio/vscode-gitlens)** - If you use the built-in Git functionality, this thing will add a lot of the features you might be missing.
+- **[Git History](https://github.com/pomber/git-history)** - I'll go as far as to say you need this plugin. Grab a file, run this plugin, and easily scroll through the version history. Such a life improvement.
+- **[GitHub Pull Request](https://github.com/Microsoft/vscode-pull-request-github)** - Instead of my usual [gum + Git + gh utility](https://github.com/fourjuaneight/dotfiles/blob/master/homedir/.zsh/func.zsh#L696-L728) for CLI PR creation, I've been trying out this plugin. There were some early bugs, but they've since been ironed out. Overall, it's great. If you're already using the built-in Git functionality of VSCode as I do now, this will integrate nicely into your existing workflow and make it feature complete.
+- **[TODO Tree](https://github.com/Gruntfuggly/todo-tree)** - If you're a TODO person, this will make finding them far easier.
+- **[Better Comments](https://github.com/aaron-bond/better-comments)** - This makes code comments easier to parse.
 
 ## Tools
 Although there's a plethora of tools and apps available for development work, I often find some of them lacking. So this is a combination of handmade tools and some great open source options. These lists are the amalgamation of years of trial and error to find just the right combinations. I've also included some stuff I'm testing out.
@@ -79,8 +90,6 @@ Although there's a plethora of tools and apps available for development work, I 
 ### CLI
 I started finding Rust alternatives to some of the default CLI tooling for greater security (debatable) and an overall nicer UX. So mostly aesthetics. But also, the [cargo](https://doc.rust-lang.org/cargo/guide/) experience is superior to any other package manager.
 
-- **[cargo-update](https://github.com/nabijaczleweli/cargo-update)** - This little utility brings the cargo experience up to 11. A simple package updater.
-- **[sheldon](https://github.com/rossmacarthur/sheldon)** - There are so many zsh plugin managers. This one is lightweight and easily managed via a TOML file.
 - **[starship](https://github.com/starship/starship)** - I love cool prompts. This one is robust and highly customizable. Again, via a single TOML file.
 - **[zellij](https://github.com/zellij-org/zellij)** - Tmux is great and all. But I came across this on Twitter and found it faster. You can write your plugins, define them via a YAML config file, and what got me is the ability to define layout configurations via various YAML files, which are then called via flags.
 - **[zoxide](https://github.com/ajeetdsouza/zoxide)** - This is just `cd` on steroids.
@@ -92,16 +101,9 @@ I started finding Rust alternatives to some of the default CLI tooling for great
 - **[sd](https://github.com/chmln/sd)** - This thing is one of the most crucial binaries on my computer. It powers the majority of my [CLI utilities](https://github.com/fourjuaneight/dotfiles/blob/master/homedir/.zsh/func.zsh).
 - **[gum](https://github.com/charmbracelet/gum)** - For smaller and simpler jobs where I just need to choose from a list.
 - **[atuin](https://github.com/ellie/atuin)** - Amazing quality of life improvement utility. It creates a simple but powerful searchable shell history UI.
-
-### Plugins
-These are entirely for [VSCode](https://code.visualstudio.com), my text editor of choice. I've tried them all and this is what I like the best. And so do many many other developers. I try to keep my plugin use to a minimum to prevent the app from running slow. Most of them are for some sort of syntax optimization. But the ones listed here are what enhance my everyday experience.
-
-- **[GitHub Copilot](https://copilot.github.com)** - A lot has been said about Copilot. I think it's a great idea in the early stages. [IntelliSense](https://code.visualstudio.com/docs/editor/intellisense) was already a bit obtrusive —in my opinion— and this can often make it worse. But your mileage may vary.
-- **[GitLense](https://github.com/eamodio/vscode-gitlens)** - If you use the built-in Git functionality, this thing will add a lot of the features you might be missing.
-- **[Git History](https://github.com/pomber/git-history)** - I'll go as far as to say you need this plugin. Grab a file, run this plugin, and easily scroll through the version history. Such a life improvement.
-- **[GitHub Pull Request](https://github.com/Microsoft/vscode-pull-request-github)** - Instead of my usual [gum + Git + gh utility](https://github.com/fourjuaneight/dotfiles/blob/master/homedir/.zsh/func.zsh#L696-L728) for CLI PR creation, I've been trying out this plugin. There were some early bugs, but they've since been ironed out. Overall, it's great. If you're already using the built-in Git functionality of VSCode as I do now, this will integrate nicely into your existing workflow and make it feature complete.
-- **[TODO Tree](https://github.com/Gruntfuggly/todo-tree)** - If you're a TODO person, this will make finding them far easier.
-- **[Better Comments](https://github.com/aaron-bond/better-comments)** - This makes code comments easier to parse.
+- **[sheldon](https://github.com/rossmacarthur/sheldon)** - There are so many zsh plugin managers. This one is lightweight and easily managed via a TOML file.
+- **[cargo-update](https://github.com/nabijaczleweli/cargo-update)** - This little utility brings the cargo experience up to 11. A simple package updater.
+- **[topgrade](https://github.com/r-darwish/topgrade)** - I didn't know I needed this until it came into my life. Single command to update all your software. It's OS configurable, and you can even add/omit your own commands. Pretty nice quality of life improvement.
 
 ### Trying Out
 - **[gitui](https://github.com/extrawurst/gitui)** - [Tower](https://www.git-tower.com/mac) was my GUI of choice for Git, but with the help of a handful of [utilities](https://github.com/fourjuaneight/dotfiles/blob/master/homedir/.zsh/func.zsh#L340-L490) I've written for myself, I find CLI to be as useful and often faster. But this thing sorta merges the two to bring you a pretty cool CLI "GUI". I've been using it on and off for some time and like it. At the time of writing this (2021-08-26), they do not have GPG commit signing, which makes it hard to use on a regular. But it's currently in the works.
