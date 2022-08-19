@@ -41,6 +41,7 @@
     "@types/mermaid": "^8.2.9",
     "chalk": "^2.4.2",
     "dotenv": "^16.0.0",
+    "flamethrower-router": "0.0.0-meme.8",
     "glob": "^7.1.7",
     "idb": "^7.0.1",
     "isomorphic-fetch": "^3.0.0",

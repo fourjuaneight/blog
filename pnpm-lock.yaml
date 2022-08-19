@@ -27,6 +27,7 @@ specifiers:
   eslint-plugin-import: ^2.22.1
   eslint-plugin-prettier: ^3.3.1
   esno: ^0.16.3
+  flamethrower-router: 0.0.0-meme.8
   glob: ^7.1.7
   husky: 8.0.1
   idb: ^7.0.1
@@ -54,6 +55,7 @@ dependencies:
   '@types/mermaid': 8.2.9
   chalk: 2.4.2
   dotenv: 16.0.1
+  flamethrower-router: 0.0.0-meme.8
   glob: 7.2.3
   idb: 7.0.2
   isomorphic-fetch: 3.0.0
@@ -3782,6 +3784,10 @@ packages:
     dependencies:
       locate-path: 5.0.0
       path-exists: 4.0.0
+
+  /flamethrower-router/0.0.0-meme.8:
+    resolution: {integrity: sha512-B+CwWgx7+N8qGSn2ON+tg3VVYRv2SJyVUo7ylOvk8J4CjvTw4a6Lxzr50MjcjohCHmtu5H+YQ4UivU6dEAuxbg==}
+    dev: false
 
   /flat-cache/3.0.4:
     resolution: {integrity: sha512-dm9s5Pw7Jc0GvMYbshN6zchCA9RgQlzzEZX3vylR9IqFfS8XciblUXOKfW6SiuJ0e13eDYZoZV5wdrev7P3Nwg==}

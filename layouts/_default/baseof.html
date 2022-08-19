@@ -28,6 +28,9 @@
 
     {{ block "scripts" . }}{{ end }}
 
+    {{/*  Router  */}}
+    {{ $router := resources.Get "js/router.js" | resources.Minify | resources.Fingerprint "md5" }}
+    <script defer src="{{ $router.Permalink }}"></script>
     {{/*  Noise Web Worker  */}}
     {{ $partyMode := resources.Get "js/party-mode.js" }}
     {{ $noiseGen := resources.Get "noise.js" }}
