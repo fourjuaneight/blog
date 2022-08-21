@@ -10,13 +10,18 @@
     >
       {{ .Site.Title }}
     </a>
-    <nav class="overflow-x-auto overflow-y-auto w-full xxxs:overflow-hidden">
+    <nav class="overflow-x-auto overflow-y-auto pt-1 w-full xxxs:overflow-hidden">
       <ul
         class="auto-cols-min gap-x-2 grid grid-rows-1 items-center list-none m-0 p-0 xxs:gap-x-3"
       >
         {{ range .Site.Data.nav.header }}
-          <li class="m-0 row-start-1">
-            <a class="focus:underline hover:underline no-underline" href="{{ .link | absURL }}">
+          <li
+            class="flex items-end justify-start m-0 row-start-1"
+          >
+            <a
+              class="focus:underline hover:underline leading-tight no-underline"
+              href="{{ .link | absURL }}"
+            >
               {{ .label }}
             </a>
           </li>
