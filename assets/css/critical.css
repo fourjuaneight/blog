@@ -146,6 +146,10 @@ header {
   grid-template-rows: minmax(0.5rem, 1fr) min-content minmax(0.5rem, 1fr);
 }
 
+header > section > nav {
+  padding-top: 0.45rem;
+}
+
 main {
   grid-template-rows: 0.5rem auto 0.5rem;
   min-height: calc(100vh - 11rem);
