@@ -44,8 +44,6 @@ const icons: Icons[] = [
  */
 const fmtIcon = async (name: string, size: number): Promise<void> => {
   const input = resolve(dir, 'favicon.png');
-
-  // image options
   const fileName: string = `${name}-${size}x${size}.png`;
   const output = `${dist}/${fileName}`;
 
@@ -79,9 +77,9 @@ const fmtIcon = async (name: string, size: number): Promise<void> => {
 
 (async () => {
   try {
-    const icons = icons.map(icon => fmtIcon(icon.name, icon.size));
+    const ops = icons.map(icon => fmtIcon(icon.name, icon.size));
 
-    await Promise.all(icons);
+    await Promise.all(ops);
 
     process.exit(0);
   } catch (error) {
