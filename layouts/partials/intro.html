@@ -1,7 +1,7 @@
 <section
   class="intro flex flex-col items-center justify-start max-w-2xl mx-auto my-4 sm:flex-row w-full"
 >
-  {{ partial "img.html" (dict "src" .Site.Data.intro.img "alt" .Site.Data.intro.alt) }}
+  {{ partial "img.html" (dict "src" .Site.Data.intro.img "alt" .Site.Data.intro.alt "size" "1024") }}
   <div class="flex flex-col items-start justify-start w-full">
     <h2 class="md:text-4xl text-3xl">{{ .Site.Data.intro.heading }}</h2>
     {{ $content := .Site.Data.intro.copy | markdownify }}

@@ -7,7 +7,7 @@
   {{ end }}
   {{ if ne .Params.footer nil }}
     <section class="footer w-full">
-      {{ partial "img.html" (dict "src" .Params.footer.img "alt" .Params.footer.alt) }}
+      {{ partial "img.html" (dict "src" .Params.footer.img "alt" .Params.footer.alt "size" "1024") }}
     </section>
   {{ end }}
   {{ partial "party-mode.html" . }}

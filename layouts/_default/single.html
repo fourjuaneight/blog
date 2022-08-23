@@ -7,13 +7,13 @@
     {{ end }}
     {{ if ne .Params.hero nil }}
       <section class="hero">
-        {{ partial "img.html" (dict "src" .Params.hero.img "alt" .Params.hero.alt) }}
+        {{ partial "img.html" (dict "src" .Params.hero.img "alt" .Params.hero.alt "size" "1024") }}
       </section>
     {{ end }}
     <section class="content">{{ .Content }}</section>
     {{ if ne .Params.footer nil }}
       <section class="footer">
-        {{ partial "img.html" (dict "src" .Params.footer.img "alt" .Params.footer.alt) }}
+        {{ partial "img.html" (dict "src" .Params.footer.img "alt" .Params.footer.alt "size" "1024") }}
       </section>
     {{ end }}
     {{ partial "party-mode.html" . }}
