@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /social-img/
-Sitemap: https://cleverlaziness.com/sitemap.xml
-Host: https://cleverlaziness.com
+Sitemap: https://cleverlaziness.xyz/sitemap.xml
+Host: https://cleverlaziness.xyz

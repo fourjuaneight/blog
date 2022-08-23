@@ -248,6 +248,6 @@
   {{ $tailwind := resources.Get "css/tw.css" | postCSS | resources.Minify | resources.Fingerprint "md5" }}
   <link rel="stylesheet" href="{{ $tailwind.Permalink }}" />
   {{ if hugo.Environment | eq "production" }}
-    <script defer data-domain="cleverlaziness.com" src="https://plausible.io/js/plausible.js"></script>
+    <script defer data-domain="cleverlaziness.xyz" src="https://plausible.io/js/plausible.js"></script>
   {{ end }}
 </head>

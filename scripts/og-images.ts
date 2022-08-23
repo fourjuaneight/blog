@@ -34,7 +34,7 @@ const saveSocialImages = async (file: string): Promise<void> => {
         height: 630,
         deviceScaleFactor: 1.5,
       });
-      await page.goto(`https://cleverlaziness.com/social-img/${fileName}.svg`);
+      await page.goto(`https://cleverlaziness.xyz/social-img/${fileName}.svg`);
       await wait(1000);
 
       const buffer = await page.screenshot({ type: 'png' });

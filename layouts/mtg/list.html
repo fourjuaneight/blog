@@ -1,7 +1,7 @@
 {{ define "main" }}
   <h1 class="post-title md:text-6xl mr-auto text-4xl">{{ .Title }}</h1>
   <p>{{ .Content }}</p>
-  {{ $cards := getJSON "https://cleverlaziness.com/api/mtg/" }}
+  {{ $cards := getJSON "https://cleverlaziness.xyz/api/mtg/" }}
 
   <section class="mb-4 w-full">
     <ul class="mtg-list gap-5 grid list-none mt-6 p-0 w-full">

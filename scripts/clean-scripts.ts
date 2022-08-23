@@ -10,7 +10,7 @@ dotenv.config();
 
 const globSync = glob.sync;
 const { AIRTABLE_BOOKMARKS_ID, AIRTABLE_TOKEN } = process.env;
-const SITE_URL: string = 'https://cleverlaziness.com';
+const SITE_URL: string = 'https://cleverlaziness.xyz';
 const timestamp: number = Math.floor(new Date().getTime() / 1000);
 
 // Glob options. Pass directory to search and files to ignore

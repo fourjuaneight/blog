@@ -41,7 +41,7 @@ const fmtImage = async (name: string, url: string): Promise<void> => {
 
 (async () => {
   try {
-    const response = await fetch('https://cleverlaziness.com/api/shelf/', {
+    const response = await fetch('https://cleverlaziness.xyz/api/shelf/', {
       headers: {
         'Content-Type': 'application/json',
       },

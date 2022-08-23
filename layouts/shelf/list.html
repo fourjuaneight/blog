@@ -1,7 +1,7 @@
 {{ define "main" }}
   <h1 class="post-title md:text-6xl mr-auto text-4xl">{{ .Title }}</h1>
   <p>{{ .Content }}</p>
-  {{ $shelf := getJSON "https://cleverlaziness.com/api/shelf/" }}
+  {{ $shelf := getJSON "https://cleverlaziness.xyz/api/shelf/" }}
 
   {{ range $i, $data := $shelf }}
     {{ partial "shelf-list" (dict "section" $i "data" $data) }}
