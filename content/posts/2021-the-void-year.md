@@ -5,6 +5,7 @@ date: 2021-12-29
 tags:
   - monthly-notes
 draft: false
+og: 2021 The Void Year
 ---
 
 Right around the start of the pandemic, I sort of lost interest in blogging. Well, it's complicated.

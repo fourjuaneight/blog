@@ -5,6 +5,7 @@ date: 2022-03-31
 tags:
   - gaming
 draft: false
+og: A Love for Gaming
 ---
 
 My fondest childhood memories are of me going on exciting family trips while I spent them glued to my GameBoy. I can recall the triumphant feeling of finishing A Link to the Past DX while visiting the Grand Canyon. And the only reason I remember going there is that my batteries ran out. However, life came at me hard and I sort of lost interest in gaming.

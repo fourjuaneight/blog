@@ -47,7 +47,9 @@ const createSocialImage = async (file: string): Promise<void> => {
     if (!existsSync(socialImagePath)) {
       // post title
       const post = await readFile(`${posts}/${file}`, 'utf8');
-      const pattern = new RegExp(/\ntitle:\s'?(.*)'?/g);
+      const ogPattern = new RegExp(/\n\og:\s'?(.*)'?/g);
+      const titlePattern = new RegExp(/\ntitle:\s'?(.*)'?/g);
+      const pattern = post.match(ogPattern) ? ogPattern : titlePattern;
       const title =
         post
           .match(pattern)

@@ -77,7 +77,7 @@
                 <text id="shadow-second" x="0px" y="0px" font-family="MD Nichrome" style="font-family:'MD Nichrome';font-weight:500;font-size:144px;fill:rgb(133,159,170);">The</text>
             </g>
             <g transform="matrix(1,0,0,1,417.483,161.952)">
-                <text id="shadow-first" x="0px" y="0px" font-family="MD Nichrome" style="font-family:'MD Nichrome';font-weight:500;font-size:144px;fill:rgb(133,159,170);">2021:</text>
+                <text id="shadow-first" x="0px" y="0px" font-family="MD Nichrome" style="font-family:'MD Nichrome';font-weight:500;font-size:144px;fill:rgb(133,159,170);">2021</text>
             </g>
         </g>
         <g id="main" transform="matrix(1,0,0,1,-354.947,-16.7831)">
@@ -91,7 +91,7 @@
                 <text id="main-second" x="0px" y="0px" font-family="MD Nichrome" style="font-family:'MD Nichrome';font-weight:500;font-size:144px;fill:white;">The</text>
             </g>
             <g transform="matrix(1,0,0,1,419.983,164.452)">
-                <text id="main-first" x="0px" y="0px" font-family="MD Nichrome" style="font-family:'MD Nichrome';font-weight:500;font-size:144px;fill:white;">2021:</text>
+                <text id="main-first" x="0px" y="0px" font-family="MD Nichrome" style="font-family:'MD Nichrome';font-weight:500;font-size:144px;fill:white;">2021</text>
             </g>
         </g>
     </g>
