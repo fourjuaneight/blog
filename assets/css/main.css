@@ -617,6 +617,13 @@ body[data-party='true'] li.bk-title a:hover {
   animation: textShadowParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
+button[data-transparent="true"],
+button[data-transparent="true"]:focus,
+button[data-transparent="true"]:focus-visible,
+button[data-transparent="true"]:hover {
+  background-color: transparent !important;
+}
+
 /* Background Texture */
 div.noise {
   animation: fadeIn calc(256ms * 4);
