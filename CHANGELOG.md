@@ -2,50 +2,6 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.7.1] - 2022-08-23
-
-### Bug Fixes
-
-- [Minor variable name correction.](https://github.com/fourjuaneight/blog/commit/1f473673bd471b13580cf6c26b72406250e4805b)
-
-### Miscellaneous Tasks
-
-- [Remove remote images to allow for server render.](https://github.com/fourjuaneight/blog/commit/c6783dfb54b150a3c36de266a0a5e6d42d1d5d44)
-- [Add local shelf images.](https://github.com/fourjuaneight/blog/commit/3e2e429d94ca03f28b5234b40363ba90d5fe8404)
-- [Add local mtg images.](https://github.com/fourjuaneight/blog/commit/d8a47b7c1c2f21205fc8d5d6a86098560e6bb1d9)
-- [Update to v1.7.1.](https://github.com/fourjuaneight/blog/commit/8e212fcaeb69bcd4ad95697695d8cb01857a26b9)
-
-## [1.7.0] - 2022-08-23
-
-### Bug Fixes
-
-- [Add missing word from coffee post.](https://github.com/fourjuaneight/blog/commit/9edb8a23c71c5e2a24397ded522eda2971e39d64)
-- [Header layout optimizations.](https://github.com/fourjuaneight/blog/commit/7bcbeb175e77dd1591bda2b39eb63b237fa489c5)
-- [Align party button with header layout.](https://github.com/fourjuaneight/blog/commit/1c0235c8307e67d75191be6244e976cd27a60971)
-- [Tweak header mobile layout alignment.](https://github.com/fourjuaneight/blog/commit/ba3900358ff1a8cee8ff4bf1ac773501b04f9d55)
-- [Reload noise worker on every page load to avoid duplicate bg image.](https://github.com/fourjuaneight/blog/commit/a2dd380d7e223feb9a2e880516a8d15510985b37)
-
-### Features
-
-- [Update uses page content.](https://github.com/fourjuaneight/blog/commit/90b3fd9f16955aabfd536794c8b5a8f7023fd45d)
-- [Update mtg page copy and sorting.](https://github.com/fourjuaneight/blog/commit/1f35f69e0caae1b12ea8b959b181393da3cb8cd0)
-- [Add hugo based image sizing to partial.](https://github.com/fourjuaneight/blog/commit/d92710ce9b47ffe27a9c06fd68e809de425bcdc4)
-- [Update image scripts to save pngs.](https://github.com/fourjuaneight/blog/commit/91656e9c0ba49083da4d136f6edd5a3650f2c96f)
-- [Update image partial to handle image conversions and resizes.](https://github.com/fourjuaneight/blog/commit/b86fac2449de5a99132a06e8fb7c78ce314c59d4)
-- [Update domain.](https://github.com/fourjuaneight/blog/commit/aa04505cf071e8841758a561bb2b63aa3b42df23)
-- [Add footer image to 404 page.](https://github.com/fourjuaneight/blog/commit/2d87c3c5cba82115fc6a2108da0410523e0891cf)
-
-### Miscellaneous Tasks
-
-- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/48b04487f30d17cca74e980c7f0be50a3c6b12c9)
-- [Add missing social image.](https://github.com/fourjuaneight/blog/commit/0756132167756eb89d8467b02bc14c6c1acd5b0f)
-- [Add new og social image.](https://github.com/fourjuaneight/blog/commit/6d041af1d83de1aaf35e7781aa77a1eac7960c0c)
-- [Minor social image generation optimizations.](https://github.com/fourjuaneight/blog/commit/a695c751afa19b6020a7c3073403a9cfa90919f0)
-- [Save all png images to assets.](https://github.com/fourjuaneight/blog/commit/851967cd0eb90fb8fe63db79b6b8d156567f8da3)
-- [Track mtg and shelf images.](https://github.com/fourjuaneight/blog/commit/6c6d94d70de4d717ee4841f784c7ae4d561ba1b9)
-- [Add party button to 404 page.](https://github.com/fourjuaneight/blog/commit/fa611fffcf58b9c01379bfb62bcabc439a965898)
-- [Update to v1.7.0.](https://github.com/fourjuaneight/blog/commit/cb7ada09cf14380badf68da96821699d7a7087c8)
-
 ## [1.6.0] - 2022-08-19
 
 ### Bug Fixes
