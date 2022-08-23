@@ -9,37 +9,23 @@ import { ShelfItem } from '../functions/utils/types';
 
 const { mkdir } = promises;
 const dist = resolve(__dirname, '..', 'assets/img/shelf/');
-const variants = ['jpeg', 'webp', 'avif'];
 
 const fmtImage = async (name: string, url: string): Promise<void> => {
-  const response = await fetch(url);
-  const arrayBuffer = await response.arrayBuffer();
-  const buffer = Buffer.from(arrayBuffer);
-
-  // map array to promises
-  const promises = variants.map(async ext => {
-    // image options
-    const fileName: string = `${name}.${ext}`;
+  try {
+    const response = await fetch(url);
+    const arrayBuffer = await response.arrayBuffer();
+    const buffer = Buffer.from(arrayBuffer);
+    const fileName: string = `${name}.png`;
     const output = `${dist}/${fileName}`;
 
-    // create variants
+    // create image
     if (!existsSync(output)) {
       const image = sharp(buffer);
 
-      await image
-        .toFormat(
-          ext as any,
-          ext === 'jpeg' ? { progressive: true } : undefined
-        )
-        .toFile(output)
-        .then(() => {
-          logger.info(`[shelf-images] [fmtImage]: ${output} created`);
-        });
+      await image.toFile(output).then(() => {
+        logger.info(`[shelf-images] [fmtImage]: ${output} created`);
+      });
     }
-  });
-
-  try {
-    await Promise.all(promises);
   } catch (err) {
     throw `${JSON.stringify(
       {
