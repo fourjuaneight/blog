@@ -1,17 +1,18 @@
+{{/*  Get image types  */}}
 {{ $svg := .src | findRE "svg" }}
 {{ $gif := .src | findRE "gif" }}
 {{ $type := .src | replaceRE "(.*).(png|jpg|jpeg|svg|gif)" "$2" }}
 {{ $imgMain := .src | replaceRE "(.*).(png|jpg|jpeg|svg|gif)" "$1" }}
-
+{{/*  Create filenames  */}}
 {{ $avif := print $imgMain ".avif" }}
 {{ $webp := print $imgMain ".webp" }}
 {{ $img := print $imgMain "." $type }}
-
+{{/*  Render attributes  */}}
 {{ $isHidden := cond (ne .hidden nil) "true" "false" }}
 {{ $isSmall := cond (ne .small nil) "true" "false" }}
 {{ $maxWidth := cond (ne .small nil) "max-w-xxxxs" "max-w-xs" }}
 {{ $sizing := cond (ne .small nil) "160" "576" }}
-
+{{/*  Render conditionally by file type  */}}
 {{ if or (eq (index $svg 0) "svg") (eq (index $gif 0) "gif") }}
   {{ $simple := resources.Get (print "/img/" $img) }}
   <img
@@ -39,8 +40,8 @@
     src="{{ $imgPrimary.Permalink }}"
     alt="{{ .alt }}"
     class="{{ with .iClasses }}{{ . }}{{ else }}{{ $maxWidth }} w-full{{ end }}"
-    {{ if eq .poster nil }}width="{{ $sizing }}"{{ end }}
-    height="{{ with .poster }}{{ . }}{{ else }}{{ $sizing }}{{ end }}"
+    width="{{ math.Floor (div $imgPrimary.Width 1.8) }}"
+    height="{{ math.Floor (div $imgPrimary.Height 1.8) }}"
     data-small="{{ $isSmall }}"
     aria-hidden="{{ $isHidden }}"
     loading="lazy"
