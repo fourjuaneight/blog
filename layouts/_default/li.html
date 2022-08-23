@@ -1,4 +1,4 @@
-<article class="w-full">
+<article class="relative w-full">
   <h2 class="mr-auto">
     <a class="focus:underline hover:underline no-underline" href="{{ .Permalink }}">
       {{ .Title }}
@@ -6,4 +6,5 @@
   </h2>
   {{ partial "meta.html" . }}
   <p>{{ .Params.description }}</p>
+  {{ partial "party-mode.html" . }}
 </article>

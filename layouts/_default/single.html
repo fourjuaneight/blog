@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <article class="w-full">
+  <article class="relative w-full">
     <h1 class="post-title md:text-6xl mr-auto text-4xl">{{ .Title }}</h1>
     <span itemprop="name" class="sr-visible">Juan Villela</span>
     {{ if eq .Type "posts" }}
@@ -16,6 +16,7 @@
         {{ partial "img.html" (dict "src" .Params.footer.img "alt" .Params.footer.alt) }}
       </section>
     {{ end }}
+    {{ partial "party-mode.html" . }}
   </article>
 {{ end }}
 {{ define "scripts" }}
