@@ -3,7 +3,7 @@ FROM node:16.15.1-alpine as builder
 
 # Config
 ENV GLIBC_VER=2.27-r0
-ENV HUGO_VER=0.91.2
+ENV HUGO_VER=0.101.0
 
 # Build dependencies
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" > /etc/apk/repositories \
@@ -53,8 +53,11 @@ RUN wget -qO- "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VER}/h
   && chmod +x /usr/local/bin/hugo \
   && hugo version
 
+# Add go binaries to PATH
+COPY --from=golang:alpine /usr/local/go /usr/local/go
+ENV PATH="/usr/local/go/bin:${PATH}"
+
 # Install npm dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied where available
 WORKDIR /app
 COPY package*.json /app/
 RUN npm install
@@ -63,3 +66,10 @@ RUN npm install
 FROM node:16.15.1-alpine
 COPY --from=builder /usr/local/bin/hugo /usr/local/bin/hugo
 COPY --from=builder /app/node_modules /app/node_modules
+
+# Install go dependencies
+WORKDIR /app
+COPY go.mod /app/
+COPY go.sum /app/
+RUN go mod download
+RUN go mod tidy

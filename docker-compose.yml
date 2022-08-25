@@ -1,6 +1,6 @@
-version: '3'
+version: '3.8'
 services:
-  finserv-glance-dev:
+  dev:
     build:
       context: .
       dockerfile: Dockerfile
@@ -11,7 +11,7 @@ services:
     ports:
       - '1313:1313'
     entrypoint: npm start
-  finserv-glance-prod:
+  prod:
     build:
       context: .
       dockerfile: Dockerfile
