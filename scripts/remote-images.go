@@ -8,7 +8,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/samber/lo/parallel"
+	"github.com/samber/lo"
 	lop "github.com/samber/lo/parallel"
 )
 
@@ -61,7 +61,6 @@ type Covers struct {
 var endpoint = "https://cleverlaziness.xyz/api/"
 
 func fetch(route string) []byte {
-	// get json file from url
 	resp, err := http.Get(endpoint + "shelf/")
 	if err != nil {
 		log.Fatal("[http]:", err)
@@ -100,11 +99,12 @@ func getShelfList() []Shelf {
 	rest := fetch("shelf/")
 
 	// unmarshal the response
-	var shelf ShelfSet
-	json.Unmarshal(rest, &shelf)
-	values := lo.Values(shelf)
+	var shelfSet ShelfSet
+	json.Unmarshal(rest, &shelfSet)
+	shelfStack := lo.Values(shelfSet)
+	shelf := lo.Flatten(shelfStack)
 
-	return values
+	return shelf
 }
 
 func downloadSave(URL, dist string, fileName string) {
