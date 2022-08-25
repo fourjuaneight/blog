@@ -8,6 +8,7 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/samber/lo/parallel"
 	lop "github.com/samber/lo/parallel"
 )
 
@@ -49,6 +50,8 @@ type Shelf struct {
 	Completed bool   `json:"completed"`
 	Comments  string `json:"comments"`
 }
+
+type ShelfSet map[string][]Shelf
 
 type Covers struct {
 	ID    string
@@ -97,10 +100,11 @@ func getShelfList() []Shelf {
 	rest := fetch("shelf/")
 
 	// unmarshal the response
-	var shelf []Shelf
+	var shelf ShelfSet
 	json.Unmarshal(rest, &shelf)
+	values := lo.Values(shelf)
 
-	return shelf
+	return values
 }
 
 func downloadSave(URL, dist string, fileName string) {
@@ -138,7 +142,7 @@ func downloadSave(URL, dist string, fileName string) {
 
 func mtg(data []Card, dir string) {
 	// filter back images
-	backData := lop.FilterMap(data, func(item Card, _ int) (BackData, bool) {
+	backData := lo.FilterMap(data, func(item Card, _ int) (BackData, bool) {
 		if item.Back != nil {
 			return BackData{
 				ID:   item.ID,
