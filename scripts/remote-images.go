@@ -8,7 +8,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/samber/lo"
+	lop "github.com/samber/lo/parallel"
 )
 
 type Card struct {
@@ -138,7 +138,7 @@ func downloadSave(URL, dist string, fileName string) {
 
 func mtg(data []Card, dir string) {
 	// filter back images
-	backData := lo.FilterMap(data, func(item Card, _ int) (BackData, bool) {
+	backData := lop.FilterMap(data, func(item Card, _ int) (BackData, bool) {
 		if item.Back != nil {
 			return BackData{
 				ID:   item.ID,
@@ -166,13 +166,13 @@ func mtg(data []Card, dir string) {
 	}
 
 	// save images
-	lo.ForEach(data, func(item Card, _ int) {
+	lop.ForEach(data, func(item Card, _ int) {
 		fileName := item.ID + ".png"
 
 		downloadSave(item.Image, dist, fileName)
 	})
 	// save back images
-	lo.ForEach(backData, func(item BackData, _ int) {
+	lop.ForEach(backData, func(item BackData, _ int) {
 		fileName := item.ID + ".png"
 
 		downloadSave(item.Back, dist, fileName)
@@ -197,7 +197,7 @@ func shelf(data []Shelf, dir string) {
 	}
 
 	// save images
-	lo.ForEach(data, func(item Shelf, _ int) {
+	lop.ForEach(data, func(item Shelf, _ int) {
 		fileName := item.ID + ".png"
 
 		downloadSave(item.Cover, dist, fileName)
