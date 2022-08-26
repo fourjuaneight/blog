@@ -564,6 +564,9 @@ body[data-party='false'] a.footnote-ref:focus::before,
 body[data-party='false'] a.footnote-ref:focus::after,
 body[data-party='false'] a.footnote-ref:hover::before,
 body[data-party='false'] a.footnote-ref:hover::after,
+body[data-party='false'] a.footnote-backref:focus,
+body[data-party='false'] a.footnote-backref:focus-visible,
+body[data-party='false'] a.footnote-backref:hover,
 body[data-party='false'] a.tags:hover span {
   color: var(--primary);
 }
@@ -612,6 +615,9 @@ body[data-party='true'] a.footnote-ref:focus::before,
 body[data-party='true'] a.footnote-ref:focus::after,
 body[data-party='true'] a.footnote-ref:hover::before,
 body[data-party='true'] a.footnote-ref:hover::after,
+body[data-party='true'] a.footnote-backref:focus,
+body[data-party='true'] a.footnote-backref:focus-visible,
+body[data-party='true'] a.footnote-backref:hover,
 body[data-party='true'] a.tags:hover span {
   animation: colorParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
@@ -636,11 +642,19 @@ body[data-party='true'] li.bk-title a:hover {
   animation: textShadowParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
+/* Overrides */
 button[data-transparent='true'],
 button[data-transparent='true']:focus,
 button[data-transparent='true']:focus-visible,
 button[data-transparent='true']:hover {
   background-color: transparent !important;
+}
+
+a.footnote-backref:focus,
+a.footnote-backref:focus-visible,
+a.footnote-backref:hover,
+a.footnote-backref {
+  text-decoration: none !important;
 }
 
 /* Background Texture */
