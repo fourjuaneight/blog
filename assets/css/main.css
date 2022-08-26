@@ -447,6 +447,25 @@ li code {
   padding: 0.25rem;
 }
 
+div.goat {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  max-width: 60rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+div.goat svg {
+  height: auto;
+  margin: auto;
+  max-width: 18rem;
+  object-fit: contain;
+  object-position: left bottom;
+  width: 100%;
+}
+
 section.bk-table[data-loaded='false'] > div {
   overflow: hidden;
 }

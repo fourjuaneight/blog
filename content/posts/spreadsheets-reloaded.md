@@ -98,6 +98,7 @@ mutation {
 ```
 
 And correctly formatted for Shortcuts it would look like this:
+
 ```text
 {"query":"mutation {\n  insert_bookmarks(\n    objects: {\n      category: \"Articles\",\n      creator: \"André Staltz\",\n      title: \"A plan to rescue the Web from the Internet\",\n      url: \"https://staltz.com/a-plan-to-rescue-the-web-from-the-internet.html\"\n    }\n  ) {\n    returning {\n      title\n      url\n    }\n  }\n}"}
 ```
@@ -107,20 +108,28 @@ So far, the source code for every site has been consistent enough for me to corr
 I try to keep my Shortcuts modular; everything is a component. The shortcut for adding Bookmarks, for example, is 4 different smaller ones assembled. So sharing them would be a nightmare. Also, this setup is very specific to my use case. However, if anyone is adamant about getting your hands on any of this, hit me up on Twitter and I'll see what I can do.
 
 After everything is put together, this what we're looking at:
-```mermaid
-stateDiagram-v2
-    state "Media" as s0
-    state "Add Bookmarks Shortcut" as s1
-    state "Match Category" as s2
-    state "Get Page Data via Regex" as s3
-    state "Save to Hasura" as s4
 
-    s0 --> s1
-    state s1 {
-        [*] --> s2
-        s2 --> s3
-    }
-    s1 --> s4
+```goat
+         +-------------+         
+         |    Media    |         
+         +-------------+         
+                |                
+                v                
++-------------------------------+
+|    +--------------------+     |
+|    |  Match Categories  |     |
+|    +--------------------+     |
+|               |               |
+|               v               |
+|  +-------------------------+  |
+|  | Get Page Data via Regex |  |
+|  +-------------------------+  |
++-------------------------------+
+                |                
+                v                
+     +--------------------+      
+     |   Save to Hasura   |      
+     +--------------------+      
 ```
 
 ## Going Further

@@ -41,30 +41,49 @@ Once the data arrives, the API figures out what the category is and if it needs 
 
 But to get a better idea, this is what the setup looks like:
 
-```mermaid
-stateDiagram-v2
-    state "Media" as s0
-    state "Add Bookmarks Shortcut" as s1
-    state "Select a Tag" as s2
-    state "Grab URL and Remove Any Trackers" as s3
-    state "Determine Category" as s4
-    state "Bookmarker API" as s5
-    state "Hit External APIs" as s6
-    state "Format Data" as s7
-    state "Save to Airtable" as s8
-
-    s0 --> s1
-    state s1 {
-        [*] --> s2
-        s2 --> s3
-        s3 --> s4
-    }
-    s1 --> s5
-    state s5 {
-        [*] --> s6
-        s6 --> s7
-    }
-    s5 --> s8
+```goat
+        +--------------+        
+        |    Media     |        
+        +--------------+        
+                |               
+                |               
+     Add Bookmarks Shortcut     
+                |               
+                v               
++------------------------------+
+|    +--------------------+    |
+|    |    Select a Tag    |    |
+|    +--------------------+    |
+|               |              |
+|               v              |
+|  +-------------------------+ |
+|  |Grab URL, Remove Trackers| |
+|  +-------------------------+ |
+|               |              |
+|               v              |
+|  +------------------------+  |
+|  |   Determine Category   |  |
+|  +------------------------+  |
++------------------------------+
+                |               
+          Bookmarker API        
+                |               
+                v               
++------------------------------+
+|  +-------------------------+ |
+|  |    Hit External APIs    | |
+|  +-------------------------+ |
+|               |              |
+|               v              |
+|       +-------------+        |
+|       | Format Data |        |
+|       +-------------+        |
++------------------------------+
+                |               
+                v               
+      +------------------+      
+      | Save to Airtable |      
+      +------------------+      
 ```
 
 All this is pretty standard stuff. I essentially just shifted the load from my phone to a server. The biggest feature here is archiving.
@@ -74,24 +93,35 @@ I have a _not so irrational_ fear of losing my data. Not only that, but bookmark
 
 This is commonly known as [link rot](https://en.m.wikipedia.org/wiki/Link_rot) or platforms being assholes. So circumvent that, I've invested a lot of time and effort to ensure all my data is backed up in several different places. In the case of my bookmarks, I keep a copy of the media type on a B2 bucket. That is a downloaded copy of the article, podcast, video, etc. I wrote an archiving script that runs on a scheduled CI called [archiver](https://github.com/fourjuaneight/archiver). Aside from archiving bookmarks, it also keeps a JSON file copy of every Airtable base. Here's a cool diagram for this setup:
 
-```mermaid
-stateDiagram-v2
-    state "Archiving Script" as s0
-    state "Get Airtable Data" as s1
-    state "Filter Bookmarks with Existing Archives" as s2
-    state "Determine Media Type" as s3
-    state "Download Content as Buffer" as s4
-    state "Upload to B2 and Get File Link" as s5
-    state "Update Airtable with Archive Link" as s6
-
-    state s0 {
-      [*] --> s1
-      s1 --> s2
-      s2 --> s3
-      s3 --> s4
-      s4 --> s5
-      s5 --> s6
-    }
+```goat
+          +---------------------+          
+          |  Get Airtable Data  |          
+          +---------------------+          
+                     |                     
+                     v                     
++-----------------------------------------+
+|  Filter Bookmarks w/ Existing Archives  |
++-----------------------------------------+
+                     |                     
+                     v                     
+        +------------------------+         
+        |  Determine Media Type  |         
+        +------------------------+         
+                     |                     
+                     v                     
+      +----------------------------+       
+      | Download Content as Buffer |       
+      +----------------------------+       
+                     |                     
+                     v                     
+   +----------------------------------+    
+   |  Upload to B2 and Get File Link  |    
+   +----------------------------------+    
+                     |                     
+                     v                     
+  +------------------------------------+   
+  |  Update Airtable w/ Archive Link   |   
+  +------------------------------------+   
 ```
 
 And although it might seem overkill, while testing this script I found over a dozen bookmarks were dead links already. And new ones have popped up since. So it's alrady paying off.
