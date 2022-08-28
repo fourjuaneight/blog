@@ -6,7 +6,7 @@
     "build:chroma": "hugo gen chromastyles > assets/css/syntax.css",
     "build:prod": "run-p ts tw && hugo -e production --gc --minify && npm run clean-scripts",
     "build": "hugo -e production --gc --log --minify",
-    "clean-scripts": "esno --no-cache --tsconfig tsconfig.node.json \"scripts/clean-scripts.ts\"",
+    "clean-scripts": "go run scripts/clean-scripts.go",
     "clean:node": "rm -rf node_modules",
     "clean": "rm -rf dist",
     "dev": "concurrently -n \"DEV,TW,TS\" -c \"#ff4088,#38bdf8,#3178c6\" \"hugo --disableFastRender --gc --ignoreCache --log --minify serve\" \"npm run tw -- --watch\" \"npm run ts:scripts -- --watch\"",
