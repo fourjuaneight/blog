@@ -28,8 +28,8 @@
     {{/*  Noise Web Worker  */}}
     {{ $partyMode := resources.Get "js/party-mode.js" }}
     {{ $noiseGen := resources.Get "noise.js" }}
-    {{ $noiseWW := resources.Get "noise.ww.js" | resources.Minify | resources.Fingerprint "md5" }}
-    {{- $scripts := slice $partyMode $noiseGen | resources.Concat "noise.js" | resources.Minify | resources.Fingerprint "md5" -}}
+    {{ $noiseWW := resources.Get "noise.ww.js" }}
+    {{- $scripts := slice $partyMode $noiseGen | resources.Concat "noise.js" | resources.Minify -}}
     <script
       defer
       src="{{ $scripts.Permalink }}"

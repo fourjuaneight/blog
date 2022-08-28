@@ -1,5 +1,5 @@
 {{/*  Service Worker  */}}
-{{ $sw := resources.Get "sw.js" | resources.Minify | resources.Fingerprint "md5" }}
+{{ $sw := resources.Get "sw.js" }}
 <script>
   if (navigator.serviceWorker) {
     navigator.serviceWorker.register("{{ $sw.Permalink }}", { scope: "/" });
