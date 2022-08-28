@@ -4,7 +4,7 @@
   "description": "Personal blog.",
   "scripts": {
     "build:chroma": "hugo gen chromastyles > assets/css/syntax.css",
-    "build:prod": "run-p remote-images ts tw && hugo -e production --gc --minify && npm run clean-scripts",
+    "build:prod": "run-p ts tw && hugo -e production --gc --minify && npm run clean-scripts",
     "build": "hugo -e production --gc --log --minify",
     "clean-scripts": "esno --no-cache --tsconfig tsconfig.node.json \"scripts/clean-scripts.ts\"",
     "clean:node": "rm -rf node_modules",
@@ -16,7 +16,7 @@
     "remote-images": "go run scripts/remote-images.go",
     "serve": "serve dist",
     "social-images": "esno --no-cache --tsconfig tsconfig.node.json \"scripts/social-images.ts\"",
-    "start": "run-p remote-images social-images ts && npm run dev",
+    "start": "run-p social-images ts && npm run dev",
     "ts:scripts": "esbuild assets/scripts/* --bundle --splitting --format=esm --outdir=assets/js",
     "ts:workers": "esbuild assets/workers/* --bundle --splitting --format=esm --outdir=assets",
     "ts": "run-p ts:scripts ts:workers",
