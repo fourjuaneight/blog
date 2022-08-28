@@ -9,13 +9,12 @@ import logger from './logger';
 dotenv.config();
 
 const globSync = glob.sync;
-const { AIRTABLE_BOOKMARKS_ID, AIRTABLE_TOKEN } = process.env;
 const SITE_URL: string = 'https://cleverlaziness.xyz';
 const timestamp: number = Math.floor(new Date().getTime() / 1000);
 
 // Glob options. Pass directory to search and files to ignore
 const cwd = resolve(__dirname, '..', 'dist');
-const ignore = ['sw*.js', 'noise*.js', 'bookmarks*.js'];
+const ignore = ['sw*.js', 'noise*.js'];
 
 // Find all JS, CSS, and font files in rendered output
 (async () => {
@@ -24,16 +23,14 @@ const ignore = ['sw*.js', 'noise*.js', 'bookmarks*.js'];
     cwd,
     ignore,
   });
-  const sw = globSync('sw.min.*.js', { cwd });
-  const noise = globSync('noise.min.*.js', { cwd });
-  const noiseWW = globSync('noise.ww.min.*.js', { cwd });
+  const sw = globSync('sw.js', { cwd });
   const newFiles = files.map(toCache => `'/${toCache}'`).toString();
 
   // find and replace options; add hash ID, files to cache array, and site base URL
   const replaceOptions: ReplaceInFileConfig = {
-    files: [`${cwd}/${sw[0]}`, `${cwd}/${noise[0]}`],
-    from: [/\["staticAssets"\]/g, /"version"/g, /baseURL/g, '/noise.ww.min.js'],
-    to: [`[${newFiles}]`, `'${timestamp}'`, `${SITE_URL}`, `/${noiseWW}`],
+    files: `${cwd}/${sw[0]}`,
+    from: [/\["staticAssets"\]/g, /"version"/g, /baseURL/g],
+    to: [`[${newFiles}]`, `'${timestamp}'`, `${SITE_URL}`],
   };
 
   try {
