@@ -1,3 +1,5 @@
+github.com/erning/gorun v0.0.0-20210818030522-61436867ff54 h1:shFflO/F8Q6yrwWp5XL9it8B7f4zjhrdiXE9rkxFudI=
+github.com/erning/gorun v0.0.0-20210818030522-61436867ff54/go.mod h1:I9J8Ny28A2FmzSsCFfLFcthlElf7BpHX4PdP16FIwdU=
 github.com/samber/lo v1.27.0 h1:GOyDWxsblvqYobqsmUuMddPa2/mMzkKyojlXol4+LaQ=
 github.com/samber/lo v1.27.0/go.mod h1:it33p9UtPMS7z72fP4gw/EIfQB2eI8ke7GR2wc6+Rhg=
 golang.org/x/exp v0.0.0-20220303212507-bbda1eaf7a17 h1:3MTrJm4PyNL9NBqvYDSj3DHl46qQakyfqfWo4jgfaEM=

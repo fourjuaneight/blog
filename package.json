@@ -14,7 +14,6 @@
     "lint": "eslint --fix --no-error-on-unmatched-pattern \"assets/**/*.{ts,js}\"",
     "og-images": "esno --no-cache --tsconfig tsconfig.node.json \"scripts/og-images.ts\"",
     "preinstall": "chmod +x scripts/*.go",
-    "prebuild:prod": "go get github.com/erning/gorun@latest",
     "remote-images": "go run scripts/remote-images.go",
     "serve": "serve dist",
     "social-images": "esno --no-cache --tsconfig tsconfig.node.json \"scripts/social-images.ts\"",
