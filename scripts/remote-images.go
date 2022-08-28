@@ -208,22 +208,11 @@ func shelf(data []Shelf, dir string) {
 	})
 }
 
-func main() {
-	// get src directory
-	var dir string
-	args := os.Args
-	if len(args) > 1 {
-		dir = args[1]
-	} else {
-		log.Fatal("[os.Args]: No directory specified")
-	}
-
+func init() {
 	// save images
-	if dir == "mtg" {
-		mtgData := getCardList()
-		mtg(mtgData, dir)
-	} else if dir == "shelf" {
-		shelfData := getShelfList()
-		shelf(shelfData, dir)
-	}
+	mtgData := getCardList()
+	mtg(mtgData, "mtg")
+
+	shelfData := getShelfList()
+	shelf(shelfData, "shelf")
 }
