@@ -165,7 +165,6 @@ func mtg(data []Card, dir string) {
 	if err != nil {
 		log.Fatal("[io.Getwd]:", err)
 	}
-	wd = filepath.Join(wd, "..")
 	dist = filepath.Join(wd, "assets/img/", dir)
 
 	// create the directory if it doesn't exist
@@ -197,7 +196,6 @@ func shelf(data []Shelf, dir string) {
 	if err != nil {
 		log.Fatal("[io.Getwd]:", err)
 	}
-	wd = filepath.Join(wd, "..")
 	dist = filepath.Join(wd, "assets/img/", dir)
 
 	// create the directory if it doesn't exist
@@ -241,7 +239,6 @@ func cleanScripts(run bool) {
 			log.Fatal("[io.Getwd]:", err)
 		}
 		// go up one directory
-		wd = filepath.Join(wd, "..")
 		dist := filepath.Join(wd, "dist/")
 
 		// create filter patterns
