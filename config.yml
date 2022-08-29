@@ -26,6 +26,14 @@ markup:
     style: dracula
     tabWidth: 2
 
+outputFormats:
+  social:
+    baseName: "social"
+    isPlainText: true
+    mediaType: image/svg+xml
+    name: "social"
+    suffix: "svg"
+
 taxonomies:
   tags: "tags"
 
@@ -36,7 +44,8 @@ permalinks:
 
 outputs:
   home: ["html"]
-  section: ["html", "rss"]
+  page: ["html", "social"]
+  section: ["html", "rss", "social"]
 
 sitemap:
   changefreq: monthly
