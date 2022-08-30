@@ -1,14 +1,11 @@
 # Personal Blog
 
-![Shelf-Images](https://github.com/fourjuaneight/blog/actions/workflows/shelf-images.yml/badge.svg)
-![Social-Images](https://github.com/fourjuaneight/blog/actions/workflows/social-images.yml/badge.svg)
-
 Powered by:
 
 - [Hugo](https://gohugo.io)
 - [Tailwind](https://tailwindcss.com)
-- [Sharp](https://sharp.pixelplumbing.com)
 - [Typescript](https://www.typescriptlang.org)
+- [Go](https://go.dev)
 
 All illustrations were made by [Yonsoncb](https://www.yonsoncb.com/socials).
 
