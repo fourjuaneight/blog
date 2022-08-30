@@ -2,11 +2,10 @@
 {{ $description := cond (eq .IsHome true) .Site.Params.meta.description .Params.description }}
 {{ $pageFile := .RelPermalink | replaceRE "/posts" "" | replaceRE "/" "" }}
 {{ $imgFilePath := cond (eq .Title "Archive") "archive" $pageFile }}
-{{ $socialMain := "og/main.jpeg" }}
-{{ $socialPage := print "og/" $imgFilePath ".jpeg" }}
-{{ $socialImg := cond (eq .IsHome true) $socialMain $socialPage }}
-{{ $imgPipe := cond (eq .Kind "term") $socialMain $socialImg }}
-{{ $socialImgPath := print .Permalink "social.jpeg" }}
+{{ $socialMain := resources.Get "img/social.jpeg" }}
+{{ $socialPage := print .Permalink "social.jpeg" }}
+{{ $socialHome := cond (eq .IsHome true) $socialMain.Permalink $socialPage }}
+{{ $socialImgPath := cond (eq .Kind "term") $socialMain.Permalink $socialHome }}
 
 <head>
   <base href="{{ .Permalink }}" />
