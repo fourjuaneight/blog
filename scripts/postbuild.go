@@ -3,6 +3,9 @@
 package main
 
 import (
+	"bytes"
+	"image"
+	"image/jpeg"
 	"log"
 	"os"
 	"path/filepath"
@@ -11,16 +14,14 @@ import (
 	"strings"
 	"time"
 
+	"github.com/go-rod/rod"
 	"github.com/samber/lo"
+	lop "github.com/samber/lo/parallel"
 )
 
-func cleanScripts() {
-	var files []string
-	// runtime variables
-	site := "https://cleverlaziness.xyz"
-	now := time.Now()
-	unix := now.Unix()
+var site = "https://cleverlaziness.xyz"
 
+func dist() string {
 	// create src directory
 	wd, err := os.Getwd()
 	if err != nil {
@@ -28,6 +29,16 @@ func cleanScripts() {
 	}
 	// go up one directory
 	dist := filepath.Join(wd, "dist/")
+
+	return dist
+}
+
+func cleanScripts() {
+	var files []string
+	// runtime variables
+	now := time.Now()
+	unix := now.Unix()
+	dist := dist()
 
 	// create filter patterns
 	typeIgnore := regexp.MustCompile(`.*(noise|sw).*\.js$`)
@@ -81,6 +92,59 @@ func cleanScripts() {
 	newSW.WriteString(fmtSW)
 }
 
+func socialImgs() {
+	var routes []string
+	dist := dist()
+
+	// match patterns
+	typeMatch := regexp.MustCompile(`(.*\/)(social\.svg)$`)
+
+	// get files
+	filepath.Walk(dist, func(path string, info os.FileInfo, err error) error {
+		if err != nil {
+			log.Fatal("[socialImgs][filepath.Glob]:", err)
+		}
+		// filter files
+		match := typeMatch.MatchString(path)
+
+		// only save matches
+		if !info.IsDir() && match {
+			cleanPath := strings.Replace(path, dist, site, -1)
+			routes = append(routes, cleanPath)
+		}
+
+		return nil
+	})
+
+	// take screenshots
+	browser := rod.New().MustConnect().NoDefaultDevice()
+	lop.ForEach(routes, func(route string, _ int) {
+		// visit route
+		page := browser.MustPage(route).MustSetViewport(1200, 630, 2, false)
+		// take screenshot
+		imgBytes := page.MustWaitLoad().MustScreenshot("social.jpeg")
+		time.Sleep(1000)
+		// create image
+		distPath := strings.Replace(route, site, dist, -1)
+		cleanPath := typeMatch.ReplaceAllString(distPath, "$1")
+		imgFile, err := os.Create(filepath.Join(cleanPath, "social.jpeg"))
+		if err != nil {
+			log.Fatal("[socialImgs][os.Create]:", err)
+		}
+		defer imgFile.Close()
+		// encode image
+		img, _, err := image.Decode(bytes.NewReader(imgBytes))
+		if err != nil {
+			log.Fatal("[socialImgs][image.Decode]:", err)
+		}
+		err = jpeg.Encode(imgFile, img, &jpeg.Options{Quality: 100})
+		if err != nil {
+			log.Fatal("[socialImgs][jpeg.Encode]:", err)
+		}
+	})
+}
+
 func main() {
 	cleanScripts()
+	socialImgs()
 }
