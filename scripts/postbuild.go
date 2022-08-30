@@ -120,9 +120,9 @@ func socialImgs() {
 	browser := rod.New().MustConnect().NoDefaultDevice()
 	lop.ForEach(routes, func(route string, _ int) {
 		// visit route
-		page := browser.MustPage(route).MustSetViewport(1200, 630, 2, false)
+		page := browser.MustPage(route)
 		// take screenshot
-		imgBytes := page.MustWaitLoad().MustScreenshot("social.jpeg")
+		imgBytes := page.MustWaitLoad().MustSetViewport(2400, 1260, 2, false).MustScreenshot("social.jpeg")
 		time.Sleep(1000)
 		// create image
 		distPath := strings.Replace(route, site, dist, -1)
@@ -145,6 +145,8 @@ func socialImgs() {
 }
 
 func main() {
+	log.Println("Generating SW cache list")
 	cleanScripts()
+	log.Println("Creating social images")
 	socialImgs()
 }
