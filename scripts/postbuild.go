@@ -14,7 +14,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/disintegration/imaging"
 	"github.com/go-rod/rod"
+	"github.com/go-rod/rod/lib/devices"
+	"github.com/go-rod/rod/lib/proto"
 	"github.com/samber/lo"
 	lop "github.com/samber/lo/parallel"
 )
@@ -120,9 +123,13 @@ func socialImgs() {
 	browser := rod.New().MustConnect().NoDefaultDevice()
 	lop.ForEach(routes, func(route string, _ int) {
 		// visit route
-		page := browser.MustPage(route)
+		page := browser.MustPage(route).MustEmulate(devices.LaptopWithHiDPIScreen)
+		page.SetViewport(&proto.EmulationSetDeviceMetricsOverride{
+			Width:  1200 * 1.5,
+			Height: 630 * 1.5,
+		})
 		// take screenshot
-		imgBytes := page.MustWaitLoad().MustSetViewport(2400, 1260, 2, false).MustScreenshot("social.jpeg")
+		imgBytes := page.MustWaitLoad().MustScreenshot("social.jpeg")
 		time.Sleep(1000)
 		// create image
 		distPath := strings.Replace(route, site, dist, -1)
@@ -137,7 +144,8 @@ func socialImgs() {
 		if err != nil {
 			log.Fatal("[socialImgs][image.Decode]:", err)
 		}
-		err = jpeg.Encode(imgFile, img, &jpeg.Options{Quality: 100})
+		dstImg := imaging.Resize(img, 1200, 630, imaging.Lanczos)
+		err = jpeg.Encode(imgFile, dstImg, &jpeg.Options{Quality: 100})
 		if err != nil {
 			log.Fatal("[socialImgs][jpeg.Encode]:", err)
 		}
