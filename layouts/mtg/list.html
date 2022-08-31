@@ -27,7 +27,10 @@
             "
             data-transparent="true"
           >
-            {{ partial "remote-img.html" (dict "src" .image "alt" $card.name "pClasses" "mtg-img flex items-start justify-start mb-2 object-cover object-left-top" "iClasses" "w-auto" "hidden" true "size" "400") }}
+            {{/*  Prevents long local build times  */}}
+            {{ if hugo.Environment | eq "production" }}
+              {{ partial "remote-img.html" (dict "src" .image "alt" $card.name "pClasses" "mtg-img flex items-start justify-start mb-2 object-cover object-left-top" "iClasses" "w-auto" "hidden" true "size" "400") }}
+            {{ end }}
           </button>
           <p class="leading-none mb-1 mt-0">{{ $card.name }}</p>
           <p class="leading-none mb-1 mt-0 text-meta">{{ $card.type }}</p>

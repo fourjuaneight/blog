@@ -5,7 +5,7 @@
   "scripts": {
     "build:chroma": "hugo gen chromastyles > assets/css/syntax.css",
     "build:prod": "run-p ts tw && hugo -e production --gc --minify && npm run post",
-    "build": "hugo --debug -e production --gc --log --minify -v --verboseLog",
+    "build": "hugo --debug --gc --log --minify -v --verboseLog",
     "clean:node": "rm -rf node_modules",
     "clean": "rm -rf dist",
     "dev": "concurrently -n \"DEV,TW,TS\" -c \"#ff4088,#38bdf8,#3178c6\" \"hugo --disableFastRender --gc --ignoreCache --log --minify serve\" \"npm run tw -- --watch\" \"npm run ts:scripts -- --watch\"",

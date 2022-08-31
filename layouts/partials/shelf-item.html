@@ -24,7 +24,10 @@
     "
     data-transparent="true"
   >
-    {{ partial "remote-img.html" (dict "src" .cover "alt" .name "pClasses" "shelf-img flex items-start justify-start mb-2 object-cover object-left-top" "iClasses" "w-auto" "hidden" true "size" "270") }}
+    {{/*  Prevents long local build times  */}}
+    {{ if hugo.Environment | eq "production" }}
+      {{ partial "remote-img.html" (dict "src" .cover "alt" .name "pClasses" "shelf-img flex items-start justify-start mb-2 object-cover object-left-top" "iClasses" "w-auto" "hidden" true "size" "270") }}
+    {{ end }}
   </button>
   <p class="font-bold leading-none mb-1 mt-0 mx-0">{{ .name }}</p>
   <p class="leading-none mb-1 mt-0 mx-0">{{ .creator }}</p>
