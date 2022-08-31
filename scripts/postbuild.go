@@ -73,7 +73,8 @@ func cleanScripts() {
 	// get service worker
 	swRaw, err := os.ReadFile(filepath.Join(dist, "sw.js"))
 	if err != nil {
-		log.Fatal("[os.ReadFile]:", err)
+		log.Print("[os.ReadFile]:", err)
+		return
 	}
 	sw := string(swRaw)
 
