@@ -12,7 +12,7 @@ summarylength: 40
 enableEmoji: true
 canonifyURLs: true
 ignoreErrors: ["error-remote-getjson"]
-timeout: "180s"
+timeout: "300s"
 
 security:
   enableInlineShortcodes: false

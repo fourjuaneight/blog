@@ -5,6 +5,7 @@
   "scripts": {
     "build:chroma": "hugo gen chromastyles > assets/css/syntax.css",
     "build:prod": "run-p ts tw && hugo -e production --gc --minify && npm run post",
+    "build:fallback": "npm run build:prod || npm run build:prod",
     "build": "hugo --debug -e local --gc --log --minify -v --verboseLog",
     "clean:node": "rm -rf node_modules",
     "clean": "rm -rf dist",

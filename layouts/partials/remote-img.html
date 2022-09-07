@@ -2,22 +2,28 @@
 {{ $isHidden := cond (ne .hidden nil) "true" "false" }}
 {{ $isSmall := cond (ne .small nil) "true" "false" }}
 {{ $maxWidth := cond (ne .small nil) "max-w-xxxxs" "max-w-xs" }}
-{{ $imgPrimary := resources.GetRemote .src }}
-<picture
-  class="{{ with .pClasses }}{{ . }}{{ else }}img-wrap flex items-center justify-center my-4 w-full{{ end }}"
-  {{ if ne .tabindex nil }}tabindex="{{ .tabindex }}"{{ end }}
->
-  {{ $webpPrimary := $imgPrimary.Resize (print .size "x webp drawing") }}
-  <source srcset="{{ $webpPrimary.Permalink }}" type="image/webp" />
-  {{ $imgResized := $imgPrimary.Resize (print .size "x jpeg") }}
-  <img
-    src="{{ $imgResized.Permalink }}"
-    alt="{{ .alt }}"
-    class="{{ with .iClasses }}{{ . }}{{ else }}{{ $maxWidth }} w-full{{ end }}"
-    width="{{ $imgResized.Width }}"
-    data-small="{{ $isSmall }}"
-    aria-hidden="{{ $isHidden }}"
-    loading="lazy"
-    {{ with .active }}data-active="{{ . }}"{{ end }}
-  />
-</picture>
+{{ $cacheKey := print $url (now.Format "2006-01-02") }}
+{{ with resources.GetRemote .src (dict "key" $cacheKey) }}
+  {{ with .Err }}
+    {{ warnf "%s" . }}
+  {{ else }}
+    <picture
+      class="{{ with .pClasses }}{{ . }}{{ else }}img-wrap flex items-center justify-center my-4 w-full{{ end }}"
+      {{ if ne .tabindex nil }}tabindex="{{ .tabindex }}"{{ end }}
+    >
+      {{ $webpPrimary := .Resize (print .size "x webp drawing") }}
+      <source srcset="{{ $webpPrimary.Permalink }}" type="image/webp" />
+      {{ $imgResized := .Resize (print .size "x jpeg") }}
+      <img
+        src="{{ $imgResized.Permalink }}"
+        alt="{{ .alt }}"
+        class="{{ with .iClasses }}{{ . }}{{ else }}{{ $maxWidth }} w-full{{ end }}"
+        width="{{ $imgResized.Width }}"
+        data-small="{{ $isSmall }}"
+        aria-hidden="{{ $isHidden }}"
+        loading="lazy"
+        {{ with .active }}data-active="{{ . }}"{{ end }}
+      />
+    </picture>
+  {{ end }}
+{{ end }}
