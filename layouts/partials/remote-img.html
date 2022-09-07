@@ -2,7 +2,7 @@
 {{ $isHidden := cond (ne .hidden nil) "true" "false" }}
 {{ $isSmall := cond (ne .small nil) "true" "false" }}
 {{ $maxWidth := cond (ne .small nil) "max-w-xxxxs" "max-w-xs" }}
-{{ $cacheKey := print $url (now.Format "2006-01-02") }}
+{{ $cacheKey := print .src (now.Format "2006-01-02") }}
 {{ with resources.GetRemote .src (dict "key" $cacheKey) }}
   {{ with .Err }}
     {{ warnf "%s" . }}
