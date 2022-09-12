@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/fourjuaneight/blog#readme",
   "dependencies": {
-    "flamethrower-router": "0.0.0-meme.8"
+    "flamethrower-router": "0.0.0-meme.12"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",

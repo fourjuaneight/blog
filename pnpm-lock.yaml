@@ -18,7 +18,7 @@ specifiers:
   eslint-config-prettier: ^8.3.0
   eslint-plugin-import: ^2.22.1
   eslint-plugin-prettier: ^3.3.1
-  flamethrower-router: 0.0.0-meme.8
+  flamethrower-router: 0.0.0-meme.12
   husky: 8.0.1
   lint-staged: ^10.5.4
   npm-run-all: ^4.1.5
@@ -33,7 +33,7 @@ specifiers:
   typescript: ^4.1.3
 
 dependencies:
-  flamethrower-router: 0.0.0-meme.8
+  flamethrower-router: 0.0.0-meme.12
 
 devDependencies:
   '@babel/cli': 7.18.9_@babel+core@7.18.9
@@ -3048,8 +3048,8 @@ packages:
       path-exists: 4.0.0
     dev: true
 
-  /flamethrower-router/0.0.0-meme.8:
-    resolution: {integrity: sha512-B+CwWgx7+N8qGSn2ON+tg3VVYRv2SJyVUo7ylOvk8J4CjvTw4a6Lxzr50MjcjohCHmtu5H+YQ4UivU6dEAuxbg==}
+  /flamethrower-router/0.0.0-meme.12:
+    resolution: {integrity: sha512-PWcNrjzItwk61RTk/SbbKJNcAgl6qCXH8xkZjGjUGV/dgKAnURci+k+Yk8emubUQWTdAd1kSqujy0VRjoeEgxg==}
     dev: false
 
   /flat-cache/3.0.4:
