@@ -10,8 +10,8 @@ const makeNoise = async (data: Uint8ClampedArray) => {
   const ctx = canvas.getContext('2d');
   ctx.putImageData(new ImageData(data, size, size), 0, 0);
 
-  const png: Blob = await new Promise(resolve =>
-    canvas.toBlob(resolve, 'image/png', 0.8)
+  const png: Blob = await new Promise((resolve) =>
+    canvas.toBlob(resolve, 'image/png', 0.8),
   );
   const url = URL.createObjectURL(png);
   const div = document.createElement('div');

@@ -1,4 +1,4 @@
-const genNoise = base => {
+const genNoise = (base) => {
   const black = new Uint8ClampedArray([0, 0, 0, 255]);
   const white = new Uint8ClampedArray([255, 255, 255, 255]);
   const data = new Uint8ClampedArray(base * base * 4);
@@ -12,6 +12,6 @@ const genNoise = base => {
   postMessage(data);
 };
 
-onmessage = evt => {
+onmessage = (evt) => {
   genNoise(evt.data);
 };

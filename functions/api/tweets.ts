@@ -20,12 +20,12 @@ export const onRequestGet = async ({ env }: RequestParams) => {
         ok: true,
         status: 200,
       });
-    } else {
-      return new Response('No data found', {
-        ok: false,
-        status: 404,
-      });
     }
+
+    return new Response('No data found', {
+      ok: false,
+      status: 404,
+    });
   } catch (error) {
     console.log('tweets', { error });
 
