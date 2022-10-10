@@ -24,5 +24,4 @@ pids
 public
 assets/css/tailwind.css
 assets/css/tw.css
-assets/js
-assets/*.js
+assets/**/*.{js,ts}
