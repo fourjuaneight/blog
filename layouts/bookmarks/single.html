@@ -156,7 +156,7 @@
                   {{ .site }}
                 </p>
               {{ end }}
-              <div class="{{ if $isArticle }}col-start-4{{ else }}col-start-3{{ end }} overflow-x-hidden px-2 w-full" title='{{ delimit .tags ", " }}'>
+              <div class="{{ if $isArticle }}col-start-4{{ else }}col-start-3{{ end }} flex items-center justify-start overflow-x-hidden px-2 w-full" title='{{ delimit .tags ", " }}'>
                 <span class="sr-only">Relevant tags: </span>
                 <ul
                   class="flex items-center justify-start list-none p-0 w-full"
