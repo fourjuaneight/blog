@@ -19,11 +19,10 @@ I used to be a Mac guy. Maybe I still am. But after having to part ways with my 
 - **[UpDesk Standing Desk](https://updesk.com/products/updesk-electric-lift-standing-desk-upwrite-midnight-black-top-on-black-frame-closeout)** - The table is pretty good, but the customer service is nonexistent.
 - **[Secretlab Omega Chair](https://secretlab.co/collections/omega-series)** - ~~Great~~ Ok chair.
 - **[Tripp Lite 1500VA 900W UPS](https://www.amazon.com/dp/B009TZTGWK/)** - I believe I heard about the brand from Marco Arment. Solid UPS.
-- **[Ubiquiti Dream Machine Pro](https://store.ui.com/collections/unifi-network-unifi-os-consoles/products/udm-pro)** - The only reason I got the Pro was to mount it on a rack.
+- **[Ubiquiti Dream Machine Pro](https://store.ui.com/collections/unifi-network-unifi-os-consoles/products/udm-pro)** - The only reason I got the Pro was to mount it on a rack. This also runs [NextDNS](https://nextdns.io) to filter out my internet traffic.
 - **[Ubiquiti Switch 8 (PoE)](https://store.ui.com/collections/unifi-network-switching/products/unifi-switch-8-60w)** - I have a couple of these around the house to extend the ports coming out the wall.
 - **[Ubiquiti UniFi AC Pro](https://store.ui.com/collections/wireless/products/unifi-ac-pro)** - Solid access point.
 - **[Ubiquiti Access Point In-Wall HD](https://store.ui.com/products/unifi-in-wall-hd)** - Another solid access point. Running in mesh with the other AP.
-- **[PiHole](https://pi-hole.net)** - This is the best decision I've made for my home network.
 
 ### Audio Gear
 - **[Electro-Voice RE320](https://products.electrovoice.com/ap/en/re320/)** - Fantastic mic for Zoom calls and DnD virtual sessions. It's overkill for what I use it but my voice sounds sexy now.
@@ -46,10 +45,9 @@ I used to be a Mac guy. Maybe I still am. But after having to part ways with my 
 - **[Things](https://culturedcode.com/things/)** - I've tried them all and this UI is simply the best for me.
 - **[Drafts](https://getdrafts.com)** - All text starts here.
 - **[Jayson](https://jayson.app)** - Nice UI for JSON.
-- **[Raycast](https://www.raycast.com)** - There are so many macOS launchers. I've tried them all. This one is by far my favorite. It almost as customizable as [Alfred](https://www.alfredapp.com), but feels more solidly built.
+- **[Raycast](https://www.raycast.com)** - There are so many macOS launchers. I've tried them all. This one is by far my favorite. It almost as customizable as [Alfred](https://www.alfredapp.com), but feels more solidly built. This also handles window, clipboard, and snippet management.
 - **[SoundSource](https://rogueamoeba.com/soundsource/)** - It's a simple app that makes life so much nicer.
 - **[Hazel](https://www.noodlesoft.com/)** - A computer should run itself. This does the trick.
-- **[Rectangle](https://rectangleapp.com)** - Nifty little window manager.
 - **[Bartender](https://www.macbartender.com/)** - Too much crap on the menu bar.
 
 ### Daily Apps
@@ -57,10 +55,10 @@ I used to be a Mac guy. Maybe I still am. But after having to part ways with my 
 - **[Working Copy](https://workingcopyapp.com)** - I can't believe this is an iOS app; paramount for mobile Git-ing.
 - **[Scriptable](https://scriptable.app)** - Sometimes you _just_ need a little JavaScript in your automation.
 - **[Castro](https://castro.fm)** - I always go back and forth between this and [Overcast](https://overcast.fm). I love Overcast for its quality build, but Castro has a fantastic UI.
-- **[Reeder](https://reederapp.com)** - I've been using the iOS sync feature and works perfectly.
+- **[Unread](https://www.goldenhillsoftware.com/unread/)** - This syncs to Feedbin. The UI is fantastic.
 - **[GoodLinks](https://goodlinks.app)** - This is honestly the best read-it-later app you can find. It's pretty much perfect.
 - **[Apollo](https://apolloapp.io)** - The _only_ Reddit app.
-- **[Tweetbot](https://tapbots.com/tweetbot/)** - You're an animal if you use the official Twitter app.
+- **[Spring](https://twitter.com/thespringapp)** - You're an animal if you use the official Twitter app. This app is the closest to the authentic experienced, but gives you all the control you want.
 - **[Panels](https://panels.app)** - I read a ton of manga and the occasional comic. I buy most of my stuff digitally and prefer this to any native reader. It's an amazing app with iCloud sync and even [OPDS](https://en.wikipedia.org/wiki/Open_Publication_Distribution_System) server streaming stupport.
 - **[Prism](https://prism-music.app)** - Plex Amp is great, but if you want a no-nonsense audio player for your Plex music library, this is the app.
 - **[Prologue](https://prologue.audio)** - I usually read my books with a companion audiobook. I found this app (made by the same dev as Prism) which utilizes a Plex "music" library as an audiobook. It's wonderful.
