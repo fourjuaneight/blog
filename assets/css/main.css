@@ -345,6 +345,11 @@ a.tags {
   margin: 0 0 0 0.5rem;
 }
 
+a.tags:focus,
+a.tags:focus-visible {
+  text-decoration: underline;
+}
+
 a.tags:hover span {
   color: var(--primary);
 }
@@ -567,6 +572,8 @@ body[data-party='false'] a.footnote-ref:hover::after,
 body[data-party='false'] a.footnote-backref:focus,
 body[data-party='false'] a.footnote-backref:focus-visible,
 body[data-party='false'] a.footnote-backref:hover,
+body[data-party='false'] a.tags:focus span,
+body[data-party='false'] a.tags:focus-visible span,
 body[data-party='false'] a.tags:hover span {
   color: var(--primary);
 }
@@ -588,7 +595,9 @@ body[data-party='false'] li.bk-cell:hover {
 body[data-party='false'] a:focus,
 body[data-party='false'] a:hover,
 body[data-party='false'] a[rel='noopener noreferrer']:focus,
-body[data-party='false'] a[rel='noopener noreferrer']:hover {
+body[data-party='false'] a[rel='noopener noreferrer']:hover,
+body[data-party='false'] a.tags:focus span,
+body[data-party='false'] a.tags:focus-visible span {
   text-decoration-color: var(--primary);
 }
 
@@ -618,6 +627,8 @@ body[data-party='true'] a.footnote-ref:hover::after,
 body[data-party='true'] a.footnote-backref:focus,
 body[data-party='true'] a.footnote-backref:focus-visible,
 body[data-party='true'] a.footnote-backref:hover,
+body[data-party='true'] a.tags:focus span,
+body[data-party='true'] a.tags:focus-visible span,
 body[data-party='true'] a.tags:hover span {
   animation: colorParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
