@@ -1,9 +1,19 @@
 {{ define "main" }}
   {{ range .Data.Pages.GroupByDate "2006" }}
-    <h1 class="mb-3 mr-auto">{{ .Key }}</h1>
-    {{ range .Pages }}
-      {{ .Render "li"}}
-    {{ end }}
+    <section class="year-list w-full">
+      {{ $pageCount := len .Pages }}
+      {{ $pageCountLabel := cond (eq $pageCount 1) "post" "posts" }}
+
+      <div
+        class="border-0 border-b-2 border-tertiary border-solid flex justify-between items-end my-4 pb-2 w-full"
+      >
+        <h1 class="m-0 mr-auto">{{ .Key }}</h1>
+        <p class="m-0 ml-auto text-meta text-right">{{ $pageCount }} {{ $pageCountLabel }}</p>
+      </div>
+      {{ range .Pages }}
+        {{ .Render "li"}}
+      {{ end }}
+    </section>
   {{ end }}
   {{ if ne .Params.footer nil }}
     <section class="footer w-full">
