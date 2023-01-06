@@ -165,6 +165,10 @@ footer {
   grid-template-rows: minmax(1rem, 1fr) min-content minmax(1rem, 1fr);
 }
 
+.footer > span {
+  display: none;
+}
+
 .sr-visible {
   border-width: 0;
   clip: rect(0, 0, 0, 0);
