@@ -14,7 +14,7 @@ I used to be a Mac guy. Maybe I still am. But after having to part ways with my 
 **Update (2022-02)**: I was provided a new (as of this update) M1 Max MacBook Pro by my employer. Which is overkill for my work, but it's a fantastic laptop. The Linux PC is currently serving as a Plex server in my closet.
 
 - **[LG 27UK650-W](https://www.lg.com/us/monitors/lg-27UK650-W-4k-uhd-led-monitor)** - It takes some calibration to make it look just right. But once it does, it's a solid workhorse of a display.
-- **[HHKB Pro 2](https://www.amazon.com/dp/B07K9QHF4P)** - I got the all-black keys and it took me a while to get used to the new layout without being able to tell which key is which. Worth every penny, though.
+- **[HHKB Pro 2](https://hhkeyboard.us/hhkb/pro-classic)** - I got the all-black keys and it took me a while to get used to the new layout without being able to tell which key is which. Worth every penny, though.
 - **[Logitech MX Ergo](https://www.logitech.com/en-us/products/mice/mx-ergo-wireless-trackball-mouse.html)** - So nice and comfortable.
 - **[UpDesk Standing Desk](https://updesk.com/products/updesk-electric-lift-standing-desk-upwrite-midnight-black-top-on-black-frame-closeout)** - The table is pretty good, but the customer service is nonexistent.
 - **[Secretlab Omega Chair](https://secretlab.co/collections/omega-series)** - ~~Great~~ Ok chair.
