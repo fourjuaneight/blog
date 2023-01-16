@@ -26,7 +26,16 @@ markup:
     style: dracula
     tabWidth: 2
 
+mediaTypes:
+  application/feed+json:
+    suffixes:
+      - json
+
 outputFormats:
+  jsonfeed:
+    baseName: "feed"
+    isPlainText: true
+    mediaType: "application/feed+json"
   social:
     baseName: "social"
     isPlainText: true
@@ -45,7 +54,7 @@ permalinks:
 outputs:
   home: ["html"]
   page: ["html", "social"]
-  section: ["html", "rss", "social"]
+  section: ["html", "jsonfeed", "rss", "social"]
 
 sitemap:
   changefreq: monthly

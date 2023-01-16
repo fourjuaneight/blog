@@ -103,6 +103,12 @@
     href="{{ .Site.BaseURL }}/posts/index.xml"
   />
   <link
+    rel="alternate"
+    type="application/feed+json"
+    title="{{ .Site.Title }}"
+    href="{{ .Site.BaseURL }}/posts/feed.json"
+  />
+  <link
     rel="sitemap"
     type="application/xml"
     href="{{ .Site.BaseURL }}/sitemap.xml"
