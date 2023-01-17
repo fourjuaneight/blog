@@ -8,28 +8,27 @@
         class="auto-cols-min gap-x-1 grid grid-rows-1 items-center list-none my-2 p-0 xs:gap-x-3 xxs:gap-x-2"
       >
         {{ range $i, $item := .Site.Data.nav.footer }}
-        <li class="m-0 row-start-1" data-item="{{ $i }}">
-          <a
-            class="focus:underline hover:underline no-underline text-sm xs:text-base"
-            href="{{ $item.link | absURL }}"
-            {{
-            if
-            .external
-            }}
-            target="_blank"
-            rel="noopener noreferrer"
-            {{
-            end
-            }}
-          >
-            {{ $item.label }}
-          </a>
-        </li>
-        {{ if ne $i $navLinks }}
-        <li class="m-0 row-start-1">
-          <p class="m-0 text-meta text-xs" aria-hidden="true">&#8226;</p>
-        </li>
-        {{ end }} {{ end }}
+          <li class="m-0 row-start-1" data-item="{{ $i }}">
+            <a
+              class="focus:underline hover:underline no-underline text-sm xs:text-base"
+              href="{{ $item.link | absURL }}"
+              {{ if $item.linkback }}
+                target="_blank"
+                rel="me"
+              {{ else if $item.external }}
+                target="_blank"
+                rel="noopener noreferrer"
+              {{ end }}
+            >
+              {{ $item.label }}
+            </a>
+          </li>
+          {{ if ne $i $navLinks }}
+            <li class="m-0 row-start-1">
+              <p class="m-0 text-meta text-xs" aria-hidden="true">&#8226;</p>
+            </li>
+          {{ end }}
+        {{ end }}
       </ul>
     </nav>
     <ul
@@ -51,16 +50,6 @@
           rel="noopener noreferrer"
         >
           Source
-        </a>
-      </li>
-      <li class="invisible">
-        <a
-          rel="me"
-          href="https://mastodon.social/@fourjuaneight"
-          aria-hidden="true"
-          class="invisible"
-        >
-          Mastodon
         </a>
       </li>
     </ul>
