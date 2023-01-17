@@ -58,6 +58,18 @@
   }
 }
 
+@keyframes fillParty {
+  0% {
+    fill: var(--primary);
+  }
+  50% {
+    fill: var(--secondary);
+  }
+  100% {
+    fill: var(--tertiary);
+  }
+}
+
 @keyframes textDecorationColorParty {
   0% {
     text-decoration-color: var(--primary);
@@ -98,6 +110,13 @@ a:visited {
 a:focus,
 a:hover {
   outline: none;
+}
+
+a[data-type="social"]:focus,
+a[data-type="social"]:focus-visible,
+a[data-type="social"]:hover {
+  color: var(--background) !important;
+  text-decoration-color: var(--background) !important;
 }
 
 blockquote,
@@ -258,7 +277,7 @@ footer ul {
 }
 
 header {
-  --nav-width: 14.75625rem;
+  --nav-width: 11.8rem;
 }
 
 header nav {
@@ -605,6 +624,12 @@ body[data-party='false'] li.bk-title a:hover {
   text-shadow: 0.1rem 0.1rem var(--tertiary);
 }
 
+body[data-party='false'] a[data-type="social"]:focus svg,
+body[data-party='false'] a[data-type="social"]:focus-visible svg,
+body[data-party='false'] a[data-type="social"]:hover svg {
+  fill: var(--primary);
+}
+
 /* Party Mode */
 body[data-party='true'] a:focus,
 body[data-party='true'] a:hover,
@@ -651,6 +676,12 @@ body[data-party='true'] li.bk-cell:hover {
 
 body[data-party='true'] li.bk-title a:hover {
   animation: textShadowParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+body[data-party='true'] a[data-type="social"]:focus svg,
+body[data-party='true'] a[data-type="social"]:focus-visible svg,
+body[data-party='true'] a[data-type="social"]:hover svg {
+  animation: fillParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 /* Overrides */

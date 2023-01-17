@@ -8,5 +8,31 @@
     <p class="text-xl">
       {{ $content | replaceRE "<a" "<a rel='noopener noreferrer'target='_blank'" | safeHTML }}
     </p>
+    <nav class="w-auto">
+      <ul
+        class="auto-cols-min gap-x-5 grid grid-rows-1 items-center list-none my-2 p-0"
+      >
+        {{ range $item := .Site.Data.nav.social }}
+          {{ $icon := printf "%s.html" ($item.label | lower) }}
+          <li class="m-0 row-start-1">
+            <a
+              class="focus:underline hover:underline no-underline text-sm xs:text-base"
+              href="{{ $item.link | absURL }}"
+              {{ if $item.linkback }}
+                target="_blank"
+                rel="me"
+              {{ else if $item.external }}
+                target="_blank"
+                rel="noopener noreferrer"
+              {{ end }}
+              data-type="social"
+            >
+              <span class="sr-only">{{ $item.label }}</span>
+              {{ partial $icon . }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
   </div>
 </section>
