@@ -326,6 +326,16 @@ section.intro div.img-wrap img {
   max-width: 32rem;
 }
 
+section.intro picture.hero-alt,
+section.intro div.img-wrap.hero-alt {
+  margin-right: 1rem;
+}
+
+section.intro picture.hero-alt img,
+section.intro div.img-wrap.hero-alt img {
+  max-width: 14rem;
+}
+
 @media screen and (min-width: 640px) {
   section.intro picture,
   section.intro div.img-wrap {

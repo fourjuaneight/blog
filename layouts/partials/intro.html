@@ -1,7 +1,10 @@
+{{ $img := cond (eq .Type "posts") .Site.Data.illustrations.home.imgAlt .Site.Data.illustrations.home.img }}
+{{ $pClasses := cond (eq .Type "posts") "hero-alt" "" }}
+
 <section
   class="intro flex flex-col items-center justify-start max-w-2xl mx-auto my-4 sm:flex-row w-full"
 >
-  {{ partial "img.html" (dict "src" .Site.Data.illustrations.home.img "alt" .Site.Data.illustrations.home.alt "size" "1024") }}
+  {{ partial "img.html" (dict "src" $img "alt" .Site.Data.illustrations.home.alt "size" "1024" "pClasses" $pClasses) }}
   <div class="flex flex-col items-start justify-start w-full">
     <h2 class="md:text-4xl text-3xl">{{ .Site.Data.illustrations.home.heading }}</h2>
     {{ $content := .Site.Data.illustrations.home.copy | markdownify }}
