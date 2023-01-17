@@ -25,6 +25,8 @@ social:
   - label: GitHub
     link: https://github.com/fourjuaneight
     external: true
+  - label: RSS
+    link: /posts/index.xml
 bookmarks:
   - label: Articles
     link: bookmarks/articles
