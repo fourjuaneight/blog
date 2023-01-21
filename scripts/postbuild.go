@@ -8,6 +8,7 @@ import (
 	"image/jpeg"
 	"log"
 	"os"
+	"os/exec"
 	"path/filepath"
 	"regexp"
 	"strconv"
@@ -22,6 +23,7 @@ import (
 	lop "github.com/samber/lo/parallel"
 )
 
+var local = "http://localhost:1313"
 var site = "https://cleverlaziness.xyz"
 
 func dist() string {
@@ -34,6 +36,16 @@ func dist() string {
 	dist := filepath.Join(wd, "dist/")
 
 	return dist
+}
+
+func run(cmd string) {
+	// create command
+	command := exec.Command("sh", "-c", cmd)
+	// run command
+	err := command.Run()
+	if err != nil {
+		log.Fatal("[run][exec.Command]:", err)
+	}
 }
 
 func cleanScripts() {
@@ -113,12 +125,15 @@ func socialImgs() {
 
 		// only save matches
 		if !info.IsDir() && match {
-			cleanPath := strings.Replace(path, dist, site, -1)
+			cleanPath := strings.Replace(path, dist, local, -1)
 			routes = append(routes, cleanPath)
 		}
 
 		return nil
 	})
+
+	// run local server
+	run("npm run serve &")
 
 	// take screenshots
 	browser := rod.New().MustConnect().NoDefaultDevice()
@@ -133,7 +148,7 @@ func socialImgs() {
 		imgBytes := page.MustWaitLoad().MustScreenshot("social.jpeg")
 		time.Sleep(1000)
 		// create image
-		distPath := strings.Replace(route, site, dist, -1)
+		distPath := strings.Replace(route, local, dist, -1)
 		cleanPath := typeMatch.ReplaceAllString(distPath, "$1")
 		imgFile, err := os.Create(filepath.Join(cleanPath, "social.jpeg"))
 		if err != nil {

@@ -13,7 +13,7 @@
     "format": "rome format assets/**/*.ts",
     "lint": "rome ci assets/**/*.ts",
     "post": "go run scripts/postbuild.go",
-    "serve": "serve dist",
+    "serve": "serve -l 1313 dist",
     "start": "run-p ts && npm run dev",
     "ts:scripts": "esbuild assets/scripts/* --bundle --splitting --format=esm --outdir=assets/js",
     "ts:workers": "esbuild assets/workers/* --bundle --splitting --format=esm --outdir=assets",
