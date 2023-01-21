@@ -20,5 +20,5 @@ services:
       - .:/app
       - /app/node_modules
     ports:
-      - '1313:1313'
+      - '2323:2323'
     entrypoint: npm run build:serve

@@ -23,7 +23,7 @@ import (
 	lop "github.com/samber/lo/parallel"
 )
 
-var local = "http://localhost:1313"
+var local = "http://localhost:2323"
 var site = "https://cleverlaziness.xyz"
 
 func dist() string {
@@ -166,6 +166,9 @@ func socialImgs() {
 			log.Fatal("[socialImgs][jpeg.Encode]:", err)
 		}
 	})
+
+	// kill local server
+	run("kill $(lsof -t -i:2323)")
 }
 
 func main() {
