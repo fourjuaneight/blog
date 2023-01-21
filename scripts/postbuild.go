@@ -174,6 +174,6 @@ func socialImgs() {
 func main() {
 	log.Println("Generating SW cache list")
 	cleanScripts()
-	log.Println("Creating social images")
-	socialImgs()
+	// log.Println("Creating social images")
+	// socialImgs()
 }
