@@ -168,7 +168,7 @@ func socialImgs() {
 	})
 
 	// kill local server
-	run("kill $(lsof -t -i:2323)")
+	run("npx kill-port 2323")
 }
 
 func main() {
