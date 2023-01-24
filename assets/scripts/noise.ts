@@ -16,7 +16,12 @@ const makeNoise = async (data: Uint8ClampedArray) => {
   const url = URL.createObjectURL(png);
   const div = document.createElement('div');
 
-  div.classList.add('noise', 'duration-1000', 'ease-in-out', 'transition-opacity');
+  div.classList.add(
+    'noise',
+    'duration-1000',
+    'ease-in-out',
+    'transition-opacity',
+  );
   div.style = `background-image: url(${url})`;
   fragment.appendChild(div);
   document.body.appendChild(fragment);
