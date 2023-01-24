@@ -30,6 +30,9 @@ mediaTypes:
   application/feed+json:
     suffixes:
       - json
+  text/typescript:
+    suffixes:
+      - ts
 
 outputFormats:
   jsonfeed:

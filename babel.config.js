@@ -7,6 +7,7 @@ module.exports = api => {
     'module:@babel/plugin-proposal-optional-chaining',
   ];
   const presets = [
+    'module:@babel/preset-typescript',
     [
       'module:@babel/preset-env',
       {

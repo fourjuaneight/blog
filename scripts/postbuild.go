@@ -11,7 +11,6 @@ import (
 	"os/exec"
 	"path/filepath"
 	"regexp"
-	"strconv"
 	"strings"
 	"time"
 
@@ -19,12 +18,10 @@ import (
 	"github.com/go-rod/rod"
 	"github.com/go-rod/rod/lib/devices"
 	"github.com/go-rod/rod/lib/proto"
-	"github.com/samber/lo"
 	lop "github.com/samber/lo/parallel"
 )
 
 var local = "http://localhost:2323"
-var site = "https://cleverlaziness.xyz"
 
 func dist() string {
 	// create src directory
@@ -46,66 +43,6 @@ func run(cmd string) {
 	if err != nil {
 		log.Fatal("[run][exec.Command]:", err)
 	}
-}
-
-func cleanScripts() {
-	var files []string
-	// runtime variables
-	now := time.Now()
-	unix := now.Unix()
-	dist := dist()
-
-	// create filter patterns
-	typeIgnore := regexp.MustCompile(`.*(noise|sw).*\.js$`)
-	typeMatch := regexp.MustCompile(`.*\.(js|css|woff|woff2)$`)
-
-	// get files
-	filepath.Walk(dist, func(path string, info os.FileInfo, err error) error {
-		if err != nil {
-			log.Fatal("[filepath.Glob]:", err)
-		}
-		// filter files
-		ignore := typeIgnore.MatchString(path)
-		matches := typeMatch.MatchString(path)
-
-		// only save matches
-		if !info.IsDir() && matches && !ignore {
-			files = append(files, path)
-		}
-
-		return nil
-	})
-	files = lo.Map(files, func(item string, _ int) string {
-		clean := strings.Replace(item, dist, "", -1)
-		quotes := `"` + clean + `"`
-
-		return quotes
-	})
-
-	// get service worker
-	swRaw, err := os.ReadFile(filepath.Join(dist, "sw.js"))
-	if err != nil {
-		log.Print("[os.ReadFile]:", err)
-		return
-	}
-	sw := string(swRaw)
-
-	// replace content
-	assets := regexp.MustCompile(`\["staticAssets"\]`)
-	baseURL := regexp.MustCompile(`baseURL`)
-	version := regexp.MustCompile(`"version"`)
-	swAssets := assets.ReplaceAllString(sw, "["+strings.Join(files, ",")+"]")
-	swSite := baseURL.ReplaceAllString(swAssets, site)
-	fmtSW := version.ReplaceAllString(swSite, `"`+strconv.FormatInt(unix, 10)+`"`)
-
-	// replace sw.js
-	newSW, err := os.Create(filepath.Join(dist, "sw.js"))
-	if err != nil {
-		log.Fatal("[os.Create]:", err)
-	}
-	defer newSW.Close()
-
-	newSW.WriteString(fmtSW)
 }
 
 func socialImgs() {
@@ -172,8 +109,6 @@ func socialImgs() {
 }
 
 func main() {
-	log.Println("Generating SW cache list")
-	cleanScripts()
-	// log.Println("Creating social images")
-	// socialImgs()
+	log.Println("Creating social images")
+	socialImgs()
 }

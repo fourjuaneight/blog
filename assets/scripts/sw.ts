@@ -4,12 +4,20 @@ interface FetchEvent extends Event {
 }
 
 (() => {
-  const version: string = 'version';
-  const cacheName: string = 'cleverlaziness:';
+  const version: string = '{{ .Date.Unix | replaceRE "^-?" "v" }}';
+  const cacheName: string = '{{ .Site.Title | lower | replaceRE "\\s" "" }}:';
   const staticCacheName: string = `${version}:${cacheName}static`;
   const pagesCacheName: string = `${cacheName}pages`;
   const imagesCacheName: string = `${cacheName}images`;
-  const staticAssets: string[] = ['staticAssets'];
+  const staticAssets: string[] = [
+    {{ range (os.ReadDir "static/fonts") }}
+      {{ if ne .Name ".DS_Store" }}
+        "fonts/{{ .Name }}",
+      {{ end }}
+    {{ end }}
+    "scripts.min.js",
+    "styles.min.css"
+  ];
 
   const updateStaticCache = () =>
     // These items must be cached for the Service Worker to complete installation
@@ -68,7 +76,7 @@ interface FetchEvent extends Event {
     const { request } = event;
     const url = new URL(request.url);
 
-    if (url.href.indexOf('baseURL') !== 0) {
+    if (url.href.indexOf('{{ .Site.BaseURL }}') !== 0) {
       return;
     }
     if (request.method !== 'GET') {
