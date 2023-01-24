@@ -3,7 +3,11 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
   {{ partial "head.html" . }}
-  <body data-table="{{ $bkTag }}" data-party="false">
+  <body
+    class="border-4 border-solid border-tertiary"
+    data-table="{{ $bkTag }}"
+    data-party="false"
+  >
     {{ partial "header.html" . }}
 
     <main class="grid relative w-full">
