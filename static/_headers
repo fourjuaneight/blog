@@ -3,3 +3,6 @@ https://:project.pages.dev/*
 
 https://cleverlaziness.xyz/*
   Access-Control-Allow-Origin: https://www.cleverlaziness.xyz/*
+
+https://www.cleverlaziness.xyz/*
+  Access-Control-Allow-Origin: https://cleverlaziness.xyz/*
