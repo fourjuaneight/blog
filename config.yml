@@ -39,6 +39,12 @@ outputFormats:
     baseName: "feed"
     isPlainText: true
     mediaType: "application/feed+json"
+  manifest:
+    baseName: "manifest"
+    isPlainText: true
+    mediaType: application/feed+json
+    name: "manifest"
+    suffix: "json"
   social:
     baseName: "social"
     isPlainText: true
@@ -55,7 +61,7 @@ permalinks:
   tags: "/tags/:slug/"
 
 outputs:
-  home: ["html"]
+  home: ["html", "manifest"]
   page: ["html", "social"]
   section: ["html", "jsonfeed", "rss", "social"]
 
@@ -70,4 +76,5 @@ params:
     author: Juan Villela
     social: fourjuaneight
     twitter: fourjuaneight
-    theme: "#1a1a1a"
+    background: "#1a1a1a"
+    theme: "#c390f3"
