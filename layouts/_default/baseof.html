@@ -20,6 +20,7 @@
       {{ partial "sw.html" . }}
     {{ end }}
 
+    {{ block "styles" . }}{{ end }}
     {{ block "scripts" . }}{{ end }}
 
     {{/*  Noise Web Worker  */}}

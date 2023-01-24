@@ -19,3 +19,12 @@
     {{ partial "party-mode.html" . }}
   </article>
 {{ end }}
+{{ define "styles" }}
+{{ if eq .Title "Looks like you're offline." }}
+  <style>
+    div.noise {
+      animation: grain 0.4s steps(1) infinite;
+    }
+  </style>
+{{ end }}
+{{ end }}

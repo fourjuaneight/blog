@@ -4,6 +4,25 @@
   }
 }
 
+@keyframes grain {
+  0%,
+  100% {
+    background-position: 0% 0%;
+  }
+  20% {
+    background-position: 50% 50%;
+  }
+  40% {
+    background-position: 25% 25%;
+  }
+  60% {
+    background-position: 75% 75%;
+  }
+  80% {
+    background-position: 0% 100%;
+  }
+}
+
 @keyframes grow {
   from {
     height: 0;
@@ -711,11 +730,11 @@ a.footnote-backref {
 
 /* Background Texture */
 div.noise {
-  animation: fadeIn calc(256ms * 4);
   background-size: calc(0.125em * 64);
   bottom: 0;
   left: 0;
-  opacity: 0.012;
+  mix-blend-mode: soft-light;
+  opacity: 0.0375;
   pointer-events: none;
   position: absolute;
   right: 0;
