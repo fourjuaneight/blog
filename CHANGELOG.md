@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.9.0] - 2023-01-25
+
+### Bug Fixes
+
+- [Remove ignore cache flag on local server to prevent failing resource gen.](https://github.com/fourjuaneight/blog/commit/78c1c11e9faf9527a6f28f9940e95253bcee31f8)
+
+### Features
+
+- [Redesigned headers and footers.](https://github.com/fourjuaneight/blog/commit/fe378824fabe245909ff6c8eade3a62d3bcb4670)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/ce538c73a9e9dde76f7216896c281fe8f4ccc1ef)
+- [Minor linter/formatter updates.](https://github.com/fourjuaneight/blog/commit/61dc1a079f391882ebcc355300ed2ac7aaab2989)
+- [Update to v1.9.0.](https://github.com/fourjuaneight/blog/commit/0b2304fe9ba44997a63d1c8490c46ca9da899ea0)
+
 ## [1.8.0] - 2023-01-24
 
 ### Bug Fixes
