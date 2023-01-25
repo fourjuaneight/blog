@@ -1,6 +1,13 @@
+{{ define "heading" }}
+  <h1
+    class="post-title font-bold font-mdNichrome mt-0 text-center text-8xl uppercase w-full"
+    data-line="slim"
+  >
+    {{ .Title }}
+  </h1>
+{{ end }}
 {{ define "main" }}
   <article class="relative w-full">
-    <h1 class="post-title md:text-6xl mr-auto text-4xl">{{ .Title }}</h1>
     <span itemprop="name" class="sr-visible">Juan Villela</span>
     {{ if eq .Type "posts" }}
       {{ partial "meta.html" . }}

@@ -1,3 +1,11 @@
+{{ define "heading" }}
+<h1
+  class="post-title font-bold font-mdNichrome mt-0 text-center text-8xl uppercase w-full"
+  data-line="slim"
+>
+  {{ .Title }}
+</h1>
+{{ end }}
 {{ define "main" }}
   {{ $isArticle := cond (eq .Title "Articles") true false }}
   {{ $dTitle := cond (eq .Title "Tweets") "Tweet" "Title" }}
@@ -6,7 +14,6 @@
   {{ $bookmarks := getJSON $tableUrl }}
 
   <section class="w-full">
-    <h1 class="post-title md:text-6xl mr-auto text-4xl">{{ .Title }}</h1>
     <p>Clicking on the titles will open a page to the bookmark. The small blue marking on each item indicates a broken link, unfortunately. You can also click on any of the other categories underneath to see those bookmarks.</p>
     <ul class="flex flex-wrap items-center justify-start list-none mb-2 mx-0 mt-0 p-0 w-full">
       {{ range .Site.Data.nav.bookmarks }}

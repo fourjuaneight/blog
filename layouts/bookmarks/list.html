@@ -1,5 +1,12 @@
+{{ define "heading" }}
+  <h1
+    class="font-bold font-mdNichrome mt-0 text-center text-8xl uppercase w-full"
+    data-line="slim"
+  >
+    {{ .Title }}
+  </h1>
+{{ end }}
 {{ define "main" }}
-  <h1 class="post-title md:text-6xl mr-auto text-4xl">{{ .Title }}</h1>
   <p>{{ .Content }}</p>
   <section class="w-full">
     <ul class="flex flex-wrap items-center justify-center list-none m-0 p-0 w-full">

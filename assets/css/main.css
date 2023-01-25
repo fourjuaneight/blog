@@ -131,9 +131,9 @@ a:hover {
   outline: none;
 }
 
-a[data-type="social"]:focus,
-a[data-type="social"]:focus-visible,
-a[data-type="social"]:hover {
+a[data-type='social']:focus,
+a[data-type='social']:focus-visible,
+a[data-type='social']:hover {
   color: var(--background) !important;
   text-decoration-color: var(--background) !important;
 }
@@ -299,14 +299,6 @@ header {
   --nav-width: 11.8rem;
 }
 
-header nav {
-  max-width: var(--nav-width);
-}
-
-header nav > ul {
-  min-width: var(--nav-width);
-}
-
 time::before {
   color: var(--tertiary);
   content: '\03C4'; /* HTML: &tau; */
@@ -329,9 +321,33 @@ span.tag-comma {
   width: 0.23rem;
 }
 
+[data-line='slim'] {
+  line-height: 0.75 !important;
+}
+
+h1[data-line='slim'],
+div[data-type='spacer'] {
+  margin: 0 auto 6vh;
+}
+
 a.site-name {
-  color: var(--primary);
-  font-weight: bold;
+  min-width: 14rem;
+  /* line-height: 0.98 !important; */
+}
+
+@media screen and (max-width: 768px) {
+  a.site-name,
+  header nav a {
+    font-size: 1.95rem !important;
+  }
+
+  a.site-name {
+    min-width: 12rem;
+  }
+
+  h1[data-line='slim'] {
+    font-size: calc(62px + (96 - 62) * ((var(--max-vw) - 375px) / (768 - 375)));
+  }
 }
 
 section.intro picture,
@@ -653,9 +669,9 @@ body[data-party='false'] li.bk-title a:hover {
   text-shadow: 0.1rem 0.1rem var(--tertiary);
 }
 
-body[data-party='false'] a[data-type="social"]:focus svg,
-body[data-party='false'] a[data-type="social"]:focus-visible svg,
-body[data-party='false'] a[data-type="social"]:hover svg {
+body[data-party='false'] a[data-type='social']:focus svg,
+body[data-party='false'] a[data-type='social']:focus-visible svg,
+body[data-party='false'] a[data-type='social']:hover svg {
   fill: var(--primary);
 }
 
@@ -707,9 +723,9 @@ body[data-party='true'] li.bk-title a:hover {
   animation: textShadowParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
-body[data-party='true'] a[data-type="social"]:focus svg,
-body[data-party='true'] a[data-type="social"]:focus-visible svg,
-body[data-party='true'] a[data-type="social"]:hover svg {
+body[data-party='true'] a[data-type='social']:focus svg,
+body[data-party='true'] a[data-type='social']:focus-visible svg,
+body[data-party='true'] a[data-type='social']:hover svg {
   animation: fillParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 

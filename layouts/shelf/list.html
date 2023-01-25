@@ -1,5 +1,12 @@
+{{ define "heading" }}
+  <h1
+    class="post-title font-bold font-mdNichrome mt-0 text-center text-8xl uppercase w-full"
+    data-line="slim"
+  >
+    {{ .Title }}
+  </h1>
+{{ end }}
 {{ define "main" }}
-  <h1 class="post-title md:text-6xl mr-auto text-4xl">{{ .Title }}</h1>
   <p>{{ .Content }}</p>
   {{ $shelf := getJSON "https://cleverlaziness.xyz/api/shelf/" }}
 

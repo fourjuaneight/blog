@@ -17,6 +17,7 @@ module.exports = {
   theme: {
     extend: {
       borderColor: pallete,
+      borderWidth: { 'under': '3.55px' },
       colors: pallete,
       fill: pallete,
       gridTemplateColumns: {

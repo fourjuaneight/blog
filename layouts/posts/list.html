@@ -1,3 +1,11 @@
+{{ define "heading" }}
+  <h1
+    class="font-bold font-mdNichrome mt-0 text-center text-8xl uppercase w-full"
+    data-line="slim"
+  >
+    Archive
+  </h1>
+{{ end }}
 {{ define "main" }}
   {{ range .Data.Pages.GroupByDate "2006" }}
     <section class="year-list w-full">
