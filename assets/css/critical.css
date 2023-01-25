@@ -37,6 +37,8 @@
   --tertiary-transparent: rgba(89, 116, 128, 0.5);
   /* values */
   --duration: 208ms;
+  --footer-height: calc(59.5px + 2rem);
+  --header-height: 90.5px;
   --max-vw: 100vw;
   --transition: cubic-bezier(0.155, 0.64, 0.24, 1);
 }
@@ -131,7 +133,7 @@ header > nav > ul {
 
 main {
   grid-template-rows: min-content auto 0.5rem;
-  min-height: calc(100vh - 11rem);
+  min-height: calc(100vh - (var(--header-height) + var(--footer-height)));
 }
 
 main > h1 {
@@ -139,9 +141,9 @@ main > h1 {
   grid-row: 1 / 2;
 }
 
-@media screen and (min-width: 420px) {
-  main {
-    min-height: calc(100vh - 10rem);
+@media screen and (max-width: 768px) {
+  :root {
+    --header-height: 83.3px;
   }
 }
 
