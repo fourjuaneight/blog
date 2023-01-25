@@ -9,7 +9,7 @@
     "build": "hugo --debug -e local --gc --log --minify -v --verboseLog",
     "clean:node": "rm -rf node_modules",
     "clean": "rm -rf dist",
-    "dev": "concurrently -n \"DEV,TW\" -c \"#ff4088,#38bdf8\" \"hugo --disableFastRender --gc --ignoreCache --log --minify serve\" \"npm run tw -- --watch\"",
+    "dev": "concurrently -n \"DEV,TW\" -c \"#ff4088,#38bdf8\" \"hugo --disableFastRender --gc --ignoreCache --log --minify -v --verboseLog serve\" \"npm run tw -- --watch\"",
     "format": "rome format assets/**/*.ts --write",
     "lint": "rome check assets/**/*.ts --apply-suggested ",
     "post": "go run scripts/postbuild.go",
