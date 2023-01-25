@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.9.1] - 2023-01-25
+
+### Bug Fixes
+
+- [Minor sizing updates.](https://github.com/fourjuaneight/blog/commit/27ea30f170bf9f3b1e05e477c900e0c530dd7cff)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/089ddfaddc95aed9492c0bef76a1016f11611b88)
+- [Update to v1.9.1.](https://github.com/fourjuaneight/blog/commit/308a1b6ed93f5c724d2f70d0caed9fd71c7faba7)
+
 ## [1.9.0] - 2023-01-25
 
 ### Bug Fixes
