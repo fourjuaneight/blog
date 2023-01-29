@@ -195,7 +195,13 @@ hr {
 img {
   height: auto;
   object-fit: contain;
-  object-position: left bottom;
+  object-position: center;
+}
+
+@media screen and (max-width: 640px) {
+  figure picture img {
+    width: 100%;
+  }
 }
 
 input {

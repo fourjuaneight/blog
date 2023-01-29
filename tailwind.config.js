@@ -24,6 +24,12 @@ module.exports = {
         'auto-fit': 'repeat(auto-fit, minmax(0, 1fr))',
         'auto-fill': 'repeat(auto-fill, minmax(0, 1fr))',
       },
+      maxHeight: {
+        100: '25rem',
+        120: '50rem',
+        130: '75rem',
+        140: '100rem'
+      },
       maxWidth: {
         xxs: '18rem',
         xxxs: '14rem',
