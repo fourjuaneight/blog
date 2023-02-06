@@ -8,15 +8,15 @@ tags:
 draft: false
 ---
 
-The modern world has transformed how we consume and engage with media. We now have access to a limitless quantity of data and information. But this has come at a cost. Because of the ease of access and endless storage, we are overwhelmed by information, making it difficult for us to build meaningful relationships with it.
+The modern world has transformed how we consume and engage with media. We now have access to a nrealy limitless quantity of data and information. But this has come at a cost. Because of the ease of access and endless storage, we are overwhelmed by information, making it difficult for us to build meaningful relationships with it.
 
 It's easy to forget that we once had physical relationships with the media we consumed. We used to arrange and organize our collections, designing our one-of-a-kind structures that reflected our individual preferences and tastes. This relationship, however, has been disrupted by the growth of large tech companies and the digitization of media. Platforms like Spotify and Netflix, for example, dictate how we interact with our media collections, updating their interfaces and rearranging data based on algorithmically generated profiles of ourselves.
 
+Unlimited streaming allows us add any number of items to our libraries with ease, but it also pushes us to consume more information quicker, which leads to hoarding and dilutes the value of the stuff we add. The reliance on the automated curation of these services have replaced the necessity for sorting, and our connection with our media has altered as a result.
+
 As a result, we have lost control and agency over our collections. There is no curation. Just software figuring out how to keep us on the platform.
 
-Cloud storage provides us with an external memory on which we can rely, but it also pushes us to consume more information quicker, which leads to hoarding and dilutes its value. The reliance on search has replaced the necessity for sorting, and our connection with our media has altered as a result.
-
-Can we reclaim control of our media? Sure. For starters, we should be more conscious of the information we consume and prioritize what is important to us, rather than just storing everything away for later. There should be a purpose behind what we choose to keep.
+Can we reclaim control of our media? Sure. But not without some effort. We could be more conscious of the information we consume and prioritize what is important to us, rather than just storing everything away for later. There should be a purpose behind what we choose to keep.
 
 We can improve the processes for organizing and prioritizing the stuff we collect. This does not necessarily imply having private data silos, but rather an archive that is structured and searchable, and available to anyone who requires it. A well-organized archive not only makes it simpler to find what we need but also raises the value of the material we gather.
 
