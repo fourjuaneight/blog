@@ -306,6 +306,10 @@ header {
   --nav-width: 11.8rem;
 }
 
+.post-title {
+  max-width: 60rem;
+}
+
 time::before {
   color: var(--tertiary);
   content: '\03C4'; /* HTML: &tau; */
