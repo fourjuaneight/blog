@@ -1,8 +1,0 @@
-https://:project.pages.dev/*
-  X-Robots-Tag: noindex
-
-https://cleverlaziness.xyz/*
-  Access-Control-Allow-Origin: https://www.cleverlaziness.xyz/*
-
-https://www.cleverlaziness.xyz/*
-  Access-Control-Allow-Origin: https://cleverlaziness.xyz/*
