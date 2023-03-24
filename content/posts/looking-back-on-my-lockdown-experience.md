@@ -1,5 +1,6 @@
 ---
 title: "Looking Back On My Lockdown Experience"
+og: "My Lockdown Experience"
 description: "I was a remote worker before 2020. But I think I speak for most pre-COVID WFH folks when I say that the lockdown destroyed our way of life."
 date: 2023-03-24
 tags:
