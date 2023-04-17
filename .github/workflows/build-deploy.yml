@@ -85,7 +85,8 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: dist
-          path: ~/blog/dist
+          # this is done to match the expected output directory
+          path: ~/work/blog/blog/dist
 
       - name: Use Go 1.20.3
         uses: actions/setup-go@v4
