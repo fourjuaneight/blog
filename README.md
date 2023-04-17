@@ -1,5 +1,7 @@
 # Personal Blog
 
+![social-imgs](https://github.com/fourjuaneight/blog/actions/workflows/social-imgs.yml/badge.svg)
+
 Powered by:
 
 - [Hugo](https://gohugo.io)
