@@ -78,6 +78,12 @@ jobs:
     permissions:
       contents: read
       deployments: write
+    env:
+      CLOUDFLARE_API_TOKEN: ${{secrets.CLOUDFLARE_API_TOKEN}}
+      ACCOUNT_ID: ${{secrets.ACCOUNT_ID}}
+      PROJECT_NAME: ${{secrets.PROJECT_NAME}}
+      DIRECTORY: ${{secrets.DIRECTORY}}
+      GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
     needs: build
     steps:
       - name: Publish
