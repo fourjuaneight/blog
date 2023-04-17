@@ -62,7 +62,7 @@ jobs:
         run: sudo snap install dart-sass-embedded
 
       - name: Build Site
-        run: npm run build:local
+        run: npm run build:prod
 
       - name: Upload Output
         uses: actions/upload-artifact@v3
