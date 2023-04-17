@@ -81,6 +81,21 @@ jobs:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
 
+      - name: Use Node 16.15.1
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.15.1
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.0.1
+        id: pnpm-install
+        with:
+          version: 7
+          run_install: false
+
+      - name: Run Social Images Script
+        run: pnpm i -g serve@12.0.1
+
       - name: Download Output
         uses: actions/download-artifact@v3
         with:
