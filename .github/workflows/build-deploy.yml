@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   build:
-    name: Build Site and Generate Social Images
+    name: Build Site
     runs-on: ubuntu-20.04
     env:
       HUGO_VERSION: 0.111.3
@@ -57,6 +57,20 @@ jobs:
 
       - name: Build Site
         run: npm run build:local
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./dist
+
+  social:
+    name: Generate Social Images
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Use Go 1.20.3
+        uses: actions/setup-go@v4
+        with:
+          go-version: '>=1.20.3'
 
       - name: Install Go Rod Dependencies
         run: sudo apt-get install -y libgbm-dev
