@@ -4,9 +4,9 @@
   "description": "Personal blog.",
   "scripts": {
     "build:chroma": "hugo gen chromastyles > assets/css/syntax.css",
-    "build:prod": "npm run tw && hugo -e production --gc --minify",
     "build:fallback": "npm run build:prod || npm run build:prod",
-    "build": "hugo --debug -e local -D --gc --log --minify -v --verboseLog",
+    "build:local": "npm run tw && hugo --debug -e local -D --gc --log --minify -v --verboseLog",
+    "build:prod": "npm run tw && hugo -e production --gc --minify",
     "clean:node": "rm -rf node_modules",
     "clean": "rm -rf dist",
     "dev": "concurrently -n \"DEV,TW\" -c \"#ff4088,#38bdf8\" \"hugo -D --disableFastRender --gc --log --minify -v --verboseLog serve\" \"npm run tw -- --watch\"",

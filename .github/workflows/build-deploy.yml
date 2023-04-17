@@ -56,10 +56,13 @@ jobs:
         run: sudo snap install dart-sass-embedded
 
       - name: Build Site
-        run: npm run build
+        run: npm run build:local
 
       - name: Install Go Rod Dependencies
         run: sudo apt-get install -y libgbm-dev
+
+      - name: Install Script Dependencies
+        run: go mod download
 
       - name: Run Social Images Script
         run: npm run post
