@@ -63,9 +63,10 @@ jobs:
       - name: Build Site
         run: npm run build:local
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Upload Output
+        uses: actions/upload-artifact@v3
         with:
+          name: dist
           path: ./dist
 
   social:
@@ -83,6 +84,12 @@ jobs:
 
       - name: Install Script Dependencies
         run: go mod download
+
+      - name: Download Output
+        uses: actions/download-artifact@v3
+        with:
+          name: dist
+          path: ~/dist
 
       - name: Run Social Images Script
         run: npm run post
@@ -103,6 +110,12 @@ jobs:
       GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
     needs: build
     steps:
+      - name: Download Output
+        uses: actions/download-artifact@v3
+        with:
+          name: dist
+          path: ~/dist
+
       - name: Publish
         uses: cloudflare/pages-action@v1
         with:
