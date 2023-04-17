@@ -61,7 +61,10 @@ jobs:
       - name: Install Dart Sass Embedded
         run: sudo snap install dart-sass-embedded
 
-      - name: Build Site
+      - name: Build
+        env:
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
         run: npm run build:prod
 
       - name: Upload Output
