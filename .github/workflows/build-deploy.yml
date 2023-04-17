@@ -14,7 +14,8 @@ jobs:
     env:
       HUGO_VERSION: 0.111.3
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Repo
+        uses: actions/checkout@v3
         with:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
@@ -24,8 +25,8 @@ jobs:
         with:
           node-version: 16.15.1
 
-      - uses: pnpm/action-setup@v2.0.1
-        name: Install pnpm
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.0.1
         id: pnpm-install
         with:
           version: 7
@@ -36,8 +37,8 @@ jobs:
         run: |
           echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
 
-      - uses: actions/cache@v3
-        name: Setup pnpm cache
+      - name: Setup pnpm cache
+        uses: actions/cache@v3
         with:
           path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('pnpm-lock.yaml') }}
@@ -74,6 +75,18 @@ jobs:
     runs-on: ubuntu-20.04
     needs: build
     steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Download Output
+        uses: actions/download-artifact@v3
+        with:
+          name: dist
+          path: ~/dist
+
       - name: Use Go 1.20.3
         uses: actions/setup-go@v4
         with:
@@ -84,12 +97,6 @@ jobs:
 
       - name: Install Script Dependencies
         run: go mod download
-
-      - name: Download Output
-        uses: actions/download-artifact@v3
-        with:
-          name: dist
-          path: ~/dist
 
       - name: Run Social Images Script
         run: npm run post
