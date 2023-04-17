@@ -4,7 +4,7 @@
   "description": "Personal blog.",
   "scripts": {
     "build:chroma": "hugo gen chromastyles > assets/css/syntax.css",
-    "build:prod": "npm run tw && hugo -e production --gc --minify && npm run post",
+    "build:prod": "npm run tw && hugo -e production --gc --minify",
     "build:fallback": "npm run build:prod || npm run build:prod",
     "build": "hugo --debug -e local -D --gc --log --minify -v --verboseLog",
     "clean:node": "rm -rf node_modules",
