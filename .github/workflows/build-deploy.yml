@@ -122,7 +122,8 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: dist
-          path: ~/dist
+          # this is done to match the expected output directory
+          path: ~/work/blog/blog/dist
 
       - name: Publish
         uses: cloudflare/pages-action@v1
