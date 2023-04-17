@@ -2,6 +2,53 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.10.0] - 2023-04-17
+
+### Bug Fixes
+
+- [Wrap footer nav over copyright text.](https://github.com/fourjuaneight/blog/commit/181ba68e77fb545110cd6ed8ff2c239a71709491)
+- [Remove underline from header nav links.](https://github.com/fourjuaneight/blog/commit/d22b21424b58f7aae4f94969d718cd5156250e04)
+- [Add max width to post headers.](https://github.com/fourjuaneight/blog/commit/801367a089114fb26a7501ab9edd9040e73dd658)
+- [Render sitemap header with safeHTML.](https://github.com/fourjuaneight/blog/commit/aa8eaf7e1a56d89d35314eae3d7f8a26ac08ea1c)
+- [Add smaller title for OG image.](https://github.com/fourjuaneight/blog/commit/5ee78e24c728f515075c81f811d6f65e4b5828ee)
+- [Add tw build step before local build.](https://github.com/fourjuaneight/blog/commit/c3d8879ec30d75e93b1117d05e66249471fca777)
+- [Load missing env keys.](https://github.com/fourjuaneight/blog/commit/3bb95fc7d42810ed74cb778dd428d7eaf37b167f)
+- [Wait on build for social img job.](https://github.com/fourjuaneight/blog/commit/d9cacf1fdb4e6ad46aa52003f7fe57e5a3786454)
+- [Share build output throughout jobs.](https://github.com/fourjuaneight/blog/commit/65281582ed776c40592b816a2fb1c6690706c1d2)
+- [Checkout repo on social-imgs step to install dependencies.](https://github.com/fourjuaneight/blog/commit/fbf62e3a84aa43fdb83ae5183b3d64cb536649d1)
+- [Update articfact path for social step.](https://github.com/fourjuaneight/blog/commit/7bf0ce5225f730a5a6a82fc1016ee2cd5ac3f15c)
+- [Update articfact download path to match expected social script path.](https://github.com/fourjuaneight/blog/commit/311266aab7dd2fab06dcde9c2f185ff27e518d11)
+- [Update permission.](https://github.com/fourjuaneight/blog/commit/6ba5d3230764f0515de0a9b54e2e79a4d7fde132)
+- [Update articfact download path to match expected deploy job path.](https://github.com/fourjuaneight/blog/commit/19597be656fbd2caa24b5b195784e5a8a5d181a5)
+- [Add missing dependency for social job.](https://github.com/fourjuaneight/blog/commit/73b902b50239afec511a22055b713ecdb53a4fad)
+- [Add pnpm setup step.](https://github.com/fourjuaneight/blog/commit/d198c6d14e89cf4802b9dcfc091d43a6df5a1661)
+- [Use npm for global install of social dependency.](https://github.com/fourjuaneight/blog/commit/4a8320e2cf4715fe3e0fa94fffa7dc804bca9b2d)
+
+### Features
+
+- [Add Things + Shortcuts update post.](https://github.com/fourjuaneight/blog/commit/4504e57054639e1475633221d3b0eed2f7c2e34b)
+- [Improve inline images on content pages.](https://github.com/fourjuaneight/blog/commit/981d2ad9bd0a197420a70e0ebd15650483bc6071)
+- [Add images to Things + Shortcuts post and publish it.](https://github.com/fourjuaneight/blog/commit/ee408f437e0ed4bfd8691e55b68d7ae8befbe5a8)
+- [Add data hoarding and collecting post.](https://github.com/fourjuaneight/blog/commit/1083259eaa04c4d4bd5abbb42c4ebf39ad29a9f9)
+- [New post about my lockdown experience.](https://github.com/fourjuaneight/blog/commit/ec6b56b903c38bfbd92d2907a8fcb03bd82ffcd6)
+- [Add social images script workflow.](https://github.com/fourjuaneight/blog/commit/db33281b8c4788b66bd00d72aeddcd0f127d6126)
+- [Move site deployment to Workflow.](https://github.com/fourjuaneight/blog/commit/09cc37aa595294be74b827c5be127f63321fc184)
+- [Break up social img step into job and upload build output.](https://github.com/fourjuaneight/blog/commit/11f546889495ed61854d82c29f956725f3716d51)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/3a28771adbb5ede359f93fea45fc0e5f129df140)
+- [Render drafts on local build.](https://github.com/fourjuaneight/blog/commit/ed2bd99260df05b12f9032ec28c193ecbe099b68)
+- [Add italics style to blockquotes.](https://github.com/fourjuaneight/blog/commit/bd93c1651e4ee436a1cf16c60b6c3d847f8322fe)
+- [Minor edits to latest post.](https://github.com/fourjuaneight/blog/commit/acf1d81edea993ade9ce2b8dc1261bc495b35703)
+- [Minor tags re-organization.](https://github.com/fourjuaneight/blog/commit/37f41ce2a80c63a41ccfa39328475798e25f5b19)
+- [Remove headers.](https://github.com/fourjuaneight/blog/commit/b51662d3a4fe7eda2abbf6351c770f83645d676a)
+- [Update description.](https://github.com/fourjuaneight/blog/commit/43ebb9433b24fd521b04b39956aab2ed63d2c81a)
+- [Replace rome with eslint.](https://github.com/fourjuaneight/blog/commit/a2f7147c3ff3636f80e8a7a60a807bb7010e9257)
+- [Remove postbuild script from build command.](https://github.com/fourjuaneight/blog/commit/9eda32e234e32d3f5b6f53b3d46b6fb293b83e6c)
+- [Use production build on deployment action.](https://github.com/fourjuaneight/blog/commit/19210bfa7221b32661eaa728d00ce243834def9c)
+- [Update to v1.10.0.](https://github.com/fourjuaneight/blog/commit/0d73195e53ae9af5edb504c5df3e9dec0e96d784)
+
 ## [1.9.1] - 2023-01-25
 
 ### Bug Fixes
