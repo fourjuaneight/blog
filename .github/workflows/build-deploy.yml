@@ -1,12 +1,10 @@
-name: Changelog
+name: Build and Deploy
 
-on:
-  push:
-    tags:
-      - "*"
+on: [push]
 
 jobs:
-  worker:
+  build:
+    name: Build Site and Generate Social Images
     runs-on: ubuntu-20.04
     env:
       HUGO_VERSION: 0.111.3
@@ -60,10 +58,30 @@ jobs:
       - name: Build Site
         run: npm run build
 
+      - name: Install Go Rod Dependencies
+        run: sudo apt-get install -y libgbm-dev
+
       - name: Run Social Images Script
         run: npm run post
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "chore: Add new og social image."
+          commit_message: 'chore: Add new og social image.'
+
+  deploy:
+    name: Deploy to Cloudflare Pages
+    runs-on: ubuntu-20.04
+    permissions:
+      contents: read
+      deployments: write
+    needs: build
+    steps:
+      - name: Publish
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{secrets.CLOUDFLARE_API_TOKEN}}
+          accountId: ${{secrets.ACCOUNT_ID}}
+          projectName: ${{secrets.PROJECT_NAME}}
+          directory: ${{secrets.DIRECTORY}}
+          gitHubToken: ${{secrets.GITHUB_TOKEN}}

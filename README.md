@@ -1,6 +1,6 @@
 # Personal Blog
 
-![social-imgs](https://github.com/fourjuaneight/blog/actions/workflows/social-imgs.yml/badge.svg)
+![build-deploy](https://github.com/fourjuaneight/blog/actions/workflows/build-deploy.yml/badge.svg)
 
 Powered by:
 
