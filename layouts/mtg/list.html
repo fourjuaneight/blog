@@ -35,7 +35,7 @@
             data-transparent="true"
           >
             {{/*  Prevents long local build times  */}}
-            {{ if hugo.Environment | eq "production" }}
+            {{ if hugo.Environment | ne "local" }}
               {{ partial "remote-img.html" (dict "src" .image "alt" $card.name "pClasses" "mtg-img flex items-start justify-start mb-2 object-cover object-left-top" "iClasses" "w-auto" "hidden" true "size" "400") }}
             {{ end }}
           </button>

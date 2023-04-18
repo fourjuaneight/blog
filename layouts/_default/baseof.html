@@ -17,7 +17,7 @@
 
     {{ partial "footer.html" . }}
 
-    {{ if hugo.Environment | eq "production" }}
+    {{ if hugo.Environment | ne "local" }}
       {{ partial "sw.html" . }}
     {{ end }}
 
