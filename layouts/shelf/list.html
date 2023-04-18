@@ -8,11 +8,13 @@
 {{ end }}
 {{ define "main" }}
   <p>{{ .Content }}</p>
-  {{ $shelf := getJSON "https://cleverlaziness.xyz/api/shelf/" }}
-
-  {{ range $i, $data := $shelf }}
-    {{ partial "shelf-list" (dict "section" $i "data" $data) }}
-  {{ end}}
+  {{ with getJSON "https://cleverlaziness.xyz/api/shelf/" }}
+    {{ range $i, $data := . }}
+      {{ partial "shelf-list" (dict "section" $i "data" $data) }}
+    {{ end}}
+  {{ else }}
+    {{ warnf "Unable to GET shelf data" }}
+  {{ end }}
   {{ if ne .Params.footer nil }}
     <section class="footer w-full">
       {{ partial "img.html" (dict "src" .Params.footer.img "alt" .Params.footer.alt "size" "1024") }}
