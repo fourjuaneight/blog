@@ -75,6 +75,8 @@ jobs:
           hugo \
             --gc \
             --minify \
+            --log \
+            --verboseLog \
 
       - name: Upload Output
         uses: actions/upload-artifact@v3
