@@ -64,19 +64,11 @@ jobs:
       - name: Clean Output
         run: npm run clean
 
-      - name: Render Tailwind
-        run: npm run tw
-
       - name: Build Site
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
-        run: |
-          hugo \
-            --gc \
-            --minify \
-            --log \
-            --verboseLog \
+        run: npm run build:prod
 
       - name: Upload Output
         uses: actions/upload-artifact@v3
