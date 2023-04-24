@@ -9,9 +9,13 @@
 {{ define "main" }}
   <p>{{ .Content }}</p>
   {{ with getJSON "https://cleverlaziness.xyz/api/mtg/" }}
+    {{ $cards := . }}
     <section class="mb-4 w-full">
+      <div class="flex items-center justify-end w-full">
+        <p class="bg-background leading-none m-0 px-2 py-1 rounded-full text-sm text-tertiary">{{ len $cards }}</p>
+      </div>
       <ul class="mtg-list gap-5 grid list-none mt-6 p-0 w-full">
-        {{ range $i, $card := . }}
+        {{ range $i, $card := $cards }}
           {{ $imgSrc := print "mtg/" $card.id ".png" }}
           <li class="flex flex-col h-auto items-start justify-start m-0 p-0 relative">
             <button
