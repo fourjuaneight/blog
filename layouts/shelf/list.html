@@ -8,7 +8,7 @@
 {{ end }}
 {{ define "main" }}
   <p>{{ .Content }}</p>
-  {{ with getJSON "https://cleverlaziness.xyz/api/shelf/" }}
+  {{ with getJSON "https://shelf.villela.co" }}
     {{ range $i, $data := . }}
       {{ partial "shelf-list" (dict "section" $i "data" $data) }}
     {{ end}}
