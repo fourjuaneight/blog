@@ -43,61 +43,6 @@ export interface WebFields {
   url: string;
 }
 
-export type BKFields = ArticleFields | RedditFields | TweetFields | WebFields;
-
-export interface BookmarksData {
-  articles: BKFields[];
-  comics: BKFields[];
-  podcasts: BKFields[];
-  reddits: BKFields[];
-  tweets: BKFields[];
-  videos: BKFields[];
-  [key: string]: BKFields[];
-}
-
-export interface RecordColumnAggregateCount {
-  [key: string]: number;
-}
-
-// MTG
-export interface MediaMTG {
-  id: string;
-  name: string;
-  colors: string[] | null;
-  type: string | null;
-  set: string;
-  set_name: string;
-  oracle_string: string | null;
-  flavor_string: string | null;
-  rarity: string;
-  collector_number: number;
-  released_at: string;
-  artist: string;
-  image: string;
-  back: string | null;
-}
-
-// Shelf
-export interface ShelfItem {
-  id: string;
-  name: string;
-  creator: string;
-  rating: number;
-  cover: string;
-  category: string;
-  genre: string;
-  completed: boolean;
-  comments: string;
-}
-
-// Tweets
-export interface TweetValues {
-  id?: string;
-  tweet: string;
-  date: string;
-  url: string;
-}
-
 // Hasura
 export interface HasuraBKQueryResp {
   data: {
@@ -112,37 +57,6 @@ export interface HasuraBKQueryResp {
       | WebFields[]
       | RedditFields[]
       | TweetFields[];
-  };
-}
-
-export interface HasuraMTGQueryResp {
-  data: {
-    media_mtg: MediaMTG[];
-  };
-}
-
-export interface HasuraShelfQueryResp {
-  data: {
-    anime: ShelfItem[];
-    books: ShelfItem[];
-    comics: ShelfItem[];
-    games: ShelfItem[];
-    manga: ShelfItem[];
-    movies: ShelfItem[];
-    shows: ShelfItem[];
-    [key: string]: ShelfItem[];
-  };
-}
-
-export interface HasuraTWQueryResp {
-  data: {
-    media_tweets: TweetValues[];
-  };
-}
-
-export interface HasuraQueryAggregateResp {
-  data: {
-    [key: string]: string | string[];
   };
 }
 
