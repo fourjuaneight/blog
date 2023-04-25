@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.11.0] - 2023-04-25
+
+### Bug Fixes
+
+- [Declare hugo env at build script.](https://github.com/fourjuaneight/blog/commit/ff25badc7fc42b375cf0ce68d7f5802bba645e97)
+- [Update build command to force prod env.](https://github.com/fourjuaneight/blog/commit/2ac47d1c06ea17fe994704cff08968ab6fb49ee4)
+- [Update hugo env block in attempt to build whole site on workflow.](https://github.com/fourjuaneight/blog/commit/e328d06dd0f9a923669489d332b35e5c25817742)
+- [Pass getJSON headers correctly.](https://github.com/fourjuaneight/blog/commit/3d6905c49108a5825ed940f30f23e2dd82b02d5b)
+- [Add missing headers on getJSON requests.](https://github.com/fourjuaneight/blog/commit/cc9782112aad98cb71baea3634cee9f8f346735b)
+
+### Features
+
+- [Add card count badge to mtg page.](https://github.com/fourjuaneight/blog/commit/f8c1b05e18b1d1d84e75b80cafcc41bf845266a0)
+- [Replace mtg function with worker endpoint.](https://github.com/fourjuaneight/blog/commit/bd7957bf0068ecd211b09e7581766e2be5818514)
+- [Replace shelf function with worker endpoint.](https://github.com/fourjuaneight/blog/commit/8f621641795549b137baa050db1ded1de08ef7a7)
+- [Replace bookmarks function with worker endpoint.](https://github.com/fourjuaneight/blog/commit/1c65b9c4d229108481d0b3ffa7f30fdcdf7b84a9)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/51f4f81184e19b06afec1d2727b6b790d5a6c292)
+- [Add verbose logging to build.](https://github.com/fourjuaneight/blog/commit/33204cd0e8065d1d92a78c8cf8b7c5467fd1bdb6)
+- [Use npm script for site build.](https://github.com/fourjuaneight/blog/commit/3330afdc9d6e3d42ea660bf1a6088c05233353d8)
+- [Add conditional loading to getJSON method.](https://github.com/fourjuaneight/blog/commit/38ec76c29dc27edfdff183af97c93af70290fa72)
+- [Move functions dir to dist dir.](https://github.com/fourjuaneight/blog/commit/7c453fdb452f05a0559a0733b7f0adeaedb0cb33)
+- [Remove deprecated tweets function.](https://github.com/fourjuaneight/blog/commit/8b01cc30247474db0f79738c090284a1184975e0)
+- [Cleanup deprecated functions.](https://github.com/fourjuaneight/blog/commit/2bbdeea10ce83d6851483d45bd0bece3bc1fdb1c)
+- [Update to v1.11.0.](https://github.com/fourjuaneight/blog/commit/2b478d77c11596bbab45c8fee7f7c9b7138e7837)
+
 ## [1.10.0] - 2023-04-17
 
 ### Bug Fixes
