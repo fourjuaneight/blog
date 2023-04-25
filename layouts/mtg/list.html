@@ -8,7 +8,7 @@
 {{ end }}
 {{ define "main" }}
   <p>{{ .Content }}</p>
-  {{ with getJSON "https://mtg.villela.co" }}
+  {{ with getJSON "https://mtg.villela.co" (dict "Content-Type" "application/json") }}
     {{ $cards := . }}
     <section class="mb-4 w-full">
       <div class="flex items-center justify-end w-full">
