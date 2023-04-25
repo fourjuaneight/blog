@@ -10,7 +10,7 @@
   {{ $isArticle := cond (eq .Title "Articles") true false }}
   {{ $dTitle := cond (eq .Title "Tweets") "Tweet" "Title" }}
   {{ $dCreator := cond (eq .Title "Reddits") "Subreddit" (cond (eq .Title "Articles") "Author" (cond (eq .Title "Tweets") "User" "Creator")) }}
-  {{ $tableUrl := print "https://cleverlaziness.xyz/api/bookmarks/" (lower .Title) }}
+  {{ $tableUrl := print "https://bookmarker.villela.co" (dict "table" (lower .Title)) }}
   {{ $bookmarks := getJSON $tableUrl }}
 
   <section class="w-full">
