@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.11.2] - 2023-04-25
+
+### Bug Fixes
+
+- [Use local env for dev server.](https://github.com/fourjuaneight/blog/commit/4b1564c89cd3b859243a5b71847aada834509dc8)
+- [Use correct bookmarks endpoint.](https://github.com/fourjuaneight/blog/commit/f4c623f47340c51f7b095b30fad7f85edb1989d6)
+- [Use short cache on remote data.](https://github.com/fourjuaneight/blog/commit/c0461bc14c8b46e010a10745d65905eccf8ea8fb)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/a7234cde2360442edcdf78dd4c82513479240001)
+- [Update to v1.11.1.](https://github.com/fourjuaneight/blog/commit/04332ffda5ac2a1f6079358e1a697a986e54cef9)
+- [Update to v1.11.2.](https://github.com/fourjuaneight/blog/commit/1269a8451e90462454a3c62094682c3fe078e684)
+
 ## [1.11.0] - 2023-04-25
 
 ### Bug Fixes
