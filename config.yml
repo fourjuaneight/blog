@@ -19,6 +19,11 @@ security:
   exec:
     allow: ["^dart-sass-embedded$", "^go$", "^npx$", "^postcss$", "^babel$"]
 
+caches:
+  getjson:
+    dir: ":cacheDir/:project"
+    maxAge: "10s"
+
 markup:
   highlight:
     codeFences: true
