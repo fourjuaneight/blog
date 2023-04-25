@@ -9,7 +9,7 @@
     "build:prod": "npm run tw && hugo -e production --gc --minify --log --minify -v --verboseLog",
     "clean:node": "rm -rf node_modules",
     "clean": "rm -rf dist",
-    "dev": "concurrently -n \"DEV,TW\" -c \"#ff4088,#38bdf8\" \"hugo -D --disableFastRender --gc --log --minify -v --verboseLog serve\" \"npm run tw -- --watch\"",
+    "dev": "concurrently -n \"DEV,TW\" -c \"#ff4088,#38bdf8\" \"hugo --debug -e local -D --disableFastRender --gc --log --minify -v --verboseLog serve\" \"npm run tw -- --watch\"",
     "format": "prettier --write \"assets/**/*.{ts,js,css,scss}\"",
     "lint": "eslint --fix --no-error-on-unmatched-pattern \"assets/**/*.{ts,js}\"",
     "post": "go run scripts/postbuild.go",
