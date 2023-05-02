@@ -13,8 +13,9 @@ I used to be a Mac guy. Maybe I still am. But after having to part ways with my 
 
 **Update (2022-02)**: I was provided a new (as of this update) M1 Max MacBook Pro by my employer. Which is overkill for my work, but it's a fantastic laptop. The Linux PC is currently serving as a Plex server in my closet.
 
-- **[LG 27UK650-W](https://www.lg.com/us/monitors/lg-27UK650-W-4k-uhd-led-monitor)** - It takes some calibration to make it look just right. But once it does, it's a solid workhorse of a display.
-- **[HHKB Pro 2](https://hhkeyboard.us/hhkb/pro-classic)** - I got the all-black keys and it took me a while to get used to the new layout without being able to tell which key is which. Worth every penny, though.
+- **[CalDigit TS4](https://www.caldigit.com/thunderbolt-station-4/)** - This thing powers everything on my desktop from a single Thunderbolt cable; audio gear, peripherals, and monitors. It even charges my MacBook. Amazing little dock. 
+- **[LG 27UK650-W](https://www.lg.com/us/monitors/lg-27UK650-W-4k-uhd-led-monitor)** - It takes some calibration to make it look just right. But once it does, it's a solid workhorse of a display. I have to of these stacked vertically.
+- **[Keychron V10 (Alice Layout)](https://www.keychron.com/collections/all-keyboards/products/keychron-v10-alice-layout-qmk-custom-mechanical-keyboard?variant=40358750158937)** - After years with a HHKB Pro 2, I swapped it out with this Alice layout. It's far more comfortable for me and how I position my hands while I type. I swapped out the switches for some [Zealios V2s (65g)](https://zealpc.net/products/zealio?variant=6502846147).
 - **[Logitech MX Ergo](https://www.logitech.com/en-us/products/mice/mx-ergo-wireless-trackball-mouse.html)** - So nice and comfortable.
 - **[UpDesk Standing Desk](https://updesk.com/products/updesk-electric-lift-standing-desk-upwrite-midnight-black-top-on-black-frame-closeout)** - The table is pretty good, but the customer service is nonexistent.
 - **[Secretlab Omega Chair](https://secretlab.co/collections/omega-series)** - ~~Great~~ Ok chair.
@@ -29,11 +30,9 @@ I used to be a Mac guy. Maybe I still am. But after having to part ways with my 
 - **[dbx 286s](https://dbxpro.com/en/products/286s)** - Brings the volume up on the mic and adds some hardware tweaks to make the sounds smoother.
 - **[Tascam US-2x2HR](https://tascam.com/us/product/us-2x2hr/top)** - Best bang for your buck, IMHO. It's just plug-n-play.
 - **[beyerdynamic DT 990 Pro](https://north-america.beyerdynamic.com/dt-990-pro.html)** - These are overkill for essentially Zoom and podcasts. But TOOL does sound lovely in lossless.
-- **[Schiit Modi](https://www.schiit.com/products/modi-1)** - Solid DAC that feeds into the Magni.
-- **[Schiit Magni](https://www.schiit.com/products/magni-1)** - Solid Amp to power the DT 990 Pros.
-- **[Bluesound NODE](https://www.bluesound.com/products/node/)** - This serves as audio input for the TV as well as an AirPlay and Roon endpoint. Pretty sweet.
-- **[Schiit Modius](https://www.schiit.com/products/modius)** - This takes the SPDIF digital signal from the NODE.
-- **[Schiit Aegir](https://www.schiit.com/products/aegir)** - Then two of these (monoblock) take the balanced signal from the Modius. These will likely be replaced by something cooler, smaller, and more powerfull.
+- **[Topping E30II](https://www.amazon.com/dp/B0B7M8ZQ63)** - Great DAC that feeds into the L30II.
+- **[Topping L30II](https://www.amazon.com/dp/B0B7JHR1RC)** - Great Amp to power the DT 990 Pros.
+- **[Bluesound POWERNODE](https://www.bluesound.com/products/powernode/)** - This serves as audio input for the TV, AirPlay endpoint, DAC, and AMP. It's a great sounding all-in-one box.Pretty sweet.
 - **[Klipsch RP-600M](https://www.klipsch.com/products/rp-600m-bookshelf-speakers)** - These sounds great and sweet for my messed up hearing.
 
 ## Software
@@ -44,7 +43,6 @@ I used to be a Mac guy. Maybe I still am. But after having to part ways with my 
 - **[Affinity Designer](https://affinity.serif.com/en-us/)** - Who needs Photoshop.
 - **[Things](https://culturedcode.com/things/)** - I've tried them all and this UI is simply the best for me.
 - **[Drafts](https://getdrafts.com)** - All text starts here.
-- **[Jayson](https://jayson.app)** - Nice UI for JSON.
 - **[Raycast](https://www.raycast.com)** - There are so many macOS launchers. I've tried them all. This one is by far my favorite. It almost as customizable as [Alfred](https://www.alfredapp.com), but feels more solidly built. This also handles window, clipboard, and snippet management.
 - **[SoundSource](https://rogueamoeba.com/soundsource/)** - It's a simple app that makes life so much nicer.
 - **[Hazel](https://www.noodlesoft.com/)** - A computer should run itself. This does the trick.

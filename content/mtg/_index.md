@@ -6,6 +6,6 @@ footer:
 draft: false
 ---
 
-A digital library of my personal Magic collection. I mostly collect the creepiest cards I come across. Or anything of note that [Rhystic Studies](https://www.youtube.com/c/RhysticStudies) talks about.
+A digital library of my personal Magic collection. I mostly collect the creepiest cards I come across or anything of note that [Rhystic Studies](https://www.youtube.com/c/RhysticStudies) talks about.
 
 All data is sourced from [Scryfall](https://scryfall.com) with the help of a [Cloudflare Worker](https://github.com/fourjuaneight/mtg).

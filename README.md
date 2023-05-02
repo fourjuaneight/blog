@@ -11,18 +11,8 @@ Powered by:
 
 All illustrations were made by [Yonsoncb](https://www.yonsoncb.com/socials).
 
-<picture>
-  <source
-    srcset="https://raw.githubusercontent.com/fourjuaneight/blog/master/assets/img/logo.avif"
-    type="image/avif"
-  />
-  <source
-    srcset="https://raw.githubusercontent.com/fourjuaneight/blog/master/assets/img/logo.webp"
-    type="image/webp"
-  />
-  <img
+<img
     width="350"
     src="https://raw.githubusercontent.com/fourjuaneight/blog/master/assets/img/logo.png"
     alt="An illustration of Snorlax sitting on a coach, coding on his laptop."
   />
-</picture>
