@@ -1,7 +1,7 @@
 ---
 title: "On Trans Rights"
 seo_title: "Trans Rights"
-description: ""
+description: "Trans people should have the same rights as anyone else. They should feel safe going about their daily lives like the rest of us. Their voice and vote should carry the same weight."
 date: 2023-05-05
 tags:
   - politics
