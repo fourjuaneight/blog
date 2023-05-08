@@ -24,15 +24,15 @@ I currently work as a Senior Full-Stack Web Developer over at [Big Pixel](https:
 
 ### Languages:
 
-TypeScript, JavaScript, SCSS, CSS, HTML, SQL, Go, Shell
+TypeScript, JavaScript, SCSS, CSS, HTML, SQL
 
 ### Frameworks/Libraries:
 
-React, Angular, Hugo, Eleventy, Node, Express, GraphQL
+React, Node, Express, GraphQL, Hugo, Eleventys
 
 ### Tooling:
 
-Redux (Sagas, Thunks, and RTK), Webpack, Vite, Jest, Cypress, aXe, TravisCI, CircleCI, GitHub Actions, Gitlab/Bitbucket Pipeline
+Redux (Sagas, Thunks, and RTK), Webpack, Vite, Jest, Vitest, Cypress, aXe, TravisCI, CircleCI, GitHub Actions, Gitlab/Bitbucket Pipeline
 
 ### Design Tools:
 

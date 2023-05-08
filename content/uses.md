@@ -15,15 +15,13 @@ I used to be a Mac guy. Maybe I still am. But after having to part ways with my 
 
 - **[CalDigit TS4](https://www.caldigit.com/thunderbolt-station-4/)** - This thing powers everything on my desktop from a single Thunderbolt cable; audio gear, peripherals, and monitors. It even charges my MacBook. Amazing little dock. 
 - **[LG 27UK650-W](https://www.lg.com/us/monitors/lg-27UK650-W-4k-uhd-led-monitor)** - It takes some calibration to make it look just right. But once it does, it's a solid workhorse of a display. I have to of these stacked vertically.
-- **[Keychron V10 (Alice Layout)](https://www.keychron.com/collections/all-keyboards/products/keychron-v10-alice-layout-qmk-custom-mechanical-keyboard?variant=40358750158937)** - After years with a HHKB Pro 2, I swapped it out with this Alice layout. It's far more comfortable for me and how I position my hands while I type. I swapped out the switches for some [Zealios V2s (65g)](https://zealpc.net/products/zealio?variant=6502846147).
+- **[Keychron V10 (Alice Layout)](https://www.keychron.com/collections/all-keyboards/products/keychron-v10-alice-layout-qmk-custom-mechanical-keyboard?variant=40358750158937)** - After years with a HHKB Pro 2, I swapped it out with this Alice layout. It's far more comfortable for me and how I position my hands while I type. I swapped out the switches for some [Zealios V2s (67g)](https://zealpc.net/products/zealio?variant=6502846147).
 - **[Logitech MX Ergo](https://www.logitech.com/en-us/products/mice/mx-ergo-wireless-trackball-mouse.html)** - So nice and comfortable.
 - **[UpDesk Standing Desk](https://updesk.com/products/updesk-electric-lift-standing-desk-upwrite-midnight-black-top-on-black-frame-closeout)** - The table is pretty good, but the customer service is nonexistent.
 - **[Secretlab Omega Chair](https://secretlab.co/collections/omega-series)** - ~~Great~~ Ok chair.
-- **[Tripp Lite 1500VA 900W UPS](https://www.amazon.com/dp/B009TZTGWK/)** - I believe I heard about the brand from Marco Arment. Solid UPS.
 - **[Ubiquiti Dream Machine Pro](https://store.ui.com/collections/unifi-network-unifi-os-consoles/products/udm-pro)** - The only reason I got the Pro was to mount it on a rack. This also runs [NextDNS](https://nextdns.io) to filter out my internet traffic.
 - **[Ubiquiti Switch 8 (PoE)](https://store.ui.com/collections/unifi-network-switching/products/unifi-switch-8-60w)** - I have a couple of these around the house to extend the ports coming out the wall.
 - **[Ubiquiti UniFi AC Pro](https://store.ui.com/collections/wireless/products/unifi-ac-pro)** - Solid access point.
-- **[Ubiquiti Access Point In-Wall HD](https://store.ui.com/products/unifi-in-wall-hd)** - Another solid access point. Running in mesh with the other AP.
 
 ### Audio Gear
 - **[Electro-Voice RE320](https://products.electrovoice.com/ap/en/re320/)** - Fantastic mic for Zoom calls and DnD virtual sessions. It's overkill for what I use it but my voice sounds sexy now.
