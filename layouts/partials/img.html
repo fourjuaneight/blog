@@ -21,6 +21,7 @@
     class="{{ with .iClasses }}{{ . }}{{ else }}mb-2 w-full{{ end }}"
     width="{{ .size }}"
     aria-hidden="{{ $isHidden }}"
+    decoding="async"
     loading="lazy"
     {{ if ne .tabindex nil }}tabindex="{{ .tabindex }}"{{ end }}
     {{ with .active }}data-active="{{ . }}"{{ end }}
@@ -46,6 +47,7 @@
       width="{{ $imgResized.Width }}"
       data-small="{{ $isSmall }}"
       aria-hidden="{{ $isHidden }}"
+      decoding="async"
       loading="lazy"
       {{ with .active }}data-active="{{ . }}"{{ end }}
     />
