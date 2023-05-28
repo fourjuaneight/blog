@@ -28,7 +28,7 @@ TypeScript, JavaScript, SCSS, CSS, HTML, SQL
 
 ### Frameworks/Libraries:
 
-React, Node, Express, GraphQL, Hugo, Eleventys
+React, Node, Express, GraphQL, Hugo, Eleventy
 
 ### Tooling:
 
