@@ -119,10 +119,11 @@ jobs:
       - name: Run Social Images Script
         run: npm run post
 
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - name: Upload Output
+        uses: actions/upload-artifact@v3
         with:
-          commit_message: 'chore: Add new og social image.'
+          name: dist
+          path: ~/work/blog/blog/dist
 
   deploy:
     name: Deploy to Cloudflare Pages
