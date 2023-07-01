@@ -133,7 +133,7 @@ jobs:
       PROJECT_NAME: ${{secrets.PROJECT_NAME}}
       DIRECTORY: ${{secrets.DIRECTORY}}
       GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-    needs: build
+    needs: [build, social]
     steps:
       - name: Download Output
         uses: actions/download-artifact@v3
