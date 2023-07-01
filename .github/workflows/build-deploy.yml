@@ -113,6 +113,9 @@ jobs:
       - name: Install Script Dependencies
         run: go mod download
 
+      - name: Build binary
+        run: go build scripts/postbuild.go
+
       - name: Run Social Images Script
         run: npm run post
 
