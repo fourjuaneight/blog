@@ -1,6 +1,6 @@
 ---
 title: "Google Reader's Unseen Potential"
-description: ""
+description: "In 2013, Google Reader was deemed unnecessary and was cast off into the void. But as users scramble to escape the clutches of algorithm-driven feeds, they’re running back to RSS."
 date: 2023-07-03
 tags:
   - rss
