@@ -1,7 +1,7 @@
 ---
 title: "Unplugged Productivity"
 seo_title: "Conquering Home Office Distractions"
-description: "Working remotely as a web developer offers incredible flexibility, but let's face it, distractions are a struggle for us all. Dave Rupert's thought-provoking piece, "Bag of Distractions," got me pondering the allure of the digital realm and how it impacts our productivity as we toil away in our home offices."
+description: "Working remotely as a web developer offers incredible flexibility, but let's face it, distractions are a struggle for us all. Dave Rupert's thought-provoking piece, Bag of Distractions, got me pondering the allure of the digital realm and how it impacts our productivity as we toil away in our home offices."
 date: 2023-07-05
 tags:
   - productivity
