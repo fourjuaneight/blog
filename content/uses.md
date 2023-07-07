@@ -34,7 +34,9 @@ I used to be a Mac guy. Maybe I still am. But after having to part ways with my 
 - **[Klipsch RP-600M](https://www.klipsch.com/products/rp-600m-bookshelf-speakers)** - These sounds great and sweet for my messed up hearing.
 
 ## Software
-- [Dracula Theme](https://draculatheme.com) all the things.
+[Dracula Theme](https://draculatheme.com) all the things.
+
+### Desktop Apps
 - **[VS Code](https://code.visualstudio.com)** - Honestly, I've tried every editors at this point. This is by far the most decent one. It is solid enough, way too customizable, and integrates perfectly with all my tooling.
 - **[Alacritty](https://alacritty.org)** - Best cross-platform terminal. Solid and performant.
 - **[Transmit](https://panic.com/transmit/)** - Rarely use it, but it's nice to look at.
@@ -45,32 +47,32 @@ I used to be a Mac guy. Maybe I still am. But after having to part ways with my 
 - **[SoundSource](https://rogueamoeba.com/soundsource/)** - It's a simple app that audio management so much easier.
 - **[Hazel](https://www.noodlesoft.com/)** - A computer should run itself. This does the trick.
 - **[Bartender](https://www.macbartender.com/)** - Too much crap on the menubar.
+- **[CleanShot X](https://cleanshot.com)** - If you regularly take screenshots or screen recordings, this is the app you should be using. It's so powerful, but still manages to be very user-friendly.
 
-### Daily Apps
+### Mobile Apps
 - **[ShellFish](https://secureshellfish.app)** - _The_ iOS FTP app.
-- **[Working Copy](https://workingcopyapp.com)** - I can't believe this is an iOS app; paramount for mobile git-ing.
-- **[Scriptable](https://scriptable.app)** - Sometimes you _just_ need a little JavaScript in your automation.
+- **[Working Copy](https://workingcopyapp.com)** - I can't believe this is an iOS app. Paramount for mobile git-ing.
+- **[Scriptable](https://scriptable.app)** - Sometimes you just need a little JavaScript in your automation.
 - **[Castro](https://castro.fm)** - I always go back and forth between this and [Overcast](https://overcast.fm). I love Overcast for its quality build, but Castro has a fantastic UI.
 - **[Unread](https://www.goldenhillsoftware.com/unread/)** - This syncs to Feedbin. The UI is fantastic.
 - **[GoodLinks](https://goodlinks.app)** - This is honestly the best read-it-later app you can find. It's pretty much perfect.
-- **[Apollo](https://apolloapp.io)** - The _only_ Reddit app.
-- **[Ivory](https://tapbots.com/ivory/)** - Twitter is dead. Mastodon is where it's at. The indie app scene is thriving right now, but when it comes to top-notch UX, you can't beat Tapbots.
+- **[Ivory](https://tapbots.com/ivory/)** - Twitter and Reddit are dead to me. Mastodon is where it's at. The indie app scene is thriving right now, but when it comes to top-notch UX, you can't beat Tapbots.
 - **[Panels](https://panels.app)** - I read a ton of manga and the occasional comic. I buy most of my stuff digitally and prefer this to any native reader. It's an amazing app with iCloud sync and even [OPDS](https://en.wikipedia.org/wiki/Open_Publication_Distribution_System) server streaming stupport.
 - **[Prism](https://prism-music.app)** - Plex Amp is great, but if you want a no-nonsense audio player for your Plex music library, this is the app.
 - **[Prologue](https://prologue.audio)** - I usually read my books with a companion audiobook. I found this app (made by the same dev as Prism) which utilizes a Plex "music" library as an audiobook. It's wonderful.
 - **[Infuse](https://firecore.com/infuse)** - Keeping with the Plex, theme this is an amazing Plex video player. While I like the Plex apps, these tend to give you more controls, with a better UI, and far less clutter.
 
-There is several more hardware and software I use. But these are the main things I cannot live without daily.
-
 ### Plugins
 These are entirely for [VSCode](https://code.visualstudio.com), my text editor of choice. I've tried them all and this is what I like the best. And so do many other developers. I try to keep my plugin use to a minimum to prevent the app from running slow. Most of them are for some sort of syntax optimization. But the ones listed here are what enhance my everyday experience.
 
-- **[GitHub Copilot](https://copilot.github.com)** - It can be a bit obtrusive at times. But honestly, the quality has become so much better and provides good code more often than not.
 - **[GitLense](https://github.com/eamodio/vscode-gitlens)** - If you use the built-in Git functionality, this thing will add a lot of the features you might be missing.
-- **[Git History](https://github.com/pomber/git-history)** - I'll go as far as to say you need this plugin. Grab a file, run this plugin, and easily scroll through the version history. Such a life improvement.
-- **[GitHub Pull Request](https://github.com/Microsoft/vscode-pull-request-github)** - Instead of my usual [gum + Git + gh utility](https://github.com/fourjuaneight/dotfiles/blob/master/homedir/.zsh/func.zsh#L696-L728) for CLI PR creation, I've been trying out this plugin. There were some early bugs, but they've since been ironed out. Overall, it's great. If you're already using VSCode's built-in git functionality like I do, this will integrate nicely into your existing workflow and make it feature complete.
+- **[Git File History](https://github.com/pomber/git-history)** - I'll go as far as to say you need this plugin. Grab a file, run this plugin, and easily scroll through the version history. Such a life improvement.
+- **[GitHub Pull Request](https://github.com/Microsoft/vscode-pull-request-github)** - Instead of my usual [gum/sk + Git + gh utility](https://github.com/fourjuaneight/dotfiles/blob/master/homedir/.zsh/func.zsh#L638-L819) for CLI PR creation, I've been trying out this plugin. There were some early bugs, but they've since been ironed out. Overall, it's great. If you're already using VSCode's built-in git functionality like I do, this will integrate nicely into your existing workflow and make it feature complete.
+- **[Error Lens](https://github.com/usernamehw/vscode-error-lens)** - Give your linter errors some nice color so they're easier to parse.
+- **[Pretty TypeScript Errors](https://github.com/yoavbls/pretty-ts-errors)** - You know those useless compiler errors that spit out a ton of unreadable gibberish? Yeah, this solves that.
 - **[TODO Tree](https://github.com/Gruntfuggly/todo-tree)** - If you're a TODO person, this will make finding them far easier.
 - **[Better Comments](https://github.com/aaron-bond/better-comments)** - This makes code comments easier to parse.
+- **[GitHub Copilot](https://copilot.github.com)** - It can be a bit obtrusive at times. But honestly, the quality has become so much better and provides good code more often than not.
 
 ## Tools
 Although there's a plethora of tools and apps available for development work, I often find some of them lacking. So this is a combination of handmade tools and some great open source options. These lists are the amalgamation of years of trial and error to find just the right combinations. I've also included some stuff I'm testing out.
@@ -79,7 +81,7 @@ Although there's a plethora of tools and apps available for development work, I 
 - **[tenjin](https://github.com/fourjuaneight/tenjin)** - Early on in my development career, I realize a lot of time was spent copying and pasting previously use code. So I started to keep a repo full of commonly used scripts, stylings, configs, templates, and snippets. That eventually morphed into a JS CLI utility. This current iteration is written in Go and has a slimmed-down collection with just the stuff I need for work and personal projects. I quite like this little tool.
 - **[showrunner](https://github.com/fourjuaneight/showrunner)** - I run a Plex server at home for all my media. More often than not, I need to rename entire TV Shows to the correct formatting. I've tried using a couple of shell scripts before, but this tool does it in a single command. Plus, it pulls the metadata from TMDB API.
 - **[scriptable](https://github.com/fourjuaneight/scriptable)** - There is so much automation that happens on my phone. Most of it is through [Shortcuts](https://support.apple.com/guide/shortcuts/welcome/ios). But there's only so much it can do before it becomes unmanageable. Unless you're [Federico](https://www.macstories.net/shortcuts/). These are the various JS scripts, running on [Scriptable](https://scriptable.app), that make iOS automation so much easier.
-- **[dotfiles](https://github.com/fourjuaneight/dotfiles)** - I think most devs have dotfiles repo somewhere. I took what I liked the most from others and made something easy to maintain and expand.
+- **[dotfiles](https://github.com/fourjuaneight/dotfiles)** - I think most devs have a dotfiles repo somewhere. I took what I liked the most from others and made something easy to maintain and expand.
 
 ### CLI
 I started finding Rust alternatives to some of the default CLI tooling for greater security (debatable) and an overall nicer UX. Also, the [cargo](https://doc.rust-lang.org/cargo/guide/) experience is superior to any other package manager.
@@ -98,10 +100,8 @@ I started finding Rust alternatives to some of the default CLI tooling for great
 - **[sheldon](https://github.com/rossmacarthur/sheldon)** - There are so many zsh plugin managers. This one is lightweight and easily managed via a TOML file.
 - **[cargo-update](https://github.com/nabijaczleweli/cargo-update)** - This little utility brings the cargo experience up to 11. A simple package updater.
 - **[topgrade](https://github.com/r-darwish/topgrade)** - I didn't know I needed this until it came into my life. Single command to update all your software. It's OS configurable, and you can even add/omit your own commands. Pretty nice quality of life improvement.
+- **[git-interactive-rebase-tool](https://github.com/MitMaro/git-interactive-rebase-tool)** - If you've ever had to rebase or edit some commits, you'll know it's a pain. This makes it slightly more user friendly.
+- **[forgit](https://github.com/wfxr/forgit)** - This does almost all of the things I've written zsh scripts for. It's just an awesome git companion. I love it's `git add` functionality. It gives you a scrollable list to pick which files to add, but more importantly, a preview of the file to the right. It's just awesome.
 
 ### Trying Out
 - **[gitui](https://github.com/extrawurst/gitui)** - [Tower](https://www.git-tower.com/mac) was my GUI of choice for Git, but with the help of a handful of [utilities](https://github.com/fourjuaneight/dotfiles/blob/master/homedir/.zsh/func.zsh#L340-L490) I've written for myself, I find CLI to be as useful and often faster. But this thing sorta merges the two to bring you a pretty cool CLI "GUI". I've been using it on and off for some time and like it. At the time of writing this (2021-08-26), they do not have GPG commit signing, which makes it hard to use on a regular. But it's currently in the works.
-
----
-
-For an even nerdier list, take a look at my [dotfiles](https://github.com/fourjuaneight/dotfiles) and see into the soul of my Mac.
