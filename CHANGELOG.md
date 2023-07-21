@@ -2,6 +2,47 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.12.0] - 2023-07-21
+
+### Bug Fixes
+
+- [Add missing description on new post.](https://github.com/fourjuaneight/blog/commit/541f3f6c3229ef97c9d96072641083da2d4d6031)
+- [Typos and syntax.](https://github.com/fourjuaneight/blog/commit/5371c70d504fb01556da07128862ddd771f80b77)
+- [Wait for social step to finish before uploading to cdn.](https://github.com/fourjuaneight/blog/commit/9ffb1debf200061caa5e3e51fd95a1e946ada8b8)
+- [Upload updated output dist instead of committing it.](https://github.com/fourjuaneight/blog/commit/d25f9bb49d9dda27251901a05483f0561783ee76)
+- [Add post description.](https://github.com/fourjuaneight/blog/commit/19c74dbbc49991582500f2ff0f1213267f4d9c6b)
+- [Remove quotes on frontmatter.](https://github.com/fourjuaneight/blog/commit/a89acf1fb895cd1d6ff69591f7b4b723041446c7)
+- [Update package to correct realese version.](https://github.com/fourjuaneight/blog/commit/c7df78e82202d5b293dbb00ae22b3f7c11d28978)
+
+### Features
+
+- [Add trans rights posts.](https://github.com/fourjuaneight/blog/commit/c8c1ad303fda8c413767584ac1a9f7cc25b5a4e3)
+- [Add new post on large photo libraries.](https://github.com/fourjuaneight/blog/commit/b3c6a3a5211acb9a2c8fa7b846a2bc22e489e0c4)
+- [Add async decoding on images.](https://github.com/fourjuaneight/blog/commit/636b1e4a3d5b7a22eb9f454cc56aa9bf66e7bcbd)
+- [Add accessibility post.](https://github.com/fourjuaneight/blog/commit/f60494051f13f99c91c6de20fe029626669dbbb8)
+- [Add google reader post.](https://github.com/fourjuaneight/blog/commit/b88ca25c993e4a60049c26d99bd50c1a81be9d24)
+- [Add wfh productivity post.](https://github.com/fourjuaneight/blog/commit/1960a7d3dba65c28aff6b132fead0ec868174738)
+- [Update uses page.](https://github.com/fourjuaneight/blog/commit/27038db094ef6fd0c447c1f174bd8917f7f3e9b6)
+- [Add useless web post.](https://github.com/fourjuaneight/blog/commit/1d6513c38d6aa4099df4377a460452de7f8500b3)
+- [Add activitypub post.](https://github.com/fourjuaneight/blog/commit/8ac28f093d0565f33d90f5db015bfeaec9af143f)
+- [Add post about the ephemeral web.](https://github.com/fourjuaneight/blog/commit/8b9ace6a5b7ce55e837d47e6c679460bf9b0f0ec)
+- [Add article on climate change.](https://github.com/fourjuaneight/blog/commit/2ade391afc95090470d99138a9ce78acf2d4a8ae)
+- [Add dynamically generated grid layouts.](https://github.com/fourjuaneight/blog/commit/f5b3e76ca9612c28c3aa67aad822ad2cbc8b12d1)
+- [Update header to a more minimal style.](https://github.com/fourjuaneight/blog/commit/b738e826bdf29b727a93e95dcdf02326e77c32d2)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/5eb4bd15fcb8af9e8e5197405bf0f96d90cdc719)
+- [Minor content updates.](https://github.com/fourjuaneight/blog/commit/3dbcb294e0116b1bae413a4f7e8cde6a3d85840f)
+- [Minor content updates.](https://github.com/fourjuaneight/blog/commit/fcbcfd28dc2cb69ce4e6bfacdd55ce759738919d)
+- [Update go dependencies.](https://github.com/fourjuaneight/blog/commit/fc8a958fe14c06e6f6981ff77d69baefbefb2e51)
+- [Minor build script optimizations.](https://github.com/fourjuaneight/blog/commit/3ba3e27d07dffeeafe469bd1eb31a6ecff1faa06)
+- [Minor layout optimizations.](https://github.com/fourjuaneight/blog/commit/425191ef0945ae24fd156d139070e09728372c92)
+- [Ignore tags route on crawlers.](https://github.com/fourjuaneight/blog/commit/241bb02365aebe71e09c8b5ef675a45a26382932)
+- [Minor sizing updates.](https://github.com/fourjuaneight/blog/commit/6d0279139cfa47cdaa126ecfaa381d98c33181ca)
+- [Update to v1.2.0.](https://github.com/fourjuaneight/blog/commit/aced02b2b5462d61c171cdb7a792678d0db5c4eb)
+- [Update to v1.12.0.](https://github.com/fourjuaneight/blog/commit/2be8a4bf8af3d4ea38fed1f5e9b1bf4a04df5ba8)
+
 ## [1.11.2] - 2023-04-25
 
 ### Bug Fixes
