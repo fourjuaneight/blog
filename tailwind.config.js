@@ -12,6 +12,17 @@ const pallete = {
   'tertiary-transparent': 'var(--tertiary-transparent)',
 };
 
+const templateGrid = size =>
+  Array(10)
+    .fill(1)
+    .map((x, y) => {
+      const col = x + y;
+      return {
+        [`${col}-${size}`]: `repeat(${col}, ${size})`,
+      };
+    })
+    .reduce((acc, cur) => ({ ...acc, ...cur }), {});
+
 module.exports = {
   content: ['./layouts/**/*.html'],
   theme: {
@@ -21,6 +32,14 @@ module.exports = {
       colors: pallete,
       fill: pallete,
       gridTemplateColumns: {
+        ...templateGrid('auto'),
+        ...templateGrid('min-content'),
+        'auto-fit': 'repeat(auto-fit, minmax(0, 1fr))',
+        'auto-fill': 'repeat(auto-fill, minmax(0, 1fr))',
+      },
+      gridTemplateRows: {
+        ...templateGrid('auto'),
+        ...templateGrid('min-content'),
         'auto-fit': 'repeat(auto-fit, minmax(0, 1fr))',
         'auto-fill': 'repeat(auto-fill, minmax(0, 1fr))',
       },
