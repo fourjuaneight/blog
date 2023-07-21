@@ -348,7 +348,7 @@ a.site-name {
 @media screen and (max-width: 768px) {
   a.site-name,
   header nav a {
-    font-size: 1.95rem !important;
+    font-size: 1.85rem !important;
   }
 
   a.site-name {
