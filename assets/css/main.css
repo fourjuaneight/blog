@@ -343,7 +343,6 @@ div[data-type='spacer'] {
 
 a.site-name {
   min-width: 14rem;
-  /* line-height: 0.98 !important; */
 }
 
 @media screen and (max-width: 768px) {

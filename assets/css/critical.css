@@ -122,9 +122,8 @@ footer {
 }
 
 header {
-  gap: 0.5rem 0;
   grid-template-columns: 1rem auto 1rem;
-  grid-template-rows: 0.5rem repeat(2, min-content) 0rem;
+  grid-template-rows: 1rem repeat(2, min-content) 1rem;
 }
 
 header > nav > ul {
