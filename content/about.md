@@ -6,7 +6,7 @@ footer:
 draft: false
 ---
 
-Hi, I'm [Juan Villela](https://www.juanvillela.dev/) and I like websites. Most of my time is spent making them for others online. When I'm not working, I'm probably still coding.
+Hi, I'm [Juan Villela](https://www.juanvillela.dev/) and I like websites. Most of my time is spent making them for others online. When I'm not working, I'm hoarding digital media for my weird pet project.
 
 Writing isn't my strong suit. But I do it from time to time. It's therapeutic and helps me clear my head. In this blog, I write about notable things I find interesting and some of my coding projects. I'm not sure what else to say so here's a list of "fun facts" about me, I guess:
 
@@ -20,7 +20,7 @@ Writing isn't my strong suit. But I do it from time to time. It's therapeutic an
 
 ## Work
 
-I currently work as a Senior Full-Stack Web Developer over at [Big Pixel](https://thebigpixel.net/). These days I mostly make Angular and React enterprise apps. And some REST and GraphQL APIs. But here's a cool list of skills:
+I work as a Senior Full Stack Web Developer full-time from home. These days I mostly make Angular and React enterprise apps. And some REST and GraphQL APIs. But here's a cool list of skills:
 
 ### Languages:
 
