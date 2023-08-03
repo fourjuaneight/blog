@@ -30,7 +30,8 @@ jobs:
         id: pnpm-install
         with:
           version: 8
-          run_install: false
+          run_install: |
+            - args: [--no-frozen-lockfile]
 
       - name: Get pnpm store directory
         id: pnpm-cache
@@ -43,10 +44,7 @@ jobs:
           path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-
-      - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile
+            ${{ runner.os }}-pnpm-store- --no-frozen-lockfile
 
       - name: Install Dart Sass Embedded
         run: sudo snap install dart-sass-embedded
