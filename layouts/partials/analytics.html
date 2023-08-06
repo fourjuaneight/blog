@@ -1,3 +1,4 @@
+{{ $site := replace .Site.BaseURL "https://" "" }}
 <!-- Partytown -->
 <script>
   partytown = {
@@ -9,6 +10,6 @@
 <script
   type="text/partytown"
   async
-  data-domain="cleverlaziness.xyz"
+  data-domain="{{ $site }}"
   src="https://plausible.io/js/plausible.js"
 ></script>
