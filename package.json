@@ -12,6 +12,7 @@
     "dev": "concurrently -n \"DEV,TW\" -c \"#ff4088,#38bdf8\" \"hugo --debug -e local -D --disableFastRender --gc --log --minify -v --verboseLog serve\" \"npm run tw -- --watch\"",
     "format": "prettier --write \"assets/**/*.{ts,js,css,scss}\"",
     "lint": "eslint --fix --no-error-on-unmatched-pattern \"assets/**/*.{ts,js}\"",
+    "partytown": "partytown copylib static/~partytown",
     "post": "go run scripts/postbuild.go",
     "serve": "serve -l 2323 dist",
     "start": "npm run dev",
@@ -30,6 +31,7 @@
   },
   "homepage": "https://github.com/fourjuaneight/blog#readme",
   "dependencies": {
+    "@builder.io/partytown": "^0.8.0",
     "flamethrower-router": "0.0.0-meme.12"
   },
   "devDependencies": {
