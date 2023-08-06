@@ -16,7 +16,8 @@ interface FetchEvent extends Event {
       {{ end }}
     {{ end }}
     "scripts.min.js",
-    "styles.min.css"
+    "styles.min.css",
+    "~partytown/partytown.js"
   ];
 
   const updateStaticCache = () =>
