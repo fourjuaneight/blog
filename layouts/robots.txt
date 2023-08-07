@@ -1,6 +1,11 @@
+User-agent: GPTBot
+Disallow: /
+
 User-agent: *
 Allow: /
 Disallow: /social-img/
 Disallow: /tags/
+
 Sitemap: https://cleverlaziness.xyz/sitemap.xml
+
 Host: https://cleverlaziness.xyz
