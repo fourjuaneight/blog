@@ -44,6 +44,7 @@
       src="{{ $imgResized.Permalink }}"
       alt="{{ .alt }}"
       class="{{ with .iClasses }}{{ . }}{{ else }}{{ $maxWidth }} w-full{{ end }}"
+      height="{{ $imgResized.Height }}"
       width="{{ $imgResized.Width }}"
       data-small="{{ $isSmall }}"
       aria-hidden="{{ $isHidden }}"
