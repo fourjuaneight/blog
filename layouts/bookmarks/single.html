@@ -17,7 +17,7 @@
     <ul class="flex flex-wrap items-center justify-start list-none mb-2 mx-0 mt-0 p-0 w-full">
       {{ range .Site.Data.nav.bookmarks }}
         {{ if ne .label $.Title }}
-          <li class="mr-4 my-4">
+          <li class="mr-4 my-2 sm:my-4">
             <a
               href='{{ .link | absURL }}'
               class="bk-list duration-200 ease-in-out font-mdNichrome no-underline text-3xl transition-color focus:text-secondary hover:text-secondary"
@@ -27,6 +27,9 @@
           </li>
         {{ end }}
       {{ end }}
+      <li class="ml-auto mr-0 my-2 sm:my-4">
+        <p class="bg-background leading-none ml-4 mr-0 my-0 px-2 py-1 rounded-full text-sm text-tertiary">{{ len $bookmarks }}</p>
+      </li>
     </ul>
   </section>
   <section
