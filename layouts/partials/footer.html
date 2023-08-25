@@ -1,7 +1,7 @@
 {{ $navLinks := sub (len .Site.Data.nav.footer) 1 }}
 <footer class="bg-background-dark border-0 border-solid border-t-under border-meta grid mt-8 w-full">
   <section
-    class="col-start-2 flex flex-wrap-reverse items-center justify-start row-start-2 w-full"
+    class="col-start-2 flex flex-wrap-reverse gap-2 items-center justify-start row-start-2 w-full"
   >
     <ul
       class="auto-cols-auto gap-x-1 grid grid-rows-1 items-center list-none ml-0 mr-auto my-0 pl-0 pr-4 py-0 xxs:gap-x-3"
@@ -25,26 +25,19 @@
         </a>
       </li>
     </ul>
-    <nav class="w-auto">
-      <ul
-        class="auto-cols-min gap-x-1 grid grid-rows-1 items-center list-none ml-0 my-0 -mr-1 p-0 xs:gap-x-2 xxs:gap-x-1"
-      >
-        {{ range $i, $item := .Site.Data.nav.footer }}
-          <li class="m-0 row-start-1" data-item="{{ $i }}">
-            <a
-              class="focus:underline hover:underline no-underline p-1 text-sm"
-              href="{{ $item.link | absURL }}"
-            >
-              {{ $item.label }}
-            </a>
-          </li>
-          {{ if ne $i $navLinks }}
-            <li class="m-0 row-start-1">
-              <p class="m-0 text-meta text-sm" aria-hidden="true">&#8226;</p>
-            </li>
-          {{ end }}
+    <nav class="auto-cols-min gap-x-1 grid grid-rows-1 items-center list-none ml-0 my-0 -mr-1 p-0 xs:gap-x-2 xxs:gap-x-1 w-auto">
+      {{ range $i, $item := .Site.Data.nav.footer }}
+        <a
+          class="focus:underline hover:underline m-0 no-underline p-1 row-start-1 text-sm"
+          data-item="{{ $i }}"
+          href="{{ $item.link | absURL }}"
+        >
+          {{ $item.label }}
+        </a>
+        {{ if ne $i $navLinks }}
+          <p class="m-0 row-start-1 text-meta text-sm" aria-hidden="true">&#8226;</p>
         {{ end }}
-      </ul>
+      {{ end }}
     </nav>
   </section>
 </footer>
