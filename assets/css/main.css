@@ -310,15 +310,8 @@ time::before {
   margin-right: 0.25rem;
 }
 
-h1.post-title,
-li.bk-title a {
+h1.post-title {
   animation: titlaShadow 400ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
-}
-
-li.bk-title a,
-li.bk-title a:hover,
-li.bk-title a:visited {
-  text-decoration: none;
 }
 
 span.tag-comma {
@@ -330,7 +323,6 @@ span.tag-comma {
   line-height: 0.75 !important;
 }
 
-h1[data-line='slim'],
 div[data-type='spacer'] {
   margin: 0 auto 6vh;
 }
@@ -617,10 +609,6 @@ footer p {
   a.site-name {
     min-width: 12rem;
   }
-
-  h1[data-line='slim'] {
-    font-size: calc(62px + (96 - 62) * ((var(--max-vw) - 375px) / (768 - 375)));
-  }
 }
 
 @media screen and (min-width: 468px) {
@@ -693,10 +681,6 @@ body[data-party='false'] a.tags:focus-visible span {
   text-decoration-color: var(--primary);
 }
 
-body[data-party='false'] li.bk-title a:hover {
-  text-shadow: 0.1rem 0.1rem var(--tertiary);
-}
-
 body[data-party='false'] a[data-type='social']:focus svg,
 body[data-party='false'] a[data-type='social']:focus-visible svg,
 body[data-party='false'] a[data-type='social']:hover svg {
@@ -745,10 +729,6 @@ body[data-party='true'] textarea:active,
 body[data-party='true'] textarea:focus,
 body[data-party='true'] li.bk-cell:hover {
   animation: borderColorParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
-}
-
-body[data-party='true'] li.bk-title a:hover {
-  animation: textShadowParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
 body[data-party='true'] a[data-type='social']:focus svg,

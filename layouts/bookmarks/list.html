@@ -1,6 +1,6 @@
 {{ define "heading" }}
   <h1
-    class="font-bold font-mdNichrome mt-0 text-center text-8xl uppercase w-full"
+    class="post-title col-start-2 font-bold font-mdNichrome mt-0 text-4xl uppercase w-full sm:text-5xl"
     data-line="slim"
   >
     {{ .Title }}
@@ -9,12 +9,12 @@
 {{ define "main" }}
   <p>{{ .Content }}</p>
   <section class="w-full">
-    <ul class="flex flex-wrap items-center justify-center list-none m-0 p-0 w-full">
+    <ul class="flex flex-wrap items-center justify-start list-none mb-2 mx-0 mt-0 p-0 w-full">
       {{ range .Site.Data.nav.bookmarks }}
-        <li class="bk-title m-4">
+        <li class="mr-4 my-2 sm:my-4">
           <a
             href='{{ .link | absURL }}'
-            class="duration-200 ease-in-out font-mdNichrome text-3xl transition-all"
+            class="bk-list duration-200 ease-in-out font-mdNichrome no-underline text-3xl transition-color focus:text-secondary hover:text-secondary"
           >
             {{ .label }}
           </a>
