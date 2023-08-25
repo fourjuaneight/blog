@@ -9,14 +9,9 @@
 {{ define "main" }}
   {{ range .Data.Pages.GroupByDate "2006" }}
     <section class="year-list w-full">
-      {{ $pageCount := len .Pages }}
-      {{ $pageCountLabel := cond (eq $pageCount 1) "post" "posts" }}
-
-      <div
-        class="border-0 border-b-2 border-tertiary border-solid flex justify-between items-end my-4 pb-2 w-full"
-      >
-        <h1 class="m-0 mr-auto">{{ .Key }}</h1>
-        <p class="m-0 ml-auto text-meta text-right">{{ $pageCount }} {{ $pageCountLabel }}</p>
+      <div class="border-0 border-b border-secondary border-solid flex items-end justify-between mb-3 mt-4 w-full">
+        <h2 class="capitalize m-0 md:text-4xl pb-1 pt-0 text-3xl">{{ .Key }}</h2>
+        <p class="bg-background leading-none mb-2 mx-0 px-2 py-1 rounded-full text-sm text-tertiary">{{ len .Pages }}</p>
       </div>
       {{ range .Pages }}
         {{ .Render "li"}}
