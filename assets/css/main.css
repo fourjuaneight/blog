@@ -138,6 +138,10 @@ a[data-type='social']:hover {
   text-decoration-color: var(--background) !important;
 }
 
+a[data-underline="true"]:hover > span {
+  width: 100%;
+}
+
 blockquote,
 li,
 p {
@@ -698,8 +702,6 @@ body[data-party='true'] a[rel='noopener noreferrer']:hover {
 
 body[data-party='true'] a.bk-list:focus,
 body[data-party='true'] a.bk-list:hover,
-body[data-party='true'] a.site-name:focus,
-body[data-party='true'] a.site-name:hover,
 body[data-party='true'] a[rel='noopener noreferrer']:focus,
 body[data-party='true'] a[rel='noopener noreferrer']:hover,
 body[data-party='true'] a.footnote-ref:focus::before,
@@ -715,14 +717,16 @@ body[data-party='true'] a.tags:hover span {
   animation: colorParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
-body[data-party='true'] a.archive-link:focus,
-body[data-party='true'] a.archive-link:hover,
+body[data-party='true'] a[data-underline="true"]:focus > span,
+body[data-party='true'] a[data-underline="true"]:hover > span,
 body[data-party='true'] button:disabled,
 body[data-party='true'] button:focus,
 body[data-party='true'] button:hover {
   animation: backgroundColorParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
+body[data-party='true'] a.archive-link:focus,
+body[data-party='true'] a.archive-link:hover,
 body[data-party='true'] input:active,
 body[data-party='true'] input:focus,
 body[data-party='true'] textarea:active,

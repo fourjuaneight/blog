@@ -13,10 +13,13 @@
     href='{{ "posts" | absURL }}'
     class="
       archive-link
-      bg-primary
-      focus:bg-secondary
+      bg-foreground
+      border-2
+      border-foreground
+      border-solid
+      focus:border-primary
       focus:text-background
-      hover:bg-secondary
+      hover:border-primary
       hover:text-background
       ml-auto
       mr-0
@@ -25,6 +28,7 @@
       px-2
       py-1
       text-background
+      transition-colors
     "
     data-dark="true"
   >
