@@ -614,11 +614,6 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-  a.site-name,
-  header nav a {
-    font-size: 1.85rem !important;
-  }
-
   a.site-name {
     min-width: 12rem;
   }

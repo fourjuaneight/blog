@@ -9,11 +9,11 @@
     >
       {{ .Site.Title }}
     </a>
-    <nav class="gap-x-2 grid grid-cols-3-min-content grid-rows-1 items-center mt-2 sm:m-0 w-auto xs:gap-x-4">
+    <nav class="gap-x-4 grid grid-cols-3-min-content grid-rows-1 items-center mt-2 sm:m-0 w-auto">
       {{ range .Site.Data.nav.header }}
       <a
         href="{{ .link | absURL }}"
-        class="focus:no-underline focus:text-secondary font-bold font-mdNichrome hover:no-underline hover:text-secondary no-underline text-center text-4xl uppercase"
+        class="focus:no-underline focus:text-secondary font-bold font-mdNichrome hover:no-underline hover:text-secondary no-underline text-center text-2xl uppercase"
         data-line="slim"
       >
         {{ .label }}
