@@ -1,6 +1,6 @@
 {
   "name": "blog",
-  "version": "1.12.0",
+  "version": "1.13.0",
   "description": "Personal blog.",
   "scripts": {
     "build:chroma": "hugo gen chromastyles > assets/css/syntax.css",
