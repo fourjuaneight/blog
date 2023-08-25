@@ -2,6 +2,41 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.13.0] - 2023-08-25
+
+### Bug Fixes
+
+- [Do not freeze lock file on CI install.](https://github.com/fourjuaneight/blog/commit/169bfffbd240c5a46a98075ee69ec0b5605f78cd)
+- [Run partytown script at build.](https://github.com/fourjuaneight/blog/commit/36b59507daa78161657d3194cf85fd569175e428)
+- [Minor seo and performance optimizations.](https://github.com/fourjuaneight/blog/commit/78afc0150ba98f27f1cf8765041752a8f03198e9)
+- [Rename term template correctly.](https://github.com/fourjuaneight/blog/commit/81731bbaa7bab154a55c8a0162ac344144f61b0e)
+- [Minor spacing updates.](https://github.com/fourjuaneight/blog/commit/031d1c047695e37ffd9b9f5bfe65b0d321282faf)
+
+### Features
+
+- [Update go and hugo versions.](https://github.com/fourjuaneight/blog/commit/b39536bd93cb0cf510d09d4add55c1ce0ed875c6)
+- [Move plausible analytics to web worker via partytown.](https://github.com/fourjuaneight/blog/commit/7a956e002a7de8358679f1fdfc31273d0e1293c6)
+- [Add action to verify no secrets are leaked.](https://github.com/fourjuaneight/blog/commit/b533403913e305211a8acc7343ea1999272f5211)
+- [Add article on the plumber problem.](https://github.com/fourjuaneight/blog/commit/44c5c5b04dd854b872e1cb134bfa559f8f553c3e)
+- [Add taxonomy list template.](https://github.com/fourjuaneight/blog/commit/852d9e03076ade738adda0930c8b893e4eb185a2)
+- [Add bookmarks item count.](https://github.com/fourjuaneight/blog/commit/635317007b651e23c26758aef94b1deff1dc6482)
+- [Add shelf item count.](https://github.com/fourjuaneight/blog/commit/33b54e8bedd15ac1ad1d9d196548d2be904382a0)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/dd02475b61c2954a20d64f10b9f6a479f5cab029)
+- [Update bio.](https://github.com/fourjuaneight/blog/commit/b4ee75ad97f7f0b5a11b77ed03abc38d00ad56ed)
+- [Update dependencies.](https://github.com/fourjuaneight/blog/commit/a0105c81404007965b9735711fc68f6d6f805575)
+- [Update workflow pnpm to v8.](https://github.com/fourjuaneight/blog/commit/c924d2d44ca5d7a4258b0a1371eab2660ee4e589)
+- [Use pnpm setup action to install dependnecies.](https://github.com/fourjuaneight/blog/commit/4133c9de1f29a1fad7528fce3ff60066250f23a4)
+- [Add partytown script to sw.](https://github.com/fourjuaneight/blog/commit/8534bdef51288c0598e5efd1bf295a8be98318db)
+- [Update analytics partial to use baseURL param.](https://github.com/fourjuaneight/blog/commit/b19f6bfc11755f0c2cbcea973af74bb5ab04c939)
+- [Disable OpenAI crawler.](https://github.com/fourjuaneight/blog/commit/d75d51b739bbe5d4bbca17b8f677aebf33a4a5a5)
+- [Minor syntax updates.](https://github.com/fourjuaneight/blog/commit/bf1ab0f653d5bb8751689d75f5519c14bd83786f)
+- [Minor syntax updates.](https://github.com/fourjuaneight/blog/commit/cf3ce35eea24782f92d26cf69fd5fe732932e1e3)
+- [Update config to latest format.](https://github.com/fourjuaneight/blog/commit/bacdf8d73c99dea9b85778f6fd3b2791512137ca)
+- [Update to v1.13.0.](https://github.com/fourjuaneight/blog/commit/2827c8d6f25f07bc5293d631e685d531e17b27b4)
+
 ## [1.12.0] - 2023-07-21
 
 ### Bug Fixes
