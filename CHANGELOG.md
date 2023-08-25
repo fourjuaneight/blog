@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.14.0] - 2023-08-25
+
+### Bug Fixes
+
+- [Move footer nav out of ul and into nav.](https://github.com/fourjuaneight/blog/commit/4443b106c03c4dbcd41b1b149ed1acfa1ed40dda)
+- [Update all animation durations to match.](https://github.com/fourjuaneight/blog/commit/9f9e8d7adf91a648f2c548abdc05c63a688a2115)
+
+### Features
+
+- [Decrease header nav size on mobile.](https://github.com/fourjuaneight/blog/commit/5e8d57538417bcd9bf7f4f77a5be0a3ecab23531)
+- [Update sizing and alignment on all headers.](https://github.com/fourjuaneight/blog/commit/b959028d322b63614793ed1b309fec3be4b8079d)
+- [Add underline styling and animation to header links.](https://github.com/fourjuaneight/blog/commit/35e9d08f01da3a4aa49dea4ea5c122c4c8130f6b)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/216ce23233d3a371739d45ec58b10fe95a3e305a)
+- [Minor css optimizations.](https://github.com/fourjuaneight/blog/commit/dd5abcd759765bae8724ad1526aa3f5e40cd09b2)
+- [Update to v1.14.0.](https://github.com/fourjuaneight/blog/commit/83e61c767c0ebcfdac7faea2ceb118b81bfaf5bf)
+
 ## [1.13.0] - 2023-08-25
 
 ### Bug Fixes
