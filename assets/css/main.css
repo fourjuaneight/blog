@@ -199,12 +199,6 @@ img {
   object-position: center;
 }
 
-@media screen and (max-width: 640px) {
-  figure picture img {
-    width: 100%;
-  }
-}
-
 input {
   height: 2.25rem;
 }
@@ -345,27 +339,6 @@ a.site-name {
   min-width: 14rem;
 }
 
-@media screen and (max-width: 768px) {
-  a.site-name,
-  header nav a {
-    font-size: 1.85rem !important;
-  }
-
-  a.site-name {
-    min-width: 12rem;
-  }
-
-  h1[data-line='slim'] {
-    font-size: calc(62px + (96 - 62) * ((var(--max-vw) - 375px) / (768 - 375)));
-  }
-}
-
-@media screen and (min-width: 500px) {
-  ul.taxonomy > li {
-    justify-content: flex-start;
-  }
-}
-
 section.intro picture,
 section.intro div.img-wrap {
   justify-content: flex-start;
@@ -385,13 +358,6 @@ section.intro div.img-wrap.hero-alt {
 section.intro picture.hero-alt img,
 section.intro div.img-wrap.hero-alt img {
   max-width: 14rem;
-}
-
-@media screen and (min-width: 640px) {
-  section.intro picture,
-  section.intro div.img-wrap {
-    margin-right: auto;
-  }
 }
 
 article ol,
@@ -477,13 +443,6 @@ ul.shelf-list {
 ul.mtg-list li,
 ul.taxonomy-list li {
   width: var(--card-width);
-}
-
-@media screen and (min-width: 468px) {
-  ul.mtg-list,
-  ul.taxonomy-list {
-    --card-width: 14rem;
-  }
 }
 
 ul.shelf-list li {
@@ -642,6 +601,54 @@ footer p {
   line-height: 1.25 !important;
 }
 
+@media screen and (max-width: 500px) {
+  footer nav a:nth-of-type(1) {
+    margin-left: -0.25rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  figure picture img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  a.site-name,
+  header nav a {
+    font-size: 1.85rem !important;
+  }
+
+  a.site-name {
+    min-width: 12rem;
+  }
+
+  h1[data-line='slim'] {
+    font-size: calc(62px + (96 - 62) * ((var(--max-vw) - 375px) / (768 - 375)));
+  }
+}
+
+@media screen and (min-width: 468px) {
+  ul.mtg-list,
+  ul.taxonomy-list {
+    --card-width: 14rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  ul.taxonomy > li {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  section.intro picture,
+  section.intro div.img-wrap {
+    margin-right: auto;
+  }
+}
+
+/* Link Interactivity */
 button.party-mode,
 button.party-mode:hover {
   background-color: transparent !important;
@@ -653,7 +660,6 @@ button.party-mode:hover img {
   opacity: 1;
 }
 
-/* Link Interactivity */
 body[data-party='false'] a[rel='noopener noreferrer']:focus,
 body[data-party='false'] a[rel='noopener noreferrer']:hover,
 body[data-party='false'] a.footnote-ref:focus::before,
