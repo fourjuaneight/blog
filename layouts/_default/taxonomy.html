@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <h1
+    class="font-bold font-mdNichrome mt-0 text-center text-8xl uppercase w-full"
+    data-line="slim"
+  >
+    Tags
+  </h1>
+  <section class="taxonomy mb-4 w-full">
+    <ul class="taxonomy-list gap-3 grid list-none mt-6 p-0 w-full">
+      {{ range .Data.Terms.ByCount }}
+        <li class="flex h-auto items-center justify-center m-0 p-0 relative">
+          <a class="focus:underline hover:underline leading-none no-underline p-2 text-center xs:text-left xs:text-xl" href="{{ .Page.Permalink }}">
+            {{ .Page.Title }}
+          </a>
+          <p class="bg-background leading-none ml-4 mr-0 my-0 px-2 py-1 rounded-full text-sm text-tertiary">{{ .Count }}</p>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ partial "intro.html" . }}
+  {{ partial "party-mode.html" . }}
+{{ end }}

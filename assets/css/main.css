@@ -360,6 +360,12 @@ a.site-name {
   }
 }
 
+@media screen and (min-width: 500px) {
+  ul.taxonomy > li {
+    justify-content: flex-start;
+  }
+}
+
 section.intro picture,
 section.intro div.img-wrap {
   justify-content: flex-start;
@@ -442,7 +448,8 @@ svg#loader circle {
 }
 
 ul.mtg-list,
-ul.shelf-list {
+ul.shelf-list,
+ul.taxonomy-list {
   align-items: start;
   justify-content: center;
 }
@@ -455,16 +462,26 @@ ul.mtg-list {
   );
 }
 
+ul.taxonomy-list {
+  --card-width: 10.25rem;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--card-width), var(--card-width))
+  );
+}
+
 ul.shelf-list {
   grid-template-columns: repeat(auto-fit, minmax(165px, 165px));
 }
 
-ul.mtg-list li {
+ul.mtg-list li,
+ul.taxonomy-list li {
   width: var(--card-width);
 }
 
 @media screen and (min-width: 468px) {
-  ul.mtg-list {
+  ul.mtg-list,
+  ul.taxonomy-list {
     --card-width: 14rem;
   }
 }
