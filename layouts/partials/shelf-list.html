@@ -1,9 +1,10 @@
 <section class="mb-4 w-full" data-category="{{ .section }}">
-  <h2
-    class="border-0 border-b border-secondary border-solid capitalize md:text-4xl pb-1 text-3xl"
-  >
-    {{ .section }}
-  </h2>
+  <div class="border-0 border-b border-secondary border-solid flex items-end justify-between mb-3 w-full">
+    <h2 class="capitalize m-0 md:text-4xl pb-1 text-3xl">
+      {{ .section }}
+    </h2>
+    <p class="bg-background leading-none mb-2 mx-0 px-2 py-1 rounded-full text-sm text-tertiary">{{ len .data }}</p>
+  </div>
   <ul class="shelf-list gap-5 grid list-none mt-6 p-0 w-full">
     {{ range .data }}
       {{ partial "shelf-item" (dict "id" .id "completed" .completed "cover" .cover "name" .name "creator" .creator "rating" .rating "comments" .comments "genre" .genre) }}
