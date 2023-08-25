@@ -6,7 +6,6 @@ languageCode: en-us
 enableRobotsTXT: true
 publishdir: dist
 metaDataFormat: yaml
-disableKinds: ["taxonomyTerm"]
 footnoteReturnLinkContents: ↩
 summarylength: 40
 enableEmoji: true
@@ -58,7 +57,7 @@ outputFormats:
     suffix: "svg"
 
 taxonomies:
-  tags: "tags"
+  tag: "tags"
 
 permalinks:
   section: "/:filename/"
