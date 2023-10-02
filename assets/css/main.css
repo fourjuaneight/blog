@@ -563,13 +563,13 @@ li.bk-cell > * {
   text-overflow: ellipsis;
 }
 
-li.bk-cell > a,
+li.bk-cell > a[title],
 li.bk-column-header:nth-of-type(1) {
   min-width: 26rem;
 }
 
 ul.bk-header[data-article='true'] li.bk-column-header:nth-of-type(1),
-ul.bk-body[data-article='true'] li.bk-cell > a {
+ul.bk-body[data-article='true'] li.bk-cell > a[title] {
   min-width: 20rem;
 }
 

@@ -7,8 +7,26 @@
   </h1>
 {{ end }}
 {{ define "main" }}
-  <p>{{ .Content }}</p>
+  {{/*  build data array  */}}
+  {{ $var := newScratch }}
+  {{ $var.Delete "allBookmarks" }}
+
+  {{ range .Pages }}
+    {{ $bookmarks := getJSON "https://bookmarks.villela.co" (dict "Content-Type" "application/json" "table" (lower .Title)) }}
+    {{ $category := .Title }}
+    {{ $isTweet := cond (eq .Title "Tweets") true false }}
+
+    {{ range $bookmarks }}
+      {{ $bkTitle := cond ($isTweet) .tweet .title }}
+
+      {{ $var.Add "allBookmarks" (slice (dict "title" $bkTitle "url" .url "category" $category "tags" .tags))}}
+    {{ end }}
+  {{ end }}
+
+  {{ $allBookmarks := $var.Get "allBookmarks" }}
+
   <section class="w-full">
+    <p>{{ .Content }}</p>
     <ul class="flex flex-wrap items-center justify-start list-none mb-2 mx-0 mt-0 p-0 w-full">
       {{ range .Site.Data.nav.bookmarks }}
         <li class="mr-4 my-2 sm:my-4">
@@ -20,7 +38,144 @@
           </a>
         </li>
       {{ end }}
+      <li class="ml-auto mr-0 my-2 sm:my-4">
+        <p class="bg-background leading-none ml-4 mr-0 my-0 px-2 py-1 rounded-full text-sm text-tertiary">{{ len $allBookmarks }}</p>
+      </li>
     </ul>
+  </section>
+  <section
+    class="bk-table h-full overflow-x-auto overflow-y-hidden w-full"
+    data-loaded="true"
+  >
+    <div class="w-full">
+      <ul
+        class="
+          bk-header
+          bg-background-dark
+          border
+          border-secondary
+          border-solid
+          grid
+          grid-rows-1
+          items-center
+          justify-start
+          list-none
+          m-0
+          p-0
+          w-full
+        "
+        data-article="true"
+      >
+        <li
+          class="
+            bk-column-header
+            col-span-2
+            col-start-1
+            duration-200
+            ease-in-out
+            font-semibold
+            m-0
+            p-2
+            text-xl
+            w-full
+          "
+        >
+          Title
+        </li>
+        <li
+          class="
+            bk-column-header
+            col-start-3
+            duration-200
+            ease-in-out
+            font-semibold
+            m-0
+            p-2
+            text-xl
+            w-full
+          "
+        >
+          Category
+        </li>
+        <li
+          class="
+            bk-column-header
+            col-start-4
+            duration-200
+            ease-in-out
+            font-semibold
+            m-0
+            p-2
+            text-xl
+            w-full
+          "
+        >
+          Tags
+        </li>
+      </ul>
+      <ul
+        class="
+          bk-body
+          bg-background-dark
+          border
+          border-secondary
+          border-solid
+          border-t-0
+          flex
+          flex-col
+          items-start
+          justify-start
+          list-none
+          m-0
+          p-0
+          relative
+          w-full"
+        data-article="true"
+      >
+        {{ if ne $allBookmarks nil }}
+          {{ range sort $allBookmarks (lower "title") "asc" }}
+            {{ $tagsLength := sub (len .tags) 1 }}
+
+            <li
+              class="bk-cell border-solid duration-200 ease-in-out grid grid-rows-1 m-0 p-0 transition-all w-full"
+            >
+              <a
+                class="col-span-2 col-start-1 focus:no-underline hove:no-underline m-0 no-underline p-0 px-2 relative w-full whitespace-nowrap"
+                href="{{ .url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="{{ .title }}"
+              >
+                {{ .title }}
+              </a>
+              <a
+                class="col-start-3 focus:no-underline hove:no-underline m-0 no-underline p-0 px-2 relative w-full whitespace-nowrap"
+                href='{{ printf "bookmarks/%s" (lower .category) | absURL }}'
+              >
+                {{ .category }}
+              </a>
+              <div class="col-start-4 flex items-center justify-start overflow-x-hidden px-2 w-full" title='{{ delimit .tags ", " }}'>
+                <span class="sr-only">Relevant tags: </span>
+                <ul
+                  class="flex items-center justify-start list-none p-0 w-full"
+                >
+                  {{ range $i, $tag := .tags }}
+                    <li
+                    class="flex items-center justify-start m-0 p-0 whitespace-nowrap"
+                    >
+                      <p class="leading-none m-0 p-0">{{ $tag }}</p>
+                      {{ if ne $i $tagsLength }}
+                        <span class="tag-comma leading-none mr-1 text-secondary" aria-hidden="true">,</span>
+                      {{ end }}
+                    </li>
+                  {{ end }}
+                </ul>
+              </div>
+            </li>
+          {{ end}}
+        {{ end}}
+      </ul>
+    </div>
   </section>
   {{ if ne .Params.footer nil }}
     <section class="footer w-full">

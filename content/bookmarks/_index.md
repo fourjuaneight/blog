@@ -10,4 +10,4 @@ A while back I gave up on trying to find a decent service to keep my bookmarks. 
 
 To learn more about why I landed on this solution for bookmarking, you can read this post: [Spreadsheets Revolutions](/posts/spreadsheets-revolutions/).
 
-Pick any of the links below to check them out.
+You can filter by category by clicking on the titles below.
