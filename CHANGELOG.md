@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.15.0] - 2023-10-02
+
+### Features
+
+- [Add post about refactoring.](https://github.com/fourjuaneight/blog/commit/a6f8e529c5eb7745c59dbc6a074dc05e1a3bf55c)
+- [Add post on pull requests.](https://github.com/fourjuaneight/blog/commit/6fce350396e8db4f080958178f1206b98c543736)
+- [Update landing bookmarks page to include a table of all bookmarks.](https://github.com/fourjuaneight/blog/commit/483d277eed79a53fd4b2b7674b80411958fdb0ee)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/fe66d7640a0c62b092a9fd8973f1e4dd1b5f6212)
+- [Update to v1.15.0.](https://github.com/fourjuaneight/blog/commit/279c5e84dcd8eeb621d54ce7d787d02af6cb6d13)
+
 ## [1.14.0] - 2023-08-25
 
 ### Bug Fixes
