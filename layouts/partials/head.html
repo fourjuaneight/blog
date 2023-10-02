@@ -3,9 +3,6 @@
 {{ $pageFile := .RelPermalink | replaceRE "/posts" "" | replaceRE "/" "" }}
 {{ $imgFilePath := cond (eq .Title "Archive") "archive" $pageFile }}
 {{ $socialMain := resources.Get "img/social.jpeg" }}
-{{ $socialPage := print .Permalink "social.jpeg" }}
-{{ $socialHome := cond (eq .IsHome true) $socialMain.Permalink $socialPage }}
-{{ $socialImgPath := cond (eq .Kind "term") $socialMain.Permalink $socialHome }}
 
 <head>
   <base href="{{ .Permalink }}" />
@@ -38,14 +35,14 @@
   <meta property="og:site_name" content="{{ .Site.Title }}" />
   <meta property="og:title" content="{{ $title }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="{{ $socialImgPath }}" />
-  <meta property="og:image:secure_url" content="{{ $socialImgPath }}" />
+  <meta property="og:image" content="{{ $socialMain.Permalink }}" />
+  <meta property="og:image:secure_url" content="{{ $socialMain.Permalink }}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:url" content="{{ .Permalink }}" />
   <meta property="twitter:site" content="{{ .Site.Params.meta.social }}" />
-  <meta name="twitter:image" content="{{ $socialImgPath }}" />
+  <meta name="twitter:image" content="{{ $socialMain.Permalink }}" />
   <meta name="twitter:card" content="summary" />
   <meta
     name="twitter:description"
@@ -62,7 +59,7 @@
           "@id": "{{ .Permalink }}",
         },
         "headline": "{{ $title }}",
-        "image": "{{ $socialImgPath }}",
+        "image": "{{ $socialMain.Permalink }}",
         "author": {
           "@type": "Person",
           "name": "{{ .Site.Params.meta.author }}",
