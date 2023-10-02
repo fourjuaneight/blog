@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.15.2] - 2023-10-02
+
+### Bug Fixes
+
+- [Social image path.](https://github.com/fourjuaneight/blog/commit/0dddcfe8ab6896cdbc34515ff17518ef3215b7b9)
+
+### Features
+
+- [Remove social card generation.](https://github.com/fourjuaneight/blog/commit/049eaf777b5e16a30c87848f43429b226a14b783)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/fdc66fad51f8abcefdb89c134e35cde5dceac3a8)
+- [Update to v1.15.1.](https://github.com/fourjuaneight/blog/commit/78b30ed60e13c2e557d2cc26b1a76b757197aba0)
+- [Update to v1.15.2.](https://github.com/fourjuaneight/blog/commit/343d21b65c0d40e57df18311c11ca5904c08122d)
+
 ## [1.15.0] - 2023-10-02
 
 ### Features
