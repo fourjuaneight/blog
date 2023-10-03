@@ -1,6 +1,6 @@
 ---
 title: "Data Hoarding and the Death of Collecting"
-seo_title: "Reclaiming Our Relationship with Media in the Digital Age"
+og: "The Death of Collecting"
 description: "It's easy to lose sight of the physical relationships we once had with the media we consume in the digital age. The ease with which we can collect and store data has altered our relationship with media and how we organize it. We can reclaim this relationship by developing better systems for organizing and prioritizing information."
 date: 2023-02-06
 tags:
