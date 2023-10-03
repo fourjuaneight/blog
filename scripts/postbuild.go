@@ -97,7 +97,7 @@ func socialImgs() {
 		if err != nil {
 			log.Fatal("[socialImgs][image.Decode]:", err)
 		}
-		dstImg := imaging.Resize(img, 1200, 630, imaging.Lanczos)
+		dstImg := imaging.Resize(img, 1200, 1200, imaging.Lanczos)
 		err = jpeg.Encode(imgFile, dstImg, &jpeg.Options{Quality: 100})
 		if err != nil {
 			log.Fatal("[socialImgs][jpeg.Encode]:", err)
