@@ -3,6 +3,7 @@ Disallow: /
 
 User-agent: *
 Allow: /
+Disallow: /social-img/
 Disallow: /tags/
 
 Sitemap: https://cleverlaziness.xyz/sitemap.xml

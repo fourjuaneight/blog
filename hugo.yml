@@ -49,6 +49,12 @@ outputFormats:
     mediaType: application/feed+json
     name: "manifest"
     suffix: "json"
+  social:
+    baseName: "social"
+    isPlainText: true
+    mediaType: image/svg+xml
+    name: "social"
+    suffix: "svg"
 
 taxonomies:
   tag: "tags"
@@ -60,8 +66,8 @@ permalinks:
 
 outputs:
   home: ["html", "manifest"]
-  page: ["html"]
-  section: ["html", "jsonfeed", "rss"]
+  page: ["html", "social"]
+  section: ["html", "jsonfeed", "rss", "social"]
 
 sitemap:
   changefreq: monthly
