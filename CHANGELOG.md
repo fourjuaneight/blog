@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.16.0] - 2023-10-03
+
+### Bug Fixes
+
+- [Restore social image pipeline.](https://github.com/fourjuaneight/blog/commit/eab5ebe60302aac007c778dbcc6d228008b01405)
+- [Use page specific social image.](https://github.com/fourjuaneight/blog/commit/53d35b6e54664e348449ffdf0b030fedb6a4272c)
+- [Update social image sizing on post build script.](https://github.com/fourjuaneight/blog/commit/31937b0a5656cfa4ab99e9025c767e4b94ed7d17)
+
+### Features
+
+- [Use smaller social image.](https://github.com/fourjuaneight/blog/commit/ad0f4abbde6f5de4335edb808d6f7f35814a50e4)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/5ecfb54daae99ed72b26424be00d583714ce411a)
+- [Update to v1.16.0.](https://github.com/fourjuaneight/blog/commit/6068bb42d4e746ce2bd122d9fb2f6edb3bd9d92e)
+
 ## [1.15.2] - 2023-10-02
 
 ### Bug Fixes
