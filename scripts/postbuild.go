@@ -79,7 +79,7 @@ func socialImgs() {
 		page := browser.MustPage(route).MustEmulate(devices.LaptopWithHiDPIScreen)
 		page.SetViewport(&proto.EmulationSetDeviceMetricsOverride{
 			Width:  1200,
-			Height: 630,
+			Height: 1200,
 		})
 		// take screenshot
 		imgBytes := page.MustWaitLoad().MustScreenshot("social.jpeg")
