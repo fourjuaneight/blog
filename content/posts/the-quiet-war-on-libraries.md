@@ -1,6 +1,6 @@
 ---
 title: "The Quiet War on Libraries"
-description: "In an era where disinformation is the new currency and social media algorithms determine what is "true," the necessity of libraries has never been more pressing. Yet, here we are, watching the very foundations of these institutions crumble, not by accident, but by design."
+description: "In an era where disinformation is the new currency and social media algorithms determine what is \"true,\" the necessity of libraries has never been more pressing. Yet, here we are, watching the very foundations of these institutions crumble, not by accident, but by design."
 date: 2023-10-14
 tags:
   - conspiracies
