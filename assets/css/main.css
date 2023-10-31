@@ -359,6 +359,12 @@ section.intro div.img-wrap.hero-alt img {
 article ol,
 article ul {
   padding-left: 1rem;
+  margin-left: 1rem;
+}
+
+article ol ul,
+article ul ol {
+  margin: 0.75rem 0;
 }
 
 a.footnote-ref {

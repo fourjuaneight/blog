@@ -31,8 +31,8 @@ I prefer to walk around in circles in my home office. I find it to be the perfec
 
 0. I write down my goals for the day and collect previous data.
 1. Items are separated by actionable and not urgent.
-  * Actionable tasks are taken care of promptly.
-  * Timely matters are scheduled accordingly.
+    - Actionable tasks are taken care of promptly.
+    - Timely matters are scheduled accordingly.
 2. Once my day is organized, items are placed and tagged respectively in Todoist.
 
 Relaxing after long periods of work is critical to a successful day as well. I make it a priority in my day to schedule regular breaks, both short and long ones. If you rob yourself of these small pockets of laziness, you sacrifice *Intensity of Focus*. We often think of ourselves as computers, which can run endlessly with a constant source of energy. We can't; we depend on a balanced cycle of work and rest. "Grey matter tires well before the body does," as [Joe Robinson](https://www.entrepreneur.com/article/237446) cleverly said it. Having scheduled breaks eliminates the ambiguity and guilt out of pausing for a breather, giving your brain to sort things out and regain focus.
