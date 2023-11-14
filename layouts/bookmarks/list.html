@@ -64,12 +64,11 @@
           p-0
           w-full
         "
-        data-article="true"
+        data-article="false"
       >
         <li
           class="
             bk-column-header
-            col-span-2
             col-start-1
             duration-200
             ease-in-out
@@ -85,7 +84,7 @@
         <li
           class="
             bk-column-header
-            col-start-3
+            col-start-2
             duration-200
             ease-in-out
             font-semibold
@@ -100,7 +99,7 @@
         <li
           class="
             bk-column-header
-            col-start-4
+            col-start-3
             duration-200
             ease-in-out
             font-semibold
@@ -130,7 +129,7 @@
           p-0
           relative
           w-full"
-        data-article="true"
+        data-article="false"
       >
         {{ if ne $allBookmarks nil }}
           {{ range sort $allBookmarks (lower "title") "asc" }}
@@ -140,7 +139,7 @@
               class="bk-cell border-solid duration-200 ease-in-out grid grid-rows-1 m-0 p-0 transition-all w-full"
             >
               <a
-                class="col-span-2 col-start-1 focus:no-underline hove:no-underline m-0 no-underline p-0 px-2 relative w-full whitespace-nowrap"
+                class="col-start-1 focus:no-underline hove:no-underline m-0 no-underline p-0 px-2 relative w-full whitespace-nowrap"
                 href="{{ .url }}"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -149,12 +148,12 @@
                 {{ .title }}
               </a>
               <a
-                class="col-start-3 focus:no-underline hove:no-underline m-0 no-underline p-0 px-2 relative w-full whitespace-nowrap"
+                class="col-start-2 focus:no-underline hove:no-underline m-0 no-underline p-0 px-2 relative w-full whitespace-nowrap"
                 href='{{ printf "bookmarks/%s" (lower .category) | absURL }}'
               >
                 {{ .category }}
               </a>
-              <div class="col-start-4 flex items-center justify-start overflow-x-hidden px-2 w-full" title='{{ delimit .tags ", " }}'>
+              <div class="col-start-3 flex items-center justify-start overflow-x-hidden px-2 w-full" title='{{ delimit .tags ", " }}'>
                 <span class="sr-only">Relevant tags: </span>
                 <ul
                   class="flex items-center justify-start list-none p-0 w-full"

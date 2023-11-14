@@ -557,6 +557,14 @@ ul.bk-body[data-article='true'] li.bk-cell {
     minmax(12rem, 16rem);
 }
 
+ul.bk-header[data-article='false'],
+ul.bk-body[data-article='false'] li.bk-cell {
+  grid-template-columns:
+    minmax(20rem, 30rem)
+    minmax(10rem, 14rem)
+    minmax(12rem, 16rem);
+}
+
 li.bk-cell {
   border-color: var(--tertiary-transparent);
   border-width: 0.03125rem 0;
@@ -574,8 +582,8 @@ li.bk-column-header:nth-of-type(1) {
   min-width: 26rem;
 }
 
-ul.bk-header[data-article='true'] li.bk-column-header:nth-of-type(1),
-ul.bk-body[data-article='true'] li.bk-cell > a[title] {
+ul.bk-header li.bk-column-header:nth-of-type(1),
+ul.bk-body li.bk-cell > a[title] {
   min-width: 20rem;
 }
 
