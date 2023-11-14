@@ -19,9 +19,6 @@ social:
   - label: Mastodon
     link: https://mastodon.social/@fourjuaneight
     linkback: true
-  - label: Twitter
-    link: https://twitter.com/fourjuaneight
-    external: true
   - label: GitHub
     link: https://github.com/fourjuaneight
     external: true
