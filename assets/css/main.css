@@ -599,6 +599,14 @@ sup a {
   text-decoration: none !important;
 }
 
+section.post-footer picture {
+  margin: 0;
+}
+
+section.post-footer picture img {
+  max-width: 2.5rem;
+}
+
 footer p {
   line-height: 1.25 !important;
 }

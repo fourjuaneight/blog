@@ -18,13 +18,27 @@
       </section>
     {{ end }}
     <section class="content">{{ .Content }}</section>
-    {{ if ne .Params.footer nil }}
-      <section class="footer">
-        {{ partial "img.html" (dict "src" .Params.footer.img "alt" .Params.footer.alt "size" "1024") }}
-      </section>
-    {{ end }}
     {{ partial "party-mode.html" . }}
   </article>
+  {{ $related := ($.Site.GetPage "section" "posts").RegularPages.Related . }}
+  {{ with $related }}
+  <section class="border border-dashed border-secondary flex flex-col items-start justify-start mt-4 p-4 rounded w-full">
+    <div class="border-0 border-b border-secondary border-solid flex items-end justify-between mb-3 w-full">
+      <h2 class="capitalize m-0 md:text-4xl pb-1 pt-0 text-3xl">See Also</h2>
+    </div>
+    {{ range last 3 $related }}
+    <article class="relative w-full">
+      <h2 class="mr-auto">
+        <a class="focus:underline hover:underline no-underline" href="{{ .Permalink }}">
+          {{ .Title }}
+        </a>
+      </h2>
+      {{ partial "meta.html" . }}
+      <p>{{ .Params.description }}</p>
+    </article>
+    {{ end }}
+  </section>
+  {{ end }}
 {{ end }}
 {{ define "styles" }}
 {{ if eq .Title "Looks like you're offline." }}
