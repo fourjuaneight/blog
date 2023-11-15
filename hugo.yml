@@ -59,6 +59,26 @@ outputFormats:
 taxonomies:
   tag: "tags"
 
+related:
+  includeNewer: true
+  indices:
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: keywords
+    pattern: ""
+    toLower: false
+    type: basic
+    weight: 100
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: tags
+    pattern: ""
+    toLower: false
+    type: basic
+    weight: 90
+  threshold: 50
+  toLower: true
+
 permalinks:
   section: "/:filename/"
   posts: "/posts/:filename/"
