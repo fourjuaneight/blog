@@ -2,6 +2,37 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.17.0] - 2023-11-15
+
+### Bug Fixes
+
+- [Update viewport sizing when capturing social images.](https://github.com/fourjuaneight/blog/commit/b19d66eac1a220e850c2c4e823a6a0f89c9e36a9)
+- [Minor social image styling and layout optimzations for larger titles.](https://github.com/fourjuaneight/blog/commit/2e065d4fe78ad3b3d25dafc50f8478a099644599)
+- [Minor syntax correction.](https://github.com/fourjuaneight/blog/commit/94ff8b5e5f894d8de56808d277e4cf7db718ae28)
+- [Update selection to an accessible color scheme.](https://github.com/fourjuaneight/blog/commit/68fb43abea08bb16bce35fe35f5489d675d17adf)
+- [Update ol and ul padding.](https://github.com/fourjuaneight/blog/commit/f1ae476d0c6cf36649d555b860f9abfe30103e1e)
+- [Update meta content to bottom align on mobile.](https://github.com/fourjuaneight/blog/commit/48e8fe96f3c171e4931d3bb055c61fca9f0098dd)
+
+### Features
+
+- [Add google amp post.](https://github.com/fourjuaneight/blog/commit/d0a48ad399665345089748c7539be71610d208e1)
+- [Add post about the war on libraries.](https://github.com/fourjuaneight/blog/commit/afe3e9d4026b7202a7f98fa8e543a06143cf6c4d)
+- [Add post about seo.](https://github.com/fourjuaneight/blog/commit/7a3c9d6ec5165523517de5b9931f3e5caef14b6f)
+- [Add related content to foot of posts.](https://github.com/fourjuaneight/blog/commit/68829944411eed27a9b1d783c0a9069e0499fe97)
+- [Add post about untalented developers.](https://github.com/fourjuaneight/blog/commit/5ba64a810024400c72526092bd6c48fd21296b63)
+- [Update related content config for better matches.](https://github.com/fourjuaneight/blog/commit/8f21f2154619a30359b93f46bbd9e4931ea21a49)
+- [Track outbound links.](https://github.com/fourjuaneight/blog/commit/53f88d4b6f763d56d502a126317a8f38658267af)
+- [Add bg pattern to social imgs.](https://github.com/fourjuaneight/blog/commit/0e6d51c7ff88e7fca4ed991b601378a68d1763be)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/a0d6615d606f54ec9a3d79b2157c993dcd81bfa3)
+- [Update seo title.](https://github.com/fourjuaneight/blog/commit/407785f0c8dde3a53b86bdf32644cbc0428abb83)
+- [Minor grammer updates.](https://github.com/fourjuaneight/blog/commit/a1812017ae7ffe595e21860e59c50b3f8a029939)
+- [Remove twitter link.](https://github.com/fourjuaneight/blog/commit/65902ef4f7a8f1431b5169a1ed97fd38036d917a)
+- [Minor bookmarks table mobile optimizations.](https://github.com/fourjuaneight/blog/commit/11fb744c23b590a6a417934c60744b5b4266c9c5)
+- [Update to v1.17.0.](https://github.com/fourjuaneight/blog/commit/62a30794f6d933c692c6a1d4130c0eb9e232e63b)
+
 ## [1.16.0] - 2023-10-03
 
 ### Bug Fixes
