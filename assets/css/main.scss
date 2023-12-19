@@ -157,6 +157,19 @@ $mdNichrome: MD Nichrome, sans-serif;
   }
 }
 
+@keyframes reveal {
+  0% {
+    color: var(--foreground);
+    opacity: 1;
+    width: 100%;
+  }
+  100% {
+    color: var(--background-dark);
+    opacity: 0;
+    width: 0;
+  }
+}
+
 a {
   color: var(--foreground);
   text-decoration: underline;
@@ -551,13 +564,13 @@ a.site-name {
 
     &:nth-of-type(2) {
       animation: shift2 200ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
-      fill: var(--secondary);
+      fill: #ff0000;
       z-index: 20;
     }
 
     &:nth-of-type(3) {
       animation: shift3 200ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
-      fill: var(--primary);
+      fill: #0000ff;
       z-index: 10;
     }
   }
@@ -576,6 +589,31 @@ a.site-name {
         animation: unset;
         transform: translateX(-3.5rem);
       }
+    }
+  }
+
+  #site-title {
+    &::after,
+    &::before {
+      background: var(--background-dark);
+      clip: rect(0, 900px, 0, 0);
+      content: attr(data-text);
+      color: var(--foreground);
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+    }
+
+    &::after {
+      animation: glitch1 2s infinite linear alternate-reverse;
+      left: 2px;
+      text-shadow: -1px 0 #ff0000;
+    }
+
+    &::before {
+      animation: glitch2 3s infinite linear alternate-reverse;
+      left: -2px;
+      text-shadow: 1px 0 #0000ff;
     }
   }
 }

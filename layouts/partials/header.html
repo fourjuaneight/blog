@@ -4,7 +4,7 @@
   >
     <a
       href="{{ .Site.BaseURL }}"
-      class="site-name auto-cols-min focus:no-underline gap-4 grid grid-rows-1 font-bold font-mdNichrome hover:no-underline items-center no-underline relative text-center text-foreground text-3xl uppercase w-auto"
+      class="site-name auto-cols-min focus:text-primary focus:no-underline gap-4 grid grid-rows-1 font-bold font-mdNichrome hover:text-primary hover:no-underline items-center no-underline relative text-center text-foreground text-3xl uppercase w-auto"
       data-line="slim"
       data-underline="true"
       title="{{ .Site.Title }}"
@@ -14,7 +14,13 @@
         {{ partial "logo.html" . }}
         {{ partial "logo.html" . }}
       </div>
-      <span class="hidden sm:block whitespace-nowrap" aria-hidden="true">{{ .Site.Title }}</span>
+      <span
+        id="site-title"
+        class="hidden overflow-hidden sm:block relative whitespace-nowrap"
+        data-loaded="false"
+        aria-hidden="true"
+      >
+      </span>
     </a>
     <nav class="gap-x-4 grid grid-cols-3-min-content grid-rows-1 items-center sm:m-0 w-auto">
       {{ range .Site.Data.nav.header }}
