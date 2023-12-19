@@ -137,6 +137,26 @@ $mdNichrome: MD Nichrome, sans-serif;
   }
 }
 
+@keyframes glitch1 {
+  $steps: 20;
+
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100) + px, 9999px, random(100) + px, 0);
+    }
+  }
+}
+
+@keyframes glitch2 {
+  $steps: 20;
+
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100) + px, 9999px, random(100) + px, 0);
+    }
+  }
+}
+
 a {
   color: var(--foreground);
   text-decoration: underline;
@@ -186,32 +206,32 @@ a {
   &.footnote-ref {
     padding: 0 0.15rem;
     text-decoration: none;
-  
+
     &::before {
       color: var(--secondary);
       content: '[';
     }
-  
+
     &::after {
       color: var(--secondary);
       content: ']';
     }
-  
+
     &:focus {
       &::before {
         color: var(--primary);
       }
-  
+
       &::after {
         color: var(--primary);
       }
     }
-  
+
     &:hover {
       &::before {
         color: var(--primary);
       }
-  
+
       &::after {
         color: var(--primary);
       }
@@ -220,22 +240,22 @@ a {
 
   &.tags {
     margin: 0 0 0 0.5rem;
-  
+
     &:focus {
       text-decoration: underline;
     }
-  
+
     &:focus-visible {
       text-decoration: underline;
     }
-  
+
     &:hover {
       span {
         color: var(--primary);
       }
     }
   }
-  
+
   &[data-dark='true'] {
     color: var(--background);
   }
@@ -515,7 +535,11 @@ div[data-type='spacer'] {
 }
 
 a.site-name {
-  width: 2.25rem;
+  grid-template-columns: repeat(2, auto);
+
+  > div {
+    width: 2rem;
+  }
 
   svg {
     min-width: 1.75rem;
@@ -538,22 +562,7 @@ a.site-name {
     }
   }
 
-  &:focus {
-    svg {
-      fill: var(--primary);
-
-      &:nth-of-type(2) {
-        animation: unset;
-        transform: translateX(-1.75rem);
-      }
-
-      &:nth-of-type(3) {
-        animation: unset;
-        transform: translateX(-3.5rem);
-      }
-    }
-  }
-
+  &:focus,
   &:hover {
     svg {
       fill: var(--primary);
