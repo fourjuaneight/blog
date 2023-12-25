@@ -605,15 +605,26 @@ a.site-name {
     }
 
     &::after {
-      animation: glitch1 2s infinite linear alternate-reverse;
+      animation: glitch1 40s infinite linear alternate-reverse;
       left: 2px;
       text-shadow: -1px 0 #ff0000;
     }
 
     &::before {
-      animation: glitch2 3s infinite linear alternate-reverse;
+      animation: glitch2 60s infinite linear alternate-reverse;
       left: -2px;
       text-shadow: 1px 0 #0000ff;
+    }
+
+  }
+
+  &:focus,
+  &:hover {
+    #site-title {
+      &::after,
+      &::before {
+        animation: none;
+      }
     }
   }
 }
