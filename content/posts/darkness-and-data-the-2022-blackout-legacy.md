@@ -2,7 +2,7 @@
 title: "Shadows and Data: The 2022 Blackout Legacy"
 seo_title: "Shadows and Data: Navigating Memory and Identity in the Aftermath of the 2022 Blackout"
 og: "Shadows and Data"
-description: "The city of Los Angeles finds itself shrouded in an unprecedented darkness. The year is 2022, now defined by a catastrophic event known simply as the Blackout, marked not just by the absence of light but by the erasure of electronic data—a reset of culture and society. This chilling scenario sets the stage for the profound narrative of Blade Runner 2049, a sequel that delves deeply into the implications of memory and identity in a technologically advanced and dystopian world."
+description: "The city of Los Angeles finds itself shrouded in an unprecedented darkness. The year is 2022, now defined by a catastrophic event known simply as the Blackout, marked not just by the absence of light but by the erasure of electronic data—a reset of culture and society."
 date: 2023-12-19
 tags:
   - archiving
