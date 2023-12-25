@@ -7,22 +7,21 @@ tags:
   - archiving
 draft: false
 ---
+The way we interact with media has undergone a remarkable shift recently, thanks to the constantly changing digital landscape. This transformation has profoundly impacted our media consumption habits, which have evolved significantly. The sheer volume of data and information at our fingertips is staggering, yet this abundance brings a paradoxical challenge. The ease of access and seemingly endless storage have led to an information overload, complicating our ability to forge meaningful connections with the content we consume.
 
-The modern world has transformed how we consume and engage with media. We now have access to a nrealy limitless quantity of data and information. But this has come at a cost. Because of the ease of access and endless storage, we are overwhelmed by information, making it difficult for us to build meaningful relationships with it.
+There's a nostalgic charm to the bygone era when our interaction with media was tangibly personal. Our collections were meticulously curated, reflecting our unique tastes and preferences, each item holding a special place in our physical world. This intimate bond has been disrupted by the surge of large tech corporations and the digitization of media. Platforms such as Spotify and Netflix now shape our interaction with media, their algorithms subtly guiding our choices and reshaping our digital libraries.
 
-It's easy to forget that we once had physical relationships with the media we consumed. We used to arrange and organize our collections, designing our one-of-a-kind structures that reflected our individual preferences and tastes. This relationship, however, has been disrupted by the growth of large tech companies and the digitization of media. Platforms like Spotify and Netflix, for example, dictate how we interact with our media collections, updating their interfaces and rearranging data based on algorithmically generated profiles of ourselves.
+This era of unlimited streaming has simplified the addition of myriad items to our collections, yet it has also propelled us into a cycle of rapid consumption. This frenzy often leads to hoarding, diminishing the intrinsic value of the content we amass. The automated curation provided by these services has supplanted the need for personal organization, altering our connection with our media.
 
-Unlimited streaming allows us add any number of items to our libraries with ease, but it also pushes us to consume more information quicker, which leads to hoarding and dilutes the value of the stuff we add. The reliance on the automated curation of these services have replaced the necessity for sorting, and our connection with our media has altered as a result.
+Consequently, our control and agency over our collections have diminished, leaving us at the mercy of software algorithms designed to optimize platform engagement rather than enrich our personal experience.
 
-As a result, we have lost control and agency over our collections. There is no curation. Just software figuring out how to keep us on the platform.
+Is it possible to regain dominion over our media? Certainly, but it requires deliberate effort. By consciously selecting and prioritizing our media consumption, we can cultivate a collection that resonates with our values rather than indiscriminately hoarding content.
 
-Can we reclaim control of our media? Sure. But not without some effort. We could be more conscious of the information we consume and prioritize what is important to us, rather than just storing everything away for later. There should be a purpose behind what we choose to keep.
+Enhancing our methods of organizing and prioritizing this content is crucial. This doesn't necessarily mean creating private data vaults; instead, it involves establishing an accessible, structured, and searchable archive. A well-maintained archive facilitates easier access and enhances the value of the content we gather.
 
-We can improve the processes for organizing and prioritizing the stuff we collect. This does not necessarily imply having private data silos, but rather an archive that is structured and searchable, and available to anyone who requires it. A well-organized archive not only makes it simpler to find what we need but also raises the value of the material we gather.
+Yet, the reality is that many lack the time or resources to organize their media meticulously. Despite a resurgence in physical media, its practicality pales compared to digital formats. However, platforms like Plex and Roon offer a middle ground, enabling thoughtful organization of media libraries that are accessible from anywhere. While not flawless, these platforms represent a positive step towards more purposeful curation.
 
-The majority of people, however, lack the time and resources to arrange their media in this manner. And while physical media has had a revival, it is still not as practical as its digital counterparts. But there are ways to curate your media purposefully, even if you don't have the time or resources to organize it. Plex, for example, allows you to create a media library that is organized thoughtfully and can be accessed from anywhere. Roon does the same but focuses exclusively on music. These platforms are not perfect, but they are a step in the right direction.
-
-We can rekindle the connection with our media by intentionally seeking out the stuff we want and creating new experiences and memories with them. By taking a step back and embracing the tangible aspect of media, we can rediscover the nostalgia and emotional attachment that has been lost. Our relationship with media is not just about access, but about the memories and emotions that we associate with it.
+By intentionally seeking and engaging with content that resonates, we can reinvigorate our connection with our media. Embracing the tangible aspects of media allows us to rekindle the nostalgia and emotional attachment that seems to have faded in the digital era. Our relationship with media transcends mere access; it is intrinsically linked to the memories and emotions we associate with it.
 
 ---
 
