@@ -11,7 +11,7 @@ draft: false
 ---
 
 
-In today's digital era, we often hear the phrase, "The Internet is forever." However, a closer examination of the online world reveals a different reality. [Contrary to popular belief, the internet is not a permanent archive of our shared digital experiences](/posts/the-ephemeral-web/). Instead, it's a dynamic and ever-changing environment shaped by technological advancements and corporate decisions. This reality is particularly evident in the video game preservation field and the broader context of digital content consumption.
+We often hear, "What goes online, stays online." However, the reality is far from that. The internet is not a static repository of our digital footprints but rather [a dynamic and constantly evolving ecosystem that changes with advances in technology and corporate decisions](/posts/the-ephemeral-web/). This reality is especially evident in video game preservation and the broader context of digital content consumption.
 
 A study by the Video Game History Foundation and the Software Preservation Network uncovered a concerning fact: [87% of classic video games in the U.S. are at risk of being lost](https://gamehistory.org/87percent/). This statistic highlights the fragile nature of digital content, which, unlike physical media, can vanish due to changes in digital platforms and formats.
 

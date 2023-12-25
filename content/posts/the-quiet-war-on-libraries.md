@@ -10,7 +10,7 @@ draft: false
 ---
 
 
-In an era where disinformation is the new currency and social media algorithms determine what is "true," the necessity of libraries—those venerable institutions of knowledge and democracy—has never been more pressing. Yet, here we are, watching the very foundations of these institutions crumble, not by accident, but by design.
+Misinformation has become a valuable commodity and social media algorithms dictate what is considered "truth," the importance of libraries, those revered establishments of knowledge and democracy, has never been more crucial. Nevertheless, we find ourselves in a situation where these institutions' very foundations are collapsing, not due to chance, but by deliberate design.
 
 Libraries are under siege, and it's not only from budget cuts or the digitization of media. It's from a more insidious form of erosion—extremist political views and late-stage capitalism. Libraries are fighting to lend digital books, but publishers are pushing back, treating digital copies as rental-only media. [The Guardian's piece on the U.S. library system's struggle with digital licensing paints a grim picture.](https://www.theguardian.com/commentisfree/2023/oct/09/us-library-system-attack-digital-licensing) Libraries are being forced to pay exorbitant fees for digital copies that expire after a certain number of loans.
 

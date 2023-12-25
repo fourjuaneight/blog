@@ -8,8 +8,7 @@ tags:
 draft: false
 ---
 
-
-In the realm of software development, there's a peculiar phenomenon that [Baldur Bjarnason aptly describes as the "benefits of time."](https://www.baldurbjarnason.com/2023/disinterest/) 
+In software development, there exists a unique concept, as explained by [Baldur Bjarnason, known as the "benefits of time"](https://www.baldurbjarnason.com/2023/disinterest/).
 
 > When you're writing or coding, letting the work rest for a day or two usually lets you review it with a fresh perspective revealing its flaws as obvious. This goes beyond the usual recuperative effect of rest.
 
