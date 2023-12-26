@@ -19,9 +19,9 @@ Is it possible to regain dominion over our media? Certainly, but it requires del
 
 Enhancing our methods of organizing and prioritizing this content is crucial. This doesn't necessarily mean creating private data vaults; instead, it involves establishing an accessible, structured, and searchable archive. A well-maintained archive facilitates easier access and enhances the value of the content we gather.
 
-Yet, the reality is that many lack the time or resources to organize their media meticulously. Despite a resurgence in physical media, its practicality pales compared to digital formats. However, platforms like Plex and Roon offer a middle ground, enabling thoughtful organization of media libraries that are accessible from anywhere. While not flawless, these platforms represent a positive step towards more purposeful curation.
+Yet, the reality is that many need more time or resources to organize their media meticulously. Despite a resurgence in physical media, its practicality pales compared to digital formats. However, platforms like Plex and Roon offer a middle ground, enabling thoughtful organization of media libraries that are accessible from anywhere. While not flawless, these platforms represent a positive step towards more purposeful curation.
 
-By intentionally seeking and engaging with content that resonates, we can reinvigorate our connection with our media. Embracing the tangible aspects of media allows us to rekindle the nostalgia and emotional attachment that seems to have faded in the digital era. Our relationship with media transcends mere access; it is intrinsically linked to the memories and emotions we associate with it.
+By intentionally seeking and engaging with content that resonates, we can reinvigorate our connection with our media. Embracing the tangible aspects of media allows us to rekindle the nostalgia and emotional attachment that has faded in the digital era. Our relationship with media transcends mere access; it is intrinsically linked to the memories and emotions we associate with it.
 
 ---
 

@@ -12,7 +12,7 @@ draft: false
 
 Working remotely as a web developer offers incredible flexibility, but let's face it, distractions are a struggle for us all. Dave Rupert's thought-provoking blog post, "[Bag of Distractions](https://daverupert.com/2023/02/bag-of-distractions/)," got me thinking of the allure of the digital realm and how it impacts our productivity as we toil away in our home offices.
 
-Dave's take on the never-ending scroll of social media resonated deeply with me. As developers, we are constantly online and must tread carefully to avoid being sucked into the bottomless pit of memes and endless news cycles. It's a delicate dance, balancing our curiosity with the need to buckle down and code.
+Dave's take on the never-ending social media scroll resonated deeply with me. As developers, we are constantly online and must tread carefully to avoid being sucked into the bottomless pit of memes and endless news cycles. It's a delicate dance, balancing our curiosity with the need to buckle down and code.
 
 Notifications are the bane of our existence. Ding! An email arrives. Ping! A chat message pings. Buzz! A software update clamors for attention. These digital nudges constantly vie for our focus, tempting us away from the deep, uninterrupted flow we crave.
 
@@ -20,7 +20,7 @@ And let's not forget about digital clutter—our digital playgrounds can quickly
 
 But fret not, my fellow devs, for there is hope. Dave reminds us to harness the power of intentional focus and carve out space for deep work. As creators, we thrive on the ability to solve problems, execute creative visions, and weave magic with our code. To do so, we must reclaim our attention from the clutches of distractions.
 
-It's time to embrace a mindful (and realistic) approach to our digital lives. We can start by decluttering our digital realms, bidding farewell to the apps we no longer need, and tidying up our virtual spaces. Don't feel bad for abandoning your RSS or podcast queue; chances are, you'll never get through them. By embracing simplicity, we can declutter our minds and create a conducive environment for the creative flow we seek.
+It's time to embrace a mindful (and realistic) approach to our digital lives. We can start by decluttering our digital realms, bidding farewell to the apps we no longer need, and tidying up our virtual spaces. Please don't feel bad for abandoning your RSS or podcast queue; chances are, you'll never get through them. By embracing simplicity, we can declutter our minds and create a conducive environment for the creative flow we seek.
 
 Establishing boundaries is just as vital. Designating specific work hours and creating a dedicated workspace separate from our personal lives can provide the structure and focus we need. It signals our brains that it's time to enter the work zone, where distractions take a back seat.
 

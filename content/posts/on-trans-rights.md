@@ -9,11 +9,11 @@ tags:
 draft: false
 ---
 
-I believe I should state my stance on this matter. And I'm happy to do so publicly. Trans people should have the same rights as anyone else. They should feel safe going about their daily lives like the rest of us. Their voice and vote should carry the same weight.
+I should state my stance on this matter. And I'm happy to do so publicly. Trans people should have the same rights as anyone else. They should feel safe going about their daily lives like the rest of us. Their voice and vote should carry the same weight.
 
 That should never be in question. How they choose to identify is their choice. And no religious or political organization should have any say in this.
 
-Please understand, the majority of the people in power do not care about our rights. They do not lose sleep because we identify as something other than what is deemed "right" by conservative beliefs. What they care about is power and keeping it. And if it means destroying lives, that's just the price they are willing to pay.
+Please understand that most people in power do not care about our rights. They do not lose sleep because they identify as something other than what is deemed "right" by conservative beliefs. What they care about is power and keeping it. And if it means destroying lives, that's just the price they are willing to pay.
 
 I think [Chris Coyier summed it up well in his last post](https://chriscoyier.net/2023/05/04/what-the-frick-is-with-the-war-on-trans-people/):
 
