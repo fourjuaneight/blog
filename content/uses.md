@@ -18,7 +18,7 @@ I used to be a Mac guy. Maybe I still am. But after having to part ways with my 
 - **[Keychron V10 (Alice Layout)](https://www.keychron.com/collections/all-keyboards/products/keychron-v10-alice-layout-qmk-custom-mechanical-keyboard?variant=40358750158937)** - After years with a HHKB Pro 2, I swapped it out with this Alice layout. It's far more comfortable for me and how I position my hands while I type. I swapped out the switches for some [Zealios V2s (67g)](https://zealpc.net/products/zealio?variant=6502846147).
 - **[Logitech MX Ergo](https://www.logitech.com/en-us/products/mice/mx-ergo-wireless-trackball-mouse.html)** - So nice and comfortable.
 - **[UpDesk Standing Desk](https://updesk.com/products/updesk-electric-lift-standing-desk-upwrite-midnight-black-top-on-black-frame-closeout)** - The table is pretty good, but the customer service is nonexistent.
-- **[Secretlab Omega Chair](https://secretlab.co/collections/omega-series)** - ~~Great~~ Ok chair.
+- **[Herman Miller Aeron Chair](https://store.hermanmiller.com/office-chairs-aeron/aeron-chair/2195348.html)** - Fantastic chair.
 - **[Ubiquiti Dream Machine Pro](https://store.ui.com/collections/unifi-network-unifi-os-consoles/products/udm-pro)** - The only reason I got the Pro was to mount it on a rack. This also runs [NextDNS](https://nextdns.io) to filter out my internet traffic.
 - **[Ubiquiti Switch 8 (PoE)](https://store.ui.com/collections/unifi-network-switching/products/unifi-switch-8-60w)** - I have a couple of these around the house to extend the ports coming out the wall.
 - **[Ubiquiti UniFi AC Pro](https://store.ui.com/collections/wireless/products/unifi-ac-pro)** - Solid access point.
