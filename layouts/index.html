@@ -9,31 +9,72 @@
   {{ range first 5 $blog }}
     {{ .Render "li" }}
   {{ end }}
-  <a
-    href='{{ "posts" | absURL }}'
-    class="
-      archive-link
-      bg-foreground
-      border-2
-      border-foreground
-      border-solid
-      focus:border-primary
-      focus:text-background
-      hover:border-primary
-      hover:text-background
-      ml-auto
-      mr-0
-      my-6
-      no-underline
-      px-2
-      py-1
-      text-background
-      transition-colors
-    "
-    data-dark="true"
-  >
-    View Archive
-  </a>
+  <div class="flex items-center justify-between w-full">
+    <button
+      id="random-post"
+      type="button"
+      class="
+        archive-link
+        bg-background
+        border-2
+        border-foreground
+        border-solid
+        focus:!bg-background
+        focus:border-primary
+        focus:text-foreground
+        hover:!bg-background
+        hover:border-primary
+        hover:text-foreground
+        mx-0
+        my-6
+        no-underline
+        outline-none
+        px-2
+        py-1
+        text-foreground
+        transition-colors
+        w-auto
+      "
+      data-dark="true"
+      data-inverted="true"
+    >
+      Random Post
+    </button>
+    <a
+      href='{{ "posts" | absURL }}'
+      class="
+        archive-link
+        bg-foreground
+        border-2
+        border-foreground
+        border-solid
+        focus:border-primary
+        focus:text-background
+        hover:border-primary
+        hover:text-background
+        mx-0
+        my-6
+        no-underline
+        px-2
+        py-1
+        text-background
+        transition-colors
+      "
+      data-dark="true"
+    >
+      View Archive
+    </a>
+  </div>
   {{ partial "intro.html" . }}
   {{ partial "party-mode.html" . }}
+{{ end }}
+{{ define "scripts" }}
+  {{ $opts := dict "minified" true "compact" true }}
+
+  {{ $rpTemp := resources.Get "scripts/random-post.ts" | resources.ExecuteAsTemplate "rpTemp.ts" . }}
+  {{ $rpTS := $rpTemp | babel }}
+  {{ $rpJS := slice $rpTS | resources.Concat "rp.js" }}
+  {{ $rp := $rpJS | resources.Minify }}
+
+  <script defer src="{{ $rp.Permalink }}"></script>
 {{ end }}

@@ -15,6 +15,7 @@ interface FetchEvent extends Event {
         "fonts/{{ .Name }}",
       {{ end }}
     {{ end }}
+    "rp.min.js",
     "scripts.min.js",
     "styles.min.css",
     "~partytown/partytown.js"
