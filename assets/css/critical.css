@@ -111,7 +111,7 @@ html {
 body {
   background: var(--gradient);
   color: var(--foreground);
-  font-family: Nunito, sans-serif;
+  font-family: Inter, sans-serif;
   overflow-x: hidden;
   position: relative;
 }

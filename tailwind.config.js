@@ -63,7 +63,7 @@ module.exports = {
     },
     fontFamily: {
       mdNichrome: ['MD Nichrome', 'serif'],
-      nunito: ['Nunito', 'sans-serif'],
+      inter: ['Inter', 'sans-serif'],
       dankMono: ['Dank Mono', 'monospace'],
     },
     zIndex: {
