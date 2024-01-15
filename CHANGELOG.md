@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.18.0] - 2024-01-15
+
+### Bug Fixes
+
+- [**breaking**] [Massive grammar corrections and optimizations.](https://github.com/fourjuaneight/blog/commit/c4c6e1b7475b5c6363f57ffbac4ccb43f8d5d5c6)
+- [Minor color optimizations.](https://github.com/fourjuaneight/blog/commit/b6d909eb02535b520d1a724bf1fc68554b415566)
+
+### Features
+
+- [Add post about physical media.](https://github.com/fourjuaneight/blog/commit/40bbedbf20af717fd4ea288985f050979f24ff3d)
+- [Add new icon based logo.](https://github.com/fourjuaneight/blog/commit/3bf802ba6242bb4b80eb124d87cf448f6cc5097c)
+- [Add post about bufferbloat and l4s.](https://github.com/fourjuaneight/blog/commit/9426fdb29b2f2ee3bfbf8fd56764082b7a1916ff)
+- [Add post about the blackout on blade runner 2049.](https://github.com/fourjuaneight/blog/commit/6eabe7da8e3b3e499158461be8c5cc0806278d91)
+- [Add responsive title and logo on header.](https://github.com/fourjuaneight/blog/commit/67ba5190894cbe02e43df49d612ae231b8453e8e)
+- [Add date to hex site title.](https://github.com/fourjuaneight/blog/commit/a23fbb13c9097628e68a88ededdbe00679179f72)
+- [Add post about authenticity and blogging.](https://github.com/fourjuaneight/blog/commit/b67b88564eae129d3fe12a49dfe6587337e644ed)
+- [Add random posts button on homepage.](https://github.com/fourjuaneight/blog/commit/b21907036832e45b68bf838be7597c136ea1402f)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/457ede7ba209395bcd83b83c815471629d56ecdc)
+- [Update main stylesheet to use scss.](https://github.com/fourjuaneight/blog/commit/a1ff789a42ed069d87d2944b8e5653cb9c9f9b54)
+- [Minor language optimizations.](https://github.com/fourjuaneight/blog/commit/acbf77358777723235ed2adf21762b657fb34dd7)
+- [Minor content update.](https://github.com/fourjuaneight/blog/commit/3abd015f12394f44a9442a3c8638883c2e1ee320)
+- [Minor title optimizations.](https://github.com/fourjuaneight/blog/commit/8380b66256b4b55649a39a459950b0e9a53f6792)
+- [Shorten descriptions.](https://github.com/fourjuaneight/blog/commit/439714090d0ea4ee26f676240da3415bc1a72c82)
+- [Minor content updates.](https://github.com/fourjuaneight/blog/commit/0c00c386aaf91af16ae2ab9d7d2e236bef5636ef)
+- [Update dependencies.](https://github.com/fourjuaneight/blog/commit/79d7444e35a6cb542b2451adcb40a1960db86184)
+- [Update to v1.18.0.](https://github.com/fourjuaneight/blog/commit/302eb9ff30081ca010e9de6a0d579e09bf1fc09a)
+
 ## [1.17.0] - 2023-11-15
 
 ### Bug Fixes
