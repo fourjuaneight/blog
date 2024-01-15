@@ -41,6 +41,10 @@
   --header-height: 90.5px;
   --max-vw: 100vw;
   --transition: cubic-bezier(0.155, 0.64, 0.24, 1);
+  /* glitch */
+  --red: #ff8080;
+  --green: #80ff80;
+  --blue: #8080ff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -68,6 +72,10 @@
     --secondary-transparent: rgba(189, 235, 251, 0.5);
     --tertiary: #546d78;
     --tertiary-transparent: rgba(133, 159, 170, 0.5);
+    /* glitch */
+    --red: #ff0000;
+    --green: #00ff00;
+    --blue: #0000ff;
   }
 }
 
