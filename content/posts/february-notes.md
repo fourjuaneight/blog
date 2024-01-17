@@ -12,7 +12,7 @@ It's been quite a month. So much craziness happened in such a short amount of ti
 ## Coding
 I've been working on this new project for a client. Unfortunately, I can't share what it is just yet. However, I can talk about the stack we're using. For the majority of my work, I develop in React/Gatsby. It's not so much a personal choice but rather where the industry is at this moment. So whenever I work with something different, I make the most of it and learn everything I can.
 
-This time, I'm working with [Eleventy](https://www.11ty.dev). I've worked with it before; I initially attempted to build this site with 11ty a while ago. Back then, I was looking to retrofit an assets pipeline to avoid running two processes simultaneously (task runner/bundler + SSG). I developed a nice setup that leveraged [JS class templates](https://www.11ty.dev/docs/languages/javascript/) to transpile SCSS and JS at build time. I think it'll make more sense if you see the code:
+This time, I'm working with [Eleventy](https://www.11ty.dev). I've worked with it before; I initially attempted to build this site with 11ty a while ago. Back then, I was looking to retrofit an assets pipeline to avoid running two processes simultaneously (task runner/bundler + SSG). I developed a nice setup that leveraged [JS class templates](https://www.11ty.dev/docs/languages/javascript/) to transpile SCSS and JS at build time. It'll make more sense if you see the code:
 
 - [SCSS pipeline](https://github.com/fourjuaneight/static-templates/blob/master/templates/11ty/styles.11ty.js)
 - [JS pipeline](https://github.com/fourjuaneight/static-templates/blob/master/templates/11ty/scripts.11ty.js)

@@ -60,7 +60,7 @@ So, it's that flexibility of making your data portable that we're looking for. W
 Once your data is stored on one of these services, you can write a small script in the language of your choice to pull the bookshelf data and keep it locally as a JSON file that your website can read.
 
 ## Why This Matters
-I think [Brad said it best](https://bradfrost.com/blog/post/write-on-your-own-website/):
+[Brad said it best](https://bradfrost.com/blog/post/write-on-your-own-website/):
 
 > Writing on your own website associates your thoughts and ideas with you as a person. Having a distinct website design helps strengthen that association.
 

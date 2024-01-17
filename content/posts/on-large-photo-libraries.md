@@ -12,7 +12,7 @@ draft: false
 
 Ben McCarthy on how [having lots of photos is a fucking nightmare](https://www.benricemccarthy.com/having-lots-of-photos-is-a-f-king-nightmare/):
 
-> Most apps on iOS integrate with the system photo library directly, and trying to get images from other sources is a pain that requires copying and pasting, or duplicating images to the Files app, or is simply not possible. The situation on the Mac is better, for now, but I think the rise in Catalyst apps means more and more will only work with the system photo library.
+> Most apps on iOS integrate with the system photo library directly, and trying to get images from other sources is a pain that requires copying and pasting, or duplicating images to the Files app, or is simply not possible. The situation on the Mac is better, for now, but the rise in Catalyst apps means more and more will only work with the system photo library.
 
 Taking and sharing photos is a cornerstone of the iOS experience. Yet Apple has inundated us with features without ensuring the user experience is improved. The iPhone came out well over a decade ago. And most people have amassed vast photo libraries. Indeed, someone at Cupertino has a massive library, too, and has encountered many of the thorns in the Photos.
 
