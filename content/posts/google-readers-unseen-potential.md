@@ -4,7 +4,7 @@ description: "In 2013, Google Reader was deemed unnecessary and was cast off int
 date: 2023-07-03
 tags:
   - rss
-  - technology
+  - tech
 draft: false
 ---
 

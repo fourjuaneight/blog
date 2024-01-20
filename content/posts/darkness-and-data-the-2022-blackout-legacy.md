@@ -7,7 +7,7 @@ date: 2023-12-19
 tags:
   - archiving
   - movies
-  - technology
+  - tech
 draft: false
 ---
 

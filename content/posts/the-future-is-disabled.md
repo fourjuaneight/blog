@@ -4,7 +4,7 @@ description: "Let's dig into Ashley Shew's piece on tech and accessibility from 
 date: 2023-06-30
 tags:
   - accessibility
-  - technology
+  - tech
 draft: false
 ---
 

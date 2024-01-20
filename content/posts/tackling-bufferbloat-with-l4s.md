@@ -4,7 +4,7 @@ seo_title: "L4S: Revolutionizing Online Media Consumption for Everyone"
 description: "Our online activities have expanded to include everything from streaming movies and music to playing video games and participating in video conferences. With such diverse uses, the quality of our internet connection is more important than ever. L4S promises to revolutionize our online interactions by addressing a pervasive yet often overlooked problem: bufferbloat."
 date: 2023-12-12
 tags:
-  - technology
+  - tech
 draft: false
 ---
 
