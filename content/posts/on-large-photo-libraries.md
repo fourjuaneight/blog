@@ -4,7 +4,7 @@ seo_title: "Having Lots of Photos is a Fucking Nightmare"
 description: "Taking and sharing photos is a cornerstone of the iOS experience. Yet Apple has inundated us with features without ensuring the user experience is improved."
 date: 2023-05-12
 tags:
-  - cataloging
+  - archiving
   - photos
   - tech
 draft: false
