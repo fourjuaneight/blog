@@ -10,7 +10,8 @@
   {{ $isArticle := cond (eq .Title "Articles") true false }}
   {{ $dTitle := cond (eq .Title "Tweets") "Tweet" "Title" }}
   {{ $dCreator := cond (eq .Title "Reddits") "Subreddit" (cond (eq .Title "Articles") "Author" (cond (eq .Title "Tweets") "User" "Creator")) }}
-  {{ $bookmarks := getJSON "https://bookmarks.villela.co" (dict "Content-Type" "application/json" "table" (lower .Title)) }}
+  {{ $bkData := getJSON "https://bookmarks.villela.co" (dict "Content-Type" "application/json" "table" (lower .Title)) }}
+  {{ $bookmarks := cond (eq $bkData nil) nil $bkData.bookmarks }}
 
   <section class="w-full">
     <p>Clicking on the titles will open a page to the bookmark. The small blue marking on each item indicates a broken link, unfortunately. You can also click on any of the other categories underneath to see those bookmarks.</p>

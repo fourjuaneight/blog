@@ -12,7 +12,8 @@
   {{ $var.Delete "allBookmarks" }}
 
   {{ range .Pages }}
-    {{ $bookmarks := getJSON "https://bookmarks.villela.co" (dict "Content-Type" "application/json" "table" (lower .Title)) }}
+    {{ $bkData := getJSON "https://bookmarks.villela.co" (dict "Content-Type" "application/json" "table" (lower .Title)) }}
+    {{ $bookmarks := cond (eq $bkData nil) nil $bkData.bookmarks }}
     {{ $category := .Title }}
     {{ $isTweet := cond (eq .Title "Tweets") true false }}
 
