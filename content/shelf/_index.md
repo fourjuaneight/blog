@@ -6,8 +6,6 @@ footer:
 draft: false
 ---
 
-A simple digital bookshelf of my favorite media. This isn't everything I've consumed or own (physical or digital). But rather, just the stuff that I enjoyed the most and would watch/read/play again and again. Anything with a little mark on the top right means it's currently in progress. You can click on the star rating to see a brief commentary.
-
-For more info on the inspiration behind this, checkout my post [On Owning Your Data](/posts/on-owning-your-data/).
+A simple digital bookshelf of my favorite media. This isn't everything I've consumed or own (physical or digital). But rather, just the stuff that I enjoyed the most and would watch/read/play again and again. Anything with a little mark on the top right means it's in progress. You can click on the star rating to see a brief commentary.
 
 _**Warning:** Ratings, comments, and preference on each and every one of these items are mine alone. If you find anything offensive, well, sounds like a personal problem to me._
