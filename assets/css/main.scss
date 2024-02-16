@@ -541,48 +541,6 @@ div[data-type='spacer'] {
 a.site-name {
   grid-template-columns: repeat(2, auto);
 
-  > div {
-    width: 2rem;
-  }
-
-  svg {
-    min-width: 1.75rem;
-
-    &:nth-of-type(1) {
-      fill: var(--foreground);
-      z-index: 30;
-    }
-
-    &:nth-of-type(2) {
-      animation: shift2 200ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
-      fill: var(--red);
-      z-index: 20;
-    }
-
-    &:nth-of-type(3) {
-      animation: shift3 200ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
-      fill: var(--blue);
-      z-index: 10;
-    }
-  }
-
-  &:focus,
-  &:hover {
-    svg {
-      fill: var(--primary);
-
-      &:nth-of-type(2) {
-        animation: unset;
-        transform: translateX(-1.75rem);
-      }
-
-      &:nth-of-type(3) {
-        animation: unset;
-        transform: translateX(-3.5rem);
-      }
-    }
-  }
-
   #site-title {
     &::after,
     &::before {

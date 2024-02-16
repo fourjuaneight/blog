@@ -4,19 +4,14 @@
   >
     <a
       href="{{ .Site.BaseURL }}"
-      class="site-name auto-cols-min focus:text-primary focus:no-underline gap-4 grid grid-rows-1 font-bold font-mdNichrome hover:text-primary hover:no-underline items-center no-underline relative text-center text-foreground text-3xl uppercase w-auto"
+      class="site-name focus:text-primary focus:no-underline font-bold font-mdNichrome hover:text-primary hover:no-underline items-center no-underline relative text-center text-foreground text-2xl uppercase w-auto"
       data-line="slim"
       data-underline="true"
       title="{{ .Site.Title }}"
     >
-      <div class="flex overflow-hidden">
-        {{ partial "logo.html" . }}
-        {{ partial "logo.html" . }}
-        {{ partial "logo.html" . }}
-      </div>
       <span
         id="site-title"
-        class="hidden overflow-hidden relative sm:block whitespace-nowrap"
+        class="overflow-hidden relative whitespace-nowrap"
         data-loaded="false"
         aria-hidden="true"
       >
@@ -26,7 +21,7 @@
       {{ range .Site.Data.nav.header }}
       <a
         href="{{ .link | absURL }}"
-        class="focus:no-underline font-bold font-mdNichrome hover:no-underline no-underline relative text-center text-2xl uppercase"
+        class="focus:no-underline font-bold font-mdNichrome hover:no-underline no-underline relative text-center text-2xl"
         data-line="slim"
         data-underline="true"
       >
