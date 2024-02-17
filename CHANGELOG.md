@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.19.0] - 2024-02-17
+
+### Bug Fixes
+
+- [Remove mentions of self-doubting platitudes.](https://github.com/fourjuaneight/blog/commit/99bcde242e63bc3ab6d4a44d994f0f99d1eb4814)
+- [**breaking**] [Update tag path.](https://github.com/fourjuaneight/blog/commit/18692262190d23ebbe59e267faf0b2c5cd289a54)
+- [Update bookmarks query to match backend updates.](https://github.com/fourjuaneight/blog/commit/9dea5f4be37ad5db2665902dd36813c71cc2159d)
+
+### Features
+
+- [Replace Nunito font with Inter.](https://github.com/fourjuaneight/blog/commit/7e9d9370903dc942e5ebf83c1522cdde27f69d4d)
+- [Add post about the analogue pocket.](https://github.com/fourjuaneight/blog/commit/5ff02a0142ac741ca4bc6e052986b17b760c3457)
+- [Add reading list 1.](https://github.com/fourjuaneight/blog/commit/81393551cce6148ae6ec126840f815caf7dcabe4)
+- [Add CC license on footer.](https://github.com/fourjuaneight/blog/commit/4df7cc0bbc1734401428e06dbd7635e26a730f22)
+- [Update home link and simplify it.](https://github.com/fourjuaneight/blog/commit/5e54614935b6d3b85d7781e6592fcebcec6d8e20)
+- [Change all h1 case to capitalization to improve spacing.](https://github.com/fourjuaneight/blog/commit/21202e95b1aeaaf31577e93b9b9308e5efa84b79)
+- [Update footer links and layout for better responsiveness.](https://github.com/fourjuaneight/blog/commit/a9c7459931c437bc4f6dd2304e8a2291ae02df51)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/2e348e242baf28111575569575413c415bef0184)
+- [Remove extra post title shadow.](https://github.com/fourjuaneight/blog/commit/1be49fbe8decc4762f161372085bc7c4f8b02e86)
+- [Update tags on post.](https://github.com/fourjuaneight/blog/commit/80e92f1947eadfd1f8e02f9d86a328a00816b625)
+- [Update license to GNU Affero.](https://github.com/fourjuaneight/blog/commit/50d66251cfa7308275a7b424eb0bc70ba0e79492)
+- [Minor grammar updates.](https://github.com/fourjuaneight/blog/commit/5fb0911a336ae7febf8a8a1f4b1a4b235d80f9f1)
+- [Update to v1.19.0.](https://github.com/fourjuaneight/blog/commit/2712cbeb2268a6dd1bc540d03b4a34e2907cde34)
+
 ## [1.18.0] - 2024-01-15
 
 ### Bug Fixes
