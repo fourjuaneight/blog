@@ -3,47 +3,26 @@
   <section
     class="col-start-2 flex flex-wrap-reverse gap-2 items-center justify-start row-start-2 w-full"
   >
-    <ul
-      class="gap-x-1 flex flex-wrap items-center justify-start list-none ml-0 mr-auto my-0 pl-0 pr-4 py-0 xxs:gap-x-3"
-    >
-      <li class="flex items-center justify-start m-0 row-start-1">
-        <a
-          class="focus:underline hover:underline no-underline m-0 text-sm"
-          href="https://github.com/fourjuaneight/blog/blob/main/LICENSE"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          &copy; {{ time.Now.Format "2006" }} {{ .Site.Title }}
-        </a>
-      </li>
-      <li class="m-0 row-start-1">
-        <p class="m-0 text-meta text-sm" aria-hidden="true">&#8226;</p>
-      </li>
-      <li class="m-0 row-start-1">
-        <a
-          class="focus:underline hover:underline no-underline m-0 text-sm"
-          href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          CC BY-NC-SA 4.0
-        </a>
-      </li>
-      <li class="m-0 row-start-1">
-        <p class="m-0 text-meta text-sm" aria-hidden="true">&#8226;</p>
-      </li>
-      <li class="m-0 row-start-1">
-        <a
-          class="focus:underline hover:underline no-underline text-sm"
-          href="https://github.com/fourjuaneight/blog"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Source
-        </a>
-      </li>
-    </ul>
-    <nav class="auto-cols-min gap-x-1 grid grid-rows-1 items-center list-none ml-0 my-0 -mr-1 p-0 xs:gap-x-2 xxs:gap-x-1 w-auto">
+    <nav class="flex flex-wrap gap-x-1 items-center justify-start ml-0 mr-auto my-0 p-0 w-auto">
+      <a
+        class="focus:underline hover:underline no-underline m-0 p-1 row-start-1 text-sm whitespace-nowrap"
+        href="https://github.com/fourjuaneight/blog/blob/main/LICENSE"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        &copy; {{ time.Now.Format "2006" }} {{ .Site.Title }}
+      </a>
+      <p class="m-0 row-start-1 text-meta text-sm" aria-hidden="true">&#8226;</p>
+      <a
+        class="focus:underline hover:underline no-underline m-0 p-1 row-start-1 text-sm whitespace-nowrap"
+        href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        CC BY-NC-SA 4.0
+      </a>
+    </nav>
+    <nav class="flex flex-wrap gap-x-1 items-center justify-start ml-0 my-0 -mr-1 p-0 w-auto">
       {{ range $i, $item := .Site.Data.nav.footer }}
         <a
           class="focus:underline hover:underline m-0 no-underline p-1 row-start-1 text-sm"
