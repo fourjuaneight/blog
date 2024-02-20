@@ -1,6 +1,6 @@
 ---
 title: "Reading List 1"
-description: "I’ve been hoarding a ton of bookmarks for years now and haven’t found an excellent way to share some of the more interesting stuff. So, I’ve decided to start my own, heavily inspired by Sadiq Saif’s Reading List series."
+description: "I've been hoarding a ton of bookmarks for years now and haven't found an excellent way to share some of the more interesting stuff. So, I've decided to start my own, heavily inspired by Sadiq Saif's Reading List series."
 date: 2024-02-15
 tags:
   - reading-list
