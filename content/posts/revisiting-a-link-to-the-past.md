@@ -1,7 +1,7 @@
 ---
 title: "Echoes of Hyrule: Revisiting 'A Link to the Past'"
 og: "Echoes of Hyrule"
-description: "Few games transcend time, becoming more than just a fleeting memory of digital entertainment. "The Legend of Zelda: A Link to the Past" is such a game, a masterpiece that has left an indelible mark on the hearts of gamers and the landscape of the gaming world."
+description: "Few games transcend time, becoming more than just a fleeting memory of digital entertainment. The Legend of Zelda: A Link to the Past is such a game, a masterpiece that has left an indelible mark on the hearts of gamers and the landscape of the gaming world."
 date: 2024-02-23
 tags:
   - gaming
