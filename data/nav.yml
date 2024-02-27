@@ -2,8 +2,6 @@
 header:
   - label: Posts
     link: 'posts'
-  - label: Bookmarks
-    link: 'bookmarks'
   - label: About
     link: 'about'
 footer:
