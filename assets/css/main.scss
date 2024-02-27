@@ -1,11 +1,5 @@
 $mdNichrome: MD Nichrome, sans-serif;
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-}
-
 @keyframes grain {
   0%,
   100% {
@@ -22,15 +16,6 @@ $mdNichrome: MD Nichrome, sans-serif;
   }
   80% {
     background-position: 0% 100%;
-  }
-}
-
-@keyframes grow {
-  from {
-    height: 0;
-  }
-  to {
-    height: 1.5625rem;
   }
 }
 
@@ -94,73 +79,6 @@ $mdNichrome: MD Nichrome, sans-serif;
   }
 }
 
-@keyframes textShadowParty {
-  0% {
-    text-shadow: 0.1rem 0.1rem var(--primary);
-  }
-  50% {
-    text-shadow: 0.1rem 0.1rem var(--secondary);
-  }
-  100% {
-    text-shadow: 0.1rem 0.1rem var(--tertiary);
-  }
-}
-
-@keyframes shift2 {
-  from {
-    opacity: 1;
-    transform: translateX(-1.75rem);
-  }
-  to {
-    opacity: 0.5;
-    transform: translateX(-1.625rem);
-  }
-}
-
-@keyframes shift3 {
-  from {
-    opacity: 1;
-    transform: translateX(-3.5rem);
-  }
-  to {
-    opacity: 0.75;
-    transform: translateX(-3.25rem);
-  }
-}
-
-@keyframes glitch1 {
-  $steps: 20;
-
-  @for $i from 0 through $steps {
-    #{percentage($i*(1/$steps))} {
-      clip: rect(random(100) + px, 9999px, random(100) + px, 0);
-    }
-  }
-}
-
-@keyframes glitch2 {
-  $steps: 20;
-
-  @for $i from 0 through $steps {
-    #{percentage($i*(1/$steps))} {
-      clip: rect(random(100) + px, 9999px, random(100) + px, 0);
-    }
-  }
-}
-
-@keyframes reveal {
-  0% {
-    color: var(--foreground);
-    opacity: 1;
-    width: 100%;
-  }
-  100% {
-    color: var(--background-dark);
-    opacity: 0;
-    width: 0;
-  }
-}
-
 a {
   color: var(--foreground);
   text-decoration: underline;
@@ -208,7 +126,7 @@ a {
   }
 
   &.footnote-ref {
-    padding: 0 0.15rem;
+    padding: 0;
     text-decoration: none;
 
     &::before {
@@ -461,7 +379,7 @@ picture.mtg-img {
 }
 
 sup {
-  margin-left: 0.1875rem;
+  margin: 0;
   vertical-align: 0.1875rem;
 
   a {
@@ -532,41 +450,6 @@ div[data-type='spacer'] {
 
 a.site-name {
   grid-template-columns: repeat(2, auto);
-
-  #site-title {
-    &::after,
-    &::before {
-      background: var(--background-dark);
-      clip: rect(0, 900px, 0, 0);
-      content: attr(data-text);
-      color: var(--foreground);
-      overflow: hidden;
-      position: absolute;
-      top: 0;
-    }
-
-    &::after {
-      animation: glitch1 40s infinite linear alternate-reverse;
-      left: 2px;
-      text-shadow: -1px 0 var(--red);
-    }
-
-    &::before {
-      animation: glitch2 60s infinite linear alternate-reverse;
-      left: -2px;
-      text-shadow: 1px 0 var(--blue);
-    }
-  }
-
-  &:focus,
-  &:hover {
-    #site-title {
-      &::after,
-      &::before {
-        animation: none;
-      }
-    }
-  }
 }
 
 section.intro {
