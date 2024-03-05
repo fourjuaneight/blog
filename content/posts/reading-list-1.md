@@ -7,7 +7,7 @@ tags:
 draft: false
 ---
 
-I've been hoarding a ton of [bookmarks](/bookmarks/) for years now and haven't found an excellent way to share some of the more interesting stuff. So, I've decided to start my own, heavily inspired by Sadiq Saif's [Reading List](https://nullrouted.space/tag/reading-list/) series.
+I've been hoarding a ton of bookmarks for years now and haven't found an excellent way to share some of the more interesting stuff. So, I've decided to start my own, heavily inspired by Sadiq Saif's [Reading List](https://nullrouted.space/tag/reading-list/) series.
 
 ## Links
 

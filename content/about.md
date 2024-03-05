@@ -14,7 +14,7 @@ Writing isn't my strong suit. But I do it from time to time. It's therapeutic an
 - I build mechanical keyboards now and then.
 - I love cooking. I like to think I'm pretty decent at it.
 - I like RPGs. Primarily those out of Japan. Like the 200-hour-long, convoluted storyline, with 30 characters type of RPGs.
-- I ~~collect~~ hoard [Magic: The Gathering](/mtg/) cards kept in an excellent binder I rarely open. Of course, I also record which cards I own on a database and render them on a nice UI on this site.
+- I ~~collect~~ hoard Magic: The Gathering cards kept in an excellent binder I rarely open. Of course, I also record which cards I own on a database and render them on a nice UI on this site.
 - I like making lists.
 - I delivered a baby once. It was not magical for me, the staff on the ambulance, or the person giving birth. It's the most stressful I've ever been in my life.
 

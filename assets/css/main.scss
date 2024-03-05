@@ -341,43 +341,6 @@ div.img-wrap {
   width: 100%;
 }
 
-li.bk-cell {
-  overflow: hidden;
-  grid-template-columns: minmax(26rem, 32rem) minmax(8rem, 12rem) minmax(
-      12rem,
-      16rem
-    );
-  border-color: var(--tertiary-transparent);
-  border-width: 0.03125rem 0;
-  height: 1.5625rem;
-  max-height: 1.5625rem;
-
-  > * {
-    overflow: hidden;
-    grid-row-start: 1;
-    text-overflow: ellipsis;
-  }
-
-  > a[title] {
-    min-width: 26rem;
-  }
-
-  > p {
-    min-width: 8rem;
-  }
-
-  > ul {
-    min-width: 12rem;
-  }
-}
-
-picture.mtg-img {
-  &:focus {
-    outline: none;
-    border: 0.0156rem solid var(--primary);
-  }
-}
-
 sup {
   margin: 0;
   vertical-align: 0.1875rem;
@@ -516,45 +479,6 @@ svg#loader {
   }
 }
 
-ul.mtg-list {
-  --card-width: 20rem;
-
-  align-items: start;
-  justify-content: center;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(var(--card-width), var(--card-width))
-  );
-
-  li {
-    width: var(--card-width);
-  }
-}
-ul.shelf-list {
-  align-items: start;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(165px, 165px));
-
-  li {
-    min-height: 15.625rem;
-    width: 10.3125rem;
-  }
-
-  li[data-completed='false'] {
-    &::before {
-      content: '';
-      display: block;
-      height: 0;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 0;
-      border-top: 1.25rem solid var(--primary);
-      border-right: 1.25rem solid transparent;
-    }
-  }
-}
-
 ul.taxonomy-list {
   --card-width: 10.25rem;
 
@@ -567,38 +491,6 @@ ul.taxonomy-list {
 
   li {
     width: var(--card-width);
-  }
-}
-
-li.bk-cell[data-status='dead'] {
-  > a {
-    &::before {
-      content: '';
-      display: block;
-      height: 0;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 0;
-      border-top: 0.75rem solid var(--secondary-transparent);
-      border-right: 0.75rem solid transparent;
-    }
-  }
-}
-
-picture.shelf-img {
-  max-height: 15.625rem;
-
-  img {
-    max-height: 15.625rem;
-  }
-}
-
-div.img-wrap.shelf-img {
-  max-height: 15.625rem;
-
-  img {
-    max-height: 15.625rem;
   }
 }
 
@@ -641,97 +533,6 @@ div.goat {
     object-fit: contain;
     object-position: left bottom;
     width: 100%;
-  }
-}
-
-section.bk-table[data-loaded='false'] {
-  > div {
-    overflow: hidden;
-  }
-
-  ul.bk-header {
-    li {
-      opacity: 0;
-      transition-property: opacity;
-    }
-  }
-}
-
-section.bk-table[data-loaded='true'] {
-  > div {
-    max-width: 60rem;
-    min-width: 46rem;
-  }
-
-  ul.bk-header {
-    li {
-      opacity: 1;
-    }
-  }
-}
-
-ul.bk-header {
-  grid-template-columns: minmax(26rem, 32rem) minmax(8rem, 12rem) minmax(
-      12rem,
-      16rem
-    );
-
-  li.bk-column-header {
-    &:nth-of-type(1) {
-      min-width: 20rem;
-    }
-  }
-
-  &[data-article='true'] {
-    grid-template-columns:
-      minmax(20rem, 22rem) minmax(6rem, 10rem) minmax(8rem, 12rem)
-      minmax(12rem, 16rem);
-  }
-
-  &[data-article='false'] {
-    grid-template-columns: minmax(20rem, 30rem) minmax(10rem, 14rem) minmax(
-        12rem,
-        16rem
-      );
-  }
-}
-
-ul.bk-body[data-article='true'] {
-  li.bk-cell {
-    grid-template-columns:
-      minmax(20rem, 22rem) minmax(6rem, 10rem) minmax(8rem, 12rem)
-      minmax(12rem, 16rem);
-  }
-
-  &[data-article='false'] {
-    li.bk-cell {
-      grid-template-columns: minmax(20rem, 30rem) minmax(10rem, 14rem) minmax(
-          12rem,
-          16rem
-        );
-    }
-  }
-}
-
-li.bk-column-header {
-  &:nth-of-type(1) {
-    min-width: 26rem;
-  }
-
-  &:nth-of-type(2) {
-    min-width: 8rem;
-  }
-
-  &:nth-of-type(3) {
-    min-width: 12rem;
-  }
-}
-
-ul.bk-body {
-  li.bk-cell {
-    > a[title] {
-      min-width: 20rem;
-    }
   }
 }
 
@@ -909,12 +710,6 @@ body {
         border-color: var(--secondary);
       }
     }
-
-    li.bk-cell {
-      &:hover {
-        border-color: var(--secondary);
-      }
-    }
   }
 
   &[data-party='true'] {
@@ -939,16 +734,6 @@ body {
         &:hover {
           animation: textDecorationColorParty 200ms cubic-bezier(0.4, 0, 0.2, 1)
             infinite;
-          animation: colorParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
-        }
-      }
-
-      &.bk-list {
-        &:focus {
-          animation: colorParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
-        }
-
-        &:hover {
           animation: colorParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
         }
       }
@@ -1094,12 +879,6 @@ body {
         animation: borderColorParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
       }
     }
-
-    li.bk-cell {
-      &:hover {
-        animation: borderColorParty 200ms cubic-bezier(0.4, 0, 0.2, 1) infinite;
-      }
-    }
   }
 }
 
@@ -1172,9 +951,6 @@ div.noise {
 }
 
 @media screen and (min-width: 468px) {
-  ul.mtg-list {
-    --card-width: 14rem;
-  }
   ul.taxonomy-list {
     --card-width: 14rem;
   }
