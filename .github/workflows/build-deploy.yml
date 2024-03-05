@@ -21,38 +21,40 @@ jobs:
           fetch-depth: 0
 
       - name: Use Node 16.15.1
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16.15.1
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v2.0.1
+        uses: pnpm/action-setup@v3
         id: pnpm-install
         with:
           version: 8
-          run_install: |
-            - args: [--no-frozen-lockfile]
+          run_install: false
 
       - name: Get pnpm store directory
-        id: pnpm-cache
+        shell: bash
         run: |
-          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
 
-      - name: Setup pnpm cache
-        uses: actions/cache@v3
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
         with:
-          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('pnpm-lock.yaml') }}
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-pnpm-store- --no-frozen-lockfile
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Install Dart Sass Embedded
         run: sudo snap install dart-sass-embedded
 
-      - name: Use Go 1.20.6
+      - name: Use Go 1.22.0
         uses: actions/setup-go@v4
         with:
-          go-version: '>=1.20.6'
+          go-version: '>=1.22.0'
 
       - name: Install Hugo
         run: |
@@ -67,6 +69,9 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: npm run build:prod
+
+      - name: Index Pagefind
+        run: npx pagefind --source "dist"
 
       - name: Upload Output
         uses: actions/upload-artifact@v3
@@ -86,7 +91,7 @@ jobs:
           fetch-depth: 0
 
       - name: Use Node 16.15.1
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: 16.15.1
 
@@ -100,10 +105,10 @@ jobs:
           # this is done to match the expected output directory
           path: ~/work/blog/blog/dist
 
-      - name: Use Go 1.20.6
+      - name: Use Go 1.22.0
         uses: actions/setup-go@v4
         with:
-          go-version: '>=1.20.6'
+          go-version: '>=1.22.0'
 
       - name: Install Go Rod Dependencies
         run: sudo apt-get install -y libgbm-dev

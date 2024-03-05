@@ -131,6 +131,7 @@
   {{ $main := resources.Get "css/main.scss" | resources.ToCSS }}
   {{ $styles := slice $tailwind $main | resources.Concat "styles.css" | resources.PostCSS | resources.Minify }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}" />
+
   {{ if hugo.Environment | eq "production" }}
     {{ partial "analytics.html" . }}
   {{ end }}

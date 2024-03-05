@@ -37,8 +37,8 @@
   --tertiary-transparent: rgba(89, 116, 128, 0.5);
   /* values */
   --duration: 208ms;
-  --footer-height: calc(59.5px + 2rem);
-  --header-height: 90.5px;
+  --footer-height: calc(63.5px + 2rem);
+  --header-height: calc(67.5px + 2rem);
   --max-vw: 100vw;
   --transition: cubic-bezier(0.155, 0.64, 0.24, 1);
   /* glitch */
@@ -77,6 +77,16 @@
     --green: #00ff00;
     --blue: #0000ff;
   }
+}
+
+/* Pagefind */
+:root #search {
+  --pagefind-ui-primary: var(--background);
+  --pagefind-ui-text: var(--foreground);
+  --pagefind-ui-background: var(--foreground);
+  --pagefind-ui-border: var(--meta);
+  --pagefind-ui-tag: var(--meta);
+  --pagefind-ui-font: Inter, sans-serif;
 }
 
 ::-moz-selection {
@@ -141,13 +151,13 @@ header > nav > ul {
 }
 
 main {
-  grid-template-rows: min-content auto 0.5rem;
+  grid-template-rows: repeat(2, min-content) auto 0.5rem;
   min-height: calc(100vh - (var(--header-height) + var(--footer-height)));
 }
 
 @media screen and (max-width: 768px) {
   :root {
-    --header-height: 83.3px;
+    --footer-height: calc(99.5px + 2rem);
   }
 }
 

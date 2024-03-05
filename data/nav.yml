@@ -4,6 +4,8 @@ header:
     link: 'posts'
   - label: About
     link: 'about'
+  - label: Search
+    link: 'search'
 footer:
   - label: Posts
     link: 'posts'
