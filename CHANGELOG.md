@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.20.0] - 2024-03-11
+
+### Bug Fixes
+
+- [Remove quotes from description breaking frontmatter.](https://github.com/fourjuaneight/blog/commit/7140dc57b613a1c2d303a6414a38f5d0dfaddc06)
+- [Set normal line height on headings.](https://github.com/fourjuaneight/blog/commit/24a8c0d88ac1fe695fa12c9492a086749a8aed44)
+
+### Features
+
+- [Add post about zelda link to the past.](https://github.com/fourjuaneight/blog/commit/674eb5ef9590f677426b0f6309ed23bf02923d4a)
+- [Add site search page based on Pagefind.](https://github.com/fourjuaneight/blog/commit/1f2ef31f6600340e72384bb81b65c3d5330996e0)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/5d34fda751b23cdfaa38cc0b222f281518c81c80)
+- [Minor syntax fixes.](https://github.com/fourjuaneight/blog/commit/672372d8fa8c11d5325b4b281a57f1073bc515c3)
+- [Minor ui cleanup.](https://github.com/fourjuaneight/blog/commit/c0b0ff998493331c1069386dd53423d1286d628f)
+- [Remove bookmarks link from header nav.](https://github.com/fourjuaneight/blog/commit/99b9734a51d9d0a20ec2df7ea6cc4c95cb19be7c)
+- [Remove all content related to bookmarks, mtg, and shelf.](https://github.com/fourjuaneight/blog/commit/a3a209b8eac92a68be6d88e5207658787acad350)
+- [Update to v1.20.0.](https://github.com/fourjuaneight/blog/commit/7682bb0537be2c4ff3f29fd17bf441c7d8b1f739)
+
 ## [1.19.0] - 2024-02-17
 
 ### Bug Fixes
