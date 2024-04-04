@@ -6,14 +6,12 @@ footer:
 draft: false
 ---
 
-Here's some of the stuff I use for work and procrastination.
+Here's some of the stuff I use on the daily.
 
 ## Hardware
-I used to be a Mac guy. Maybe I still am. But after having to part ways with my M1 Air, I started using an old gaming PC I built a while back. I'm not a lunatic, so I replaced Windows with Linux —Pop OS specifically. Now, I don't think I'd go back to Mac.
+I run a Linux server out of my closet. It hosts my Plex library, my manga library, and a local backup of my photos and cloud files. However, for work, I use a MacBook Pro that my employer provided.
 
-**Update (2022-02)**: I was provided a new (as of this update) M1 Max MacBook Pro by my employer. Which is overkill for my work, but it's a fantastic laptop. The Linux PC is currently serving as a Plex server in my closet.
-
-- **[CalDigit TS4](https://www.caldigit.com/thunderbolt-station-4/)** - This thing powers everything on my desktop from a single Thunderbolt cable; audio gear, peripherals, and monitors. It even charges my MacBook. Amazing little dock. 
+- **[CalDigit TS4](https://www.caldigit.com/thunderbolt-station-4/)** - This thing powers everything on my desk from a single Thunderbolt cable; audio gear, peripherals, and monitors. It even charges my MacBook. Amazing little dock. 
 - **[LG 27UK650-W](https://www.lg.com/us/monitors/lg-27UK650-W-4k-uhd-led-monitor)** - It takes some calibration to make it look just right. But once it does, it's a solid workhorse of a display. I have two of these stacked vertically.
 - **[Keychron V10 (Alice Layout)](https://www.keychron.com/collections/all-keyboards/products/keychron-v10-alice-layout-qmk-custom-mechanical-keyboard?variant=40358750158937)** - After years with a HHKB Pro 2, I swapped it out with this Alice layout. It's far more comfortable for me and how I position my hands while I type. I swapped out the switches for some [Zealios V2s (67g)](https://zealpc.net/products/zealio?variant=6502846147).
 - **[Logitech MX Ergo](https://www.logitech.com/en-us/products/mice/mx-ergo-wireless-trackball-mouse.html)** - So nice and comfortable.

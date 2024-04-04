@@ -6,36 +6,17 @@ footer:
 draft: false
 ---
 
-Hi, I like websites, and I'm [Juan Villela](https://www.juanvillela.dev/). Most of my time is spent making them for others online. When I'm not working, I hoard digital media for my weird pet project.
+Hi, I'm [Juan](https://www.juanvillela.dev/) and I like websites. Most of my time is spent making them for others online. When I'm not working, I play video games and hoard digital media for my weird pet project.
 
-Writing isn't my strong suit. But I do it from time to time. It's therapeutic and helps me clear my head. I write about exciting things in this blog and some of my coding projects. I'm not sure what else to say, so here's a list of "fun facts" about me I guess:
+Writing isn't my strong suit. But I do it from time to time. It's therapeutic and helps me clear my head. I write about interesting things I find online and some of my coding projects. I'm not sure what else to say, so here's a list of "fun facts" about me:
 
-- I like stickers. Almost every electronic I own is covered in stickers.
-- I build mechanical keyboards now and then.
+- I like stickers. I have an entire cabinet filled with of them.
+- I build mechanical keyboards every now and then.
 - I love cooking. I like to think I'm pretty decent at it.
 - I like RPGs. Primarily those out of Japan. Like the 200-hour-long, convoluted storyline, with 30 characters type of RPGs.
-- I ~~collect~~ hoard Magic: The Gathering cards kept in an excellent binder I rarely open. Of course, I also record which cards I own on a database and render them on a nice UI on this site.
+- I ~~collect~~ hoard Magic: The Gathering cards and keep them in a cool binder I rarely open.
 - I like making lists.
-- I delivered a baby once. It was not magical for me, the staff on the ambulance, or the person giving birth. It's the most stressful I've ever been in my life.
+- I delivered a baby once. It was not magical for me, the staff on the ambulance, or the person giving birth. It's the most stressed I've ever been in my life.
 
 ## Work
-I work as a senior full-stack web developer full-time from home. These days, I mostly make Angular and React enterprise apps. And some REST and GraphQL APIs. But here's an excellent list of skills:
-
-### Languages:
-TypeScript, JavaScript, SCSS, CSS, HTML, SQL, Go
-
-### Frameworks/Libraries:
-React, Node, Express, GraphQL, Hugo, Eleventy
-
-### Tooling:
-Redux (Sagas, Thunks, and RTK), Webpack, Vite, Jest, Vitest, Cypress, aXe, TravisCI, CircleCI, GitHub Actions, Gitlab/Bitbucket Pipeline
-
-### Design Tools:
-Figma, Sketch, InVision, Photoshop, Affinity Designer
-
-### Other Skills:
-Nunchuck, Bo Hunting, Computer Hacking
-
----
-
-If you want a more comprehensive look at my experience, check out my [online resume](https://resume.juanvillela.dev).
+I work as a software engineer in health tech. That's it. I don't know what else you wanna know. But, if you're really interested, check out my [online resume](https://resume.juanvillela.dev).
