@@ -9,10 +9,9 @@ tags:
 draft: false
 ---
 
-
 Climate change is no longer a distant, abstract threat. It's here, it's now, and it's personal. [The severe weather changes experts predicted for many years are occurring before us, not in some distant future](https://www.theatlantic.com/science/archive/2023/07/climate-change-tipping-points/674778/).
 
-[Vermont—once considered a climate haven—has been hit by a series of extreme weather events this year](https://www.theatlantic.com/science/archive/2023/07/climate-change-safe-states-vermont-floods/674780/). a hot January, a late-May frost that wiped out over half of the state's apple harvest, and intense flooding. The state that was supposed to be safe from climate change is now grappling with its harsh realities.
+[Vermont—once considered a climate haven—has been hit by a series of extreme weather events this year](https://www.theatlantic.com/science/archive/2023/07/climate-change-safe-states-vermont-floods/674780/). A hot January, a late-May frost that wiped out over half of the state's apple harvest, and intense flooding. The state that was supposed to be safe from climate change is now grappling with its harsh realities.
 
 And it's not just Vermont. [Across the globe, we're seeing the effects of climate change. Heatwaves in Phoenix, wildfires in Canada, floods in the Northeast, and even the potential loss of sea ice in Antarctica](https://www.theatlantic.com/science/archive/2023/07/heat-climate-crises-natural-disasters/674700/). These are not isolated incidents. They're part of a larger, more disturbing pattern.
 

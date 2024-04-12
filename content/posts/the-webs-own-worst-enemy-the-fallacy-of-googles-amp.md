@@ -10,7 +10,6 @@ tags:
 draft: false
 ---
 
-
 Ah, Google. A company once known for its "Don't be evil" motto. They have been on a long, winding road that has led it far from its original mantra. One of the most glaring examples of this detour is Google's Accelerated Mobile Pages (AMP) project. Remember that? It was supposed to be the savior of the mobile web. Instead, it became more like a wolf in sheep's clothing.
 
 In 2015, Google introduced AMP to make web pages load faster on mobile devices. The idea was noble enough: combat the sluggish, ad-ridden mobile web and offer users a cleaner, quicker experience. But Google forced publishers to adopt AMP if they wanted prime real estate in search results. And it's their algorithms that have rewarded sensational headlines and ad-stuffed pages.

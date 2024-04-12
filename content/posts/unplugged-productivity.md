@@ -9,7 +9,6 @@ tags:
 draft: false
 ---
 
-
 Working remotely as a web developer offers incredible flexibility, but let's face it, distractions are a struggle for us all. Dave Rupert's thought-provoking blog post, "[Bag of Distractions](https://daverupert.com/2023/02/bag-of-distractions/)," got me thinking of the allure of the digital realm and how it impacts our productivity as we toil away in our home offices.
 
 Dave's take on the never-ending social media scroll resonated deeply with me. As developers, we are constantly online and must tread carefully to avoid being sucked into the bottomless pit of memes and endless news cycles. It's a delicate dance, balancing our curiosity with the need to buckle down and code.

@@ -7,6 +7,7 @@ tags:
   - archiving
 draft: false
 ---
+
 The way we interact with media has undergone a remarkable shift recently, thanks to the constantly changing digital landscape. This transformation has profoundly impacted our media consumption habits, which have evolved significantly. The sheer volume of data and information at our fingertips is staggering, yet this abundance brings a paradoxical challenge. The ease of access and seemingly endless storage have led to an information overload, complicating our ability to forge meaningful connections with the content we consume.
 
 There's a nostalgic charm to the bygone era when our interaction with media was tangibly personal. Our collections were meticulously curated, reflecting our unique tastes and preferences, each item holding a special place in our physical world. This intimate bond has been disrupted by the surge of large tech corporations and the digitization of media. Platforms such as Spotify and Netflix now shape our interaction with media, their algorithms subtly guiding our choices and reshaping our digital libraries.

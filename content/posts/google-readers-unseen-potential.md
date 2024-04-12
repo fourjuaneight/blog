@@ -8,7 +8,6 @@ tags:
 draft: false
 ---
 
-
 Ah, Google Reader. Remember that gem? The RSS/Atom feed aggregator that Google deemed unnecessary and cast off into the void in 2013. They said it was a decline in usage, a desire to focus on social products like Google Plus. But as we watch the RSS phoenix rise from the ashes today, we can't help but chuckle.
 
 Google Reader was more than an RSS aggregator—an oasis in the open-web desert, a bustling watering hole. It was the web literate's secret weapon, pulling updates from their favorite corners of the Internet into one easy-to-read layout.

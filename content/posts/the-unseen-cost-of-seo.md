@@ -9,7 +9,6 @@ tags:
 draft: false
 ---
 
-
 In the nascent era of the web, SEO was a concept as esoteric as the personal computer itself—a curiosity, a future fantasy. Today, this landscape has shifted monumentally. SEO has become an omnipresent force, molding the internet and social media's contours, but at a potentially steep price.
 
 The original vision for the web was a vast, free-flowing repository of knowledge—effectively a boundless digital library. Search engines emerged as helpful librarians, directing us to the precise 'book' we sought. But, [as highlighted by The Verge, there's an inherent cost in the ad-supported model](https://www.theverge.com/features/23931789/seo-search-engine-optimization-experts-google-results): When the service is free, we and our attention become the commodity.

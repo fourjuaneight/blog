@@ -9,7 +9,6 @@ tags:
 draft: false
 ---
 
-
 We often take the permanence of our online data for granted. We trust that our content will always be there, a click away. But as recent events have shown, this is a dangerous assumption. A service can [casually delete nine years' worth of meticulously curated lists and reviews from your account](https://www.somebits.com/weblog/tech/bad/goodreads-lost-all-my-data.html), with no one for you to recover anything
 
 [Kole McRae penned a thoughtful piece on their obsession with the longevity of their digital creations](https://kolemcrae.com/notebook/longevity.html). McRae, who uses note-taking as a tool to combat memory issues associated with ADHD, has developed a meticulous system for backing up his data. They don't trust systems like Evernote and instead opt for open-sourced systems.

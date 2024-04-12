@@ -8,7 +8,6 @@ tags:
 draft: false
 ---
 
-
 Navigating the constantly evolving world of web development can be challenging, especially when creating efficient yet lean web applications. Two insightful pieces, one by Baldur Bjarnason and another by Chris Coyier provide valuable insights into web developers' dichotomies and struggles.
 
 [Bjarnason's critique is a poignant reminder of the industry's current trajectory](https://www.baldurbjarnason.com/2023/web-dev-untalented/), where the allure of modern frameworks and technologies often overshadows the fundamental principles of accessibility and efficient performance. His observations align with a growing concern: are we sacrificing the very essence of the web—accessibility and universal design—for the sake of convenience and the so-called 'developer experience'?

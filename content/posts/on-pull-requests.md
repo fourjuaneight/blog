@@ -8,7 +8,6 @@ tags:
 draft: false
 ---
 
-
 In small teams, you're spread thin, constantly multitasking. Deadlines are tight, resources are scarce, and pair programming is a pipe dream at best. But you can still maintain a high bar for code quality, thanks to the unsung hero of software development—pull requests. [Juha-Matti Santala gets it](https://hamatti.org/posts/pull-requests-are-great/); he typed an insightful piece on why pull requests are more than just a code review tool. Let's break it down.
 
 ## The Asynchronous Advantage

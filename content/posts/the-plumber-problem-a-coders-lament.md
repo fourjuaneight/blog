@@ -10,7 +10,6 @@ tags:
 draft: false
 ---
 
-
 I came across John Siracusa's most recent blog post, where he talks about "[The Plumber Problem](https://hypercritical.co/2023/08/18/the-plumber-problem)". It's a phrase that describes the experience of watching a movie or reading a work of fiction that inaccurately depicts a subject area you know well. This inaccuracy distracts you and keeps you in the narrative. It's a phenomenon I've experienced all too often as a developer, especially when portraying "hacking" in pop culture.
 
 Let's take a moment to consider the typical hacking scene. You know the one: a young, bespectacled genius sits down at a keyboard, types furiously for a few seconds, and then triumphantly declares, "I'm in!" Meanwhile, the screen is filled with rapidly scrolling code, 3D interfaces, and flashing lights. It's all very dramatic, very Hollywood, and very, very wrong.

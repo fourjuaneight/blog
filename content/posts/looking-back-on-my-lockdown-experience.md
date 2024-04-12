@@ -16,19 +16,19 @@ One of those was [Debdutta Pal's 2020 post on the effects of the lockdown when y
 
 > I am an introvert, I live with my partner, and I work from home; my life has barely changed. The similarities are uncanny...
 
-Like Debdutta, I was a remote worker before 2020. It had been a couple of years since I transitioned, but it was enough for me to have settled into the **lifestyle**. And it sure is a lifestyle. One needs to work from home. It's a complete restructuring of your relationship with work. We'd be the ones best prepared for a lockdown. But I speak for most pre-COVID WFH folks when I say that the lockdown destroyed our way of life.
+Like Debdutta, I was a remote worker before 2020. It had been a couple of years since I transitioned, but it was enough for me to have settled into the **lifestyle**. And it sure is a lifestyle. It's a complete restructuring of your relationship with work. So you'd think we'd be the ones best prepared for a lockdown. But I think I speak for most pre-COVID WFH folks when I say that the lockdown destroyed our way of life.
 
-At first, I felt a little off and got easily distracted by the news while I worked or spent time with my wife. But I eventually began to need to catch up on my work. I lost interest in many of my regular activities in between and after work. It wasn't that I took on too much. I lost the motivation to do what I was doing before.
+At first, I felt a little off and got easily distracted by the news while I worked or spent time with my partner. I had to constantly remind myself that I needed to get back to work. I then lost interest in many of my regular activities in between and after work. It wasn't that I took on too much. I just lost the motivation to do what I was doing before.
 
 > Why am I having difficulty doing regular, day-to-day tasks?
 
-Looking back, I understand what I was feeling during that time. As soon as everyone went indoors, many people found ways to connect and find a use for their extra time. Social media was inundated with baking, cooking, pastry making, and home activities. It seemed like everyone was finding something to do. But I, who just worked from home, began to feel like I wasn't doing enough. It felt like I was slacking off.
+Looking back, I understand what I was feeling during that time. As soon as everyone went indoors, many people found ways to connect and find a use for their extra time. Social media was inundated with baking, cooking, and home activities. It seemed like everyone was finding something to do. But I, who just worked from home, began to feel like I wasn't doing enough. It felt like I was slacking off.
 
 I felt trapped. It's one thing deciding not to leave the house for two weeks. It's another being told you can't. Yes, I know that sounds backward. And it's purely psychological. But it's what made this so terrible. I felt tied down, chained to my house.
 
-And on top of that, people had yet to learn what the future held. It was still being determined what the world would look like next week or month. Everything pointed towards chaos on the horizon.
+And on top of that, we had no idea what the future held. It was still up in the air what the world would look like next week or next month. Everything pointed towards chaos on the horizon.
 
-I was depressed most days. But I managed to power through it. My wife —used to moving around in an open floor office space— felt like "a lab rat trapped in a maze for someone's amusement." It was hard on her. On both. After a month, we took a mini vacation.
+I was depressed most days. But I managed to power through it. My wife—used to moving around in an open floor office space—felt like "a lab rat trapped in a maze for someone's amusement." It was hard on her. So, after a month of going crazy, we took a mini vacation.
 
 > Yes, I did the unthinkable; I took a 4-day break in the middle of lockdown. 
 

@@ -8,7 +8,6 @@ tags:
 draft: false
 ---
 
-
 It's a tale as old as the web itself—a realm where practicality takes a backseat, and uselessness reigns supreme. Wired's 1996 article, "[Totally Useless](https://www.wired.com/1996/02/totally-useless/)," shed light on the abundance of purposeless digital endeavors even back then. Fast forward a decade, and Chris Anderson's influential piece, "[The Long Tail](https://www.wired.com/2004/10/tail/)," unveiled a new facet of the web—the power to monetize niche products that wouldn't find shelf space in traditional retail.
 
 The concept of the Long Tail extends beyond e-commerce, permeating the vast landscape of web content. Countless websites, often dismissed as trivial or bizarre, cater to specialized niches. Take Paul Phillips, who stumbled upon Kenny Z's CD List in 1994—an utterly pointless site that intrigued him nonetheless. This sparked his creation of the ever-evolving [Useless Pages](https://web.archive.org/web/20000816121335/http://www.go2net.com/useless/history.html), a collection that drew in tens of thousands of monthly visitors.

@@ -11,7 +11,6 @@ tags:
 draft: false
 ---
 
-
 The city of Los Angeles finds itself shrouded in an unprecedented darkness. The year is 2022, now defined by a catastrophic event known simply as the Blackout, marked not just by the absence of light but by the erasure of electronic data—a reset of culture and society. This chilling scenario sets the stage for the profound narrative of "Blade Runner 2049", a sequel that delves deeply into the implications of memory and identity in a technologically advanced and dystopian world.
 
 Our story unfolds in a reality where the archiving of memories isn't just a task; it's a vital endeavor. **The Blackout**, as illustrated in the anime prequel "[Blade Runner 2049: Black Out 2022](https://www.themoviedb.org/movie/475946)", brought more than darkness; it brought silence and a pause in the relentless march of technology. Machines came to a sudden halt, screens went dark, and the entire world's electronic memory was erased in just a few moments, leaving behind a vast emptiness where a rich collection of digital data once existed.

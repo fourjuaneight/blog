@@ -8,7 +8,6 @@ tags:
 draft: false
 ---
 
-
 Reading [Ashley Shew's thought-provoking piece in the latest MIT Technology Review](https://www.technologyreview.com/2023/06/28/1074350/future-is-disabled/) felt like unboxing a brand-new toolset for my mind, equipped with a fresh set of lenses to view the future of tech and accessibility. It wasn't your regular lip service to accessibility. Instead, it was a reality check, pushing us to rethink our assumptions about technology and its role in shaping an inclusive future.
 
 Shew, an associate professor in the Department of Science, Technology, and Society at Virginia Tech and author of the book "Against Technoableism: Rethinking Who Needs Improvement," lays it down straight. She questions the typical narrative that portrays assistive tech as some magical fix-all solution. Instead, she paints a picture of the natural world where assistive tech is a tool that demands ongoing attention and adaptation from its users.

@@ -8,7 +8,6 @@ tags:
 draft: false
 ---
 
-
 As we entered the early 2020s, our online activities have expanded massively, encompassing everything from streaming movies and music to playing video games and participating in video conferences. With such a diverse range of uses, the quality of our internet connection has become increasingly vital to our everyday lives. Amidst this landscape, a technological breakthrough is emerging: L4S (Low Latency, Low Loss, Scalable Throughput). This innovative technology promises to revolutionize our online interactions by addressing a pervasive yet often overlooked problem: [bufferbloat](https://www.bufferbloat.net/projects/bloat/wiki/Introduction/).
 
 To understand the significance of [L4S](https://www.bell-labs.com/research-innovation/projects-and-initiatives/l4s/), we must first confront the beast known as bufferbloat. This phenomenon occurs when excessive buffering in network equipment causes high latency and jitter, turning what should be a smooth gaming experience into a frustrating series of lags and interruptions. This issue arises from network devices hoarding data packets to avoid packet loss, ironically creating the problem they seek to prevent. [An article from The Verge highlights how even those with high-speed internet plans are not immune to latency issues caused by bufferbloat](https://www.theverge.com/23655762/l4s-internet-apple-comcast-latency-speed-bandwidth), leading to frustrating user experiences across the board.

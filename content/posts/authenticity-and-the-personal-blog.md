@@ -7,7 +7,6 @@ tags:
 draft: false
 ---
 
-
 There's a growing conversation about the true essence of personal blogs. Should they be a polished showcase of professional achievements or a canvas for unbridled creativity?
 
 This dilemma pits the idea of a blog as a professional showcase against its potential as a medium for unadulterated creativity. The modern digital sphere often views blogs through the lens of branding and professional advancement. Yet, there's a growing discourse advocating for personal blogs to transcend this conventional use, urging them to embody the diverse aspects of an individual—professional achievements, hobbies, and unique experiences.
