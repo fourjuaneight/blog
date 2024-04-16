@@ -3,8 +3,8 @@ title: "Surfing The Old Web"
 description: "I was given open access to the internet at a young age back in 1999-2002. It was the early web. A digital garden where anyone could express their creativity with a hand-crafted digital persona, often completely disconnected from their true selves. And I miss the sense of discovery more than anything. But in today's hyper-connected web, there are still a few places where you can still experience this feeling."
 date: 2023-01-11
 tags:
-  - nostalgia
   - stumbleupon
+  - web
 draft: false
 ---
 
