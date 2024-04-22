@@ -1,9 +1,9 @@
 # Use Alpine Linux as our base image so that we minimize the overall size our final container, and minimize the surface area of packages that could be out of date.
-FROM node:16.15.1-alpine as builder
+FROM node:18.19.1-alpine as builder
 
 # Config
 ENV GLIBC_VER=2.27-r0
-ENV HUGO_VER=0.101.0
+ENV HUGO_VER=0.125.3
 
 # Build dependencies
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" > /etc/apk/repositories \
@@ -63,7 +63,7 @@ COPY package*.json /app/
 RUN npm install
 
 # Get a clean image with binaries and the pre-built node modules
-FROM node:16.15.1-alpine
+FROM node:18.19.1-alpine
 COPY --from=builder /usr/local/bin/hugo /usr/local/bin/hugo
 COPY --from=builder /app/node_modules /app/node_modules
 
