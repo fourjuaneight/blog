@@ -15,7 +15,7 @@ draft: false
 
 Anyhow, we're back on Airtable. It's nice, relatively inexpressive, and has a great API. And you know what's the best part? I don't have to maintain shit. I upload, download, and call it a day.
 
-To get a little more context on what's going on, read [Part 1](/posts/spreadsheets/) and [Part 2](/posts/spreadsheets-reloaded/) of the **Spreadsheets** series. But in short, I was dissatisfied with the current bookmarking solutions, so I made a custom one instead. This started with a myriad of Airtable bases, and then —for some stupid reason— I decided to roll out my own hosted database.
+To get a little more context on what's going on, read [Part 1](/posts/spreadsheets/) and [Part 2](/posts/spreadsheets-reloaded/) of the **Spreadsheets** series. But in short, I was dissatisfied with the current bookmarking solutions, so I made a custom one instead. This started with a myriad of Airtable bases, and then—for some stupid reason—I decided to roll out my own hosted database.
 
 Don't get me wrong; I loved having a custom database + API that I could tailor to my needs. However, not only did it not offer much more over Airtable, but it was also far more expensive. Aside from that, I didn't have the time to maintain another API on top of the growing list of personal projects and a day job.
 

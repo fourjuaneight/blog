@@ -22,4 +22,4 @@ The web was built on the principles of openness and accessibility. Anyone could 
 
 Thankfully, Google has dialed back on making AMP mandatory for "Top Stories," but the damage has been done. [And now we have Artifact, an AI-driven news app that promises to deliver a personalized news experience.](https://www.platformer.news/p/instagrams-co-founders-are-mounting) And everyone seems to love its ease of use, quality news feed, and additional channels for reaching an audience. But let's not get carried away. Artifact is still a walled garden, albeit a well-manicured one. It's not the open web.; it's another platform with its own rules and algorithms, and we've been down this road before. Remember, even Google's AMP started with a promise of faster, better mobile web experiences.
 
-Let's remember the lessons learned from AMP. Any platform that imposes proprietary formats —no matter how well-intentioned— risks upsetting this balance.
+Let's remember the lessons learned from AMP. Any platform that imposes proprietary formats—no matter how well-intentioned—risks upsetting this balance.

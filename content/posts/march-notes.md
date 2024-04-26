@@ -30,7 +30,7 @@ Also, I finally bought a Nintendo Switch. Two. My partner has been playing Anima
 
 Now for the more exciting stuff:
 - [Ghost Rider](https://letterboxd.com/film/ghost-rider/): Did they run out of budget for the flaming skull's dialogue?
-- [How It Ends](https://letterboxd.com/film/how-it-ends/): Nothing. Not a single thing —aside from the paranoid neighbor— about what happened. I still have no idea how it ends.
+- [How It Ends](https://letterboxd.com/film/how-it-ends/): Nothing. Not a single thing—aside from the paranoid neighbor—about what happened. I still have no idea how it ends.
 - [Tremors 1-5](https://letterboxd.com/film/tremors/): They just keep coming back. It's almost like they don't want to kill me.
 - [Color Out of Space](https://letterboxd.com/film/color-out-of-space/): This was an odd and pointless trip.
 - [Jumanji: The Next Level](https://letterboxd.com/film/jumanji-the-next-level/): Why is this movie so long?
