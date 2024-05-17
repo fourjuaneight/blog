@@ -12,7 +12,7 @@ Here's some of the stuff I use on the daily.
 I run a Linux server out of my closet. It hosts my Plex library, my manga library, and a local backup of my photos and cloud files. However, for work, I use a MacBook Pro that my employer provided.
 
 - **[CalDigit TS4](https://www.caldigit.com/thunderbolt-station-4/)** - This thing powers everything on my desk from a single Thunderbolt cable; audio gear, peripherals, and monitors. It even charges my MacBook. Amazing little dock. 
-- **[LG 27UK650-W](https://www.lg.com/us/monitors/lg-27UK650-W-4k-uhd-led-monitor)** - It takes some calibration to make it look just right. But once it does, it's a solid workhorse of a display. I have two of these stacked vertically.
+- **[LG 32GR93U](https://www.lg.com/us/monitors/lg-32gr93u-b-gaming-monitor)** - It takes some calibration to make it look just right. But once it does, it's a solid workhorse of a display.
 - **[Keychron V10 (Alice Layout)](https://www.keychron.com/collections/all-keyboards/products/keychron-v10-alice-layout-qmk-custom-mechanical-keyboard?variant=40358750158937)** - After years with a HHKB Pro 2, I swapped it out with this Alice layout. It's far more comfortable for me and how I position my hands while I type. I swapped out the switches for some [Zealios V2s (67g)](https://zealpc.net/products/zealio?variant=6502846147).
 - **[Logitech MX Ergo](https://www.logitech.com/en-us/products/mice/mx-ergo-wireless-trackball-mouse.html)** - So nice and comfortable.
 - **[UpDesk Standing Desk](https://updesk.com/products/updesk-electric-lift-standing-desk-upwrite-midnight-black-top-on-black-frame-closeout)** - The table is pretty good, but the customer service is nonexistent.
