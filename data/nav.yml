@@ -13,6 +13,8 @@ footer:
     link: 'about'
   - label: Uses
     link: uses
+  - label: Following
+    link: following
 social:
   - label: Mastodon
     link: https://mastodon.social/@fourjuaneight
