@@ -2,6 +2,42 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.21.0] - 2024-06-05
+
+### Bug Fixes
+
+- [General syntax and grammar corrections.](https://github.com/fourjuaneight/blog/commit/4e6e1b3289edf3c8f9cbb2c7e944d7ada06dad69)
+- [Update hugo config.](https://github.com/fourjuaneight/blog/commit/75fd3fd7e758c01a26754ef790ac80b3acf1f66f)
+- [Minor syntax updates.](https://github.com/fourjuaneight/blog/commit/331dbe987516695cdbffdb43b8961f0922c8b7c2)
+- [Update single template heating size to match others.](https://github.com/fourjuaneight/blog/commit/3c428c84face1060967c7a75e59c132d78be13f4)
+
+### Features
+
+- [Add reading list 2.](https://github.com/fourjuaneight/blog/commit/0de414de9dfd5e6b6edb35b208b2933e9904c7f3)
+- [Add post about quitting github copilot.](https://github.com/fourjuaneight/blog/commit/f2e6ab12d81e1c51266b2c3507800539cead8b30)
+- [Add reading list 3.](https://github.com/fourjuaneight/blog/commit/228ff6abbcbe39eb9523c7f598cb7ccc0b4d73e7)
+- [Add post about tiktok ban.](https://github.com/fourjuaneight/blog/commit/9b461f47ea3d4cffa51bb2ffffbadf0bdde4790a)
+- [Add draft for m-disc archive post.](https://github.com/fourjuaneight/blog/commit/ceb762a922f550547375dbac0a04a2adb0911dae)
+- [Add post about m-disc archives.](https://github.com/fourjuaneight/blog/commit/356d96cd5b973cc48eb0c859ede300f9e3ca3135)
+- [Add reading list 4.](https://github.com/fourjuaneight/blog/commit/00d392f05f898c660e3584719bc6a35454234816)
+- [Add following page with list of content I follow.](https://github.com/fourjuaneight/blog/commit/e39b817f833acde11ba1226a78c3543b8d321d4a)
+- [Add post about the allure of physical media.](https://github.com/fourjuaneight/blog/commit/e200873d0c67fac3e1658e69adcf481131629e4b)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/d7bb2354ae0c5b4ebd8af88cef3d5fbbc192d581)
+- [Update meta content.](https://github.com/fourjuaneight/blog/commit/a9bff2012f5cf3b4285f2b00a7169e957df87fd4)
+- [Cleanup latest post to make it sound less robotic.](https://github.com/fourjuaneight/blog/commit/44a5fcfdbe47dcdc29d0e040d27cb98e0ada2474)
+- [Update post tag.](https://github.com/fourjuaneight/blog/commit/74bf2c8861ec04d93c9237f2dc85f30554170fc5)
+- [Update dependencies.](https://github.com/fourjuaneight/blog/commit/d78c51075de7623c9f6f68d945cbf020dbb5b32a)
+- [Minor content updates to latest post.](https://github.com/fourjuaneight/blog/commit/573c63b21c31dd09e0d603dd44919452416f6090)
+- [Update hugo version.](https://github.com/fourjuaneight/blog/commit/27a0b2f8e0cb3d6db88be2f7b2df21a0ce532b00)
+- [Update uses page.](https://github.com/fourjuaneight/blog/commit/6409ee253a13b6382cacbaf649b5779c72bfc2a5)
+- [Cleanup language for new m disc archiving post.](https://github.com/fourjuaneight/blog/commit/6da824b7395c3c5ecb61885afb25242878fdbce6)
+- [Add following page to footer nav.](https://github.com/fourjuaneight/blog/commit/50332e43e64b3430d4062b61ba24bdaa2dd32e5c)
+- [Update dependencies.](https://github.com/fourjuaneight/blog/commit/d29aa68e3fa92feade69c6b22576f380de7d6074)
+- [Update to v1.21.0.](https://github.com/fourjuaneight/blog/commit/086ced628f0e886f8a23ae738b148bc78cb76c81)
+
 ## [1.20.0] - 2024-03-11
 
 ### Bug Fixes
