@@ -6,6 +6,6 @@ Allow: /
 Disallow: /social-img/
 Disallow: /tags/
 
-Sitemap: https://cleverlaziness.xyz/sitemap.xml
+Sitemap: {{ .Site.BaseURL }}/sitemap.xml
 
-Host: https://cleverlaziness.xyz
+Host: {{ .Site.BaseURL }}
