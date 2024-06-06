@@ -1,4 +1,5 @@
-{{ $site := replace .Site.BaseURL "https://" "" }}
+{{ $siteURL := replace .Site.BaseURL "https://" "" }}
+{{ $site := replace $siteURL "/" "" }}
 <!-- Partytown -->
 <script>
   partytown = {
