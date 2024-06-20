@@ -13,11 +13,11 @@ I reinstalled them yesterday, but while I was "away", I read some amazing articl
 
 ## Links
 
-* [The invisible seafaring industry that keeps the internet afloat](https://www.theverge.com/c/24070570/internet-cables-undersea-deep-repair-ships)
-* [What happened to Brooklyn’s disaster-proof mesh Wi-Fi network?](https://www.theverge.com/c/features/23700677/wifi-mesh-network-disaster-hurricane-sandy-brooklyn)
-* [How a group of neighbors created their own Internet service](https://arstechnica.com/information-technology/2015/11/how-a-group-of-neighbors-created-their-own-internet-service/)
-* [The System That Actually Worked](https://www.theatlantic.com/ideas/archive/2020/05/miracle-internet-not-breaking/611212/)
-* [The Wi-Fi only works when it's raining](https://predr.ag/blog/wifi-only-works-when-its-raining/)
+* [The invisible seafaring industry that keeps the internet afloat](https://www.theverge.com/c/24070570/internet-cables-undersea-deep-repair-ships) by **Josh Dzieza**
+* [What happened to Brooklyn’s disaster-proof mesh Wi-Fi network?](https://www.theverge.com/c/features/23700677/wifi-mesh-network-disaster-hurricane-sandy-brooklyn) by **Justine Calma**
+* [How a group of neighbors created their own Internet service](https://arstechnica.com/information-technology/2015/11/how-a-group-of-neighbors-created-their-own-internet-service/) by **Jon Brodkin**
+* [The System That Actually Worked](https://www.theatlantic.com/ideas/archive/2020/05/miracle-internet-not-breaking/611212/) by **Charles Fishman**
+* [The Wi-Fi only works when it's raining](https://predr.ag/blog/wifi-only-works-when-its-raining/) by **Predrag Gruevski**
 
 ## Notes
 

@@ -11,12 +11,12 @@ This week, in transition jobs. And this is my last week at the company I've work
 
 ## Links
 
-* [The Rise and Fall of Steve Jobs's Greatest Rival](https://every.to/the-crazy-ones/the-rise-and-fall-of-steve-jobs-s-greatest-rival)
-* [Can Reddit Survive Its Own IPO?](https://www.wired.com/story/inside-reddit-protest-ipo/)
-* [The Thorny Problem of Keeping the Internet's Time](https://www.newyorker.com/tech/annals-of-technology/the-thorny-problem-of-keeping-the-internets-time)
-* [JavaScript Gom Jabbar](https://frantic.im/javascript-gom-jabbar/)
-* [My Hardest Bug Ever](https://www.gamedeveloper.com/programming/my-hardest-bug-ever)
-* [How Rust went from a side project to the world's most-loved programming language](https://www.technologyreview.com/2023/02/14/1067869/rust-worlds-fastest-growing-programming-language/)
+* [The Rise and Fall of Steve Jobs's Greatest Rival](https://every.to/the-crazy-ones/the-rise-and-fall-of-steve-jobs-s-greatest-rival) by **Gareth Edwards**
+* [Can Reddit Survive Its Own IPO?](https://www.wired.com/story/inside-reddit-protest-ipo/) by **Robert Peck** and **Paresh Dave**
+* [The Thorny Problem of Keeping the Internet's Time](https://www.newyorker.com/tech/annals-of-technology/the-thorny-problem-of-keeping-the-internets-time) by **Nate Hopper**
+* [JavaScript Gom Jabbar](https://frantic.im/javascript-gom-jabbar/) by **Alex Kotliarskyi**
+* [My Hardest Bug Ever](https://www.gamedeveloper.com/programming/my-hardest-bug-ever) by **Dave Baggett**
+* [How Rust went from a side project to the world's most-loved programming language](https://www.technologyreview.com/2023/02/14/1067869/rust-worlds-fastest-growing-programming-language/) by **Clive Thompson**
 
 ## Notes
 
