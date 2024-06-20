@@ -1,5 +1,6 @@
 ---
 title: "The Plumber Problem: A Coder's Lament"
+seo_title: "The Plumber Problem"
 og: "A Coder's Lament"
 description: "Ever watched a hacking scene in a movie and cringed at how unrealistic it was? As someone who has spent years in the trenches of software development, these scenes are not just inaccurate; they're painful to watch. They're a caricature, a gross oversimplification of a complex and nuanced field."
 date: 2023-08-21

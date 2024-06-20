@@ -1,5 +1,6 @@
 ---
 title: "The Timeless Allure of Physical Media"
+seo_title: "On Physical Media"
 description: "Today, digital convenience reigns supreme. The tactile joy of physical media—a stack of DVDs, a shelf of Blu-rays, a collection of CDs—feels like a relic from the past. But for those who value quality, reliability, and a sense of true ownership, physical media still holds a compelling place."
 date: 2024-06-04
 tags:
