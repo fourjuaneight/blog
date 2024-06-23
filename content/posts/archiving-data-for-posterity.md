@@ -30,7 +30,7 @@ I'm buying an internal LG Blu-ray writer ([WH16NS58DUP](https://a.co/d/fgXMYRn))
 
 Burning discs is straightforward with the right software. I'm considering either using [Burn](https://burn-osx.sourceforge.io/Pages/English/home.html) or [K3b](https://apps.kde.org/k3b/), depending on the OS. They are both reliable, free, and have stood the test of time. I'm deliberately avoiding fancy software like Nero SecurDisc since their tailored solutions might not be usable in the far-off future when I'm still accessing these M-DISCs.
 
-For data integrity, I'll generate SHA-256 checksums via [`shasum`](https://linux.die.net/man/1/shasum). A copy for all files is included on the disc and with the source. This way, I can quickly verify the files' integrity and detect any corruption.
+For data integrity, I'll generate SHA-256 checksums via [shasum](https://linux.die.net/man/1/shasum). A copy for all files is included on the disc and with the source. This way, I can quickly verify the files' integrity and detect any corruption.
 
 ## Cost Considerations
 
