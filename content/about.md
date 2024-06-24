@@ -10,7 +10,7 @@ Hi, I'm [Juan](https://www.juanvillela.dev/) and I like websites. Most of my tim
 
 Writing isn't my strong suit. But I do it from time to time. It's therapeutic and helps me clear my head. I write about interesting things I find online and some of my coding projects. I'm not sure what else to say, so here's a list of "fun facts" about me:
 
-- I like stickers. I have an entire cabinet filled with of them.
+- I like stickers. Most of my office is covered in stickers.
 - I build mechanical keyboards every now and then.
 - I love cooking. I like to think I'm pretty decent at it.
 - I like RPGs. Primarily those out of Japan. Like the 200-hour-long, convoluted storyline, with 30 characters type of RPGs.

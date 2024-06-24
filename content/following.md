@@ -17,6 +17,7 @@ A list of some people that I follow and enjoy their content:
 - [Brandur](https://brandur.org)
 - [brr](https://brr.fyi)
 - [Dave Rupert](https://daverupert.com)
+- [Manuel Moreale](https://manuelmoreale.com)
 - [NOEMA](https://www.noemamag.com)
 - [Olu Niyi-Awosusi](https://olu.online)
 - [Rach Smith](https://rachsmith.com)
