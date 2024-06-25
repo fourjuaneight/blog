@@ -1,8 +1,7 @@
 {{ define "heading" }}
-  {{ $tagName := .Name | replaceRE "-" " " }}
-  {{ $tagSplit := $tagName | countwords }}
-  {{ $tagLength := cond (eq $tagSplit 1) ($tagName | len) 0 }}
-  {{ $tagIsWide := gt ($tagName | strings.Count "o") 1 }}
+  {{ $tagSplit := .Name | countwords }}
+  {{ $tagLength := cond (eq $tagSplit 1) (.Name | len) 0 }}
+  {{ $tagIsWide := gt (.Name | strings.Count "o") 1 }}
   {{ $tagIsLong := gt $tagLength 8 }}
 
   <h1
@@ -12,7 +11,8 @@
     style="--max-vw: 80vw;"
     {{ end }}
   >
-    {{ $tagName }}
+    <span class="mr-1 text-tertiary" aria-hidden="true">#</span>
+    {{ .Name }}
   </h1>
 {{ end }}
 {{ define "main" }}
