@@ -70,13 +70,6 @@ jobs:
           HUGO_ENV: production
         run: npm run build:prod
 
-        # tailwind and caching issues
-      - name: Rebuild Site
-        env:
-          HUGO_ENVIRONMENT: production
-          HUGO_ENV: production
-        run: npm run build:prod
-
       - name: Index Pagefind
         run: npx pagefind --source "dist"
 
