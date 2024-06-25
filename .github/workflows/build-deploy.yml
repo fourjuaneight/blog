@@ -12,7 +12,7 @@ jobs:
     name: Build Site
     runs-on: ubuntu-20.04
     env:
-      HUGO_VERSION: 0.127
+      HUGO_VERSION: 0.127.0
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3

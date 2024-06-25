@@ -3,7 +3,7 @@ FROM node:18.19.1-alpine as builder
 
 # Config
 ENV GLIBC_VER=2.27-r0
-ENV HUGO_VER=0.127
+ENV HUGO_VER=0.127.0
 
 # Build dependencies
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" > /etc/apk/repositories \
