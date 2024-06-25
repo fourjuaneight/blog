@@ -2,6 +2,8 @@
 header:
   - label: Posts
     link: 'posts'
+  - label: Tags
+    link: 'tags'
   - label: About
     link: 'about'
   - label: Search
@@ -9,12 +11,14 @@ header:
 footer:
   - label: Posts
     link: 'posts'
-  - label: About
-    link: 'about'
+  - label: Tags
+    link: 'tags'
   - label: Uses
     link: uses
   - label: Following
     link: following
+  - label: About
+    link: 'about'
 social:
   - label: Mastodon
     link: https://mastodon.social/@fourjuaneight
