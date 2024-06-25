@@ -18,7 +18,7 @@
         {{ partial "img.html" (dict "src" .Params.hero.img "alt" .Params.hero.alt "size" "1024") }}
       </section>
     {{ end }}
-    <section class="content">{{ $content }}</section>
+    <section class="content">{{ $content | safeHTML }}</section>
     {{ partial "party-mode.html" . }}
   </article>
   {{ $related := ($.Site.GetPage "section" "posts").RegularPages.Related . }}
