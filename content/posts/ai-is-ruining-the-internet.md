@@ -1,6 +1,6 @@
 ---
 title: "AI Is Ruining The Internet"
-seo_title: "AI Companies Are Exploiting Online Content and It's Ruining The Internet"
+seo_title: "Artificial Intelligence Companies Are Exploiting Online Content and It's Ruining The Internet"
 description: "The elusive enchantment of AI has cast a spell over the tech world and the unsuspecting public alike. But they are more like unscrupulous puppeteers pulling strings in the shadow, devouring online content in a feeding frenzy. They lie through their teeth about where this data comes from, eroding the ethical bedrock the internet was built on."
 date: 2024-06-21
 tags:
@@ -9,7 +9,6 @@ tags:
   - web
 draft: false
 ---
-
 
 The elusive enchantment of Artificial Intelligence has cast a spell over the tech world and the unsuspecting public alike. We're promised miracles by large language models; that our every informational whim shall be met with unprecedented ease. But beneath this dazzling facade, AI companies are more like unscrupulous puppeteers pulling strings in the shadow, devouring online content in a feeding frenzy. They lie through their teeth about where this data comes from, eroding the ethical bedrock the internet was built on.
 
