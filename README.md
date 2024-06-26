@@ -9,7 +9,7 @@ Powered by:
 - [Typescript](https://www.typescriptlang.org)
 - [Go](https://go.dev)
 
-All illustrations were made by [Yonsoncb](https://www.yonsoncb.com/socials).
+All illustrations were made by [Yonsoncb](https://www.instagram.com/yonsoncb/).
 
 <img
     width="350"
