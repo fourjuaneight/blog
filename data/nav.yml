@@ -8,6 +8,7 @@ header:
     link: 'about'
   - label: Search
     link: 'search'
+    icon: true
 footer:
   - label: Posts
     link: 'posts'

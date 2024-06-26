@@ -733,19 +733,34 @@ body {
       &[data-type='social'] {
         &:focus {
           svg {
-            fill: var(--primary);
+            &[data-color="fill"] {
+              fill: var(--primary);
+            }
+            &[data-color="stroke"] {
+              stroke: var(--primary);
+            }
           }
         }
 
         &:focus-visible {
           svg {
-            fill: var(--primary);
+            &[data-color="fill"] {
+              fill: var(--primary);
+            }
+            &[data-color="stroke"] {
+              stroke: var(--primary);
+            }
           }
         }
 
         &:hover {
           svg {
-            fill: var(--primary);
+            &[data-color="fill"] {
+              fill: var(--primary);
+            }
+            &[data-color="stroke"] {
+              stroke: var(--primary);
+            }
           }
         }
       }

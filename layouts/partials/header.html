@@ -18,15 +18,27 @@
       </span>
     </a>
     <nav class="flex gap-x-3 items-center justify-end sm:gap-x-4 sm:m-0 w-auto">
-      {{ range .Site.Data.nav.header }}
+      {{ range $item := .Site.Data.nav.header }}
+      {{ $icon := printf "%s.html" ($item.label | lower) }}
       <a
-        href="{{ .link | absURL }}"
-        class="focus:no-underline font-bold font-mdNichrome hover:no-underline no-underline relative text-center text-2xl"
+        href="{{ $item.link | absURL }}"
+        class="focus:no-underline font-bold font-mdNichrome hover:no-underline no-underline relative text-center text-2xl data-[icon='true']:flex data-[icon='true']:items-center data-[icon='true']:justify-center"
         data-line="slim"
         data-underline="true"
+        data-icon="{{ $item.icon }}"
+        {{ if $item.icon }}
+        data-type="social"
+        {{ end }}
       >
-        {{ .label }}
+        <span class="data-[icon='true']:sr-only" data-icon="{{ $item.icon }}">
+          {{ $item.label }}
+        </span>
+        {{ if eq $item.icon nil }}
         <span class="absolute bg-primary bottom-0 duration-200 ease-in-out h-1 hidden left-0 transition-all w-0 xs:block" aria-hidden="true"></span>
+        {{ end }}
+        {{ if $item.icon }}
+        {{ partial $icon . }}
+        {{ end }}
       </a>
       {{ end }}
     </nav>
