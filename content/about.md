@@ -19,4 +19,4 @@ Writing isn't my strong suit. But I do it from time to time. It's therapeutic an
 - I delivered a baby once. It was not magical for me, the staff on the ambulance, or the person giving birth. It's the most stressed I've ever been in my life.
 
 ## Work
-I work as a software engineer in health tech. That's it. I don't know what else you wanna know. But, if you're really interested, check out my [online resume](https://resume.juanvillela.dev).
+I work as a full-stack engineer in healthcare with a front-end orientation. That's it. I don't know what else you wanna know. But, if you're really interested, check out my [online resume](https://resume.juanvillela.dev).
