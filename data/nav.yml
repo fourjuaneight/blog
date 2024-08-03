@@ -22,7 +22,7 @@ footer:
     link: 'about'
 social:
   - label: Mastodon
-    link: https://mastodon.social/@fourjuaneight
+    link: https://500.social/@fourjuaneight
     linkback: true
   - label: GitHub
     link: https://github.com/fourjuaneight
