@@ -16,6 +16,10 @@
   font-display: swap;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 :root {
   /* colors */
   --background: #ffffff;
