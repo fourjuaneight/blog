@@ -14,6 +14,7 @@ A list of some people that I follow and enjoy their content:
 - [Alex Kotliarskyi](https://frantic.im)
 - [Arun Vankatesan](https://arun.is)
 - [Bartosz Ciechanowski](https://ciechanow.ski)
+- [Brandon's Journal](https://brandons-journal.com)
 - [Brandur](https://brandur.org)
 - [brr](https://brr.fyi)
 - [Dave Rupert](https://daverupert.com)
@@ -23,6 +24,7 @@ A list of some people that I follow and enjoy their content:
 - [Rach Smith](https://rachsmith.com)
 - [Rick Carlino](https://rickcarlino.com)
 - [Robin Rendle](https://robinrendle.com)
+- [Ruben Schade](https://rubenerd.com)
 
 ## Podroll
 
@@ -30,6 +32,7 @@ A list of some people that I follow and enjoy their content:
 - [Darknet Diaries](https://darknetdiaries.com)
 - [Endless Thread](https://www.wbur.org/podcasts/endlessthread)
 - [Land of the Giants](https://podcasts.voxmedia.com/show/land-of-the-giants)
+- [Last Podcast on the Left](https://www.lastpodcastontheleft.com)
 - [The Lazarus Heist](https://www.bbc.co.uk/programmes/w13xtvg9/episodes/downloads)
 - [Sidedoor](https://www.si.edu/sidedoor)
 - [Twenty Thousand Hertz](https://www.20k.org)
