@@ -1,4 +1,5 @@
 {{ $pre := cond (eq .Kind "term") "#" "" }}
-{{ $check := cond (eq .Params.og nil) .Title .Params.og }}
+{{ $check := cond (isset .Params "og") .Params.og .Title }}
 {{ $title := print $pre $check }}
-{{ partial "social-image-small.html" (dict "title" $title) }}
+{{ $rating := cond (isset .Params "rating") (print .Params.rating "/5") "" }}
+{{ partial "social-image-small.html" (dict "title" $title "rating" $rating) }}

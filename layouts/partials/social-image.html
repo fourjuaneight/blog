@@ -3,6 +3,7 @@
 {{ $titleSplit := split .title " " }}
 {{ $titleCount := sub (len $titleSplit) 1 }}
 {{ $transY := index $transList $titleCount }}
+{{ $totalOffset := mul $height $titleCount }}
 <svg
   width="100%"
   height="100%"
@@ -148,6 +149,22 @@
       "
     >
       {{ $word }}
+    </text>
+    {{ end }}
+    {{ with .rating }}
+    <text
+      id="rating"
+      x="0px"
+      y="{{ add $height $totalOffset }}px"
+      font-family="MD Nichrome"
+      style="
+        font-family: 'MD Nichrome';
+        font-weight: 500;
+        font-size: 100px;
+        fill: white;
+      "
+    >
+      {{ . }}⭐
     </text>
     {{ end }}
   </g>
