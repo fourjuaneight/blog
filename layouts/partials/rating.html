@@ -1,0 +1,21 @@
+<section class="flex items-start justify-between pb-3 w-full"></section>
+  <p class="m-0 text-lg" aria-label="Rating is a {{ .Params.rating }} out of 5">
+    <span class="mr-1 text-tertiary" aria-hidden="true">
+      Rating:
+    </span>
+    <span class="text-meta" aria-hidden="true">
+      {{ .Params.rating }}/5
+    </span>
+  </p>
+  <ul class="flex flex-wrap items-center justify-end list-none m-0 p-0" aria-hidden="true">
+    {{/* Loop over tags list in front-matter */}}
+    {{- $rating := .Params.rating -}}
+    {{- range seq 1 $rating -}}
+    <li class="m-0">
+      <span role="img" class="m-0 text-lg whitespace-nowrap" aria-label="star">
+        ⭐
+      </span>
+    </li>
+    {{- end -}}
+  </ul>
+</section>

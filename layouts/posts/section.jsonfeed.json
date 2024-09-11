@@ -1,6 +1,6 @@
 {
   "version": "https://jsonfeed.org/version/1.1",
-  "title": "{{ .Site.Title }}",
+  "title": "Posts | {{ .Site.Title }}",
    "home_page_url": "{{ .Permalink }}",
    "feed_url": "{{ .Permalink }}feed.json",
    "favicon": "{{ .Site.BaseURL }}/icons/icon-180x180.png",

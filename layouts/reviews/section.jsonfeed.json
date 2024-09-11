@@ -1,6 +1,6 @@
 {
   "version": "https://jsonfeed.org/version/1.1",
-  "title": "{{ .Site.Title }}",
+  "title": "Reviews | {{ .Site.Title }}",
    "home_page_url": "{{ .Permalink }}",
    "feed_url": "{{ .Permalink }}feed.json",
    "favicon": "{{ .Site.BaseURL }}/icons/icon-180x180.png",
@@ -14,7 +14,7 @@
           "id": "{{ .Permalink }}",
           "title": "{{ .Title }}",
           "url": "{{ .Permalink }}",
-          "content_html": "{{ replace .Content "\n" "\\n" | replaceRE "\"" "\\\"" | replaceRE "\t" "\\t"}}",
+          "content_html": "{{ replace .Content "\n" "\\n" | replaceRE "\"" "\\\"" | replaceRE "\t" "\\t"}}<p>Rating is a {{ .Params.rating }} out of 5</p>",
           "summary": "{{ replace .Params.description "\n" "\\n" | replaceRE "\"" "\\\"" }}",
           "image": "{{ .Permalink }}social.jpeg",
           "date_published": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",

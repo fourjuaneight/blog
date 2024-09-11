@@ -1,6 +1,6 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ .Site.Title }}</title>
+    <title>Reviews | {{ .Site.Title }}</title>
     <link>{{ .Permalink }}</link>
     <description>{{ .Site.Params.meta.description }}</description>
     {{ with site.LanguageCode }}<language>{{ . }}</language>{{ end }}
@@ -18,7 +18,7 @@
       <item>
         <title>{{ .Title }}</title>
         <link>{{ .Permalink }}</link>
-        <description>{{ .Content | html }}</description>
+        <description>{{ .Content | html }}<p>Rating is a {{ .Params.rating }} out of 5</p></description>
         <author>{{ .Site.Params.meta.author }}</author>
         <guid>{{ .Permalink }}</guid>
         <pubDate>{{ .Date.Format "02 Jan 06 15:04 MST" }}</pubDate>

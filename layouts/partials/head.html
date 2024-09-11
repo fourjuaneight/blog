@@ -110,6 +110,18 @@
     href="{{ .Site.BaseURL }}/posts/feed.json"
   />
   <link
+    rel="alternate"
+    type="application/rss+xml"
+    title="{{ .Site.Title }}"
+    href="{{ .Site.BaseURL }}/reviews/index.xml"
+  />
+  <link
+    rel="alternate"
+    type="application/feed+json"
+    title="{{ .Site.Title }}"
+    href="{{ .Site.BaseURL }}/reviews/feed.json"
+  />
+  <link
     rel="sitemap"
     type="application/xml"
     href="{{ .Site.BaseURL }}/sitemap.xml"
