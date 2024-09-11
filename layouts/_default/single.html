@@ -1,7 +1,8 @@
 {{ define "heading" }}
   <h1
-    class="post-title col-start-2 font-bold font-mdNichrome mt-0 !mb-4 text-5xl w-full sm:text-5xl"
+    class="post-title col-start-2 font-bold font-mdNichrome mt-0 text-5xl w-full sm:text-5xl data-[type='reviews']:!mb-3"
     data-line="slim"
+    data-type="{{ .Type }}"
   >
     {{ .Title }}
   </h1>
