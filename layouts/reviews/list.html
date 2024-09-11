@@ -1,0 +1,19 @@
+{{ define "heading" }}
+  <h1
+    class="col-start-2 font-bold font-mdNichrome mb-8 mt-0 text-5xl w-full sm:text-5xl"
+    data-line="slim"
+  >
+    Reviews
+  </h1>
+{{ end }}
+{{ define "main" }}
+  {{ range .Pages }}
+    {{ .Render "li"}}
+  {{ end }}
+  {{ if ne .Params.footer nil }}
+    <section class="footer w-full">
+      {{ partial "img.html" (dict "src" .Params.footer.img "alt" .Params.footer.alt "size" "1024") }}
+    </section>
+  {{ end }}
+  {{ partial "party-mode.html" . }}
+{{ end }}
