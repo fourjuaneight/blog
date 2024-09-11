@@ -4,6 +4,7 @@ description: "Despite the myriad advancements Apple has made with macOS over the
 date: 2024-09-10
 tags:
   - macos
+rating: 5
 draft: false
 ---
 
@@ -20,7 +21,3 @@ One of SoundSource's most sophisticated features is its integration with macOS S
 Rogue Amoeba has astutely identified and addressed the deficiencies in macOS's native audio management. SoundSource not only fills these gaps but also enhances the overall user experience, rendering sound control more intuitive, versatile, and efficient. It is a paragon of thoughtful design and functionality, empowering users and elevating everyday workflows.
 
 While Apple's attention to core audio features has been somewhat neglectful, SoundSource comes in as a much-needed hero. For those seeking unparalleled control over their Mac's audio landscape, SoundSource is an essential addition.
-
----
-
-5/5 ⭐⭐⭐⭐⭐

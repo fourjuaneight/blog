@@ -1,6 +1,6 @@
 {{ define "heading" }}
   <h1
-    class="post-title col-start-2 font-bold font-mdNichrome mt-0 text-5xl w-full sm:text-5xl"
+    class="post-title col-start-2 font-bold font-mdNichrome mt-0 !mb-4 text-5xl w-full sm:text-5xl"
     data-line="slim"
   >
     {{ .Title }}
@@ -10,7 +10,10 @@
   {{ $content := replace .Content "( " "(" }}
   <article class="w-full">
     <span itemprop="name" class="sr-visible">Juan Villela</span>
-    {{ if eq .Type "posts" }}
+    {{ if eq .Type "reviews" }}
+      {{ partial "rating.html" . }}
+    {{ end }}
+    {{ if or (eq .Type "posts") (eq .Type "reviews") }}
       {{ partial "meta.html" . }}
     {{ end }}
     {{ if ne .Params.hero nil }}
