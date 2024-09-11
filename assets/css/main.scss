@@ -466,6 +466,10 @@ footer {
 
 .post-title {
   max-width: 60rem;
+
+  &[data-type="reviews"] {
+    margin-bottom: 1rem;
+  }
 }
 
 time {
