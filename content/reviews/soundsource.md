@@ -8,6 +8,8 @@ rating: 5
 draft: false
 ---
 
+![SoundSource screenshot.](reviews/soundsource-preview.png)
+
 Despite the myriad advancements Apple has made with macOS over the past two decades, one area that has conspicuously lagged is the realm of menu bar audio control. For those of us lamenting the clunky nature of macOS's default audio management, the solution is here: [SoundSource](https://rogueamoeba.com/soundsource/) by Rogue Amoeba. Known for their stellar audio applications, Rogue Amoeba does it again with SoundSource, a sophisticated tool that revolutionizes sound control on the Mac.
 
 SoundSource, with its unassuming presence in the menu bar, is an exemplar of convenience and functionality. With just a mouse click or a user-defined hotkey, this small but mighty application reveals an elegant interface allowing immediate access to Output, Input, and Sound Effects settings for all system devices. Each category boasts its independent volume slider and intuitive dropdown menu options. Beyond mere functionality, SoundSource provides real-time audio meters and features a remarkable Magic Boost button that enhances audio output, which is particularly beneficial for the modest speakers of a MacBook. The result is richer, clearer dialogue, especially in movie playback, transforming a mediocre audio experience into something exceptional.
