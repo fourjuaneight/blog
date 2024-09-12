@@ -2,6 +2,83 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.22.0] - 2024-09-12
+
+### Bug Fixes
+
+- [Cleanup analytics domain string.](https://github.com/fourjuaneight/blog/commit/e67150a17641e837f2e6deabbad9540a5c1763aa)
+- [Add authors to reading list posts.](https://github.com/fourjuaneight/blog/commit/c3c07befeaaf5a7d0b4b00f68bee6d7f55dd2abb)
+- [Improve content rendering formatting.](https://github.com/fourjuaneight/blog/commit/7737bc803998d0c12313efe951b2f6144c330c6b)
+- [Use proper version scheme.](https://github.com/fourjuaneight/blog/commit/02955ec8a50f0b755e8c7a134a2906b8fb4d0a03)
+- [Move variable inside block scope.](https://github.com/fourjuaneight/blog/commit/9430a820a4f773bb6a2f18e05225d70374a975ac)
+- [Update content rendering.](https://github.com/fourjuaneight/blog/commit/5fec439fea5fdeadb486e93be1c6afb65fb43ec1)
+- [Attempt to fix tailwind caching issue with a rebuild.](https://github.com/fourjuaneight/blog/commit/fdfac3c01d8e7aeb2e7677b91414ca7639ff820a)
+- [Add missing links to post.](https://github.com/fourjuaneight/blog/commit/81afa6ece01230a34f7c1a76a57c57c80984a826)
+- [Use flexbox for header nav.](https://github.com/fourjuaneight/blog/commit/a900030d2e9f15912c6122671fed6cb653333a7d)
+- [Minor layout corrections.](https://github.com/fourjuaneight/blog/commit/0ed9f3076fddbb5184f9d30759235acbd32d1407)
+- [Update Yonson's link.](https://github.com/fourjuaneight/blog/commit/e18d8dd4a1c708deaf2749c79f46200cf7eec38e)
+- [Add missing char on fediverse creator meta tag.](https://github.com/fourjuaneight/blog/commit/537e3d2f9b3051cadbbada514425edf4ba53d40c)
+- [Add left margin to footnote links.](https://github.com/fourjuaneight/blog/commit/b9dacc1734db40f6bec1c4809441945c96379793)
+- [Add missing post description.](https://github.com/fourjuaneight/blog/commit/9a16b86cc69eee5da93b0e887b4e3618bc1f080d)
+- [Add transparency to search icon.](https://github.com/fourjuaneight/blog/commit/a6ac356dccdc5a7eb3aba532ecd66cab1c48cc51)
+- [Remove incorrectly closing tag.](https://github.com/fourjuaneight/blog/commit/1e52e472de10d7693e997c01741e159053df57a3)
+- [Minor margin optimizations for reviews.](https://github.com/fourjuaneight/blog/commit/56939896f8e69e2d117ebaade185e9fb950895d5)
+- [Further review post margin optimizations.](https://github.com/fourjuaneight/blog/commit/9a40a7dd4d501e2bbefcd2a8b80372f3b3504bdf)
+- [Clean up rss feed setup.](https://github.com/fourjuaneight/blog/commit/78a97fc6b5f76b68afa33f74b59a919bcece80cf)
+- [Minor inlined link formatting optimizations.](https://github.com/fourjuaneight/blog/commit/fc49fa627d1ed96897de64e7d1910c6d610e8482)
+- [Minor content image optimizations.](https://github.com/fourjuaneight/blog/commit/9882f612fbbe8e6e468fd6d33eaf05e12922fa4d)
+- [Render review hero imgs eagerly.](https://github.com/fourjuaneight/blog/commit/44a48dc4bda9d3a53648a8ba06316d0bf50dfc49)
+- [Use correct conditional syntax.](https://github.com/fourjuaneight/blog/commit/b7c675cf9b68ee5d723e4b6df8fc584014f93958)
+
+### Features
+
+- [Update base url and move to single config.](https://github.com/fourjuaneight/blog/commit/d39d287ea2836f6b19525ef63c2f1a5f524d5574)
+- [Add reading list 5.](https://github.com/fourjuaneight/blog/commit/d3b247f3ca319483e46ef8d81f52f8a167e8cd94)
+- [Add post about ai ruining the internet.](https://github.com/fourjuaneight/blog/commit/c77cbe539bb346293cc6eac363acb7e6bfb1a85a)
+- [Add hash symbol to taxonomy pages.](https://github.com/fourjuaneight/blog/commit/9c8322eacbf74c790a54dda2e4748bd73c90b696)
+- [Add tags page to navs.](https://github.com/fourjuaneight/blog/commit/a99e79066a342dcc469c258c814fa93d0a2752d0)
+- [Update post about buying physical media.](https://github.com/fourjuaneight/blog/commit/281a6054fd2175feae618da585ccd2b8a5538674)
+- [Add search icon and optimize icon styling.](https://github.com/fourjuaneight/blog/commit/a7dd79c83ac631df7160cab2ac66faa035c2e4ad)
+- [Update description.](https://github.com/fourjuaneight/blog/commit/56f24ee83180ba14ad337b2949377b2c2d4b5f55)
+- [Add reading list 6.](https://github.com/fourjuaneight/blog/commit/e7b51ea4e8c2319e905b08dc19623885f7736fc2)
+- [Add fediverse author attribution.](https://github.com/fourjuaneight/blog/commit/945717856434fec5c6f11686a9cccd353c69454e)
+- [Add post about analog memories.](https://github.com/fourjuaneight/blog/commit/c7ecd370b5d32acbc2be6aa7bfbaa99a6dbba61f)
+- [Update fediverse link.](https://github.com/fourjuaneight/blog/commit/b0e45bbede4115a30d2acd16296b583ad6c8eabe)
+- [Add post about music ownership and plex.](https://github.com/fourjuaneight/blog/commit/4c1a29818c9a76fcfa5030932995e3af407c1b6f)
+- [Add view transition support.](https://github.com/fourjuaneight/blog/commit/4e0d49c3aa1d461c77ac6c74e39dc1c823902b74)
+- [Add post about the mac's recent security issues.](https://github.com/fourjuaneight/blog/commit/5e5c72039bcea24d4b202effdf21626e8a8a9224)
+- [Add reading list 7.](https://github.com/fourjuaneight/blog/commit/833f7466868207aa14921f561b1be3a60e6c8a5d)
+- [Update layouts to enable footer images.](https://github.com/fourjuaneight/blog/commit/372bbcceea1525ca3c25446f11330512a438585c)
+- [Add new links to following page.](https://github.com/fourjuaneight/blog/commit/4490ce22800b5770e96e59a8875ddb88ba1a5c80)
+- [Add reviews section.](https://github.com/fourjuaneight/blog/commit/44cc155d1def85b826140749244e8625a9fbad9d)
+- [Add soundsource review.](https://github.com/fourjuaneight/blog/commit/342469ed172fb12d7b677cf5139c807b9dcf8b86)
+- [Add reviews rating as part of the metadata.](https://github.com/fourjuaneight/blog/commit/4a2b4109f4a47dd34d75a504b762989d0b38c1cf)
+- [Add reviews rss feed.](https://github.com/fourjuaneight/blog/commit/6fb76b2f7eb64a0a74340ee8118e57f8fbbf68fd)
+- [Add reviews specific social image.](https://github.com/fourjuaneight/blog/commit/f698f2f9e5e8f09269173ee7a1754fa7a26c7848)
+- [Add preview image for SoundSource review.](https://github.com/fourjuaneight/blog/commit/35bc937319acd466f782b3e06f166caa742c21e0)
+- [Add meta review.](https://github.com/fourjuaneight/blog/commit/eba8cfacac489a6596309f700ed1ce0f791d3820)
+
+### Miscellaneous Tasks
+
+- [Update Changelog.](https://github.com/fourjuaneight/blog/commit/eb294ff43e441a6bb654582f8feaa280cb53fa4e)
+- [Use template syntax on robots for base url.](https://github.com/fourjuaneight/blog/commit/051457b5d9d936ac76acedc9f97912e6036b3c16)
+- [Remove redundant analytics script.](https://github.com/fourjuaneight/blog/commit/22e46196e2b48cdf720b2edee5d85b02b79e6556)
+- [Minor grammar updates.](https://github.com/fourjuaneight/blog/commit/43e208f008457fd935038a25a133cd5a8c448e5d)
+- [Update robots to disallow all ai bots.](https://github.com/fourjuaneight/blog/commit/4e6fe264ea08af34c70c89eae26843cd4ef99d2c)
+- [Minor SEO optimizations.](https://github.com/fourjuaneight/blog/commit/9f347d7e587970c71b9b51e51f0d9567b7cc72fc)
+- [Minor meta updates.](https://github.com/fourjuaneight/blog/commit/d8c0cea9499782aceee665411a540a28c16c2339)
+- [Update hugo version to latest.](https://github.com/fourjuaneight/blog/commit/8493e42d9da1328835ea4df51489e45c0be944bc)
+- [Minor content meta optimizations.](https://github.com/fourjuaneight/blog/commit/cf5d5662824d721ce67a7e9b7e5c965ba818139d)
+- [Remove redudant build.](https://github.com/fourjuaneight/blog/commit/8bbede8d20d81f95dcd5ed36bf2455fa4bdc5bc1)
+- [Update syntax stylesheet.](https://github.com/fourjuaneight/blog/commit/4530650bb3a150abb96b985d0d797ebe3518dfe8)
+- [Further description updates.](https://github.com/fourjuaneight/blog/commit/32d76ae36bb3812b5c7e23bc3b9762c526d3fe89)
+- [Add embracing rss post draft.](https://github.com/fourjuaneight/blog/commit/9c56391bc58e9b9f74ed7ca1adc6a0607fe8763e)
+- [Add analog memories draft.](https://github.com/fourjuaneight/blog/commit/5b6e58732c8bcbd8824f5465ac621ac8781708cc)
+- [Remove abandoned post.](https://github.com/fourjuaneight/blog/commit/f0c09b0ed1e6074b13c84ef295eacdaf8aa2d5e6)
+- [Minor tagging and grammar updates.](https://github.com/fourjuaneight/blog/commit/4683514a9eabf62e9f2aa1f8f1d60d937b7494ce)
+- [Update deprecated meta tag.](https://github.com/fourjuaneight/blog/commit/b7863d3a822489f0ef01a070cae4d55f8c38f4e3)
+- [Update to v1.22.0.](https://github.com/fourjuaneight/blog/commit/53ec96fa16b72d20899622f84c8385d153ad3299)
+
 ## [1.21.0] - 2024-06-05
 
 ### Bug Fixes
