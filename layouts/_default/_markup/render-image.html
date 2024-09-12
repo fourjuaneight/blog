@@ -1,2 +1,3 @@
 {{ $isReview := strings.Contains .Destination "reviews" }}
-{{ partial "img.html" (dict "src" .Destination "alt" .PlainText "caption" .Title "iClasses" "h-full max-h-100 max-w-lg" "size" "1024" "isReview" $isReview) }}
+{{ $size := cond $isReview "1200" "1024" }}
+{{ partial "img.html" (dict "src" .Destination "alt" .PlainText "caption" .Title "iClasses" "h-full max-h-100 max-w-lg" "size" $size "isReview" $isReview) }}
