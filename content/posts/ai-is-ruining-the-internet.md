@@ -14,7 +14,7 @@ The elusive enchantment of Artificial Intelligence has cast a spell over the tec
 
 ## Their Deceptive Exploitation
 
-"[Perplexity Is a Bullshit Machine](https://www.wired.com/story/perplexity-is-a-bullshit-machine/)" and "[Perplexity AI Is Lying about Their User Agent](https://rknight.me/blog/perplexity-ai-is-lying-about-its-user-agent/)"—two recent exposés—lay bare the grimy underbelly of Perplexity AI. This startup, which lauds itself as a harbinger of real-time, natural-language answers, is caught red-handed in unethical scraping of content from websites that have barred them via `robots.txt`.
+**[Perplexity Is a Bullshit Machine](https://www.wired.com/story/perplexity-is-a-bullshit-machine/)** and **[Perplexity AI Is Lying about Their User Agent](https://rknight.me/blog/perplexity-ai-is-lying-about-its-user-agent/)**—two recent exposés—lay bare the grimy underbelly of Perplexity AI. This startup, which lauds itself as a harbinger of real-time, natural-language answers, is caught red-handed in unethical scraping of content from websites that have barred them via `robots.txt`.
 
 [Federico from MacStories revealed that Perplexity kept plundering their content, even after implementing server-side blocks](https://mastodon.macstories.net/@viticci/112621000120261399). Technical tests showed other user agents obeyed these blocks, while Perplexity seemed to dance around them, likely using headless browsers or masking user agents to slip through unnoticed. Ignoring webmasters' control is more than unethical—it's an appalling affront to the principles of respect and transparency that should govern the web.
 

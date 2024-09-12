@@ -8,7 +8,10 @@
   </h1>
 {{ end }}
 {{ define "main" }}
-  {{ $content := replace .Content "( " "(" }}
+  {{ $contentBrkt := replace .Content "( " "(" }}
+  {{ $contentLDQ := replace $contentBrkt "&ldquo;" `"` }}
+  {{ $contentRDQ := replace $contentLDQ "&rdquo;" `"` }}
+  {{ $content := replace $contentRDQ "&rsquo;" `'` }}
   <article class="w-full">
     <span itemprop="name" class="sr-visible">Juan Villela</span>
     {{ if eq .Type "reviews" }}
