@@ -101,32 +101,23 @@
     rel="alternate"
     type="application/rss+xml"
     title="{{ .Site.Title }}"
-    href="{{ .Site.BaseURL }}/posts/index.xml"
-  />
-  <link
-    rel="alternate"
-    type="application/feed+json"
-    title="{{ .Site.Title }}"
-    href="{{ .Site.BaseURL }}/posts/feed.json"
+    href='{{ "posts/index.xml" | absURL }}'
   />
   <link
     rel="alternate"
     type="application/rss+xml"
     title="{{ .Site.Title }}"
-    href="{{ .Site.BaseURL }}/reviews/index.xml"
-  />
-  <link
-    rel="alternate"
-    type="application/feed+json"
-    title="{{ .Site.Title }}"
-    href="{{ .Site.BaseURL }}/reviews/feed.json"
+    href='{{ "reviews/index.xml" | absURL }}'
   />
   <link
     rel="sitemap"
     type="application/xml"
-    href="{{ .Site.BaseURL }}/sitemap.xml"
+    href='{{ "sitemap.xml" | absURL }}'
   />
-  <link rel="manifest" href="{{ .Site.BaseURL }}/manifest.json" />
+  <link
+    rel="manifest"
+    href='{{ "manifest.json" | absURL }}'
+  />
   <meta name="theme-color" content="{{ .Site.Params.meta.background }}" />
 
   {{ partial "fonts.html" . }}

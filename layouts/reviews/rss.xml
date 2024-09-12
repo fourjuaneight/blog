@@ -18,7 +18,7 @@
       <item>
         <title>{{ .Title }}</title>
         <link>{{ .Permalink }}</link>
-        <description>{{ .Content | html }}<p>Rating is a {{ .Params.rating }} out of 5</p></description>
+        <description>{{ .Content | html }}</description>
         <author>{{ .Site.Params.meta.author }}</author>
         <guid>{{ .Permalink }}</guid>
         <pubDate>{{ .Date.Format "02 Jan 06 15:04 MST" }}</pubDate>
