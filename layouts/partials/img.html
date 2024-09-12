@@ -10,7 +10,7 @@
 {{/*  Render attributes  */}}
 {{ $isHidden := cond (ne .hidden nil) "true" "false" }}
 {{ $isSmall := cond (ne .small nil) "true" "false" }}
-{{ $loading := cond .isReview "eager" "lazy" }}
+{{ $loading := cond (eq .isReview true) "eager" "lazy" }}
 {{ $maxWidth := cond (ne .small nil) "max-w-xxxxs" "max-w-xs" }}
 
 {{/*  Render conditionally by file type  */}}
