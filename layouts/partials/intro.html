@@ -11,7 +11,7 @@
     <p class="text-xl">
       {{ $content | replaceRE "<a" "<a rel='noopener noreferrer'target='_blank'" | safeHTML }}
     </p>
-    <nav class="w-auto">
+    <nav id="contact-list" class="w-auto">
       <ul
         class="auto-cols-min gap-x-5 grid grid-rows-1 items-center list-none my-2 p-0"
       >

@@ -10,17 +10,19 @@ header:
     link: 'search'
     icon: true
 footer:
-  - label: Posts
+  - label: Archive
     link: 'posts'
-  - label: Tags
-    link: 'tags'
   - label: Reviews
     link: 'reviews'
   - label: Uses
     link: uses
   - label: Following
     link: following
+  - label: Contact
+    link: mailto:contact@cleverlaziness.com
 social:
+  - label: Email
+    link: mailto:contact@cleverlaziness.com
   - label: Mastodon
     link: https://500.social/@fourjuaneight
     linkback: true
