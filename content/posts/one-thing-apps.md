@@ -25,9 +25,9 @@ Super-apps, with their endless features and promises of convenience, often resul
 
 ## A Case in Point: Things for macOS and iOS
 
-This app is a shining example of single-purpose excellence, focusing solely on task management but doing it with such finesse that it becomes a joy.
+This app–designed by [Cultured Code](https://www.culturedcode.com/)–epitomizes single-purpose excellence by focusing solely on task management and executing it so elegantly that it becomes a genuine source of joy.
 
-Cultured Code has absolutely knocked it out of the park with its Mac, iPad, and iPhone apps. The design is nothing short of sublime, featuring vibrant colors, refined typography, and a delightfully clean interface. Unlike the disjointed experience offered by some apps where the mobile versions feel like poor imitations of their desktop counterparts, Things maintains a seamless and consistent user experience across all platforms. The iOS app stands toe-to-toe with the desktop version, providing the same robust control and comprehensive functionality.
+The design of the Mac, iPad, and iPhone apps is nothing short of amazing. The UI features vibrant icons, exquisite typography, and masterful use of white space. Despite being finely tuned to each platform, Things maintains a consistent user experience, giving the impression of a unified application. Things offers the same level of control and functionality across all it's apps.
 
 ## One Thing is Enough
 
