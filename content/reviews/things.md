@@ -1,6 +1,6 @@
 ---
 title: "Things"
-description: ""
+description: "This beautifully designed app by Cultured Code epitomizes single-purpose excellence by focusing solely on task management and executing it so elegantly that it becomes a genuine source of joy."
 date: 2024-09-20
 tags:
   - macos
@@ -11,7 +11,7 @@ draft: false
 
 ![Things screenshot.](reviews/things-preview.png)
 
-This app–designed by [Cultured Code](https://www.culturedcode.com/)–epitomizes single-purpose excellence by focusing solely on task management and executing it so elegantly that it becomes a genuine source of joy.
+This beautifully designed app by [Cultured Code](https://www.culturedcode.com/) epitomizes single-purpose excellence by focusing solely on task management and executing it so elegantly that it becomes a genuine source of joy.
 
 The design of the Mac, iPad, and iPhone apps is nothing short of amazing. The UI features vibrant icons, exquisite typography, and masterful use of white space. Despite being finely tuned to each platform, Things maintains a consistent user experience, giving the impression of a unified application. Things offers the same level of control and functionality across all it's apps.
 
