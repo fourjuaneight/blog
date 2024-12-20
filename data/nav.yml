@@ -24,7 +24,7 @@ social:
   - label: Email
     link: mailto:contact@cleverlaziness.com
   - label: Mastodon
-    link: https://500.social/@fourjuaneight
+    link: https://mastodon.social/@fourjuaneight
     linkback: true
   - label: GitHub
     link: https://github.com/fourjuaneight
