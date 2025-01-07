@@ -78,6 +78,7 @@ jobs:
         with:
           name: dist
           path: ./dist
+          overwrite: true
 
   social:
     name: Generate Social Images
@@ -127,6 +128,7 @@ jobs:
         with:
           name: dist
           path: ~/work/blog/blog/dist
+          overwrite: true
 
   deploy:
     name: Deploy to Cloudflare Pages
