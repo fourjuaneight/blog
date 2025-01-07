@@ -74,7 +74,7 @@ jobs:
         run: npx pagefind --source "dist"
 
       - name: Upload Output
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: dist
           path: ./dist
@@ -99,7 +99,7 @@ jobs:
         run: npm i -g serve@12.0.1
 
       - name: Download Output
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: dist
           # this is done to match the expected output directory
@@ -123,7 +123,7 @@ jobs:
         run: npm run post
 
       - name: Upload Output
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: dist
           path: ~/work/blog/blog/dist
@@ -140,17 +140,14 @@ jobs:
     needs: [build, social]
     steps:
       - name: Download Output
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: dist
-          # this is done to match the expected output directory
-          path: ~/work/blog/blog/dist
 
-      - name: Publish
-        uses: cloudflare/pages-action@v1
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3
         with:
-          apiToken: ${{secrets.CLOUDFLARE_API_TOKEN}}
-          accountId: ${{secrets.ACCOUNT_ID}}
-          projectName: ${{secrets.PROJECT_NAME}}
-          directory: ${{secrets.DIRECTORY}}
-          gitHubToken: ${{secrets.GITHUB_TOKEN}}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.ACCOUNT_ID }}
+          command: pages deploy dist --project-name=blog
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
