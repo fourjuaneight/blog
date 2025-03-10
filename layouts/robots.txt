@@ -37,6 +37,7 @@ User-agent: *
 Allow: /
 Disallow: /social-img/
 Disallow: /tags/
+Disallow: /shareable/
 
 Sitemap: {{ .Site.BaseURL }}/sitemap.xml
 
