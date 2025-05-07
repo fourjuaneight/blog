@@ -13,7 +13,7 @@
   {{ $contentRDQ := replace $contentLDQ "&rdquo;" `"` }}
   {{ $content := replace $contentRDQ "&rsquo;" `'` }}
   <article class="w-full">
-    <span itemprop="name" class="sr-visible">Juan Villela</span>
+    <span itemprop="name" class="sr-visible">Juan</span>
     {{ if eq .Type "reviews" }}
       {{ partial "rating.html" . }}
     {{ end }}
