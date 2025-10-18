@@ -12,7 +12,7 @@ jobs:
     name: Build Site
     runs-on: ubuntu-20.04
     env:
-      HUGO_VERSION: 0.127.0
+      HUGO_VERSION: 0.151.1
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
@@ -51,10 +51,10 @@ jobs:
       - name: Install Dart Sass Embedded
         run: sudo snap install dart-sass-embedded
 
-      - name: Use Go 1.22.0
+      - name: Use Go 1.25.3
         uses: actions/setup-go@v4
         with:
-          go-version: '>=1.22.0'
+          go-version: '>=1.25.3'
 
       - name: Install Hugo
         run: |
@@ -106,10 +106,10 @@ jobs:
           # this is done to match the expected output directory
           path: ~/work/blog/blog/dist
 
-      - name: Use Go 1.22.0
+      - name: Use Go 1.25.3
         uses: actions/setup-go@v4
         with:
-          go-version: '>=1.22.0'
+          go-version: '>=1.25.3'
 
       - name: Install Go Rod Dependencies
         run: sudo apt-get install -y libgbm-dev
