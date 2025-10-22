@@ -19,10 +19,10 @@ footer:
   - label: Following
     link: following
   - label: Contact
-    link: mailto:contact@cleverlaziness.com
+    link: https://juanvillela.dev/contact/
 social:
   - label: Email
-    link: mailto:contact@cleverlaziness.com
+    link: https://juanvillela.dev/contact
   - label: Mastodon
     link: https://mastodon.social/@fourjuaneight
     linkback: true
