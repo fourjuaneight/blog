@@ -4,7 +4,7 @@ description: "After years of tinkering, writing, and trying to keep the spark al
 date: 2026-03-11
 tags:
   - writing
-draft: true
+draft: false
 ---
 
 I stared at my code editor for twenty minutes last Tuesday. Not because I was debugging something or working through some problem; I was trying to write a blog post about a shell script I'd been using to batch-rename files. Twenty minutes of a blinking cursor, and all I could think was: *I do not care about this*. Not the script itself; the script is fine, it works, it saved me an afternoon. What I didn't care about was performing enthusiasm for it. Packaging it up in a tidy little post with a catchy title and a closing line about how automation is the future or whatever. I closed the tab, made a coffee, and sat with the uncomfortable realization that I've been feeling this way for a while now.
@@ -41,15 +41,15 @@ But the version of me that wants to write isn't the version of me that wants to 
 
 ---
 
-I want to be clear: this isn't a dramatic farewell. I'm not deleting anything. The posts stay up, every rambling essay, every hot take, and every piece that makes me wince a little when I reread it. That's the whole point of [archiving](/posts/is-stuff-online-worth-saving/), right? You preserve the thing as it was, not as you wish it had been.
+I want to be clear: this isn't a dramatic farewell. I'm not deleting anything. The posts stay up, every rambling, every hot take, and every piece that makes me wince a little when I reread it. That's the whole point of [archiving](/posts/is-stuff-online-worth-saving/), right? You preserve the thing as it was, not as you wish it had been.
 
-And I'm not done writing. I'm really not. If anything, the urge to write has been *growing*; it's just pulling me in different directions. I want to write about the books I'm reading, about cycling, about the strange experience of getting older and realizing your hobbies are changing and that's not a failure, it's just life doing its thing. I want to write without the implicit expectation, self-imposed mostly, that every piece needs to tie back to web development or productivity or some lesson about the tech industry. I want to write about what I actually think about when I'm not working.
+And I'm not done writing. I'm really not. If anything, the urge to write has been *growing*; it's just pulling me in different directions. I want to write about the books I'm reading, coffee, retro video games, and about the strange experience of getting older and realizing your hobbies are changing and that's not a failure, it's just life doing its thing. I want to write without the implicit expectation, self-imposed mostly, that every piece needs to tie back to software engineering or productivity or some lesson about the tech industry. I want to write about what I actually think about when I'm not working.
 
-So there will probably be another blog. A different one, with a different shape, unburdened by the gravitational pull of my day job. I don't know what it'll look like yet. I don't know what I'll call it. I don't even know what stack I'll build it on, and for the first time in a long time, the not-knowing feels exciting rather than paralyzing.
+So there will probably be another blog. A different one, with a different shape, unburdened by the gravitational pull of my day job. I don't know what it'll look like yet. I don't know what I'll call it. I don't even know what stack I'll build it on, and for the first time in a long time, the not-knowing feels exciting rather than paralyzing. Even if it ends up being just the same thing with different content.
 
 ---
 
-If you've read any of this blog, any of these ramblings over the years, thank you. I mean that without a shred of performative gratitude. You didn't have to be here. The internet is vast and loud and full of things competing for your attention, and yet you spent some of it reading my thoughts about shell scripts and data ownership and whether stuff online is worth saving. That's a kind of generosity I never took for granted, even when I was bad at showing it by disappearing for months at a time.
+If you've read any of this blog, any of these ramblings over the years, thank you. I mean that without a shred of performative gratitude. You didn't have to be here. The internet is vast and loud and full of things competing for your attention, and yet you spent some of it reading my thoughts about code and data ownership and whether stuff online is worth saving. That's a kind of generosity I never took for granted, even when I was bad at showing it by disappearing for months at a time.
 
 This site was never big. It was never important in the way the internet measures importance, no viral posts, no massive subscriber count, no sponsorship deals. It was just mine. A weird little corner where I figured things out in public, changed my mind, and occasionally said something that resonated with a stranger. That's more than enough.
 
