@@ -2,6 +2,7 @@
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
   {{ partial "head.html" . }}
   <body data-party="false">
+    {{ partial "archived.html" . }}
     {{ partial "header.html" . }}
 
     <main class="grid relative w-full">

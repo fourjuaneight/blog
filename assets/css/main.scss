@@ -472,7 +472,7 @@ footer {
   }
 }
 
-time {
+time[data-type="published"] {
   &::before {
     color: var(--tertiary);
     content: '\03C4';
