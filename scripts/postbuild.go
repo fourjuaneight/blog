@@ -17,6 +17,7 @@ import (
 	"github.com/disintegration/imaging"
 	"github.com/go-rod/rod"
 	"github.com/go-rod/rod/lib/devices"
+	"github.com/go-rod/rod/lib/launcher"
 	"github.com/go-rod/rod/lib/proto"
 	lop "github.com/samber/lo/parallel"
 )
@@ -73,7 +74,8 @@ func socialImgs() {
 	run("npm run serve &")
 
 	// take screenshots
-	browser := rod.New().MustConnect().NoDefaultDevice()
+	u := launcher.New().NoSandbox(true).MustLaunch()
+	browser := rod.New().ControlURL(u).MustConnect().NoDefaultDevice()
 	lop.ForEach(routes, func(route string, _ int) {
 		// visit route
 		page := browser.MustPage(route).MustEmulate(devices.LaptopWithHiDPIScreen)
