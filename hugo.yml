@@ -13,15 +13,15 @@ canonifyURLs: true
 ignoreErrors: ["error-remote-getjson"]
 timeout: "300s"
 
+build:
+  cacheBusters:
+  - source: '(postcss|tailwind)\.config\.js'
+    target: (css|styles|scss|sass)
+
 security:
   enableInlineShortcodes: false
   exec:
     allow: ["^dart-sass-embedded$", "^go$", "^npx$", "^postcss$", "^babel$"]
-
-caches:
-  getjson:
-    dir: ":cacheDir/:project"
-    maxAge: "10s"
 
 markup:
   highlight:
