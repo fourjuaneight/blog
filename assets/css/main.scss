@@ -117,6 +117,26 @@ a {
     }
   }
 
+  &[data-type="archive-link"] {
+    color: var(--background-dark) !important;
+    text-decoration-color: var(--background-dark) !important;
+
+    &:focus {
+      color: var(--background-dark) !important;
+      text-decoration-color: var(--primary) !important;
+    }
+
+    &:focus-visible {
+      color: var(--background-dark) !important;
+      text-decoration-color: var(--primary) !important;
+    }
+
+    &:hover {
+      color: var(--background-dark) !important;
+      text-decoration-color: var(--primary) !important;
+    }
+  }
+
   &[data-underline='true'] {
     &:hover {
       > span {
